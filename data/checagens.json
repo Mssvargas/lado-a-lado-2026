@@ -1,0 +1,317 @@
+{
+  "atualizado_em": "2026-10-19",
+  "contexto": {
+    "segundo_turno": "2026-10-25 (domingo), das 8h às 17h, horário de Brasília. Disputam Flávio Bolsonaro (PL) e Lula (PT).",
+    "primeiro_turno": "Com 100% das seções totalizadas pelo TSE, Flávio Bolsonaro (PL) teve 47,03% dos votos válidos (56.104.503 votos) e Lula (PT) teve 45,16% (53.879.538 votos). Nenhum dos dois passou de 50% dos votos válidos. Nenhum dos demais candidatos chegou a 3% (Augusto Cury, do Avante, ficou em terceiro, com 2,89%).",
+    "fonte_url": "https://www.poder360.com.br/poder-eleicoes-2026/bolsonarismo-vira-a-diferenca-sobre-lula-em-relacao-a-2022/",
+    "planos_atualizados": "Não encontrei plano de governo novo ou atualizado registrado no TSE por nenhuma das duas chapas para o 2º turno. A página do TSE que reúne os planos foi atualizada em 13/10 só para mostrar as duas chapas do 2º turno, com os documentos entregues no registro da candidatura. Houve documentos de campanha complementares, que as matérias consultadas não tratam como plano registrado. Flávio Bolsonaro assinou em 08/10 o 'Termo de Compromisso Público com o Brasil', com oito compromissos, ao receber o apoio de Augusto Cury: fim da reeleição presidencial, ensino em tempo integral, telemedicina no SUS, violência contra a mulher como prioridade, cooperativismo, crédito a microempresas, dobrar a produção de alimentos em dez anos e pacificação nacional. Lula divulgou em 14/10 uma carta aos evangélicos com compromissos gerais: combate às apostas online, dois dias de descanso semanal, proteção de mulheres e combate ao crime organizado.",
+    "fontes_planos": [
+      "https://www.mixvale.com.br/2026/10/18/tse-reune-plano-de-governo-flavio-bolsonaro-e-lula-na-web/",
+      "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/10/8/saiba-quais-sao-os-oito-compromissos-firmados-por-cury-e-flavio-bolsonaro-para-apoio-no-2-turno",
+      "https://www.gazetadopovo.com.br/eleicoes/2026/lula-cita-bets-e-descanso-semanal-em-carta-a-evangelicos/"
+    ]
+  },
+  "checagens": [
+    {
+      "candidato": "lula",
+      "tipo": "fala",
+      "alegacao": "\"Agora apresentamos um orçamento com superávit de 0,1%\" (debate da Band)",
+      "veredito": "VERDADEIRO",
+      "explicacao": "O projeto de Orçamento de 2027 prevê superávit primário de R$ 18,6 bilhões, cerca de 0,13% do PIB.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/",
+      "data": "2026-10-18",
+      "tema": "contas-publicas"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "fala",
+      "alegacao": "Quando o governo anterior saiu, \"ficou um déficit de 2,8%\" (debate da Band)",
+      "veredito": "FALSO",
+      "explicacao": "Segundo a Lupa, o governo central fechou 2022 com superávit primário de R$ 54,1 bilhões, cerca de 0,5% do PIB, e não com déficit.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/",
+      "data": "2026-10-18",
+      "tema": "contas-publicas"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "fala",
+      "alegacao": "\"Tínhamos criado 22 milhões de empregos em 8 anos\" (entrevista à TV Globo)",
+      "veredito": "EXAGERADO",
+      "explicacao": "Dados da Rais apontam 15,3 milhões de empregos formais criados entre 2003 e 2010.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/15/ao-vivo-checagem-da-entrevista-de-lula-na-tv-globo/",
+      "data": "2026-10-15",
+      "tema": "trabalho"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "fala",
+      "alegacao": "\"Quando eu voltei, tinha 33 milhões de pessoas passando fome outra vez\" (entrevista à TV Globo)",
+      "veredito": "VERDADEIRO",
+      "explicacao": "Inquérito da Rede Penssan de 2022 registrou 33,1 milhões de pessoas em insegurança alimentar grave, condição associada à fome.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/15/ao-vivo-checagem-da-entrevista-de-lula-na-tv-globo/",
+      "data": "2026-10-15",
+      "tema": "programas-sociais"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "fala",
+      "alegacao": "Ao voltar à Presidência, os profissionais do Mais Médicos \"eram apenas 12 mil\" (debate da Band)",
+      "veredito": "Impreciso",
+      "explicacao": "Havia 13,7 mil profissionais no programa em 2023; o pico foi de 18,2 mil em 2015, e em dezembro de 2025 eram 27,3 mil.",
+      "fonte": "Estadão Verifica (republicado pelo Terra)",
+      "url": "https://www.terra.com.br/noticias/eleicoes/checamos-o-debate-entre-lula-e-flavio-na-band-veja-o-resultado,d86be66f67083e785565c6df22ba9a1a4pyzk8ac.html",
+      "data": "2026-10-19",
+      "tema": "saude"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "fala",
+      "alegacao": "O governo Bolsonaro não reajustou o salário mínimo acima da inflação em nenhum ano (debate da Band)",
+      "veredito": "Enganoso",
+      "explicacao": "Em 2019 houve ganho real de 1,14% (salário de R$ 998); nos outros três anos do mandato não houve ganho real.",
+      "fonte": "Estadão Verifica (republicado pelo Terra)",
+      "url": "https://www.terra.com.br/noticias/eleicoes/checamos-o-debate-entre-lula-e-flavio-na-band-veja-o-resultado,d86be66f67083e785565c6df22ba9a1a4pyzk8ac.html",
+      "data": "2026-10-19",
+      "tema": "trabalho"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "fala",
+      "alegacao": "\"Eu já fiz a Lei Antifacção, ela foi aprovada. Já aumentamos o tempo de cadeia para aqueles que participam das facções\" (debate da Band)",
+      "veredito": "VERDADEIRO",
+      "explicacao": "O projeto do Executivo foi aprovado pelo Congresso e sancionado em março de 2026 como Lei 15.358/2026.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/",
+      "data": "2026-10-18",
+      "tema": "seguranca"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "fala",
+      "alegacao": "\"Hoje a dívida do Brasil tá em 11 trilhões de reais\" (entrevista à TV Globo)",
+      "veredito": "VERDADEIRO",
+      "explicacao": "Em agosto de 2026, a Dívida Bruta do Governo Geral chegou a R$ 11,1 trilhões, o equivalente a 82,9% do PIB.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/16/ao-vivo-checagem-da-entrevista-de-flavio-bolsonaro-na-globo/",
+      "data": "2026-10-16",
+      "tema": "contas-publicas"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "fala",
+      "alegacao": "\"Foi o Bolsonaro que triplicou o valor [do Bolsa Família], que era R$ 190 em média, passou para R$ 600\" (entrevista à TV Globo)",
+      "veredito": "EXAGERADO",
+      "explicacao": "A média do Bolsa Família até março de 2020 era de R$ 191,86. A proposta original do Auxílio Brasil era de R$ 400, e o valor de R$ 600 foi definido em junho de 2022.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/16/ao-vivo-checagem-da-entrevista-de-flavio-bolsonaro-na-globo/",
+      "data": "2026-10-16",
+      "tema": "programas-sociais"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "fala",
+      "alegacao": "A margem equatorial e os royalties do petróleo \"já estavam na proposta de governo do presidente Bolsonaro lá em 2022\" (entrevista à TV Globo)",
+      "veredito": "FALSO",
+      "explicacao": "A Lupa não encontrou menção à margem equatorial nos programas de governo de 2018 e de 2022; a busca por exploração na região começou em 2013.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/16/ao-vivo-checagem-da-entrevista-de-flavio-bolsonaro-na-globo/",
+      "data": "2026-10-16",
+      "tema": "energia"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "fala",
+      "alegacao": "A estimativa da taxa de juros \"era para estar neste momento em torno de 7%. Hoje, a taxa de juros está em 14%\" (entrevista à TV Globo)",
+      "veredito": "FALTA CONTEXTO",
+      "explicacao": "A projeção do Boletim Focus de 2022 era de cerca de 7,5% para 2025, mas a Selic já estava em 13,75% em outubro de 2022, no governo anterior.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/16/ao-vivo-checagem-da-entrevista-de-flavio-bolsonaro-na-globo/",
+      "data": "2026-10-16",
+      "tema": "outro"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "fala",
+      "alegacao": "\"A Lei Antifacção que nós aprovamos, os líderes dessas organizações vão ficar até 80 anos presos\" (debate da Band)",
+      "veredito": "FALTA CONTEXTO",
+      "explicacao": "A lei prevê aumento de pena para líderes de facção, mas o Código Penal limita o tempo de cumprimento a 40 anos, salvo nova condenação.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/",
+      "data": "2026-10-18",
+      "tema": "seguranca"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "fala",
+      "alegacao": "Tráfico e furto de celulares ficariam fora da proposta de redução da maioridade penal (debate da Band)",
+      "veredito": "Enganoso",
+      "explicacao": "A proposta vale para crimes hediondos, e a Constituição equipara o tráfico de drogas a crime hediondo.",
+      "fonte": "Estadão Verifica (republicado pelo Terra)",
+      "url": "https://www.terra.com.br/noticias/eleicoes/checamos-o-debate-entre-lula-e-flavio-na-band-veja-o-resultado,d86be66f67083e785565c6df22ba9a1a4pyzk8ac.html",
+      "data": "2026-10-19",
+      "tema": "seguranca"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "fala",
+      "alegacao": "\"Porque ele [Lula] vetou a saidinha, a gente teve que derrubar no Congresso Nacional\" (debate da Band)",
+      "veredito": "VERDADEIRO",
+      "explicacao": "Em 28/05/2024, o Congresso derrubou o veto presidencial e proibiu a saída temporária de presos do regime semiaberto.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/",
+      "data": "2026-10-18",
+      "tema": "seguranca"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "sobre",
+      "alegacao": "Capa atribuída à revista Veja: \"Lula pretende taxar o Pix em até 20%\"",
+      "veredito": "FALSO",
+      "explicacao": "Não há registro da capa na Veja, e a ferramenta de detecção usada pela Lupa indicou que a imagem foi gerada por IA.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/eleicoes/2026/10/02/capas-falsas-atribuidas-a-veja-e-a-globonews-usam-ia-para-atacar-lula-e-janja/",
+      "data": "2026-10-02",
+      "tema": "impostos"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "sobre",
+      "alegacao": "Capa atribuída à revista Veja: \"Lula quer acabar com a Polícia Militar\"",
+      "veredito": "FALSO",
+      "explicacao": "A Lupa classificou a capa como falsa: ela integra um conjunto de capas sem registro de publicação pela Veja, produzidas com IA.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/eleicoes/2026/10/02/capas-falsas-atribuidas-a-veja-e-a-globonews-usam-ia-para-atacar-lula-e-janja/",
+      "data": "2026-10-02",
+      "tema": "seguranca"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "sobre",
+      "alegacao": "Lula propôs aumentar o salário mínimo para R$ 3 mil",
+      "veredito": "Não é verdade",
+      "explicacao": "Os vídeos com a promessa foram feitos com IA. O plano de governo fala em valorização do salário mínimo sem citar valor, e o governo prevê R$ 1.741 para 2027.",
+      "fonte": "Projeto Comprova",
+      "url": "https://projetocomprova.com.br/publica%C3%A7%C3%B5es/nao-e-verdade-que-lula-tenha-proposta-para-aumentar-salario-minimo-para-r-3-mil-videos-sao-feitos-com-ia/",
+      "data": "2026-09-18",
+      "tema": "trabalho"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "sobre",
+      "alegacao": "\"Lula pede ao TSE para proibir vídeos durante as eleições\"",
+      "veredito": "FALSO",
+      "explicacao": "As propostas do governo ao TSE tratavam da remuneração de competições de cortes de vídeo, e nenhuma delas previa vetar vídeos.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/jornalismo/2026/04/27/lula-nao-pediu-ao-tse-para-proibir-videos-durante-eleicoes/",
+      "data": "2026-04-27",
+      "tema": "instituicoes"
+    },
+    {
+      "candidato": "lula",
+      "tipo": "sobre",
+      "alegacao": "\"Lula gastou mais de R$ 7 bilhões em viagens\"",
+      "veredito": "Não é verdade",
+      "explicacao": "O valor corresponde às viagens de todo o governo federal entre 2023 e 2025. Os gastos da Presidência no período somam R$ 150,5 milhões.",
+      "fonte": "Aos Fatos",
+      "url": "https://www.aosfatos.org/noticias/lula-7-bilhoes-viagens/",
+      "data": "2026-10-05",
+      "tema": "contas-publicas"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "sobre",
+      "alegacao": "\"Flávio Bolsonaro vai acabar com Bolsa Família de R$ 600 e poderá retornar com Auxílio Brasil de R$ 1.200\"",
+      "veredito": "É falso",
+      "explicacao": "O Aos Fatos não encontrou registro dessa promessa; em fevereiro, Flávio disse que manteria o programa \"enquanto as pessoas precisarem\". O valor de R$ 1.200 vem do Auxílio Emergencial de 2020.",
+      "fonte": "Aos Fatos",
+      "url": "https://www.aosfatos.org/noticias/flavio-bolsonaro-bolsa-familia/",
+      "data": "2026-05-22",
+      "tema": "programas-sociais"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "sobre",
+      "alegacao": "Flávio teria dito: \"O SUS será privatizado no mesmo dia em que eu tomar posse\"",
+      "veredito": "FALSO",
+      "explicacao": "Não há registro da declaração, e o post usava indevidamente a marca da CNN Brasil. A reportagem citada tratava de financiamento e reformulação do SUS, sem falar em privatização.",
+      "fonte": "Agência Lupa",
+      "url": "https://www.agencialupa.org/noticias/2026/04/15/flavio-bolsonaro-nao-disse-que-vai-privatizar-o-sus-se-for-eleito/",
+      "data": "2026-04-15",
+      "tema": "saude"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "sobre",
+      "alegacao": "Flávio teria dito: \"Se eleito, nós vamos acabar com a Farmácia Popular\"",
+      "veredito": "Não é verdade",
+      "explicacao": "O Aos Fatos não encontrou registro da fala, a campanha negou a declaração, e o plano de governo não menciona o programa.",
+      "fonte": "Aos Fatos",
+      "url": "https://www.aosfatos.org/noticias/flavio-bolsonaro-farmacia-popular/",
+      "data": "2026-10-08",
+      "tema": "saude"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "sobre",
+      "alegacao": "Flávio teria dito que sua primeira medida em 2027 seria acabar com a aposentadoria, o 13º salário e as férias remuneradas",
+      "veredito": "é falso",
+      "explicacao": "Não há declaração de Flávio nesse sentido. O conteúdo distorcia uma entrevista do senador Rogério Marinho, que falou em revisar as reformas previdenciária e trabalhista sem detalhar propostas.",
+      "fonte": "Estadão Verifica (republicado pelo Terra)",
+      "url": "https://www.terra.com.br/noticias/checamos/flavio-bolsonaro-nao-disse-que-quer-acabar-com-aposentadoria-nem-com-13,80d1b6b2b579f99e03090be41aa92d7efj23c34p.html",
+      "data": "2026-03-12",
+      "tema": "trabalho"
+    },
+    {
+      "candidato": "flavio",
+      "tipo": "sobre",
+      "alegacao": "Flávio Bolsonaro prometeu salário mínimo de R$ 3 mil",
+      "veredito": "Não prometeu",
+      "explicacao": "Os vídeos com a promessa foram gerados por IA e circularam de forma coordenada no TikTok; a proposta de governo de Flávio não menciona essa medida.",
+      "fonte": "Projeto Comprova",
+      "url": "https://projetocomprova.com.br/publica%C3%A7%C3%B5es/flavio-bolsonaro-nao-prometeu-salario-minimo-de-r-3-mil-informacao-circula-em-videos-com-ia/",
+      "data": "2026-09-02",
+      "tema": "trabalho"
+    }
+  ],
+  "cobertura": [
+    {
+      "titulo": "Eleições 2026: compare os planos de governo de Lula e Flávio",
+      "veiculo": "Poder360",
+      "url": "https://www.poder360.com.br/poder-eleicoes-2026/eleicoes-2026-compare-os-planos-de-governo-de-lula-e-flavio/",
+      "data": "2026-08-21",
+      "resumo": "Compara, tema a tema, os planos registrados pelas duas chapas para 2027-2030, com as convergências em saúde e educação e as diferenças em economia, jornada de trabalho, segurança e Judiciário."
+    },
+    {
+      "titulo": "Eleições 2026: veja os planos para a economia de Lula e Flávio Bolsonaro",
+      "veiculo": "Exame",
+      "url": "https://exame.com/brasil/eleicoes-2026-veja-os-planos-de-economia-de-lula-e-flavio-bolsonaro/",
+      "data": "2026-10-12",
+      "resumo": "Descreve as propostas econômicas dos dois planos: arcabouço fiscal, política industrial e crédito, no caso de Lula; corte de gastos, desregulamentação e revisão de tributos, no caso de Flávio."
+    },
+    {
+      "titulo": "Economia: Lula e Flávio divergem sobre ajuste fiscal e papel do Estado",
+      "veiculo": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/economia-lula-e-flavio-divergem-sobre-ajuste-fiscal-e-papel-do-estado",
+      "data": "2026-10-16",
+      "resumo": "Compara as propostas para contas públicas, tributação e emprego e registra que as duas campanhas reconhecem o problema da dívida pública, mas propõem instrumentos diferentes."
+    },
+    {
+      "titulo": "Flávio quer escolas militares; Lula propõe ampliar educação integral",
+      "veiculo": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-10/flavio-quer-escolas-militares-lula-propoe-ampliar-educacao-integral",
+      "data": "2026-10-15",
+      "resumo": "Apresenta, por etapa de ensino e por tema (financiamento, professores, ensino técnico e superior), as propostas de educação dos dois planos."
+    },
+    {
+      "titulo": "Crédito rural: o que Flávio Bolsonaro e Lula propõem para o Plano Safra",
+      "veiculo": "CNN Brasil",
+      "url": "https://www.cnnbrasil.com.br/agro/credito-rural-o-que-flavio-bolsonaro-e-lula-propoem-para-o-agro/",
+      "data": "2026-10-19",
+      "resumo": "Compara como os dois programas tratam o crédito rural e observa que nenhum deles traz a estimativa completa dos recursos necessários ao setor."
+    }
+  ]
+}

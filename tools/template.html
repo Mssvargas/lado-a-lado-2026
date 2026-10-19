@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lado a Lado 2026</title>
+<meta name="description" content="Compare os planos de governo oficiais de Lula e Flávio Bolsonaro em linguagem simples, com a página de cada trecho.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Lado a Lado 2026: o que Lula e Flávio propõem">
+<meta property="og:description" content="Os planos de governo oficiais comparados tema a tema, em linguagem simples, com o trecho e a página de cada proposta. Checagem de falas e de boatos.">
+<meta property="og:image" content="__SITE_URL__og.png">
+<meta property="og:url" content="__SITE_URL__">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234A47A3'/%3E%3Crect x='6' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3Crect x='18' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&family=Literata:opsz,wght@7..72,600&display=swap">
+<style>
+/* Layout: régua de leitura centrada; abas fixas no topo; cada tema compara os dois planos em colunas gêmeas, idênticas no estilo para não favorecer ninguém. */
+:root {
+  --bg: #F5F6F8;
+  --surface: #FFFFFF;
+  --ink: #161B26;
+  --muted: #586174;
+  --line: #DCE0E8;
+  --accent: #4A47A3;
+  --accent-ink: #FFFFFF;
+  --soft: #ECECF8;
+  --mark: #FFEDA8;
+  --ok: #1D6E49;
+  --part: #8A5D00;
+  --none: #4F5869;
+  --contra: #9B3434;
+  --display: "Literata", Georgia, "Times New Roman", serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140;
+    --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --mark: #5B4A0E;
+    --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140;
+  --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --mark: #5B4A0E;
+  --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+[hidden] { display: none !important; }
+img { max-width: 100%; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; line-height: 1.2; margin: 0; }
+a { color: var(--accent); }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+
+/* Cabeçalho */
+header.top { background: var(--surface); border-bottom: 1px solid var(--line); }
+header.top .wrap { padding-block: 28px 20px; display: grid; gap: 14px; }
+header.top h1 { font-size: clamp(28px, 4.2vw, 40px); }
+header.top p.lede { margin: 0; max-width: 64ch; font-size: 17px; }
+.ballot { display: flex; flex-wrap: wrap; gap: 10px; }
+.ballot .c { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: var(--r); padding: 8px 12px 8px 8px; background: var(--bg); }
+.ballot .num { font-family: var(--mono); font-size: 20px; letter-spacing: .12em; background: var(--ink); color: var(--surface); border-radius: 6px; padding: 2px 8px; }
+.ballot .nm { font-weight: 700; line-height: 1.2; }
+.ballot .pl { font-size: 13px; color: var(--muted); }
+.meta { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 16px; }
+
+/* Abas */
+nav.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+nav.tabs .wrap { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+nav.tabs a { flex: none; text-decoration: none; color: var(--muted); font-weight: 700; padding: 12px 12px 10px; border-bottom: 3px solid transparent; }
+nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+nav.tabs a:hover { color: var(--ink); }
+main .wrap { padding-block: 24px 64px; }
+section.view { display: grid; gap: 20px; }
+
+/* Controles */
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 12px; cursor: pointer; font-size: 14px; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn { border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); border-radius: 8px; padding: 9px 16px; font-weight: 700; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn:disabled { opacity: .55; cursor: default; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface); padding: 6px 12px; cursor: pointer; font-size: 14px; }
+.seg button[aria-pressed="true"] { background: var(--soft); font-weight: 700; }
+.field { display: grid; gap: 6px; }
+.field label { font-weight: 700; font-size: 14px; }
+input[type="search"], select, textarea { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; width: 100%; }
+textarea { min-height: 88px; resize: vertical; }
+.row { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.row > .grow { flex: 1 1 260px; min-width: 0; }
+
+/* Tema */
+.theme-head { display: grid; gap: 6px; }
+.theme-head h2 { font-size: clamp(22px, 3vw, 28px); }
+.theme-head .q { font-size: 17px; color: var(--muted); margin: 0; }
+.cmp { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cmp > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; min-width: 0; }
+.cmp p { margin: 4px 0 0; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.col { display: grid; gap: 10px; min-width: 0; }
+.col-h { display: flex; align-items: center; gap: 10px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
+.col-h .num { font-family: var(--mono); font-size: 14px; background: var(--ink); color: var(--surface); border-radius: 4px; padding: 1px 6px; letter-spacing: .1em; }
+.col-h h3 { font-size: 19px; }
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 8px; }
+.item .prop { font-weight: 700; }
+.item .simple { background: var(--soft); border-radius: 8px; padding: 8px 10px; }
+.item .simple b { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; display: block; color: var(--muted); }
+.item .foot { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 13px; color: var(--muted); }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; font-size: 13px; }
+blockquote.lit { margin: 0; border-left: 3px solid var(--line); padding: 2px 0 2px 12px; font-style: italic; color: var(--muted); }
+.det { font-size: 12px; font-weight: 700; border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; }
+.empty { color: var(--muted); font-style: italic; }
+.pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--bg); }
+td.who { white-space: nowrap; font-weight: 700; }
+
+/* Checar */
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.panel h3 { font-size: 18px; }
+.hits { display: grid; gap: 10px; }
+.hit { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 4px; }
+.hit:first-child { border-top: 0; padding-top: 0; }
+.hit .src { font-size: 13px; color: var(--muted); }
+.verdict { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; border-radius: 999px; padding: 3px 12px; border: 2px solid currentColor; width: fit-content; }
+.v-consta { color: var(--ok); } .v-consta_em_parte { color: var(--part); } .v-nao_consta { color: var(--none); } .v-contraria { color: var(--contra); } .v-nao_e_proposta { color: var(--none); }
+.ai-out { display: grid; gap: 10px; }
+.status { font-size: 14px; color: var(--muted); }
+.legend { display: grid; gap: 6px; font-size: 14px; margin: 0; padding: 0; list-style: none; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+
+/* Checagens */
+.fc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 6px; }
+.fc .claim { font-weight: 700; }
+.fc .tags { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; }
+.tag { border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; color: var(--muted); }
+.tag.vd { color: var(--ink); font-weight: 700; }
+.counts { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--muted); }
+
+/* Íntegra */
+.reader { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 20px; white-space: pre-wrap; max-width: 75ch; font-size: 15px; line-height: 1.6; overflow-wrap: anywhere; }
+.prose { max-width: 70ch; display: grid; gap: 12px; }
+.prose p, .prose ul { margin: 0; }
+.prose li { margin-bottom: 6px; }
+
+@media (max-width: 760px) {
+  .cols, .cmp, .grid2 { grid-template-columns: 1fr; }
+  .col + .col { margin-top: 8px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .item, .fc { transition: border-color .15s; }
+}
+footer.site { border-top: 1px solid var(--line); background: var(--surface); }
+footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--surface); padding: 8px 16px; border-radius: 8px; font-weight: 700; z-index: 20; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">Eleição presidencial 2026 · planos de governo oficiais</div>
+    <h1>Lado a Lado 2026</h1>
+    <p class="lede">O que os planos de governo de Lula e de Flávio Bolsonaro realmente propõem, tema por tema, em linguagem simples. Cada ponto traz o trecho original e a página do documento.</p>
+    <div class="ballot" aria-label="Candidatos, na ordem do número de urna">
+      <div class="c"><span class="num">13</span><div><div class="nm">Lula</div><div class="pl">PT · <i>Diretrizes para o Programa de Transformação do Brasil</i></div></div></div>
+      <div class="c"><span class="num">22</span><div><div class="nm">Flávio Bolsonaro</div><div class="pl">PL · <i>Para o Brasil Vencer o Atraso</i></div></div></div>
+    </div>
+    <div class="meta" id="meta"></div>
+    <div class="row"><button type="button" class="btn" id="shareBtn">Compartilhar este site</button></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Seções">
+  <div class="wrap">
+    <a href="#comparar" data-view="comparar">Comparar propostas</a>
+    <a href="#checar" data-view="checar">Checar uma fala</a>
+    <a href="#checagens" data-view="checagens">Checagens publicadas</a>
+    <a href="#integra" data-view="integra">Planos na íntegra</a>
+    <a href="#metodo" data-view="metodo">Como foi feito</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <section class="view" id="v-comparar" aria-labelledby="t-comparar">
+      <h2 id="t-comparar" class="eyebrow" style="font-family:var(--body)">Escolha um tema</h2>
+      <div class="chips" id="themeChips" role="group" aria-label="Temas"></div>
+      <div class="row" style="justify-content:space-between">
+        <div class="seg" role="group" aria-label="Formato">
+          <button type="button" id="modeCols" aria-pressed="true">Lado a lado</button>
+          <button type="button" id="modeTable" aria-pressed="false">Tabela</button>
+        </div>
+        <span class="status">Candidatos na ordem do número de urna.</span>
+      </div>
+      <div id="themeBody"></div>
+      <div class="pager">
+        <button type="button" class="btn ghost" id="prevTheme">← Tema anterior</button>
+        <button type="button" class="btn ghost" id="nextTheme">Próximo tema →</button>
+      </div>
+    </section>
+
+    <section class="view" id="v-checar" hidden aria-labelledby="t-checar">
+      <div class="prose">
+        <h2 id="t-checar">Ouviu dizer que um candidato vai fazer algo?</h2>
+        <p>Cole a frase abaixo. A ferramenta procura o assunto nos dois planos completos, mostra os trechos com a página e cruza com as checagens publicadas por agências de verificação.</p>
+      </div>
+      <form class="panel" id="checkForm">
+        <div class="field">
+          <label for="fala">A frase ou alegação</label>
+          <textarea id="fala" placeholder="Ex.: Flávio propõe reduzir a maioridade penal para 14 anos"></textarea>
+        </div>
+        <div class="row">
+          <div class="field grow">
+            <label for="falaCand">Sobre quem?</label>
+            <select id="falaCand">
+              <option value="ambos">Procurar nos dois planos</option>
+              <option value="lula">Lula</option>
+              <option value="flavio">Flávio Bolsonaro</option>
+            </select>
+          </div>
+          <button type="submit" class="btn" id="checkBtn">Procurar nos planos</button>
+        </div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:6px">Exemplos</div>
+          <div class="chips" id="examples"></div>
+        </div>
+      </form>
+      <div id="checkOut" class="grid2" hidden>
+        <div class="panel" id="planHits"></div>
+        <div style="display:grid;gap:16px">
+          <div class="panel" id="aiPanel" hidden>
+            <h3>Análise automática</h3>
+            <p class="status" id="aiIntro">Uma inteligência artificial lê os trechos dos dois planos, as checagens desta página e uma busca feita agora em agências de checagem e na imprensa. Depois diz se a frase confere com o que está escrito. Toda citação é conferida com o plano antes de aparecer. Leva até um minuto.</p>
+            <div class="row"><button type="button" class="btn" id="aiBtn">Analisar a frase</button><button type="button" class="btn ghost" id="aiStop" hidden>Parar</button></div>
+            <div class="ai-out" id="aiOut" aria-live="polite"></div>
+          </div>
+          <div class="panel" id="fcHits"></div>
+          <div class="panel">
+            <h3>Onde mais verificar</h3>
+            <p class="status">Agências de checagem com metodologia pública. Procure a frase no site delas.</p>
+            <div class="chips" id="agencies"></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Como ler o resultado</h3>
+        <ul class="legend">
+          <li><span class="verdict v-consta">Consta no plano</span> o plano propõe isso.</li>
+          <li><span class="verdict v-consta_em_parte">Consta em parte</span> o plano trata do assunto, mas com diferença de número, alcance ou condição.</li>
+          <li><span class="verdict v-contraria">Plano diz o contrário</span> o texto do plano vai na direção oposta.</li>
+          <li><span class="verdict v-nao_consta">Não está no plano</span> o assunto não aparece. Isso não prova que a frase é falsa, pois o candidato pode ter dito em outro lugar.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="view" id="v-checagens" hidden aria-labelledby="t-checagens">
+      <div class="prose">
+        <h2 id="t-checagens">O que as agências de checagem apuraram</h2>
+        <p>Falas dos candidatos e alegações que circularam sobre eles, verificadas por agências de checagem. O número de itens é o mesmo para os dois candidatos. O veredito é o da agência, copiado como ela publicou.</p>
+      </div>
+      <div class="row">
+        <div class="field grow"><label for="fcCand">Candidato</label>
+          <select id="fcCand"><option value="">Os dois</option><option value="lula">Lula</option><option value="flavio">Flávio Bolsonaro</option></select></div>
+        <div class="field grow"><label for="fcTipo">Tipo</label>
+          <select id="fcTipo"><option value="">Todos</option><option value="fala">Falas do candidato</option><option value="sobre">Alegações sobre o candidato</option></select></div>
+        <div class="field grow"><label for="fcTema">Tema</label><select id="fcTema"><option value="">Todos</option></select></div>
+      </div>
+      <div class="counts" id="fcCounts"></div>
+      <div class="cols" id="fcList"></div>
+      <div class="prose" id="coverage"></div>
+    </section>
+
+    <section class="view" id="v-integra" hidden aria-labelledby="t-integra">
+      <div class="prose">
+        <h2 id="t-integra">Os planos completos</h2>
+        <p>O texto integral dos dois documentos, página por página, com busca. A numeração é a do PDF.</p>
+      </div>
+      <div class="row">
+        <div class="seg" role="group" aria-label="Plano">
+          <button type="button" data-plan="lula" aria-pressed="true">Lula (13)</button>
+          <button type="button" data-plan="flavio" aria-pressed="false">Flávio Bolsonaro (22)</button>
+        </div>
+        <div class="field grow"><label for="planQ" class="eyebrow">Buscar neste plano</label><input type="search" id="planQ" placeholder="Ex.: salário mínimo"></div>
+      </div>
+      <div id="planSearch" class="panel" hidden></div>
+      <div class="row" style="align-items:center">
+        <button type="button" class="btn ghost" id="pgPrev">← Página anterior</button>
+        <span class="mono" id="pgInfo"></span>
+        <button type="button" class="btn ghost" id="pgNext">Próxima página →</button>
+      </div>
+      <div class="reader" id="reader">Carregando o plano…</div>
+      <div class="prose" id="sourcesBox"></div>
+    </section>
+
+    <section class="view" id="v-metodo" hidden aria-labelledby="t-metodo">
+      <div class="prose">
+        <h2 id="t-metodo">Como esta página foi feita</h2>
+        <p>Esta página não pertence a nenhuma campanha, partido ou ao TSE. Ela organiza o que os próprios planos dizem.</p>
+        <ul>
+          <li><b>Fonte primária.</b> Os planos de governo publicados pelas candidaturas. O de Lula foi registrado no TSE em 08/08/2026. O de Flávio Bolsonaro foi divulgado em 13/08/2026. O texto foi extraído dos PDFs sem edição.</li>
+          <li><b>Mesmo tratamento para os dois.</b> Os temas, os verbos ("propõe", "prevê"), o formato e as cores são os mesmos. A ordem é a do número de urna. Só entra o que o plano propõe fazer. Ficam de fora o balanço de realizações e as críticas ao adversário.</li>
+          <li><b>Cada ponto tem prova.</b> Toda proposta traz um trecho literal e a página. Um script confirmou que cada trecho existe naquela página.</li>
+          <li><b>"Em palavras simples"</b> explica termos e o efeito que o plano pretende. Não avalia se a proposta é boa, viável ou constitucional.</li>
+          <li><b>O selo de detalhamento</b> indica se o plano diz como, quanto ou quando ("Diz como"), se diz só em parte ("Em parte") ou se registra só a intenção ("Só intenção").</li>
+          <li><b>Checagens.</b> Vêm só de agências de verificação reconhecidas (Agência Lupa, Aos Fatos, Estadão Verifica, Projeto Comprova). O número de itens é o mesmo para cada candidato: 7 falas e 5 alegações para cada um. A seleção prioriza propostas e dados, não ataques pessoais, e inclui vereditos de todo tipo. É uma amostra: o link de cada item leva à apuração completa, que traz outras frases checadas.</li>
+          <li><b>Análise automática.</b> Uma IA de uso gratuito recebe três coisas: os trechos dos planos encontrados pela busca, as checagens desta página e o resultado de uma busca feita na hora. Essa busca é restrita a agências de checagem (Lupa, Aos Fatos, Comprova, AFP, Estadão Verifica), à imprensa de grande circulação e ao TSE. Antes de responder, o servidor descarta citação que não exista literalmente no plano e link que não tenha vindo da busca. Mesmo assim a IA pode errar, então confira sempre o trecho e a página.</li>
+          <li><b>Limites.</b> Plano de governo é intenção registrada, não lei nem garantia. Falas em debates e entrevistas podem ir além do plano.</li>
+        </ul>
+        <p class="muted" id="metodoData"></p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Lado a Lado 2026 é uma página independente, sem vínculo com partidos, campanhas ou com o TSE.</span>
+    <span>Fontes: planos de governo das candidaturas (PDFs oficiais) e agências de checagem. <a href="__REPO_URL__" target="_blank" rel="noopener">Código e dados abertos</a>.</span>
+  </div>
+</footer>
+
+<script>
+const COMP = /*__COMPARATIVO__*/null;
+const CHK = /*__CHECAGENS__*/null;
+
+const CAND = {
+  lula:   { nome: "Lula", partido: "PT", numero: "13", plano: "Diretrizes para o Programa de Transformação do Brasil", arquivo: "data/plano-lula.json",
+            pdf: "https://static.congressoemfoco.com.br/2026/08/08/attachment/2026/08/08/32ce89_programa_governo_lula_2026.pdf", pdfVia: "Congresso em Foco" },
+  flavio: { nome: "Flávio Bolsonaro", partido: "PL", numero: "22", plano: "Para o Brasil Vencer o Atraso", arquivo: "data/plano-flavio.json",
+            pdf: "https://static.poder360.com.br/uploads/2026/08/FLAVIO-BOLSONARO-PARA-O-BRASIL-VENCER-O-ATRASO-1-1.pdf", pdfVia: "Poder360" }
+};
+const ORDER = ["lula", "flavio"];
+const TSE_URL = "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/propostas-de-governo-dos-candidatos-ao-cargo-de-presidente-da-republica-eleicoes-2026";
+const AGENCIES = [
+  ["Agência Lupa", "https://lupa.uol.com.br/"],
+  ["Aos Fatos", "https://www.aosfatos.org/"],
+  ["Estadão Verifica", "https://www.estadao.com.br/estadao-verifica/"],
+  ["Projeto Comprova", "https://projetocomprova.com.br/"],
+  ["g1 Fato ou Fake", "https://g1.globo.com/fato-ou-fake/"],
+  ["AFP Checamos", "https://checamos.afp.com/"],
+  ["UOL Confere", "https://noticias.uol.com.br/confere/"],
+  ["TSE Fato ou Boato", "https://www.justicaeleitoral.jus.br/fato-ou-boato/"]
+];
+const EXAMPLES = [
+  "Flávio propõe reduzir a maioridade penal para 14 anos",
+  "Lula propõe acabar com a escala 6x1",
+  "Flávio vai acabar com os programas sociais",
+  "Lula vai acabar com o arcabouço fiscal"
+];
+const DET = { sim: "Diz como", parcial: "Em parte", nao: "Só intenção" };
+const VERD = { consta: "Consta no plano", consta_em_parte: "Consta em parte", nao_consta: "Não está no plano", contraria: "Plano diz o contrário", nao_e_proposta: "Não é sobre proposta" };
+
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} }
+};
+
+/* ---------- Texto: normalização e busca ---------- */
+const fold = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const loose = s => fold(String(s).replace(/-\s*\n\s*/g, "")).replace(/[^a-z0-9%]+/g, " ").trim();
+const STOP = new Set(("a o os as um uma uns umas de do da dos das em no na nos nas por para pra com sem que e ou se ao aos à às é ser foi vai vão vou ir sobre como mais menos muito "
+  + "candidato candidata presidente governo plano proposta propoe propõe propor prometeu promete disse diz dizer quer fazer faz lula flavio flávio bolsonaro inacio inácio silva "
+  + "seu sua seus suas ele ela eles isso esse essa este esta ja já nao não sim tambem também todo toda todos todas ter tem acabar anos verdade mentira falso").split(" ").map(fold));
+function terms(q) {
+  const out = [];
+  for (const w of fold(q).split(/[^a-z0-9%]+/)) {
+    if (w.length < 3 || STOP.has(w)) continue;
+    const stem = w.length > 6 ? w.slice(0, w.length - 2) : w;
+    if (!out.includes(stem)) out.push(stem);
+  }
+  return out;
+}
+const PLANS = {};
+function loadPlan(k) {
+  if (!PLANS[k]) PLANS[k] = fetch(CAND[k].arquivo).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(j => {
+    j.pages.forEach(p => { p.t = p.t.normalize("NFC"); p.f = fold(p.t); p.l = loose(p.t); });
+    return j;
+  });
+  return PLANS[k];
+}
+function scorePage(p, ts) {
+  let s = 0, hit = 0;
+  for (const t of ts) {
+    let i = p.f.indexOf(t), n = 0;
+    while (i !== -1 && n < 8) { n++; i = p.f.indexOf(t, i + t.length); }
+    if (n) { hit++; s += 3 + n; }
+  }
+  if (!hit) return 0;
+  const toc = (p.t.match(/\.{8,}/g) || []).length > 3;
+  return s * hit * (toc ? 0.2 : 1);
+}
+function snippet(p, ts, len = 320) {
+  let best = -1, bestN = -1;
+  for (const t of ts) {
+    let i = p.f.indexOf(t);
+    while (i !== -1) {
+      const win = p.f.slice(Math.max(0, i - 120), i + 200);
+      const n = ts.filter(x => win.includes(x)).length;
+      if (n > bestN) { bestN = n; best = i; }
+      i = p.f.indexOf(t, i + t.length);
+      if (bestN === ts.length) break;
+    }
+  }
+  if (best < 0) best = 0;
+  const a = Math.max(0, best - 120), b = Math.min(p.t.length, a + len);
+  return { a, b, text: p.t.slice(a, b) };
+}
+function highlight(text, ts) {
+  const f = fold(text);
+  const marks = [];
+  for (const t of ts) { let i = f.indexOf(t); while (i !== -1) { marks.push([i, i + t.length]); i = f.indexOf(t, i + t.length); } }
+  marks.sort((x, y) => x[0] - y[0]);
+  let out = "", pos = 0;
+  for (const [s, e] of marks) { if (s < pos) continue; out += esc(text.slice(pos, s)) + "<mark>" + esc(text.slice(s, e)) + "</mark>"; pos = e; }
+  return out + esc(text.slice(pos));
+}
+async function searchPlan(k, q, limit = 4) {
+  const ts = terms(q);
+  if (!ts.length) return { ts, hits: [] };
+  const plan = await loadPlan(k);
+  const hits = plan.pages.map(p => ({ p, s: scorePage(p, ts) })).filter(x => x.s > 0).sort((x, y) => y.s - x.s).slice(0, limit)
+    .map(x => ({ page: x.p.p, ...snippet(x.p, ts) }));
+  return { ts, hits };
+}
+function searchChecks(q, cand, limit = 4) {
+  const ts = terms(q);
+  if (!CHK || !ts.length) return [];
+  return CHK.checagens.map((c, i) => {
+    if (cand && cand !== "ambos" && c.candidato !== cand) return null;
+    const f = fold([c.alegacao, c.explicacao, c.tema].join(" "));
+    const n = ts.filter(t => f.includes(t)).length;
+    return n ? { c, i, n } : null;
+  }).filter(Boolean).sort((a, b) => b.n - a.n).slice(0, limit);
+}
+
+/* ---------- Navegação ---------- */
+const VIEWS = ["comparar", "checar", "checagens", "integra", "metodo"];
+function route() {
+  let h = location.hash.replace("#", "");
+  let theme = null;
+  if (h.startsWith("tema-")) { theme = h.slice(5); h = "comparar"; }
+  if (!VIEWS.includes(h)) h = "comparar";
+  for (const v of VIEWS) $("#v-" + v).hidden = v !== h;
+  document.querySelectorAll("nav.tabs a").forEach(a => a.setAttribute("aria-current", a.dataset.view === h ? "page" : "false"));
+  if (theme && COMP) { const i = COMP.temas.findIndex(t => t.id === theme); if (i >= 0) showTheme(i, false); }
+  if (h === "integra") ensureReader();
+}
+window.addEventListener("hashchange", route);
+
+/* ---------- Comparar ---------- */
+let themeIdx = 0, mode = store.get("lal-mode") || "cols";
+function detBadge(d) { return `<span class="det">${esc(DET[d] || "")}</span>`; }
+function itemHTML(it, k) {
+  if (!it.trecho) return `<div class="item"><div class="empty">${esc(it.proposta)}</div></div>`;
+  const id = "q" + Math.random().toString(36).slice(2, 9);
+  return `<article class="item">
+    <div class="prop">${esc(it.proposta)}</div>
+    <div class="simple"><b>Em palavras simples</b>${esc(it.simples)}</div>
+    <div class="foot">${detBadge(it.detalha)}
+      <button type="button" class="linkbtn" aria-expanded="false" aria-controls="${id}" data-toggle="${id}">Ver trecho original · p. ${esc(it.pagina)}</button>
+      <button type="button" class="linkbtn" data-open="${k}:${esc(it.pagina)}">Abrir a página</button></div>
+    <blockquote class="lit" id="${id}" hidden>“${esc(it.trecho)}”</blockquote>
+  </article>`;
+}
+function showTheme(i, scroll = true) {
+  if (!COMP) return;
+  themeIdx = (i + COMP.temas.length) % COMP.temas.length;
+  const t = COMP.temas[themeIdx];
+  document.querySelectorAll("#themeChips .chip").forEach((c, j) => c.setAttribute("aria-pressed", j === themeIdx ? "true" : "false"));
+  const by = k => t.itens.filter(x => x.candidato === k);
+  let body = `<div class="theme-head"><div class="eyebrow">Tema ${themeIdx + 1} de ${COMP.temas.length}</div><h2>${esc(t.nome)}</h2><p class="q">${esc(t.pergunta)}</p></div>
+    <div class="cmp"><div><div class="eyebrow">Em comum</div><p>${esc(t.em_comum)}</p></div><div><div class="eyebrow">Principal diferença</div><p>${esc(t.diferenca)}</p></div></div>`;
+  if (mode === "cols") {
+    body += `<div class="cols">` + ORDER.map(k => `<div class="col"><div class="col-h"><span class="num">${CAND[k].numero}</span><h3>${esc(CAND[k].nome)}</h3><span class="muted" style="font-size:13px">${CAND[k].partido}</span></div>
+      ${by(k).map(it => itemHTML(it, k)).join("") || `<div class="empty">O plano não traz proposta específica sobre isto.</div>`}</div>`).join("") + `</div>`;
+  } else {
+    body += `<div class="tablewrap"><table><thead><tr><th>Candidato</th><th>O que o plano propõe</th><th>O que isso quer dizer</th><th>Fonte</th></tr></thead><tbody>` +
+      ORDER.flatMap(k => by(k).map(it => `<tr><td class="who">${esc(CAND[k].nome)}</td><td>${esc(it.proposta)}</td><td>${esc(it.simples || "")}</td>
+        <td class="mono" style="white-space:nowrap">${it.pagina ? `<button type="button" class="linkbtn" data-open="${k}:${esc(it.pagina)}">p. ${esc(it.pagina)}</button>` : "—"}<br>${it.trecho ? detBadge(it.detalha) : ""}</td></tr>`)).join("") +
+      `</tbody></table></div>`;
+  }
+  $("#themeBody").innerHTML = body;
+  if (scroll) { history.replaceState(null, "", "#tema-" + t.id); $("#v-comparar").scrollIntoView({ block: "start" }); }
+}
+function initCompare() {
+  if (!COMP) { $("#themeBody").innerHTML = `<p class="empty">O comparativo não carregou.</p>`; return; }
+  $("#themeChips").innerHTML = COMP.temas.map((t, i) => `<button type="button" class="chip" data-i="${i}" aria-pressed="false">${esc(t.nome)}</button>`).join("");
+  $("#themeChips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) showTheme(+b.dataset.i); });
+  $("#prevTheme").onclick = () => showTheme(themeIdx - 1);
+  $("#nextTheme").onclick = () => showTheme(themeIdx + 1);
+  const setMode = m => { mode = m; store.set("lal-mode", m); $("#modeCols").setAttribute("aria-pressed", m === "cols"); $("#modeTable").setAttribute("aria-pressed", m === "table"); showTheme(themeIdx, false); };
+  $("#modeCols").onclick = () => setMode("cols");
+  $("#modeTable").onclick = () => setMode("table");
+  $("#modeCols").setAttribute("aria-pressed", mode === "cols"); $("#modeTable").setAttribute("aria-pressed", mode === "table");
+  showTheme(0, false);
+}
+document.addEventListener("click", e => {
+  const tg = e.target.closest("[data-toggle]");
+  if (tg) { const el = document.getElementById(tg.dataset.toggle); el.hidden = !el.hidden; tg.setAttribute("aria-expanded", String(!el.hidden)); }
+  const op = e.target.closest("[data-open]");
+  if (op) { const [k, p] = op.dataset.open.split(":"); openPage(k, +p); }
+});
+
+/* ---------- Íntegra ---------- */
+let rPlan = "lula", rPage = 1;
+async function renderReader() {
+  document.querySelectorAll("[data-plan]").forEach(b => b.setAttribute("aria-pressed", b.dataset.plan === rPlan));
+  try {
+    const plan = await loadPlan(rPlan);
+    const idx = Math.max(0, plan.pages.findIndex(p => p.p >= rPage));
+    const pg = plan.pages[idx];
+    rPage = pg.p;
+    $("#pgInfo").textContent = `${CAND[rPlan].nome} · página ${pg.p} de ${plan.pages[plan.pages.length - 1].p}`;
+    const q = $("#planQ").value.trim();
+    $("#reader").innerHTML = q ? highlight(pg.t, terms(q)) : esc(pg.t);
+    $("#pgPrev").disabled = idx === 0; $("#pgNext").disabled = idx === plan.pages.length - 1;
+  } catch { $("#reader").textContent = "Não foi possível carregar o texto do plano. Use os links para o PDF abaixo."; }
+}
+function ensureReader() { if (!ensureReader.done) { ensureReader.done = true; renderReader(); } }
+function openPage(k, p) { rPlan = k; rPage = p; ensureReader.done = true; location.hash = "integra"; renderReader().then(() => $("#reader").scrollIntoView({ block: "start" })); }
+function initReader() {
+  document.querySelectorAll("[data-plan]").forEach(b => b.onclick = () => { rPlan = b.dataset.plan; rPage = 1; $("#planSearch").hidden = true; $("#planQ").value = ""; renderReader(); });
+  $("#pgPrev").onclick = async () => { const pl = await loadPlan(rPlan); const i = pl.pages.findIndex(p => p.p === rPage); rPage = pl.pages[Math.max(0, i - 1)].p; renderReader(); };
+  $("#pgNext").onclick = async () => { const pl = await loadPlan(rPlan); const i = pl.pages.findIndex(p => p.p === rPage); rPage = pl.pages[Math.min(pl.pages.length - 1, i + 1)].p; renderReader(); };
+  let tmr;
+  $("#planQ").addEventListener("input", () => { clearTimeout(tmr); tmr = setTimeout(async () => {
+    const q = $("#planQ").value.trim(), box = $("#planSearch");
+    if (!q) { box.hidden = true; renderReader(); return; }
+    const { ts, hits } = await searchPlan(rPlan, q, 8);
+    box.hidden = false;
+    box.innerHTML = `<h3>${hits.length ? `Páginas com “${esc(q)}”` : `Nada encontrado para “${esc(q)}” neste plano`}</h3><div class="hits">` +
+      hits.map(h => `<div class="hit"><div class="src mono">p. ${h.page}</div><div>…${highlight(h.text, ts)}…</div><button type="button" class="linkbtn" data-open="${rPlan}:${h.page}">Ler a página inteira</button></div>`).join("") + `</div>`;
+    renderReader();
+  }, 250); });
+  $("#sourcesBox").innerHTML = `<p><b>PDFs originais:</b> ${ORDER.map(k => `<a href="${CAND[k].pdf}" target="_blank" rel="noopener">${esc(CAND[k].nome)} (cópia publicada por ${CAND[k].pdfVia})</a>`).join(" · ")} · <a href="${TSE_URL}" target="_blank" rel="noopener">página oficial do TSE com os planos</a></p>`;
+}
+
+/* ---------- Checar uma fala ---------- */
+let aiOn = false, lastQuery = null, aiCtl = null;
+function renderAgencies() { $("#agencies").innerHTML = AGENCIES.map(([n, u]) => `<a class="chip" href="${u}" target="_blank" rel="noopener" style="text-decoration:none">${esc(n)}</a>`).join(""); }
+function fcItemHTML(c) {
+  return `<div class="hit"><div><b>${esc(CAND[c.candidato]?.nome || "")}:</b> ${esc(c.alegacao)}</div>
+    <div class="src"><span class="tag vd">${esc(c.veredito)}</span> · ${esc(c.fonte)} · ${esc(fmtDate(c.data))} · <a href="${esc(c.url)}" target="_blank" rel="noopener">ler a checagem</a></div></div>`;
+}
+async function runCheck(q, cand) {
+  lastQuery = { q, cand };
+  $("#checkOut").hidden = false;
+  $("#planHits").innerHTML = `<h3>O que os planos dizem</h3><p class="status">Procurando…</p>`;
+  const ks = cand === "ambos" ? ORDER : [cand];
+  try {
+    const res = await Promise.all(ks.map(k => searchPlan(k, q, 3).then(r => ({ k, ...r }))));
+    if (!res[0].ts.length) { $("#planHits").innerHTML = `<h3>O que os planos dizem</h3><p class="empty">Escreva a frase com mais palavras sobre o assunto (ex.: "maioridade penal", "salário mínimo").</p>`; }
+    else $("#planHits").innerHTML = `<h3>O que os planos dizem</h3><p class="status">Trechos com as palavras da frase, em ordem de relevância. Confira se o trecho trata mesmo do assunto.</p>` +
+      res.map(r => `<div class="hits"><div class="col-h" style="margin-top:6px"><span class="num">${CAND[r.k].numero}</span><h3>${esc(CAND[r.k].nome)}</h3></div>` +
+        (r.hits.length ? r.hits.map(h => `<div class="hit"><div class="src mono">p. ${h.page}</div><div>…${highlight(h.text, r.ts)}…</div><button type="button" class="linkbtn" data-open="${r.k}:${h.page}">Ler a página inteira</button></div>`).join("")
+          : `<p class="empty">Nenhum trecho com essas palavras. O assunto pode não estar no plano ou aparecer com outros termos.</p>`) + `</div>`).join("");
+  } catch { $("#planHits").innerHTML = `<h3>O que os planos dizem</h3><p class="empty">Não foi possível carregar os planos agora.</p>`; }
+  const fcs = searchChecks(q, cand);
+  $("#fcHits").innerHTML = `<h3>Checagens relacionadas</h3>` + (fcs.length ? `<div class="hits">${fcs.map(x => fcItemHTML(x.c)).join("")}</div>`
+    : `<p class="empty">Nenhuma checagem desta página trata do assunto. Veja as agências abaixo.</p>`);
+  $("#aiOut").innerHTML = "";
+}
+function initCheck() {
+  renderAgencies();
+  $("#examples").innerHTML = EXAMPLES.map(x => `<button type="button" class="chip">${esc(x)}</button>`).join("");
+  $("#examples").addEventListener("click", e => { const b = e.target.closest(".chip"); if (!b) return; $("#fala").value = b.textContent; $("#falaCand").value = "ambos"; runCheck(b.textContent, "ambos"); });
+  $("#checkForm").addEventListener("submit", e => { e.preventDefault(); const q = $("#fala").value.trim(); if (q) runCheck(q, $("#falaCand").value); });
+  $("#aiBtn").onclick = runAI;
+  $("#aiStop").onclick = () => aiCtl?.abort();
+  (async () => {
+    try {
+      const r = await fetch("api/checar", { headers: { accept: "application/json" } });
+      const j = r.ok ? await r.json() : null;
+      if (j?.ok && j.ia) { aiOn = true; $("#aiPanel").hidden = false; }
+    } catch { /* site sem servidor: a análise fica escondida */ }
+  })();
+}
+async function runAI() {
+  if (!aiOn || !lastQuery) return;
+  const { q, cand } = lastQuery;
+  const out = $("#aiOut"), st = document.createElement("p");
+  st.className = "status"; out.replaceChildren(st);
+  const passos = ["Procurando nos planos…", "Buscando checagens e reportagens…", "Comparando a frase com o que está escrito…"];
+  let i = 0; st.textContent = passos[0];
+  const tick = setInterval(() => { i = Math.min(i + 1, passos.length - 1); st.textContent = passos[i]; }, 6000);
+  $("#aiBtn").disabled = true; $("#aiStop").hidden = false;
+  aiCtl = new AbortController();
+  try {
+    const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ frase: q, candidato: cand }), signal: aiCtl.signal });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) { st.textContent = j.erro || "Não foi possível concluir a análise agora. Tente de novo."; return; }
+    renderAI(j);
+  } catch (e) {
+    st.textContent = e?.name === "AbortError" ? "Análise interrompida." : "Sem conexão com o servidor. Tente de novo.";
+  } finally { clearInterval(tick); $("#aiBtn").disabled = false; $("#aiStop").hidden = true; }
+}
+function renderAI(r) {
+  const cls = VERD[r?.classificacao] ? r.classificacao : "nao_consta";
+  const ev = Array.isArray(r?.evidencias) ? r.evidencias.filter(e => CAND[e.candidato]) : [];
+  const fcs = Array.isArray(r?.checagens) ? r.checagens.filter(c => c && c.url) : [];
+  const web = Array.isArray(r?.imprensa) ? r.imprensa.filter(x => /^https:\/\//.test(x?.url || "")) : [];
+  $("#aiOut").innerHTML = `<span class="verdict v-${cls}">${esc(VERD[cls])}</span>
+    <p style="margin:0">${esc(r?.explicacao || "")}</p>
+    ${ev.length ? `<div class="hits"><div class="eyebrow">O que está escrito no plano</div>${ev.map(e => `<div class="hit"><div class="src mono">${esc(CAND[e.candidato].nome)} · p. ${esc(e.pagina)}</div><blockquote class="lit">“${esc(e.trecho)}”</blockquote><button type="button" class="linkbtn" data-open="${e.candidato}:${esc(e.pagina)}">Conferir na página</button></div>`).join("")}</div>` : ""}
+    ${r?.descartadas ? `<p class="status">${r.descartadas} citação(ões) descartada(s) porque não aparece(m) literalmente na página indicada.</p>` : ""}
+    ${fcs.length ? `<div class="hits"><div class="eyebrow">Checagens publicadas sobre o assunto</div>${fcs.map(fcItemHTML).join("")}</div>` : ""}
+    ${web.length ? `<div class="hits"><div class="eyebrow">Na imprensa e em agências de checagem (busca feita agora)</div>${web.map(x => `<div class="hit"><div><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo || x.url)}</a></div><div class="src">${esc(x.fonte)}</div><div>${esc(x.resumo)}</div></div>`).join("")}</div>`
+      : (r?.busca_web ? `<p class="status">A busca na imprensa e nas agências não encontrou material sobre esta frase.</p>` : "")}
+    ${r?.limites ? `<p class="status"><b>Limite:</b> ${esc(r.limites)}</p>` : ""}
+    <p class="status">Análise automática. Confira o trecho, a página e os links antes de compartilhar.</p>`;
+}
+
+/* ---------- Checagens ---------- */
+const TEMA_NOME = {};
+function fmtDate(d) { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d || ""); return m ? `${m[3]}/${m[2]}/${m[1]}` : (d || ""); }
+function renderChecks() {
+  if (!CHK) { $("#fcList").innerHTML = `<p class="empty">As checagens não carregaram.</p>`; return; }
+  const c = $("#fcCand").value, t = $("#fcTipo").value, tm = $("#fcTema").value;
+  const list = CHK.checagens.filter(x => (!t || x.tipo === t) && (!tm || x.tema === tm));
+  const counts = ORDER.map(k => `${esc(CAND[k].nome)}: <b class="mono">${list.filter(x => x.candidato === k).length}</b>`).join(" · ");
+  $("#fcCounts").innerHTML = `<span>Itens com estes filtros: ${counts}</span>`;
+  $("#fcList").innerHTML = ORDER.filter(k => !c || c === k).map(k => `<div class="col"><div class="col-h"><span class="num">${CAND[k].numero}</span><h3>${esc(CAND[k].nome)}</h3></div>` +
+    (list.filter(x => x.candidato === k).map(x => `<article class="fc"><div class="tags"><span class="tag">${x.tipo === "fala" ? "Fala do candidato" : "Alegação sobre o candidato"}</span><span class="tag">${esc(TEMA_NOME[x.tema] || "Outro")}</span></div>
+      <div class="claim">${esc(x.alegacao)}</div><div class="tags"><span class="tag vd">Veredito: ${esc(x.veredito)}</span></div><div>${esc(x.explicacao)}</div>
+      <div class="muted" style="font-size:13px">${esc(x.fonte)} · ${esc(fmtDate(x.data))} · <a href="${esc(x.url)}" target="_blank" rel="noopener">ler a checagem completa</a></div></article>`).join("")
+      || `<p class="empty">Nenhum item com estes filtros.</p>`) + `</div>`).join("");
+  $("#fcList").style.gridTemplateColumns = c ? "1fr" : "";
+}
+function initChecks() {
+  if (COMP) COMP.temas.forEach(t => TEMA_NOME[t.id] = t.nome);
+  const ids = CHK ? [...new Set(CHK.checagens.map(x => x.tema))] : [];
+  $("#fcTema").innerHTML = `<option value="">Todos</option>` + ids.map(id => `<option value="${esc(id)}">${esc(TEMA_NOME[id] || "Outro")}</option>`).join("");
+  ["#fcCand", "#fcTipo", "#fcTema"].forEach(s => $(s).addEventListener("change", renderChecks));
+  renderChecks();
+  if (CHK?.cobertura?.length) $("#coverage").innerHTML = `<h3>Reportagens que comparam os planos</h3><ul>` +
+    CHK.cobertura.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>, ${esc(x.veiculo)}, ${esc(fmtDate(x.data))}. ${esc(x.resumo)}</li>`).join("") + `</ul>`;
+}
+
+/* ---------- Início ---------- */
+function initMeta() {
+  const ctx = CHK?.contexto || {};
+  const parts = [];
+  parts.push(`2º turno: domingo, 25/10/2026`);
+  parts.push(`Atualizado em ${esc(fmtDate(CHK?.atualizado_em || "2026-10-19"))}`);
+  parts.push(`<a href="${TSE_URL}" target="_blank" rel="noopener">Planos no site do TSE</a>`);
+  parts.push(`<span>Página independente, sem vínculo com campanhas ou com o TSE</span>`);
+  $("#meta").innerHTML = parts.map(p => `<span>${p}</span>`).join("");
+  $("#metodoData").innerHTML = (ctx.primeiro_turno ? `Contexto: ${esc(ctx.primeiro_turno)} ` : "") + (ctx.planos_atualizados ? `Sobre atualização dos planos: ${esc(ctx.planos_atualizados)}` : "");
+}
+function toast(msg) {
+  const t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); t.textContent = msg;
+  document.body.append(t); setTimeout(() => t.remove(), 2600);
+}
+function initShare() {
+  $("#shareBtn").onclick = async () => {
+    const url = location.href.split("#")[0] + location.hash;
+    const data = { title: "Lado a Lado 2026", text: "O que Lula e Flávio Bolsonaro propõem nos planos de governo oficiais, comparado em linguagem simples:", url };
+    if (navigator.share) { try { await navigator.share(data); return; } catch (e) { if (e?.name === "AbortError") return; } }
+    try { await navigator.clipboard.writeText(url); toast("Link copiado"); } catch { toast(url); }
+  };
+}
+initMeta(); initCompare(); initCheck(); initChecks(); initReader(); initShare(); route();
+</script>
+</body>
+</html>
