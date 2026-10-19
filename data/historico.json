@@ -1,0 +1,755 @@
+{
+ "atualizado_em": "2026-10-19",
+ "nota_metodo": "Os balanços de promessas vêm de levantamentos jornalísticos já publicados, cada um com sua própria lista de promessas, critérios e data; por isso os números não são comparáveis entre veículos nem entre governos. Para cada veículo, mostramos o balanço mais recente que encontramos; ficaram de fora textos de opinião, materiais de partidos e listas que só reúnem promessas de um único status, como só as não cumpridas. Os indicadores econômicos são séries oficiais do IBGE, iguais para todos os governos, e não medem o cumprimento de promessas.",
+ "registros": [
+  {
+   "id": "lula-2002",
+   "candidato": "Luiz Inácio Lula da Silva",
+   "partido": "PT",
+   "eleicao": 2002,
+   "plano_titulo": "Programa de Governo 2002 – Coligação Lula Presidente: Um Brasil para Todos (Crescimento, Emprego e Inclusão Social)",
+   "plano_url": "https://www1.uol.com.br/fernandorodrigues/arquivos/eleicoes02/plano2002-lula.pdf",
+   "plano_nota": "Cópia no arquivo de eleições do jornalista Fernando Rodrigues (UOL). Coligação PT, PCdoB, PL, PMN e PCB.",
+   "resultado": "eleito",
+   "governo": "2003–2006",
+   "vinculo": {
+    "candidato_2026": "lula",
+    "tipo": "mesmo candidato",
+    "explicacao": "Lula é o mesmo candidato de 2026; este foi o plano do seu primeiro mandato."
+   },
+   "rastreadores": [
+    {
+     "fonte": "Revista Época (reprodução no portal Alagoas 24 Horas)",
+     "titulo": "Revista Época faz balanço das promessas de Lula; nota foi 5,2",
+     "url": "https://www.alagoas24horas.com.br/848187/revista-epoca-faz-balanco-das-promessas-de-lula-nota-foi-52/",
+     "data": "2006-09-02",
+     "metodo": "A revista compilou mais de 700 promessas de 2002 (programa, cadernos temáticos, debates e entrevistas); com especialistas sem vínculo com governo, PT ou oposição, escolheu as 111 principais em 16 áreas e deu uma nota a cada uma.",
+     "usa_dados_oficiais": "não informado",
+     "total": 111,
+     "cumpridas": null,
+     "parciais": null,
+     "nao_cumpridas": null,
+     "em_andamento": null,
+     "outros": {},
+     "observacao": "Sem números agregados por status: o balanço dá notas, e a nota média final foi 5,2. A escala das notas está num quadro da edição impressa que a reprodução não traz. Maior nota por área: comércio exterior (7,4); menores: defesa nacional e reforma agrária (3,3). A data é a da reprodução on-line; a reportagem é da edição da Época daquela semana."
+    }
+   ],
+   "exemplos": [
+    {
+     "promessa": "Crescimento médio da economia de 5% ao ano",
+     "status": "nao_cumprida",
+     "explicacao": "Segundo a Época, Lula foi 'reprovado' nesse item, porque o crescimento ficou abaixo da meta.",
+     "fonte": "Revista Época",
+     "url": "https://www.alagoas24horas.com.br/848187/revista-epoca-faz-balanco-das-promessas-de-lula-nota-foi-52/"
+    },
+    {
+     "promessa": "Fome Zero no formato original (cupons de alimentação, cestas básicas e frentes de trabalho)",
+     "status": "nao_cumprida",
+     "explicacao": "A Época diz que o governo abandonou o desenho original e ampliou os programas de transferência de renda já existentes, e cita o caso como descumprimento com efeito positivo, que levou ao Bolsa Família.",
+     "fonte": "Revista Época",
+     "url": "https://www.alagoas24horas.com.br/848187/revista-epoca-faz-balanco-das-promessas-de-lula-nota-foi-52/"
+    }
+   ],
+   "nota": "A reprodução da Época só detalha o veredito de poucas promessas, e por isso há só dois exemplos."
+  },
+  {
+   "id": "lula-2006",
+   "candidato": "Luiz Inácio Lula da Silva",
+   "partido": "PT",
+   "eleicao": 2006,
+   "plano_titulo": "Lula Presidente – Programa de Governo 2007/2010 (citado também como 'Lula de Novo com a Força do Povo')",
+   "plano_url": "https://fpabramo.org.br/csbh/wp-content/uploads/sites/3/2017/04/Programa_de_governo_2007-2010.pdf",
+   "plano_nota": "Cópia no acervo da Fundação Perseu Abramo.",
+   "resultado": "eleito",
+   "governo": "2007–2010",
+   "vinculo": {
+    "candidato_2026": "lula",
+    "tipo": "mesmo candidato",
+    "explicacao": "Lula é o mesmo candidato de 2026; este foi o plano do seu segundo mandato."
+   },
+   "rastreadores": [],
+   "exemplos": [],
+   "nota": "Não encontrei levantamento independente publicado que classifique as promessas de 2006 em cumpridas, parciais e não cumpridas."
+  },
+  {
+   "id": "dilma-2010",
+   "candidato": "Dilma Rousseff",
+   "partido": "PT",
+   "eleicao": 2010,
+   "plano_titulo": "Os 13 compromissos programáticos de Dilma Rousseff para debate na sociedade brasileira",
+   "plano_url": "https://siac.fpabramo.org.br/uploads/acervo/Programa-de-governo-presidencia_2010.pdf",
+   "plano_nota": "Cópia no acervo da Fundação Perseu Abramo.",
+   "resultado": "eleito",
+   "governo": "2011–2014",
+   "vinculo": {
+    "candidato_2026": "lula",
+    "tipo": "mesmo partido",
+    "explicacao": "Dilma Rousseff foi eleita pelo PT, o partido de Lula em 2026."
+   },
+   "rastreadores": [
+    {
+     "fonte": "Folha de S.Paulo",
+     "titulo": "Dilma não cumpriu 43% das promessas de 2010",
+     "url": "https://www1.folha.uol.com.br/poder/2014/09/1524018-dilma-nao-cumpriu-43-das-promessas-de-2010-confira-a-lista-das-69-feitas.shtml",
+     "data": "2014-09-29",
+     "metodo": "A Folha extraiu 69 promessas do documento 'Os 13 compromissos programáticos' e deu a cada uma nota A (100% cumprida), B (realização incompleta, mas com resultado relevante), C (fez pouco, menos da metade) ou D (abandono da ideia original), com dados oficiais e ajuda de especialistas.",
+     "usa_dados_oficiais": "sim",
+     "total": 69,
+     "cumpridas": 22,
+     "parciais": 17,
+     "nao_cumpridas": 14,
+     "em_andamento": null,
+     "outros": {
+      "A – 100% cumprida": 22,
+      "B – realização não completa, mas com resultado relevante": 17,
+      "C – fez pouco, menos da metade do prometido": 16,
+      "D – abandono da ideia original": 14
+     },
+     "observacao": "Aqui 'cumpridas' = nota A, 'parciais' = nota B e 'não cumpridas' = nota D; a nota C (16) fica só em 'outros'. A Folha agrupou A e B como resultado positivo (57%) e C e D como negativo (43%). A lista item a item está em https://www1.folha.uol.com.br/poder/2014/09/1524077-veja-se-as-69-promessas-que-dilma-fez-em-2010-foram-cumpridas.shtml"
+    },
+    {
+     "fonte": "Congresso em Foco",
+     "titulo": "Dilma só cumpriu uma entre dez grandes metas",
+     "url": "https://congressoemfoco.com.br/noticia/53708/dilma-so-cumpriu-uma-entre-dez-grandes-metas",
+     "data": "2014-09-30",
+     "metodo": "A reportagem comparou os principais temas da campanha de 2010 com o que o governo entregou, com base em dados oficiais citados no texto.",
+     "usa_dados_oficiais": "parcial",
+     "total": 10,
+     "cumpridas": 1,
+     "parciais": null,
+     "nao_cumpridas": null,
+     "em_andamento": null,
+     "outros": {},
+     "observacao": "Só traz um número agregado: 1 das 10 grandes metas cumprida 'integralmente, sem relativismos'. As demais são descritas no texto sem contagem por status."
+    }
+   ],
+   "exemplos": [
+    {
+     "promessa": "Incluir medicamentos para hipertensão e diabetes na lista de remédios grátis",
+     "status": "cumprida",
+     "explicacao": "Única meta que o Congresso em Foco considerou cumprida integralmente; o programa atendia mais de 6,8 milhões de pessoas por mês.",
+     "fonte": "Congresso em Foco",
+     "url": "https://congressoemfoco.com.br/noticia/53708/dilma-so-cumpriu-uma-entre-dez-grandes-metas"
+    },
+    {
+     "promessa": "Criar um ProUni para o ensino médio",
+     "status": "nao_cumprida",
+     "explicacao": "Segundo a reportagem, a proposta 'foi esquecida'.",
+     "fonte": "Congresso em Foco",
+     "url": "https://congressoemfoco.com.br/noticia/53708/dilma-so-cumpriu-uma-entre-dez-grandes-metas"
+    },
+    {
+     "promessa": "Fazer cumprir o piso nacional do magistério",
+     "status": "nao_cumprida",
+     "explicacao": "A reportagem diz que a meta 'fracassou', porque a União não pode obrigar estados e municípios a pagar o piso.",
+     "fonte": "Congresso em Foco",
+     "url": "https://congressoemfoco.com.br/noticia/53708/dilma-so-cumpriu-uma-entre-dez-grandes-metas"
+    }
+   ],
+   "nota": "A Folha publica o status de cada promessa em imagens, que não consegui ler; por isso não há exemplos de promessa parcial."
+  },
+  {
+   "id": "dilma-2014",
+   "candidato": "Dilma Rousseff",
+   "partido": "PT",
+   "eleicao": 2014,
+   "plano_titulo": "Mais Mudanças, Mais Futuro – Programa de Governo Dilma Rousseff 2014",
+   "plano_url": "https://www.conjur.com.br/wp-content/uploads/2023/09/programa-governo-dilma-2014.pdf",
+   "plano_nota": "Cópia publicada pelo site Consultor Jurídico (Conjur).",
+   "resultado": "eleito",
+   "governo": "2015–2016",
+   "governo_nota": "Dilma foi afastada em 12/05/2016, e o impeachment foi concluído em 31/08/2016.",
+   "vinculo": {
+    "candidato_2026": "lula",
+    "tipo": "mesmo partido",
+    "explicacao": "Dilma Rousseff foi reeleita pelo PT, o partido de Lula em 2026."
+   },
+   "rastreadores": [
+    {
+     "fonte": "g1 (projeto Promessas dos Políticos)",
+     "titulo": "As promessas de Dilma",
+     "url": "https://especiais.g1.globo.com/politica/2015/as-promessas-de-dilma/",
+     "data": "2015-12-31",
+     "metodo": "Jornalistas do g1 reúnem as promessas do candidato (programa registrado no TSE, entrevistas e debates), separam as que podem ser claramente cobradas e medidas e atualizam o status de cada uma em marcos do mandato, com dados e respostas do governo.",
+     "usa_dados_oficiais": "sim",
+     "total": 55,
+     "cumpridas": 6,
+     "parciais": 24,
+     "nao_cumpridas": 24,
+     "em_andamento": null,
+     "outros": {
+      "cumpriu": 6,
+      "em parte": 24,
+      "não cumpriu ainda": 24,
+      "não avaliada": 1
+     },
+     "observacao": "Balanço com 1 ano de governo, o último publicado: a página avisa que não seria mais atualizada por causa do impeachment. O rótulo literal das 24 não cumpridas é 'não cumpriu ainda'. A contagem foi feita nos dados que alimentam a página."
+    }
+   ],
+   "exemplos": [
+    {
+     "promessa": "Continuar a política de valorização do salário mínimo",
+     "status": "cumprida",
+     "explicacao": "Segundo o g1, o mínimo foi a R$ 788 em 2015, e a Lei 13.152/2015 estendeu a regra de valorização até 2019.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2015/as-promessas-de-dilma/"
+    },
+    {
+     "promessa": "Ampliar o crédito rural",
+     "status": "cumprida",
+     "explicacao": "O g1 registra que o plano de 2015-2016 destinou R$ 28,9 bilhões ao Pronaf, cerca de 20% a mais que na safra anterior.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2015/as-promessas-de-dilma/"
+    },
+    {
+     "promessa": "Expandir o Mais Médicos",
+     "status": "parcial",
+     "explicacao": "O g1 classificou como cumprida em parte: vagas de graduação foram autorizadas, mas a meta não foi atingida.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2015/as-promessas-de-dilma/"
+    },
+    {
+     "promessa": "Ampliar o Pronatec",
+     "status": "parcial",
+     "explicacao": "O programa foi ampliado, mas a meta de 12 milhões de vagas não foi atingida.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2015/as-promessas-de-dilma/"
+    },
+    {
+     "promessa": "Manter a inflação sob controle",
+     "status": "nao_cumprida",
+     "explicacao": "A inflação de 2015 ficou em torno de 10,8% pela estimativa do Banco Central citada pelo g1, mais que o dobro da meta central.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2015/as-promessas-de-dilma/"
+    },
+    {
+     "promessa": "Fazer uma reforma tributária",
+     "status": "nao_cumprida",
+     "explicacao": "O g1 registra que só foram tomadas medidas pontuais.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2015/as-promessas-de-dilma/"
+    }
+   ]
+  },
+  {
+   "id": "haddad-2018",
+   "candidato": "Fernando Haddad",
+   "partido": "PT",
+   "eleicao": 2018,
+   "plano_titulo": "Plano de Governo 2019-2022 – Coligação O Povo Feliz de Novo (PT, PCdoB, PROS)",
+   "plano_url": "https://static.poder360.com.br/2018/10/Plano-de-Governo_HADDAD-13.pdf.pdf",
+   "plano_nota": "Cópia do documento juntado ao processo no TSE (16/10/2018), publicada pelo Poder360.",
+   "resultado": "nao_eleito",
+   "governo": null,
+   "vinculo": {
+    "candidato_2026": "lula",
+    "tipo": "mesmo partido",
+    "explicacao": "Fernando Haddad concorreu pelo PT, o partido de Lula em 2026."
+   },
+   "rastreadores": [],
+   "exemplos": [],
+   "nota": "Não foi eleito, então não há governo para avaliar."
+  },
+  {
+   "id": "lula-2022",
+   "candidato": "Luiz Inácio Lula da Silva",
+   "partido": "PT",
+   "eleicao": 2022,
+   "plano_titulo": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil – Lula Alckmin 2023-2026 (Coligação Brasil da Esperança)",
+   "plano_url": "https://amazonas1.com.br/wp-content/uploads/2022/10/pje-3LULAProposta-de-governo.pdf",
+   "plano_url_alternativa": "https://siac.fpabramo.org.br/uploads/acervo/2022_DEL_ExecutivoFederal_PPG_001_4EjKRd7.pdf",
+   "plano_nota": "O primeiro link é a versão com o nome da Coligação Brasil da Esperança, publicada pelo site Amazonas1. O segundo é a versão divulgada em junho de 2022, no acervo da Fundação Perseu Abramo, com o mesmo título.",
+   "resultado": "eleito",
+   "governo": "2023–2026",
+   "vinculo": {
+    "candidato_2026": "lula",
+    "tipo": "mesmo candidato",
+    "explicacao": "Lula é o mesmo candidato de 2026; este é o plano do mandato atual."
+   },
+   "rastreadores": [
+    {
+     "fonte": "g1 (projeto Promessas dos Políticos)",
+     "titulo": "Promessas de Lula: governo aprovou reforma tributária e isenção do IR, e não recriou Ministério da Segurança",
+     "url": "https://g1.globo.com/politica/noticia/2026/07/22/promessas-de-lula-governo-aprovou-reforma-tributaria-e-isencao-do-ir-e-nao-recriou-ministerio-da-seguranca.ghtml",
+     "data": "2026-07-22",
+     "metodo": "Jornalistas do g1 reúnem as promessas do candidato (programa registrado no TSE, entrevistas e debates), separam as que podem ser claramente cobradas e medidas e atualizam o status de cada uma em marcos do mandato, com dados e respostas do governo.",
+     "usa_dados_oficiais": "sim",
+     "total": 36,
+     "cumpridas": 26,
+     "parciais": 4,
+     "nao_cumpridas": 6,
+     "em_andamento": null,
+     "outros": {
+      "cumpridos integralmente": 26,
+      "cumpridos em parte, ainda com pendências": 4,
+      "não foram cumpridos até o momento": 6
+     },
+     "observacao": "Período de 1/1/2023 a 30/6/2026 (3 anos e meio). Mandato em curso: o g1 informa que o balanço será atualizado quando o mandato terminar."
+    },
+    {
+     "fonte": "Folha de S.Paulo",
+     "titulo": "Lula chega à metade do mandato com 28% das promessas concluídas e 17% paralisadas",
+     "url": "https://www1.folha.uol.com.br/poder/2025/01/lula-chega-a-metade-do-mandato-com-28-das-promessas-concluidas-e-17-paralisadas.shtml",
+     "data": "2025-01-18",
+     "metodo": "A Folha listou 103 promessas a partir do programa de governo, da propaganda eleitoral, da carta de compromissos de 27/10/2022 e de entrevistas; o status veio de informações dos órgãos do próprio governo.",
+     "usa_dados_oficiais": "sim",
+     "total": 103,
+     "cumpridas": 29,
+     "parciais": null,
+     "nao_cumpridas": null,
+     "em_andamento": 30,
+     "outros": {
+      "concluídos": 29,
+      "em andamento": 30,
+      "com execução lenta": 26,
+      "parados": 18
+     },
+     "observacao": "Balanço da metade do mandato, o mais recente da Folha que encontrei. 'Execução lenta' (26) e 'parados' (18) ficam só em 'outros', porque não equivalem a 'não cumprida'."
+    },
+    {
+     "fonte": "Jovem Pan",
+     "titulo": "Fim do orçamento secreto, isenção do IR e mais: o que sobrou das promessas de Lula após seis meses de governo",
+     "url": "https://jovempan.com.br/politica/fim-do-orcamento-secreto-isencao-do-ir-e-mais-o-que-sobrou-das-promessas-de-lula-apos-seis-meses-de-governo/",
+     "data": "2023-07-02",
+     "metodo": "A reportagem confronta promessas da campanha de 2022 com os primeiros seis meses de governo e as agrupa em cumpridas, em andamento, não cumpridas e descumpridas.",
+     "usa_dados_oficiais": "não informado",
+     "total": null,
+     "cumpridas": null,
+     "parciais": null,
+     "nao_cumpridas": null,
+     "em_andamento": null,
+     "outros": {},
+     "observacao": "Sem números agregados. Balanço de seis meses de governo."
+    }
+   ],
+   "exemplos": [
+    {
+     "promessa": "Realizar uma reforma tributária",
+     "status": "cumprida",
+     "explicacao": "Com apoio do governo, o Congresso aprovou em 2023 a reforma que troca cinco tributos pela CBS e pelo IBS.",
+     "fonte": "g1",
+     "url": "https://g1.globo.com/politica/noticia/2026/07/22/promessas-de-lula-governo-aprovou-reforma-tributaria-e-isencao-do-ir-e-nao-recriou-ministerio-da-seguranca.ghtml"
+    },
+    {
+     "promessa": "Zerar o Imposto de Renda para quem ganha até R$ 5 mil",
+     "status": "cumprida",
+     "explicacao": "A proposta foi enviada em março de 2025 e aprovada pelo Congresso em novembro de 2025.",
+     "fonte": "g1",
+     "url": "https://g1.globo.com/politica/noticia/2026/07/22/promessas-de-lula-governo-aprovou-reforma-tributaria-e-isencao-do-ir-e-nao-recriou-ministerio-da-seguranca.ghtml"
+    },
+    {
+     "promessa": "Propor nova legislação trabalhista",
+     "status": "parcial",
+     "explicacao": "O fim da escala 6x1 passou na Câmara, mas não avançou no Senado, e a regulamentação do trabalho por aplicativo não foi votada.",
+     "fonte": "g1",
+     "url": "https://g1.globo.com/politica/noticia/2026/07/22/promessas-de-lula-governo-aprovou-reforma-tributaria-e-isencao-do-ir-e-nao-recriou-ministerio-da-seguranca.ghtml"
+    },
+    {
+     "promessa": "Fim do orçamento secreto e criação de um orçamento participativo",
+     "status": "parcial",
+     "explicacao": "O g1 registra que houve consultas de orçamento participativo em 2023, mas que o Congresso adotou práticas parecidas com outras emendas.",
+     "fonte": "g1",
+     "url": "https://g1.globo.com/politica/noticia/2026/07/22/promessas-de-lula-governo-aprovou-reforma-tributaria-e-isencao-do-ir-e-nao-recriou-ministerio-da-seguranca.ghtml"
+    },
+    {
+     "promessa": "Recriar o Ministério da Segurança Pública",
+     "status": "nao_cumprida",
+     "explicacao": "Não foi recriado; Lula condiciona o ministério à aprovação da PEC da Segurança, parada no Senado.",
+     "fonte": "g1",
+     "url": "https://g1.globo.com/politica/noticia/2026/07/22/promessas-de-lula-governo-aprovou-reforma-tributaria-e-isencao-do-ir-e-nao-recriou-ministerio-da-seguranca.ghtml"
+    },
+    {
+     "promessa": "Universalizar a banda larga nas escolas",
+     "status": "nao_cumprida",
+     "explicacao": "Em abril de 2026, 72,9% das escolas públicas tinham conectividade adequada, segundo o MEC; a universalização não foi entregue.",
+     "fonte": "g1",
+     "url": "https://g1.globo.com/politica/noticia/2026/07/22/promessas-de-lula-governo-aprovou-reforma-tributaria-e-isencao-do-ir-e-nao-recriou-ministerio-da-seguranca.ghtml"
+    }
+   ]
+  },
+  {
+   "id": "bolsonaro-2018",
+   "candidato": "Jair Bolsonaro",
+   "partido": "PSL",
+   "eleicao": 2018,
+   "plano_titulo": "O Caminho da Prosperidade – Proposta de Plano de Governo (Bolsonaro 2018)",
+   "plano_url": "https://static.poder360.com.br/2022/08/proposta-bolsonaro-plano-de-governo-2018-tse.pdf",
+   "plano_nota": "Cópia do PDF registrado no TSE, publicada pelo Poder360.",
+   "resultado": "eleito",
+   "governo": "2019–2022",
+   "vinculo": {
+    "candidato_2026": "flavio",
+    "tipo": "mesmo grupo político, partido diferente na época",
+    "explicacao": "Jair Bolsonaro, pai de Flávio, foi eleito em 2018 pelo PSL e se filiou ao PL, partido de Flávio em 2026, em novembro de 2021."
+   },
+   "rastreadores": [
+    {
+     "fonte": "g1 (projeto Promessas dos Políticos)",
+     "titulo": "As promessas de Bolsonaro",
+     "url": "https://especiais.g1.globo.com/politica/2019/as-promessas-de-bolsonaro/",
+     "data": "2023-01-02",
+     "metodo": "Jornalistas do g1 reúnem as promessas do candidato (programa registrado no TSE, entrevistas e debates), separam as que podem ser claramente cobradas e medidas e atualizam o status de cada uma em marcos do mandato, com dados e respostas do governo.",
+     "usa_dados_oficiais": "sim",
+     "total": 58,
+     "cumpridas": 19,
+     "parciais": 10,
+     "nao_cumpridas": 29,
+     "em_andamento": null,
+     "outros": {
+      "cumpriu": 19,
+      "em parte": 10,
+      "não cumpriu": 29
+     },
+     "observacao": "Balanço final, 'ao final do mandato'. A contagem foi feita nos dados que alimentam a página. Os balanços intermediários do g1 tinham 20 cumpridas aos 3 anos; reproduções na imprensa falaram em 21 aos 3 anos e meio."
+    },
+    {
+     "fonte": "Agência Lupa",
+     "titulo": "Bolsonaro cumpriu apenas 15% das promessas feitas em seu plano de governo",
+     "url": "https://lupa.uol.com.br/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas",
+     "data": "2022-12-23",
+     "metodo": "A Lupa identificou 47 metas mensuráveis no plano de governo de 2018 registrado no TSE e checou cada uma com dados oficiais (Tesouro, Banco Central, Inep, Ministério da Saúde, entre outros).",
+     "usa_dados_oficiais": "sim",
+     "total": 47,
+     "cumpridas": 7,
+     "parciais": 10,
+     "nao_cumpridas": 29,
+     "em_andamento": null,
+     "outros": {
+      "Cumpriu": 7,
+      "Cumpriu Parcialmente": 10,
+      "Não Cumpriu": 29,
+      "De olho": 1
+     },
+     "observacao": "Não consegui abrir o site da Lupa; os números foram conferidos na cópia integral da reportagem guardada no clipping da FGV (url_copia). 'De olho' é uma meta que só poderia ser avaliada depois do fim do ano.",
+     "url_copia": "https://www.cps.fgv.br/cps/bd/clippings/zc3780.pdf"
+    },
+    {
+     "fonte": "Metrópoles",
+     "titulo": "Em 3 anos, Bolsonaro cumpriu 24,5% das promessas de campanha. Confira",
+     "url": "https://www.metropoles.com/brasil/politica-brasil/em-3-anos-bolsonaro-cumpriu-245-das-promessas-de-campanha-confira",
+     "data": "2021-12-27",
+     "metodo": "A reportagem analisou 53 propostas do programa de governo registrado no TSE em 2018 e as comparou com o que foi feito em três anos de mandato.",
+     "usa_dados_oficiais": "parcial",
+     "total": 53,
+     "cumpridas": 13,
+     "parciais": 20,
+     "nao_cumpridas": 20,
+     "em_andamento": null,
+     "outros": {
+      "cumpridas na íntegra": 13,
+      "parcialmente cumpridas ou em andamento": 20,
+      "não saíram do papel": 20
+     },
+     "observacao": "Balanço de 3 anos de governo. Neste levantamento, 'parcialmente cumpridas' e 'em andamento' estão juntas no mesmo grupo."
+    },
+    {
+     "fonte": "Poder360",
+     "titulo": "Em 1.000 dias, Bolsonaro cumpre parte de plano econômico e abandona promessas",
+     "url": "https://www.poder360.com.br/governo/bolsonaro-cumpriu-9-de-20-promessas-de-campanha-em-mil-dias-de-governo/",
+     "data": "2021-09-26",
+     "metodo": "A reportagem selecionou diretrizes do plano de governo e promessas da campanha de 2018 e descreveu o andamento de cada uma após mil dias de governo.",
+     "usa_dados_oficiais": "parcial",
+     "total": null,
+     "cumpridas": null,
+     "parciais": null,
+     "nao_cumpridas": null,
+     "em_andamento": null,
+     "outros": {},
+     "observacao": "Sem números agregados. Balanço de mil dias de governo."
+    },
+    {
+     "fonte": "Jovem Pan",
+     "titulo": "Após meio mandato, veja promessas de Bolsonaro que foram realizadas e as deixadas de lado",
+     "url": "https://jovempan.com.br/politica/apos-meio-mandato-veja-promessas-de-bolsonaro-que-foram-realizadas-e-as-deixadas-de-lado/",
+     "data": "2021-01-02",
+     "metodo": "A reportagem confronta o plano de 2018 com as ações do governo, por tema, com comentários de especialistas.",
+     "usa_dados_oficiais": "não informado",
+     "total": null,
+     "cumpridas": null,
+     "parciais": null,
+     "nao_cumpridas": null,
+     "em_andamento": null,
+     "outros": {},
+     "observacao": "Sem números agregados. Balanço da metade do mandato."
+    }
+   ],
+   "exemplos": [
+    {
+     "promessa": "Ter a independência formal do Banco Central",
+     "status": "cumprida",
+     "explicacao": "Bolsonaro sancionou em 24/02/2021 a lei de autonomia do Banco Central aprovada pelo Congresso.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2019/as-promessas-de-bolsonaro/"
+    },
+    {
+     "promessa": "Desverticalização e desestatização do setor de gás natural",
+     "status": "cumprida",
+     "explicacao": "A Nova Lei do Gás (Lei 14.134/2021) foi sancionada, e em 2019 a Petrobras vendeu 90% das ações da TAG.",
+     "fonte": "Agência Lupa",
+     "url": "https://lupa.uol.com.br/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas"
+    },
+    {
+     "promessa": "Privatizar ou extinguir pelo menos 50 estatais no primeiro ano de governo",
+     "status": "parcial",
+     "explicacao": "O número de estatais caiu mais que o citado, mas a meta não foi atingida no primeiro ano, segundo o g1.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2019/as-promessas-de-bolsonaro/"
+    },
+    {
+     "promessa": "Reformular o Estatuto do Desarmamento",
+     "status": "parcial",
+     "explicacao": "A Lupa classificou como cumprida parcialmente, porque o Congresso aprovou só uma mudança, para proprietários rurais, e as demais vieram por decretos. O g1 classificou a mesma promessa como cumprida.",
+     "fonte": "Agência Lupa",
+     "url": "https://lupa.uol.com.br/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas"
+    },
+    {
+     "promessa": "Ter no máximo 15 ministérios",
+     "status": "nao_cumprida",
+     "explicacao": "Bolsonaro tomou posse com 22 ministros e depois recriou pastas.",
+     "fonte": "g1",
+     "url": "https://especiais.g1.globo.com/politica/2019/as-promessas-de-bolsonaro/"
+    },
+    {
+     "promessa": "Reduzir a maioridade penal para 16 anos",
+     "status": "nao_cumprida",
+     "explicacao": "A maioridade penal continua em 18 anos, e a PEC sobre o tema estava parada no Senado.",
+     "fonte": "Agência Lupa",
+     "url": "https://lupa.uol.com.br/jornalismo/2022/12/23/bolsonaro-promessas-cumpridas"
+    }
+   ]
+  },
+  {
+   "id": "bolsonaro-2022",
+   "candidato": "Jair Bolsonaro",
+   "partido": "PL",
+   "eleicao": 2022,
+   "plano_titulo": "Pelo Bem do Brasil – Plano de Governo 2023-2026",
+   "plano_url": "https://static.poder360.com.br/2022/08/proposta-bolsonaro-plano-de-governo-2022-tse.pdf",
+   "plano_nota": "Cópia do PDF registrado no TSE, publicada pelo Poder360.",
+   "resultado": "nao_eleito",
+   "governo": null,
+   "vinculo": {
+    "candidato_2026": "flavio",
+    "tipo": "mesmo partido",
+    "explicacao": "Jair Bolsonaro, pai de Flávio, disputou a Presidência em 2022 pelo PL, o partido de Flávio em 2026."
+   },
+   "rastreadores": [],
+   "exemplos": [],
+   "nota": "Não foi eleito, então não há governo para avaliar."
+  },
+  {
+   "id": "flavio-sem-candidatura-anterior",
+   "candidato": "Flávio Bolsonaro",
+   "partido": "PL",
+   "eleicao": null,
+   "plano_titulo": null,
+   "plano_url": null,
+   "resultado": null,
+   "governo": null,
+   "vinculo": {
+    "candidato_2026": "flavio",
+    "tipo": "mesmo candidato",
+    "explicacao": "Flávio Bolsonaro nunca concorreu à Presidência antes de 2026; é senador pelo Rio de Janeiro desde 2019."
+   },
+   "rastreadores": [],
+   "exemplos": [],
+   "nota": "Não há plano presidencial anterior de Flávio Bolsonaro para avaliar."
+  }
+ ],
+ "governos": [
+  {
+   "id": "fhc1",
+   "nome": "FHC 1",
+   "presidente": "Fernando Henrique Cardoso",
+   "partido": "PSDB",
+   "inicio": 1995,
+   "fim": 1998
+  },
+  {
+   "id": "fhc2",
+   "nome": "FHC 2",
+   "presidente": "Fernando Henrique Cardoso",
+   "partido": "PSDB",
+   "inicio": 1999,
+   "fim": 2002
+  },
+  {
+   "id": "lula1",
+   "nome": "Lula 1",
+   "presidente": "Luiz Inácio Lula da Silva",
+   "partido": "PT",
+   "inicio": 2003,
+   "fim": 2006
+  },
+  {
+   "id": "lula2",
+   "nome": "Lula 2",
+   "presidente": "Luiz Inácio Lula da Silva",
+   "partido": "PT",
+   "inicio": 2007,
+   "fim": 2010
+  },
+  {
+   "id": "dilma1",
+   "nome": "Dilma 1",
+   "presidente": "Dilma Rousseff",
+   "partido": "PT",
+   "inicio": 2011,
+   "fim": 2014
+  },
+  {
+   "id": "dilma2",
+   "nome": "Dilma 2",
+   "presidente": "Dilma Rousseff",
+   "partido": "PT",
+   "inicio": 2015,
+   "fim": 2016,
+   "nota": "Afastada em 12/05/2016; impeachment concluído em 31/08/2016."
+  },
+  {
+   "id": "temer",
+   "nome": "Temer",
+   "presidente": "Michel Temer",
+   "partido": "PMDB (MDB a partir de dez/2017)",
+   "inicio": 2016,
+   "fim": 2018,
+   "nota": "Interino a partir de 12/05/2016; efetivado em 31/08/2016."
+  },
+  {
+   "id": "bolsonaro",
+   "nome": "Bolsonaro",
+   "presidente": "Jair Bolsonaro",
+   "partido": "PSL; sem partido de nov/2019 a nov/2021; PL a partir de nov/2021",
+   "inicio": 2019,
+   "fim": 2022
+  },
+  {
+   "id": "lula3",
+   "nome": "Lula 3",
+   "presidente": "Luiz Inácio Lula da Silva",
+   "partido": "PT",
+   "inicio": 2023,
+   "fim": 2026,
+   "nota": "Mandato em curso."
+  }
+ ],
+ "indicadores": {
+  "pib_real_pct": {
+   "1995": 4.2,
+   "1996": 2.2,
+   "1997": 3.4,
+   "1998": 0.3,
+   "1999": 0.5,
+   "2000": 4.4,
+   "2001": 1.4,
+   "2002": 3.1,
+   "2003": 1.1,
+   "2004": 5.8,
+   "2005": 3.2,
+   "2006": 4.0,
+   "2007": 6.1,
+   "2008": 5.1,
+   "2009": -0.1,
+   "2010": 7.5,
+   "2011": 4.0,
+   "2012": 1.9,
+   "2013": 3.0,
+   "2014": 0.5,
+   "2015": -3.5,
+   "2016": -3.3,
+   "2017": 1.3,
+   "2018": 1.7,
+   "2019": 1.3,
+   "2020": -3.3,
+   "2021": 4.8,
+   "2022": 3.0,
+   "2023": 3.2,
+   "2024": 3.4,
+   "2025": 2.3
+  },
+  "ipca_pct": {
+   "1995": 22.41,
+   "1996": 9.56,
+   "1997": 5.22,
+   "1998": 1.65,
+   "1999": 8.94,
+   "2000": 5.97,
+   "2001": 7.67,
+   "2002": 12.53,
+   "2003": 9.3,
+   "2004": 7.6,
+   "2005": 5.69,
+   "2006": 3.14,
+   "2007": 4.46,
+   "2008": 5.9,
+   "2009": 4.31,
+   "2010": 5.91,
+   "2011": 6.5,
+   "2012": 5.84,
+   "2013": 5.91,
+   "2014": 6.41,
+   "2015": 10.67,
+   "2016": 6.29,
+   "2017": 2.95,
+   "2018": 3.75,
+   "2019": 4.31,
+   "2020": 4.52,
+   "2021": 10.06,
+   "2022": 5.79,
+   "2023": 4.62,
+   "2024": 4.83,
+   "2025": 4.26
+  },
+  "desocupacao_pct": {
+   "2012": 7.4,
+   "2013": 7.3,
+   "2014": 7.0,
+   "2015": 8.9,
+   "2016": 11.6,
+   "2017": 12.6,
+   "2018": 12.1,
+   "2019": 11.8,
+   "2020": 13.7,
+   "2021": 14.0,
+   "2022": 9.6,
+   "2023": 7.7,
+   "2024": 6.6,
+   "2025": 5.6
+  },
+  "fontes": {
+   "pib_real_pct": "https://sidra.ibge.gov.br/tabela/6784",
+   "ipca_pct": "https://sidra.ibge.gov.br/tabela/1737",
+   "desocupacao_pct": "https://sidra.ibge.gov.br/tabela/4562"
+  },
+  "fontes_complementares": {
+   "pib_real_pct_2024_2026": "https://sidra.ibge.gov.br/tabela/5932",
+   "pib_real_pct_1995": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='SCN10_PIBG10')",
+   "desocupacao_trimestral": "https://sidra.ibge.gov.br/tabela/4099"
+  },
+  "parcial_2026": {
+   "pib_real_pct": {
+    "valor": 1.9,
+    "periodo": "1º semestre de 2026 contra o 1º semestre de 2025",
+    "fonte": "https://sidra.ibge.gov.br/tabela/5932"
+   },
+   "ipca_pct": {
+    "valor": 3.95,
+    "periodo": "acumulado de janeiro a setembro de 2026 (4,58% em 12 meses até setembro)",
+    "fonte": "https://sidra.ibge.gov.br/tabela/1737"
+   },
+   "desocupacao_pct": {
+    "valor": null,
+    "periodo": "Ainda não há taxa anual de 2026. Taxas trimestrais: 6,1% no 1º trimestre e 5,4% no 2º trimestre.",
+    "fonte": "https://sidra.ibge.gov.br/tabela/4099"
+   }
+  },
+  "notas": [
+   "PIB: crescimento real (variação em volume), em %. De 1996 a 2023 vem das Contas Nacionais anuais do IBGE (SIDRA, tabela 6784). 2024 e 2025 vêm das Contas Nacionais Trimestrais (SIDRA, tabela 5932, taxa acumulada em quatro trimestres no 4º trimestre) e ainda podem ser revistos. 1995 vem do Ipeadata (série SCN10_PIBG10, do Sistema de Contas Nacionais do IBGE, referência 1985) e foi arredondado de 4,22.",
+   "IPCA: variação acumulada de janeiro a dezembro de cada ano, em % (IBGE, SIDRA, tabela 1737).",
+   "Desocupação: taxa anual da PNAD Contínua (IBGE, SIDRA, tabela 4562), pessoas de 14 anos ou mais, já com a reponderação da pesquisa feita pelo IBGE em 2025. A série começa em 2012. Antes disso, a pesquisa oficial era a PME, que cobria só seis regiões metropolitanas e não é comparável.",
+   "A taxa anual da tabela 4562 pode diferir da média das quatro taxas trimestrais, que às vezes aparece no noticiário. Por exemplo, em 2021 a tabela anual dá 14,0%, e a média dos trimestres da tabela 4099 dá cerca de 13,2%.",
+   "Valores de 2026 são parciais e ficam separados em 'parcial_2026'; não devem ser comparados com anos fechados.",
+   "Os indicadores medem a economia no período de cada governo. Não medem o cumprimento de promessas e dependem também de fatores fora do controle do governo, como crises internacionais e a pandemia de 2020."
+  ]
+ }
+}

@@ -1,0 +1,92 @@
+[
+ {
+  "id": "flavio",
+  "candidato": "Flávio Bolsonaro",
+  "partido": "PL",
+  "ano": 2026,
+  "titulo": "Para o Brasil Vencer o Atraso",
+  "arquivo": "data/plano-flavio.json",
+  "pdf": "https://static.poder360.com.br/uploads/2026/08/FLAVIO-BOLSONARO-PARA-O-BRASIL-VENCER-O-ATRASO-1-1.pdf"
+ },
+ {
+  "id": "lula",
+  "candidato": "Lula",
+  "partido": "PT",
+  "ano": 2026,
+  "titulo": "Diretrizes para o Programa de Transformação do Brasil",
+  "arquivo": "data/plano-lula.json",
+  "pdf": "https://static.congressoemfoco.com.br/2026/08/08/attachment/2026/08/08/32ce89_programa_governo_lula_2026.pdf"
+ },
+ {
+  "id": "bolsonaro-2022",
+  "candidato": "Jair Bolsonaro",
+  "partido": "PL",
+  "ano": 2022,
+  "titulo": "Pelo Bem do Brasil – Plano de Governo 2023-2026",
+  "arquivo": "data/planos/bolsonaro-2022.json",
+  "pdf": "https://static.poder360.com.br/2022/08/proposta-bolsonaro-plano-de-governo-2022-tse.pdf"
+ },
+ {
+  "id": "lula-2022",
+  "candidato": "Luiz Inácio Lula da Silva",
+  "partido": "PT",
+  "ano": 2022,
+  "titulo": "Diretrizes para o Programa de Reconstrução e Transformação do Brasil – Lula Alckmin 2023-2026 (Coligação Brasil da Esperança)",
+  "arquivo": "data/planos/lula-2022.json",
+  "pdf": "https://amazonas1.com.br/wp-content/uploads/2022/10/pje-3LULAProposta-de-governo.pdf"
+ },
+ {
+  "id": "haddad-2018",
+  "candidato": "Fernando Haddad",
+  "partido": "PT",
+  "ano": 2018,
+  "titulo": "Plano de Governo 2019-2022 – Coligação O Povo Feliz de Novo (PT, PCdoB, PROS)",
+  "arquivo": "data/planos/haddad-2018.json",
+  "pdf": "https://static.poder360.com.br/2018/10/Plano-de-Governo_HADDAD-13.pdf.pdf"
+ },
+ {
+  "id": "bolsonaro-2018",
+  "candidato": "Jair Bolsonaro",
+  "partido": "PSL",
+  "ano": 2018,
+  "titulo": "O Caminho da Prosperidade – Proposta de Plano de Governo (Bolsonaro 2018)",
+  "arquivo": "data/planos/bolsonaro-2018.json",
+  "pdf": "https://static.poder360.com.br/2022/08/proposta-bolsonaro-plano-de-governo-2018-tse.pdf"
+ },
+ {
+  "id": "dilma-2014",
+  "candidato": "Dilma Rousseff",
+  "partido": "PT",
+  "ano": 2014,
+  "titulo": "Mais Mudanças, Mais Futuro – Programa de Governo Dilma Rousseff 2014",
+  "arquivo": "data/planos/dilma-2014.json",
+  "pdf": "https://www.conjur.com.br/wp-content/uploads/2023/09/programa-governo-dilma-2014.pdf"
+ },
+ {
+  "id": "dilma-2010",
+  "candidato": "Dilma Rousseff",
+  "partido": "PT",
+  "ano": 2010,
+  "titulo": "Os 13 compromissos programáticos de Dilma Rousseff para debate na sociedade brasileira",
+  "arquivo": "data/planos/dilma-2010.json",
+  "pdf": "https://siac.fpabramo.org.br/uploads/acervo/Programa-de-governo-presidencia_2010.pdf"
+ },
+ {
+  "id": "lula-2006",
+  "candidato": "Luiz Inácio Lula da Silva",
+  "partido": "PT",
+  "ano": 2006,
+  "titulo": "Lula Presidente – Programa de Governo 2007/2010 (citado também como 'Lula de Novo com a Força do Povo')",
+  "arquivo": "data/planos/lula-2006.json",
+  "pdf": "https://fpabramo.org.br/csbh/wp-content/uploads/sites/3/2017/04/Programa_de_governo_2007-2010.pdf"
+ },
+ {
+  "id": "lula-2002",
+  "candidato": "Luiz Inácio Lula da Silva",
+  "partido": "PT",
+  "ano": 2002,
+  "titulo": "Programa de Governo 2002 – Coligação Lula Presidente: Um Brasil para Todos (Crescimento, Emprego e Inclusão Social)",
+  "arquivo": "data/planos/lula-2002.json",
+  "pdf": "https://www1.uol.com.br/fernandorodrigues/arquivos/eleicoes02/plano2002-lula.pdf"
+ }
+]

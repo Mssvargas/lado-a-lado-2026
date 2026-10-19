@@ -13,17 +13,35 @@ linguagem simples, com o trecho literal e a página do PDF.
   vivo em agências de checagem e na imprensa.
 - **Checagens publicadas**: 12 por candidato (7 falas e 5 alegações), de agências de
   checagem reconhecidas.
-- **Planos na íntegra**: o texto dos dois planos, página por página, com busca.
+- **Esquerda ou direita?**: cada proposta classificada pelo método do Manifesto Project
+  (índice RILE), comparada com a ideologia que o partido declara e com escalas de
+  especialistas. Aceita também uma frase livre ("Lula quer privatizar a Petrobras").
+- **Ideologias**: definição, origem, pensadores, obras, propostas, críticas de mais de
+  um lado, países que se enquadram e comparação entre duas ideologias.
+- **Promessas anteriores**: planos anteriores do mesmo candidato ou partido, com a
+  porcentagem de promessas cumpridas, parciais e não cumpridas segundo levantamentos
+  independentes, e indicadores oficiais (IBGE) iguais para todos os governos.
+- **Eleições desde 1891**: candidatos, partidos e votos de todas as eleições
+  presidenciais.
+- **Planos na íntegra**: o texto de todos os planos cadastrados, página por página, com
+  busca.
+- **Aparência**: tema claro, escuro ou automático (segue o sistema).
 
 ## Estrutura
 
 | Caminho | Conteúdo |
-|---|---|
+| --- | --- |
 | `index.html` | O site, gerado por `tools/build.py`. Não editar à mão. |
 | `tools/template.html` | Fonte do site (HTML, CSS e JS). |
 | `data/comparativo.json` | Temas e propostas, com trecho literal e página. |
 | `data/checagens.json` | Checagens de agências e reportagens comparativas. |
-| `data/plano-*.json` | Texto integral dos planos, por página do PDF. |
+| `data/plano-*.json`, `data/planos/` | Texto integral dos planos, por página do PDF. |
+| `data/planos.json` | Índice de todos os planos cadastrados. |
+| `data/espectro.json` | Classificação esquerda–direita (Manifesto Project) e partidos. |
+| `data/ideologias.json` | Enciclopédia de ideologias, dimensões, relações e países. |
+| `data/historico.json` | Planos anteriores, levantamentos de promessas e indicadores oficiais. |
+| `data/eleicoes.json` | Eleições presidenciais desde 1891. |
+| `tools/add_plano.py` | Converte o PDF de um plano e o registra no site. |
 | `api/checar.js` | Função de servidor (Vercel) da análise automática. |
 | `og.png` | Prévia do link (WhatsApp e redes), gerada por `tools/og.py`. |
 
@@ -32,6 +50,24 @@ Para mudar conteúdo, edite `data/*.json` ou `tools/template.html` e rode:
 ```bash
 python tools/build.py
 ```
+
+## Adicionar um candidato ou um plano
+
+1. Baixe o PDF do plano (o TSE publica os planos de cada eleição desde 2010).
+2. Rode:
+
+   ```bash
+   python tools/add_plano.py plano.pdf --id nome-2030 --candidato "Nome" \
+       --partido SIGLA --ano 2030 --titulo "Título do plano" --pdf-url https://...
+   ```
+
+   O plano entra na aba "Planos na íntegra" e na busca.
+3. Para a eleição aparecer no arquivo, acrescente o ano e os candidatos em
+   `data/eleicoes.json`.
+4. Para o comparativo tema a tema e a classificação esquerda–direita, acrescente os
+   itens em `data/comparativo.json` e `data/espectro.json`, seguindo as mesmas regras
+   (trecho literal, página, mesmo tratamento para todos).
+5. Rode `python tools/build.py` e publique.
 
 ## Hospedagem
 
@@ -42,7 +78,7 @@ python tools/build.py
   análise.
 
 | Variável | Para quê |
-|---|---|
+| --- | --- |
 | `GROQ_API_KEY`, `CEREBRAS_API_KEY`, `OPENROUTER_API_KEY`, `GEMINI_API_KEY` | IA gratuita. Basta uma, e a fila segue nessa ordem. |
 | `TAVILY_API_KEY` | Busca ao vivo em agências de checagem e imprensa. |
 | `WEB_DOMINIOS` | Opcional: domínios extras para a busca, separados por vírgula. |

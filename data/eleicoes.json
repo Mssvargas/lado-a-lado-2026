@@ -1,0 +1,2556 @@
+{
+ "atualizado_em": "2026-10-19",
+ "nota": "Votos das eleições diretas de 1945–2026 vêm do Repositório de Dados Eleitorais e da totalização oficial do TSE (1994 somado à votação no exterior publicada pelo TSE; 2026 só com o 1º turno, pois o 2º turno de 25/10/2026 ainda não ocorreu); antes de 1945 os números são incertos: o vencedor foi conferido com a Secretaria do TSE (Anuário Estatístico do IBGE, 1955) e os demais candidatos e as eleições indiretas vêm de Nohlen (Elections in the Americas, 2005), CPDOC/FGV e imprensa, via Wikipédia, e os planos de governo de 2010–2026 estão no pacote proposta_governo do TSE indicado nas fontes. Percentuais: 1989–2026 sobre votos válidos (sem brancos e nulos); 1945–1960 sobre a soma dos votos dados a candidatos; Primeira República sobre a soma dos candidatos listados, sem votos dispersos; eleições indiretas sobre os votos dados a candidatos, sem abstenções.",
+ "eleicoes": [
+  {
+   "ano": 1891,
+   "tipo": "indireta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1891-02-25"
+   ],
+   "observacao": "Eleição indireta pelo Congresso Constituinte, prevista nas disposições transitórias da Constituição de 1891. Presidente e vice eram votados separadamente; Floriano Peixoto foi eleito vice e assumiu a Presidência após a renúncia de Deodoro, em novembro de 1891.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1891",
+    "https://en.wikipedia.org/wiki/1891_Brazilian_presidential_election",
+    "https://www.marechaldeodoro.al.gov.br/a-cidade/conheca-o-marechal-deodoro-da-fonseca/o-congresso-nacional-constituinte-de-1890/"
+   ],
+   "candidatos": [
+    {
+     "nome": "Deodoro da Fonseca",
+     "partido": null,
+     "votos_1t": 129,
+     "pct_1t": 55.6,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Prudente de Morais",
+     "partido": "PRP",
+     "votos_1t": 97,
+     "pct_1t": 41.81,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Floriano Peixoto",
+     "partido": null,
+     "votos_1t": 3,
+     "pct_1t": 1.29,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Joaquim Saldanha Marinho",
+     "partido": null,
+     "votos_1t": 2,
+     "pct_1t": 0.86,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Higino Duarte Pereira",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.43,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1894,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1894-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam. Primeira eleição presidencial direta. Os totais da época são incertos: para Prudente de Morais, a Secretaria do TSE (reproduzida no Anuário Estatístico do IBGE de 1955) registra 276.583 votos; outras compilações trazem 290.883. Usado o valor do TSE.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1894"
+   ],
+   "candidatos": [
+    {
+     "nome": "Prudente de Morais",
+     "partido": "PRF",
+     "votos_1t": 276583,
+     "pct_1t": 84.42,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Afonso Pena",
+     "partido": null,
+     "votos_1t": 38291,
+     "pct_1t": 11.69,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Cesário Alvim",
+     "partido": null,
+     "votos_1t": 3719,
+     "pct_1t": 1.14,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Barbosa",
+     "partido": null,
+     "votos_1t": 3718,
+     "pct_1t": 1.13,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Luís de Almeida Couto",
+     "partido": null,
+     "votos_1t": 3437,
+     "pct_1t": 1.05,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Lauro Sodré",
+     "partido": null,
+     "votos_1t": 1876,
+     "pct_1t": 0.57,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1898,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1898-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1898",
+    "https://en.wikipedia.org/wiki/1898_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Campos Sales",
+     "partido": "PRP",
+     "votos_1t": 420286,
+     "pct_1t": 91.52,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Lauro Sodré",
+     "partido": "PRF",
+     "votos_1t": 38929,
+     "pct_1t": 8.48,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1902,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1902-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1902",
+    "https://en.wikipedia.org/wiki/1902_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Rodrigues Alves",
+     "partido": "PRP",
+     "votos_1t": 592039,
+     "pct_1t": 92.51,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Quintino Bocaiúva",
+     "partido": null,
+     "votos_1t": 42542,
+     "pct_1t": 6.65,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ubaldino do Amaral Fontoura",
+     "partido": null,
+     "votos_1t": 5371,
+     "pct_1t": 0.84,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1906,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1906-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam. Candidatura única de consenso das oligarquias estaduais; Afonso Pena morreu no cargo em 1909 e foi sucedido pelo vice, Nilo Peçanha.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1906",
+    "https://en.wikipedia.org/wiki/1906_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Afonso Pena",
+     "partido": "PRM",
+     "votos_1t": 288285,
+     "pct_1t": 98.21,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Lauro Sodré",
+     "partido": null,
+     "votos_1t": 4865,
+     "pct_1t": 1.66,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Barbosa",
+     "partido": null,
+     "votos_1t": 207,
+     "pct_1t": 0.07,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Campos Sales",
+     "partido": null,
+     "votos_1t": 95,
+     "pct_1t": 0.03,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Severino Vieira",
+     "partido": null,
+     "votos_1t": 78,
+     "pct_1t": 0.03,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1910,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1910-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam. Primeira disputa presidencial competitiva da República: a candidatura de Rui Barbosa ficou conhecida como Campanha Civilista, apoiada por São Paulo e Bahia.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1910",
+    "https://en.wikipedia.org/wiki/1910_Brazilian_presidential_election",
+    "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+   ],
+   "candidatos": [
+    {
+     "nome": "Hermes da Fonseca",
+     "partido": "PRC",
+     "votos_1t": 403867,
+     "pct_1t": 64.44,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Barbosa",
+     "partido": null,
+     "votos_1t": 222822,
+     "pct_1t": 35.56,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1914,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1914-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1914",
+    "https://en.wikipedia.org/wiki/1914_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Venceslau Brás",
+     "partido": "PRM",
+     "votos_1t": 532107,
+     "pct_1t": 91.76,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Barbosa",
+     "partido": "PRL",
+     "votos_1t": 47782,
+     "pct_1t": 8.24,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1918,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1918-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam. Rodrigues Alves foi eleito, mas adoeceu e morreu em janeiro de 1919 sem tomar posse; o vice Delfim Moreira assumiu e nova eleição foi convocada.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1918"
+   ],
+   "candidatos": [
+    {
+     "nome": "Rodrigues Alves",
+     "partido": "PRP",
+     "votos_1t": 386467,
+     "pct_1t": 99.54,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Nilo Peçanha",
+     "partido": null,
+     "votos_1t": 1768,
+     "pct_1t": 0.46,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1919,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1919-04-13"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam. Eleição extraordinária convocada após a morte do presidente eleito Rodrigues Alves.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1919",
+    "https://en.wikipedia.org/wiki/1919_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Epitácio Pessoa",
+     "partido": null,
+     "votos_1t": 286373,
+     "pct_1t": 71.07,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Barbosa",
+     "partido": null,
+     "votos_1t": 116414,
+     "pct_1t": 28.89,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Altino Arantes",
+     "partido": null,
+     "votos_1t": 161,
+     "pct_1t": 0.04,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1922,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1922-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam. Nilo Peçanha concorreu pela Reação Republicana, aliança de estados de oposição à candidatura oficial.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1922",
+    "https://en.wikipedia.org/wiki/1922_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Artur Bernardes",
+     "partido": "PRM",
+     "votos_1t": 466877,
+     "pct_1t": 59.51,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Nilo Peçanha",
+     "partido": null,
+     "votos_1t": 317714,
+     "pct_1t": 40.49,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1926,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1926-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1926",
+    "https://en.wikipedia.org/wiki/1926_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Washington Luís",
+     "partido": "PRP",
+     "votos_1t": 688528,
+     "pct_1t": 99.84,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Assis Brasil",
+     "partido": null,
+     "votos_1t": 1116,
+     "pct_1t": 0.16,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1930,
+   "tipo": "direta",
+   "periodo": "Primeira República",
+   "datas": [
+    "1930-03-01"
+   ],
+   "observacao": "Voto direto, aberto e restrito: só votavam homens alfabetizados maiores de 21 anos; mulheres, analfabetos, mendigos, praças e religiosos de ordem monástica não votavam. Júlio Prestes foi eleito, mas não tomou posse: o movimento armado de outubro de 1930 depôs Washington Luís e levou Getúlio Vargas ao poder como chefe do Governo Provisório.",
+   "fontes": [
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1930",
+    "https://atlas.fgv.br/marcos/revolucao-de-1930/mapas/eleicao-presidencial-de-1930"
+   ],
+   "candidatos": [
+    {
+     "nome": "Júlio Prestes",
+     "partido": "PRP",
+     "votos_1t": 1091709,
+     "pct_1t": 59.51,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Getúlio Vargas",
+     "partido": "Aliança Liberal",
+     "votos_1t": 742794,
+     "pct_1t": 40.49,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1934,
+   "tipo": "indireta",
+   "periodo": "Era Vargas",
+   "datas": [
+    "1934-07-17"
+   ],
+   "observacao": "Eleição indireta pela Assembleia Nacional Constituinte, um dia após a promulgação da Constituição de 1934. O mandato deveria terminar em 1938, mas o golpe do Estado Novo (1937) cancelou a eleição prevista e Vargas permaneceu no poder até 1945.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1934",
+    "https://en.wikipedia.org/wiki/1934_Brazilian_presidential_election",
+    "https://atlas.fgv.br/verbete/5740"
+   ],
+   "candidatos": [
+    {
+     "nome": "Getúlio Vargas",
+     "partido": null,
+     "votos_1t": 175,
+     "pct_1t": 70.56,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Borges de Medeiros",
+     "partido": "PRR",
+     "votos_1t": 59,
+     "pct_1t": 23.79,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Góis Monteiro",
+     "partido": null,
+     "votos_1t": 4,
+     "pct_1t": 1.61,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Protógenes Guimarães",
+     "partido": null,
+     "votos_1t": 2,
+     "pct_1t": 0.81,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Raul Fernandes",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Artur Bernardes",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Plínio Salgado",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Antônio Carlos Ribeiro de Andrada",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Afrânio de Melo Franco",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Oscar Weinschenck",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Paim Filho",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Levi Carneiro",
+     "partido": null,
+     "votos_1t": 1,
+     "pct_1t": 0.4,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1945,
+   "tipo": "direta",
+   "periodo": "República de 1946",
+   "datas": [
+    "1945-12-02"
+   ],
+   "observacao": "Voto direto e secreto, sem segundo turno: vencia o mais votado, sem exigência de maioria absoluta. Analfabetos não votavam. Primeira eleição presidencial após o fim do Estado Novo. Votos do repositório do TSE; o Anuário Estatístico do IBGE de 1955, citando a Secretaria do TSE, registra 3.251.507 votos para Dutra.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_uf/votacao_candidato_uf_1945.zip",
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf"
+   ],
+   "candidatos": [
+    {
+     "nome": "Eurico Gaspar Dutra",
+     "partido": "PSD",
+     "votos_1t": 3255405,
+     "pct_1t": 55.38,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Eduardo Gomes",
+     "partido": "UDN",
+     "votos_1t": 2042414,
+     "pct_1t": 34.74,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Yedo Fiúza",
+     "partido": "PCB",
+     "votos_1t": 570506,
+     "pct_1t": 9.71,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Mário Rolim Teles",
+     "partido": "PAN",
+     "votos_1t": 10004,
+     "pct_1t": 0.17,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1950,
+   "tipo": "direta",
+   "periodo": "República de 1946",
+   "datas": [
+    "1950-10-03"
+   ],
+   "observacao": "Voto direto e secreto, sem segundo turno: vencia o mais votado, sem exigência de maioria absoluta. Analfabetos não votavam. Getúlio Vargas voltou à Presidência pelo voto direto; morreu no cargo em agosto de 1954.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_uf/votacao_candidato_uf_1950.zip",
+    "https://seculoxx.ibge.gov.br/images/seculoxx/arquivos_download/representacao_politica/1955/rep_polit_1955aeb_1.pdf"
+   ],
+   "candidatos": [
+    {
+     "nome": "Getúlio Vargas",
+     "partido": "PTB",
+     "votos_1t": 3849040,
+     "pct_1t": 48.73,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Eduardo Gomes",
+     "partido": "UDN",
+     "votos_1t": 2342384,
+     "pct_1t": 29.66,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Cristiano Machado",
+     "partido": "PSD",
+     "votos_1t": 1697193,
+     "pct_1t": 21.49,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "João Mangabeira",
+     "partido": "PSB",
+     "votos_1t": 9466,
+     "pct_1t": 0.12,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1955,
+   "tipo": "direta",
+   "periodo": "República de 1946",
+   "datas": [
+    "1955-10-03"
+   ],
+   "observacao": "Voto direto e secreto, sem segundo turno: vencia o mais votado, sem exigência de maioria absoluta. Analfabetos não votavam. A posse de Juscelino Kubitschek foi assegurada pelo movimento militar de 11 de novembro de 1955, liderado pelo general Henrique Lott.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_uf/votacao_candidato_uf_1955.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Juscelino Kubitschek",
+     "partido": "PSD",
+     "votos_1t": 3077411,
+     "pct_1t": 35.68,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Juarez Távora",
+     "partido": "UDN",
+     "votos_1t": 2610462,
+     "pct_1t": 30.27,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Adhemar de Barros",
+     "partido": "PSP",
+     "votos_1t": 2222725,
+     "pct_1t": 25.77,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Plínio Salgado",
+     "partido": "PRP",
+     "votos_1t": 714379,
+     "pct_1t": 8.28,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1960,
+   "tipo": "direta",
+   "periodo": "República de 1946",
+   "datas": [
+    "1960-10-03"
+   ],
+   "observacao": "Voto direto e secreto, sem segundo turno: vencia o mais votado, sem exigência de maioria absoluta. Analfabetos não votavam. Jânio Quadros foi registrado pelo PTN, com apoio da UDN e de outros partidos. Renunciou em agosto de 1961; o vice João Goulart, eleito em votação separada, assumiu. Última eleição direta para presidente até 1989.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_uf/votacao_candidato_uf_1960.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Jânio Quadros",
+     "partido": "PTN",
+     "votos_1t": 5636623,
+     "pct_1t": 48.26,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Henrique Teixeira Lott",
+     "partido": "PSD",
+     "votos_1t": 3846825,
+     "pct_1t": 32.94,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Adhemar de Barros",
+     "partido": "PSP",
+     "votos_1t": 2195709,
+     "pct_1t": 18.8,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1964,
+   "tipo": "indireta",
+   "periodo": "Regime militar",
+   "datas": [
+    "1964-04-11"
+   ],
+   "observacao": "Eleição indireta pelo Congresso Nacional, dias após a deposição de João Goulart. Houve 72 abstenções.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1964",
+    "https://en.wikipedia.org/wiki/1964_Brazilian_presidential_election",
+    "https://www.congressoemfoco.com.br/noticia/118002/ha-62-anos-o-congresso-elegia-castello-branco-e-legalizava-o-golpe"
+   ],
+   "candidatos": [
+    {
+     "nome": "Castelo Branco",
+     "partido": null,
+     "votos_1t": 361,
+     "pct_1t": 98.63,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Juarez Távora",
+     "partido": "PDC",
+     "votos_1t": 3,
+     "pct_1t": 0.82,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Eurico Gaspar Dutra",
+     "partido": "PSD",
+     "votos_1t": 2,
+     "pct_1t": 0.55,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1966,
+   "tipo": "indireta",
+   "periodo": "Regime militar",
+   "datas": [
+    "1966-10-03"
+   ],
+   "observacao": "Eleição indireta pelo Congresso Nacional (Ato Institucional nº 2). Candidato único; a bancada do MDB não votou.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1966",
+    "https://en.wikipedia.org/wiki/1966_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Artur da Costa e Silva",
+     "partido": "ARENA",
+     "votos_1t": 294,
+     "pct_1t": 100.0,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1969,
+   "tipo": "indireta",
+   "periodo": "Regime militar",
+   "datas": [
+    "1969-10-25"
+   ],
+   "observacao": "Eleição indireta pelo Congresso Nacional, reaberto após recesso imposto pelo AI-5, depois do afastamento de Costa e Silva por doença. Candidato único; 76 abstenções.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1969",
+    "https://en.wikipedia.org/wiki/1969_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Emílio Garrastazu Médici",
+     "partido": "ARENA",
+     "votos_1t": 293,
+     "pct_1t": 100.0,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1974,
+   "tipo": "indireta",
+   "periodo": "Regime militar",
+   "datas": [
+    "1974-01-15"
+   ],
+   "observacao": "Primeira eleição pelo Colégio Eleitoral (Congresso e delegados das Assembleias Legislativas). Ulysses Guimarães lançou-se como \"anticandidato\" do MDB para denunciar o caráter indireto da eleição.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1974",
+    "https://en.wikipedia.org/wiki/1974_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "Ernesto Geisel",
+     "partido": "ARENA",
+     "votos_1t": 400,
+     "pct_1t": 84.03,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ulysses Guimarães",
+     "partido": "MDB",
+     "votos_1t": 76,
+     "pct_1t": 15.97,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1978,
+   "tipo": "indireta",
+   "periodo": "Regime militar",
+   "datas": [
+    "1978-10-15"
+   ],
+   "observacao": "Eleição pelo Colégio Eleitoral; o MDB apresentou a candidatura do general Euler Bentes Monteiro.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1978",
+    "https://en.wikipedia.org/wiki/1978_Brazilian_presidential_election"
+   ],
+   "candidatos": [
+    {
+     "nome": "João Figueiredo",
+     "partido": "ARENA",
+     "votos_1t": 355,
+     "pct_1t": 61.1,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Euler Bentes Monteiro",
+     "partido": "MDB",
+     "votos_1t": 226,
+     "pct_1t": 38.9,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1985,
+   "tipo": "indireta",
+   "periodo": "Regime militar",
+   "datas": [
+    "1985-01-15"
+   ],
+   "observacao": "Última eleição indireta, pelo Colégio Eleitoral, após a rejeição da emenda Dante de Oliveira (Diretas Já). Tancredo Neves adoeceu na véspera da posse e morreu em 21/04/1985 sem assumir; o vice José Sarney tomou posse.",
+   "fontes": [
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1985",
+    "https://en.wikipedia.org/wiki/1985_Brazilian_presidential_election",
+    "https://www.correiobraziliense.com.br/politica/2025/01/7033915-eleicao-de-tancredo-neves-completa-40-anos.html"
+   ],
+   "candidatos": [
+    {
+     "nome": "Tancredo Neves",
+     "partido": "PMDB",
+     "votos_1t": 480,
+     "pct_1t": 72.73,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Paulo Maluf",
+     "partido": "PDS",
+     "votos_1t": 180,
+     "pct_1t": 27.27,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1989,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "1989-11-15",
+    "1989-12-17"
+   ],
+   "observacao": "Primeira eleição direta para presidente desde 1960 e a primeira com dois turnos. Silvio Santos chegou a substituir Armando Corrêa como candidato do PMB, mas o TSE cancelou o registro provisório do partido em 9/11/1989, o que derrubou a candidatura; o nome de Armando Corrêa permaneceu na cédula e os votos dados a ele foram anulados.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_uf/votacao_candidato_uf_1989.zip",
+    "https://www.tse.jus.br/eleicoes/eleicoes-anteriores/eleicoes-1989/resultados",
+    "https://pt.wikipedia.org/wiki/Eleição_presidencial_no_Brasil_em_1989"
+   ],
+   "candidatos": [
+    {
+     "nome": "Fernando Collor de Mello",
+     "partido": "PRN",
+     "votos_1t": 20611030,
+     "pct_1t": 30.48,
+     "votos_2t": 35090206,
+     "pct_2t": 53.03,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Luiz Inácio Lula da Silva",
+     "partido": "PT",
+     "votos_1t": 11622321,
+     "pct_1t": 17.19,
+     "votos_2t": 31075803,
+     "pct_2t": 46.97,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Leonel Brizola",
+     "partido": "PDT",
+     "votos_1t": 11167665,
+     "pct_1t": 16.51,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Mário Covas",
+     "partido": "PSDB",
+     "votos_1t": 7790381,
+     "pct_1t": 11.52,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Paulo Maluf",
+     "partido": "PDS",
+     "votos_1t": 5986585,
+     "pct_1t": 8.85,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Guilherme Afif Domingos",
+     "partido": "PL",
+     "votos_1t": 3272520,
+     "pct_1t": 4.84,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ulysses Guimarães",
+     "partido": "PMDB",
+     "votos_1t": 3204996,
+     "pct_1t": 4.74,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Roberto Freire",
+     "partido": "PCB",
+     "votos_1t": 769117,
+     "pct_1t": 1.14,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Aureliano Chaves",
+     "partido": "PFL",
+     "votos_1t": 600821,
+     "pct_1t": 0.89,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ronaldo Caiado",
+     "partido": "PSD",
+     "votos_1t": 488893,
+     "pct_1t": 0.72,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Affonso Camargo",
+     "partido": "PTB",
+     "votos_1t": 379284,
+     "pct_1t": 0.56,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Enéas Carneiro",
+     "partido": "PRONA",
+     "votos_1t": 360578,
+     "pct_1t": 0.53,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Alcides Marronzinho de Oliveira (Marronzinho)",
+     "partido": "PSP",
+     "votos_1t": 238408,
+     "pct_1t": 0.35,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Paulo Gontijo",
+     "partido": "PP",
+     "votos_1t": 198710,
+     "pct_1t": 0.29,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Zamir José Teixeira",
+     "partido": "PCN",
+     "votos_1t": 187164,
+     "pct_1t": 0.28,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Lívia Maria Pio",
+     "partido": "PN",
+     "votos_1t": 179925,
+     "pct_1t": 0.27,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Eudes Mattar",
+     "partido": "PLP",
+     "votos_1t": 162343,
+     "pct_1t": 0.24,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Fernando Gabeira",
+     "partido": "PV",
+     "votos_1t": 125844,
+     "pct_1t": 0.19,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Celso Brant",
+     "partido": "PMN",
+     "votos_1t": 109903,
+     "pct_1t": 0.16,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Antônio Pedreira",
+     "partido": "PPB",
+     "votos_1t": 86107,
+     "pct_1t": 0.13,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Manoel Horta",
+     "partido": "PDCdoB",
+     "votos_1t": 83291,
+     "pct_1t": 0.12,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Armando Corrêa",
+     "partido": "PMB",
+     "votos_1t": 0,
+     "pct_1t": 0.0,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1994,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "1994-10-03"
+   ],
+   "observacao": "Decidida no 1º turno. Eleição geral, junto com governadores, Senado e Câmara. Os votos somam a apuração por município do repositório do TSE e a votação no exterior publicada pelo TSE.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_1994.zip",
+    "https://www.tse.jus.br/eleicoes/eleicoes-anteriores/eleicoes-1994/resultados-das-eleicoes-1994/brasil/resultados-das-eleicoes-1994-brasil"
+   ],
+   "candidatos": [
+    {
+     "nome": "Fernando Henrique Cardoso",
+     "partido": "PSDB",
+     "votos_1t": 34364961,
+     "pct_1t": 54.28,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Luiz Inácio Lula da Silva",
+     "partido": "PT",
+     "votos_1t": 17122127,
+     "pct_1t": 27.04,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Enéas Carneiro",
+     "partido": "PRONA",
+     "votos_1t": 4671457,
+     "pct_1t": 7.38,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Orestes Quércia",
+     "partido": "PMDB",
+     "votos_1t": 2772121,
+     "pct_1t": 4.38,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Leonel Brizola",
+     "partido": "PDT",
+     "votos_1t": 2015836,
+     "pct_1t": 3.18,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Esperidião Amin",
+     "partido": "PPR",
+     "votos_1t": 1739894,
+     "pct_1t": 2.75,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Carlos Antônio Gomes",
+     "partido": "PRN",
+     "votos_1t": 387738,
+     "pct_1t": 0.61,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Hernani Fortuna",
+     "partido": "PSC",
+     "votos_1t": 238197,
+     "pct_1t": 0.38,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 1998,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "1998-10-04"
+   ],
+   "observacao": "Primeira eleição com possibilidade de reeleição (Emenda Constitucional 16/1997). Decidida no 1º turno.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_1998.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Fernando Henrique Cardoso",
+     "partido": "PSDB",
+     "votos_1t": 35936382,
+     "pct_1t": 53.06,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Luiz Inácio Lula da Silva",
+     "partido": "PT",
+     "votos_1t": 21475211,
+     "pct_1t": 31.71,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ciro Gomes",
+     "partido": "PPS",
+     "votos_1t": 7426187,
+     "pct_1t": 10.97,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Enéas Carneiro",
+     "partido": "PRONA",
+     "votos_1t": 1447089,
+     "pct_1t": 2.14,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ivan Frota",
+     "partido": "PMN",
+     "votos_1t": 251336,
+     "pct_1t": 0.37,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Alfredo Sirkis",
+     "partido": "PV",
+     "votos_1t": 212983,
+     "pct_1t": 0.31,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria de Almeida (Zé Maria)",
+     "partido": "PSTU",
+     "votos_1t": 202659,
+     "pct_1t": 0.3,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "João de Deus Barbosa",
+     "partido": "PT do B",
+     "votos_1t": 198915,
+     "pct_1t": 0.29,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria Eymael",
+     "partido": "PSDC",
+     "votos_1t": 171831,
+     "pct_1t": 0.25,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Thereza Ruiz",
+     "partido": "PTN",
+     "votos_1t": 166138,
+     "pct_1t": 0.25,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Sérgio Bueno",
+     "partido": "PSC",
+     "votos_1t": 124569,
+     "pct_1t": 0.18,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Vasco Azevedo Neto",
+     "partido": "PSN",
+     "votos_1t": 109003,
+     "pct_1t": 0.16,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 2002,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "2002-10-06",
+    "2002-10-27"
+   ],
+   "observacao": "Primeira eleição presidencial com votação totalmente em urna eletrônica.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2002.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Luiz Inácio Lula da Silva",
+     "partido": "PT",
+     "votos_1t": 39455233,
+     "pct_1t": 46.44,
+     "votos_2t": 52793364,
+     "pct_2t": 61.27,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Serra",
+     "partido": "PSDB",
+     "votos_1t": 19705445,
+     "pct_1t": 23.2,
+     "votos_2t": 33370739,
+     "pct_2t": 38.73,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Anthony Garotinho",
+     "partido": "PSB",
+     "votos_1t": 15180097,
+     "pct_1t": 17.87,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ciro Gomes",
+     "partido": "PPS",
+     "votos_1t": 10170882,
+     "pct_1t": 11.97,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria de Almeida (Zé Maria)",
+     "partido": "PSTU",
+     "votos_1t": 402236,
+     "pct_1t": 0.47,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Costa Pimenta",
+     "partido": "PCO",
+     "votos_1t": 38619,
+     "pct_1t": 0.05,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 2006,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "2006-10-01",
+    "2006-10-29"
+   ],
+   "observacao": "Presidente em exercício candidato à reeleição; decidida no 2º turno.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2006.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Luiz Inácio Lula da Silva",
+     "partido": "PT",
+     "votos_1t": 46662365,
+     "pct_1t": 48.61,
+     "votos_2t": 58295042,
+     "pct_2t": 60.83,
+     "eleito": true,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Geraldo Alckmin",
+     "partido": "PSDB",
+     "votos_1t": 39968369,
+     "pct_1t": 41.64,
+     "votos_2t": 37543178,
+     "pct_2t": 39.17,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Heloísa Helena",
+     "partido": "PSOL",
+     "votos_1t": 6575393,
+     "pct_1t": 6.85,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Cristovam Buarque",
+     "partido": "PDT",
+     "votos_1t": 2538844,
+     "pct_1t": 2.64,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Ana Maria Rangel",
+     "partido": "PRP",
+     "votos_1t": 126404,
+     "pct_1t": 0.13,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria Eymael",
+     "partido": "PSDC",
+     "votos_1t": 63294,
+     "pct_1t": 0.07,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    },
+    {
+     "nome": "Luciano Bivar",
+     "partido": "PSL",
+     "votos_1t": 62064,
+     "pct_1t": 0.06,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": false,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 2010,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "2010-10-03",
+    "2010-10-31"
+   ],
+   "observacao": "Primeira eleição com registro obrigatório das propostas de governo no pedido de candidatura (Lei 12.034/2009).",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2010.zip",
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2010_BR.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Dilma Rousseff",
+     "partido": "PT",
+     "votos_1t": 47651434,
+     "pct_1t": 46.91,
+     "votos_2t": 55752529,
+     "pct_2t": 56.05,
+     "eleito": true,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "José Serra",
+     "partido": "PSDB",
+     "votos_1t": 33132283,
+     "pct_1t": 32.61,
+     "votos_2t": 43711388,
+     "pct_2t": 43.95,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Marina Silva",
+     "partido": "PV",
+     "votos_1t": 19636359,
+     "pct_1t": 19.33,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Plínio de Arruda Sampaio",
+     "partido": "PSOL",
+     "votos_1t": 886816,
+     "pct_1t": 0.87,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria Eymael",
+     "partido": "PSDC",
+     "votos_1t": 89350,
+     "pct_1t": 0.09,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria de Almeida (Zé Maria)",
+     "partido": "PSTU",
+     "votos_1t": 84609,
+     "pct_1t": 0.08,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Levy Fidelix",
+     "partido": "PRTB",
+     "votos_1t": 57960,
+     "pct_1t": 0.06,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Ivan Pinheiro",
+     "partido": "PCB",
+     "votos_1t": 39136,
+     "pct_1t": 0.04,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Costa Pimenta",
+     "partido": "PCO",
+     "votos_1t": 12206,
+     "pct_1t": 0.01,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 2014,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "2014-10-05",
+    "2014-10-26"
+   ],
+   "observacao": "Marina Silva assumiu a candidatura do PSB após a morte de Eduardo Campos em acidente aéreo, em agosto de 2014.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2014.zip",
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2014_BR.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Dilma Rousseff",
+     "partido": "PT",
+     "votos_1t": 43267668,
+     "pct_1t": 41.59,
+     "votos_2t": 54501118,
+     "pct_2t": 51.64,
+     "eleito": true,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Aécio Neves",
+     "partido": "PSDB",
+     "votos_1t": 34897211,
+     "pct_1t": 33.55,
+     "votos_2t": 51041155,
+     "pct_2t": 48.36,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Marina Silva",
+     "partido": "PSB",
+     "votos_1t": 22176619,
+     "pct_1t": 21.32,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Luciana Genro",
+     "partido": "PSOL",
+     "votos_1t": 1612186,
+     "pct_1t": 1.55,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Pastor Everaldo",
+     "partido": "PSC",
+     "votos_1t": 780513,
+     "pct_1t": 0.75,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Eduardo Jorge",
+     "partido": "PV",
+     "votos_1t": 630099,
+     "pct_1t": 0.61,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Levy Fidelix",
+     "partido": "PRTB",
+     "votos_1t": 446878,
+     "pct_1t": 0.43,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria de Almeida (Zé Maria)",
+     "partido": "PSTU",
+     "votos_1t": 91209,
+     "pct_1t": 0.09,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria Eymael",
+     "partido": "PSDC",
+     "votos_1t": 61250,
+     "pct_1t": 0.06,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Mauro Iasi",
+     "partido": "PCB",
+     "votos_1t": 47845,
+     "pct_1t": 0.05,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Costa Pimenta",
+     "partido": "PCO",
+     "votos_1t": 12324,
+     "pct_1t": 0.01,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 2018,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "2018-10-07",
+    "2018-10-28"
+   ],
+   "observacao": "O TSE indeferiu o registro da candidatura de Lula (PT) com base na Lei da Ficha Limpa, em 31/08/2018; Fernando Haddad, inscrito como vice, passou a encabeçar a chapa.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2018.zip",
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2018_BR.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Jair Bolsonaro",
+     "partido": "PSL",
+     "votos_1t": 49277010,
+     "pct_1t": 46.03,
+     "votos_2t": 57797847,
+     "pct_2t": 55.13,
+     "eleito": true,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Fernando Haddad",
+     "partido": "PT",
+     "votos_1t": 31342051,
+     "pct_1t": 29.28,
+     "votos_2t": 47040906,
+     "pct_2t": 44.87,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Ciro Gomes",
+     "partido": "PDT",
+     "votos_1t": 13344371,
+     "pct_1t": 12.47,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Geraldo Alckmin",
+     "partido": "PSDB",
+     "votos_1t": 5096350,
+     "pct_1t": 4.76,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "João Amoêdo",
+     "partido": "NOVO",
+     "votos_1t": 2679745,
+     "pct_1t": 2.5,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Cabo Daciolo",
+     "partido": "PATRI",
+     "votos_1t": 1348323,
+     "pct_1t": 1.26,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Henrique Meirelles",
+     "partido": "MDB",
+     "votos_1t": 1288950,
+     "pct_1t": 1.2,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Marina Silva",
+     "partido": "REDE",
+     "votos_1t": 1069578,
+     "pct_1t": 1.0,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Alvaro Dias",
+     "partido": "PODE",
+     "votos_1t": 859601,
+     "pct_1t": 0.8,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Guilherme Boulos",
+     "partido": "PSOL",
+     "votos_1t": 617122,
+     "pct_1t": 0.58,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Vera Lúcia",
+     "partido": "PSTU",
+     "votos_1t": 55762,
+     "pct_1t": 0.05,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "José Maria Eymael",
+     "partido": "DC",
+     "votos_1t": 41710,
+     "pct_1t": 0.04,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "João Goulart Filho",
+     "partido": "PPL",
+     "votos_1t": 30176,
+     "pct_1t": 0.03,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 2022,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "2022-10-02",
+    "2022-10-30"
+   ],
+   "observacao": "O TSE indeferiu a candidatura de Roberto Jefferson (PTB), substituído por Padre Kelmon. Disputa de 2º turno mais apertada desde 1989 em diferença percentual.",
+   "fontes": [
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2022.zip",
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2022_BR.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Luiz Inácio Lula da Silva",
+     "partido": "PT",
+     "votos_1t": 57259504,
+     "pct_1t": 48.43,
+     "votos_2t": 60345999,
+     "pct_2t": 50.9,
+     "eleito": true,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Jair Bolsonaro",
+     "partido": "PL",
+     "votos_1t": 51072345,
+     "pct_1t": 43.2,
+     "votos_2t": 58206354,
+     "pct_2t": 49.1,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Simone Tebet",
+     "partido": "MDB",
+     "votos_1t": 4915423,
+     "pct_1t": 4.16,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Ciro Gomes",
+     "partido": "PDT",
+     "votos_1t": 3599287,
+     "pct_1t": 3.04,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Soraya Thronicke",
+     "partido": "UNIÃO",
+     "votos_1t": 600955,
+     "pct_1t": 0.51,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Felipe d'Avila",
+     "partido": "NOVO",
+     "votos_1t": 559708,
+     "pct_1t": 0.47,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Padre Kelmon",
+     "partido": "PTB",
+     "votos_1t": 81129,
+     "pct_1t": 0.07,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Léo Péricles",
+     "partido": "UP",
+     "votos_1t": 53519,
+     "pct_1t": 0.05,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Sofia Manzano",
+     "partido": "PCB",
+     "votos_1t": 45620,
+     "pct_1t": 0.04,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Vera Lúcia",
+     "partido": "PSTU",
+     "votos_1t": 25625,
+     "pct_1t": 0.02,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Constituinte Eymael",
+     "partido": "DC",
+     "votos_1t": 16604,
+     "pct_1t": 0.01,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    }
+   ]
+  },
+  {
+   "ano": 2026,
+   "tipo": "direta",
+   "periodo": "Nova República",
+   "datas": [
+    "2026-10-04",
+    "2026-10-25"
+   ],
+   "observacao": "1º turno totalizado pelo TSE; 2º turno entre Flávio Bolsonaro e Lula marcado para 25/10/2026, ainda sem resultado. A candidatura de Pablo Marçal (PRTB) foi cassada pela Justiça Eleitoral e Leonardo Avalanche (PRTB) desistiu antes do 1º turno.",
+   "fontes": [
+    "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/br/br-c0001-e006257-u.json",
+    "https://resultados.tse.jus.br/",
+    "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/propostas-de-governo-dos-candidatos-ao-cargo-de-presidente-da-republica-eleicoes-2026",
+    "https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip"
+   ],
+   "candidatos": [
+    {
+     "nome": "Flávio Bolsonaro",
+     "partido": "PL",
+     "votos_1t": 56104503,
+     "pct_1t": 47.03,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": "https://static.poder360.com.br/uploads/2026/08/FLAVIO-BOLSONARO-PARA-O-BRASIL-VENCER-O-ATRASO-1-1.pdf"
+    },
+    {
+     "nome": "Luiz Inácio Lula da Silva",
+     "partido": "PT",
+     "votos_1t": 53879538,
+     "pct_1t": 45.16,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": "https://static.congressoemfoco.com.br/2026/08/08/attachment/2026/08/08/32ce89_programa_governo_lula_2026.pdf"
+    },
+    {
+     "nome": "Augusto Cury",
+     "partido": "AVANTE",
+     "votos_1t": 3448569,
+     "pct_1t": 2.89,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Renan Santos",
+     "partido": "MISSÃO",
+     "votos_1t": 2675887,
+     "pct_1t": 2.24,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Ronaldo Caiado",
+     "partido": "PSD",
+     "votos_1t": 2605148,
+     "pct_1t": 2.18,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Romeu Zema",
+     "partido": "NOVO",
+     "votos_1t": 326488,
+     "pct_1t": 0.27,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Samara Martins",
+     "partido": "UP",
+     "votos_1t": 122911,
+     "pct_1t": 0.1,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Hertz Dias",
+     "partido": "PSTU",
+     "votos_1t": 43103,
+     "pct_1t": 0.04,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Clariana Barão",
+     "partido": "DC",
+     "votos_1t": 40043,
+     "pct_1t": 0.03,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Edmilson Costa",
+     "partido": "PCB",
+     "votos_1t": 22693,
+     "pct_1t": 0.02,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Wilson Grassi",
+     "partido": "DEMOCRATA",
+     "votos_1t": 16881,
+     "pct_1t": 0.01,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    },
+    {
+     "nome": "Rui Costa Pimenta",
+     "partido": "PCO",
+     "votos_1t": 15024,
+     "pct_1t": 0.01,
+     "votos_2t": null,
+     "pct_2t": null,
+     "eleito": false,
+     "plano_disponivel": true,
+     "plano_url": null
+    }
+   ]
+  }
+ ]
+}

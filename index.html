@@ -13,6 +13,7 @@
 <meta property="og:url" content="https://mssvargas.github.io/lado-a-lado-2026/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234A47A3'/%3E%3Crect x='6' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3Crect x='18' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<script>try { const t = localStorage.getItem("lal-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&family=Literata:opsz,wght@7..72,600&display=swap">
@@ -32,6 +33,9 @@
   --part: #8A5D00;
   --none: #4F5869;
   --contra: #9B3434;
+  --left: #0E7378;
+  --right: #A8620C;
+  --seg-out: #B7BDC9;
   --display: "Literata", Georgia, "Times New Roman", serif;
   --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
@@ -41,13 +45,13 @@
   :root:not([data-theme="light"]) {
     --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140;
     --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --mark: #5B4A0E;
-    --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; color-scheme: dark;
+    --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; --left: #5CC4C8; --right: #E7A65A; --seg-out: #4A5268; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140;
   --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --mark: #5B4A0E;
-  --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; color-scheme: dark;
+  --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; --left: #5CC4C8; --right: #E7A65A; --seg-out: #4A5268; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -167,6 +171,34 @@ td.who { white-space: nowrap; font-weight: 700; }
 @media (prefers-reduced-motion: no-preference) {
   .item, .fc { transition: border-color .15s; }
 }
+/* Novas abas */
+.stack { display: grid; gap: 14px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.card { text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; cursor: pointer; display: grid; gap: 4px; }
+.card[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.card .fam { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; font-weight: 700; }
+.bars { display: grid; gap: 14px; }
+.barrow { display: grid; gap: 6px; }
+.barrow .lbl { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-weight: 700; }
+.bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; background: var(--line); }
+.bar span { display: block; height: 100%; min-width: 2px; }
+.keys { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 14px; color: var(--muted); }
+.keys i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: 0; }
+.dims { display: grid; gap: 12px; }
+.dim .nm { font-weight: 700; font-size: 14px; }
+.dim .track { position: relative; height: 26px; margin: 4px 8px; }
+.dim .track::before { content: ""; position: absolute; left: 0; right: 0; top: 12px; height: 2px; background: var(--line); }
+.dim .tick { position: absolute; top: 7px; width: 1px; height: 12px; background: var(--line); }
+.dim .dot { position: absolute; top: 3px; width: 20px; height: 20px; margin-left: -10px; border-radius: 50%; display: grid; place-items: center; font-size: 11px; font-weight: 700; color: var(--surface); }
+.dim .poles { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted); }
+.pill { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 13px; font-weight: 700; border: 1px solid var(--line); }
+.pill.left { color: var(--left); border-color: var(--left); } .pill.right { color: var(--right); border-color: var(--right); } .pill.out { color: var(--muted); }
+details.el { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+details.el > summary { cursor: pointer; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+details.el > summary .yr { font-family: var(--mono); font-size: 18px; }
+details.el .inner { padding: 0 16px 14px; display: grid; gap: 8px; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr.hl td { background: var(--soft); }
 footer.site { border-top: 1px solid var(--line); background: var(--surface); }
 footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
 .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--surface); padding: 8px 16px; border-radius: 8px; font-weight: 700; z-index: 20; }
@@ -184,7 +216,14 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
       <div class="c"><span class="num">22</span><div><div class="nm">Flávio Bolsonaro</div><div class="pl">PL · <i>Para o Brasil Vencer o Atraso</i></div></div></div>
     </div>
     <div class="meta" id="meta"></div>
-    <div class="row"><button type="button" class="btn" id="shareBtn">Compartilhar este site</button></div>
+    <div class="row" style="justify-content:space-between;align-items:center">
+      <button type="button" class="btn" id="shareBtn">Compartilhar este site</button>
+      <div class="seg" role="group" aria-label="Aparência" id="themeSeg">
+        <button type="button" data-theme-set="auto">Automático</button>
+        <button type="button" data-theme-set="light">Claro</button>
+        <button type="button" data-theme-set="dark">Escuro</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -192,6 +231,10 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
   <div class="wrap">
     <a href="#comparar" data-view="comparar">Comparar propostas</a>
     <a href="#checar" data-view="checar">Checar uma fala</a>
+    <a href="#espectro" data-view="espectro">Esquerda ou direita?</a>
+    <a href="#ideologias" data-view="ideologias">Ideologias</a>
+    <a href="#historico" data-view="historico">Promessas anteriores</a>
+    <a href="#eleicoes" data-view="eleicoes">Eleições desde 1891</a>
     <a href="#checagens" data-view="checagens">Checagens publicadas</a>
     <a href="#integra" data-view="integra">Planos na íntegra</a>
     <a href="#metodo" data-view="metodo">Como foi feito</a>
@@ -272,6 +315,81 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
       </div>
     </section>
 
+    <section class="view" id="v-espectro" hidden aria-labelledby="t-espectro">
+      <div class="prose">
+        <h2 id="t-espectro">As propostas são de esquerda ou de direita?</h2>
+        <p>Cada proposta foi classificada pelo método do <b>Manifesto Project</b>, usado por cientistas políticos para medir programas de partidos no mundo todo. O método olha o que a frase propõe, não quem propõe. O resultado é comparado com a ideologia que o próprio partido declara e com a posição que especialistas acadêmicos atribuem a ele.</p>
+      </div>
+      <div class="grid2" id="espPartidos"><p class="status">Carregando…</p></div>
+      <div class="panel">
+        <h3>Perfil de cada plano no eixo esquerda–direita</h3>
+        <div id="espPerfil" class="bars"></div>
+        <details><summary class="linkbtn" style="font-size:14px">Como a classificação foi feita e seus limites</summary><p class="status" id="espNota"></p></details>
+      </div>
+      <form class="panel" id="espForm">
+        <h3>Verificar uma proposta</h3>
+        <div class="field"><label for="espSel">Escolha uma proposta dos planos</label><select id="espSel"><option value="">Carregando…</option></select></div>
+        <div class="field"><label for="espTxt">Ou escreva uma frase</label><input type="search" id="espTxt" placeholder="Ex.: Lula quer privatizar a Petrobras"></div>
+        <div class="row"><button type="submit" class="btn">Verificar</button></div>
+      </form>
+      <div class="panel" id="espOut" hidden aria-live="polite"></div>
+    </section>
+
+    <section class="view" id="v-ideologias" hidden aria-labelledby="t-ideologias">
+      <div class="prose">
+        <h2 id="t-ideologias">O que defende cada ideologia</h2>
+        <p>Definição, origem, pensadores, obras de referência, propostas típicas, críticas e países que se enquadram, total ou parcialmente. Cada ideologia aparece descrita como seus defensores a descrevem, com críticas de mais de um lado.</p>
+      </div>
+      <div class="field"><label for="idQ">Buscar ideologia, pensador, obra ou conceito</label><input type="search" id="idQ" placeholder="Ex.: Manifesto Comunista, Adam Smith, propriedade privada"></div>
+      <div class="cards" id="idList"></div>
+      <div id="idDetail"></div>
+      <div class="panel">
+        <h3>Onde duas ideologias convergem e divergem</h3>
+        <div class="row">
+          <div class="field grow"><label for="idA">Ideologia A</label><select id="idA"></select></div>
+          <div class="field grow"><label for="idB">Ideologia B</label><select id="idB"></select></div>
+        </div>
+        <div id="idCmp"></div>
+      </div>
+      <div class="panel">
+        <h3>Países e governos</h3>
+        <div class="field"><label for="paisQ">Buscar país</label><input type="search" id="paisQ" placeholder="Ex.: Suécia, China, Estados Unidos"></div>
+        <div id="paisOut"></div>
+      </div>
+    </section>
+
+    <section class="view" id="v-historico" hidden aria-labelledby="t-historico">
+      <div class="prose">
+        <h2 id="t-historico">O que foi prometido antes e o que foi cumprido</h2>
+        <p>Planos anteriores do mesmo candidato ou do mesmo partido, com a contagem de promessas cumpridas, parcialmente cumpridas e não cumpridas feita por levantamentos independentes. Os números são os publicados por cada fonte, sem recálculo. Abaixo, indicadores oficiais iguais para todos os governos.</p>
+      </div>
+      <div class="seg" role="group" aria-label="Candidato de 2026" id="histSeg">
+        <button type="button" data-hist="lula" aria-pressed="true">Ligados a Lula (13)</button>
+        <button type="button" data-hist="flavio" aria-pressed="false">Ligados a Flávio Bolsonaro (22)</button>
+      </div>
+      <p class="status" id="histNota"></p>
+      <div id="histList" class="stack"><p class="status">Carregando…</p></div>
+      <div class="panel">
+        <h3>Indicadores oficiais por governo</h3>
+        <p class="status">Média dos anos de cada mandato. Os mesmos indicadores e a mesma conta para todos os governos.</p>
+        <div class="tablewrap" id="histInd"></div>
+        <p class="status" id="histIndNota"></p>
+      </div>
+    </section>
+
+    <section class="view" id="v-eleicoes" hidden aria-labelledby="t-eleicoes">
+      <div class="prose">
+        <h2 id="t-eleicoes">Todas as eleições presidenciais desde 1891</h2>
+        <p>Candidatos, partidos e votos de cada eleição para presidente. O registro de plano de governo no TSE é obrigatório desde 2010. Antes disso não havia plano oficial registrado.</p>
+      </div>
+      <div class="row">
+        <div class="field grow"><label for="elQ">Buscar candidato, partido ou ano</label><input type="search" id="elQ" placeholder="Ex.: Brizola, PSDB, 1989"></div>
+        <div class="field grow"><label for="elPer">Período</label><select id="elPer"><option value="">Todos</option></select></div>
+      </div>
+      <p class="status" id="elNota"></p>
+      <div id="elList" class="stack"><p class="status">Carregando…</p></div>
+    </section>
+
     <section class="view" id="v-checagens" hidden aria-labelledby="t-checagens">
       <div class="prose">
         <h2 id="t-checagens">O que as agências de checagem apuraram</h2>
@@ -292,13 +410,10 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
     <section class="view" id="v-integra" hidden aria-labelledby="t-integra">
       <div class="prose">
         <h2 id="t-integra">Os planos completos</h2>
-        <p>O texto integral dos dois documentos, página por página, com busca. A numeração é a do PDF.</p>
+        <p>O texto integral dos planos de governo, página por página, com busca. Inclui os planos de 2026 e os planos anteriores disponíveis. A numeração é a do PDF.</p>
       </div>
       <div class="row">
-        <div class="seg" role="group" aria-label="Plano">
-          <button type="button" data-plan="lula" aria-pressed="true">Lula (13)</button>
-          <button type="button" data-plan="flavio" aria-pressed="false">Flávio Bolsonaro (22)</button>
-        </div>
+        <div class="field grow"><label for="planSel" class="eyebrow">Plano</label><select id="planSel"></select></div>
         <div class="field grow"><label for="planQ" class="eyebrow">Buscar neste plano</label><input type="search" id="planQ" placeholder="Ex.: salário mínimo"></div>
       </div>
       <div id="planSearch" class="panel" hidden></div>
@@ -323,6 +438,10 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <li><b>O selo de detalhamento</b> indica se o plano diz como, quanto ou quando ("Diz como"), se diz só em parte ("Em parte") ou se registra só a intenção ("Só intenção").</li>
           <li><b>Checagens.</b> Vêm só de agências de verificação reconhecidas (Agência Lupa, Aos Fatos, Estadão Verifica, Projeto Comprova). O número de itens é o mesmo para cada candidato: 7 falas e 5 alegações para cada um. A seleção prioriza propostas e dados, não ataques pessoais, e inclui vereditos de todo tipo. É uma amostra: o link de cada item leva à apuração completa, que traz outras frases checadas.</li>
           <li><b>Análise automática.</b> Uma IA de uso gratuito recebe três coisas: os trechos dos planos encontrados pela busca, as checagens desta página e o resultado de uma busca feita na hora. Essa busca é restrita a agências de checagem (Lupa, Aos Fatos, Comprova, AFP, Estadão Verifica), à imprensa de grande circulação e ao TSE. Antes de responder, o servidor descarta citação que não exista literalmente no plano e link que não tenha vindo da busca. Mesmo assim a IA pode errar, então confira sempre o trecho e a página.</li>
+          <li><b>Esquerda ou direita.</b> As 261 propostas foram classificadas pelas categorias do Manifesto Project (MARPOR) e pelo índice RILE, o método acadêmico usado para programas de partidos em mais de 50 países. A referência de cada partido vem do próprio estatuto ou programa e de escalas de especialistas (Bolognesi, Ribeiro e Codato; V-Dem). A verificação de frases livres usa palavras-chave e é uma aproximação.</li>
+          <li><b>Ideologias.</b> Verbetes apoiados em fontes de referência (Stanford Encyclopedia of Philosophy, Britannica, CPDOC/FGV). Todos têm o mesmo formato, críticas de mais de um lado e exemplos de países com o critério usado (constituição, partido governante, filiação a internacional partidária). As posições nas dimensões são aproximações didáticas.</li>
+          <li><b>Promessas anteriores.</b> Os números de promessas cumpridas são os publicados por cada levantamento jornalístico, sem recálculo. Como cada veículo usa sua própria lista e critério, os números não são comparáveis entre fontes nem entre governos. Os indicadores (PIB, IPCA, desocupação) são do IBGE e iguais para todos os governos, mas não medem cumprimento de promessas.</li>
+          <li><b>Eleições desde 1891.</b> Votos de 1945 a 2026 vêm dos dados abertos do TSE. Antes de 1945 e nas eleições indiretas, as fontes são históricas (Anuário do IBGE, CPDOC, Nohlen) e alguns números divergem entre elas, o que está anotado em cada eleição.</li>
           <li><b>Limites.</b> Plano de governo é intenção registrada, não lei nem garantia. Falas em debates e entrevistas podem ir além do plano.</li>
         </ul>
         <p class="muted" id="metodoData"></p>
@@ -393,8 +512,9 @@ function terms(q) {
   return out;
 }
 const PLANS = {};
+const PLAN_INDEX = Object.fromEntries(ORDER.map(k => [k, { id: k, candidato: CAND[k].nome, partido: CAND[k].partido, ano: 2026, titulo: CAND[k].plano, arquivo: CAND[k].arquivo, pdf: CAND[k].pdf }]));
 function loadPlan(k) {
-  if (!PLANS[k]) PLANS[k] = fetch(CAND[k].arquivo).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(j => {
+  if (!PLANS[k]) PLANS[k] = fetch((PLAN_INDEX[k] || CAND[k]).arquivo).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(j => {
     j.pages.forEach(p => { p.t = p.t.normalize("NFC"); p.f = fold(p.t); p.l = loose(p.t); });
     return j;
   });
@@ -456,7 +576,7 @@ function searchChecks(q, cand, limit = 4) {
 }
 
 /* ---------- Navegação ---------- */
-const VIEWS = ["comparar", "checar", "checagens", "integra", "metodo"];
+const VIEWS = ["comparar", "checar", "espectro", "ideologias", "historico", "eleicoes", "checagens", "integra", "metodo"];
 function route() {
   let h = location.hash.replace("#", "");
   let theme = null;
@@ -466,6 +586,7 @@ function route() {
   document.querySelectorAll("nav.tabs a").forEach(a => a.setAttribute("aria-current", a.dataset.view === h ? "page" : "false"));
   if (theme && COMP) { const i = COMP.temas.findIndex(t => t.id === theme); if (i >= 0) showTheme(i, false); }
   if (h === "integra") ensureReader();
+  if (typeof LAZY !== "undefined" && LAZY[h]) LAZY[h]().catch(() => {});
 }
 window.addEventListener("hashchange", route);
 
@@ -525,14 +646,15 @@ document.addEventListener("click", e => {
 
 /* ---------- Íntegra ---------- */
 let rPlan = "lula", rPage = 1;
+const planName = k => PLAN_INDEX[k] ? `${PLAN_INDEX[k].candidato} (${PLAN_INDEX[k].partido}, ${PLAN_INDEX[k].ano})` : (CAND[k]?.nome || k);
 async function renderReader() {
-  document.querySelectorAll("[data-plan]").forEach(b => b.setAttribute("aria-pressed", b.dataset.plan === rPlan));
+  if ($("#planSel").value !== rPlan && PLAN_INDEX[rPlan]) $("#planSel").value = rPlan;
   try {
     const plan = await loadPlan(rPlan);
     const idx = Math.max(0, plan.pages.findIndex(p => p.p >= rPage));
     const pg = plan.pages[idx];
     rPage = pg.p;
-    $("#pgInfo").textContent = `${CAND[rPlan].nome} · página ${pg.p} de ${plan.pages[plan.pages.length - 1].p}`;
+    $("#pgInfo").textContent = `${planName(rPlan)} · página ${pg.p} de ${plan.pages[plan.pages.length - 1].p}`;
     const q = $("#planQ").value.trim();
     $("#reader").innerHTML = q ? highlight(pg.t, terms(q)) : esc(pg.t);
     $("#pgPrev").disabled = idx === 0; $("#pgNext").disabled = idx === plan.pages.length - 1;
@@ -541,7 +663,17 @@ async function renderReader() {
 function ensureReader() { if (!ensureReader.done) { ensureReader.done = true; renderReader(); } }
 function openPage(k, p) { rPlan = k; rPage = p; ensureReader.done = true; location.hash = "integra"; renderReader().then(() => $("#reader").scrollIntoView({ block: "start" })); }
 function initReader() {
-  document.querySelectorAll("[data-plan]").forEach(b => b.onclick = () => { rPlan = b.dataset.plan; rPage = 1; $("#planSearch").hidden = true; $("#planQ").value = ""; renderReader(); });
+  const fillPlans = () => {
+    const list = Object.values(PLAN_INDEX);
+    $("#planSel").innerHTML = [...new Set(list.map(p => p.ano))].sort((a, b) => b - a).map(ano =>
+      `<optgroup label="${ano}">${list.filter(p => p.ano === ano).map(p => `<option value="${esc(p.id)}">${esc(p.candidato)} (${esc(p.partido)}): ${esc(p.titulo)}</option>`).join("")}</optgroup>`).join("");
+    $("#planSel").value = rPlan;
+    $("#sourcesBox").innerHTML = `<p><b>PDFs originais:</b> ${list.filter(p => p.pdf).map(p => `<a href="${esc(p.pdf)}" target="_blank" rel="noopener">${esc(planName(p.id))}</a>`).join(" · ")} · <a href="${TSE_URL}" target="_blank" rel="noopener">página oficial do TSE com os planos de 2026</a></p>
+      <p class="status">Para incluir o plano de um novo candidato, veja o README do projeto (script <span class="mono">tools/add_plano.py</span>).</p>`;
+  };
+  fillPlans();
+  fetch("data/planos.json").then(r => r.ok ? r.json() : []).then(list => { for (const p of list) PLAN_INDEX[p.id] = p; fillPlans(); }).catch(() => {});
+  $("#planSel").addEventListener("change", () => { rPlan = $("#planSel").value; rPage = 1; $("#planSearch").hidden = true; $("#planQ").value = ""; renderReader(); });
   $("#pgPrev").onclick = async () => { const pl = await loadPlan(rPlan); const i = pl.pages.findIndex(p => p.p === rPage); rPage = pl.pages[Math.max(0, i - 1)].p; renderReader(); };
   $("#pgNext").onclick = async () => { const pl = await loadPlan(rPlan); const i = pl.pages.findIndex(p => p.p === rPage); rPage = pl.pages[Math.min(pl.pages.length - 1, i + 1)].p; renderReader(); };
   let tmr;
@@ -554,7 +686,6 @@ function initReader() {
       hits.map(h => `<div class="hit"><div class="src mono">p. ${h.page}</div><div>…${highlight(h.text, ts)}…</div><button type="button" class="linkbtn" data-open="${rPlan}:${h.page}">Ler a página inteira</button></div>`).join("") + `</div>`;
     renderReader();
   }, 250); });
-  $("#sourcesBox").innerHTML = `<p><b>PDFs originais:</b> ${ORDER.map(k => `<a href="${CAND[k].pdf}" target="_blank" rel="noopener">${esc(CAND[k].nome)} (cópia publicada por ${CAND[k].pdfVia})</a>`).join(" · ")} · <a href="${TSE_URL}" target="_blank" rel="noopener">página oficial do TSE com os planos</a></p>`;
 }
 
 /* ---------- Checar uma fala ---------- */
@@ -658,6 +789,300 @@ function initChecks() {
     CHK.cobertura.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>, ${esc(x.veiculo)}, ${esc(fmtDate(x.data))}. ${esc(x.resumo)}</li>`).join("") + `</ul>`;
 }
 
+/* ---------- Dados sob demanda ---------- */
+const DATA = {};
+function loadData(name) {
+  if (!DATA[name]) DATA[name] = fetch("data/" + name + ".json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  return DATA[name];
+}
+const once = fn => { let p = null; return () => (p ??= fn().catch(e => { p = null; throw e; })); };
+const pct = (n, t) => t ? Math.round((n / t) * 1000) / 10 : 0;
+const fmtPct = v => (v == null || isNaN(v)) ? "—" : v.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + "%";
+const failBox = (sel, what) => { $(sel).innerHTML = `<p class="empty">Não foi possível carregar ${what}. Recarregue a página.</p>`; };
+
+/* ---------- Esquerda ou direita? ---------- */
+const DIR_LABEL = { esquerda: "Esquerda", direita: "Direita", "fora do RILE": "Fora do eixo" };
+const dirClass = d => d === "esquerda" ? "left" : d === "direita" ? "right" : "out";
+function partySide(p) {
+  if (p?.lado) return p.lado;
+  const e = (p?.escalas || []).find(x => typeof x.valor === "number" && /10/.test(String(x.escala)));
+  if (!e) return null;
+  const mid = /1\s*a\s*10|1-10|1 to 10/.test(String(e.escala)) ? 5.5 : 5;
+  return e.valor < mid ? "esquerda" : e.valor > mid ? "direita" : null;
+}
+const initEspectro = once(async () => {
+  let esp, ide = null;
+  try { esp = await loadData("espectro"); } catch { failBox("#espPartidos", "a classificação"); return; }
+  try { ide = await loadData("ideologias"); } catch { /* opcional */ }
+  DATA._esp = esp; DATA._ide = ide;
+  $("#espPartidos").innerHTML = ORDER.map(k => {
+    const sig = CAND[k].partido, p = esp.partidos?.[sig] || {};
+    return `<div class="panel"><div class="col-h"><span class="num">${CAND[k].numero}</span><h3>${esc(sig)} · partido de ${esc(CAND[k].nome)}</h3></div>
+      ${p.autodeclaracao ? `<div><div class="eyebrow">Como o partido se define</div><blockquote class="lit">${esc(p.autodeclaracao)}</blockquote>${p.fonte_autodeclaracao ? `<a href="${esc(p.fonte_autodeclaracao)}" target="_blank" rel="noopener" class="status">fonte</a>` : ""}</div>` : `<p class="empty">Autodeclaração não localizada.</p>`}
+      ${(p.escalas || []).length ? `<div><div class="eyebrow">Posição segundo especialistas</div><ul class="legend">${p.escalas.map(e => `<li><b class="mono">${esc(e.valor)}</b> (${esc(e.escala)}) · <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.fonte)}</a>${e.ano ? `, ${esc(e.ano)}` : ""}</li>`).join("")}</ul></div>` : ""}
+    </div>`;
+  }).join("");
+  const keys = `<div class="keys"><span><i style="background:var(--left)"></i>Esquerda</span><span><i style="background:var(--right)"></i>Direita</span><span><i style="background:var(--seg-out)"></i>Fora do eixo esquerda–direita</span></div>`;
+  $("#espPerfil").innerHTML = keys + ORDER.map(k => {
+    const pf = esp.perfil?.[k] || {}, tot = (pf.esquerda || 0) + (pf.direita || 0) + (pf.fora || 0);
+    const seg = (n, v) => `<span style="width:${pct(n, tot)}%;background:var(${v})" title="${pct(n, tot)}%"></span>`;
+    return `<div class="barrow"><div class="lbl"><span>${esc(CAND[k].nome)}</span><span class="mono muted" style="font-weight:500">esquerda ${fmtPct(pct(pf.esquerda, tot))} · direita ${fmtPct(pct(pf.direita, tot))} · fora ${fmtPct(pct(pf.fora, tot))}</span></div>
+      <div class="bar" role="img" aria-label="${esc(CAND[k].nome)}: ${pf.esquerda} propostas de esquerda, ${pf.direita} de direita, ${pf.fora} fora do eixo">${seg(pf.esquerda, "--left")}${seg(pf.direita, "--right")}${seg(pf.fora, "--seg-out")}</div></div>`;
+  }).join("");
+  $("#espNota").textContent = [esp.metodo?.resumo, ...(esp.metodo?.limites || [])].filter(Boolean).join(" ");
+  const byKey = new Map((esp.itens || []).map(x => [x.tema + "|" + x.indice, x]));
+  DATA._espByKey = byKey;
+  $("#espSel").innerHTML = `<option value="">Selecione…</option>` + (COMP?.temas || []).map(t =>
+    `<optgroup label="${esc(t.nome)}">${t.itens.map((it, i) => byKey.has(t.id + "|" + i) && it.trecho ? `<option value="${esc(t.id + "|" + i)}">${esc(CAND[it.candidato].nome)}: ${esc(it.proposta)}</option>` : "").join("")}</optgroup>`).join("");
+  $("#espSel").addEventListener("change", () => { if ($("#espSel").value) { $("#espTxt").value = ""; verifyEspectro(); } });
+  $("#espForm").addEventListener("submit", e => { e.preventDefault(); verifyEspectro(); });
+});
+function ideologyFit(cat, sinal) {
+  const ide = DATA._ide;
+  if (!ide || !cat?.dimensao) return null;
+  const conv = [], div = [];
+  for (const i of ide.ideologias) {
+    const v = i.posicoes?.[cat.dimensao]?.valor;
+    if (v == null || v === 0) continue;
+    (Math.sign(v) * sinal > 0 ? conv : div).push(i);
+  }
+  return { conv, div, dim: ide.dimensoes.find(d => d.id === cat.dimensao) };
+}
+const NEG = /\b(acabar com|acaba com|fim d[aoe]s?|extingu|proib|cortar|reduzir|diminuir|contra |nao vai|nunca|revogar|eliminar)/;
+// Pares de categorias opostas do próprio Manifesto Project: "acabar com X" vira a categoria oposta.
+const OPOSTA = { per504: "per505", per505: "per504", per506: "per507", per507: "per506", per601: "per602", per602: "per601", per603: "per604", per604: "per603",
+  per406: "per407", per407: "per406", per413: "per401", per401: "per413", per107: "per109", per109: "per107", per701: "per702", per702: "per701", per607: "per608", per608: "per607" };
+function classifyText(text) {
+  const esp = DATA._esp, f = " " + fold(text).replace(/[^a-z0-9%-]+/g, " ") + " ";
+  let best = null, bestScore = 0, bestHits = [];
+  for (const c of esp.categorias || []) {
+    const hits = (c.palavras || []).map(fold).filter(w => w && f.includes(w));
+    const score = hits.reduce((s, w) => s + w.length, 0);
+    if (score > bestScore) { best = c; bestScore = score; bestHits = hits; }
+  }
+  const cand = /\b(lula|inacio|petista|pt)\b/.test(f) ? "lula" : /\b(flavio|bolsonaro|pl)\b/.test(f) ? "flavio" : null;
+  // A negação só vale quando não faz parte da própria palavra-chave ("reduzir impostos", "contra o aborto").
+  const neg = !!best && NEG.test(f) && !bestHits.some(w => NEG.test(" " + w + " "));
+  const flip = neg && OPOSTA[best.codigo] ? (esp.categorias || []).find(c => c.codigo === OPOSTA[best.codigo]) : null;
+  return { cat: flip || best, cand, neg: !!flip };
+}
+async function verifyEspectro() {
+  const out = $("#espOut"), esp = DATA._esp;
+  if (!esp) return;
+  out.hidden = false;
+  const txt = $("#espTxt").value.trim(), sel = $("#espSel").value;
+  let cat, dir, sinal, cand, head, extra = "";
+  if (txt) {
+    const r = classifyText(txt);
+    head = `<div class="eyebrow">Frase digitada</div><p style="margin:0;font-weight:700">${esc(txt)}</p>`;
+    if (!r.cat) { out.innerHTML = head + `<p class="empty">Não reconheci o tema da frase. Tente palavras mais diretas (ex.: "privatizar", "imposto", "polícia", "aborto").</p>`; return; }
+    cat = r.cat; cand = r.cand; sinal = cat.sinal || 0; dir = cat.direcao;
+    extra = `<p class="status">Classificação automática por palavras-chave${r.neg ? ". Como a frase fala em acabar, cortar ou proibir, foi usada a categoria oposta prevista no método" : ""}. Confira o que o plano diz na aba “Checar uma fala”.</p>`;
+    const ks = cand ? [cand] : ORDER;
+    const hits = await Promise.all(ks.map(k => searchPlan(k, txt, 2).then(r2 => ({ k, ...r2 })).catch(() => ({ k, hits: [], ts: [] }))));
+    extra += `<div class="hits"><div class="eyebrow">O que o plano diz sobre o assunto</div>` + hits.map(h => h.hits.length
+      ? h.hits.map(x => `<div class="hit"><div class="src mono">${esc(CAND[h.k].nome)} · p. ${x.page}</div><div>…${highlight(x.text, h.ts)}…</div><button type="button" class="linkbtn" data-open="${h.k}:${x.page}">Ler a página</button></div>`).join("")
+      : `<p class="empty">${esc(CAND[h.k].nome)}: nenhum trecho com essas palavras.</p>`).join("") + `</div>`;
+  } else if (sel) {
+    const [tema, idx] = sel.split("|"); const t = COMP.temas.find(x => x.id === tema); const it = t?.itens[+idx]; const cl = DATA._espByKey.get(sel);
+    if (!it || !cl) return;
+    cat = (esp.categorias || []).find(c => c.codigo === cl.categoria); cand = it.candidato; dir = cl.direcao; sinal = cat?.sinal || 0;
+    head = `<div class="eyebrow">${esc(CAND[cand].nome)} · ${esc(t.nome)}</div><p style="margin:0;font-weight:700">${esc(it.proposta)}</p>
+      <blockquote class="lit">“${esc(it.trecho)}” (p. ${esc(it.pagina)})</blockquote>`;
+    extra = cl.justificativa ? `<p class="status"><b>Por que esta categoria:</b> ${esc(cl.justificativa)}</p>` : "";
+  } else { out.hidden = true; return; }
+  const party = cand ? esp.partidos?.[CAND[cand].partido] : null, side = partySide(party);
+  let fitParty = "";
+  if (cand) {
+    if (dir === "fora do RILE" || !dir) fitParty = `<p><span class="pill out">Não se aplica</span> O tema fica fora do eixo esquerda–direita do método.</p>`;
+    else if (!side) fitParty = `<p class="status">Sem posição de referência do partido para comparar.</p>`;
+    else fitParty = `<p><span class="pill ${dir === side ? "left" : "right"}" style="${dir === side ? "color:var(--ok);border-color:var(--ok)" : "color:var(--contra);border-color:var(--contra)"}">${dir === side ? "Converge" : "Diverge"}</span>
+      A proposta é classificada como de <b>${esc(dir)}</b>. O ${esc(CAND[cand].partido)} é posicionado à <b>${esc(side)}</b> pelas referências acima.</p>`;
+  }
+  const fit = cat ? ideologyFit(cat, sinal) : null;
+  out.innerHTML = head + `<div class="row" style="align-items:center;gap:8px"><span class="pill ${dirClass(dir)}">${esc(DIR_LABEL[dir] || dir || "—")}</span>
+      <span>${esc(cat?.nome || "")} <span class="muted mono" style="font-size:13px">${esc(cat?.codigo || "")}</span></span></div>
+    ${cat?.descricao ? `<p class="status" style="margin:0">${esc(cat.descricao)}</p>` : ""}
+    ${fitParty}
+    ${fit ? `<div><div class="eyebrow">Ideologias, na dimensão “${esc(fit.dim?.nome || "")}”</div>
+      <p style="margin:4px 0"><b>Converge com:</b> ${fit.conv.map(i => `<button type="button" class="linkbtn" data-ideo="${esc(i.id)}">${esc(i.nome)}</button>`).join(", ") || "—"}</p>
+      <p style="margin:4px 0"><b>Diverge de:</b> ${fit.div.map(i => `<button type="button" class="linkbtn" data-ideo="${esc(i.id)}">${esc(i.nome)}</button>`).join(", ") || "—"}</p></div>` : ""}
+    ${extra}`;
+}
+
+/* ---------- Ideologias ---------- */
+const initIdeologias = once(async () => {
+  let ide;
+  try { ide = await loadData("ideologias"); } catch { failBox("#idList", "as ideologias"); return; }
+  DATA._ide = ide;
+  for (const i of ide.ideologias) i._f = fold(JSON.stringify(i));
+  const opts = ide.ideologias.map(i => `<option value="${esc(i.id)}">${esc(i.nome)}</option>`).join("");
+  $("#idA").innerHTML = opts; $("#idB").innerHTML = opts;
+  if (ide.ideologias[1]) $("#idB").value = ide.ideologias[1].id;
+  const renderList = () => {
+    const q = fold($("#idQ").value.trim());
+    const list = ide.ideologias.filter(i => !q || q.split(/\s+/).every(w => i._f.includes(w)));
+    $("#idList").innerHTML = list.map(i => `<button type="button" class="card" data-ideo="${esc(i.id)}" aria-pressed="false"><span class="fam">${esc(i.familia)}</span><b>${esc(i.nome)}</b><span class="muted" style="font-size:14px">${esc(i.resumo)}</span></button>`).join("")
+      || `<p class="empty">Nada encontrado.</p>`;
+  };
+  $("#idQ").addEventListener("input", renderList);
+  $("#idA").addEventListener("change", renderCmp); $("#idB").addEventListener("change", renderCmp);
+  $("#paisQ").addEventListener("input", renderPaises);
+  renderList(); renderCmp(); renderPaises();
+});
+function dimPlot(marks) {
+  const ide = DATA._ide;
+  return `<div class="dims">${ide.dimensoes.map(d => `<div class="dim"><div class="nm">${esc(d.nome)}</div>
+    <div class="track">${[0, 25, 50, 75, 100].map(x => `<span class="tick" style="left:${x}%"></span>`).join("")}
+    ${marks.map(m => { const v = m.i.posicoes?.[d.id]?.valor; return v == null ? "" : `<span class="dot" style="left:${(v + 2) * 25}%;background:${m.color}" title="${esc(m.i.nome)}: ${v}">${esc(m.tag)}</span>`; }).join("")}</div>
+    <div class="poles"><span>${esc(d.polo_menos)}</span><span style="text-align:right">${esc(d.polo_mais)}</span></div></div>`).join("")}</div>`;
+}
+function showIdeology(id) {
+  const ide = DATA._ide, i = ide?.ideologias.find(x => x.id === id);
+  if (!i) return;
+  document.querySelectorAll("#idList .card").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.ideo === id)));
+  const L = (title, html) => html ? `<div><div class="eyebrow">${title}</div>${html}</div>` : "";
+  $("#idDetail").innerHTML = `<article class="panel">
+    <div class="eyebrow">${esc(i.familia)}</div><h3 style="font-size:24px">${esc(i.nome)}</h3>
+    <p style="margin:0">${esc(i.definicao)}</p>
+    ${L("Origem", `<p style="margin:0"><b>${esc(i.origem?.periodo)}.</b> ${esc(i.origem?.contexto)}</p>`)}
+    ${L("Pensadores", `<ul class="legend">${(i.pensadores || []).map(p => `<li><b>${esc(p.nome)}</b> <span class="mono muted">${esc(p.anos)}</span>: ${esc(p.contribuicao)}</li>`).join("")}</ul>`)}
+    ${L("Obras de referência", `<ul class="legend">${(i.obras || []).map(o => `<li><i>${esc(o.titulo)}</i>, ${esc(o.autor)} (${esc(o.ano)}). ${esc(o.ideia_central)}</li>`).join("")}</ul>`)}
+    ${L("Propostas típicas de atuação", `<ul class="legend">${(i.propostas || []).map(p => `<li>${esc(p)}</li>`).join("")}</ul>`)}
+    ${L("Posição em cada dimensão", dimPlot([{ i, tag: "", color: "var(--accent)" }]) + `<ul class="legend" style="margin-top:8px">${DATA._ide.dimensoes.map(d => i.posicoes?.[d.id]?.porque ? `<li><b>${esc(d.nome)}:</b> ${esc(i.posicoes[d.id].porque)}</li>` : "").join("")}</ul>`)}
+    ${L("Variantes", (i.variantes || []).length ? `<p style="margin:0">${i.variantes.map(esc).join(" · ")}</p>` : "")}
+    ${L("Críticas", `<ul class="legend">${(i.criticas || []).map(c => `<li><b>${esc(c.de)}:</b> ${esc(c.critica)}</li>`).join("")}</ul>`)}
+    ${L("Países e governos", `<ul class="legend">${(i.exemplos || []).map(x => `<li><b>${esc(x.pais)}</b> (${esc(x.periodo)}) <span class="pill out">${x.enquadramento === "total" ? "total" : "parcial"}</span> ${esc(x.criterio)} ${x.fonte ? `<a href="${esc(x.fonte)}" target="_blank" rel="noopener">fonte</a>` : ""}</li>`).join("")}</ul>`)}
+    ${L("No Brasil", i.no_brasil ? `<p style="margin:0">${esc(i.no_brasil)}</p>` : "")}
+    ${L("Fontes", `<p style="margin:0">${(i.fontes || []).map(f => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a>`).join(" · ")}</p>`)}
+  </article>`;
+  $("#idDetail").scrollIntoView({ block: "start" });
+}
+function renderCmp() {
+  const ide = DATA._ide; if (!ide) return;
+  const a = ide.ideologias.find(x => x.id === $("#idA").value), b = ide.ideologias.find(x => x.id === $("#idB").value);
+  if (!a || !b) return;
+  if (a.id === b.id) { $("#idCmp").innerHTML = `<p class="empty">Escolha duas ideologias diferentes.</p>`; return; }
+  const rel = ide.relacoes.find(r => (r.a === a.id && r.b === b.id) || (r.a === b.id && r.b === a.id));
+  const same = [], opp = [];
+  for (const d of ide.dimensoes) {
+    const va = a.posicoes?.[d.id]?.valor, vb = b.posicoes?.[d.id]?.valor;
+    if (va == null || vb == null) continue;
+    if (Math.abs(va - vb) <= 1) same.push(d.nome); else if (Math.sign(va) !== Math.sign(vb) && va && vb) opp.push(d.nome);
+  }
+  $("#idCmp").innerHTML = `<div class="keys"><span><i style="background:var(--left)"></i>A: ${esc(a.nome)}</span><span><i style="background:var(--right)"></i>B: ${esc(b.nome)}</span></div>
+    ${dimPlot([{ i: a, tag: "A", color: "var(--left)" }, { i: b, tag: "B", color: "var(--right)" }])}
+    <div class="grid2">
+      <div><div class="eyebrow">Onde convergem</div><ul class="legend">${(rel?.convergem || []).map(x => `<li>${esc(x)}</li>`).join("")}${same.length ? `<li class="muted">Posição parecida em: ${esc(same.join(", "))}.</li>` : ""}</ul>${!rel?.convergem?.length && !same.length ? `<p class="empty">Nenhum ponto de convergência registrado.</p>` : ""}</div>
+      <div><div class="eyebrow">Onde divergem</div><ul class="legend">${(rel?.divergem || []).map(x => `<li>${esc(x)}</li>`).join("")}${opp.length ? `<li class="muted">Polos opostos em: ${esc(opp.join(", "))}.</li>` : ""}</ul>${!rel?.divergem?.length && !opp.length ? `<p class="empty">Nenhum ponto de divergência registrado.</p>` : ""}</div>
+    </div>
+    ${rel ? "" : `<p class="status">Sem comparação escrita para este par; os pontos acima vêm das posições de cada ideologia nas dimensões.</p>`}`;
+}
+function renderPaises() {
+  const ide = DATA._ide; if (!ide) return;
+  const q = fold($("#paisQ").value.trim());
+  const rows = [];
+  for (const i of ide.ideologias) for (const x of i.exemplos || []) if (!q || fold(x.pais).includes(q)) rows.push({ i, x });
+  rows.sort((r1, r2) => r1.x.pais.localeCompare(r2.x.pais, "pt"));
+  $("#paisOut").innerHTML = rows.length ? `<div class="tablewrap"><table><thead><tr><th>País</th><th>Período</th><th>Ideologia</th><th>Enquadramento</th><th>Critério</th></tr></thead><tbody>${rows.map(r =>
+    `<tr><td><b>${esc(r.x.pais)}</b></td><td class="mono">${esc(r.x.periodo)}</td><td><button type="button" class="linkbtn" data-ideo="${esc(r.i.id)}">${esc(r.i.nome)}</button></td><td>${r.x.enquadramento === "total" ? "Total" : "Parcial"}</td><td>${esc(r.x.criterio)} ${r.x.fonte ? `<a href="${esc(r.x.fonte)}" target="_blank" rel="noopener">fonte</a>` : ""}</td></tr>`).join("")}</tbody></table></div>`
+    : `<p class="empty">Nenhum país encontrado.</p>`;
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-ideo]"); if (!b) return;
+  if ($("#v-ideologias").hidden) { location.hash = "ideologias"; initIdeologias().then(() => showIdeology(b.dataset.ideo)); }
+  else showIdeology(b.dataset.ideo);
+});
+
+/* ---------- Promessas anteriores ---------- */
+let histCand = "lula";
+const ST = { cumpridas: ["Cumpridas", "--ok"], parciais: ["Parcialmente cumpridas", "--part"], nao_cumpridas: ["Não cumpridas", "--contra"], em_andamento: ["Em andamento", "--seg-out"] };
+const initHistorico = once(async () => {
+  let h;
+  try { h = await loadData("historico"); } catch { failBox("#histList", "o histórico"); return; }
+  DATA._hist = h;
+  $("#histSeg").addEventListener("click", e => { const b = e.target.closest("[data-hist]"); if (!b) return; histCand = b.dataset.hist; renderHist(); });
+  $("#histNota").textContent = h.nota_metodo || "";
+  renderHist();
+});
+function trackerHTML(t) {
+  const parts = Object.keys(ST).map(k => [k, t[k]]).filter(([, v]) => typeof v === "number");
+  const outros = Object.entries(t.outros || {}).filter(([, v]) => typeof v === "number");
+  const tot = t.total || parts.reduce((s, [, v]) => s + v, 0) || outros.reduce((s, [, v]) => s + v, 0);
+  const head = `<div><b>${esc(t.fonte)}</b>${t.titulo ? `: <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.titulo)}</a>` : ` · <a href="${esc(t.url)}" target="_blank" rel="noopener">ver levantamento</a>`} <span class="muted">· ${esc(fmtDate(t.data))}</span>${t.url_copia ? ` · <a href="${esc(t.url_copia)}" target="_blank" rel="noopener">cópia arquivada</a>` : ""}</div>`;
+  if (!parts.length && outros.length && tot) {
+    return `<div class="hit">${head}
+      <div class="bar">${outros.map(([, v], i) => `<span style="width:${pct(v, tot)}%;background:var(--accent);opacity:${1 - i * 0.2}"></span>`).join("")}</div>
+      <div class="keys">${outros.map(([k, v], i) => `<span><i style="background:var(--accent);opacity:${1 - i * 0.2}"></i>${esc(k)}: <b class="mono">${fmtPct(pct(v, tot))}</b> (${v})</span>`).join("")}<span>Total: <b class="mono">${tot}</b></span></div>
+      <p class="status" style="margin:0">Esta fonte usa rótulos próprios, mostrados como publicados. ${esc(t.metodo || "")} ${esc(t.observacao || "")}</p></div>`;
+  }
+  if (!parts.length || !tot) return `<div class="hit">${head}<p class="status" style="margin:0">Sem números agregados publicados. ${esc(t.observacao || "")}</p></div>`;
+  return `<div class="hit">${head}
+    <div class="bar" role="img" aria-label="${parts.map(([k, v]) => `${ST[k][0]}: ${v} de ${tot}`).join("; ")}">${parts.map(([k, v]) => `<span style="width:${pct(v, tot)}%;background:var(${ST[k][1]})"></span>`).join("")}</div>
+    <div class="keys">${parts.map(([k, v]) => `<span><i style="background:var(${ST[k][1]})"></i>${ST[k][0]}: <b class="mono">${fmtPct(pct(v, tot))}</b> (${v})</span>`).join("")}${(() => { const rest = tot - parts.reduce((s, [, v]) => s + v, 0); return rest > 0 ? `<span><i style="background:var(--line)"></i>Outra classificação ou sem classificação: <b class="mono">${fmtPct(pct(rest, tot))}</b> (${rest})</span>` : ""; })()}<span>Total: <b class="mono">${tot}</b></span></div>
+    ${outros.length ? `<p class="status" style="margin:0">Rótulos originais da fonte: ${outros.map(([k, v]) => `${esc(k)} (${v})`).join("; ")}.</p>` : ""}
+    <p class="status" style="margin:0">${esc(t.metodo || "")} ${t.usa_dados_oficiais ? `Usa dados oficiais: ${esc(t.usa_dados_oficiais)}.` : ""} ${esc(t.observacao || "")}</p></div>`;
+}
+function renderHist() {
+  const h = DATA._hist; if (!h) return;
+  document.querySelectorAll("[data-hist]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.hist === histCand)));
+  const regs = h.registros.filter(r => r.vinculo?.candidato_2026 === histCand);
+  const SL = { cumprida: "Cumprida", parcial: "Parcial", nao_cumprida: "Não cumprida", em_andamento: "Em andamento" };
+  $("#histList").innerHTML = regs.map(r => `<article class="panel">
+    <div class="row" style="justify-content:space-between;align-items:baseline"><h3>${esc(r.candidato)} · ${esc(r.eleicao)} · ${esc(r.partido)}</h3><span class="pill out">${esc(r.vinculo?.tipo || "")}</span></div>
+    <p class="status" style="margin:0">${esc(r.vinculo?.explicacao || "")}</p>
+    <p style="margin:0">${r.resultado === "eleito" ? `Eleito · governo ${esc(r.governo || "")}` : "Não eleito"}${r.plano_titulo ? ` · Plano: ${r.plano_url ? `<a href="${esc(r.plano_url)}" target="_blank" rel="noopener">${esc(r.plano_titulo)}</a>` : esc(r.plano_titulo)}` : ""}</p>
+    ${r.resultado === "eleito" ? ((r.rastreadores || []).length ? `<div class="hits"><div class="eyebrow">Levantamentos de promessas</div>${r.rastreadores.map(trackerHTML).join("")}</div>` : `<p class="empty">Nenhum levantamento independente de promessas encontrado para este governo.</p>`) : ""}
+    ${(r.exemplos || []).length ? `<div class="hits"><div class="eyebrow">Exemplos</div>${r.exemplos.map(x => `<div class="hit"><div><span class="pill out">${esc(SL[x.status] || x.status)}</span> ${esc(x.promessa)}</div><div class="src">${esc(x.explicacao || "")} <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.fonte)}</a></div></div>`).join("")}</div>` : ""}
+  </article>`).join("") || `<p class="empty">Nenhum registro.</p>`;
+  renderInd(regs);
+}
+function renderInd(regs) {
+  const h = DATA._hist, I = h.indicadores || {};
+  const yrs = regs.filter(r => r.governo).flatMap(r => { const m = String(r.governo).match(/(\d{4})\D+(\d{4})/); return m ? [[+m[1], +m[2]]] : []; });
+  const avg = (ser, a, b) => { const v = []; for (let y = a; y <= b; y++) { const x = ser?.[y]; if (typeof x === "number") v.push(x); } return v.length ? { m: v.reduce((s, x) => s + x, 0) / v.length, n: v.length, full: v.length === b - a + 1 } : null; };
+  const cell = r => r ? `${fmtPct(r.m)}${r.full ? "" : "*"}` : "—";
+  $("#histInd").innerHTML = `<table><thead><tr><th>Governo</th><th>Partido</th><th>Anos</th><th class="num">PIB (cresc. real)</th><th class="num">Inflação (IPCA)</th><th class="num">Desocupação</th></tr></thead><tbody>${(h.governos || []).map(g => {
+    const hl = yrs.some(([a, b]) => a <= g.fim && b >= g.inicio);
+    return `<tr class="${hl ? "hl" : ""}"><td><b>${esc(g.nome)}</b><br><span class="muted">${esc(g.presidente)}</span></td><td>${esc(g.partido)}</td><td class="mono">${g.inicio}–${g.fim}</td><td class="num">${cell(avg(I.pib_real_pct, g.inicio, g.fim))}</td><td class="num">${cell(avg(I.ipca_pct, g.inicio, g.fim))}</td><td class="num">${cell(avg(I.desocupacao_pct, g.inicio, g.fim))}</td></tr>`;
+  }).join("")}</tbody></table>`;
+  const p26 = I.parcial_2026 || {};
+  const p26txt = [["pib_real_pct", "PIB"], ["ipca_pct", "IPCA"], ["desocupacao_pct", "Desocupação"]].map(([k, n]) => p26[k] ? `${n}: ${p26[k].valor != null ? fmtPct(p26[k].valor) + " " : ""}(${esc(p26[k].periodo || "")})` : "").filter(Boolean).join("; ");
+  $("#histIndNota").innerHTML = `Linhas destacadas: governos ligados ao candidato escolhido. * média de parte dos anos do mandato (dado ainda não disponível ou série iniciada depois). ${p26txt ? `<b>2026, dado parcial:</b> ${p26txt}. ` : ""}${(I.notas || []).map(esc).join(" ")} Fontes: ${Object.entries(I.fontes || {}).map(([k, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc({ pib_real_pct: "PIB", ipca_pct: "IPCA", desocupacao_pct: "desocupação" }[k] || k)}</a>`).join(" · ")}.`;
+}
+
+/* ---------- Eleições ---------- */
+const initEleicoes = once(async () => {
+  let e;
+  try { e = await loadData("eleicoes"); } catch { failBox("#elList", "as eleições"); return; }
+  DATA._el = e;
+  for (const x of e.eleicoes) x._f = fold([x.ano, x.periodo, x.tipo, ...x.candidatos.map(c => c.nome + " " + c.partido)].join(" "));
+  const pers = [...new Set(e.eleicoes.map(x => x.periodo).filter(Boolean))];
+  $("#elPer").innerHTML = `<option value="">Todos</option>` + pers.map(p => `<option>${esc(p)}</option>`).join("");
+  $("#elNota").textContent = e.nota || "";
+  let t; $("#elQ").addEventListener("input", () => { clearTimeout(t); t = setTimeout(renderEl, 200); });
+  $("#elPer").addEventListener("change", renderEl);
+  renderEl();
+});
+function renderEl() {
+  const e = DATA._el; if (!e) return;
+  const q = fold($("#elQ").value.trim()), per = $("#elPer").value;
+  const ws = q.split(/\s+/).filter(Boolean);
+  const list = e.eleicoes.filter(x => (!per || x.periodo === per) && ws.every(w => x._f.includes(w))).sort((a, b) => b.ano - a.ano);
+  const n = v => typeof v === "number" ? v.toLocaleString("pt-BR") : "—";
+  $("#elList").innerHTML = list.map(x => {
+    const win = x.candidatos.find(c => c.eleito);
+    const hasT2 = x.candidatos.some(c => c.pct_2t != null || c.votos_2t != null);
+    const open = ws.length && list.length <= 6 ? " open" : "";
+    return `<details class="el"${open}><summary><span class="yr">${x.ano}</span><span class="pill out">${esc(x.tipo)}</span><span>${win ? `Eleito: <b>${esc(win.nome)}</b>${win.partido ? ` (${esc(win.partido)})` : ""}` : "Sem resultado final"}</span><span class="muted">${x.candidatos.length} candidato(s)</span></summary>
+      <div class="inner">${x.observacao ? `<p class="status" style="margin:0">${esc(x.observacao)}</p>` : ""}
+      <div class="tablewrap"><table><thead><tr><th>Candidato</th><th>Partido</th><th class="num">Votos 1º turno</th><th class="num">% 1º turno</th>${hasT2 ? `<th class="num">% 2º turno</th>` : ""}<th>Plano</th></tr></thead><tbody>${x.candidatos.map(c =>
+        `<tr${c.eleito ? ` class="hl"` : ""}><td>${c.eleito ? "<b>" : ""}${esc(c.nome)}${c.eleito ? "</b> · eleito" : ""}</td><td>${esc(c.partido || "—")}</td><td class="num">${n(c.votos_1t)}</td><td class="num">${fmtPct(c.pct_1t)}</td>${hasT2 ? `<td class="num">${fmtPct(c.pct_2t)}</td>` : ""}<td>${c.plano_url ? `<a href="${esc(c.plano_url)}" target="_blank" rel="noopener">ver plano</a>` : c.plano_disponivel ? "registrado no TSE" : "—"}</td></tr>`).join("")}</tbody></table></div>
+      ${(x.fontes || []).length ? `<p class="status" style="margin:0">Fontes: ${x.fontes.map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">${i + 1}</a>`).join(" · ")}</p>` : ""}</div></details>`;
+  }).join("") || `<p class="empty">Nenhuma eleição encontrada.</p>`;
+}
+const LAZY = { espectro: initEspectro, ideologias: initIdeologias, historico: initHistorico, eleicoes: initEleicoes };
+
 /* ---------- Início ---------- */
 function initMeta() {
   const ctx = CHK?.contexto || {};
@@ -673,6 +1098,20 @@ function toast(msg) {
   const t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); t.textContent = msg;
   document.body.append(t); setTimeout(() => t.remove(), 2600);
 }
+function initTheme() {
+  const paint = () => {
+    const cur = document.documentElement.dataset.theme || "auto";
+    document.querySelectorAll("[data-theme-set]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.themeSet === cur)));
+  };
+  $("#themeSeg").addEventListener("click", e => {
+    const b = e.target.closest("[data-theme-set]"); if (!b) return;
+    const v = b.dataset.themeSet;
+    if (v === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = v;
+    store.set("lal-theme", v);
+    paint();
+  });
+  paint();
+}
 function initShare() {
   $("#shareBtn").onclick = async () => {
     const url = location.href.split("#")[0] + location.hash;
@@ -681,7 +1120,7 @@ function initShare() {
     try { await navigator.clipboard.writeText(url); toast("Link copiado"); } catch { toast(url); }
   };
 }
-initMeta(); initCompare(); initCheck(); initChecks(); initReader(); initShare(); route();
+initMeta(); initCompare(); initCheck(); initChecks(); initReader(); initShare(); initTheme(); route();
 </script>
 </body>
 </html>

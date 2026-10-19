@@ -1,0 +1,1002 @@
+{
+  "atualizado_em": "2026-10-19",
+  "dimensoes": [
+    {"id": "estado_economia", "nome": "Papel do Estado na economia", "polo_menos": "Estado dirige ou possui os meios de produção", "polo_mais": "Mercado livre, Estado mínimo"},
+    {"id": "redistribuicao", "nome": "Redistribuição de renda", "polo_menos": "Forte redistribuição para igualar resultados", "polo_mais": "Igualdade só perante a lei, sem redistribuição"},
+    {"id": "costumes", "nome": "Costumes e valores", "polo_menos": "Mudança de costumes, progressismo", "polo_mais": "Preservação de tradições, conservadorismo"},
+    {"id": "autoridade", "nome": "Indivíduo e autoridade do Estado", "polo_menos": "Máxima liberdade individual diante do Estado", "polo_mais": "Estado forte, ordem e autoridade"},
+    {"id": "nacao", "nome": "Nação e mundo", "polo_menos": "Internacionalismo, cooperação supranacional", "polo_mais": "Nacionalismo, soberania acima de tudo"}
+  ],
+  "ideologias": [
+    {
+      "id": "liberalismo_classico",
+      "nome": "Liberalismo clássico",
+      "familia": "centro-direita",
+      "resumo": "Corrente que põe a liberdade individual, a propriedade privada e o governo limitado por leis no centro da política.",
+      "definicao": "Para o liberalismo clássico, cada pessoa tem direitos que existem antes do governo: à vida, à liberdade e à propriedade. O governo existe para proteger esses direitos, e seu poder deve ser dividido e limitado por uma constituição. As trocas entre as pessoas devem ser livres, com pouca interferência do Estado. Seus defensores afirmam que mercados livres e regras iguais para todos geram prosperidade e permitem que cada um busque seus próprios objetivos.",
+      "origem": {
+        "periodo": "Séculos XVII e XVIII",
+        "contexto": "Surgiu na Inglaterra e na França como reação às monarquias absolutas e aos privilégios de nascimento. A Revolução Gloriosa inglesa (1688), a independência dos Estados Unidos (1776) e a Revolução Francesa (1789) aplicaram parte dessas ideias. No século XIX, inspirou o livre-comércio britânico."
+      },
+      "pensadores": [
+        {"nome": "John Locke", "anos": "1632–1704", "contribuicao": "Defendeu que o governo depende do consentimento dos governados e existe para proteger vida, liberdade e propriedade."},
+        {"nome": "Adam Smith", "anos": "1723–1790", "contribuicao": "Argumentou que a divisão do trabalho e a livre troca nos mercados aumentam a riqueza de um país."},
+        {"nome": "John Stuart Mill", "anos": "1806–1873", "contribuicao": "Defendeu que o Estado só pode limitar a liberdade de alguém para evitar dano a outras pessoas."}
+      ],
+      "obras": [
+        {"titulo": "Segundo Tratado sobre o Governo", "autor": "John Locke", "ano": 1689, "ideia_central": "O poder político vem do consentimento do povo e deve proteger os direitos naturais."},
+        {"titulo": "A Riqueza das Nações", "autor": "Adam Smith", "ano": 1776, "ideia_central": "A busca do interesse próprio em mercados livres tende a beneficiar o conjunto da sociedade."},
+        {"titulo": "Sobre a Liberdade", "autor": "John Stuart Mill", "ano": 1859, "ideia_central": "Cada pessoa deve ser livre para viver como quiser, desde que não prejudique os outros."}
+      ],
+      "propostas": [
+        "Garantir por lei a liberdade de expressão, de religião, de associação e de imprensa.",
+        "Proteger a propriedade privada e o cumprimento dos contratos.",
+        "Limitar o poder do governo com constituição escrita e separação de poderes.",
+        "Reduzir tarifas e barreiras ao comércio entre países.",
+        "Manter impostos baixos e gastos públicos concentrados em justiça, segurança e defesa."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": 2, "porque": "Quer que a economia seja guiada pelas trocas livres e que o Estado se limite a garantir regras e contratos."},
+        "redistribuicao": {"valor": 2, "porque": "Defende a igualdade perante a lei; a redistribuição de renda pelo Estado não faz parte do seu programa original."},
+        "costumes": {"valor": 0, "porque": "Defende que o Estado não imponha um modo de vida; seus adeptos variaram entre tradicionais e reformistas."},
+        "autoridade": {"valor": -1, "porque": "Quer um Estado limitado por direitos individuais, mas capaz de garantir a lei, a ordem e a defesa."},
+        "nacao": {"valor": -1, "porque": "Favorece o livre-comércio e a paz entre nações, sem propor órgãos acima dos Estados."}
+      },
+      "variantes": ["Liberalismo whig britânico", "Escola de Manchester (livre-comércio)", "Liberalismo constitucional norte-americano"],
+      "criticas": [
+        {"de": "socialistas", "critica": "A liberdade de contrato entre patrão e empregado é desigual na prática, porque quem não tem propriedade precisa aceitar as condições oferecidas."},
+        {"de": "conservadores", "critica": "Ao partir do indivíduo isolado, enfraquece os laços de família, religião e comunidade que sustentam a ordem social."},
+        {"de": "liberais sociais", "critica": "Sem educação, saúde e renda mínima, muitas pessoas não conseguem usar na prática as liberdades garantidas em lei."}
+      ],
+      "exemplos": [
+        {"pais": "Reino Unido", "periodo": "1846–1914", "enquadramento": "parcial", "criterio": "Políticas reconhecidas por fontes de referência: livre-comércio após a revogação das Leis dos Cereais (1846) e governos do Partido Liberal no século XIX.", "fonte": "https://www.britannica.com/topic/Liberal-Party-political-party-United-Kingdom"},
+        {"pais": "Estados Unidos", "periodo": "1787–presente (Constituição de 1787 e Declaração de Direitos de 1791)", "enquadramento": "parcial", "criterio": "Constituição com separação de poderes, governo limitado e direitos individuais, apontada por fontes de referência como aplicação de ideias liberais.", "fonte": "https://www.britannica.com/topic/liberalism"},
+        {"pais": "Países Baixos", "periodo": "2010–2024", "enquadramento": "parcial", "criterio": "Governos de Mark Rutte, do VVD, partido membro pleno da Internacional Liberal desde 1960 (informação de 2026).", "fonte": "https://en.wikipedia.org/wiki/Liberal_International"},
+        {"pais": "Estônia", "periodo": "2021–presente (Kaja Kallas e Kristen Michal; informação de 2026)", "enquadramento": "parcial", "criterio": "Governo liderado pelo Partido Reformista, membro pleno da Internacional Liberal desde 1994.", "fonte": "https://en.wikipedia.org/wiki/Liberal_International"}
+      ],
+      "no_brasil": "No Império (1822–1889), o Partido Liberal defendeu monarquia constitucional e descentralização, e a Constituição republicana de 1891 seguiu o modelo dos Estados Unidos. Em 2026, o Partido Novo se apresenta como liberal e é o único partido brasileiro listado na Internacional Liberal, como observador.",
+      "fontes": [
+        {"titulo": "Liberalism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/liberalism/"},
+        {"titulo": "Locke's Political Philosophy — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/locke-political/"},
+        {"titulo": "Liberalism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/liberalism"},
+        {"titulo": "Liberal Party (Reino Unido) — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Liberal-Party-political-party-United-Kingdom"}
+      ]
+    },
+    {
+      "id": "liberalismo_social",
+      "nome": "Liberalismo social",
+      "familia": "centro",
+      "resumo": "Corrente liberal que defende liberdades individuais e economia de mercado, junto com ação do Estado para dar oportunidades reais a todos.",
+      "definicao": "O liberalismo social mantém os valores liberais (direitos individuais, democracia e mercado), mas afirma que a pobreza, a doença e a falta de estudo também tiram a liberdade das pessoas. Por isso, aceita que o Estado ofereça educação, saúde, aposentadoria e seguro-desemprego, e que regule o mercado. Seus defensores dizem que isso não abandona o liberalismo: garante que todos possam de fato usar a própria liberdade.",
+      "origem": {
+        "periodo": "Final do século XIX e início do século XX",
+        "contexto": "Surgiu no Reino Unido, quando pensadores liberais concluíram que a industrialização deixava parte da população sem condições de exercer seus direitos. O governo do Partido Liberal britânico entre 1906 e 1914 criou a aposentadoria pública (1908) e o seguro de saúde e desemprego (1911). Depois de 1945, ideias semelhantes influenciaram o Estado de bem-estar em vários países."
+      },
+      "pensadores": [
+        {"nome": "Thomas Hill Green", "anos": "1836–1882", "contribuicao": "Definiu liberdade como capacidade real de agir e se desenvolver, e não só como ausência de proibição."},
+        {"nome": "Leonard T. Hobhouse", "anos": "1864–1929", "contribuicao": "Defendeu que o Estado deve garantir condições mínimas para que cada pessoa viva com liberdade."},
+        {"nome": "John Rawls", "anos": "1921–2002", "contribuicao": "Propôs que desigualdades só são justas se beneficiarem os que estão em pior situação."}
+      ],
+      "obras": [
+        {"titulo": "Liberalismo", "autor": "Leonard T. Hobhouse", "ano": 1911, "ideia_central": "O liberalismo é compatível com a ação do Estado contra a pobreza e a insegurança."},
+        {"titulo": "Seguro Social e Serviços Afins (Relatório Beveridge)", "autor": "William Beveridge", "ano": 1942, "ideia_central": "Um sistema público de seguridade social deve proteger todos contra a miséria, a doença e o desemprego."},
+        {"titulo": "Uma Teoria da Justiça", "autor": "John Rawls", "ano": 1971, "ideia_central": "Uma sociedade justa garante liberdades iguais e organiza as desigualdades em favor dos que têm menos."}
+      ],
+      "propostas": [
+        "Garantir liberdades civis e direitos de minorias.",
+        "Oferecer educação e saúde públicas para ampliar oportunidades.",
+        "Criar seguros públicos contra desemprego, doença e velhice.",
+        "Regular mercados para impedir monopólios e abusos contra consumidores.",
+        "Cobrar impostos progressivos, em que quem ganha mais paga proporção maior."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": 0, "porque": "Defende economia de mercado com regulação e serviços públicos, sem estatizar a produção."},
+        "redistribuicao": {"valor": -1, "porque": "Apoia impostos progressivos e serviços públicos para igualar oportunidades, sem buscar igualar resultados."},
+        "costumes": {"valor": -1, "porque": "Tende a apoiar mudanças de costumes que ampliem a liberdade individual, como direitos civis de minorias."},
+        "autoridade": {"valor": -1, "porque": "Prioriza direitos individuais e limites ao poder do Estado sobre a vida privada."},
+        "nacao": {"valor": -1, "porque": "Apoia cooperação internacional e organismos multilaterais."}
+      },
+      "variantes": ["Novo liberalismo britânico", "Liberalismo igualitário (Rawls)", "Social-liberalismo europeu"],
+      "criticas": [
+        {"de": "liberais clássicos e libertários", "critica": "Ao ampliar impostos e serviços do Estado, reduz a liberdade econômica que diz defender."},
+        {"de": "socialistas", "critica": "Trata os efeitos da desigualdade sem mudar a propriedade dos meios de produção, que seria sua causa."},
+        {"de": "conservadores", "critica": "Ao tratar o indivíduo como unidade central, dá pouco peso a tradições e a instituições como família e religião."}
+      ],
+      "exemplos": [
+        {"pais": "Reino Unido", "periodo": "1906–1914", "enquadramento": "total", "criterio": "Governo do Partido Liberal que a Britannica associa ao 'novo liberalismo': aposentadoria pública (1908) e Lei do Seguro Nacional (1911).", "fonte": "https://www.britannica.com/topic/new-liberalism"},
+        {"pais": "Alemanha Ocidental", "periodo": "1969–1982", "enquadramento": "parcial", "criterio": "Coalizão social-liberal: o FDP, membro da Internacional Liberal desde 1947, governou com o SPD e adotou programa social-liberal em 1971.", "fonte": "https://en.wikipedia.org/wiki/Liberal_International"},
+        {"pais": "Canadá", "periodo": "2015–presente (Justin Trudeau e Mark Carney; informação de 2026)", "enquadramento": "parcial", "criterio": "Governo do Partido Liberal do Canadá, membro pleno da Internacional Liberal desde 1947.", "fonte": "https://en.wikipedia.org/wiki/Liberal_International"}
+      ],
+      "no_brasil": "Rui Barbosa, liberal, defendeu em conferência de 1919 leis de proteção ao trabalhador, aproximando-se dessa corrente. Em 2026, nenhum partido brasileiro é membro pleno da Internacional Liberal.",
+      "fontes": [
+        {"titulo": "Liberalism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/liberalism/"},
+        {"titulo": "John Rawls — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/rawls/"},
+        {"titulo": "New liberalism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/new-liberalism"},
+        {"titulo": "Rui Barbosa, A questão social e política no Brasil (SciELO Books)", "url": "https://static.scielo.org/scielobooks/zrvn9/pdf/barbosa-9788579820748.pdf"}
+      ]
+    },
+    {
+      "id": "libertarianismo",
+      "nome": "Libertarianismo",
+      "familia": "direita",
+      "resumo": "Corrente que considera a liberdade individual o valor político mais alto e quer reduzir o Estado ao mínimo ou eliminá-lo.",
+      "definicao": "O libertarianismo parte da ideia de que cada pessoa é dona de si mesma e do que obtém por trabalho ou troca voluntária. Ninguém, nem o governo, pode usar a força contra quem não violou direitos alheios. Na versão do 'Estado mínimo', o governo só cuida de polícia, justiça e defesa; na versão anarcocapitalista, até esses serviços seriam oferecidos por empresas privadas. Na vida pessoal, defende que cada um decida sobre as próprias escolhas, desde que não prejudique terceiros.",
+      "origem": {
+        "periodo": "Século XX, com raízes nos séculos XVII a XIX",
+        "contexto": "Retoma ideias de John Locke e do anarquismo individualista do século XIX nos Estados Unidos. Ganhou forma nos EUA nas décadas de 1960 e 1970, com autores como Murray Rothbard e Robert Nozick. O Partido Libertário norte-americano foi fundado em 1971."
+      },
+      "pensadores": [
+        {"nome": "Robert Nozick", "anos": "1938–2002", "contribuicao": "Argumentou que só um Estado mínimo, limitado a proteger direitos, é justificável."},
+        {"nome": "Murray Rothbard", "anos": "1926–1995", "contribuicao": "Defendeu o anarcocapitalismo, em que todos os serviços, inclusive a segurança, seriam privados."},
+        {"nome": "David Friedman", "anos": "1945–", "contribuicao": "Propôs, com argumentos econômicos, uma sociedade sem Estado baseada em contratos privados."}
+      ],
+      "obras": [
+        {"titulo": "Anarquia, Estado e Utopia", "autor": "Robert Nozick", "ano": 1974, "ideia_central": "Um Estado mínimo pode surgir sem violar direitos; qualquer Estado maior os viola."},
+        {"titulo": "As Engrenagens da Liberdade", "autor": "David Friedman", "ano": 1973, "ideia_central": "Leis e segurança poderiam ser fornecidas por mercados privados."},
+        {"titulo": "A Ética da Liberdade", "autor": "Murray Rothbard", "ano": 1982, "ideia_central": "A autopropriedade e a não agressão bastam para fundamentar uma sociedade sem Estado."}
+      ],
+      "propostas": [
+        "Cortar impostos e gastos do governo de forma ampla.",
+        "Privatizar empresas e serviços públicos.",
+        "Eliminar regulações sobre preços, profissões e negócios.",
+        "Descriminalizar escolhas privadas que não prejudiquem outros, como o uso de drogas por adultos.",
+        "Defender a livre circulação de bens e capitais entre países."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": 2, "porque": "Quer mercado livre e Estado reduzido a funções mínimas, ou nenhum Estado."},
+        "redistribuicao": {"valor": 2, "porque": "Considera a redistribuição por impostos uma forma de tirar à força o que pertence a cada pessoa."},
+        "costumes": {"valor": -1, "porque": "Defende que o Estado não proíba escolhas privadas, o que inclui liberar condutas que conservadores querem restringir; muitos adeptos são tradicionais na vida pessoal."},
+        "autoridade": {"valor": -2, "porque": "Reduz ao mínimo o poder do Estado sobre o indivíduo."},
+        "nacao": {"valor": -1, "porque": "Rejeita o nacionalismo econômico e favorece a livre circulação de bens e capitais; adeptos divergem sobre imigração."}
+      },
+      "variantes": ["Minarquismo (Estado mínimo)", "Anarcocapitalismo", "Libertarianismo de esquerda (recursos naturais como bem comum)"],
+      "criticas": [
+        {"de": "socialistas e social-democratas", "critica": "Sem políticas públicas, a desigualdade de partida se reproduz e a liberdade fica, na prática, para quem tem recursos."},
+        {"de": "conservadores", "critica": "Ao liberar condutas como o uso de drogas, enfraquece normas morais e comunitárias."},
+        {"de": "liberais sociais e economistas", "critica": "Segurança, meio ambiente e infraestrutura dependem de ação coletiva que o mercado sozinho não oferece."}
+      ],
+      "exemplos": [
+        {"pais": "Argentina", "periodo": "2023–presente (informação de 2026)", "enquadramento": "parcial", "criterio": "O presidente Javier Milei se declara anarcocapitalista e é descrito pela Britannica como economista libertário de direita; governa com minoria no Congresso.", "fonte": "https://www.britannica.com/biography/Javier-Milei"},
+        {"pais": "Nova Zelândia", "periodo": "2023–2026 (coalizão formada após a eleição de 2023; informação de 2026)", "enquadramento": "parcial", "criterio": "O partido ACT, descrito como libertário e defensor de governo menor, integra a coalizão de governo; seu líder, David Seymour, é vice-primeiro-ministro desde 2025.", "fonte": "https://en.wikipedia.org/wiki/David_Seymour"}
+      ],
+      "no_brasil": "Institutos como o Mises Brasil divulgam o libertarianismo. O movimento Libertários (LIBER), criado em 2009, buscou registro como partido no TSE; em 2026, não há partido registrado que se declare libertário.",
+      "fontes": [
+        {"titulo": "Libertarianism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/libertarianism/"},
+        {"titulo": "Robert Nozick's Political Philosophy — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/nozick-political/"},
+        {"titulo": "Libertarianism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/libertarianism-politics"},
+        {"titulo": "Javier Milei — Encyclopaedia Britannica", "url": "https://www.britannica.com/biography/Javier-Milei"}
+      ]
+    },
+    {
+      "id": "neoliberalismo",
+      "nome": "Neoliberalismo",
+      "familia": "centro-direita",
+      "resumo": "Conjunto de ideias e políticas que defende mercados livres, abertura comercial e Estado enxuto, com regras estáveis garantidas pelo governo.",
+      "definicao": "O termo reúne autores e governos que, a partir de meados do século XX, defenderam a volta da economia de mercado depois de décadas de forte intervenção estatal. Em vez de um Estado mínimo, propõem um Estado que garanta a concorrência, a moeda estável e o cumprimento de contratos, com uma rede de proteção social modesta. Muitos dos chamados neoliberais não usam a palavra e preferem 'liberal'; o termo é muito usado por críticos, às vezes de forma pejorativa.",
+      "origem": {
+        "periodo": "Décadas de 1930 e 1940; aplicação a partir dos anos 1970",
+        "contexto": "Nasceu como resposta ao comunismo, ao fascismo e à economia planejada. Seus marcos de origem são o Colóquio Walter Lippmann (Paris, 1938) e a fundação da Sociedade Mont Pèlerin (1947). Ganhou força nos anos 1970 e 1980, quando vários países enfrentavam inflação alta e baixo crescimento."
+      },
+      "pensadores": [
+        {"nome": "Friedrich Hayek", "anos": "1899–1992", "contribuicao": "Argumentou que o planejamento central concentra poder e que os preços de mercado transmitem informação que nenhum governo consegue reunir."},
+        {"nome": "Milton Friedman", "anos": "1912–2006", "contribuicao": "Defendeu o controle da quantidade de moeda contra a inflação e menos intervenção do governo."},
+        {"nome": "James Buchanan", "anos": "1919–2013", "contribuicao": "Estudou como políticos e burocratas seguem interesses próprios e propôs limites constitucionais ao gasto público."}
+      ],
+      "obras": [
+        {"titulo": "O Caminho da Servidão", "autor": "Friedrich Hayek", "ano": 1944, "ideia_central": "O planejamento central da economia leva à perda das liberdades políticas."},
+        {"titulo": "Os Fundamentos da Liberdade", "autor": "Friedrich Hayek", "ano": 1960, "ideia_central": "A liberdade depende de regras gerais e de uma ordem de mercado descentralizada."},
+        {"titulo": "Capitalismo e Liberdade", "autor": "Milton Friedman", "ano": 1962, "ideia_central": "A liberdade econômica é condição para a liberdade política."}
+      ],
+      "propostas": [
+        "Controlar a inflação com banco central independente e contas públicas equilibradas.",
+        "Privatizar empresas estatais.",
+        "Abrir a economia ao comércio e ao investimento estrangeiro.",
+        "Reduzir regulações e flexibilizar regras trabalhistas.",
+        "Concentrar os programas sociais nos mais pobres, em vez de benefícios universais."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": 1, "porque": "Quer mercado livre, mas com Estado ativo para criar e garantir as regras da concorrência e da moeda."},
+        "redistribuicao": {"valor": 1, "porque": "Aceita uma rede de proteção modesta e focalizada, sem buscar reduzir a desigualdade de resultados."},
+        "costumes": {"valor": null, "porque": "Não tem posição própria sobre costumes; governos chamados de neoliberais foram tanto conservadores quanto progressistas nesse tema."},
+        "autoridade": {"valor": 0, "porque": "Defende limites constitucionais ao Estado, mas suas políticas foram aplicadas tanto em democracias quanto em ditaduras, como a chilena."},
+        "nacao": {"valor": -1, "porque": "Favorece a globalização, o livre-comércio e acordos internacionais de investimento."}
+      },
+      "variantes": ["Ordoliberalismo alemão", "Escola de Chicago (monetarismo)", "Consenso de Washington (1989)"],
+      "criticas": [
+        {"de": "socialistas e social-democratas", "critica": "Aumentou a desigualdade de renda e transferiu riscos do Estado para os trabalhadores."},
+        {"de": "conservadores e nacionalistas", "critica": "Ao tratar quase tudo como mercado, enfraquece comunidades, indústrias nacionais e laços tradicionais."},
+        {"de": "libertários", "critica": "Mantém bancos centrais, impostos altos e um Estado grande, sem romper de fato com o intervencionismo."}
+      ],
+      "exemplos": [
+        {"pais": "Chile", "periodo": "1975–1990", "enquadramento": "parcial", "criterio": "Políticas reconhecidas por fontes de referência: sob a ditadura de Augusto Pinochet, economistas formados em Chicago abriram a economia, privatizaram e desregularam; governos eleitos após 1990 mantiveram o núcleo dessas políticas.", "fonte": "https://oac.cdlib.org/findaid/ark:/13030/kt2v19r6zz"},
+        {"pais": "Reino Unido", "periodo": "1979–1990", "enquadramento": "total", "criterio": "Governo de Margaret Thatcher: privatizações e desregulação, com influência declarada de Hayek, segundo a Britannica.", "fonte": "https://www.britannica.com/topic/Thatcherism"},
+        {"pais": "Estados Unidos", "periodo": "1981–1989", "enquadramento": "parcial", "criterio": "Governo de Ronald Reagan: cortes de impostos e desregulação, citados pela Britannica ao lado do governo Thatcher.", "fonte": "https://www.britannica.com/money/neoliberalism"},
+        {"pais": "Nova Zelândia", "periodo": "1984–1990", "enquadramento": "total", "criterio": "Quarto governo trabalhista, com o ministro das Finanças Roger Douglas: desregulação, privatizações e câmbio flutuante; a enciclopédia oficial Te Ara diz que o governo seguiu teóricos neoliberais.", "fonte": "https://teara.govt.nz/en/labour-party/page-4"}
+      ],
+      "no_brasil": "A abertura comercial e as privatizações dos anos 1990, nos governos Collor, Itamar Franco e Fernando Henrique Cardoso, são chamadas de neoliberais por críticos; seus formuladores em geral rejeitam o rótulo e preferem o termo 'liberal'.",
+      "fontes": [
+        {"titulo": "Neoliberalism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/neoliberalism/"},
+        {"titulo": "Neoliberalism — Encyclopaedia Britannica", "url": "https://www.britannica.com/money/neoliberalism"},
+        {"titulo": "Mont Pèlerin Society — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Mont-Pelerin-Society"},
+        {"titulo": "Labour Party — Te Ara, Encyclopedia of New Zealand", "url": "https://teara.govt.nz/en/labour-party/page-4"}
+      ]
+    },
+    {
+      "id": "conservadorismo",
+      "nome": "Conservadorismo",
+      "familia": "direita",
+      "resumo": "Corrente que valoriza as tradições, as instituições herdadas e a mudança gradual, e desconfia de reformas radicais.",
+      "definicao": "Para os conservadores, a sociedade é uma herança construída por muitas gerações: família, religião, costumes, leis e instituições guardam uma sabedoria prática que nenhum plano elaborado por poucos consegue substituir. Por isso, defendem mudar a sociedade aos poucos, corrigindo o que não funciona sem destruir o que funciona. Muitos conservadores dizem que o conservadorismo é mais uma atitude diante da vida do que uma doutrina fechada.",
+      "origem": {
+        "periodo": "Final do século XVIII",
+        "contexto": "Ganhou forma como reação à Revolução Francesa (1789), que tentou refazer a sociedade a partir de princípios abstratos. O britânico Edmund Burke é considerado seu fundador moderno. No século XX, muitos conservadores passaram a defender também o livre mercado, em oposição ao socialismo."
+      },
+      "pensadores": [
+        {"nome": "Edmund Burke", "anos": "1729–1797", "contribuicao": "Defendeu reformas graduais e a preservação de instituições herdadas, contra a Revolução Francesa."},
+        {"nome": "Michael Oakeshott", "anos": "1901–1990", "contribuicao": "Descreveu o conservadorismo como disposição de preferir o conhecido ao desconhecido e criticou o 'racionalismo' na política."},
+        {"nome": "Roger Scruton", "anos": "1944–2020", "contribuicao": "Defendeu a autoridade das instituições, o pertencimento nacional e a preservação da cultura herdada."}
+      ],
+      "obras": [
+        {"titulo": "Reflexões sobre a Revolução na França", "autor": "Edmund Burke", "ano": 1790, "ideia_central": "Instituições construídas ao longo do tempo não devem ser destruídas em nome de teorias abstratas."},
+        {"titulo": "A Mentalidade Conservadora", "autor": "Russell Kirk", "ano": 1953, "ideia_central": "Reconstrói a tradição conservadora de Burke em diante e seus princípios, como a ordem moral e a prudência."},
+        {"titulo": "Racionalismo na Política", "autor": "Michael Oakeshott", "ano": 1962, "ideia_central": "A política é uma arte prática que não pode ser reduzida a planos racionais."}
+      ],
+      "propostas": [
+        "Proteger a família e as instituições religiosas e comunitárias.",
+        "Fazer reformas graduais, testadas na prática, em vez de rupturas.",
+        "Reforçar a segurança pública e o cumprimento da lei.",
+        "Preservar a cultura, a história e os símbolos nacionais.",
+        "Manter impostos e gastos sob controle e respeitar a propriedade privada."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": 1, "porque": "A maioria dos conservadores atuais apoia a economia de mercado, mas a corrente não tem doutrina econômica única e aceita algum papel do Estado."},
+        "redistribuicao": {"valor": 1, "porque": "Tende a preferir a família, a caridade e a comunidade à redistribuição feita pelo Estado, sem rejeitar toda ajuda pública."},
+        "costumes": {"valor": 2, "porque": "A preservação de tradições e costumes é o centro da corrente."},
+        "autoridade": {"valor": 1, "porque": "Valoriza a ordem, a lei e as instituições, mas desconfia de poder concentrado."},
+        "nacao": {"valor": 1, "porque": "Valoriza a soberania e a identidade nacional, embora muitos conservadores apoiem alianças internacionais."}
+      },
+      "variantes": ["Conservadorismo tradicionalista (burkeano)", "Liberal-conservadorismo (liberal na economia, conservador nos costumes)", "Neoconservadorismo (Estados Unidos)"],
+      "criticas": [
+        {"de": "liberais", "critica": "Valorizar algo só porque existe há muito tempo pode manter injustiças e limitar a liberdade individual."},
+        {"de": "socialistas e progressistas", "critica": "Ao defender a ordem existente, tende a proteger quem já tem poder e propriedade."},
+        {"de": "filósofos comunitaristas", "critica": "Não oferece critério claro para decidir quais tradições devem ser mantidas e quais devem mudar."}
+      ],
+      "exemplos": [
+        {"pais": "Reino Unido", "periodo": "2010–2024", "enquadramento": "total", "criterio": "Governos do Partido Conservador (Cameron, May, Johnson, Truss e Sunak), membro pleno da IDU (União Democrática Internacional); de 2010 a 2015, em coalizão com os liberais-democratas.", "fonte": "https://en.wikipedia.org/wiki/International_Democracy_Union"},
+        {"pais": "Canadá", "periodo": "2006–2015", "enquadramento": "total", "criterio": "Governo de Stephen Harper pelo Partido Conservador do Canadá, membro pleno da IDU.", "fonte": "https://en.wikipedia.org/wiki/International_Democracy_Union"},
+        {"pais": "Japão", "periodo": "1955–presente, com interrupções em 1993–1994 e 2009–2012 (informação de 2026)", "enquadramento": "parcial", "criterio": "Partido Liberal-Democrata, descrito pela Britannica como partido conservador que governa o país quase sem interrupção desde 1955.", "fonte": "https://www.britannica.com/topic/Liberal-Democratic-Party-of-Japan"},
+        {"pais": "Austrália", "periodo": "2013–2022", "enquadramento": "parcial", "criterio": "Coalizão liderada pelo Partido Liberal da Austrália, membro pleno da IDU, que combina liberalismo econômico e conservadorismo.", "fonte": "https://en.wikipedia.org/wiki/International_Democracy_Union"}
+      ],
+      "no_brasil": "No Império, o Partido Conservador defendeu a ordem monárquica e a centralização. Em 2026, a União Brasil é membro pleno da IDU, e o presidente do PL afirmou em 2023 que a bancada do partido se une em 'pautas conservadoras', como família e fé cristã.",
+      "fontes": [
+        {"titulo": "Conservatism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/conservatism/"},
+        {"titulo": "Edmund Burke — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/burke/"},
+        {"titulo": "Conservatism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/conservatism"},
+        {"titulo": "Unidos só em pautas conservadoras, afirma presidente do PL (Congresso em Foco)", "url": "https://www.congressoemfoco.com.br/noticia/19451/unidos-so-em-pautas-conservadoras-afirma-presidente-do-pl-em-carta-a-parlamentares"}
+      ]
+    },
+    {
+      "id": "democracia_crista",
+      "nome": "Democracia cristã",
+      "familia": "centro-direita",
+      "resumo": "Corrente que aplica à política princípios da doutrina social cristã, combinando economia de mercado, proteção social e valorização da família.",
+      "definicao": "A democracia cristã se inspira no ensino social das igrejas cristãs, principalmente da Igreja Católica. Defende a dignidade de cada pessoa, a família como base da sociedade e a solidariedade entre as classes, em vez da luta de classes. Na economia, apoia a 'economia social de mercado': empresas privadas e concorrência, com direitos trabalhistas e proteção social. Valoriza a 'subsidiariedade', ideia de que o que pode ser resolvido pela família, pela comunidade ou pelo município não deve ser assumido pelo governo central.",
+      "origem": {
+        "periodo": "Final do século XIX; força política após 1945",
+        "contexto": "A encíclica Rerum Novarum (1891), do papa Leão XIII, criticou tanto o socialismo quanto os excessos do capitalismo e pediu que os católicos se organizassem na vida social. Na Itália, o padre Luigi Sturzo fundou o Partido Popular em 1919. Após a Segunda Guerra Mundial, partidos democrata-cristãos governaram a Itália e a Alemanha Ocidental e participaram da criação da integração europeia."
+      },
+      "pensadores": [
+        {"nome": "Luigi Sturzo", "anos": "1871–1959", "contribuicao": "Padre italiano que fundou o Partido Popular (1919), precursor da democracia cristã italiana."},
+        {"nome": "Jacques Maritain", "anos": "1882–1973", "contribuicao": "Filósofo francês que defendeu uma democracia baseada em valores cristãos e nos direitos humanos; inspirou a democracia cristã chilena."},
+        {"nome": "Konrad Adenauer", "anos": "1876–1967", "contribuicao": "Primeiro chanceler da Alemanha Ocidental (1949–1963) e líder da CDU."}
+      ],
+      "obras": [
+        {"titulo": "Rerum Novarum", "autor": "Papa Leão XIII", "ano": 1891, "ideia_central": "Defende direitos dos trabalhadores e a propriedade privada, rejeitando tanto o socialismo quanto os excessos do capitalismo."},
+        {"titulo": "Quadragesimo Anno", "autor": "Papa Pio XI", "ano": 1931, "ideia_central": "Formula o princípio da subsidiariedade: o Estado não deve assumir o que grupos menores podem fazer."},
+        {"titulo": "Humanismo Integral", "autor": "Jacques Maritain", "ano": 1936, "ideia_central": "Propõe uma sociedade pluralista e democrática inspirada em valores cristãos."}
+      ],
+      "propostas": [
+        "Proteger a família por meio de políticas sociais e tributárias.",
+        "Combinar livre iniciativa com direitos trabalhistas e diálogo entre patrões e empregados.",
+        "Descentralizar decisões para municípios e comunidades (subsidiariedade).",
+        "Manter sistemas de proteção social, como saúde e aposentadoria.",
+        "Apoiar a integração e a cooperação entre países democráticos."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": 0, "porque": "Defende a economia social de mercado: mercado com regras e proteção social."},
+        "redistribuicao": {"valor": -1, "porque": "Apoia proteção social em nome da solidariedade, sem buscar igualar resultados."},
+        "costumes": {"valor": 1, "porque": "Defende valores cristãos sobre família e vida, com variação entre países e épocas."},
+        "autoridade": {"valor": 0, "porque": "Defende democracia e direitos, com respeito às instituições e à ordem."},
+        "nacao": {"valor": -1, "porque": "Partidos democrata-cristãos estiveram entre os fundadores da integração europeia."}
+      },
+      "variantes": ["Democracia cristã europeia", "Democracia cristã latino-americana", "Social-cristianismo"],
+      "criticas": [
+        {"de": "liberais e libertários", "critica": "A proteção social e a regulação ampla limitam a liberdade econômica e pesam nas contas públicas."},
+        {"de": "socialistas", "critica": "A conciliação entre classes preserva a desigualdade e a propriedade concentrada."},
+        {"de": "defensores do Estado laico", "critica": "Levar princípios religiosos à lei pode restringir direitos de quem não segue essa fé, em temas como família e reprodução."}
+      ],
+      "exemplos": [
+        {"pais": "Alemanha", "periodo": "1949–1969, 1982–1998, 2005–2021 e 2025–presente (informação de 2026)", "enquadramento": "total", "criterio": "Governos liderados pela CDU (Adenauer, Kohl, Merkel e Merz), membro da Internacional Democrata de Centro e da IDU.", "fonte": "https://www.britannica.com/topic/Christian-Democratic-Union-political-party-Germany"},
+        {"pais": "Itália", "periodo": "1946–1994", "enquadramento": "total", "criterio": "O partido Democracia Cristã liderou ou integrou quase todos os governos do período; Alcide De Gasperi foi primeiro-ministro de 1945 a 1953.", "fonte": "https://www.britannica.com/biography/Alcide-de-Gasperi"},
+        {"pais": "Chile", "periodo": "1964–1970 e 1990–1994", "enquadramento": "total", "criterio": "Presidentes do Partido Democrata Cristão (Eduardo Frei Montalva e Patricio Aylwin), membro da Internacional Democrata de Centro.", "fonte": "https://www.britannica.com/topic/Christian-Democratic-Party-political-party-Chile"},
+        {"pais": "Venezuela", "periodo": "1969–1974", "enquadramento": "total", "criterio": "Primeiro governo de Rafael Caldera, do COPEI, partido membro da Internacional Democrata de Centro.", "fonte": "https://en.wikipedia.org/wiki/Centrist_Democrat_International"}
+      ],
+      "no_brasil": "O Partido Democrata Cristão existiu de 1945 a 1965 e de 1985 a 1993; o atual Democracia Cristã (DC, antigo PSDC) usa esse nome desde 2017–2018. O membro brasileiro da Internacional Democrata de Centro em 2026 é o PSDB.",
+      "fontes": [
+        {"titulo": "Leo XIII — Encyclopaedia Britannica", "url": "https://www.britannica.com/biography/Leo-XIII"},
+        {"titulo": "Italian Popular Party — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Italian-Popular-Party"},
+        {"titulo": "Partido Democrata Cristão (1945) — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/partido-democrata-cristao-1945"},
+        {"titulo": "Centrist Democrat International", "url": "https://www.idc-cdi.com/"}
+      ]
+    },
+    {
+      "id": "nacionalismo",
+      "nome": "Nacionalismo",
+      "familia": "transversal",
+      "resumo": "Corrente que põe a nação, entendida como um povo com língua, história ou cultura comuns, como base da lealdade política e defende que ela se governe a si mesma.",
+      "definicao": "Para o nacionalismo, cada nação tem direito a um Estado próprio e a decidir seu destino sem interferência externa. Seus defensores valorizam a língua, a história, os símbolos e a cultura do país, e pedem que o governo priorize os interesses nacionais. O nacionalismo aparece combinado com ideias muito diferentes: houve nacionalismos liberais, conservadores, socialistas e anticoloniais. Alguns definem a nação pela cidadania e pela vontade de viver juntos; outros, pela origem étnica ou pela religião.",
+      "origem": {
+        "periodo": "Final do século XVIII e século XIX",
+        "contexto": "Ganhou força com a Revolução Francesa, que apresentou a 'nação', e não o rei, como fonte do poder. No século XIX, movimentos nacionalistas unificaram a Itália (1861) e a Alemanha (1871). No século XX, foi a base dos movimentos de independência na Ásia e na África."
+      },
+      "pensadores": [
+        {"nome": "Johann Gottfried Herder", "anos": "1744–1803", "contribuicao": "Defendeu que cada povo tem cultura e língua próprias, que merecem ser preservadas."},
+        {"nome": "Giuseppe Mazzini", "anos": "1805–1872", "contribuicao": "Líder da unificação italiana, defendeu que nações livres e democráticas conviveriam em paz."},
+        {"nome": "Ernest Renan", "anos": "1823–1892", "contribuicao": "Definiu a nação como comunidade que se reafirma pela vontade de seguir vivendo junta."}
+      ],
+      "obras": [
+        {"titulo": "Discursos à Nação Alemã", "autor": "Johann Gottlieb Fichte", "ano": 1808, "ideia_central": "Conclama os alemães, sob ocupação francesa, a se unirem pela língua e pela cultura."},
+        {"titulo": "Dos Deveres do Homem", "autor": "Giuseppe Mazzini", "ano": 1860, "ideia_central": "Une deveres para com a família, a pátria e a humanidade."},
+        {"titulo": "O que é uma nação?", "autor": "Ernest Renan", "ano": 1882, "ideia_central": "A nação é um 'plebiscito de todos os dias', baseado em memória comum e vontade de viver junto."}
+      ],
+      "propostas": [
+        "Defender a soberania do país em acordos e organismos internacionais.",
+        "Proteger e promover a língua, a cultura e a história nacionais.",
+        "Priorizar empresas, empregos e recursos naturais nacionais.",
+        "Fortalecer a defesa e o controle das fronteiras.",
+        "Buscar autodeterminação ou independência para nações sem Estado próprio."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": null, "porque": "Varia: há nacionalismos protecionistas e estatizantes e nacionalismos favoráveis ao mercado."},
+        "redistribuicao": {"valor": null, "porque": "Não tem posição própria; depende da corrente com que se combina."},
+        "costumes": {"valor": null, "porque": "Há nacionalismos tradicionalistas e nacionalismos modernizadores, como o turco de Atatürk, que separou religião e Estado."},
+        "autoridade": {"valor": null, "porque": "Já foi associado tanto a movimentos democráticos e liberais quanto a regimes autoritários."},
+        "nacao": {"valor": 2, "porque": "A soberania e o interesse da nação são o centro da corrente."}
+      },
+      "variantes": ["Nacionalismo cívico (baseado na cidadania)", "Nacionalismo étnico ou cultural", "Nacionalismo anticolonial"],
+      "criticas": [
+        {"de": "liberais e cosmopolitas", "critica": "Ao pôr a nação acima de tudo, pode reduzir direitos de minorias e de estrangeiros."},
+        {"de": "socialistas e marxistas", "critica": "Divide os trabalhadores de países diferentes, que teriam interesses comuns."},
+        {"de": "economistas liberais", "critica": "O protecionismo encarece produtos e reduz a eficiência da economia."}
+      ],
+      "exemplos": [
+        {"pais": "Itália", "periodo": "1861 (unificação)", "enquadramento": "total", "criterio": "Políticas reconhecidas por fontes de referência: unificação conduzida pelo movimento nacionalista do Risorgimento, de Mazzini, Garibaldi e Cavour.", "fonte": "https://www.britannica.com/topic/nationalism"},
+        {"pais": "Turquia", "periodo": "1923–1938", "enquadramento": "total", "criterio": "Constituição: a Lei nº 3115 (1937) incluiu os seis princípios do kemalismo, entre eles o nacionalismo; regime de partido único (CHP).", "fonte": "https://www.britannica.com/topic/Kemalism"},
+        {"pais": "Egito", "periodo": "1954–1970", "enquadramento": "parcial", "criterio": "Governo de Gamal Abdel Nasser, descrito pela Britannica como nacionalista pan-árabe; nacionalizou o Canal de Suez em 1956.", "fonte": "https://www.britannica.com/event/Suez-Crisis"},
+        {"pais": "Índia", "periodo": "2014–presente (informação de 2026)", "enquadramento": "parcial", "criterio": "Governo do BJP de Narendra Modi; a Britannica associa o partido ao Hindutva, ideologia nacionalista hindu formulada por V. D. Savarkar nos anos 1920.", "fonte": "https://www.britannica.com/topic/Hindutva"}
+      ],
+      "no_brasil": "O nacionalismo atravessou campos diferentes: o Estado Novo de Vargas (1937–1945) adotou discurso nacionalista, a campanha 'O petróleo é nosso', que levou à criação da Petrobras (1953), reuniu grupos de esquerda e de direita, e o regime militar (1964–1985) também usou o discurso da soberania nacional.",
+      "fontes": [
+        {"titulo": "Nationalism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/nationalism/"},
+        {"titulo": "Nationalism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/nationalism"},
+        {"titulo": "Kemalism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Kemalism"},
+        {"titulo": "Hindutva — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Hindutva"}
+      ]
+    },
+    {
+      "id": "fascismo",
+      "nome": "Fascismo",
+      "familia": "extrema-direita",
+      "resumo": "Ideologia nacionalista e autoritária que defende um Estado total, um partido único e um líder com poder acima de indivíduos e classes.",
+      "definicao": "Os fascistas defendiam que a nação é um organismo vivo, superior às pessoas que a compõem, e que o Estado deve abarcar todas as áreas da vida: 'tudo no Estado, nada fora do Estado', na fórmula de Mussolini. Rejeitavam o liberalismo, a democracia parlamentar e o marxismo, e propunham trocar a luta de classes por corporações de patrões e empregados sob controle do Estado, guiadas por um líder. No poder, suprimiram partidos, sindicatos livres e imprensa independente; o nazismo alemão acrescentou o racismo biológico e promoveu o Holocausto.",
+      "origem": {
+        "periodo": "Décadas de 1920 e 1930",
+        "contexto": "Surgiu na Itália após a Primeira Guerra Mundial, em meio a crise econômica, medo de uma revolução socialista e descontentamento com o resultado da guerra. Benito Mussolini fundou os Fasci di Combattimento em 1919 e chegou ao poder em 1922. Movimentos semelhantes surgiram em vários países nos anos 1920 e 1930."
+      },
+      "pensadores": [
+        {"nome": "Benito Mussolini", "anos": "1883–1945", "contribuicao": "Fundador do fascismo italiano e chefe do governo da Itália de 1922 a 1943."},
+        {"nome": "Giovanni Gentile", "anos": "1875–1944", "contribuicao": "Filósofo chamado pela Britannica de 'filósofo do fascismo', formulou a ideia do Estado que abrange toda a vida social."},
+        {"nome": "Plínio Salgado", "anos": "1895–1975", "contribuicao": "Fundador e chefe nacional da Ação Integralista Brasileira, movimento inspirado no fascismo."}
+      ],
+      "obras": [
+        {"titulo": "A Doutrina do Fascismo", "autor": "Benito Mussolini e Giovanni Gentile", "ano": 1932, "ideia_central": "Define o fascismo como concepção de um Estado total, acima dos indivíduos."},
+        {"titulo": "Minha Luta (Mein Kampf)", "autor": "Adolf Hitler", "ano": 1925, "ideia_central": "Expõe o programa nazista, com nacionalismo racial e antissemitismo."},
+        {"titulo": "Manifesto de Outubro", "autor": "Plínio Salgado", "ano": 1932, "ideia_central": "Documento de fundação da Ação Integralista Brasileira, que propunha um 'Estado integral' organizado por classes profissionais."}
+      ],
+      "propostas": [
+        "Substituir a democracia parlamentar por um partido único e um líder.",
+        "Organizar a economia em corporações de patrões e empregados controladas pelo Estado.",
+        "Proibir greves, partidos de oposição e sindicatos independentes.",
+        "Expandir o poder militar e o território da nação.",
+        "Enquadrar a população em organizações do partido, da escola ao trabalho."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": -1, "porque": "Manteve a propriedade privada, mas pôs a economia sob direção do Estado por meio de corporações."},
+        "redistribuicao": {"valor": null, "porque": "Não buscava igualar a renda nem defendia o mercado livre; subordinava a distribuição aos objetivos do Estado."},
+        "costumes": {"valor": 2, "porque": "Exaltava a hierarquia, a família e os papéis tradicionais, ao lado da ideia de um 'novo homem' fascista."},
+        "autoridade": {"valor": 2, "porque": "Defendia Estado total, partido único e líder com poder ilimitado."},
+        "nacao": {"valor": 2, "porque": "A nação era o valor supremo, inclusive com expansão territorial."}
+      },
+      "variantes": ["Fascismo italiano", "Nazismo (nacional-socialismo alemão)", "Integralismo e outros movimentos inspirados no fascismo"],
+      "criticas": [
+        {"de": "liberais", "critica": "Elimina direitos individuais, eleições livres e imprensa independente."},
+        {"de": "socialistas e comunistas", "critica": "Serviu para reprimir sindicatos e movimentos de trabalhadores em favor de grandes proprietários."},
+        {"de": "conservadores e democratas-cristãos", "critica": "Substituiu a autoridade da religião, da família e das instituições tradicionais pelo culto ao Estado e ao líder."}
+      ],
+      "exemplos": [
+        {"pais": "Itália", "periodo": "1922–1943", "enquadramento": "total", "criterio": "Regime de partido único (Partido Nacional Fascista) com ideologia oficial fascista.", "fonte": "https://www.britannica.com/topic/Fascist-Party"},
+        {"pais": "Alemanha", "periodo": "1933–1945", "enquadramento": "total", "criterio": "Regime de partido único (Partido Nazista), tratado pela Britannica como variedade de fascismo; promoveu o Holocausto.", "fonte": "https://www.britannica.com/topic/fascism/Varieties-of-fascism"},
+        {"pais": "Espanha", "periodo": "1939–1975", "enquadramento": "parcial", "criterio": "Ditadura de Francisco Franco com partido único (Falange); a Britannica registra traços fascistas, mas classifica o regime como autoritário e distinto dos modelos alemão e italiano.", "fonte": "https://www.britannica.com/place/Spain/Francos-Spain-1939-75"},
+        {"pais": "Portugal", "periodo": "1933–1974", "enquadramento": "parcial", "criterio": "Estado Novo de António de Oliveira Salazar, regime corporativista; um verbete da Britannica o chama de fascista, e outros historiadores o classificam como autoritário não fascista.", "fonte": "https://www.britannica.com/topic/history-of-Europe/The-trappings-of-dictatorship"}
+      ],
+      "no_brasil": "A Ação Integralista Brasileira, fundada em 1932 por Plínio Salgado e inspirada no fascismo, foi extinta em dezembro de 1937, no início do Estado Novo. Em 2026, nenhum partido com registro no TSE se declara fascista.",
+      "fontes": [
+        {"titulo": "Fascism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/fascism"},
+        {"titulo": "Giovanni Gentile — Encyclopaedia Britannica", "url": "https://www.britannica.com/biography/Giovanni-Gentile"},
+        {"titulo": "Integralismo — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/integralismo"},
+        {"titulo": "Salgado, Plínio — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/salgado-plinio"}
+      ]
+    },
+    {
+      "id": "socialismo",
+      "nome": "Socialismo",
+      "familia": "esquerda",
+      "resumo": "Corrente que defende que os meios de produção, como fábricas, terras e bancos, sejam controlados pela sociedade, para reduzir a desigualdade.",
+      "definicao": "Para os socialistas, o capitalismo concentra riqueza e poder em quem possui os meios de produção, enquanto a maioria vive do salário. A proposta é pôr a economia sob controle social e democrático: por meio do Estado, de cooperativas, de empresas geridas pelos trabalhadores ou de planejamento. O socialismo abriga muitas correntes: há quem defenda mudanças graduais pelo voto e quem defenda revolução; há quem queira planejamento central e quem aceite mercados ('socialismo de mercado').",
+      "origem": {
+        "periodo": "Início do século XIX",
+        "contexto": "Surgiu na Europa durante a Revolução Industrial, como resposta às condições de trabalho nas fábricas. Os primeiros socialistas, como Robert Owen e Saint-Simon, propuseram comunidades cooperativas e uma economia organizada. Karl Marx e Friedrich Engels formularam o 'socialismo científico' a partir de 1848."
+      },
+      "pensadores": [
+        {"nome": "Robert Owen", "anos": "1771–1858", "contribuicao": "Industrial galês que criou comunidades cooperativas e defendeu melhores condições para os operários."},
+        {"nome": "Karl Marx", "anos": "1818–1883", "contribuicao": "Analisou o capitalismo como sistema de exploração do trabalho e previu sua substituição pelo socialismo."},
+        {"nome": "Rosa Luxemburgo", "anos": "1871–1919", "contribuicao": "Defendeu o socialismo com democracia ampla e liberdade de crítica, inclusive dentro do campo socialista."}
+      ],
+      "obras": [
+        {"titulo": "Uma Nova Visão da Sociedade", "autor": "Robert Owen", "ano": 1813, "ideia_central": "O ambiente social molda o caráter; reformas e cooperação podem melhorar a vida dos trabalhadores."},
+        {"titulo": "Manifesto do Partido Comunista", "autor": "Karl Marx e Friedrich Engels", "ano": 1848, "ideia_central": "A história é a história da luta de classes, e os trabalhadores devem se organizar para superar o capitalismo."},
+        {"titulo": "O Capital (volume 1)", "autor": "Karl Marx", "ano": 1867, "ideia_central": "O lucro capitalista viria do trabalho não pago dos operários (a mais-valia)."}
+      ],
+      "propostas": [
+        "Colocar setores-chave da economia sob propriedade pública ou social.",
+        "Ampliar direitos trabalhistas e a participação dos trabalhadores na gestão das empresas.",
+        "Garantir saúde, educação e moradia como direitos universais.",
+        "Cobrar impostos mais altos sobre grandes fortunas e heranças.",
+        "Planejar investimentos de acordo com as necessidades sociais."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": -2, "porque": "Defende propriedade social ou pública dos principais meios de produção."},
+        "redistribuicao": {"valor": -2, "porque": "Busca reduzir fortemente a desigualdade de renda e de riqueza."},
+        "costumes": {"valor": -1, "porque": "Movimentos socialistas apoiaram cedo o voto feminino e a separação entre Igreja e Estado, mas há socialistas tradicionais em costumes."},
+        "autoridade": {"valor": null, "porque": "Há correntes democráticas, que defendem eleições e liberdades, e correntes que aceitam um Estado forte de partido único."},
+        "nacao": {"valor": -1, "porque": "Tem tradição internacionalista, de cooperação entre trabalhadores de diferentes países."}
+      },
+      "variantes": ["Socialismo democrático", "Socialismo de mercado", "Socialismo do século XXI (América Latina)"],
+      "criticas": [
+        {"de": "liberais e economistas da Escola Austríaca", "critica": "Sem preços de mercado, o planejamento não consegue saber o que produzir e em que quantidade, e os incentivos à inovação diminuem."},
+        {"de": "conservadores", "critica": "Ao concentrar a economia no Estado, enfraquece a família, a religião e a iniciativa das comunidades."},
+        {"de": "anarquistas", "critica": "Trocar o patrão privado pelo Estado mantém a dominação sobre o trabalhador."}
+      ],
+      "exemplos": [
+        {"pais": "Tanzânia", "periodo": "1967–1985", "enquadramento": "total", "criterio": "Declaração de Arusha (1967), de Julius Nyerere: 'socialismo africano' (ujamaa), nacionalização de bancos e vilas cooperativas, sob partido único.", "fonte": "https://www.britannica.com/topic/Arusha-Declaration"},
+        {"pais": "Chile", "periodo": "1970–1973", "enquadramento": "parcial", "criterio": "Governo eleito de Salvador Allende (Unidade Popular), primeiro presidente socialista do país, que estatizou as minas de cobre; terminou com o golpe militar de 1973.", "fonte": "https://www.britannica.com/event/1973-Chilean-coup-d-etat"},
+        {"pais": "Índia", "periodo": "1976–presente", "enquadramento": "parcial", "criterio": "Constituição: a 42ª emenda (1976) incluiu 'socialista' no preâmbulo; a Suprema Corte manteve o termo em 2024, entendendo-o como Estado de bem-estar.", "fonte": "https://www.constituteproject.org/constitution/India_2016"},
+        {"pais": "Portugal", "periodo": "1976–presente", "enquadramento": "parcial", "criterio": "Constituição: o preâmbulo de 1976 fala em 'abrir caminho para uma sociedade socialista'; as revisões posteriores adotaram a economia de mercado e mantiveram o preâmbulo.", "fonte": "https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx"},
+        {"pais": "Venezuela", "periodo": "2005–presente (informação de 2026)", "enquadramento": "parcial", "criterio": "Hugo Chávez passou a chamar seu projeto de 'socialismo do século XXI' em 2005; o PSUV segue no governo, desde janeiro de 2026 com Delcy Rodríguez como presidente interina após a captura de Nicolás Maduro por forças dos EUA.", "fonte": "https://www.britannica.com/topic/chavismo"}
+      ],
+      "no_brasil": "PSB (fundado em 1947 e refundado em 1985), PSOL e PT, cujos documentos falam em 'socialismo democrático', se declaram socialistas. O orçamento participativo de Porto Alegre, iniciado em 1989, é citado pela Stanford Encyclopedia of Philosophy como experiência ligada a essas ideias.",
+      "fontes": [
+        {"titulo": "Socialism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/socialism/"},
+        {"titulo": "Karl Marx — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/marx/"},
+        {"titulo": "Socialism — Encyclopaedia Britannica", "url": "https://www.britannica.com/money/socialism"},
+        {"titulo": "Arusha Declaration — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Arusha-Declaration"}
+      ]
+    },
+    {
+      "id": "comunismo",
+      "nome": "Comunismo (marxismo-leninismo)",
+      "familia": "extrema-esquerda",
+      "resumo": "Corrente que busca uma sociedade sem classes e sem propriedade privada dos meios de produção, conduzida por um partido revolucionário de vanguarda.",
+      "definicao": "O marxismo-leninismo é a forma de comunismo desenvolvida por Lênin e sistematizada na União Soviética. Seus defensores afirmam que a classe trabalhadora só chega ao poder por uma revolução liderada por um partido disciplinado, a 'vanguarda'. Depois da revolução viria uma fase socialista, com o Estado dono dos meios de produção, planejamento central e partido único, chamada 'ditadura do proletariado'. A meta final seria o comunismo: uma sociedade sem classes, em que o Estado deixaria de ser necessário.",
+      "origem": {
+        "periodo": "Início do século XX",
+        "contexto": "Lênin adaptou as ideias de Marx à Rússia, país pouco industrializado, e liderou a Revolução de Outubro de 1917. A União Soviética foi criada em 1922, e o marxismo-leninismo virou doutrina oficial sob Stálin. Depois de 1945, regimes desse tipo se instalaram no Leste Europeu, na China, no Vietnã, na Coreia do Norte e em Cuba."
+      },
+      "pensadores": [
+        {"nome": "Vladimir Lênin", "anos": "1870–1924", "contribuicao": "Liderou a Revolução Russa de 1917 e formulou a teoria do partido de vanguarda."},
+        {"nome": "Josef Stálin", "anos": "1878–1953", "contribuicao": "Comandou a União Soviética até 1953 e defendeu o 'socialismo num só país', com industrialização acelerada e coletivização."},
+        {"nome": "Mao Tsé-tung", "anos": "1893–1976", "contribuicao": "Liderou a Revolução Chinesa (1949) e adaptou o marxismo-leninismo a um país camponês."}
+      ],
+      "obras": [
+        {"titulo": "Que Fazer?", "autor": "Vladimir Lênin", "ano": 1902, "ideia_central": "Os trabalhadores precisam de um partido de revolucionários profissionais para guiá-los."},
+        {"titulo": "O Estado e a Revolução", "autor": "Vladimir Lênin", "ano": 1917, "ideia_central": "Explica a ditadura do proletariado e o futuro desaparecimento do Estado."},
+        {"titulo": "Fundamentos do Leninismo", "autor": "Josef Stálin", "ano": 1924, "ideia_central": "Sistematiza as ideias de Lênin como doutrina oficial."}
+      ],
+      "propostas": [
+        "Tomar o poder por meio de uma revolução liderada pelo partido comunista.",
+        "Estatizar fábricas, terras e bancos.",
+        "Planejar a economia por metas centrais, como os planos quinquenais.",
+        "Garantir emprego, educação e saúde públicos a toda a população.",
+        "Manter o partido comunista como única força dirigente do Estado."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": -2, "porque": "O Estado possui e planeja os meios de produção; China e Vietnã passaram a admitir mercados a partir de 1978 e 1986, sob controle do partido."},
+        "redistribuicao": {"valor": -2, "porque": "Busca eliminar as diferenças de classe e de propriedade."},
+        "costumes": {"valor": null, "porque": "Variou: a União Soviética legalizou o aborto em 1920 e o proibiu em 1936; os regimes oscilaram entre mudança e controle de costumes."},
+        "autoridade": {"valor": 2, "porque": "Defende partido único e Estado forte durante a transição para o comunismo."},
+        "nacao": {"valor": -1, "porque": "A doutrina é internacionalista ('proletários de todos os países, uni-vos'), mas a União Soviética adotou o 'socialismo num só país'."}
+      },
+      "variantes": ["Stalinismo", "Maoísmo", "Trotskismo"],
+      "criticas": [
+        {"de": "liberais", "critica": "Os regimes de partido único eliminaram liberdades civis e perseguiram opositores, e o planejamento central gerou escassez."},
+        {"de": "social-democratas", "critica": "Revolução e partido único não são necessários: é possível reduzir a desigualdade pelo voto e com liberdades."},
+        {"de": "anarquistas", "critica": "O Estado 'proletário' criou uma nova elite burocrática em vez de desaparecer."}
+      ],
+      "exemplos": [
+        {"pais": "União Soviética", "periodo": "1922–1991", "enquadramento": "total", "criterio": "Regime de partido único (Partido Comunista da União Soviética) com o marxismo-leninismo como ideologia oficial; industrializou o país e concentrou o poder no partido.", "fonte": "https://www.britannica.com/topic/Stalinism"},
+        {"pais": "China", "periodo": "1949–presente (informação de 2026)", "enquadramento": "total", "criterio": "Regime de partido único do Partido Comunista Chinês; desde 1978 combina controle do partido com economia de mercado.", "fonte": "https://www.britannica.com/topic/Chinese-Communist-Party"},
+        {"pais": "Cuba", "periodo": "1961–presente (informação de 2026)", "enquadramento": "total", "criterio": "Constituição de 2019 (art. 5º) define o Partido Comunista de Cuba, 'martiano, fidelista, marxista e leninista', como força dirigente da sociedade e do Estado.", "fonte": "https://www.bcn.cl/procesoconstituyente/comparadordeconstituciones/constitucion/cub"},
+        {"pais": "Vietnã", "periodo": "1976–presente (informação de 2026)", "enquadramento": "total", "criterio": "Constituição de 2013 (art. 4º) põe o Partido Comunista, guiado pelo marxismo-leninismo e pelo pensamento de Ho Chi Minh, como força dirigente; reformas de mercado (Doi Moi) desde 1986.", "fonte": "https://www.constituteproject.org/constitution/Socialist_Republic_of_Vietnam_2013"}
+      ],
+      "no_brasil": "O Partido Comunista do Brasil foi fundado em 1922; desse tronco vieram o PCB e o PCdoB (1962). Em 2026, PCdoB e PCB se declaram marxistas-leninistas, e o PCO se declara trotskista.",
+      "fontes": [
+        {"titulo": "Communism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/communism"},
+        {"titulo": "Leninism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Leninism"},
+        {"titulo": "Stalinism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Stalinism"},
+        {"titulo": "Karl Marx — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/marx/"}
+      ]
+    },
+    {
+      "id": "social_democracia",
+      "nome": "Social-democracia",
+      "familia": "centro-esquerda",
+      "resumo": "Corrente que busca reduzir a desigualdade por meio de reformas democráticas, combinando economia de mercado e Estado de bem-estar social.",
+      "definicao": "A social-democracia nasceu dentro do movimento socialista, mas concluiu que os objetivos de igualdade podiam ser alcançados pelo voto, sem revolução. Hoje defende uma economia de mercado com empresas privadas, ao lado de um Estado forte em serviços públicos: saúde e educação universais, aposentadoria, seguro-desemprego e direitos trabalhistas, financiados por impostos progressivos. Valoriza os sindicatos e a negociação entre empresas, trabalhadores e governo.",
+      "origem": {
+        "periodo": "Final do século XIX; consolidação após 1945",
+        "contexto": "Surgiu nos partidos operários europeus, como o SPD alemão. Em 1899, o alemão Eduard Bernstein defendeu reformas graduais em vez de revolução. O SPD abandonou formalmente o marxismo no Programa de Bad Godesberg (1959), e na Suécia os social-democratas construíram o modelo do 'lar do povo' a partir dos anos 1930."
+      },
+      "pensadores": [
+        {"nome": "Eduard Bernstein", "anos": "1850–1932", "contribuicao": "Propôs chegar ao socialismo por reformas graduais e pela democracia."},
+        {"nome": "Per Albin Hansson", "anos": "1885–1946", "contribuicao": "Primeiro-ministro sueco que lançou em 1928 a ideia do 'lar do povo' (folkhemmet), base do Estado de bem-estar sueco."},
+        {"nome": "Willy Brandt", "anos": "1913–1992", "contribuicao": "Chanceler da Alemanha Ocidental (1969–1974) e presidente da Internacional Socialista (1976–1992)."}
+      ],
+      "obras": [
+        {"titulo": "Os Pressupostos do Socialismo e as Tarefas da Social-Democracia", "autor": "Eduard Bernstein", "ano": 1899, "ideia_central": "O capitalismo não estava perto do colapso, e as reformas democráticas eram o caminho."},
+        {"titulo": "O Futuro do Socialismo", "autor": "Anthony Crosland", "ano": 1956, "ideia_central": "Igualdade e bem-estar podem ser alcançados sem estatizar toda a economia."},
+        {"titulo": "Programa de Bad Godesberg", "autor": "Partido Social-Democrata da Alemanha (SPD)", "ano": 1959, "ideia_central": "Aceita a economia de mercado e define o partido como partido de todo o povo, não só dos operários."}
+      ],
+      "propostas": [
+        "Oferecer saúde, educação e creche públicas e universais.",
+        "Cobrar impostos progressivos para financiar o Estado de bem-estar.",
+        "Fortalecer os sindicatos e a negociação coletiva.",
+        "Garantir aposentadoria, seguro-desemprego e salário mínimo.",
+        "Regular o mercado e investir em emprego e infraestrutura."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": -1, "porque": "Aceita mercado e empresa privada, com regulação forte e alguns setores estratégicos públicos."},
+        "redistribuicao": {"valor": -1, "porque": "Busca reduzir a desigualdade com impostos progressivos e serviços universais, sem igualar todos os resultados."},
+        "costumes": {"valor": -1, "porque": "Partidos social-democratas em geral apoiaram mudanças de costumes, como igualdade de gênero e direitos civis."},
+        "autoridade": {"valor": 0, "porque": "Defende democracia e liberdades civis, com Estado presente na economia e nos serviços."},
+        "nacao": {"valor": -1, "porque": "Apoia cooperação internacional, como a integração europeia e a Internacional Socialista."}
+      },
+      "variantes": ["Modelo nórdico", "Trabalhismo britânico (Partido Trabalhista)", "Socialismo democrático reformista"],
+      "criticas": [
+        {"de": "liberais e libertários", "critica": "Impostos altos e Estado grande reduzem os incentivos para trabalhar e investir."},
+        {"de": "socialistas e comunistas", "critica": "Administra o capitalismo em vez de superá-lo e mantém a propriedade concentrada."},
+        {"de": "conservadores", "critica": "Serviços estatais amplos ocupam o lugar da família e da comunidade e criam dependência do Estado."}
+      ],
+      "exemplos": [
+        {"pais": "Suécia", "periodo": "1932–1976", "enquadramento": "total", "criterio": "O Partido Social-Democrata governou de forma quase contínua (com breve interrupção em 1936) e construiu o Estado de bem-estar do 'lar do povo'.", "fonte": "https://www.britannica.com/topic/peoples-home"},
+        {"pais": "Chile", "periodo": "2006–2010 e 2014–2018", "enquadramento": "parcial", "criterio": "Governos de Michelle Bachelet, do Partido Socialista do Chile, membro pleno da Internacional Socialista.", "fonte": "https://www.socialistinternational.org/about-us/members/"},
+        {"pais": "Portugal", "periodo": "2015–2024", "enquadramento": "parcial", "criterio": "Governos de António Costa, do Partido Socialista, membro pleno da Internacional Socialista.", "fonte": "https://www.socialistinternational.org/about-us/members/"},
+        {"pais": "Espanha", "periodo": "2018–presente (informação de 2026)", "enquadramento": "parcial", "criterio": "Governo de Pedro Sánchez, do PSOE, membro pleno da Internacional Socialista e da Aliança Progressista.", "fonte": "https://www.socialistinternational.org/about-us/members/"}
+      ],
+      "no_brasil": "O PDT é o membro pleno brasileiro da Internacional Socialista, e PT e PSB integram a Aliança Progressista. O PSDB adotou 'social-democracia' no nome ao ser fundado, em 1988, mas hoje integra a Internacional Democrata de Centro.",
+      "fontes": [
+        {"titulo": "Social democracy — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/social-democracy"},
+        {"titulo": "People's home — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/peoples-home"},
+        {"titulo": "Members — Socialist International", "url": "https://www.socialistinternational.org/about-us/members/"},
+        {"titulo": "Progressive Alliance", "url": "https://en.wikipedia.org/wiki/Progressive_Alliance"}
+      ]
+    },
+    {
+      "id": "terceira_via",
+      "nome": "Terceira via",
+      "familia": "centro",
+      "resumo": "Proposta dos anos 1990 de combinar economia de mercado e responsabilidade fiscal com políticas de inclusão social, entre a esquerda tradicional e a nova direita.",
+      "definicao": "A terceira via surgiu em partidos de centro-esquerda que, depois de anos de governos de direita, quiseram renovar a social-democracia diante da globalização. Seus defensores aceitam o mercado, as privatizações já feitas e o equilíbrio das contas públicas, mas defendem investir em educação, qualificação e programas que ajudem as pessoas a voltar ao trabalho. A ideia é que o Estado 'habilite' as pessoas, em vez de apenas transferir renda, combinando direitos com responsabilidades.",
+      "origem": {
+        "periodo": "Década de 1990",
+        "contexto": "O sociólogo britânico Anthony Giddens deu forma teórica à proposta. Ela é ligada ao Novo Trabalhismo de Tony Blair no Reino Unido (1997–2007) e, de forma menos direta, aos governos de Bill Clinton nos EUA e de Gerhard Schröder na Alemanha. Em 1999, líderes desse grupo se reuniram em Florença na conferência 'Governança Progressista para o Século XXI'."
+      },
+      "pensadores": [
+        {"nome": "Anthony Giddens", "anos": "1938–", "contribuicao": "Formulou a terceira via como renovação da social-democracia na era da globalização."},
+        {"nome": "Tony Blair", "anos": "1953–", "contribuicao": "Primeiro-ministro britânico (1997–2007) que transformou o Partido Trabalhista no 'Novo Trabalhismo'."},
+        {"nome": "Bill Clinton", "anos": "1946–", "contribuicao": "Presidente dos EUA (1993–2001) ligado aos 'Novos Democratas', que combinou equilíbrio fiscal e reforma da assistência social."}
+      ],
+      "obras": [
+        {"titulo": "Para Além da Esquerda e da Direita", "autor": "Anthony Giddens", "ano": 1994, "ideia_central": "As divisões políticas tradicionais não respondem aos problemas da globalização."},
+        {"titulo": "A Terceira Via", "autor": "Anthony Giddens", "ano": 1998, "ideia_central": "Propõe renovar a social-democracia com mercado, inclusão social e Estado reformado."},
+        {"titulo": "Europa: a Terceira Via / o Novo Centro", "autor": "Tony Blair e Gerhard Schröder", "ano": 1999, "ideia_central": "Defende flexibilidade econômica e modernização do Estado de bem-estar."}
+      ],
+      "propostas": [
+        "Manter as contas públicas equilibradas e a inflação baixa.",
+        "Investir em educação e qualificação profissional.",
+        "Ligar benefícios sociais à busca de emprego ('do bem-estar ao trabalho').",
+        "Fazer parcerias entre governo e empresas privadas em serviços e infraestrutura.",
+        "Combater o crime e também suas causas sociais."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": 0, "porque": "Aceita o mercado e as privatizações, com Estado regulador e investidor em pessoas."},
+        "redistribuicao": {"valor": 0, "porque": "Prefere igualar oportunidades, por educação e emprego, a redistribuir renda diretamente."},
+        "costumes": {"valor": -1, "porque": "Seus governos apoiaram mudanças como o reconhecimento legal de casais do mesmo sexo."},
+        "autoridade": {"valor": 0, "porque": "Combinou defesa de direitos civis com endurecimento na segurança pública."},
+        "nacao": {"valor": -1, "porque": "Apoia a globalização e a cooperação internacional."}
+      },
+      "variantes": ["Novo Trabalhismo (Reino Unido)", "Novos Democratas (Estados Unidos)", "Novo Centro (Neue Mitte, Alemanha)"],
+      "criticas": [
+        {"de": "socialistas e parte da social-democracia", "critica": "Aproximou-se do neoliberalismo e deixou de enfrentar a desigualdade."},
+        {"de": "liberais de mercado e conservadores", "critica": "Manteve gastos públicos altos e ampliou a regulação, apesar do discurso de modernização."},
+        {"de": "nacionalistas e críticos da globalização", "critica": "Aceitou a globalização sem proteger trabalhadores e regiões industriais afetadas."}
+      ],
+      "exemplos": [
+        {"pais": "Reino Unido", "periodo": "1997–2007", "enquadramento": "total", "criterio": "Governo do Novo Trabalhismo de Tony Blair, principal referência da terceira via segundo a Britannica.", "fonte": "https://www.britannica.com/topic/third-way"},
+        {"pais": "Estados Unidos", "periodo": "1993–2001", "enquadramento": "parcial", "criterio": "Governo de Bill Clinton, associado pela Britannica de forma menos direta à terceira via.", "fonte": "https://www.britannica.com/topic/third-way"},
+        {"pais": "Alemanha", "periodo": "1998–2005", "enquadramento": "parcial", "criterio": "Governo de Gerhard Schröder (SPD), coautor do documento Blair–Schröder (1999) e da proposta do 'Novo Centro'.", "fonte": "https://www.britannica.com/topic/third-way"},
+        {"pais": "Brasil", "periodo": "1995–2002", "enquadramento": "parcial", "criterio": "Fernando Henrique Cardoso participou da conferência de Florença (1999) sobre 'Governança Progressista', com Clinton, Blair, Schröder, Jospin e D'Alema.", "fonte": "https://cadmus.eui.eu/entities/publication/d8fbc8e8-e488-5b02-8166-b90528da5395/full"}
+      ],
+      "no_brasil": "Fernando Henrique Cardoso (PSDB), presidente de 1995 a 2002, participou dos encontros de líderes da terceira via, como a conferência de Florença de 1999.",
+      "fontes": [
+        {"titulo": "Third way — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/third-way"},
+        {"titulo": "United Kingdom: The Tony Blair government, 1997–2007 — Encyclopaedia Britannica", "url": "https://www.britannica.com/place/United-Kingdom/The-Tony-Blair-government-1997-2007"},
+        {"titulo": "Progressive governance for the XXI century: conference proceedings, Florence, 1999 — European University Institute", "url": "https://cadmus.eui.eu/entities/publication/d8fbc8e8-e488-5b02-8166-b90528da5395/full"}
+      ]
+    },
+    {
+      "id": "anarquismo",
+      "nome": "Anarquismo",
+      "familia": "extrema-esquerda",
+      "resumo": "Corrente que considera o Estado e toda autoridade imposta desnecessários e prejudiciais, e propõe uma sociedade organizada por cooperação voluntária.",
+      "definicao": "Para os anarquistas, governos, exércitos, polícias e outras formas de poder hierárquico existem para manter a dominação de uns sobre outros. Eles propõem substituí-los por associações livres, como comunas, cooperativas, sindicatos e federações, em que as decisões sejam tomadas pelos próprios envolvidos. A maioria das correntes anarquistas também rejeita a propriedade capitalista e defende a gestão coletiva da produção. A palavra vem do grego e significa 'sem governante', não 'desordem'.",
+      "origem": {
+        "periodo": "Final do século XVIII e século XIX",
+        "contexto": "William Godwin criticou o governo em 1793, e Pierre-Joseph Proudhon foi um dos primeiros a se declarar anarquista, em 1840. No século XIX, o anarquismo disputou com o marxismo a liderança do movimento operário. Teve forte presença na Espanha, na Itália, na Rússia e entre imigrantes nas Américas, inclusive no Brasil."
+      },
+      "pensadores": [
+        {"nome": "Pierre-Joseph Proudhon", "anos": "1809–1865", "contribuicao": "Um dos primeiros a se declarar anarquista; defendeu cooperativas e crédito mútuo."},
+        {"nome": "Mikhail Bakunin", "anos": "1814–1876", "contribuicao": "Defendeu a abolição imediata do Estado e rompeu com Marx na Primeira Internacional."},
+        {"nome": "Piotr Kropotkin", "anos": "1842–1921", "contribuicao": "Argumentou que a cooperação é tão natural quanto a competição e propôs o anarcocomunismo."}
+      ],
+      "obras": [
+        {"titulo": "O que é a Propriedade?", "autor": "Pierre-Joseph Proudhon", "ano": 1840, "ideia_central": "Afirma que 'a propriedade é um roubo' e critica a concentração de bens."},
+        {"titulo": "Estatismo e Anarquia", "autor": "Mikhail Bakunin", "ano": 1873, "ideia_central": "Critica o Estado, inclusive o Estado operário proposto pelos marxistas."},
+        {"titulo": "A Conquista do Pão", "autor": "Piotr Kropotkin", "ano": 1892, "ideia_central": "Propõe uma sociedade em que os bens sejam distribuídos segundo as necessidades."}
+      ],
+      "propostas": [
+        "Substituir o Estado por federações de comunas e associações livres.",
+        "Entregar a gestão das empresas aos trabalhadores.",
+        "Tomar decisões em assembleias, com delegados que podem ser substituídos a qualquer momento.",
+        "Acabar com exércitos permanentes e prisões.",
+        "Promover educação livre, sem controle do Estado ou de igrejas."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": null, "porque": "Rejeita o Estado, por isso não cabe na escala: a maioria das correntes defende gestão coletiva sem Estado, e uma minoria (anarcocapitalismo) defende mercado sem Estado."},
+        "redistribuicao": {"valor": -2, "porque": "A corrente majoritária, o anarcocomunismo, defende distribuir os bens segundo as necessidades de cada um."},
+        "costumes": {"valor": -2, "porque": "Critica hierarquias religiosas, familiares e de gênero, e defendeu cedo a emancipação feminina."},
+        "autoridade": {"valor": -2, "porque": "Rejeita toda autoridade imposta, inclusive o Estado."},
+        "nacao": {"valor": -2, "porque": "Rejeita fronteiras e Estados nacionais e defende a federação livre entre povos."}
+      },
+      "variantes": ["Anarcocomunismo", "Anarcossindicalismo", "Anarquismo individualista"],
+      "criticas": [
+        {"de": "marxistas-leninistas", "critica": "Sem um Estado operário na transição, a revolução seria derrotada por seus adversários."},
+        {"de": "liberais e conservadores", "critica": "Sem Estado, não há como garantir lei, segurança e contratos, e o vazio de poder seria ocupado pelos mais fortes."},
+        {"de": "social-democratas", "critica": "Depende de cooperação voluntária em larga escala, que não se mostrou viável em sociedades grandes e complexas."}
+      ],
+      "exemplos": [
+        {"pais": "Ucrânia", "periodo": "1918–1921", "enquadramento": "parcial", "criterio": "Região controlada pelo exército camponês de Nestor Makhno, descrito pela Britannica como anarquista; as experiências sociais foram limitadas pela guerra civil.", "fonte": "https://www.britannica.com/biography/N-I-Makhno"},
+        {"pais": "Espanha (Catalunha e Aragão)", "periodo": "1936–1939", "enquadramento": "parcial", "criterio": "Durante a Guerra Civil, a CNT, central anarcossindicalista com cerca de 1,6 milhão de filiados em 1936, coletivizou fábricas e terras; em 1936, a CNT entrou nos governos da Catalunha e da República.", "fonte": "https://www.britannica.com/topic/anarchism/Anarchism-in-Spain"},
+        {"pais": "Síria (nordeste, Rojava)", "periodo": "2012–2026", "enquadramento": "parcial", "criterio": "Administração autônoma baseada no 'confederalismo democrático' de Abdullah Öcalan, inspirado no anarquista Murray Bookchin; não se declara anarquista e passou a ser integrada ao Estado sírio após acordo de janeiro de 2026.", "fonte": "https://www.rudaw.net/english/middleeast/syria/30012026"}
+      ],
+      "no_brasil": "Imigrantes anarquistas tiveram papel central no movimento operário da Primeira República, como na greve geral de 1917 em São Paulo. Como a corrente rejeita a disputa eleitoral, não há partido anarquista registrado.",
+      "fontes": [
+        {"titulo": "Anarchism — Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/entries/anarchism/"},
+        {"titulo": "Anarchism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/anarchism"},
+        {"titulo": "Anarchism in Spain — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/anarchism/Anarchism-in-Spain"},
+        {"titulo": "N. I. Makhno — Encyclopaedia Britannica", "url": "https://www.britannica.com/biography/N-I-Makhno"}
+      ]
+    },
+    {
+      "id": "ecologismo",
+      "nome": "Ecologismo (política verde)",
+      "familia": "centro-esquerda",
+      "resumo": "Corrente que põe a proteção do meio ambiente e os limites do planeta no centro das decisões políticas e econômicas.",
+      "definicao": "O ecologismo político afirma que a economia e a sociedade dependem da natureza, e que o crescimento sem limites esgota recursos e ameaça a vida, inclusive a humana. Os verdes alemães resumiram seus princípios, em 1980, em quatro pilares: ecologia, justiça social, democracia de base e não violência. A corrente propõe mudar a forma de produzir energia, de transportar pessoas e de consumir, e dar voz às comunidades locais e às gerações futuras.",
+      "origem": {
+        "periodo": "Décadas de 1960 a 1980",
+        "contexto": "O livro 'Primavera Silenciosa' (1962) e o relatório 'Os Limites do Crescimento' (1972) chamaram atenção para a poluição e o esgotamento de recursos. Movimentos ambientalistas, pacifistas e antinucleares deram origem a partidos verdes, como o alemão, criado como partido nacional em 1980. Em 2001, partidos de vários países formaram a rede Verdes Globais."
+      },
+      "pensadores": [
+        {"nome": "Arne Næss", "anos": "1912–2009", "contribuicao": "Filósofo norueguês que criou a 'ecologia profunda', para a qual a natureza tem valor por si mesma."},
+        {"nome": "Murray Bookchin", "anos": "1921–2006", "contribuicao": "Criou a 'ecologia social', que liga a destruição ambiental às hierarquias sociais."},
+        {"nome": "Petra Kelly", "anos": "1947–1992", "contribuicao": "Cofundadora do Partido Verde alemão, defensora da ecologia, do pacifismo e dos direitos humanos."}
+      ],
+      "obras": [
+        {"titulo": "Primavera Silenciosa", "autor": "Rachel Carson", "ano": 1962, "ideia_central": "Mostra os efeitos dos pesticidas sobre a natureza e a saúde humana."},
+        {"titulo": "Os Limites do Crescimento", "autor": "Donella Meadows e outros (Clube de Roma)", "ano": 1972, "ideia_central": "O crescimento econômico e populacional contínuo esbarraria nos limites físicos do planeta."},
+        {"titulo": "Nosso Futuro Comum", "autor": "Comissão Mundial sobre Meio Ambiente e Desenvolvimento (Comissão Brundtland)", "ano": 1987, "ideia_central": "Define desenvolvimento sustentável como atender às necessidades atuais sem comprometer as das gerações futuras."}
+      ],
+      "propostas": [
+        "Trocar combustíveis fósseis por fontes renováveis de energia.",
+        "Proteger florestas, rios e a biodiversidade.",
+        "Cobrar de quem polui pelo dano ambiental.",
+        "Investir em transporte público e em cidades menos dependentes do carro.",
+        "Ampliar a participação local nas decisões sobre o território."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": -1, "porque": "Defende regulação ambiental forte e investimento público na transição energética, com espaço para mercado e cooperativas."},
+        "redistribuicao": {"valor": -1, "porque": "Associa a proteção ambiental à justiça social e apoia programas para os mais pobres."},
+        "costumes": {"valor": -1, "porque": "Partidos verdes costumam apoiar mudanças de costumes, como igualdade de gênero e direitos de minorias; há também correntes ecológicas conservadoras."},
+        "autoridade": {"valor": -1, "porque": "Valoriza a democracia de base e a descentralização."},
+        "nacao": {"valor": -1, "porque": "Defende acordos internacionais, porque problemas como o clima atravessam fronteiras."}
+      },
+      "variantes": ["Ecologia profunda", "Ecologia social e ecossocialismo", "Ambientalismo de mercado (economia verde)"],
+      "criticas": [
+        {"de": "liberais de mercado", "critica": "Regulações e metas ambientais rígidas elevam custos e reduzem empregos e crescimento."},
+        {"de": "conservadores e setores produtivos", "critica": "Restrições ambientais limitam o uso da terra e interferem no direito de propriedade e na produção agrícola."},
+        {"de": "desenvolvimentistas e parte da esquerda", "critica": "Limites ao crescimento podem impedir países pobres de se industrializar e de reduzir a pobreza."}
+      ],
+      "exemplos": [
+        {"pais": "Alemanha", "periodo": "1998–2005 e 2021–2025", "enquadramento": "parcial", "criterio": "Os Verdes, membro dos Verdes Globais, integraram governos de coalizão; no primeiro período, aprovaram o plano de saída da energia nuclear.", "fonte": "https://www.britannica.com/topic/Green-Party-of-Germany"},
+        {"pais": "Equador", "periodo": "2008–presente", "enquadramento": "parcial", "criterio": "Constituição de 2008, a primeira a reconhecer direitos da natureza (Pacha Mama).", "fonte": "https://ecojurisprudence.org/initiatives/ecuador-constitution/"},
+        {"pais": "Butão", "periodo": "2008–presente", "enquadramento": "parcial", "criterio": "Constituição de 2008 obriga o país a manter pelo menos 60% do território coberto por florestas.", "fonte": "https://www.cambridge.org/core/books/environmental-rights/constitution-of-bhutan-a-quantitative-environmental-standard/A2BD4626CC13A6E0F4C7AF2DC0FEE82A"}
+      ],
+      "no_brasil": "O Partido Verde foi fundado em 1986 e integra os Verdes Globais; a Rede Sustentabilidade, ligada a Marina Silva, também se apresenta com agenda ambiental. O seringueiro Chico Mendes, assassinado em 1988, tornou-se referência da luta socioambiental.",
+      "fontes": [
+        {"titulo": "Environmentalism — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/environmentalism"},
+        {"titulo": "Green Party of Germany — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Green-Party-of-Germany"},
+        {"titulo": "Ecuador Constitution — Ecojurisprudence", "url": "https://ecojurisprudence.org/initiatives/ecuador-constitution/"},
+        {"titulo": "A história do PV — Politize!", "url": "https://www.politize.com.br/partido-verde/"}
+      ]
+    },
+    {
+      "id": "trabalhismo",
+      "nome": "Trabalhismo (Brasil)",
+      "familia": "centro-esquerda",
+      "resumo": "Corrente brasileira que defende direitos trabalhistas garantidos pelo Estado, nacionalismo econômico e reformas sociais, a partir do legado de Getúlio Vargas.",
+      "definicao": "O trabalhismo brasileiro defende que o Estado proteja o trabalhador por meio de leis, como salário mínimo, carteira de trabalho, férias, previdência e Justiça do Trabalho, e que conduza o desenvolvimento nacional. Combina reformas sociais, nacionalismo econômico (controle nacional sobre petróleo e energia e limite à remessa de lucros ao exterior) e conciliação entre empresários e trabalhadores, mediada pelo governo. Com Leonel Brizola, acrescentou a escola pública em tempo integral e o socialismo democrático como meta.",
+      "origem": {
+        "periodo": "Décadas de 1930 e 1940",
+        "contexto": "Nasceu da legislação trabalhista criada por Getúlio Vargas a partir de 1930 e reunida na Consolidação das Leis do Trabalho (CLT) em 1943. Em 1945, o Partido Trabalhista Brasileiro (PTB) foi fundado com apoio de Vargas e de quadros do Ministério do Trabalho. Segundo o CPDOC, a corrente doutrinária de Alberto Pasqualini se inspirou no trabalhismo britânico."
+      },
+      "pensadores": [
+        {"nome": "Getúlio Vargas", "anos": "1882–1954", "contribuicao": "Presidente (1930–1945 e 1951–1954) que criou a legislação trabalhista e inspirou a fundação do PTB."},
+        {"nome": "Alberto Pasqualini", "anos": "1901–1960", "contribuicao": "Considerado pelo CPDOC o principal teórico do trabalhismo brasileiro."},
+        {"nome": "Leonel Brizola", "anos": "1922–2004", "contribuicao": "Governador do Rio Grande do Sul e do Rio de Janeiro e fundador do PDT (1980)."}
+      ],
+      "obras": [
+        {"titulo": "Diretrizes Fundamentais do Trabalhismo Brasileiro", "autor": "Alberto Pasqualini", "ano": 1948, "ideia_central": "Expõe os princípios do trabalhismo: justiça social, função social da propriedade e ação do Estado."},
+        {"titulo": "Carta-Testamento", "autor": "Getúlio Vargas", "ano": 1954, "ideia_central": "Texto deixado por Vargas ao morrer, que associa sua política à defesa dos trabalhadores e da economia nacional."},
+        {"titulo": "Carta de Lisboa", "autor": "Encontro de trabalhistas do Brasil e do exílio, liderado por Leonel Brizola", "ano": 1979, "ideia_central": "Documento que serviu de base para reorganizar o trabalhismo depois da anistia."}
+      ],
+      "propostas": [
+        "Garantir direitos trabalhistas por lei, como salário mínimo, férias e previdência.",
+        "Manter sob controle nacional setores como petróleo e energia.",
+        "Limitar a remessa de lucros de empresas estrangeiras ao exterior.",
+        "Fazer reformas de base, como a reforma agrária.",
+        "Oferecer escola pública em tempo integral, como os CIEPs de Brizola."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": -1, "porque": "Defende Estado regulador e estatais em setores estratégicos, mantendo a iniciativa privada."},
+        "redistribuicao": {"valor": -1, "porque": "Busca elevar a renda dos trabalhadores por salário mínimo, direitos e reformas sociais."},
+        "costumes": {"valor": null, "porque": "Concentrou-se em direitos sociais e não fixou posição própria sobre costumes."},
+        "autoridade": {"valor": null, "porque": "Vargas governou como ditador no Estado Novo (1937–1945), enquanto o PTB e o PDT atuaram na democracia; não há posição única."},
+        "nacao": {"valor": 1, "porque": "Defende nacionalismo econômico e política externa independente, sem rejeitar relações internacionais."}
+      },
+      "variantes": ["Getulismo", "Trabalhismo reformista de João Goulart (reformas de base)", "Trabalhismo brizolista (PDT)"],
+      "criticas": [
+        {"de": "liberais", "critica": "A CLT e o controle estatal sobre os sindicatos engessaram as relações de trabalho e elevaram o custo de contratar."},
+        {"de": "marxistas e parte da esquerda", "critica": "A tutela do Estado sobre os sindicatos subordinou os trabalhadores a líderes políticos e reduziu sua autonomia."},
+        {"de": "conservadores", "critica": "Propostas como a reforma agrária e a ampliação do poder sindical ameaçam a propriedade e a ordem."}
+      ],
+      "exemplos": [
+        {"pais": "Brasil", "periodo": "1930–1945 e 1951–1954", "enquadramento": "parcial", "criterio": "Governos de Getúlio Vargas: Ministério do Trabalho, Justiça do Trabalho e CLT (1943); a primeira fase incluiu a ditadura do Estado Novo.", "fonte": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/consolidacao-das-leis-do-trabalho-clt"},
+        {"pais": "Brasil", "periodo": "1961–1964", "enquadramento": "total", "criterio": "Governo de João Goulart, presidente nacional do PTB, com o Plano Trienal e as reformas de base; deposto em 1964.", "fonte": "https://www18.fgv.br/Cpdoc/Acervo/dicionarios/verbete-tematico/partido-trabalhista-brasileiro-1945-1965"},
+        {"pais": "Brasil (Rio de Janeiro)", "periodo": "1983–1987 e 1991–1994", "enquadramento": "total", "criterio": "Governos estaduais de Leonel Brizola pelo PDT, com os CIEPs, escolas de tempo integral.", "fonte": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/leonel-de-moura-brizola"},
+        {"pais": "Reino Unido", "periodo": "1945–1951", "enquadramento": "parcial", "criterio": "Governo trabalhista de Clement Attlee, que criou o Serviço Nacional de Saúde e estatizou setores; o CPDOC aponta o trabalhismo britânico como inspiração de Pasqualini.", "fonte": "https://www.britannica.com/biography/Clement-Attlee"}
+      ],
+      "no_brasil": "É uma corrente nascida no Brasil: o PTB (1945–1965) foi extinto pelo AI-2, e seu legado foi disputado depois da anistia pelo novo PTB (1980), que se fundiu ao Patriota em 2023 para formar o PRD, e pelo PDT, fundado por Brizola em 1980, que em 2026 é membro pleno da Internacional Socialista.",
+      "fontes": [
+        {"titulo": "Partido Trabalhista Brasileiro (1945-1965) — CPDOC/FGV", "url": "https://www18.fgv.br/Cpdoc/Acervo/dicionarios/verbete-tematico/partido-trabalhista-brasileiro-1945-1965"},
+        {"titulo": "Pasqualini, Alberto — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/pasqualini-alberto"},
+        {"titulo": "Leonel de Moura Brizola — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/leonel-de-moura-brizola"},
+        {"titulo": "Partido Democrático Trabalhista (PDT) — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/partido-democratico-trabalhista-pdt"}
+      ]
+    },
+    {
+      "id": "desenvolvimentismo",
+      "nome": "Desenvolvimentismo",
+      "familia": "transversal",
+      "resumo": "Corrente que defende que o Estado planeje e lidere a industrialização para tirar um país do subdesenvolvimento.",
+      "definicao": "Para os desenvolvimentistas, países que exportam sobretudo produtos agrícolas e minerais tendem a perder renda em relação aos países industrializados, porque o preço desses produtos cai em relação ao dos bens industriais. A saída seria industrializar o país com ajuda do Estado: planejamento, bancos públicos de fomento, estatais em setores básicos, proteção à indústria nacional e atração de capital estrangeiro para setores escolhidos. O objetivo é crescer rápido e mudar a estrutura da economia.",
+      "origem": {
+        "periodo": "Décadas de 1940 e 1950",
+        "contexto": "Ganhou base teórica na Comissão Econômica para a América Latina (Cepal), criada pela ONU em 1948. Em 1949, o argentino Raúl Prebisch apresentou a tese da deterioração dos termos de troca entre 'centro' e 'periferia'. No Brasil, orientou os governos Vargas e Juscelino Kubitschek e foi retomado pelos governos militares."
+      },
+      "pensadores": [
+        {"nome": "Raúl Prebisch", "anos": "1901–1986", "contribuicao": "Economista argentino que dirigiu a Cepal e formulou a teoria centro-periferia."},
+        {"nome": "Celso Furtado", "anos": "1920–2004", "contribuicao": "Economista brasileiro da Cepal (1950–1957), criador da Sudene e defensor da industrialização voltada ao mercado interno."},
+        {"nome": "Roberto Simonsen", "anos": "1889–1948", "contribuicao": "Industrial brasileiro que defendeu o planejamento estatal da industrialização em debate com Eugênio Gudin (1944–1945)."}
+      ],
+      "obras": [
+        {"titulo": "O Desenvolvimento Econômico da América Latina e seus Principais Problemas", "autor": "Raúl Prebisch", "ano": 1949, "ideia_central": "Chamado de 'manifesto latino-americano', expõe a deterioração dos termos de troca dos produtos primários."},
+        {"titulo": "Formação Econômica do Brasil", "autor": "Celso Furtado", "ano": 1959, "ideia_central": "Explica a história econômica brasileira e as raízes do subdesenvolvimento."},
+        {"titulo": "Desenvolvimento e Subdesenvolvimento", "autor": "Celso Furtado", "ano": 1961, "ideia_central": "O subdesenvolvimento não é uma etapa que todo país atravessa, mas uma estrutura que exige política deliberada para ser superada."}
+      ],
+      "propostas": [
+        "Planejar a economia com metas setoriais, como energia, transporte e indústria.",
+        "Criar bancos públicos de desenvolvimento para financiar a indústria.",
+        "Manter estatais em setores básicos, como petróleo, aço e energia.",
+        "Proteger a indústria nacional com tarifas e incentivos.",
+        "Atrair capital estrangeiro para setores considerados prioritários."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": -1, "porque": "O Estado planeja e investe, em parceria com empresas privadas nacionais e estrangeiras."},
+        "redistribuicao": {"valor": null, "porque": "O foco é crescer e industrializar; a atenção à distribuição de renda variou conforme o governo."},
+        "costumes": {"valor": null, "porque": "Não tem posição sobre costumes."},
+        "autoridade": {"valor": null, "porque": "Foi aplicado em democracias, como no governo JK, e em ditaduras, como o regime militar brasileiro e a Coreia do Sul de Park Chung-hee."},
+        "nacao": {"valor": 1, "porque": "Busca autonomia econômica nacional, sem rejeitar capital e comércio externos."}
+      },
+      "variantes": ["Estruturalismo cepalino", "Nacional-desenvolvimentismo", "Novo-desenvolvimentismo (Bresser-Pereira)"],
+      "criticas": [
+        {"de": "liberais e monetaristas", "critica": "Proteção e crédito subsidiado criaram indústrias pouco competitivas, inflação e dívida externa."},
+        {"de": "marxistas e teóricos da dependência", "critica": "Industrializar sem mudar a estrutura social manteve a desigualdade e a dependência do capital estrangeiro."},
+        {"de": "ambientalistas", "critica": "Grandes obras e a expansão das fronteiras agrícola e energética causaram desmatamento e deslocamento de povos tradicionais."}
+      ],
+      "exemplos": [
+        {"pais": "Brasil", "periodo": "1951–1954 e 1956–1961", "enquadramento": "total", "criterio": "Segundo governo Vargas (BNDE, 1952; Petrobras, 1953) e Programa de Metas de Juscelino Kubitschek, que o CPDOC descreve como estratégia desenvolvimentista.", "fonte": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/programa-de-metas"},
+        {"pais": "Brasil", "periodo": "1964–1985 (II PND, 1975–1979)", "enquadramento": "parcial", "criterio": "O CPDOC registra que os governos militares retomaram e aprofundaram o desenvolvimentismo; o II Plano Nacional de Desenvolvimento, lançado no governo Geisel em 1974, priorizou bens de capital e insumos básicos.", "fonte": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/desenvolvimentismo"},
+        {"pais": "Argentina", "periodo": "1958–1962", "enquadramento": "parcial", "criterio": "Governo de Arturo Frondizi, com Rogelio Frigerio, que adotou o 'desarrollismo' com foco na indústria pesada e no capital estrangeiro; derrubado por golpe em 1962.", "fonte": "https://ebuah.uah.es/dspace/handle/10017/6376"},
+        {"pais": "Coreia do Sul", "periodo": "1961–1979", "enquadramento": "parcial", "criterio": "Governo de Park Chung-hee: planos quinquenais a partir de 1962 e industrialização dirigida pelo Estado e voltada à exportação, sob regime militar.", "fonte": "https://countrystudies.us/south-korea/47.htm"}
+      ],
+      "no_brasil": "O Brasil é um dos casos centrais: o desenvolvimentismo orientou governos de orientações distintas, de Vargas e JK ao regime militar, e economistas como Luiz Carlos Bresser-Pereira propõem desde os anos 2000 um 'novo-desenvolvimentismo'.",
+      "fontes": [
+        {"titulo": "Desenvolvimentismo — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/desenvolvimentismo"},
+        {"titulo": "Programa de Metas — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/programa-de-metas"},
+        {"titulo": "Celso Monteiro Furtado — CPDOC/FGV", "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/celso-monteiro-furtado"},
+        {"titulo": "El desarrollo económico de la América Latina y algunos de sus principales problemas — Cepal", "url": "https://www.cepal.org/pt-br/node/36720"}
+      ]
+    },
+    {
+      "id": "populismo",
+      "nome": "Populismo",
+      "familia": "transversal",
+      "resumo": "Estilo político, e não uma ideologia completa, que divide a sociedade entre 'o povo' e 'a elite' e se apresenta como voz direta do povo.",
+      "definicao": "O populismo não diz, sozinho, como a economia ou o Estado devem funcionar; por isso, o cientista político Cas Mudde o chama de 'ideologia rala', que se apoia em outra ideologia, de esquerda ou de direita. Seu núcleo é a ideia de que a sociedade se divide entre o 'povo puro' e a 'elite corrupta', e de que a política deve expressar a vontade do povo, em geral por meio de um líder que diz falar diretamente com ele. Defensores, como Ernesto Laclau, dizem que ele reúne demandas de grupos excluídos; críticos, que trata opositores como inimigos.",
+      "origem": {
+        "periodo": "Final do século XIX",
+        "contexto": "O termo foi usado pelo Partido do Povo dos Estados Unidos, formado por agricultores na década de 1890, e pelos narodniki russos. Na América Latina, foi associado a líderes como Getúlio Vargas e Juan Perón, entre as décadas de 1930 e 1950. No século XXI, passou a descrever líderes e partidos de esquerda e de direita em vários continentes."
+      },
+      "pensadores": [
+        {"nome": "Ernesto Laclau", "anos": "1935–2014", "contribuicao": "Defendeu o populismo como forma de construir uma identidade popular a partir de demandas não atendidas."},
+        {"nome": "Chantal Mouffe", "anos": "1943–", "contribuicao": "Propôs um 'populismo de esquerda' como estratégia democrática."},
+        {"nome": "Cas Mudde", "anos": "1967–", "contribuicao": "Definiu o populismo como ideologia rala que opõe o povo puro à elite corrupta e se combina com outras ideologias."}
+      ],
+      "obras": [
+        {"titulo": "O Populismo na Política Brasileira", "autor": "Francisco Weffort", "ano": 1978, "ideia_central": "Analisa o período 1930–1964 como um 'Estado de compromisso' sustentado pelo apoio das massas urbanas a líderes como Vargas."},
+        {"titulo": "O Espírito do Tempo Populista (The Populist Zeitgeist)", "autor": "Cas Mudde", "ano": 2004, "ideia_central": "O populismo é uma ideologia rala que se apoia em outras e que se tornou comum na política europeia."},
+        {"titulo": "A Razão Populista", "autor": "Ernesto Laclau", "ano": 2005, "ideia_central": "O populismo é uma lógica política que une demandas diferentes sob a ideia de 'povo'."}
+      ],
+      "propostas": [
+        "Fazer consultas diretas à população, como plebiscitos e referendos.",
+        "Reduzir a influência de grupos apontados como 'elite', como partidos tradicionais, grandes empresas, imprensa ou burocracia.",
+        "Reformar instituições consideradas capturadas pela elite, como tribunais, agências ou o parlamento.",
+        "Adotar medidas de benefício direto e visível para a maioria, como aumento de salários ou corte de tarifas.",
+        "Rever acordos internacionais vistos como impostos por elites externas."
+      ],
+      "posicoes": {
+        "estado_economia": {"valor": null, "porque": "Depende da ideologia associada: há populismos estatizantes e populismos favoráveis ao mercado."},
+        "redistribuicao": {"valor": null, "porque": "Populistas de esquerda defendem redistribuição; populistas de direita, em geral, não a priorizam."},
+        "costumes": {"valor": null, "porque": "Há populismos progressistas e populismos conservadores em costumes."},
+        "autoridade": {"valor": null, "porque": "Põe a vontade da maioria acima das mediações institucionais, mas o grau de concentração de poder varia muito entre os casos."},
+        "nacao": {"valor": null, "porque": "Muitos populismos são nacionalistas, mas a soberania nacional não faz parte do núcleo do conceito."}
+      },
+      "variantes": ["Populismo de esquerda", "Populismo de direita (frequentemente nativista)", "Populismo latino-americano clássico (décadas de 1930 a 1960)"],
+      "criticas": [
+        {"de": "liberais", "critica": "Ao tratar o povo como bloco único, desconsidera o pluralismo e enfraquece freios e contrapesos, como tribunais e imprensa."},
+        {"de": "marxistas", "critica": "A aliança entre classes em torno de um líder dilui os conflitos de classe e desmobiliza os trabalhadores."},
+        {"de": "historiadores revisionistas brasileiros", "critica": "O conceito é vago e trata os eleitores como manipulados, sem reconhecer que apoiaram líderes em troca de direitos que de fato obtiveram."}
+      ],
+      "exemplos": [
+        {"pais": "Estados Unidos", "periodo": "1892–1908", "enquadramento": "parcial", "criterio": "Partido do Povo (Populist Party), movimento de agricultores que deu origem ao termo; não chegou a governar o país.", "fonte": "https://www.britannica.com/event/Populist-Movement"},
+        {"pais": "Argentina", "periodo": "1946–1955", "enquadramento": "parcial", "criterio": "Governo de Juan Perón, descrito pela Britannica como praticante do populismo latino-americano de meados do século XX.", "fonte": "https://www.britannica.com/topic/Peronist"},
+        {"pais": "Venezuela", "periodo": "1999–2013", "enquadramento": "parcial", "criterio": "Governo de Hugo Chávez, cuja ascensão a Britannica descreve como apelo aos pobres contra os líderes tradicionais.", "fonte": "https://www.britannica.com/biography/Hugo-Chavez"},
+        {"pais": "Hungria", "periodo": "2010–2026", "enquadramento": "parcial", "criterio": "Governo de Viktor Orbán, citado pela Britannica entre os líderes populistas, predominantemente de direita, do século XXI; deixou o poder após a derrota na eleição de abril de 2026.", "fonte": "https://www.britannica.com/topic/liberal-democracy"}
+      ],
+      "no_brasil": "O CPDOC registra que os governos de Vargas (1930–1945 e 1951–1954) e de João Goulart (1961–1964) costumam ser chamados de populistas, mas o termo é controverso entre historiadores. Hoje o rótulo é aplicado por analistas a políticos de campos diferentes, e quem o recebe costuma rejeitá-lo.",
+      "fontes": [
+        {"titulo": "Populismo — CPDOC/FGV", "url": "https://www18.fgv.br/Cpdoc/Acervo/dicionarios/verbete-tematico/populismo"},
+        {"titulo": "Populist Movement — Encyclopaedia Britannica", "url": "https://www.britannica.com/event/Populist-Movement"},
+        {"titulo": "Liberal democracy — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/liberal-democracy"},
+        {"titulo": "Peronist — Encyclopaedia Britannica", "url": "https://www.britannica.com/topic/Peronist"}
+      ]
+    }
+  ],
+  "relacoes": [
+    {"a": "socialismo", "b": "liberalismo_classico",
+     "convergem": ["Nasceram do Iluminismo e da crítica aos privilégios de nascimento.", "Em suas versões democráticas, defendem liberdade de expressão e de organização.", "Acreditam que a sociedade pode ser melhorada pela razão e pela ação humana."],
+     "divergem": ["O liberalismo clássico vê a propriedade privada como direito fundamental; o socialismo quer controle social dos meios de produção.", "Para liberais, o mercado coordena a economia; para socialistas, o planejamento ou o controle coletivo deve orientá-la.", "Liberais defendem igualdade perante a lei; socialistas defendem também reduzir a desigualdade de renda e de riqueza."]},
+    {"a": "comunismo", "b": "social_democracia",
+     "convergem": ["Têm origem comum no movimento socialista e na obra de Marx.", "Querem reduzir a desigualdade e ampliar direitos dos trabalhadores.", "Defendem saúde e educação públicas."],
+     "divergem": ["Comunistas defendem revolução; social-democratas, reformas pelo voto.", "O marxismo-leninismo defende partido único; a social-democracia, democracia com vários partidos.", "Comunistas querem estatizar os meios de produção; social-democratas aceitam o mercado e a empresa privada."]},
+    {"a": "conservadorismo", "b": "liberalismo_classico",
+     "convergem": ["Defendem a propriedade privada e o Estado de direito.", "Desconfiam de planos para reorganizar a sociedade de cima para baixo.", "Muitos partidos combinam as duas correntes: liberais na economia e conservadores nos costumes."],
+     "divergem": ["O liberalismo parte do indivíduo e de seus direitos; o conservadorismo parte da comunidade e das tradições.", "Liberais aceitam mudanças que ampliem a liberdade; conservadores preferem mudar devagar e preservar instituições herdadas.", "Conservadores aceitam que a lei proteja a moral e os costumes; liberais clássicos tendem a deixar isso à escolha individual."]},
+    {"a": "fascismo", "b": "comunismo",
+     "convergem": ["Rejeitavam a democracia liberal e o pluralismo partidário.", "No poder, governaram com partido único, polícia política e propaganda de massa.", "Autores como Hannah Arendt (Origens do Totalitarismo, 1951) agruparam os dois como regimes totalitários, comparação contestada por outros historiadores."],
+     "divergem": ["O comunismo é internacionalista e busca uma sociedade sem classes; o fascismo põe a nação acima de tudo e mantém as classes sob o Estado.", "Comunistas aboliram a propriedade privada dos meios de produção; fascistas a mantiveram.", "Foram inimigos declarados e se enfrentaram na Guerra Civil Espanhola e na Segunda Guerra Mundial.", "O fascismo exaltava a hierarquia e a desigualdade natural; o comunismo se apresentava como herdeiro do ideal de igualdade."]},
+    {"a": "neoliberalismo", "b": "desenvolvimentismo",
+     "convergem": ["Buscam crescimento econômico e modernização.", "Aceitam a economia capitalista e a empresa privada.", "Admitem capital estrangeiro; no desenvolvimentismo, dirigido a setores escolhidos."],
+     "divergem": ["Desenvolvimentistas querem o Estado planejando e investindo; neoliberais querem o Estado garantindo regras e o mercado decidindo os investimentos.", "O desenvolvimentismo protege a indústria nacional; o neoliberalismo defende abertura comercial.", "Desenvolvimentistas usam estatais e bancos públicos; neoliberais propõem privatizá-los ou reduzi-los.", "Neoliberais priorizam o controle da inflação; desenvolvimentistas, como Furtado, buscavam combatê-la sem frear o crescimento."]},
+    {"a": "trabalhismo", "b": "social_democracia",
+     "convergem": ["Defendem direitos trabalhistas e proteção social garantidos pelo Estado.", "Aceitam a economia de mercado com regulação.", "O PDT, herdeiro do trabalhismo, é membro pleno da Internacional Socialista, que reúne partidos social-democratas."],
+     "divergem": ["A social-democracia europeia nasceu de sindicatos e partidos operários independentes; o trabalhismo brasileiro nasceu a partir do Estado e do Ministério do Trabalho.", "O trabalhismo dá mais peso ao nacionalismo econômico e às estatais em setores estratégicos.", "A social-democracia europeia rompeu com o marxismo de forma explícita; o trabalhismo nunca teve origem marxista e, com Brizola, passou a falar em socialismo democrático."]},
+    {"a": "libertarianismo", "b": "anarquismo",
+     "convergem": ["Desconfiam do Estado e da coerção.", "Defendem a liberdade individual e a associação voluntária.", "Têm raízes comuns no anarquismo individualista do século XIX nos Estados Unidos."],
+     "divergem": ["Libertários defendem a propriedade privada e o mercado; a maioria dos anarquistas vê a propriedade capitalista como forma de dominação.", "Muitos libertários aceitam um Estado mínimo; anarquistas rejeitam qualquer Estado.", "O anarquismo social busca igualdade econômica; o libertarianismo aceita desigualdades que resultem de trocas voluntárias."]},
+    {"a": "liberalismo_classico", "b": "neoliberalismo",
+     "convergem": ["Defendem mercado livre, propriedade privada e comércio internacional.", "Desconfiam do planejamento central da economia.", "Hayek e outros neoliberais se apresentavam como herdeiros do liberalismo clássico."],
+     "divergem": ["O neoliberalismo dá ao Estado papel ativo para construir e proteger a concorrência e a moeda; o liberalismo clássico pensava sobretudo em limitar o Estado.", "O neoliberalismo aceita uma rede de proteção social modesta.", "O neoliberalismo surgiu no século XX como resposta ao planejamento, ao comunismo e ao fascismo; o liberalismo clássico surgiu como resposta às monarquias absolutas."]},
+    {"a": "liberalismo_classico", "b": "libertarianismo",
+     "convergem": ["Colocam a liberdade individual e a propriedade privada no centro.", "Defendem mercado livre e livre-comércio.", "Têm autores de referência em comum, como John Locke."],
+     "divergem": ["Liberais clássicos, como Adam Smith, aceitavam que o Estado cuidasse de obras públicas e de educação básica; libertários querem Estado mínimo ou nenhum.", "Libertários tendem a defender a descriminalização de escolhas privadas, como o uso de drogas; liberais clássicos variam nesse ponto.", "Anarcocapitalistas rejeitam até o monopólio estatal da justiça e da segurança, aceito pelo liberalismo clássico."]},
+    {"a": "liberalismo_classico", "b": "liberalismo_social",
+     "convergem": ["Defendem direitos individuais, democracia constitucional e economia de mercado.", "Têm origem comum no pensamento liberal, inclusive em John Stuart Mill.", "Apoiam a liberdade de expressão e de religião."],
+     "divergem": ["Liberais sociais acham que pobreza e falta de estudo limitam a liberdade e pedem ação do Estado; liberais clássicos veem a liberdade como ausência de coerção.", "Liberais sociais aceitam impostos progressivos e Estado de bem-estar; liberais clássicos preferem impostos baixos e Estado limitado."]},
+    {"a": "liberalismo_social", "b": "social_democracia",
+     "convergem": ["Defendem Estado de bem-estar, economia de mercado e democracia.", "Apoiam impostos progressivos e serviços públicos universais.", "Formaram governos de coalizão, como na Alemanha Ocidental de 1969 a 1982."],
+     "divergem": ["A social-democracia nasceu do socialismo e dos sindicatos; o liberalismo social, do liberalismo.", "Social-democratas dão mais peso aos sindicatos e à negociação coletiva; liberais sociais, à liberdade individual e à concorrência.", "Social-democratas aceitam mais estatais e mais regulação."]},
+    {"a": "socialismo", "b": "comunismo",
+     "convergem": ["Defendem controle social dos meios de produção e redução da desigualdade.", "Têm como referência comum Marx e o movimento operário do século XIX.", "No vocabulário marxista, o socialismo é a fase anterior ao comunismo."],
+     "divergem": ["Muitos socialistas defendem chegar ao poder pelo voto e manter vários partidos; o marxismo-leninismo defende revolução e partido único.", "Há socialistas que aceitam mercados e cooperativas; o marxismo-leninismo clássico defende planejamento central estatal.", "O comunismo tem como meta final uma sociedade sem Estado; muitas correntes socialistas não têm essa meta."]},
+    {"a": "social_democracia", "b": "terceira_via",
+     "convergem": ["A terceira via surgiu dentro de partidos social-democratas e trabalhistas.", "Defendem serviços públicos, como saúde e educação, e economia de mercado.", "Atuam pela democracia representativa."],
+     "divergem": ["A terceira via aceita mais privatizações e parcerias com empresas privadas.", "A social-democracia prioriza redistribuir renda; a terceira via prioriza igualar oportunidades por educação e emprego.", "A terceira via dá menos peso aos sindicatos e liga os benefícios sociais à busca de trabalho."]},
+    {"a": "neoliberalismo", "b": "terceira_via",
+     "convergem": ["Aceitam o mercado, a globalização e o equilíbrio das contas públicas.", "Mantiveram privatizações e a independência dos bancos centrais.", "Críticos de esquerda dizem que a terceira via aceitou o essencial das reformas neoliberais."],
+     "divergem": ["A terceira via defende investimento público em educação, qualificação e inclusão social.", "A terceira via dá ao Estado papel ativo contra a exclusão social; neoliberais preferem focalizar e limitar os programas sociais.", "A terceira via nasceu na centro-esquerda; o neoliberalismo é associado sobretudo a governos de centro-direita e de direita, embora também tenha sido aplicado por partidos trabalhistas."]},
+    {"a": "conservadorismo", "b": "democracia_crista",
+     "convergem": ["Valorizam família, religião e tradições.", "Preferem mudanças graduais.", "Costumam se aliar em parlamentos, como no Partido Popular Europeu."],
+     "divergem": ["A democracia cristã dá mais peso à proteção social e aos direitos trabalhistas.", "A democracia cristã apoia mais a integração supranacional, como a europeia; correntes conservadoras dão mais peso à soberania nacional.", "A democracia cristã se baseia na doutrina social cristã; o conservadorismo pode ser laico."]},
+    {"a": "democracia_crista", "b": "social_democracia",
+     "convergem": ["Defendem Estado de bem-estar e economia de mercado regulada.", "Apoiam o diálogo entre empresas, sindicatos e governo.", "Governaram juntas em 'grandes coalizões', como na Alemanha em vários períodos desde 1966."],
+     "divergem": ["A democracia cristã se inspira na religião e é mais conservadora em temas como família e aborto.", "Social-democratas defendem mais redistribuição e mais presença do Estado; democratas-cristãos, a subsidiariedade.", "A social-democracia vem do movimento socialista; a democracia cristã surgiu em parte como alternativa cristã ao socialismo."]},
+    {"a": "nacionalismo", "b": "fascismo",
+     "convergem": ["Põem a nação no centro da política.", "O fascismo é uma forma extrema de nacionalismo."],
+     "divergem": ["O nacionalismo pode ser democrático e liberal, como o de Mazzini; o fascismo rejeita a democracia.", "Muitos nacionalismos lutaram por independência contra impérios; o fascismo defendia expansão territorial e império.", "O fascismo exige partido único e Estado total; o nacionalismo não tem posição única sobre o regime político."]},
+    {"a": "conservadorismo", "b": "fascismo",
+     "convergem": ["Valorizam a ordem, a hierarquia e a nação.", "Opuseram-se ao comunismo; na Itália (1922) e na Alemanha (1933), parte dos conservadores apoiou a chegada dos fascistas ao governo."],
+     "divergem": ["O conservadorismo defende mudanças graduais; o fascismo se apresentava como revolução.", "Conservadores valorizam instituições como igrejas, monarquias e tribunais independentes; o fascismo as subordinava ao Estado e ao partido.", "Conservadores como Winston Churchill lideraram a luta contra o fascismo na Segunda Guerra Mundial."]},
+    {"a": "conservadorismo", "b": "libertarianismo",
+     "convergem": ["Defendem a propriedade privada e desconfiam do Estado grande.", "Opõem-se ao socialismo.", "Formam alianças eleitorais em vários países, como o 'fusionismo' entre conservadores e libertários nos Estados Unidos."],
+     "divergem": ["Conservadores aceitam que a lei proteja costumes e a moral; libertários querem que o Estado não interfira em escolhas privadas.", "Conservadores valorizam a comunidade e a tradição; libertários, a escolha individual.", "Libertários tendem a apoiar a livre circulação de pessoas; muitos conservadores defendem controle de fronteiras."]},
+    {"a": "anarquismo", "b": "comunismo",
+     "convergem": ["Têm como meta uma sociedade sem classes e sem Estado.", "Rejeitam a propriedade capitalista dos meios de produção.", "Disputaram juntos o movimento operário na Primeira Internacional (1864–1876)."],
+     "divergem": ["Marxistas-leninistas defendem um Estado operário na transição; anarquistas querem abolir o Estado de imediato.", "Comunistas defendem partido centralizado; anarquistas, organização descentralizada e federativa.", "Os dois lados entraram em conflito: Bakunin foi expulso da Internacional em 1872, e os bolcheviques reprimiram anarquistas depois de 1917."]},
+    {"a": "ecologismo", "b": "socialismo",
+     "convergem": ["Criticam o crescimento econômico guiado apenas pelo lucro.", "Defendem planejamento ou regulação pública da economia.", "O ecossocialismo une as duas correntes."],
+     "divergem": ["Parte dos ecologistas questiona o próprio crescimento industrial, que muitos socialistas viam como base do progresso.", "Ecologistas valorizam a descentralização e a escala local; correntes socialistas defenderam planejamento central.", "O ecologismo inclui também correntes pró-mercado e conservadoras."]},
+    {"a": "ecologismo", "b": "desenvolvimentismo",
+     "convergem": ["Defendem papel ativo do Estado no planejamento.", "Aceitam investimento público em infraestrutura, como energia.", "A ideia de 'desenvolvimento sustentável' tenta conciliar as duas preocupações."],
+     "divergem": ["O desenvolvimentismo prioriza o crescimento e a industrialização; o ecologismo, os limites ambientais.", "Grandes obras, como hidrelétricas e estradas, são defendidas por desenvolvimentistas e questionadas por ecologistas.", "Ecologistas valorizam povos tradicionais e modos de vida locais que projetos desenvolvimentistas muitas vezes deslocaram."]},
+    {"a": "populismo", "b": "nacionalismo",
+     "convergem": ["Falam em nome de um 'povo' ou de uma 'nação' contra adversários internos ou externos.", "Muitos movimentos populistas também são nacionalistas."],
+     "divergem": ["O nacionalismo opõe a nação a outras nações; o populismo opõe o povo à elite, que pode ser do próprio país.", "O populismo é um estilo que se combina com quase qualquer ideologia; o nacionalismo tem a soberania nacional como valor central.", "Há populismos de esquerda internacionalistas e nacionalismos que não recorrem ao apelo direto às massas."]},
+    {"a": "trabalhismo", "b": "desenvolvimentismo",
+     "convergem": ["Defendem papel forte do Estado na economia e estatais em setores estratégicos.", "Valorizam a indústria nacional e a autonomia econômica.", "Conviveram nos governos de Vargas e de Goulart."],
+     "divergem": ["O trabalhismo prioriza os direitos e a renda dos trabalhadores; o desenvolvimentismo prioriza o crescimento industrial.", "O desenvolvimentismo foi aplicado também pelo regime militar, que extinguiu o PTB em 1965 e controlou os sindicatos.", "O Programa de Metas de JK atraiu amplamente o capital estrangeiro; trabalhistas como Goulart defenderam limitar a remessa de lucros ao exterior."]},
+    {"a": "socialismo", "b": "social_democracia",
+     "convergem": ["A social-democracia nasceu dentro do movimento socialista.", "Defendem reduzir a desigualdade e ampliar direitos dos trabalhadores.", "Muitos partidos social-democratas ainda usam 'socialista' no nome, como o PSOE espanhol e o PS português."],
+     "divergem": ["O socialismo busca substituir o capitalismo; a social-democracia atual busca regulá-lo.", "Socialistas defendem propriedade social dos meios de produção; social-democratas aceitam a empresa privada.", "Social-democratas aceitam o mercado como mecanismo principal da economia; socialistas tendem a preferir planejamento ou controle coletivo."]}
+  ]
+}

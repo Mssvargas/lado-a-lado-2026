@@ -1,0 +1,3522 @@
+{
+ "metodo": {
+  "resumo": "Cada proposta foi classificada numa categoria do Manifesto Project (MARPOR), o método acadêmico que codifica programas de partidos no mundo todo. As mesmas regras valem para os dois candidatos, e o que conta é o que a frase propõe, não quem propõe. O índice soma as propostas em categorias que o índice RILE (Laver & Budge) chama de direita, subtrai as de esquerda e divide pelo total.",
+  "fonte": "https://manifesto-project.wzb.eu/down/data/2026a/codebooks/codebook_MPDataset_MPDS2026a.pdf",
+  "limites": [
+   "O MARPOR original conta quase-sentenças do programa inteiro; aqui a unidade é a proposta, já selecionada e resumida no comparativo (261 itens). O índice é aproximado e não se compara ao RILE oficial.",
+   "Só a categoria principal entra na contagem; a secundária é informativa.",
+   "Temas com mais propostas pesam mais. A seleção dos itens veio do comparativo, não de uma codificação do documento completo.",
+   "O RILE foi feito com base em democracias ocidentais. Algumas regras soam estranhas no Brasil: democracia e educação contam como esquerda; liberdade, controle da inflação e Forças Armadas, como direita.",
+   "Igualdade (per503), meio ambiente (per501), direitos indígenas (per607), agricultura (per703) e infraestrutura (per411) ficam fora do RILE. Propostas nessas categorias não movem o índice.",
+   "Regras de desempate usadas aqui: (1) se a concessão ou privatização é o núcleo da frase, per401; se o núcleo é a obra e a concessão é só o meio, per411 com per401 secundária; (2) creche conta como educação (per506), como na lei brasileira, embora o codebook liste child care em per504; (3) digitalizar um serviço específico (SUS, INSS) vai para a categoria da política (per504), pois o codebook diz que posição específica prevalece sobre per303; (4) ensino técnico vai para per411, como manda o codebook.",
+   "Codificação feita por um único codificador (IA), sem teste de concordância entre codificadores. Os casos duvidosos estão sinalizados.",
+   "As dimensões (estado_economia, redistribuicao, costumes, autoridade, nacao) e seus sinais são uma convenção deste site, não do Manifesto Project.",
+   "As palavras-chave por categoria servem para sugerir uma classificação de frases livres; elas não substituem a leitura do codebook.",
+   "Na verificação de frases livres, a categoria é escolhida por palavras-chave e, quando a frase fala em acabar, cortar ou proibir, passa para a categoria oposta prevista no próprio método (ex.: expandir ↔ limitar o bem-estar). É uma aproximação: confira o que o plano diz."
+  ]
+ },
+ "categorias": [
+  {
+   "codigo": "per101",
+   "nome_en": "Foreign Special Relationships: Positive",
+   "nome": "Relações especiais com outros países",
+   "descricao": "Defende laços ou cooperação com países específicos com os quais o país tem relação especial.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "relacoes com",
+    "parceria estrategica",
+    "aliado",
+    "estados unidos",
+    "argentina",
+    "israel",
+    "reaproxim",
+    "recompor relac"
+   ]
+  },
+  {
+   "codigo": "per103",
+   "nome_en": "Anti-Imperialism",
+   "nome": "Anti-imperialismo",
+   "descricao": "Critica a influência dominante de uma potência ou de organismos financeiros sobre outros países.",
+   "direcao": "esquerda",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "imperialis",
+    "colonialis",
+    "descoloniz",
+    "hegemonia",
+    "ingerencia estrangeira",
+    "consenso de washington",
+    "subordinacao"
+   ]
+  },
+  {
+   "codigo": "per104",
+   "nome_en": "Military: Positive",
+   "nome": "Defesa e Forças Armadas fortes",
+   "descricao": "Destaca a defesa externa: mais gasto, modernização ou fortalecimento das Forças Armadas.",
+   "direcao": "direita",
+   "dimensao": "nacao",
+   "sinal": 1,
+   "palavras": [
+    "forcas armadas",
+    "defesa nacional",
+    "militar",
+    "exercito",
+    "marinha",
+    "aeronautica",
+    "base industrial de defesa",
+    "defesa cibernet",
+    "orcamento de defesa"
+   ]
+  },
+  {
+   "codigo": "per105",
+   "nome_en": "Military: Negative",
+   "nome": "Contra o militarismo",
+   "descricao": "Critica o uso do poder militar ou defende reduzir gastos militares e desarmamento.",
+   "direcao": "esquerda",
+   "dimensao": "nacao",
+   "sinal": -1,
+   "palavras": [
+    "desarmament",
+    "reduzir gastos militares",
+    "antimilitar",
+    "desmilitariz",
+    "contra a guerra",
+    "fim do servico militar"
+   ]
+  },
+  {
+   "codigo": "per106",
+   "nome_en": "Peace",
+   "nome": "Paz",
+   "descricao": "Defende a paz e meios pacíficos de resolver conflitos, sem referência ao poder militar.",
+   "direcao": "esquerda",
+   "dimensao": "nacao",
+   "sinal": -1,
+   "palavras": [
+    "a paz",
+    "paz mundial",
+    "pacifi",
+    "negociacao de paz",
+    "solucao pacifica",
+    "cessar-fogo",
+    "fim da guerra"
+   ]
+  },
+  {
+   "codigo": "per107",
+   "nome_en": "Internationalism: Positive",
+   "nome": "Cooperação internacional",
+   "descricao": "Defende cooperação internacional, organismos multilaterais e governança global.",
+   "direcao": "esquerda",
+   "dimensao": "nacao",
+   "sinal": -1,
+   "palavras": [
+    "cooperacao internacional",
+    "multilateral",
+    "da onu",
+    "nacoes unidas",
+    "brics",
+    "mercosul",
+    "g20",
+    "sul global",
+    "integracao regional",
+    "governanca global",
+    "universalista"
+   ]
+  },
+  {
+   "codigo": "per109",
+   "nome_en": "Internationalism: Negative",
+   "nome": "Contra a cooperação internacional",
+   "descricao": "Rejeita a cooperação internacional e prefere soberania e ação unilateral na política externa.",
+   "direcao": "fora do RILE",
+   "dimensao": "nacao",
+   "sinal": 1,
+   "palavras": [
+    "unilateral",
+    "contra a onu",
+    "isolacion",
+    "sair do acordo",
+    "independencia nacional",
+    "nao se submeter",
+    "soberania nacional"
+   ]
+  },
+  {
+   "codigo": "per201",
+   "nome_en": "Freedom and Human Rights",
+   "nome": "Liberdade e direitos individuais",
+   "descricao": "Defende liberdades pessoais e civis, como a de expressão, e liberdade diante da coerção do Estado.",
+   "direcao": "direita",
+   "dimensao": "autoridade",
+   "sinal": -1,
+   "palavras": [
+    "liberdade de expressao",
+    "censura",
+    "direitos humanos",
+    "liberdade individual",
+    "liberdade de imprensa",
+    "coercao",
+    "individualis",
+    "ministerio da verdade",
+    "livre manifestacao"
+   ]
+  },
+  {
+   "codigo": "per202",
+   "nome_en": "Democracy",
+   "nome": "Democracia",
+   "descricao": "Apoia a democracia, a participação dos cidadãos nas decisões e partes do regime democrático, como separação de poderes.",
+   "direcao": "esquerda",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "democracia",
+    "democratic",
+    "participacao social",
+    "reforma politica",
+    "reforma eleitoral",
+    "orcamento participativo",
+    "separacao dos poderes",
+    "autonomia dos poderes",
+    "representatividade",
+    "plebiscit",
+    "referendo"
+   ]
+  },
+  {
+   "codigo": "per203",
+   "nome_en": "Constitutionalism: Positive",
+   "nome": "Defesa da Constituição atual",
+   "descricao": "Apoia manter a Constituição como está ou usa a Constituição como argumento para uma política.",
+   "direcao": "direita",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "respeito a constituicao",
+    "ordem constitucional",
+    "clausula petrea",
+    "conforme determina a constituicao",
+    "constitucionalidade",
+    "preservar a constituicao"
+   ]
+  },
+  {
+   "codigo": "per204",
+   "nome_en": "Constitutionalism: Negative",
+   "nome": "Mudança na Constituição",
+   "descricao": "Pede emendas ou mudanças em pontos da Constituição.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "emenda constitucional",
+    "mudar a constituicao",
+    "constituinte",
+    "foro privilegiado",
+    "fim da reeleicao",
+    "decisoes monocraticas",
+    "competencias do stf",
+    "reforma do judiciario"
+   ]
+  },
+  {
+   "codigo": "per301",
+   "nome_en": "Decentralization",
+   "nome": "Descentralização",
+   "descricao": "Apoia federalismo, mais autonomia para estados e municípios ou atenção especial a regiões.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "descentraliz",
+    "federalismo",
+    "pacto federativo",
+    "municipaliz",
+    "autonomia dos estados",
+    "desenvolvimento regional",
+    "menos brasilia",
+    "fundo nacional de desenvolvimento regional"
+   ]
+  },
+  {
+   "codigo": "per302",
+   "nome_en": "Centralisation",
+   "nome": "Centralização",
+   "descricao": "Apoia concentrar decisões e administração no governo central.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "centraliz",
+    "comando nacional",
+    "coordenacao nacional",
+    "unificar o comando",
+    "governo central",
+    "padronizacao nacional"
+   ]
+  },
+  {
+   "codigo": "per303",
+   "nome_en": "Governmental and Administrative Efficiency",
+   "nome": "Eficiência do governo",
+   "descricao": "Defende um governo mais eficiente e barato: reestruturar e digitalizar a administração, cortar estrutura.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "eficiencia",
+    "reforma administrativa",
+    "desburocratiz",
+    "digitaliz",
+    "gov.br",
+    "cortar ministerios",
+    "cargos comissionados",
+    "gestao publica",
+    "moderniz",
+    "enxug",
+    "servicos digitais"
+   ]
+  },
+  {
+   "codigo": "per304",
+   "nome_en": "Political Corruption",
+   "nome": "Combate à corrupção",
+   "descricao": "Defende eliminar a corrupção política, o abuso de poder e práticas clientelistas.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "corrupcao",
+    "corrupto",
+    "integridade",
+    "nepotismo",
+    "clientelis",
+    "rastreabilidade das emendas",
+    "supersalario",
+    "penduricalho",
+    "parentes",
+    "lavagem de dinheiro"
+   ]
+  },
+  {
+   "codigo": "per305",
+   "nome_en": "Political Authority",
+   "nome": "Autoridade e governo forte",
+   "descricao": "Destaca a competência do partido para governar ou a desejabilidade de um governo forte e estável.",
+   "direcao": "direita",
+   "dimensao": "autoridade",
+   "sinal": 1,
+   "palavras": [
+    "governo forte",
+    "estabilidade politica",
+    "competencia para governar",
+    "autoridade",
+    "pulso firme",
+    "governabilidade",
+    "incompetencia do governo"
+   ]
+  },
+  {
+   "codigo": "per401",
+   "nome_en": "Free Market Economy",
+   "nome": "Livre mercado",
+   "descricao": "Favorável ao livre mercado: privatização, desregulação, iniciativa privada e direito de propriedade.",
+   "direcao": "direita",
+   "dimensao": "estado_economia",
+   "sinal": 1,
+   "palavras": [
+    "privatiz",
+    "desestatiz",
+    "concess",
+    "livre mercado",
+    "desregul",
+    "liberdade economica",
+    "revogaco",
+    "direito de propriedade",
+    "livre iniciativa",
+    "negociado sobre o legislado",
+    "parceria publico-privada",
+    "ppp",
+    "seguranca juridica",
+    "vender estatais",
+    "vender a"
+   ]
+  },
+  {
+   "codigo": "per402",
+   "nome_en": "Incentives: Positive",
+   "nome": "Incentivos às empresas",
+   "descricao": "Políticas pelo lado da oferta: cortes de impostos, subsídios e crédito para estimular empresas e empreender.",
+   "direcao": "direita",
+   "dimensao": "estado_economia",
+   "sinal": 1,
+   "palavras": [
+    "reduzir impost",
+    "desoner",
+    "incentivo fiscal",
+    "isencao",
+    "credito para",
+    "empreendedor",
+    "custo do trabalho",
+    "ambiente de negocios",
+    "beneficio fiscal",
+    "startup",
+    "menor custo na folha",
+    "reducao de tributos"
+   ]
+  },
+  {
+   "codigo": "per403",
+   "nome_en": "Market Regulation",
+   "nome": "Regulação do mercado",
+   "descricao": "Apoia regras para um mercado justo: proteção do consumidor, combate a monopólios e regulação de setores.",
+   "direcao": "esquerda",
+   "dimensao": "estado_economia",
+   "sinal": -1,
+   "palavras": [
+    "regulac",
+    "regulament",
+    "defesa do consumidor",
+    "protecao do consumidor",
+    "concorrencia",
+    "monopolio",
+    "antitruste",
+    "transparencia algoritmica",
+    "plataformas digitais",
+    "apostas",
+    "salvaguarda",
+    "regular a",
+    "regular o",
+    "regular as",
+    "regular os",
+    "redes sociais",
+    "big techs"
+   ]
+  },
+  {
+   "codigo": "per404",
+   "nome_en": "Economic Planning",
+   "nome": "Planejamento econômico pelo Estado",
+   "descricao": "Favorável ao planejamento econômico de longo prazo conduzido pelo governo.",
+   "direcao": "esquerda",
+   "dimensao": "estado_economia",
+   "sinal": -1,
+   "palavras": [
+    "planejamento",
+    "politica industrial",
+    "neoindustrializ",
+    "nova industria brasil",
+    "estrategia nacional de desenvolvimento",
+    "financiamento direcionado",
+    "novo pac",
+    "plano nacional de"
+   ]
+  },
+  {
+   "codigo": "per405",
+   "nome_en": "Corporatism/Mixed Economy",
+   "nome": "Pacto entre governo, empresas e sindicatos",
+   "descricao": "Favorável à cooperação simultânea entre governo, empregadores e sindicatos no planejamento econômico.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "pacto social",
+    "tripartite",
+    "dialogo social",
+    "concertacao",
+    "empresarios e trabalhadores",
+    "conselho de desenvolvimento economico"
+   ]
+  },
+  {
+   "codigo": "per406",
+   "nome_en": "Protectionism: Positive",
+   "nome": "Protecionismo",
+   "descricao": "Defende proteger o mercado interno: tarifas, cotas, conteúdo local ou subsídios à exportação.",
+   "direcao": "esquerda",
+   "dimensao": "estado_economia",
+   "sinal": -1,
+   "palavras": [
+    "conteudo local",
+    "protecao da industria nacional",
+    "tarifa de importacao",
+    "barreira comercial",
+    "cota de importacao",
+    "subsidio a exportacao",
+    "defesa comercial",
+    "compre nacional"
+   ]
+  },
+  {
+   "codigo": "per407",
+   "nome_en": "Protectionism: Negative",
+   "nome": "Livre comércio",
+   "descricao": "Apoia o livre comércio, mercados abertos e acordos comerciais.",
+   "direcao": "direita",
+   "dimensao": "estado_economia",
+   "sinal": 1,
+   "palavras": [
+    "abertura comercial",
+    "livre comercio",
+    "acordo comercial",
+    "reduzir tarifa",
+    "cadeias globais",
+    "ocde",
+    "importad",
+    "capital estrangeiro",
+    "abertura da economia"
+   ]
+  },
+  {
+   "codigo": "per408",
+   "nome_en": "Economic Goals",
+   "nome": "Metas econômicas gerais",
+   "descricao": "Objetivos econômicos amplos que não indicam uma política específica.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "desenvolvimento economico",
+    "economia forte",
+    "prosperidade",
+    "geracao de renda",
+    "baratear",
+    "custo de vida",
+    "debate sobre"
+   ]
+  },
+  {
+   "codigo": "per409",
+   "nome_en": "Keynesian Demand Management",
+   "nome": "Estímulo à demanda",
+   "descricao": "Políticas pelo lado da demanda: ajudar consumidores e aumentar gasto público para aquecer a economia.",
+   "direcao": "fora do RILE",
+   "dimensao": "estado_economia",
+   "sinal": -1,
+   "palavras": [
+    "estimular o consumo",
+    "demanda",
+    "poder de compra",
+    "anticiclic",
+    "estimulo economico",
+    "aquecer a economia"
+   ]
+  },
+  {
+   "codigo": "per410",
+   "nome_en": "Economic Growth: Positive",
+   "nome": "Crescimento econômico",
+   "descricao": "Defende estimular a produção e o crescimento, inclusive pelo turismo.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "crescimento economico",
+    "crescimento",
+    "produtividade",
+    "turismo",
+    "turistic",
+    "atrair investimento",
+    "competitividade",
+    "polo de atracao"
+   ]
+  },
+  {
+   "codigo": "per411",
+   "nome_en": "Technology and Infrastructure: Positive",
+   "nome": "Tecnologia e infraestrutura",
+   "descricao": "Modernização: obras de infraestrutura, transporte, internet, ciência e tecnologia na indústria e ensino técnico.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "infraestrutura",
+    "rodovi",
+    "ferrovi",
+    "aeroporto",
+    "hidrovi",
+    "internet",
+    "fibra optica",
+    "5g",
+    "inovacao",
+    "tecnologi",
+    "saneamento",
+    "obras",
+    "ensino tecnico",
+    "data center"
+   ]
+  },
+  {
+   "codigo": "per412",
+   "nome_en": "Controlled Economy",
+   "nome": "Controle direto da economia",
+   "descricao": "Apoia o controle direto do governo sobre a economia, como controle de preços ou salário mínimo.",
+   "direcao": "esquerda",
+   "dimensao": "estado_economia",
+   "sinal": -1,
+   "palavras": [
+    "controle de preco",
+    "salario minimo",
+    "tabelamento",
+    "congelamento",
+    "preco administrado",
+    "volatilidade dos precos",
+    "intervencao nos precos",
+    "controle estatal"
+   ]
+  },
+  {
+   "codigo": "per413",
+   "nome_en": "Nationalisation",
+   "nome": "Estatização",
+   "descricao": "Favorável à propriedade estatal de empresas ou terras, mantendo-as estatais ou estatizando.",
+   "direcao": "esquerda",
+   "dimensao": "estado_economia",
+   "sinal": -1,
+   "palavras": [
+    "estatiz",
+    "reestatiz",
+    "nacionaliz",
+    "empresa estatal",
+    "empresas estatais",
+    "propriedade estatal",
+    "retomar o controle",
+    "estatal",
+    "reestatizar"
+   ]
+  },
+  {
+   "codigo": "per414",
+   "nome_en": "Economic Orthodoxy",
+   "nome": "Ortodoxia econômica",
+   "descricao": "Defende contas públicas saudáveis: reduzir déficits e dívida, controlar inflação, moeda forte.",
+   "direcao": "direita",
+   "dimensao": "estado_economia",
+   "sinal": 1,
+   "palavras": [
+    "arcabouco fiscal",
+    "responsabilidade fiscal",
+    "superavit",
+    "deficit",
+    "divida publica",
+    "divida/pib",
+    "teto de gastos",
+    "equilibrio fiscal",
+    "inflacao",
+    "regra fiscal",
+    "controle de gastos",
+    "juros"
+   ]
+  },
+  {
+   "codigo": "per416",
+   "nome_en": "Anti-Growth Economy: Positive",
+   "nome": "Crescimento sustentável",
+   "descricao": "Rejeita o crescimento a qualquer custo e pede desenvolvimento sustentável.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "decrescimento",
+    "desenvolvimento sustentavel",
+    "economia verde",
+    "transicao verde",
+    "baixo carbono",
+    "crescimento sustentavel"
+   ]
+  },
+  {
+   "codigo": "per501",
+   "nome_en": "Environmental Protection",
+   "nome": "Proteção ambiental",
+   "descricao": "Políticas de proteção do meio ambiente, de combate à mudança do clima e de defesa dos animais.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "desmatamento",
+    "meio ambiente",
+    "ambiental",
+    "climatic",
+    "carbono",
+    "renovav",
+    "biodiversidade",
+    "floresta",
+    "emissoes",
+    "biocombust",
+    "lixao",
+    "maus-tratos",
+    "queimada"
+   ]
+  },
+  {
+   "codigo": "per502",
+   "nome_en": "Culture: Positive",
+   "nome": "Cultura e esporte",
+   "descricao": "Defende financiamento público de cultura, lazer, artes e esporte.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "cultura",
+    "lei rouanet",
+    "aldir blanc",
+    "esporte",
+    "patrimonio historico",
+    "museu",
+    "biblioteca",
+    "artista",
+    "bolsa atleta",
+    "artes"
+   ]
+  },
+  {
+   "codigo": "per503",
+   "nome_en": "Equality: Positive",
+   "nome": "Igualdade e justiça social",
+   "descricao": "Justiça social e tratamento justo: proteção a grupos desfavorecidos, fim de discriminação, distribuição justa.",
+   "direcao": "fora do RILE",
+   "dimensao": "redistribuicao",
+   "sinal": -1,
+   "palavras": [
+    "igualdade",
+    "desigualdade",
+    "justica social",
+    "justica tributaria",
+    "discriminac",
+    "racismo",
+    "equidade",
+    "inclusao",
+    "reforma agraria",
+    "disparidade",
+    "pessoas com deficiencia",
+    "violencia contra a mulher",
+    "ricos",
+    "grandes fortunas",
+    "taxar",
+    "taxacao",
+    "imposto progressivo",
+    "progressividade",
+    "super-ricos"
+   ]
+  },
+  {
+   "codigo": "per504",
+   "nome_en": "Welfare State Expansion",
+   "nome": "Expansão do Estado de bem-estar",
+   "descricao": "Criar, manter ou ampliar serviços públicos sociais: saúde, cuidado, previdência, moradia social.",
+   "direcao": "esquerda",
+   "dimensao": "redistribuicao",
+   "sinal": -1,
+   "palavras": [
+    "do sus",
+    "saude",
+    "programa social",
+    "programas sociais",
+    "bolsa familia",
+    "previdencia",
+    "aposentad",
+    "assistencia social",
+    "minha casa minha vida",
+    "farmacia popular",
+    "cuidado",
+    "beneficio social",
+    "protecao social",
+    "auxilio",
+    "renda basica",
+    "beneficio",
+    " sus "
+   ]
+  },
+  {
+   "codigo": "per505",
+   "nome_en": "Welfare State Limitation",
+   "nome": "Limitação do Estado de bem-estar",
+   "descricao": "Limitar gastos com serviços sociais ou preferir cuidado privado antes do estatal.",
+   "direcao": "direita",
+   "dimensao": "redistribuicao",
+   "sinal": 1,
+   "palavras": [
+    "cortar beneficio",
+    "reduzir gastos sociais",
+    "focaliz",
+    "porta de saida",
+    "pente-fino",
+    "capitalizacao",
+    "limitar beneficio",
+    "privatizar a previdencia"
+   ]
+  },
+  {
+   "codigo": "per506",
+   "nome_en": "Education Expansion",
+   "nome": "Expansão da educação",
+   "descricao": "Ampliar ou melhorar a oferta de educação em todos os níveis (exceto ensino técnico).",
+   "direcao": "esquerda",
+   "dimensao": "redistribuicao",
+   "sinal": -1,
+   "palavras": [
+    "educacao",
+    "escola",
+    "alfabetiz",
+    "universidade",
+    "professor",
+    "tempo integral",
+    "matricula",
+    "pe-de-meia",
+    "magisterio",
+    "creche",
+    "ensino"
+   ]
+  },
+  {
+   "codigo": "per507",
+   "nome_en": "Education Limitation",
+   "nome": "Limitação da educação pública",
+   "descricao": "Limitar gasto público com educação, cobrar mensalidades ou aumentar escolas privadas.",
+   "direcao": "fora do RILE",
+   "dimensao": "redistribuicao",
+   "sinal": 1,
+   "palavras": [
+    "mensalidade",
+    "cobranca nas universidades",
+    "escola privada",
+    "rede privada",
+    "voucher",
+    "ensino domiciliar",
+    "homeschooling"
+   ]
+  },
+  {
+   "codigo": "per601",
+   "nome_en": "National Way of Life: Positive",
+   "nome": "Patriotismo e identidade nacional",
+   "descricao": "Apelo à nação, à história, ao patriotismo e ao orgulho nacional.",
+   "direcao": "direita",
+   "dimensao": "nacao",
+   "sinal": 1,
+   "palavras": [
+    "patria",
+    "patriot",
+    "nacionalis",
+    "orgulho nacional",
+    "bandeira",
+    "soberania",
+    "identidade nacional",
+    "brasilidade",
+    "quem somos",
+    "valores nacionais"
+   ]
+  },
+  {
+   "codigo": "per602",
+   "nome_en": "National Way of Life: Negative",
+   "nome": "Crítica ao nacionalismo",
+   "descricao": "Crítica ao patriotismo e ao nacionalismo, ou apoio à entrada de novos imigrantes.",
+   "direcao": "fora do RILE",
+   "dimensao": "nacao",
+   "sinal": -1,
+   "palavras": [
+    "antinacionalis",
+    "contra o patriotismo",
+    "imigrantes",
+    "acolhimento de refugiados",
+    "fronteiras abertas",
+    "cidadania global"
+   ]
+  },
+  {
+   "codigo": "per603",
+   "nome_en": "Traditional Morality: Positive",
+   "nome": "Moral tradicional",
+   "descricao": "Defende valores morais tradicionais ou religiosos, a família tradicional e o papel da religião.",
+   "direcao": "direita",
+   "dimensao": "costumes",
+   "sinal": 1,
+   "palavras": [
+    "familia tradicional",
+    "valores cristaos",
+    "fe crista",
+    "religi",
+    "contra o aborto",
+    "defesa da vida",
+    "ideologia de genero",
+    "doutrinacao",
+    "bons costumes",
+    "civico-militar",
+    "sexo feminino",
+    "sexo biologico",
+    "contra a legalizacao",
+    "escola sem partido",
+    "valores da familia"
+   ]
+  },
+  {
+   "codigo": "per604",
+   "nome_en": "Traditional Morality: Negative",
+   "nome": "Contra a moral tradicional",
+   "descricao": "Oposição a valores morais tradicionais: apoio a divórcio, aborto, novas famílias, Estado laico.",
+   "direcao": "fora do RILE",
+   "dimensao": "costumes",
+   "sinal": -1,
+   "palavras": [
+    "aborto legal",
+    "descriminaliz",
+    "estado laico",
+    "casamento igualitario",
+    "diversidade sexual",
+    "lgbt",
+    "novos arranjos familiares",
+    "direitos reprodutivos",
+    "aborto",
+    "casamento homoafetivo",
+    "uniao homoafetiva",
+    "maconha",
+    "drogas para uso"
+   ]
+  },
+  {
+   "codigo": "per605",
+   "nome_en": "Law and Order: Positive",
+   "nome": "Lei e ordem",
+   "descricao": "Aplicação rigorosa da lei e ação mais dura contra o crime: polícia, penas, prisões, segurança interna.",
+   "direcao": "direita",
+   "dimensao": "autoridade",
+   "sinal": 1,
+   "palavras": [
+    "seguranca publica",
+    "crime",
+    "criminos",
+    "policia",
+    "presidio",
+    "prisional",
+    "pena de",
+    "penas",
+    "maioridade penal",
+    "faccao",
+    "faccoes",
+    "narcoterror",
+    "trafico",
+    "agressor",
+    "armas",
+    "porte de arma",
+    "posse de arma",
+    "bandido",
+    "pena de morte",
+    "prisao perpetua"
+   ]
+  },
+  {
+   "codigo": "per606",
+   "nome_en": "Civic Mindedness: Positive",
+   "nome": "Espírito cívico",
+   "descricao": "Apelo à solidariedade nacional, à sociedade civil e ao interesse público.",
+   "direcao": "direita",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "solidariedade",
+    "sociedade civil",
+    "voluntari",
+    "uniao nacional",
+    "bem comum",
+    "espirito publico",
+    "interesse publico"
+   ]
+  },
+  {
+   "codigo": "per607",
+   "nome_en": "Multiculturalism: Positive",
+   "nome": "Diversidade cultural e direitos indígenas",
+   "descricao": "Favorável à diversidade cultural e à proteção de povos indígenas e comunidades tradicionais e suas terras.",
+   "direcao": "fora do RILE",
+   "dimensao": "costumes",
+   "sinal": -1,
+   "palavras": [
+    "indigena",
+    "quilombola",
+    "demarcacao",
+    "desintrusao",
+    "diversidade cultural",
+    "povos tradicionais",
+    "multicultural",
+    "territorios tradicionais"
+   ]
+  },
+  {
+   "codigo": "per608",
+   "nome_en": "Multiculturalism: Negative",
+   "nome": "Integração cultural",
+   "descricao": "Defende integração e homogeneidade cultural, ou rejeita proteção especial a povos indígenas.",
+   "direcao": "fora do RILE",
+   "dimensao": "costumes",
+   "sinal": 1,
+   "palavras": [
+    "assimilac",
+    "integracao cultural",
+    "homogeneidade",
+    "marco temporal",
+    "contra a demarcacao",
+    "fim das reservas"
+   ]
+  },
+  {
+   "codigo": "per701",
+   "nome_en": "Labour Groups: Positive",
+   "nome": "Trabalhadores e sindicatos",
+   "descricao": "Favorável aos trabalhadores e sindicatos: mais empregos, boas condições, salários justos.",
+   "direcao": "esquerda",
+   "dimensao": "redistribuicao",
+   "sinal": -1,
+   "palavras": [
+    "trabalhador",
+    "sindic",
+    "negociacao coletiva",
+    "jornada",
+    "6x1",
+    "direitos trabalhistas",
+    "emprego",
+    "vagas",
+    "pejotiz",
+    "precariz",
+    "intermediacao de mao de obra"
+   ]
+  },
+  {
+   "codigo": "per702",
+   "nome_en": "Labour Groups: Negative",
+   "nome": "Crítica aos sindicatos",
+   "descricao": "Referências negativas a sindicatos ou ao abuso de poder sindical.",
+   "direcao": "fora do RILE",
+   "dimensao": "redistribuicao",
+   "sinal": 1,
+   "palavras": [
+    "dirigentes sindicais",
+    "imposto sindical",
+    "privilegio sindical",
+    "abuso sindical",
+    "greve abusiva",
+    "sindicalismo"
+   ]
+  },
+  {
+   "codigo": "per703",
+   "nome_en": "Agriculture and Farmers: Positive",
+   "nome": "Agricultura e produtores rurais",
+   "descricao": "Políticas específicas a favor da agricultura e dos produtores rurais.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "agro",
+    "agricult",
+    "plano safra",
+    "produtor rural",
+    "safra",
+    "pecuar",
+    "seguro rural",
+    "irrigac",
+    "fertilizant",
+    "rural"
+   ]
+  },
+  {
+   "codigo": "per704",
+   "nome_en": "Middle Class and Professional Groups",
+   "nome": "Classe média e profissionais",
+   "descricao": "Referências favoráveis à classe média e a grupos profissionais.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "classe media",
+    "profissionais liberais",
+    "profissional liberal",
+    "servidores",
+    "medicos",
+    "advogados"
+   ]
+  },
+  {
+   "codigo": "per705",
+   "nome_en": "Underprivileged Minority Groups",
+   "nome": "Minorias desfavorecidas",
+   "descricao": "Referências gerais favoráveis a minorias não definidas por renda ou idade, quando não cabem em outra categoria.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "minorias",
+    "autismo",
+    "doencas raras",
+    "pessoas com deficiencia",
+    "imigrante",
+    "neurodivergen"
+   ]
+  },
+  {
+   "codigo": "per706",
+   "nome_en": "Non-economic Demographic Groups",
+   "nome": "Grupos demográficos",
+   "descricao": "Referências favoráveis a grupos como mulheres, jovens, idosos e estudantes, quando não cabem em outra categoria.",
+   "direcao": "fora do RILE",
+   "dimensao": null,
+   "sinal": 0,
+   "palavras": [
+    "mulheres",
+    "jovens",
+    "idosos",
+    "estudantes",
+    "juventude",
+    "criancas",
+    "adolescentes",
+    "terceira idade"
+   ]
+  }
+ ],
+ "partidos": {
+  "PT": {
+   "autodeclaracao": "“O Partido dos Trabalhadores é uma associação voluntária de cidadãs e cidadãos que se propõe a lutar por democracia, pluralidade, solidariedade, transformações políticas, sociais, institucionais, econômicas, jurídicas e culturais, destinadas a eliminar a exploração, a dominação, a opressão, a desigualdade, a injustiça e a miséria, com o objetivo de construir o socialismo democrático” (Estatuto do PT, art. 1º).",
+   "fonte_autodeclaracao": "https://pt.org.br/estrutura-partidaria/",
+   "escalas": [
+    {
+     "fonte": "Bolognesi, Ribeiro & Codato (2023), “A New Ideological Classification of Brazilian Political Parties”, Dados 66(2) — survey com cientistas políticos",
+     "valor": 2.97,
+     "escala": "0 (esquerda) a 10 (direita); média dos especialistas (DP 1,34; N 504)",
+     "ano": 2018,
+     "url": "https://www.scielo.br/j/dados/a/zzyM3gzHD4P45WWdytXjZWg/?lang=en"
+    },
+    {
+     "fonte": "Bolognesi, Ribeiro, Codato & Silva (2025), “O desaparecimento do centro ideológico no sistema partidário brasileiro”, Opinião Pública 31 — 2ª onda do survey",
+     "valor": 2.68,
+     "escala": "0 (extrema esquerda) a 10 (extrema direita); média dos especialistas; categoria “esquerda”",
+     "ano": 2022,
+     "url": "https://periodicos.sbu.unicamp.br/ojs/index.php/op/article/view/8682072"
+    },
+    {
+     "fonte": "V-Dem, V-Party Dataset v2 (Lindberg et al. 2022), variável v2pariglef_osp (escala esquerda-direita econômica)",
+     "valor": 1.388,
+     "escala": "0 (extrema esquerda) a 6 (extrema direita); só economia; eleição de 2018",
+     "ano": 2018,
+     "url": "https://v-dem.net/data/v-party-dataset/"
+    },
+    {
+     "fonte": "Global Party Survey (Norris 2020), via V-Party, variável ep_v6_lib_cons (valores sociais)",
+     "valor": 1.487,
+     "escala": "0 (muito liberal) a 10 (muito conservador); só costumes",
+     "ano": 2019,
+     "url": "https://v-dem.net/data/v-party-dataset/"
+    }
+   ],
+   "lado": "esquerda",
+   "lado_fonte": "Bolognesi, Ribeiro, Codato & Silva (2025), escala de especialistas de 0 (esquerda) a 10 (direita)"
+  },
+  "PL": {
+   "autodeclaracao": "“Resguardamos e defendemos os valores conservadores da sociedade brasileira.” O mesmo programa diz que o partido “tem o liberalismo social como instrumento permanente de luta pelo bem comum” (Programa do PL, Convenção Nacional de 19/12/2022).",
+   "fonte_autodeclaracao": "https://partidoliberal.org.br/wp-content/uploads/2023/02/programa_do_pl.pdf",
+   "escalas": [
+    {
+     "fonte": "Bolognesi, Ribeiro & Codato (2023), Dados 66(2) — o partido aparece como PR (Partido da República), nome do PL até 2019",
+     "valor": 7.78,
+     "escala": "0 (esquerda) a 10 (direita); média dos especialistas (DP 1,53; N 488)",
+     "ano": 2018,
+     "url": "https://www.scielo.br/j/dados/a/zzyM3gzHD4P45WWdytXjZWg/?lang=en"
+    },
+    {
+     "fonte": "Bolognesi, Ribeiro, Codato & Silva (2025), Opinião Pública 31 — 2ª onda do survey",
+     "valor": 8.8,
+     "escala": "0 (extrema esquerda) a 10 (extrema direita); média dos especialistas; categoria “extrema direita”",
+     "ano": 2022,
+     "url": "https://periodicos.sbu.unicamp.br/ojs/index.php/op/article/view/8682072"
+    },
+    {
+     "fonte": "V-Dem, V-Party Dataset v2 (Lindberg et al. 2022), variável v2pariglef_osp — registro “PR / PL”",
+     "valor": 4.436,
+     "escala": "0 (extrema esquerda) a 6 (extrema direita); só economia; eleição de 2018",
+     "ano": 2018,
+     "url": "https://v-dem.net/data/v-party-dataset/"
+    }
+   ],
+   "nota": "O Global Party Survey (via V-Party) não traz valor de costumes para PR/PL em 2019.",
+   "lado": "direita",
+   "lado_fonte": "Bolognesi, Ribeiro, Codato & Silva (2025), escala de especialistas de 0 (esquerda) a 10 (direita)"
+  }
+ },
+ "itens": [
+  {
+   "tema": "impostos",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per410",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Propõe sustentar o crescimento e manter a reforma tributária já aprovada, sem medida fiscal nova; o foco é a meta geral de crescer e produzir mais."
+  },
+  {
+   "tema": "impostos",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per503",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Pede “justiça tributária” e combate a privilégios, isto é, distribuição mais justa da carga de impostos."
+  },
+  {
+   "tema": "impostos",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per403",
+   "secundaria": "per504",
+   "direcao": "esquerda",
+   "justificativa": "Usa um imposto para desestimular o consumo de produtos nocivos à saúde: intervenção no mercado para proteger o consumidor."
+  },
+  {
+   "tema": "impostos",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per414",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Compromisso de manter a inflação sob controle de forma duradoura, item típico de ortodoxia econômica."
+  },
+  {
+   "tema": "impostos",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per403",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Monitorar endividamento, controlar gastos em apostas e aprimorar regras de crédito são medidas de proteção ao consumidor e regulação do mercado."
+  },
+  {
+   "tema": "impostos",
+   "indice": 5,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Rever a reforma e os aumentos de impostos para reduzir a carga sobre produção e consumo é corte de tributos para estimular a atividade."
+  },
+  {
+   "tema": "impostos",
+   "indice": 6,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Reduzir o IVA e evitar imposto sobre imposto é política de redução de tributos."
+  },
+  {
+   "tema": "impostos",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": "per303",
+   "direcao": "direita",
+   "justificativa": "Menos impostos e desoneração de exportações e investimentos são incentivos tributários à atividade produtiva."
+  },
+  {
+   "tema": "impostos",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Reduzir impostos sobre energia e combustíveis é corte de tributos (o texto cita o preço ao consumidor, o que também lembraria per409)."
+  },
+  {
+   "tema": "impostos",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per703",
+   "direcao": "fora do RILE",
+   "justificativa": "Ampliar a capacidade de armazenar safras é investimento em infraestrutura ligada à agricultura."
+  },
+  {
+   "tema": "impostos",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per403",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Proibir o uso de dinheiro de programas sociais em apostas e alertar sobre endividamento são medidas de proteção ao consumidor."
+  },
+  {
+   "tema": "impostos",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per403",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Orientação financeira para sair das dívidas é proteção ao consumidor; não há ampliação de benefício nem corte de imposto."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per414",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Manter uma regra que limita o crescimento da despesa é ortodoxia fiscal."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per414",
+   "secundaria": "per303",
+   "direcao": "direita",
+   "justificativa": "Equilibrar as contas com controle do gasto e eficiência é ortodoxia fiscal."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per414",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Queda de juros com inflação controlada e política fiscal responsável é ortodoxia econômica."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per303",
+   "secundaria": "per304",
+   "direcao": "fora do RILE",
+   "justificativa": "Enfrentar distorções no sistema de emendas parlamentares trata da gestão do orçamento e de práticas clientelistas."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per303",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Compartilhar serviços administrativos entre ministérios é eficiência administrativa."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per304",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Aprofundar um plano de integridade e combate à corrupção."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per701",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Valorizar servidores e negociar com eles numa mesa permanente é apoio a trabalhadores e à negociação coletiva."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per414",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Reformular regras fiscais para estabilizar e reduzir a dívida é ortodoxia fiscal."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per414",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Gerar superávits e limitar crédito subsidiado pelo Tesouro é ortodoxia fiscal."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per414",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Regra de controle dos gastos discricionários dos três Poderes é ortodoxia fiscal."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per414",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Reduzir a relação dívida/PIB para baixar juros e inflação é ortodoxia econômica."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": "per304",
+   "direcao": "fora do RILE",
+   "justificativa": "Cortar ministérios, cargos comissionados e supersalários é enxugamento da administração."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Continuar a reforma administrativa para modernizar o Estado é eficiência administrativa."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": "per304",
+   "direcao": "fora do RILE",
+   "justificativa": "Dar transparência e rastreabilidade às emendas e ligá-las ao PPA trata da gestão do orçamento e do controle de clientelismo."
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Retomar o Programa Nacional de Desestatização é apoio à privatização."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per701",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Fim da escala 6x1 e jornada de 40 horas sem corte salarial são melhores condições de trabalho."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per412",
+   "secundaria": "per503",
+   "direcao": "esquerda",
+   "justificativa": "O codebook classifica salário mínimo em economia controlada (per412); o texto também o trata como meio de distribuir renda."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per701",
+   "secundaria": "per403",
+   "direcao": "esquerda",
+   "justificativa": "Criar direitos, remuneração e Previdência para quem trabalha por aplicativos é proteção ao trabalhador."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per701",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Combater a pejotização com fiscalização é defesa de direitos trabalhistas."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per701",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Alterar regras que o plano chama de precarizantes e retomar assistência sindical é apoio a trabalhadores e sindicatos."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per701",
+   "secundaria": "per411",
+   "direcao": "esquerda",
+   "justificativa": "Plataforma pública de emprego para ligar pessoas a vagas é política de mais empregos."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per701",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Fortalecer a negociação coletiva e o sistema sindical é apoio aos sindicatos."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Reduzir o custo de contratar para estimular empresas a contratar é incentivo pelo lado da oferta."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": "per706",
+   "direcao": "direita",
+   "justificativa": "Contrato com menor custo na folha para jovens é incentivo à empresa para contratar."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": "per706",
+   "direcao": "direita",
+   "justificativa": "Contrato mais atrativo para contratar pessoas com 50 anos ou mais é incentivo à empresa para contratar."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Negociado sobre o legislado e jornada flexível reduzem a regulação estatal do contrato de trabalho."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per701",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Banco nacional de vagas é política de intermediação para gerar mais empregos."
+  },
+  {
+   "tema": "trabalho",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per702",
+   "direcao": "direita",
+   "justificativa": "Manter a flexibilidade do trabalho por aplicativos e excluir dirigentes sindicais da regulação; o texto também cita proteção previdenciária."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per402",
+   "secundaria": "per403",
+   "direcao": "direita",
+   "justificativa": "Simplificar o ambiente de negócios e ampliar compras públicas de pequenas empresas melhora as condições para empreender."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per402",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Crédito para micro, pequenas e médias empresas é apoio às empresas."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per402",
+   "secundaria": "per411",
+   "direcao": "direita",
+   "justificativa": "Crédito para digitalização e produtividade de pequenas empresas é incentivo às empresas."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per402",
+   "secundaria": "per504",
+   "direcao": "direita",
+   "justificativa": "Crédito e qualificação para autônomos e pequenos empreendedores é apoio a quem empreende; inclui proteção previdenciária."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per402",
+   "secundaria": "per503",
+   "direcao": "direita",
+   "justificativa": "Apoio a cooperativas com crédito e compras públicas é incentivo a empreendimentos, com foco em inclusão produtiva."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per402",
+   "secundaria": "per411",
+   "direcao": "direita",
+   "justificativa": "Pôr micro e pequenas empresas na frente de inovação e exportação é incentivo empresarial."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 6,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Estender a Lei de Liberdade Econômica a estados e municípios é desregulação a favor da livre iniciativa."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Um “revogaço” de normas é desregulação."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Menos burocracia, capacitação e crédito para abrir empresa melhoram as condições para empreender."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": "per407",
+   "direcao": "direita",
+   "justificativa": "Apoio de BNDES e Apex para pequenas e médias empresas exportarem é assistência a empresas."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": "per504",
+   "direcao": "direita",
+   "justificativa": "Reorientar a CAIXA para crédito, orientação e apoio a empreender é assistência ao empreendedor por um banco público."
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per402",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Crédito mais fácil, juros menores e cashback para quem se qualifica ou formaliza é um sistema de incentivos."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": "per302",
+   "direcao": "direita",
+   "justificativa": "Criar um ministério para coordenar a segurança pública é reforço da aplicação da lei."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Dinheiro e equipamentos contra o crime organizado e o tráfico de armas é reforço da segurança pública."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": "per304",
+   "direcao": "direita",
+   "justificativa": "Asfixia financeira do crime organizado e barreira a candidatos ligados ao crime é combate ao crime."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Mais rastreamento de armas e mais fiscalização sobre CACs e segurança privada é aplicação mais rígida da lei."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Ampliar presídios federais para isolar líderes de facção é endurecimento contra o crime."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": "per201",
+   "direcao": "direita",
+   "justificativa": "Câmeras corporais e policiamento de proximidade mudam a atuação policial; a categoria mais próxima é segurança pública, com elemento de controle da polícia."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per503",
+   "secundaria": "per605",
+   "direcao": "fora do RILE",
+   "justificativa": "Prevenção da violência com foco na juventude negra, mediação e justiça restaurativa protege um grupo desfavorecido, sem endurecer penas."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 7,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Celular Seguro e combate à receptação de aparelhos roubados é combate ao crime."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Declarar facções organizações narcoterroristas e bloquear seus bens é endurecimento contra o crime."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Reduzir a maioridade penal e punir maiores de 14 anos é endurecimento penal."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": "per104",
+   "direcao": "direita",
+   "justificativa": "Tropa de elite das Forças Armadas na fronteira e em portos e aeroportos é reforço da segurança interna."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Novos presídios de segurança máxima e meio milhão de vagas é endurecimento penal."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Acabar com a progressão de regime para crimes hediondos é endurecimento penal."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Dobrar o investimento federal em segurança é mais recurso para segurança pública."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Reconhecimento facial ligado a bancos criminais é reforço da segurança pública."
+  },
+  {
+   "tema": "seguranca",
+   "indice": 15,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Prisão para roubo de celular e pena quatro vezes maior é endurecimento penal."
+  },
+  {
+   "tema": "educacao",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per506",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Meta de alfabetização na idade certa é melhoria da educação."
+  },
+  {
+   "tema": "educacao",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per506",
+   "secundaria": "per504",
+   "direcao": "esquerda",
+   "justificativa": "Construir creches para cumprir o PNE é expansão da educação infantil."
+  },
+  {
+   "tema": "educacao",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per506",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Expandir a educação em tempo integral é expansão da educação."
+  },
+  {
+   "tema": "educacao",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per506",
+   "secundaria": "per504",
+   "direcao": "esquerda",
+   "justificativa": "Pé-de-Meia: dinheiro para jovens pobres não deixarem a escola; o objetivo é a permanência escolar."
+  },
+  {
+   "tema": "educacao",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per506",
+   "secundaria": "per411",
+   "direcao": "esquerda",
+   "justificativa": "Internet de qualidade em todas as escolas é melhoria da oferta educacional."
+  },
+  {
+   "tema": "educacao",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per506",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Piso do magistério e formação de professores melhoram a educação."
+  },
+  {
+   "tema": "educacao",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per506",
+   "direcao": "fora do RILE",
+   "justificativa": "Institutos federais e cursos técnicos: o codebook põe ensino técnico em per411, e não em per506."
+  },
+  {
+   "tema": "educacao",
+   "indice": 7,
+   "candidato": "lula",
+   "categoria": "per506",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Expandir universidades públicas e assistência estudantil é expansão da educação."
+  },
+  {
+   "tema": "educacao",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per506",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Priorizar o método fônico na alfabetização é proposta para melhorar a educação."
+  },
+  {
+   "tema": "educacao",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per506",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Gestão por indicadores e repasses ligados a metas de aprendizagem visam melhorar a educação."
+  },
+  {
+   "tema": "educacao",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per603",
+   "secundaria": "per506",
+   "direcao": "direita",
+   "justificativa": "Escolas cívico-militares com disciplina e educação “livre de doutrinação”; o diferencial é o valor tradicional da disciplina."
+  },
+  {
+   "tema": "educacao",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per506",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Escola em tempo integral e escolas abertas nas férias são expansão da educação."
+  },
+  {
+   "tema": "educacao",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per506",
+   "secundaria": "per507",
+   "direcao": "esquerda",
+   "justificativa": "Ampliar creches integrais, com voucher para a rede privada onde faltar vaga pública."
+  },
+  {
+   "tema": "educacao",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per506",
+   "secundaria": "per507",
+   "direcao": "esquerda",
+   "justificativa": "Voucher para matricular em outra escola quando faltar vaga pública: amplia o acesso usando a rede privada."
+  },
+  {
+   "tema": "educacao",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per402",
+   "direcao": "fora do RILE",
+   "justificativa": "Ensino técnico no ensino médio com empresas: o codebook põe formação técnica em per411."
+  },
+  {
+   "tema": "educacao",
+   "indice": 15,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Transferir o ensino superior para o MCTI é reorganização administrativa."
+  },
+  {
+   "tema": "educacao",
+   "indice": 16,
+   "candidato": "flavio",
+   "categoria": "per506",
+   "secundaria": "per414",
+   "direcao": "esquerda",
+   "justificativa": "Empréstimo Contingente à Renda muda a forma de financiar estudantes; mantém o acesso ao ensino superior."
+  },
+  {
+   "tema": "saude",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Ampliar consultas, exames e cirurgias no SUS é expansão de serviço público de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Hospitais privados fazendo exames para o SUS amplia a oferta do serviço público de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Fila única digital no SUS melhora o serviço público de saúde (posição específica prevalece sobre per303)."
+  },
+  {
+   "tema": "saude",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Prontuário único no SUS melhora o serviço público de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Farmácia Popular gratuita com exames incluídos é expansão de serviço público de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Fixar médicos e formar especialistas no Mais Médicos amplia o serviço de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Vacinação nas escolas e novas vacinas ampliam o serviço de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 7,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Ampliar os CAPS e a atenção psicossocial é expansão do serviço de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Corrigir a tabela SUS para cobrir o custo real do atendimento é mais recurso para saúde pública."
+  },
+  {
+   "tema": "saude",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Ampliar a Saúde da Família e criar programa para idosos é expansão do serviço de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Contratar a rede privada nas horas ociosas amplia a oferta do serviço público de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Prontuário único ligado ao CPF melhora o serviço de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Digitalizar o SUS e agendar com IA melhora o serviço público de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Mais exames preventivos e vacinação são expansão do serviço de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Entrega de remédios em casa e telessaúde são expansão do serviço de saúde."
+  },
+  {
+   "tema": "saude",
+   "indice": 15,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Ampliar a atenção à saúde mental é expansão do serviço de saúde."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Manter e ampliar políticas de proteção social."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Mais recursos para a assistência social (SUAS) é expansão do Estado de bem-estar."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": "per503",
+   "direcao": "esquerda",
+   "justificativa": "Política de cuidados com Cuidotecas e lavanderias públicas é novo serviço social; o texto cita liberar o tempo das mulheres."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Atendimento domiciliar do SUS a idosos em todo o país é expansão de serviço social."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Ampliar Centros-Dia e vagas públicas para idosos é expansão de serviço social."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Novas fontes de financiamento e regras mais flexíveis para a Previdência buscam manter a seguridade social."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per503",
+   "secundaria": "per504",
+   "direcao": "fora do RILE",
+   "justificativa": "Inclusão de pessoas com deficiência, acessibilidade e cotas de emprego protegem um grupo desfavorecido."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Manter os programas sociais existentes, com melhor gestão e combate a fraudes."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per701",
+   "secundaria": "per504",
+   "direcao": "esquerda",
+   "justificativa": "Prioridade para beneficiários de programas sociais em emprego e qualificação é política de mais empregos."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Volta imediata ao benefício após o seguro-desemprego mantém a proteção social."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": "per401",
+   "direcao": "esquerda",
+   "justificativa": "Rede Nacional de Cuidado para idosos e pessoas com deficiência é novo serviço social, em parceria público-privada."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Subsídio para adaptar casas de idosos de baixa renda é expansão de serviço social."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": "per303",
+   "direcao": "esquerda",
+   "justificativa": "Digitalizar o INSS para reduzir a fila melhora o serviço previdenciário."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Pacote antifraude e mudança na gestão do consignado tratam de controle e eficiência administrativa."
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per503",
+   "secundaria": "per504",
+   "direcao": "fora do RILE",
+   "justificativa": "Políticas para pessoas com deficiência e Centros de Referência em Autismo protegem grupos desfavorecidos."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per503",
+   "secundaria": "per504",
+   "direcao": "fora do RILE",
+   "justificativa": "Rede de proteção às mulheres contra o feminicídio é proteção especial a um grupo vulnerável."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per605",
+   "secundaria": "per503",
+   "direcao": "direita",
+   "justificativa": "Kits para monitorar agressores são aplicação da lei; as Salas Lilás atendem mulheres vítimas."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per503",
+   "secundaria": "per403",
+   "direcao": "fora do RILE",
+   "justificativa": "Planos obrigatórios contra a diferença salarial entre homens e mulheres combatem a discriminação."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Contraceptivos gratuitos no SUS e o Dignidade Menstrual são expansão de serviço de saúde."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Mais exames e tratamento de câncer de mama e colo do útero são serviço de saúde."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": "per503",
+   "direcao": "esquerda",
+   "justificativa": "Reduzir a mortalidade materna, com atenção às mulheres negras, é serviço de saúde."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per503",
+   "secundaria": "per402",
+   "direcao": "fora do RILE",
+   "justificativa": "Crédito favorecido e apoio ao empreendedorismo feminino buscam igualdade de oportunidades para as mulheres."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per503",
+   "secundaria": "per504",
+   "direcao": "fora do RILE",
+   "justificativa": "Central da Mulher, com proteção, apoio jurídico e serviços, é proteção especial a um grupo vulnerável."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per503",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Pacotes de internet para mulheres buscam igualdade de acesso a estudo e emprego."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": "per503",
+   "direcao": "direita",
+   "justificativa": "Tornozeleira para agressores de maior risco e canal de denúncia são aplicação da lei."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Obrigar agressores de mulheres a cumprir a pena inteira é endurecimento penal."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Castração química de condenados por estupro é endurecimento penal."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per503",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Acolhimento de vítimas e escritura da casa no nome da mulher são proteção a um grupo vulnerável."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per503",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Cursos gratuitos para mulheres em tecnologia e finanças buscam igualdade de oportunidades."
+  },
+  {
+   "tema": "mulheres",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Mais exames preventivos e unidades móveis de saúde da mulher são expansão do serviço de saúde."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": "per411",
+   "direcao": "esquerda",
+   "justificativa": "Ampliar o Minha Casa Minha Vida, com foco na baixa renda, é moradia social."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per504",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Usar imóveis da União para o MCMV amplia a moradia social."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per503",
+   "direcao": "fora do RILE",
+   "justificativa": "Obras de urbanização em favelas e periferias são infraestrutura voltada a áreas desfavorecidas."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per503",
+   "direcao": "fora do RILE",
+   "justificativa": "Universalizar água e esgoto, priorizando periferias, é infraestrutura."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Metrôs, trens e eletrificação de frotas são infraestrutura de transporte."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Adaptar as cidades à mudança do clima com infraestrutura verde e proteção de mananciais é política ambiental e climática."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 6,
+   "candidato": "flavio",
+   "categoria": "per504",
+   "secundaria": "per411",
+   "direcao": "esquerda",
+   "justificativa": "Programa habitacional com meta de 2,5 milhões de moradias e juros baixos é política de moradia social."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per605",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Retomar áreas dominadas por facções é ação de segurança pública."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Urbanizar áreas degradadas, com regularização fundiária e PPPs, é infraestrutura; a regularização reforça a propriedade."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per411",
+   "direcao": "direita",
+   "justificativa": "O núcleo é acelerar concessões e parcerias privadas para universalizar o saneamento."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per501",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Fim dos lixões e água em todas as escolas é política ambiental e de infraestrutura."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Bancos públicos financiando metrô e ônibus elétricos é infraestrutura de transporte."
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Barragens, diques e drenagem contra enchentes são obras de infraestrutura."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Novo PAC com obras públicas e concessões é investimento em infraestrutura."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per401",
+   "secundaria": "per411",
+   "direcao": "direita",
+   "justificativa": "O núcleo é manter e intensificar concessões de rodovias e ferrovias à iniciativa privada."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Aeroportos regionais, novas rotas e arrendamentos nos portos são investimento em infraestrutura."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Obras de segurança hídrica e revitalização de bacias são infraestrutura."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per301",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Regulamentar o Fundo Nacional de Desenvolvimento Regional dá atenção especial a regiões."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per410",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Atrair indústrias que usam muita energia renovável para o Nordeste é estímulo ao crescimento regional."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 6,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "R$ 900 bilhões em rodovias, portos e ferrovias é investimento em infraestrutura."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per411",
+   "direcao": "direita",
+   "justificativa": "O núcleo é financiar a infraestrutura com PPPs, concessões e securitização de bens da União."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Corredores logísticos para baratear o transporte são infraestrutura."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Ferrovias de carga como a Ferrogrão são infraestrutura."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Destravar hidrovias é infraestrutura, com a ressalva ambiental do texto."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Regras estáveis por 20 anos e indenização ao investidor protegem o contrato e a propriedade privada."
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Obras hídricas no Nordeste são infraestrutura."
+  },
+  {
+   "tema": "energia",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Mais fontes renováveis e substituição dos fósseis é política climática."
+  },
+  {
+   "tema": "energia",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Leilões de transmissão e investimento em baterias ampliam a infraestrutura elétrica."
+  },
+  {
+   "tema": "energia",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per408",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Propõe um debate sobre baratear a energia, sem medida específica: meta econômica geral."
+  },
+  {
+   "tema": "energia",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per412",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Atuar para reduzir o efeito das oscilações internacionais sobre o preço dos combustíveis é intervenção do governo nos preços."
+  },
+  {
+   "tema": "energia",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per413",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "A Petrobras voltar à distribuição de combustíveis amplia a atuação da empresa estatal."
+  },
+  {
+   "tema": "energia",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per107",
+   "direcao": "fora do RILE",
+   "justificativa": "Ampliar a rede de gás e integrá-la à América do Sul é infraestrutura."
+  },
+  {
+   "tema": "energia",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": "per413",
+   "direcao": "fora do RILE",
+   "justificativa": "Aprimorar o RenovaBio e a atuação da Petrobras em biocombustíveis é política de energia limpa."
+  },
+  {
+   "tema": "energia",
+   "indice": 7,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Autonomia no ciclo do combustível nuclear para uso pacífico é política tecnológica e energética."
+  },
+  {
+   "tema": "energia",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Programa de segurança energética com liberação do fracking amplia a infraestrutura de gás e flexibiliza regras."
+  },
+  {
+   "tema": "energia",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Expandir gasodutos com investimento privado é infraestrutura, tendo o capital privado como meio."
+  },
+  {
+   "tema": "energia",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per504",
+   "direcao": "direita",
+   "justificativa": "Reduzir encargos e subsídios a fontes incentivadas tira distorções do mercado de energia; mantém a tarifa social."
+  },
+  {
+   "tema": "energia",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Modernizar o refino e transportar combustível por outros modais é infraestrutura."
+  },
+  {
+   "tema": "energia",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Baterias de grande porte e data centers são infraestrutura e tecnologia."
+  },
+  {
+   "tema": "energia",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per501",
+   "secundaria": "per410",
+   "direcao": "fora do RILE",
+   "justificativa": "Tornar o Brasil potência em biocombustíveis e vender créditos de carbono é política de energia limpa, com objetivo econômico."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Desmatamento líquido zero até 2030 é proteção ambiental."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": "per107",
+   "direcao": "fora do RILE",
+   "justificativa": "Cumprir a meta climática (NDC) é política climática."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": "per403",
+   "direcao": "fora do RILE",
+   "justificativa": "Regulamentar o mercado regulado de carbono é política climática por meio de regulação."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Fundos para financiar a descarbonização e proteger florestas são política ambiental."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": "per403",
+   "direcao": "fora do RILE",
+   "justificativa": "Rastreabilidade nas cadeias e satélite contra crimes ambientais são proteção ambiental."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Pagamento por serviços ambientais para a biodiversidade é proteção ambiental."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Prevenção de desastres e adaptação climática como eixo do planejamento é política climática."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 7,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Castração de animais e combate a maus-tratos: o codebook inclui direitos dos animais em per501."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per501",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Zerar o desmatamento ilegal até 2029 é proteção ambiental."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per501",
+   "secundaria": "per403",
+   "direcao": "fora do RILE",
+   "justificativa": "Consolidar o mercado regulado de carbono é política climática."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per501",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Pagamento por serviços ambientais a quem preserva é proteção ambiental."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per501",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Fiscalização focada em grilagem e desmatamento ilegal, sem novas obrigações ao produtor legal."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per201",
+   "secundaria": "per503",
+   "direcao": "direita",
+   "justificativa": "Trocar a punição de moradores da floresta por orientação e regularização reduz a coerção do Estado sobre um grupo vulnerável."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": "per601",
+   "direcao": "fora do RILE",
+   "justificativa": "Eliminar sobreposições entre órgãos é eficiência administrativa; a exigência sobre ONGs com recursos estrangeiros é secundária."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per303",
+   "direcao": "direita",
+   "justificativa": "Licença concedida automaticamente se o órgão perder o prazo é desregulação a favor do empreendedor."
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 15,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Bioeconomia com biotecnologia e fármacos é ciência e tecnologia na indústria."
+  },
+  {
+   "tema": "agro",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per703",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Expandir o crédito do Plano Safra da agricultura familiar é política para agricultores."
+  },
+  {
+   "tema": "agro",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per703",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Mais recursos do Plano Safra para o agronegócio é política para produtores rurais."
+  },
+  {
+   "tema": "agro",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per703",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Instrumento para cobrir perdas de safra é política para agricultores."
+  },
+  {
+   "tema": "agro",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per703",
+   "secundaria": "per501",
+   "direcao": "fora do RILE",
+   "justificativa": "Programa de resiliência climática no campo, com irrigação, é política para agricultores."
+  },
+  {
+   "tema": "agro",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per503",
+   "secundaria": "per703",
+   "direcao": "fora do RILE",
+   "justificativa": "Reforma agrária e assentamento de famílias acampadas é redistribuição de terra."
+  },
+  {
+   "tema": "agro",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per607",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Demarcação e proteção de territórios indígenas: o codebook inclui direitos indígenas em per607."
+  },
+  {
+   "tema": "agro",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per607",
+   "secundaria": "per503",
+   "direcao": "fora do RILE",
+   "justificativa": "Titulação de territórios quilombolas protege comunidades tradicionais."
+  },
+  {
+   "tema": "agro",
+   "indice": 7,
+   "candidato": "lula",
+   "categoria": "per703",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Acelerar a produção nacional de fertilizantes é política para a agricultura."
+  },
+  {
+   "tema": "agro",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per703",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Seguro Rural e reorganização de dívidas do setor são política para produtores rurais."
+  },
+  {
+   "tema": "agro",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per703",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Produção nacional de fertilizantes com minerais brasileiros é política para a agricultura."
+  },
+  {
+   "tema": "agro",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per703",
+   "direcao": "direita",
+   "justificativa": "Titulação do pequeno proprietário e segurança “irreversível” da propriedade são defesa do direito de propriedade."
+  },
+  {
+   "tema": "agro",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per703",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Ampliar a área irrigada e simplificar outorgas é política para a agricultura."
+  },
+  {
+   "tema": "agro",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per501",
+   "secundaria": "per703",
+   "direcao": "fora do RILE",
+   "justificativa": "Rastreabilidade das cadeias com cadastros ambientais e satélite é controle ambiental ligado ao agro."
+  },
+  {
+   "tema": "agro",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per701",
+   "secundaria": "per703",
+   "direcao": "esquerda",
+   "justificativa": "Ligar quem busca trabalho às vagas no campo é política de emprego."
+  },
+  {
+   "tema": "agro",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per607",
+   "direcao": "direita",
+   "justificativa": "Autonomia de indígenas e quilombolas para escolher atividades produtivas em suas terras reduz restrições estatais à atividade econômica."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per404",
+   "secundaria": "per411",
+   "direcao": "esquerda",
+   "justificativa": "Aprimorar a neoindustrialização (política industrial do governo) é planejamento econômico."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per404",
+   "secundaria": "per406",
+   "direcao": "esquerda",
+   "justificativa": "Financiamento direcionado, compras públicas e benefícios ligados a conteúdo local são planejamento e proteção da indústria nacional."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per404",
+   "secundaria": "per406",
+   "direcao": "esquerda",
+   "justificativa": "Política para organizar as cadeias de minerais críticos e evitar exportar só matéria-prima é planejamento econômico."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per601",
+   "direcao": "fora do RILE",
+   "justificativa": "Supercomputadores e IA em português são infraestrutura tecnológica; o texto fala em soberania."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per501",
+   "secundaria": "per403",
+   "direcao": "fora do RILE",
+   "justificativa": "Salvaguardas socioambientais obrigatórias para data centers são regulação com fim ambiental."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Fibra óptica e 5G são infraestrutura de comunicação."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per303",
+   "secundaria": "per411",
+   "direcao": "fora do RILE",
+   "justificativa": "Universalizar serviços públicos digitais é modernização da administração."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Digitalizar todos os serviços federais e não pedir documentos repetidos é eficiência administrativa."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Levar internet a escolas, áreas rurais e fronteiras é infraestrutura de comunicação."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": "per504",
+   "direcao": "fora do RILE",
+   "justificativa": "Assistentes automatizados para indicar serviços e benefícios são modernização da administração."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per402",
+   "direcao": "fora do RILE",
+   "justificativa": "Levar IA a pequenas e médias empresas é política tecnológica para a indústria."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per407",
+   "direcao": "direita",
+   "justificativa": "Estado como regulador, “não como empresário”, e atração de capital estrangeiro é posição de mercado."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per401",
+   "secundaria": "per411",
+   "direcao": "direita",
+   "justificativa": "Lei de “liberdade de criar e inovar” sem entraves é desregulação."
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per411",
+   "secundaria": "per402",
+   "direcao": "fora do RILE",
+   "justificativa": "Parques tecnológicos, incubadoras e startups são política de ciência e tecnologia."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per202",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Reforma política para a representação refletir a sociedade é apoio à democracia representativa."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per202",
+   "secundaria": "per403",
+   "direcao": "esquerda",
+   "justificativa": "O texto apresenta a regulação das redes contra desinformação como defesa da democracia; na prática, regula plataformas."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per202",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Diálogo com o Judiciário respeitando a autonomia dos Poderes é apoio à separação de poderes."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per202",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Participação social no PPA e no orçamento: o codebook inclui orçamento participativo em democracia."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per411",
+   "secundaria": "per202",
+   "direcao": "fora do RILE",
+   "justificativa": "Conselho pela Soberania Digital e letramento digital são política tecnológica com participação social."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per403",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Transparência de algoritmos e rastreio de conteúdo gerado por IA são regulação de plataformas."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per403",
+   "secundaria": "per706",
+   "direcao": "esquerda",
+   "justificativa": "Aprimorar o ECA Digital e regular o tempo de tela por idade são regulação para proteger crianças."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per204",
+   "secundaria": "per304",
+   "direcao": "fora do RILE",
+   "justificativa": "Acabar com o julgamento de parlamentares pelo STF exige mudar a Constituição; o texto o trata como fim de privilégio."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per204",
+   "secundaria": "per202",
+   "direcao": "fora do RILE",
+   "justificativa": "Limitar decisões individuais de ministros do STF é mudança constitucional no Judiciário."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per204",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Rever o alcance das ADPFs e quem pode propô-las é mudança constitucional."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per304",
+   "secundaria": "per204",
+   "direcao": "fora do RILE",
+   "justificativa": "Quarentena para ministros de Estado irem ao STF previne uso político do cargo."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per304",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Impedir parentes de juízes de atuar no tribunal combate o nepotismo."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per204",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Fim da reeleição para presidente é emenda constitucional."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per202",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Reforma política para aproximar eleitor e eleito é apoio à democracia representativa."
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per201",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Extinguir estruturas do Estado que rotulem ou punam falas é defesa da liberdade de expressão."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per107",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Consolidar o Mercosul como plataforma de integração é cooperação internacional."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per107",
+   "secundaria": "per407",
+   "direcao": "esquerda",
+   "justificativa": "Política externa universalista e negociação com todas as regiões é cooperação internacional."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per107",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Aproximação com BRICS, Sul Global e G20 é cooperação internacional."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per107",
+   "secundaria": null,
+   "direcao": "esquerda",
+   "justificativa": "Reformar a ONU e organismos multilaterais para torná-los mais representativos é apoio à governança global."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per104",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Fortalecer a indústria de defesa com orçamento compatível é fortalecimento militar."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per104",
+   "secundaria": "per411",
+   "direcao": "direita",
+   "justificativa": "Defesa cibernética de infraestruturas críticas é segurança e defesa."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per104",
+   "secundaria": "per107",
+   "direcao": "direita",
+   "justificativa": "Proteger fronteiras, Amazônia e Amazônia Azul é defesa do território."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 7,
+   "candidato": "flavio",
+   "categoria": "per303",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Diplomacia por critérios técnicos e profissionais trata da gestão do Itamaraty."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per101",
+   "secundaria": "per107",
+   "direcao": "fora do RILE",
+   "justificativa": "Recompor relações com Argentina, EUA e Israel são relações especiais com países específicos."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per407",
+   "secundaria": "per107",
+   "direcao": "direita",
+   "justificativa": "Aderir à OCDE e acabar com o IOF sobre câmbio é abertura econômica."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per407",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Abertura comercial para importar máquinas e insumos é livre comércio."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per407",
+   "secundaria": "per402",
+   "direcao": "direita",
+   "justificativa": "Integrar-se às cadeias globais de valor é abertura comercial."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per104",
+   "secundaria": "per605",
+   "direcao": "direita",
+   "justificativa": "Defesa focada em crime organizado, com drones e IA, é modernização da defesa."
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per104",
+   "secundaria": "per605",
+   "direcao": "direita",
+   "justificativa": "Defesa cibernética de serviços públicos e cidadãos é segurança e defesa."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 0,
+   "candidato": "lula",
+   "categoria": "per502",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Aperfeiçoar a Lei Aldir Blanc e a Lei Rouanet é financiamento público à cultura."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 1,
+   "candidato": "lula",
+   "categoria": "per502",
+   "secundaria": "per503",
+   "direcao": "fora do RILE",
+   "justificativa": "Fortalecer Pontos de Cultura e cultura nas periferias é financiamento à cultura."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 2,
+   "candidato": "lula",
+   "categoria": "per403",
+   "secundaria": "per502",
+   "direcao": "esquerda",
+   "justificativa": "Lei de direito autoral digital e regulação da IA para pagar artistas são regulação de mercado."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 3,
+   "candidato": "lula",
+   "categoria": "per403",
+   "secundaria": "per406",
+   "direcao": "esquerda",
+   "justificativa": "Regulamentar o streaming para atender ao “interesse nacional” é regulação de mercado."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 4,
+   "candidato": "lula",
+   "categoria": "per502",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Bolsa Atleta e patrocínio de estatais ao esporte são financiamento público do esporte."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 5,
+   "candidato": "lula",
+   "categoria": "per502",
+   "secundaria": "per410",
+   "direcao": "fora do RILE",
+   "justificativa": "Sediar a Copa do Mundo Feminina é promoção do esporte."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 6,
+   "candidato": "lula",
+   "categoria": "per502",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Arenas esportivas e Universidade do Esporte são financiamento do esporte."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 7,
+   "candidato": "lula",
+   "categoria": "per410",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Roteiros turísticos e promoção do Brasil no exterior: o codebook põe turismo em crescimento econômico."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 8,
+   "candidato": "flavio",
+   "categoria": "per502",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Aperfeiçoar leis de incentivo à cultura é financiamento à cultura."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 9,
+   "candidato": "flavio",
+   "categoria": "per502",
+   "secundaria": "per601",
+   "direcao": "fora do RILE",
+   "justificativa": "Preservar o patrimônio histórico é financiamento à cultura; o texto liga isso à memória nacional."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 10,
+   "candidato": "flavio",
+   "categoria": "per502",
+   "secundaria": "per201",
+   "direcao": "fora do RILE",
+   "justificativa": "Levar a arte ao público sem “agendas políticas” é política cultural."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 11,
+   "candidato": "flavio",
+   "categoria": "per502",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Esporte nas escolas com parcerias público-privadas é promoção do esporte."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 12,
+   "candidato": "flavio",
+   "categoria": "per502",
+   "secundaria": "per503",
+   "direcao": "fora do RILE",
+   "justificativa": "Inclusão de pessoas com deficiência pelo esporte é política esportiva."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 13,
+   "candidato": "flavio",
+   "categoria": "per502",
+   "secundaria": "per401",
+   "direcao": "fora do RILE",
+   "justificativa": "Bolsas esportivas e patrocínio privado ao alto rendimento são política esportiva."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 14,
+   "candidato": "flavio",
+   "categoria": "per603",
+   "secundaria": null,
+   "direcao": "direita",
+   "justificativa": "Restringir a categoria feminina a atletas do sexo feminino é posição tradicional sobre gênero."
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 15,
+   "candidato": "flavio",
+   "categoria": "per410",
+   "secundaria": null,
+   "direcao": "fora do RILE",
+   "justificativa": "Promover o turismo no interior: o codebook põe turismo em crescimento econômico."
+  }
+ ],
+ "perfil": {
+  "lula": {
+   "esquerda": 53,
+   "direita": 22,
+   "fora": 53,
+   "total": 128,
+   "indice": -24.2,
+   "nota": "Índice = (direita − esquerda) / total × 100, contando propostas; o MARPOR original conta quase-sentenças, então o valor é só aproximado."
+  },
+  "flavio": {
+   "esquerda": 27,
+   "direita": 50,
+   "fora": 56,
+   "total": 133,
+   "indice": 17.3,
+   "nota": "Índice = (direita − esquerda) / total × 100, contando propostas; o MARPOR original conta quase-sentenças, então o valor é só aproximado."
+  }
+ }
+}
