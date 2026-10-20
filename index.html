@@ -526,10 +526,14 @@ const fold = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const loose = s => fold(String(s).replace(/-\s*\n\s*/g, "")).replace(/[^a-z0-9%]+/g, " ").trim();
 const STOP = new Set((ELEICAO.candidatos.flatMap(c => [c.nome, ...(c.apelidos || [])]).join(" ") + " " + "a o os as um uma uns umas de do da dos das em no na nos nas por para pra com sem que e ou se ao aos à às é ser foi vai vão vou ir sobre como mais menos muito "
   + "candidato candidata presidente governo plano proposta propoe propõe propor prometeu promete disse diz dizer quer fazer faz silva "
-  + "seu sua seus suas ele ela eles isso esse essa este esta ja já nao não sim tambem também todo toda todos todas ter tem acabar anos verdade mentira falso").split(" ").map(fold));
+  + "seu sua seus suas ele ela eles isso esse essa este esta ja já nao não sim tambem também todo toda todos todas ter tem acabar anos verdade mentira falso mesmo ainda antes depois vez sempre nunca agora hoje dia urgente compartilhe").split(" ").map(fold));
+// Fala transcrita: "seis por um" / "6 por 1" vira "6x1".
+const NUMS = { um: 1, uma: 1, dois: 2, duas: 2, tres: 3, 'três': 3, quatro: 4, cinco: 5, seis: 6, sete: 7, oito: 8, nove: 9, dez: 10 };
+const normNum = (q) => String(q).replace(/\b(\d+|um|uma|dois|duas|tres|três|quatro|cinco|seis|sete|oito|nove|dez)\s+(?:por|x)\s+(\d+|um|uma|dois|duas|tres|três|quatro|cinco|seis|sete|oito|nove|dez)\b/gi, (m, a, b) => (NUMS[a.toLowerCase()] || a) + 'x' + (NUMS[b.toLowerCase()] || b));
+
 function terms(q) {
   const out = [];
-  for (const w of fold(q).split(/[^a-z0-9%]+/)) {
+  for (const w of fold(normNum(q)).split(/[^a-z0-9%]+/)) {
     if (w.length < 3 || STOP.has(w)) continue;
     const stem = w.length > 6 ? w.slice(0, w.length - 2) : w;
     if (!out.includes(stem)) out.push(stem);
@@ -545,11 +549,18 @@ function loadPlan(k) {
   });
   return PLANS[k];
 }
+// Palavras de até 3 letras (SUS, PIB, 6x1) só valem como palavra inteira: "sus" não acha "sustentável".
+function find(f, t, from = 0) {
+  let i = f.indexOf(t, from);
+  if (t.length > 3) return i;
+  while (i !== -1 && (/[a-z0-9]/.test(f[i - 1] || "") || /[a-z0-9]/.test(f[i + t.length] || ""))) i = f.indexOf(t, i + 1);
+  return i;
+}
 function scorePage(p, ts) {
   let s = 0, hit = 0;
   for (const t of ts) {
-    let i = p.f.indexOf(t), n = 0;
-    while (i !== -1 && n < 8) { n++; i = p.f.indexOf(t, i + t.length); }
+    let i = find(p.f, t), n = 0;
+    while (i !== -1 && n < 8) { n++; i = find(p.f, t, i + t.length); }
     if (n) { hit++; s += 3 + n; }
   }
   if (!hit) return 0;
@@ -559,12 +570,12 @@ function scorePage(p, ts) {
 function snippet(p, ts, len = 320) {
   let best = -1, bestN = -1;
   for (const t of ts) {
-    let i = p.f.indexOf(t);
+    let i = find(p.f, t);
     while (i !== -1) {
       const win = p.f.slice(Math.max(0, i - 120), i + 200);
-      const n = ts.filter(x => win.includes(x)).length;
+      const n = ts.filter(x => find(win, x) !== -1).length;
       if (n > bestN) { bestN = n; best = i; }
-      i = p.f.indexOf(t, i + t.length);
+      i = find(p.f, t, i + t.length);
       if (bestN === ts.length) break;
     }
   }
@@ -575,7 +586,7 @@ function snippet(p, ts, len = 320) {
 function highlight(text, ts) {
   const f = fold(text);
   const marks = [];
-  for (const t of ts) { let i = f.indexOf(t); while (i !== -1) { marks.push([i, i + t.length]); i = f.indexOf(t, i + t.length); } }
+  for (const t of ts) { let i = find(f, t); while (i !== -1) { marks.push([i, i + t.length]); i = find(f, t, i + t.length); } }
   marks.sort((x, y) => x[0] - y[0]);
   let out = "", pos = 0;
   for (const [s, e] of marks) { if (s < pos) continue; out += esc(text.slice(pos, s)) + "<mark>" + esc(text.slice(s, e)) + "</mark>"; pos = e; }
@@ -724,7 +735,10 @@ async function runCheck(q, cand) {
   lastQuery = { q, cand };
   $("#checkOut").hidden = false;
   $("#planHits").innerHTML = `<h3>O que os planos dizem</h3><p class="status">Procurando…</p>`;
-  const ks = cand === "ambos" ? ORDER : [cand];
+  // Se a frase cita um candidato e "Sobre quem?" está em todos, procura direto no plano dele.
+  const citado = cand === "ambos" ? whoIn(" " + fold(q) + " ") : null;
+  if (citado) $("#falaCand").value = citado;
+  const ks = citado ? [citado] : cand === "ambos" ? ORDER : [cand];
   try {
     const res = await Promise.all(ks.map(k => searchPlan(k, q, 3).then(r => ({ k, ...r }))));
     if (!res[0].ts.length) { $("#planHits").innerHTML = `<h3>O que os planos dizem</h3><p class="empty">Escreva a frase com mais palavras sobre o assunto (ex.: "maioridade penal", "salário mínimo").</p>`; }

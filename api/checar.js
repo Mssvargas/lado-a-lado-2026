@@ -26,7 +26,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-20b';
+const VERSAO = '2026-10-20c';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -104,7 +104,7 @@ function lembrar(chave, v) {
 
 const STOP = new Set((ELEICAO.candidatos.flatMap((c) => [c.nome].concat(c.apelidos || [])).join(' ') + ' ' + 'a o os as um uma uns umas de do da dos das em no na nos nas por para pra com sem que e ou se ao aos à às é ser foi vai vão vou ir sobre como mais menos muito ' +
   'candidato candidata presidente governo plano proposta propoe propõe propor prometeu promete disse diz dizer quer fazer faz silva ' +
-  'seu sua seus suas ele ela eles isso esse essa este esta ja já nao não sim tambem também todo toda todos todas ter tem acabar anos verdade mentira falso').split(' ').map(fold));
+  'seu sua seus suas ele ela eles isso esse essa este esta ja já nao não sim tambem também todo toda todos todas ter tem acabar anos verdade mentira falso mesmo ainda antes depois vez sempre nunca agora hoje dia urgente compartilhe').split(' ').map(fold));
 
 function quemNaFrase(f) {
   for (const c of ELEICAO.candidatos) {
@@ -113,9 +113,13 @@ function quemNaFrase(f) {
   return null;
 }
 
+// Fala transcrita: "seis por um" / "6 por 1" vira "6x1".
+const NUMS = { um: 1, uma: 1, dois: 2, duas: 2, tres: 3, 'três': 3, quatro: 4, cinco: 5, seis: 6, sete: 7, oito: 8, nove: 9, dez: 10 };
+const normNum = (q) => String(q).replace(/\b(\d+|um|uma|dois|duas|tres|três|quatro|cinco|seis|sete|oito|nove|dez)\s+(?:por|x)\s+(\d+|um|uma|dois|duas|tres|três|quatro|cinco|seis|sete|oito|nove|dez)\b/gi, (m, a, b) => (NUMS[a.toLowerCase()] || a) + 'x' + (NUMS[b.toLowerCase()] || b));
+
 function termos(q) {
   const out = [];
-  for (const w of fold(q).split(/[^a-z0-9%]+/)) {
+  for (const w of fold(normNum(q)).split(/[^a-z0-9%]+/)) {
     if (w.length < 3 || STOP.has(w)) continue;
     const stem = w.length > 6 ? w.slice(0, w.length - 2) : w;
     if (out.indexOf(stem) < 0) out.push(stem);
@@ -123,17 +127,24 @@ function termos(q) {
   return out;
 }
 
+// Palavras de até 3 letras (SUS, PIB, 6x1) só valem como palavra inteira: "sus" não acha "sustentável".
+function achar(f, t, de) {
+  let i = f.indexOf(t, de || 0);
+  if (t.length > 3) return i;
+  while (i !== -1 && (/[a-z0-9]/.test(f[i - 1] || '') || /[a-z0-9]/.test(f[i + t.length] || ''))) i = f.indexOf(t, i + 1);
+  return i;
+}
+
 function pontuar(p, ts) {
   let s = 0, hit = 0;
   for (const t of ts) {
-    let i = p.f.indexOf(t), n = 0;
-    while (i !== -1 && n < 8) { n++; i = p.f.indexOf(t, i + t.length); }
+    let i = achar(p.f, t), n = 0;
+    while (i !== -1 && n < 8) { n++; i = achar(p.f, t, i + t.length); }
     if (n) { hit++; s += 3 + n; }
   }
   return hit ? s * hit * (p.toc ? 0.2 : 1) : 0;
 }
 
-// Junta as páginas mais relevantes de várias consultas, sem repetir página.
 // Trecho da página em volta das palavras buscadas. A página inteira pode passar do
 // tamanho que cabe no pedido, e cortar só o começo perdia o trecho que importava.
 function janela(p, consultas, max) {
@@ -141,8 +152,8 @@ function janela(p, consultas, max) {
   const ts = [...new Set(consultas.flatMap(termos))];
   const hits = [];
   for (const t of ts) {
-    let i = p.f.indexOf(t);
-    while (i !== -1) { hits.push(i); i = p.f.indexOf(t, i + t.length); }
+    let i = achar(p.f, t);
+    while (i !== -1) { hits.push(i); i = achar(p.f, t, i + t.length); }
   }
   if (!hits.length) return p.t.slice(0, max) + '…';
   let inicio = 0, melhor = -1;
@@ -321,7 +332,7 @@ async function transcrever(b64, mime, trilha) {
       method: 'POST', headers: { authorization: 'Bearer ' + process.env.GROQ_API_KEY }, body: form
     }, 30000);
     const texto = r.http && r.data && typeof r.data.text === 'string' ? r.data.text.trim() : '';
-    if (texto) return texto;
+    if (texto) return normNum(texto);
     trilha.push('groq:' + modelo + ': ' + String(mensagemErro(r)).slice(0, 120));
   }
   return null;
