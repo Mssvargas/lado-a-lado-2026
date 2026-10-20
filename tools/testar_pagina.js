@@ -45,5 +45,9 @@ try {
   console.log("init sem erro síncrono");
 } catch (e) {
   console.log("ERRO:", e && e.stack ? e.stack.split("\n").slice(0, 4).join("\n") : e);
+  process.exitCode = 1;
 }
-setTimeout(() => console.log(errors.length ? errors.join("\n") : "sem erros assíncronos"), 1500);
+setTimeout(() => {
+  console.log(errors.length ? errors.join("\n") : "sem erros assíncronos");
+  if (errors.length) process.exitCode = 1;
+}, 1500);
