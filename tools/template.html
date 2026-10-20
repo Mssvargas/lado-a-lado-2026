@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234A47A3'/%3E%3Crect x='6' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3Crect x='18' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3C/svg%3E">
 <script>if (location.hostname.endsWith("github.io")) location.replace("__SITE_URL__" + location.pathname.split("/").pop() + location.hash);</script>
 <link rel="canonical" href="__SITE_URL__">
-<script>try { const t = localStorage.getItem("lal-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<script>let lalT = null; try { lalT = localStorage.getItem("lal-theme"); } catch (e) {} if (lalT !== "auto") document.documentElement.dataset.theme = lalT === "dark" ? "dark" : "light";</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&family=Literata:opsz,wght@7..72,600&display=swap">
@@ -175,6 +175,32 @@ td.who { white-space: nowrap; font-weight: 700; }
 @media (prefers-reduced-motion: no-preference) {
   .item, .fc { transition: border-color .15s; }
 }
+/* Seletor de tema */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.themebar { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: end; justify-content: space-between; }
+.themepick { flex: 1 1 320px; max-width: 560px; min-width: 0; }
+.selrow { display: flex; gap: 6px; }
+.selrow select { flex: 1; min-width: 0; font-weight: 700; font-size: 16px; padding: 10px 12px; }
+.iconbtn { flex: none; width: 44px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; font-size: 18px; cursor: pointer; }
+.iconbtn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Promessa por promessa */
+.lev-in { display: grid; gap: 12px; margin: 10px 0 4px; }
+.waffle { display: flex; flex-wrap: wrap; gap: 4px; }
+.sq { width: 20px; height: 20px; border-radius: 4px; border: 0; padding: 0; cursor: pointer; }
+.sq.sq-out { outline: 1px solid var(--muted); outline-offset: -1px; }
+.sq.dim { opacity: .18; }
+.sq:hover, .sq:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+ul.lev-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; max-height: 420px; overflow-y: auto; }
+.lev-row { width: 100%; display: grid; grid-template-columns: 8px minmax(0, 1fr) auto; gap: 10px; align-items: center; text-align: left; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; cursor: pointer; font-size: 14px; }
+.lev-row:hover { border-color: var(--accent); }
+.lev-row .sw { align-self: stretch; border-radius: 3px; }
+dl.prova { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 14px; margin: 0; font-size: 15px; }
+dl.prova dt { font-weight: 700; color: var(--muted); }
+dl.prova dd { margin: 0; }
+dl.prova ul { margin: 0; padding-left: 18px; }
+@media (max-width: 560px) { dl.prova { grid-template-columns: 1fr; } dl.prova dd { margin-bottom: 6px; } .lev-row { grid-template-columns: 8px minmax(0, 1fr); } .lev-row .pill { grid-column: 2; justify-self: start; } }
+
 /* Novas abas */
 .stack { display: grid; gap: 14px; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
@@ -251,9 +277,9 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
     <div class="row" style="justify-content:space-between;align-items:center">
       <div class="row" style="gap:8px"><button type="button" class="btn" id="shareBtn">Compartilhar este site</button><a class="btn ghost" href="resumo.html" style="text-decoration:none">Resumo em 2 frases por tema</a></div>
       <div class="seg" role="group" aria-label="Aparência" id="themeSeg">
-        <button type="button" data-theme-set="auto">Automático</button>
         <button type="button" data-theme-set="light">Claro</button>
         <button type="button" data-theme-set="dark">Escuro</button>
+        <button type="button" data-theme-set="auto" title="Segue o tema do sistema">Automático</button>
       </div>
     </div>
   </div>
@@ -277,15 +303,25 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
   <div class="wrap">
 
     <section class="view" id="v-comparar" aria-labelledby="t-comparar">
-      <h2 id="t-comparar" class="eyebrow" style="font-family:var(--body)">Escolha um tema</h2>
-      <div class="chips" id="themeChips" role="group" aria-label="Temas"></div>
-      <div class="row" style="justify-content:space-between">
-        <div class="seg" role="group" aria-label="Formato">
-          <button type="button" id="modeCols" aria-pressed="true">Lado a lado</button>
-          <button type="button" id="modeTable" aria-pressed="false">Tabela</button>
+      <h2 id="t-comparar" class="sr-only">Comparar propostas por tema</h2>
+      <div class="themebar">
+        <div class="field themepick">
+          <label for="themeSel" class="eyebrow">Tema</label>
+          <div class="selrow">
+            <button type="button" class="iconbtn" id="prevThemeTop" aria-label="Tema anterior">←</button>
+            <select id="themeSel"></select>
+            <button type="button" class="iconbtn" id="nextThemeTop" aria-label="Próximo tema">→</button>
+          </div>
         </div>
-        <span class="status">Candidatos na ordem do número de urna.</span>
+        <div class="field">
+          <span class="eyebrow">Formato</span>
+          <div class="seg" role="group" aria-label="Formato">
+            <button type="button" id="modeCols" aria-pressed="true">Lado a lado</button>
+            <button type="button" id="modeTable" aria-pressed="false">Tabela</button>
+          </div>
+        </div>
       </div>
+      <p class="status" style="margin:0">Candidatos na ordem do número de urna.</p>
       <div id="themeBody"></div>
       <div class="pager">
         <button type="button" class="btn ghost" id="prevTheme">← Tema anterior</button>
@@ -645,7 +681,7 @@ function showTheme(i, scroll = true) {
   if (!COMP) return;
   themeIdx = (i + COMP.temas.length) % COMP.temas.length;
   const t = COMP.temas[themeIdx];
-  document.querySelectorAll("#themeChips .chip").forEach((c, j) => c.setAttribute("aria-pressed", j === themeIdx ? "true" : "false"));
+  $("#themeSel").value = String(themeIdx);
   const by = k => t.itens.filter(x => x.candidato === k);
   let body = `<div class="theme-head"><div class="eyebrow">Tema ${themeIdx + 1} de ${COMP.temas.length}</div><h2>${esc(t.nome)}</h2><p class="q">${esc(t.pergunta)}</p></div>
     <div class="cmp"><div><div class="eyebrow">Em comum</div><p>${esc(t.em_comum)}</p></div><div><div class="eyebrow">Principal diferença</div><p>${esc(t.diferenca)}</p></div></div>`;
@@ -663,8 +699,11 @@ function showTheme(i, scroll = true) {
 }
 function initCompare() {
   if (!COMP) { $("#themeBody").innerHTML = `<p class="empty">O comparativo não carregou.</p>`; return; }
-  $("#themeChips").innerHTML = COMP.temas.map((t, i) => `<button type="button" class="chip" data-i="${i}" aria-pressed="false">${esc(t.nome)}</button>`).join("");
-  $("#themeChips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) showTheme(+b.dataset.i); });
+  $("#themeSel").innerHTML = COMP.temas.map((t, i) => `<option value="${i}">${i + 1}. ${esc(t.nome)}</option>`).join("");
+  const pickTheme = i => { showTheme(i, false); history.replaceState(null, "", "#tema-" + COMP.temas[themeIdx].id); };
+  $("#themeSel").addEventListener("change", () => pickTheme(+$("#themeSel").value));
+  $("#prevThemeTop").onclick = () => pickTheme(themeIdx - 1);
+  $("#nextThemeTop").onclick = () => pickTheme(themeIdx + 1);
   $("#prevTheme").onclick = () => showTheme(themeIdx - 1);
   $("#nextTheme").onclick = () => showTheme(themeIdx + 1);
   const setMode = m => { mode = m; store.set("lal-mode", m); $("#modeCols").setAttribute("aria-pressed", m === "cols"); $("#modeTable").setAttribute("aria-pressed", m === "table"); showTheme(themeIdx, false); };
@@ -1107,10 +1146,70 @@ const initHistorico = once(async () => {
   let h;
   try { h = await loadData("historico"); } catch { failBox("#histList", "o histórico"); return; }
   DATA._hist = h;
+  try { DATA._prom = await loadData("promessas"); } catch { DATA._prom = null; }
   $("#histSeg").addEventListener("click", e => { const b = e.target.closest("[data-hist]"); if (!b) return; histCand = b.dataset.hist; renderHist(); });
   $("#histNota").textContent = h.nota_metodo || "";
   renderHist();
 });
+/* Promessa por promessa: quem avaliou, por quê, com que evidência */
+const PST = { cumprida: ["Cumprida", "--ok"], parcial: ["Parcialmente cumprida", "--part"], em_andamento: ["Em andamento", "--seg-out"], outro: ["Outra classificação", "--line"], nao_cumprida: ["Não cumprida", "--contra"] };
+const PORDER = Object.keys(PST);
+const levById = id => (DATA._prom?.levantamentos || []).find(l => l.id === id);
+function levsFor(r) {
+  const levs = (DATA._prom?.levantamentos || []).filter(l => l.registro === r.id);
+  return levs.map(l => {
+    if (!l.itens_disponiveis || !(l.itens || []).length) return `<p class="status">${esc(l.fonte)}: a lista promessa por promessa não está disponível. ${esc(l.motivo_indisponivel || "")}</p>`;
+    const items = l.itens.map((it, i) => ({ ...it, i })).sort((a, b) => PORDER.indexOf(a.status) - PORDER.indexOf(b.status));
+    const temas = [...new Set(l.itens.map(x => x.tema))];
+    return `<details class="dd lev" data-lev="${esc(l.id)}"><summary><span class="chev" aria-hidden="true">▸</span> <b>Ver as ${l.itens.length} promessas avaliadas por ${esc(l.fonte)}, uma a uma</b> <span class="muted" style="font-size:14px">quem avaliou, por quê e com que evidência</span></summary>
+      <div class="lev-in">
+        <p class="status" style="margin:0">Cada quadrado é uma promessa, colorida pelo status que ${esc(l.fonte)} deu${l.data ? ` (avaliação de ${esc(fmtDate(l.data))})` : ""}. Toque num quadrado ou na lista para ver a justificativa e as evidências.</p>
+        <div class="waffle">${items.map(it => `<button type="button" class="sq${it.status === "outro" ? " sq-out" : ""}" style="background:var(${PST[it.status]?.[1] || "--line"})" data-lev-item="${esc(l.id)}|${it.i}" data-tip="${esc(`${PST[it.status]?.[0] || it.status_original} · ${it.promessa}`)}" aria-label="${esc(`${it.promessa}: ${it.status_original}`)}"></button>`).join("")}</div>
+        <div class="keys">${PORDER.map(k => { const n = l.itens.filter(x => x.status === k).length; return n ? `<span><i style="background:var(${PST[k][1]})"></i>${PST[k][0]}: <b class="mono">${n}</b> (${fmtPct(pct(n, l.itens.length))})</span>` : ""; }).join("")}</div>
+        <div class="row">
+          <div class="field grow"><label class="eyebrow">Status</label><select data-lev-f="status"><option value="">Todos</option>${PORDER.filter(k => l.itens.some(x => x.status === k)).map(k => `<option value="${k}">${PST[k][0]}</option>`).join("")}</select></div>
+          <div class="field grow"><label class="eyebrow">Tema</label><select data-lev-f="tema"><option value="">Todos</option>${temas.map(t => `<option value="${esc(t)}">${esc(TEMA_NOME[t] || "Outro")}</option>`).join("")}</select></div>
+          <div class="field grow"><label class="eyebrow">Buscar</label><input type="search" data-lev-f="q" placeholder="Ex.: armas, imposto de renda"></div>
+        </div>
+        <div class="lev-detail" hidden></div>
+        <ul class="lev-list">${levListHTML(l, items)}</ul>
+      </div></details>`;
+  }).join("");
+}
+function levListHTML(l, items) {
+  return items.map(it => `<li><button type="button" class="lev-row" data-lev-item="${esc(l.id)}|${it.i}"><span class="sw" style="background:var(${PST[it.status]?.[1] || "--line"})" aria-hidden="true"></span><span>${esc(it.promessa)}</span><span class="pill out">${esc(it.status_original)}</span></button></li>`).join("") || `<li class="empty">Nenhuma promessa com estes filtros.</li>`;
+}
+function levFilter(box) {
+  const l = levById(box.dataset.lev); if (!l) return;
+  const st = box.querySelector('[data-lev-f="status"]').value, tm = box.querySelector('[data-lev-f="tema"]').value, q = fold(box.querySelector('[data-lev-f="q"]').value.trim());
+  const items = l.itens.map((it, i) => ({ ...it, i })).filter(it => (!st || it.status === st) && (!tm || it.tema === tm) && (!q || fold(it.promessa + " " + (it.avaliacao || "")).includes(q)))
+    .sort((a, b) => PORDER.indexOf(a.status) - PORDER.indexOf(b.status));
+  box.querySelector(".lev-list").innerHTML = levListHTML(l, items);
+  box.querySelectorAll(".sq").forEach(sq => { const i = +sq.dataset.levItem.split("|")[1]; sq.classList.toggle("dim", !items.some(x => x.i === i)); });
+}
+function levDetail(levId, i) {
+  const l = levById(levId), it = l?.itens[i]; if (!it) return;
+  const box = document.querySelector(`.lev[data-lev="${CSS.escape(levId)}"] .lev-detail`);
+  const cor = `var(${PST[it.status]?.[1] || "--line"})`;
+  const ev = (it.evidencias || []).filter(e => e && e.descricao);
+  box.hidden = false;
+  box.innerHTML = `<article class="panel" style="border-left:6px solid ${cor}">
+    <div class="eyebrow">Promessa · ${esc(TEMA_NOME[it.tema] || "Outro")}</div>
+    <p style="margin:0;font-weight:700;font-size:17px">${esc(it.promessa)}</p>
+    <p style="margin:0"><span class="pill" style="color:${it.status === "outro" ? "var(--muted)" : cor};border-color:${cor}">${esc(it.status_original)}</span></p>
+    <dl class="prova">
+      <dt>Quem avaliou</dt><dd>${esc(l.fonte)}${l.titulo ? `, <i>${esc(l.titulo)}</i>` : ""}${it.data_avaliacao || l.data ? `, em ${esc(fmtDate(it.data_avaliacao || l.data))}` : ""}</dd>
+      <dt>Por quê</dt><dd>${esc(it.avaliacao || "A fonte não detalha a justificativa deste item.")}</dd>
+      <dt>Evidências citadas</dt><dd>${ev.length ? `<ul>${ev.map(e => `<li>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.descricao)}</a>` : esc(e.descricao)}</li>`).join("")}</ul>` : "A fonte não cita documento específico para este item."}</dd>
+      <dt>Método da fonte</dt><dd>${esc(l.metodo || "")}</dd>
+    </dl>
+    <a href="${esc(it.url || l.url)}" target="_blank" rel="noopener">Ver a avaliação na fonte</a>
+  </article>`;
+  box.scrollIntoView({ block: "nearest" });
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-lev-item]"); if (!b) return; const [id, i] = b.dataset.levItem.split("|"); levDetail(id, +i); });
+document.addEventListener("input", e => { const f = e.target.closest("[data-lev-f]"); if (f) levFilter(f.closest(".lev")); });
+
 function trackerHTML(t) {
   const parts = Object.keys(ST).map(k => [k, t[k]]).filter(([, v]) => typeof v === "number");
   const outros = Object.entries(t.outros || {}).filter(([, v]) => typeof v === "number");
@@ -1138,7 +1237,7 @@ function renderHist() {
     <div class="row" style="justify-content:space-between;align-items:baseline"><h3>${esc(r.candidato)} · ${esc(r.eleicao)} · ${esc(r.partido)}</h3><span class="pill out">${esc(r.vinculo?.tipo || "")}</span></div>
     <p class="status" style="margin:0">${esc(r.vinculo?.explicacao || "")}</p>
     <p style="margin:0">${r.resultado === "eleito" ? `Eleito · governo ${esc(r.governo || "")}` : "Não eleito"}${r.plano_titulo ? ` · Plano: ${r.plano_url ? `<a href="${esc(r.plano_url)}" target="_blank" rel="noopener">${esc(r.plano_titulo)}</a>` : esc(r.plano_titulo)}` : ""}</p>
-    ${r.resultado === "eleito" ? ((r.rastreadores || []).length ? `<div class="hits"><div class="eyebrow">Levantamentos de promessas</div>${r.rastreadores.map(trackerHTML).join("")}</div>` : `<p class="empty">Nenhum levantamento independente de promessas encontrado para este governo.</p>`) : ""}
+    ${r.resultado === "eleito" ? ((r.rastreadores || []).length ? `<div class="hits"><div class="eyebrow">Levantamentos de promessas</div>${r.rastreadores.map(trackerHTML).join("")}</div>${levsFor(r)}` : `<p class="empty">Nenhum levantamento independente de promessas encontrado para este governo.</p>`) : ""}
     ${(r.exemplos || []).length ? `<div class="hits"><div class="eyebrow">Exemplos</div>${r.exemplos.map(x => `<div class="hit"><div><span class="pill out">${esc(SL[x.status] || x.status)}</span> ${esc(x.promessa)}</div><div class="src">${esc(x.explicacao || "")} <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.fonte)}</a></div></div>`).join("")}</div>` : ""}
   </article>`).join("") || `<p class="empty">Nenhum registro.</p>`;
   renderInd(regs);

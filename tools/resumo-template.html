@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234A47A3'/%3E%3Crect x='6' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3Crect x='18' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3C/svg%3E">
 <script>if (location.hostname.endsWith("github.io")) location.replace("__SITE_URL__" + location.pathname.split("/").pop() + location.hash);</script>
 <link rel="canonical" href="__SITE_URL__resumo.html">
-<script>try { const t = localStorage.getItem("lal-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<script>let lalT = null; try { lalT = localStorage.getItem("lal-theme"); } catch (e) {} if (lalT !== "auto") document.documentElement.dataset.theme = lalT === "dark" ? "dark" : "light";</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&family=Literata:opsz,wght@7..72,600&display=swap">
