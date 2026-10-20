@@ -86,7 +86,8 @@ header.top p.lede { margin: 0; max-width: 64ch; font-size: 17px; }
 
 /* Abas */
 nav.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
-nav.tabs .wrap { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+nav.tabs .wrap { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent); }
+@media (min-width: 761px) { nav.tabs .wrap { flex-wrap: wrap; overflow-x: visible; -webkit-mask-image: none; mask-image: none; column-gap: 4px; row-gap: 0; } }
 nav.tabs a { flex: none; text-decoration: none; color: var(--muted); font-weight: 700; padding: 12px 12px 10px; border-bottom: 3px solid transparent; }
 nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
 nav.tabs a:hover { color: var(--ink); }
@@ -617,6 +618,8 @@ function route() {
   if (!VIEWS.includes(h)) h = "comparar";
   for (const v of VIEWS) $("#v-" + v).hidden = v !== h;
   document.querySelectorAll("nav.tabs a").forEach(a => a.setAttribute("aria-current", a.dataset.view === h ? "page" : "false"));
+  const tab = document.querySelector(`nav.tabs a[data-view="${h}"]`), bar = tab?.parentElement;
+  if (bar && bar.scrollWidth > bar.clientWidth) bar.scrollLeft = tab.offsetLeft - (bar.clientWidth - tab.offsetWidth) / 2;
   if (theme && COMP) { const i = COMP.temas.findIndex(t => t.id === theme); if (i >= 0) showTheme(i, false); }
   if (h === "integra") ensureReader();
   if (typeof LAZY !== "undefined" && LAZY[h]) LAZY[h]().catch(() => {});
