@@ -1,0 +1,36 @@
+{
+ "ano": 2026,
+ "turno": "2º turno: domingo, 25/10/2026",
+ "atualizado_em": "2026-10-20",
+ "candidatos": [
+  {
+   "id": "lula",
+   "nome": "Lula",
+   "partido": "PT",
+   "numero": "13",
+   "plano": "Diretrizes para o Programa de Transformação do Brasil",
+   "arquivo": "data/plano-lula.json",
+   "pdf": "https://static.congressoemfoco.com.br/2026/08/08/attachment/2026/08/08/32ce89_programa_governo_lula_2026.pdf",
+   "registro": "registrado no TSE em 08/08/2026",
+   "apelidos": ["lula", "inacio", "petista", "pt"]
+  },
+  {
+   "id": "flavio",
+   "nome": "Flávio Bolsonaro",
+   "partido": "PL",
+   "numero": "22",
+   "plano": "Para o Brasil Vencer o Atraso",
+   "arquivo": "data/plano-flavio.json",
+   "pdf": "https://static.poder360.com.br/uploads/2026/08/FLAVIO-BOLSONARO-PARA-O-BRASIL-VENCER-O-ATRASO-1-1.pdf",
+   "registro": "divulgado em 13/08/2026",
+   "apelidos": ["flavio", "bolsonaro", "pl"]
+  }
+ ],
+ "exemplos_checagem": [
+  "Flávio propõe reduzir a maioridade penal para 14 anos",
+  "Lula propõe acabar com a escala 6x1",
+  "Flávio vai acabar com os programas sociais",
+  "Lula vai acabar com o arcabouço fiscal"
+ ],
+ "exemplo_espectro": "Lula quer privatizar a Petrobras"
+}

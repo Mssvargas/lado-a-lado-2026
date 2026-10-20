@@ -3,7 +3,7 @@
 // checagem e veículos jornalísticos.
 //
 // GET  /api/checar  -> { ok, ia, busca }  (diz o que está configurado; não gasta cota)
-// POST /api/checar  { frase, candidato: "ambos"|"lula"|"flavio" }
+// POST /api/checar  { frase, candidato: "ambos"|<id de data/eleicao.json> }
 // POST /api/checar  { modo: "espectro", frase }  -> categoria do Manifesto Project + o que o plano diz
 //
 // Etapas:
@@ -57,10 +57,13 @@ const DOMINIOS = () => fila('WEB_DOMINIOS', [
   'bbc.com', 'cnnbrasil.com.br', 'nexojornal.com.br', 'congressoemfoco.com.br'
 ]);
 
-const CAND = {
-  lula: { nome: 'Lula', partido: 'PT', numero: '13', plano: 'Diretrizes para o Programa de Transformação do Brasil' },
-  flavio: { nome: 'Flávio Bolsonaro', partido: 'PL', numero: '22', plano: 'Para o Brasil Vencer o Atraso' }
-};
+// Candidatos da eleição atual: data/eleicao.json (o mesmo arquivo que o site usa).
+const ELEICAO = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'eleicao.json'), 'utf8'));
+const CAND = Object.fromEntries(ELEICAO.candidatos.map((c) => [c.id, c]));
+const IDS = ELEICAO.candidatos.map((c) => c.id);
+const LISTA_IDS = IDS.join('|');
+const DESCRICAO = ELEICAO.candidatos.map((c) => c.nome + ' (' + c.partido + ', nº ' + c.numero + '), "' + c.plano + '"').join('; ');
+const LEGENDA_IDS = ELEICAO.candidatos.map((c) => c.id + ' = ' + c.nome + ', ' + c.partido).join('; ');
 const CLASSES = ['consta', 'consta_em_parte', 'nao_consta', 'contraria', 'nao_e_proposta'];
 
 // ---------- dados ----------
@@ -74,7 +77,7 @@ function dados() {
   const ler = (n) => JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', n), 'utf8'));
   const planos = {};
   for (const k of Object.keys(CAND)) {
-    planos[k] = ler('plano-' + k + '.json').pages.map((p) => {
+    planos[k] = JSON.parse(fs.readFileSync(path.join(process.cwd(), CAND[k].arquivo), 'utf8')).pages.map((p) => {
       const t = p.t.normalize('NFC');
       return { p: p.p, t, f: fold(t), l: loose(t), toc: (t.match(/\.{8,}/g) || []).length > 3 };
     });
@@ -97,9 +100,16 @@ function lembrar(chave, v) {
   RESPOSTAS.set(chave, { t: Date.now(), v });
 }
 
-const STOP = new Set(('a o os as um uma uns umas de do da dos das em no na nos nas por para pra com sem que e ou se ao aos à às é ser foi vai vão vou ir sobre como mais menos muito ' +
-  'candidato candidata presidente governo plano proposta propoe propõe propor prometeu promete disse diz dizer quer fazer faz lula flavio flávio bolsonaro inacio inácio silva ' +
+const STOP = new Set((ELEICAO.candidatos.flatMap((c) => [c.nome].concat(c.apelidos || [])).join(' ') + ' ' + 'a o os as um uma uns umas de do da dos das em no na nos nas por para pra com sem que e ou se ao aos à às é ser foi vai vão vou ir sobre como mais menos muito ' +
+  'candidato candidata presidente governo plano proposta propoe propõe propor prometeu promete disse diz dizer quer fazer faz silva ' +
   'seu sua seus suas ele ela eles isso esse essa este esta ja já nao não sim tambem também todo toda todos todas ter tem acabar anos verdade mentira falso').split(' ').map(fold));
+
+function quemNaFrase(f) {
+  for (const c of ELEICAO.candidatos) {
+    if ((c.apelidos || [c.nome]).some((a) => new RegExp('\\b' + fold(a).replace(/[^a-z0-9 ]/g, '') + '\\b').test(f))) return c.id;
+  }
+  return null;
+}
 
 function termos(q) {
   const out = [];
@@ -177,7 +187,7 @@ async function chamarOpenAI(prov, prompt, modelo, maxTokens, timeoutMs) {
   const pedido = { model: modelo, messages: [{ role: 'user', content: prompt }], temperature: 0.1 };
   if (prov === 'groq') pedido.max_completion_tokens = maxTokens; else pedido.max_tokens = maxTokens;
   const headers = { 'content-type': 'application/json', authorization: 'Bearer ' + process.env[cfg.env] };
-  if (prov === 'openrouter') headers['X-Title'] = 'Lado a Lado 2026';
+  if (prov === 'openrouter') headers['X-Title'] = 'Lado a Lado ' + ELEICAO.ano;
   const r = await comTempo(cfg.url, { method: 'POST', headers, body: JSON.stringify(pedido) }, timeoutMs);
   if (!r.http || (r.data && r.data.error)) return { ok: false, status: r.http ? 502 : r.status, msg: mensagemErro(r) };
   const esc = r.data.choices && r.data.choices[0];
@@ -266,9 +276,9 @@ function dentroDoLimite(ip) {
 // ---------- prompts ----------
 
 function promptTermos(frase) {
-  return 'Você prepara buscas para verificar uma frase sobre a eleição presidencial brasileira de 2026 (Lula, PT, x Flávio Bolsonaro, PL).\n' +
+  return 'Você prepara buscas para verificar uma frase sobre a eleição presidencial brasileira de ' + ELEICAO.ano + ' (' + LEGENDA_IDS + ').\n' +
     'Frase: """' + frase + '"""\n' +
-    'Responda só com JSON: {"sobre":"lula|flavio|ambos|indefinido","consultas_plano":["3 a 5 consultas curtas de 1 a 3 palavras, com sinônimos que um plano de governo usaria"],"consulta_web":"uma consulta curta para achar checagens e reportagens sobre a frase"}';
+    'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|ambos|indefinido","consultas_plano":["3 a 5 consultas curtas de 1 a 3 palavras, com sinônimos que um plano de governo usaria"],"consulta_web":"uma consulta curta para achar checagens e reportagens sobre a frase"}';
 }
 
 function promptResposta(frase, cand, trechos, fcs, web) {
@@ -278,9 +288,8 @@ function promptResposta(frase, cand, trechos, fcs, web) {
   }
   const fcTxt = fcs.map((x) => '[CHECAGEM ' + x.i + '] ' + CAND[x.c.candidato].nome + ' | ' + x.c.alegacao + ' | veredito: ' + x.c.veredito + ' | ' + x.c.fonte + ', ' + x.c.data + ' | ' + x.c.explicacao).join('\n');
   const webTxt = web.map((x, i) => '[WEB ' + i + '] ' + x.fonte + ' | ' + x.titulo + '\n' + x.trecho).join('\n\n');
-  const who = cand === 'ambos' ? 'Descubra pelo texto de quem a frase fala; se não der, considere os dois.' : 'A frase é sobre ' + CAND[cand].nome + '.';
-  return 'Você é um verificador apartidário. Diga se a frase abaixo confere com os planos de governo oficiais dos candidatos à Presidência do Brasil em 2026: ' +
-    'Lula (PT, nº 13), "' + CAND.lula.plano + '", e Flávio Bolsonaro (PL, nº 22), "' + CAND.flavio.plano + '".\n\n' +
+  const who = cand === 'ambos' ? 'Descubra pelo texto de quem a frase fala; se não der, considere todos.' : 'A frase é sobre ' + CAND[cand].nome + '.';
+  return 'Você é um verificador apartidário. Diga se a frase abaixo confere com os planos de governo oficiais dos candidatos à Presidência do Brasil em ' + ELEICAO.ano + ': ' + DESCRICAO + '.\n\n' +
     'Regras:\n' +
     '- Use SOMENTE o material abaixo. Não use memória, opinião ou fatos de fora.\n' +
     '- Trate os dois candidatos exatamente da mesma forma. Não avalie mérito, viabilidade, constitucionalidade nem intenção.\n' +
@@ -294,7 +303,7 @@ function promptResposta(frase, cand, trechos, fcs, web) {
     '=== CHECAGENS PUBLICADAS ===\n' + (fcTxt || '(nenhuma)') + '\n\n' +
     '=== BUSCA NA WEB (agências de checagem e imprensa) ===\n' + (webTxt || '(sem resultados)') + '\n\n' +
     'Responda só com JSON:\n' +
-    '{"sobre":"lula|flavio|ambos|indefinido","classificacao":"...","explicacao":"2 a 4 frases","evidencias":[{"candidato":"lula|flavio","pagina":0,"trecho":"..."}],"imprensa":[{"indice":0,"resumo":"..."}],"checagens":[0],"limites":"1 frase sobre o que não dá para saber só por este material"}';
+    '{"sobre":"' + LISTA_IDS + '|ambos|indefinido","classificacao":"...","explicacao":"2 a 4 frases","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}],"imprensa":[{"indice":0,"resumo":"..."}],"checagens":[0],"limites":"1 frase sobre o que não dá para saber só por este material"}';
 }
 
 function promptEspectro(frase, trechos) {
@@ -304,26 +313,26 @@ function promptEspectro(frase, trechos) {
   return 'Você classifica frases políticas pelo codebook do Manifesto Project (MARPOR), de forma apartidária.\n' +
     'Regras:\n' +
     '- Escolha UMA categoria da lista, pelo que a MEDIDA faz, não pela justificativa dada. Ex.: "acabar com o programa X" é a categoria de limitação, não a de expansão.\n' +
-    '- Diga de quem a frase fala (lula = Lula, PT; flavio = Flávio Bolsonaro, PL; indefinido).\n' +
+    '- Diga de quem a frase fala (' + LEGENDA_IDS + '; ou indefinido).\n' +
     '- Compare com os trechos do PLANO do candidato: consta | consta_em_parte | nao_consta | contraria. "nao_consta" não prova que a frase é falsa.\n' +
     '- "evidencias": cópia LITERAL de um bloco [PLANO], até 40 palavras, com a página certa.\n' +
     '- Português simples, sem adjetivos valorativos.\n\n' +
     'Frase: """' + frase + '"""\n\n=== CATEGORIAS ===\n' + cats + '\n\n=== TRECHOS DOS PLANOS ===\n' + (blocos.join('\n\n') || '(nenhum)') + '\n\n' +
-    'Responda só com JSON: {"sobre":"lula|flavio|indefinido","categoria":"perXXX","justificativa":"1 a 2 frases","plano":"consta|consta_em_parte|nao_consta|contraria","explicacao_plano":"1 a 2 frases","evidencias":[{"candidato":"lula|flavio","pagina":0,"trecho":"..."}]}';
+    'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|indefinido","categoria":"perXXX","justificativa":"1 a 2 frases","plano":"consta|consta_em_parte|nao_consta|contraria","explicacao_plano":"1 a 2 frases","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}]}';
 }
 
 // ---------- validação ----------
 
 function validar(r, trechos, fcs, web) {
   const out = {
-    sobre: ['lula', 'flavio', 'ambos', 'indefinido'].includes(r.sobre) ? r.sobre : 'indefinido',
+    sobre: IDS.concat(['ambos', 'indefinido']).includes(r.sobre) ? r.sobre : 'indefinido',
     classificacao: CLASSES.includes(r.classificacao) ? r.classificacao : 'nao_consta',
     explicacao: String(r.explicacao || '').slice(0, 1200),
     limites: String(r.limites || '').slice(0, 400),
     evidencias: [], imprensa: [], checagens: [], descartadas: 0
   };
   for (const e of Array.isArray(r.evidencias) ? r.evidencias.slice(0, 6) : []) {
-    const k = e && (e.candidato === 'lula' || e.candidato === 'flavio') ? e.candidato : null;
+    const k = e && IDS.includes(e.candidato) ? e.candidato : null;
     const p = k && dados().planos[k].find((x) => x.p === Number(e.pagina));
     const segs = String((e && e.trecho) || '').split(/\.\.\.|…/).map(loose).filter((s) => s.length > 10);
     if (p && segs.length && segs.every((s) => p.l.includes(s))) out.evidencias.push({ candidato: k, pagina: p.p, trecho: String(e.trecho).slice(0, 400) });
@@ -358,7 +367,7 @@ module.exports = async (req, res) => {
   let corpo = req.body;
   if (typeof corpo === 'string') { try { corpo = JSON.parse(corpo); } catch (e) { corpo = {}; } }
   const frase = String((corpo && corpo.frase) || '').replace(/\s+/g, ' ').trim();
-  const cand = ['lula', 'flavio'].includes(corpo && corpo.candidato) ? corpo.candidato : 'ambos';
+  const cand = IDS.includes(corpo && corpo.candidato) ? corpo.candidato : 'ambos';
   if (frase.length < 8 || frase.length > 400) return envia(400, { erro: 'Escreva uma frase entre 8 e 400 caracteres.' });
 
   const modo = corpo && corpo.modo === 'espectro' ? 'espectro' : 'checar';
@@ -374,8 +383,8 @@ module.exports = async (req, res) => {
 
   if (modo === 'espectro') {
     const f = ' ' + fold(frase) + ' ';
-    const quem = /\b(lula|inacio|pt)\b/.test(f) ? 'lula' : /\b(flavio|bolsonaro|pl)\b/.test(f) ? 'flavio' : null;
-    const ks = quem ? [quem] : ['lula', 'flavio'];
+    const quem = quemNaFrase(f);
+    const ks = quem ? [quem] : IDS;
     const trechos = {};
     for (const k of ks) trechos[k] = paginasRelevantes(k, [frase], quem ? 4 : 2);
     const r = await perguntar(promptEspectro(frase, trechos), 900, prazo, trilha);
@@ -388,7 +397,7 @@ module.exports = async (req, res) => {
     if (!cat) return envia(502, { erro: 'A IA não devolveu uma categoria válida. Tente reescrever a frase.' });
     const v = validar({ evidencias: j.evidencias }, trechos, [], []);
     const out = {
-      modo, sobre: ['lula', 'flavio'].includes(j.sobre) ? j.sobre : (quem || 'indefinido'),
+      modo, sobre: IDS.includes(j.sobre) ? j.sobre : (quem || 'indefinido'),
       categoria: cat.codigo, justificativa: String(j.justificativa || '').slice(0, 600),
       plano: ['consta', 'consta_em_parte', 'nao_consta', 'contraria'].includes(j.plano) ? j.plano : 'nao_consta',
       explicacao_plano: String(j.explicacao_plano || '').slice(0, 600),
@@ -405,14 +414,14 @@ module.exports = async (req, res) => {
     const cp = Array.isArray(t.json.consultas_plano) ? t.json.consultas_plano.map(String).slice(0, 5) : [];
     consultas = [frase].concat(cp);
     if (t.json.consulta_web) consultaWeb = String(t.json.consulta_web);
-    if (cand === 'ambos' && ['lula', 'flavio'].includes(t.json.sobre)) sobre = t.json.sobre;
+    if (cand === 'ambos' && IDS.includes(t.json.sobre)) sobre = t.json.sobre;
   }
 
   // 2 e 3. planos, checagens e web (a web corre em paralelo)
-  const webP = pesquisarWeb(consultaWeb + ' eleição 2026', 12000);
-  const ks = sobre === 'ambos' ? ['lula', 'flavio'] : [sobre];
+  const webP = pesquisarWeb(consultaWeb + ' eleição ' + ELEICAO.ano, 12000);
+  const ks = sobre === 'ambos' ? IDS : [sobre];
   const trechos = {};
-  for (const k of ks) trechos[k] = paginasRelevantes(k, consultas, ks.length === 1 ? 5 : 3);
+  for (const k of ks) trechos[k] = paginasRelevantes(k, consultas, ks.length === 1 ? 5 : ks.length === 2 ? 3 : 2);
   const fcs = checagensRelevantes(consultas, cand);
   const web = (await webP).resultados || [];
 

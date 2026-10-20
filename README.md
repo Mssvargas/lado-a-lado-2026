@@ -41,7 +41,9 @@ linguagem simples, com o trecho literal e a página do PDF.
 | `data/ideologias.json` | Enciclopédia de ideologias, dimensões, relações e países. |
 | `data/historico.json` | Planos anteriores, levantamentos de promessas e indicadores oficiais. |
 | `data/eleicoes.json` | Eleições presidenciais desde 1891. |
+| `data/eleicao.json` | Eleição atual: ano, candidatos, exemplos. Único lugar com nomes de candidatos. |
 | `tools/add_plano.py` | Converte o PDF de um plano e o registra no site. |
+| `tools/verificar.py` | Confere trechos, páginas e equilíbrio antes de publicar. |
 | `api/checar.js` | Função de servidor (Vercel) da análise automática. |
 | `og.png` | Prévia do link (WhatsApp e redes), gerada por `tools/og.py`. |
 
@@ -51,23 +53,17 @@ Para mudar conteúdo, edite `data/*.json` ou `tools/template.html` e rode:
 python tools/build.py
 ```
 
-## Adicionar um candidato ou um plano
+## Nova eleição
 
-1. Baixe o PDF do plano (o TSE publica os planos de cada eleição desde 2010).
-2. Rode:
+O passo a passo completo, com os prompts usados para gerar o conteúdo com as mesmas
+regras de neutralidade, está em [NOVA_ELEICAO.md](NOVA_ELEICAO.md). Em resumo:
 
-   ```bash
-   python tools/add_plano.py plano.pdf --id nome-2030 --candidato "Nome" \
-       --partido SIGLA --ano 2030 --titulo "Título do plano" --pdf-url https://...
-   ```
-
-   O plano entra na aba "Planos na íntegra" e na busca.
-3. Para a eleição aparecer no arquivo, acrescente o ano e os candidatos em
-   `data/eleicoes.json`.
-4. Para o comparativo tema a tema e a classificação esquerda–direita, acrescente os
-   itens em `data/comparativo.json` e `data/espectro.json`, seguindo as mesmas regras
-   (trecho literal, página, mesmo tratamento para todos).
-5. Rode `python tools/build.py` e publique.
+1. `python tools/add_plano.py` para cada plano novo.
+2. Edite `data/eleicao.json` com o ano e os candidatos. O código não tem nome de
+   candidato fixo.
+3. Gere `comparativo.json`, `espectro.json` e `checagens.json` com os prompts do guia.
+4. Rode `python tools/verificar.py`, `python tools/build.py` e `python tools/og.py`, e
+   publique.
 
 ## Hospedagem
 
