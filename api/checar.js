@@ -5,6 +5,8 @@
 // GET  /api/checar  -> { ok, ia, busca }  (diz o que está configurado; não gasta cota)
 // POST /api/checar  { frase, candidato: "ambos"|<id de data/eleicao.json> }
 // POST /api/checar  { modo: "espectro", frase }  -> categoria do Manifesto Project + o que o plano diz
+// POST /api/checar  { modo: "imagem", imagem: "data:image/...;base64,..." }  -> texto e afirmações do print
+// POST /api/checar  { modo: "audio", audio: "<base64>", mime }  -> transcrição da pergunta (Whisper no Groq)
 //
 // Etapas:
 //   1. termos de busca (IA rápida; sem IA, usa as palavras da frase)
@@ -24,7 +26,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-20a';
+const VERSAO = '2026-10-20b';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -248,6 +250,83 @@ async function perguntar(prompt, maxTokens, prazo, trilha) {
   return null;
 }
 
+// ---------- imagem (print) e áudio ----------
+
+const ORDEM_VISAO = ['groq', 'openrouter', 'gemini'];
+const MODELOS_VISAO = {
+  groq: () => fila('GROQ_MODEL_VISAO', ['meta-llama/llama-4-scout-17b-16e-instruct', 'qwen/qwen3.6-27b']),
+  openrouter: () => fila('OPENROUTER_MODEL_VISAO', ['openrouter/free', 'google/gemma-3-27b-it:free']),
+  gemini: () => MODELOS.gemini()
+};
+
+function promptImagem() {
+  return 'A imagem é um print enviado por um eleitor (post de rede social, notícia, mensagem ou vídeo). ' +
+    'Ele quer saber se o que o print diz sobre os candidatos à Presidência do Brasil em ' + ELEICAO.ano + ' (' + LEGENDA_IDS + ') ' +
+    'confere com os planos de governo.\n' +
+    '1. Em "texto", transcreva literalmente o texto principal da imagem (até 800 caracteres).\n' +
+    '2. Em "afirmacoes", liste até 3 afirmações verificáveis sobre os candidatos ou suas propostas, cada uma como frase curta, ' +
+    'fiel ao que a imagem diz, citando o nome do candidato. Não julgue, não corrija e não acrescente nada. ' +
+    'Se não houver afirmação desse tipo, devolva a lista vazia.\n' +
+    'Responda só com JSON: {"texto":"...","afirmacoes":["..."]}';
+}
+
+async function lerImagem(dataUrl, prazo, trilha) {
+  const [, mime, b64] = /^data:(image\/[a-z]+);base64,(.*)$/.exec(dataUrl) || [];
+  for (const prov of ORDEM_VISAO) {
+    if (!process.env[CHAVE[prov]]) continue;
+    for (const modelo of MODELOS_VISAO[prov]()) {
+      const sobra = prazo - Date.now();
+      if (sobra < 4000) return null;
+      let r;
+      if (prov === 'gemini') {
+        const g = await comTempo('https://generativelanguage.googleapis.com/v1beta/models/' + modelo + ':generateContent', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY },
+          body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: promptImagem() }, { inline_data: { mime_type: mime, data: b64 } }] }], generationConfig: { temperature: 0.1, maxOutputTokens: 4096 } })
+        }, Math.min(25000, sobra - 1000));
+        const c = g.data && g.data.candidates && g.data.candidates[0];
+        const texto = c && c.content && c.content.parts ? c.content.parts.map((p) => p.text || '').join('') : '';
+        r = g.http && texto ? { ok: true, texto } : { ok: false, msg: mensagemErro(g) };
+      } else {
+        const cfg = OPENAI_COMPAT[prov];
+        const pedido = {
+          model: modelo, temperature: 0.1,
+          messages: [{ role: 'user', content: [{ type: 'text', text: promptImagem() }, { type: 'image_url', image_url: { url: dataUrl } }] }]
+        };
+        if (prov === 'groq') pedido.max_completion_tokens = 1200; else pedido.max_tokens = 1200;
+        const o = await comTempo(cfg.url, { method: 'POST', headers: { 'content-type': 'application/json', authorization: 'Bearer ' + process.env[cfg.env] }, body: JSON.stringify(pedido) }, Math.min(25000, sobra - 1000));
+        const esc = o.data && o.data.choices && o.data.choices[0];
+        const texto = limparPensamento(esc && esc.message && esc.message.content);
+        r = o.http && !(o.data && o.data.error) && texto ? { ok: true, texto } : { ok: false, msg: mensagemErro(o) };
+      }
+      if (!r.ok) { trilha.push(prov + ':' + modelo + ': ' + String(r.msg).slice(0, 120)); continue; }
+      const json = extrairJSON(r.texto);
+      if (json) return { json, modelo: prov + ':' + modelo };
+      trilha.push(prov + ':' + modelo + ': JSON invalido');
+    }
+  }
+  return null;
+}
+
+async function transcrever(b64, mime, trilha) {
+  const ext = { 'audio/webm': 'webm', 'audio/ogg': 'ogg', 'audio/mp4': 'm4a', 'audio/x-m4a': 'm4a', 'audio/aac': 'm4a', 'audio/mpeg': 'mp3', 'audio/wav': 'wav' }[mime] || 'webm';
+  for (const modelo of fila('GROQ_MODEL_AUDIO', ['whisper-large-v3-turbo', 'whisper-large-v3'])) {
+    const form = new FormData();
+    form.append('file', new Blob([Buffer.from(b64, 'base64')], { type: mime }), 'pergunta.' + ext);
+    form.append('model', modelo);
+    form.append('language', 'pt');
+    form.append('response_format', 'json');
+    form.append('temperature', '0');
+    const r = await comTempo('https://api.groq.com/openai/v1/audio/transcriptions', {
+      method: 'POST', headers: { authorization: 'Bearer ' + process.env.GROQ_API_KEY }, body: form
+    }, 30000);
+    const texto = r.http && r.data && typeof r.data.text === 'string' ? r.data.text.trim() : '';
+    if (texto) return texto;
+    trilha.push('groq:' + modelo + ': ' + String(mensagemErro(r)).slice(0, 120));
+  }
+  return null;
+}
+
 function extrairJSON(t) {
   const s = String(t || '').replace(/^```(?:json)?\s*|\s*```$/g, '');
   try { return JSON.parse(s); } catch (e) { /* tenta o trecho entre chaves */ }
@@ -381,12 +460,50 @@ module.exports = async (req, res) => {
     res.end(JSON.stringify(obj));
   };
 
-  if (req.method === 'GET') return envia(200, { ok: true, versao: VERSAO, ia: configurados().length > 0, busca: !!process.env.TAVILY_API_KEY });
+  if (req.method === 'GET') {
+    return envia(200, {
+      ok: true, versao: VERSAO, ia: configurados().length > 0, busca: !!process.env.TAVILY_API_KEY,
+      imagem: ORDEM_VISAO.some((p) => !!process.env[CHAVE[p]]), audio: !!process.env.GROQ_API_KEY
+    });
+  }
   if (req.method !== 'POST') return envia(405, { erro: 'Use POST.' });
   if (!configurados().length) return envia(503, { erro: 'A análise automática não está configurada neste site.' });
 
   let corpo = req.body;
   if (typeof corpo === 'string') { try { corpo = JSON.parse(corpo); } catch (e) { corpo = {}; } }
+
+  // Print (imagem) e voz (áudio): só transformam em texto. A checagem vem depois,
+  // com o texto que a pessoa conferiu.
+  if (corpo && (corpo.modo === 'imagem' || corpo.modo === 'audio')) {
+    const ipM = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
+    if (!dentroDoLimite(ipM)) return envia(429, { erro: 'Muitas consultas seguidas. Tente de novo em alguns minutos.' });
+    const trilhaM = [];
+    if (corpo.modo === 'imagem') {
+      const url = String(corpo.imagem || '');
+      if (!/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(url) || url.length > 4500000) {
+        return envia(400, { erro: 'Envie uma imagem JPG, PNG ou WEBP de até 3 MB.' });
+      }
+      const r = await lerImagem(url, Date.now() + 50000, trilhaM);
+      if (!r) {
+        console.log('[imagem] sem resposta: ' + trilhaM.join(' ; '));
+        return envia(503, { erro: 'Não foi possível ler a imagem agora. Tente de novo ou digite a frase.' });
+      }
+      const afirmacoes = (Array.isArray(r.json.afirmacoes) ? r.json.afirmacoes : []).map((x) => String(x).replace(/\s+/g, ' ').trim().slice(0, 400)).filter((x) => x.length >= 8).slice(0, 3);
+      return envia(200, { modo: 'imagem', texto: String(r.json.texto || '').slice(0, 1500), afirmacoes, modelo: r.modelo });
+    }
+    const b64 = String(corpo.audio || '');
+    const mime = String(corpo.mime || 'audio/webm').split(';')[0];
+    if (!/^[A-Za-z0-9+/=]+$/.test(b64) || b64.length > 3500000 || !/^audio\/(webm|ogg|mp4|mpeg|wav|x-m4a|aac)$/.test(mime)) {
+      return envia(400, { erro: 'Envie um áudio de até 1 minuto.' });
+    }
+    if (!process.env.GROQ_API_KEY) return envia(503, { erro: 'A transcrição de voz não está configurada neste site.' });
+    const t = await transcrever(b64, mime, trilhaM);
+    if (!t) {
+      console.log('[audio] sem resposta: ' + trilhaM.join(' ; '));
+      return envia(503, { erro: 'Não foi possível entender o áudio agora. Tente de novo ou digite a frase.' });
+    }
+    return envia(200, { modo: 'audio', texto: t.slice(0, 600) });
+  }
   const frase = String((corpo && corpo.frase) || '').replace(/\s+/g, ' ').trim();
   const cand = IDS.includes(corpo && corpo.candidato) ? corpo.candidato : 'ambos';
   if (frase.length < 8 || frase.length > 400) return envia(400, { erro: 'Escreva uma frase entre 8 e 400 caracteres.' });

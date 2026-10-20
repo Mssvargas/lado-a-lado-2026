@@ -220,6 +220,19 @@ li.prop .src { font-size: 13px; color: var(--muted); margin-top: 2px; }
 @media (prefers-reduced-motion: reduce) { .chev { transition: none; } }
 .tip { position: fixed; z-index: 30; max-width: min(300px, calc(100vw - 16px)); background: var(--ink); color: var(--surface); padding: 6px 10px; border-radius: 6px; font-size: 13px; line-height: 1.35; pointer-events: none; box-shadow: 0 4px 14px rgb(0 0 0 / .2); }
 [data-tip] { cursor: help; }
+/* Print e voz */
+.media { display: grid; gap: 8px; }
+.mediabar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.btn.sm { padding: 6px 12px; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+.btn.sm svg { width: 16px; height: 16px; flex: none; }
+.btn.rec { background: var(--contra); border-color: var(--contra); color: var(--surface); }
+.rec-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+@media (prefers-reduced-motion: no-preference) { .btn.rec .rec-dot { animation: pulse 1s infinite; } }
+@keyframes pulse { 50% { opacity: .3; } }
+.media-preview { display: flex; gap: 10px; align-items: center; }
+.media-preview img { max-height: 96px; max-width: 160px; border-radius: 6px; border: 1px solid var(--line); object-fit: contain; background: var(--bg); }
+.media-note { font-size: 12px; color: var(--muted); margin: 0; }
+form.dragging { outline: 2px dashed var(--accent); outline-offset: 4px; }
 footer.site { border-top: 1px solid var(--line); background: var(--surface); }
 footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
 .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--surface); padding: 8px 16px; border-radius: 8px; font-weight: 700; z-index: 20; }
@@ -292,6 +305,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <label for="fala">A frase ou alegação</label>
           <textarea id="fala" placeholder="Ex.: Flávio propõe reduzir a maioridade penal para 14 anos"></textarea>
         </div>
+        <div class="media" data-media-for="fala" hidden></div>
         <div class="row">
           <div class="field grow">
             <label for="falaCand">Sobre quem?</label>
@@ -350,6 +364,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
         <h3>Verificar uma proposta</h3>
         <div class="field"><label for="espSel">Escolha uma proposta dos planos</label><select id="espSel"><option value="">Carregando…</option></select></div>
         <div class="field"><label for="espTxt">Ou escreva uma frase</label><input type="search" id="espTxt" placeholder="Ex.: Lula quer privatizar a Petrobras"></div>
+        <div class="media" data-media-for="espTxt" hidden></div>
         <div class="row"><button type="submit" class="btn">Verificar</button></div>
       </form>
       <div class="panel" id="espOut" hidden aria-live="polite"></div>
@@ -455,6 +470,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <li><b>O selo de detalhamento</b> indica se o plano diz como, quanto ou quando ("Diz como"), se diz só em parte ("Em parte") ou se registra só a intenção ("Só intenção").</li>
           <li><b>Checagens.</b> Vêm só de agências de verificação reconhecidas (Agência Lupa, Aos Fatos, Estadão Verifica, Projeto Comprova). O número de itens é o mesmo para cada candidato: 7 falas e 5 alegações para cada um. A seleção prioriza propostas e dados, não ataques pessoais, e inclui vereditos de todo tipo. É uma amostra: o link de cada item leva à apuração completa, que traz outras frases checadas.</li>
           <li><b>Análise automática.</b> Uma IA de uso gratuito recebe três coisas: os trechos dos planos encontrados pela busca, as checagens desta página e o resultado de uma busca feita na hora. Essa busca é restrita a agências de checagem (Lupa, Aos Fatos, Comprova, AFP, Estadão Verifica), à imprensa de grande circulação e ao TSE. Antes de responder, o servidor descarta citação que não exista literalmente no plano e link que não tenha vindo da busca. Mesmo assim a IA pode errar, então confira sempre o trecho e a página.</li>
+          <li><b>Print e voz.</b> Na consulta, dá para enviar um print ou gravar a pergunta. A imagem é lida por uma IA com visão, que só transcreve as afirmações do print sem julgar. O áudio é transcrito pelo Whisper. Nos dois casos, o texto vai para o campo de busca para a pessoa conferir antes da checagem. Imagem e áudio não ficam guardados neste site.</li>
           <li><b>Esquerda ou direita.</b> As 261 propostas foram classificadas pelas categorias do Manifesto Project (MARPOR) e pelo índice RILE, o método acadêmico usado para programas de partidos em mais de 50 países. A referência de cada partido vem do próprio estatuto ou programa e de escalas de especialistas (Bolognesi, Ribeiro e Codato; V-Dem). A verificação de frases livres usa palavras-chave e é uma aproximação.</li>
           <li><b>Ideologias.</b> Verbetes apoiados em fontes de referência (Stanford Encyclopedia of Philosophy, Britannica, CPDOC/FGV). Todos têm o mesmo formato, críticas de mais de um lado e exemplos de países com o critério usado (constituição, partido governante, filiação a internacional partidária). As posições nas dimensões são aproximações didáticas.</li>
           <li><b>Promessas anteriores.</b> Os números de promessas cumpridas são os publicados por cada levantamento jornalístico, sem recálculo. Como cada veículo usa sua própria lista e critério, os números não são comparáveis entre fontes nem entre governos. Os indicadores (PIB, IPCA, desocupação) são do IBGE e iguais para todos os governos, mas não medem cumprimento de promessas.</li>
@@ -734,6 +750,7 @@ function initCheck() {
       const r = await fetch("api/checar", { headers: { accept: "application/json" } });
       const j = r.ok ? await r.json() : null;
       if (j?.ok && j.ia) { aiOn = true; $("#aiPanel").hidden = false; }
+      if (j?.ok) initMedia({ imagem: !!j.imagem, audio: !!j.audio });
     } catch { /* site sem servidor: a análise fica escondida */ }
   })();
 }
@@ -1173,6 +1190,144 @@ function toast(msg) {
   const t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); t.textContent = msg;
   document.body.append(t); setTimeout(() => t.remove(), 2600);
 }
+/* ---------- Print e voz nas consultas ---------- */
+const ICON_IMG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>`;
+const ICON_MIC = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v5"/></svg>`;
+// O que fazer com o texto lido do print ou transcrito do áudio, em cada consulta.
+const MEDIA_AFTER = {
+  fala: t => runCheck(t, $("#falaCand").value),
+  espTxt: () => { $("#espSel").value = ""; verifyEspectro(); }
+};
+const MEDIA_SEND = {};
+function shrinkImage(f) {
+  return new Promise((res, rej) => {
+    const u = URL.createObjectURL(f), img = new Image();
+    img.onload = () => {
+      const s = Math.min(1, 1600 / Math.max(img.naturalWidth, img.naturalHeight));
+      const c = document.createElement("canvas");
+      c.width = Math.round(img.naturalWidth * s); c.height = Math.round(img.naturalHeight * s);
+      c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(u);
+      res(c.toDataURL("image/jpeg", 0.85));
+    };
+    img.onerror = () => { URL.revokeObjectURL(u); rej(new Error("imagem")); };
+    img.src = u;
+  });
+}
+function blobToBase64(b) {
+  return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(",")[1] || ""); r.onerror = rej; r.readAsDataURL(b); });
+}
+async function postMedia(body) {
+  const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  return { ok: r.ok, j };
+}
+function initMedia(cap) {
+  if (!cap.imagem && !cap.audio) return;
+  const canRec = cap.audio && !!navigator.mediaDevices?.getUserMedia && typeof MediaRecorder !== "undefined";
+  document.querySelectorAll("[data-media-for]").forEach(box => {
+    const id = box.dataset.mediaFor, field = document.getElementById(id), form = field.closest("form");
+    box.hidden = false;
+    box.innerHTML = `<div class="mediabar">
+        ${cap.imagem ? `<button type="button" class="btn ghost sm" data-act="img">${ICON_IMG} Enviar print</button><input type="file" accept="image/*" hidden>` : ""}
+        ${canRec ? `<button type="button" class="btn ghost sm" data-act="mic">${ICON_MIC} <span>Gravar pergunta</span></button>` : ""}
+        <span class="status" role="status" aria-live="polite"></span></div>
+      <div class="media-preview" hidden><img alt="Print enviado"><button type="button" class="linkbtn" data-act="clear">remover imagem</button></div>
+      <div class="chips" data-opts hidden></div>
+      <p class="media-note">${cap.imagem ? "Você pode colar um print (Ctrl+V), arrastar a imagem para cá ou tocar em Enviar print. " : ""}O print ou o áudio vai para um serviço de IA só para virar texto; nada fica guardado neste site.</p>`;
+    const st = box.querySelector(".status"), file = box.querySelector('input[type="file"]');
+    const prev = box.querySelector(".media-preview"), opts = box.querySelector("[data-opts]");
+    const use = text => { field.value = text; MEDIA_AFTER[id]?.(text); };
+
+    async function sendImage(f) {
+      if (!f || !f.type.startsWith("image/")) { st.textContent = "Escolha um arquivo de imagem."; return; }
+      st.textContent = "Lendo o print… (alguns segundos)"; opts.hidden = true;
+      try {
+        const url = await shrinkImage(f);
+        prev.hidden = false; prev.querySelector("img").src = url;
+        const { ok, j } = await postMedia({ modo: "imagem", imagem: url });
+        if (!ok) { st.textContent = j.erro || "Não foi possível ler a imagem."; return; }
+        const af = j.afirmacoes || [];
+        if (!af.length) {
+          field.value = (j.texto || "").slice(0, 400);
+          st.textContent = "Não achei no print uma afirmação sobre os candidatos. O texto lido está no campo para você ajustar.";
+          return;
+        }
+        st.textContent = af.length > 1 ? "Achei mais de uma afirmação no print. Usei a primeira; toque em outra para trocar." : "Afirmação lida do print. Confira e ajuste se precisar.";
+        if (af.length > 1) {
+          opts.hidden = false;
+          opts.innerHTML = af.map((a, i) => `<button type="button" class="chip" data-i="${i}" aria-pressed="${i === 0}">${esc(a)}</button>`).join("");
+          opts.onclick = e => {
+            const b = e.target.closest(".chip"); if (!b) return;
+            opts.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === b)));
+            use(af[+b.dataset.i]);
+          };
+        }
+        use(af[0]);
+      } catch { st.textContent = "Não foi possível processar a imagem. Tente outro arquivo."; }
+    }
+    MEDIA_SEND[id] = cap.imagem ? sendImage : null;
+    box.querySelector('[data-act="img"]')?.addEventListener("click", () => file.click());
+    file?.addEventListener("change", () => { sendImage(file.files[0]); file.value = ""; });
+    box.querySelector('[data-act="clear"]').addEventListener("click", () => { prev.hidden = true; opts.hidden = true; st.textContent = ""; });
+    if (cap.imagem) {
+      form.addEventListener("dragover", e => { if ([...(e.dataTransfer?.items || [])].some(i => i.kind === "file")) { e.preventDefault(); form.classList.add("dragging"); } });
+      form.addEventListener("dragleave", () => form.classList.remove("dragging"));
+      form.addEventListener("drop", e => {
+        form.classList.remove("dragging");
+        const f = [...(e.dataTransfer?.files || [])].find(x => x.type.startsWith("image/"));
+        if (f) { e.preventDefault(); sendImage(f); }
+      });
+    }
+
+    const mic = box.querySelector('[data-act="mic"]');
+    if (!mic) return;
+    const label = mic.querySelector("span");
+    let rec = null, stream = null, chunks = [], t0 = 0, timer = null;
+    mic.addEventListener("click", async () => {
+      if (rec && rec.state === "recording") { rec.stop(); return; }
+      try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+      catch { st.textContent = "Permita o uso do microfone para gravar a pergunta."; return; }
+      const mime = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"].find(m => MediaRecorder.isTypeSupported?.(m));
+      rec = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+      chunks = [];
+      rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+      rec.onstop = async () => {
+        clearInterval(timer);
+        stream.getTracks().forEach(t => t.stop());
+        mic.classList.remove("rec"); mic.querySelector(".rec-dot")?.remove(); label.textContent = "Gravar pergunta";
+        const blob = new Blob(chunks, { type: rec.mimeType || mime || "audio/webm" });
+        if (blob.size < 2000) { st.textContent = "A gravação ficou muito curta. Tente de novo."; return; }
+        st.textContent = "Transcrevendo o áudio…";
+        try {
+          const { ok, j } = await postMedia({ modo: "audio", audio: await blobToBase64(blob), mime: blob.type });
+          if (!ok || !j.texto) { st.textContent = j.erro || "Não foi possível entender o áudio."; return; }
+          st.textContent = "Pergunta transcrita. Confira e ajuste se precisar.";
+          use(j.texto);
+        } catch { st.textContent = "Sem conexão com o servidor. Tente de novo."; }
+      };
+      rec.start();
+      t0 = Date.now();
+      mic.classList.add("rec");
+      mic.insertAdjacentHTML("afterbegin", '<span class="rec-dot" aria-hidden="true"></span>');
+      const tick = () => {
+        const s = Math.floor((Date.now() - t0) / 1000);
+        label.textContent = `Parar e enviar (${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")})`;
+        if (s >= 60 && rec.state === "recording") rec.stop();
+      };
+      tick(); timer = setInterval(tick, 500);
+      st.textContent = "Gravando… fale a frase ou a pergunta (até 1 minuto).";
+    });
+  });
+  // Colar print com Ctrl+V em qualquer ponto da aba aberta.
+  document.addEventListener("paste", e => {
+    const f = [...(e.clipboardData?.files || [])].find(x => x.type.startsWith("image/"));
+    if (!f) return;
+    const id = !$("#v-checar").hidden ? "fala" : !$("#v-espectro").hidden ? "espTxt" : null;
+    if (id && MEDIA_SEND[id]) { e.preventDefault(); MEDIA_SEND[id](f); }
+  });
+}
+
 // Dica de ferramenta: segue o mouse; no toque, aparece por 3 segundos.
 const tipEl = Object.assign(document.createElement("div"), { className: "tip", hidden: true });
 tipEl.setAttribute("role", "tooltip");
