@@ -40,6 +40,7 @@ linguagem simples, com o trecho literal e a página do PDF.
 | `data/espectro.json` | Classificação esquerda–direita (Manifesto Project) e partidos. |
 | `data/ideologias.json` | Enciclopédia de ideologias, dimensões, relações e países. |
 | `data/historico.json` | Planos anteriores, levantamentos de promessas e indicadores oficiais. |
+| `data/promessas.json` | Promessas item a item de cada levantamento: status da fonte, justificativa, evidências. |
 | `data/eleicoes.json` | Eleições presidenciais desde 1891. |
 | `data/eleicao.json` | Eleição atual: ano, candidatos, exemplos. Único lugar com nomes de candidatos. |
 | `tools/add_plano.py` | Converte o PDF de um plano e o registra no site. |
