@@ -38,7 +38,20 @@ def ballot(cands: list[dict[str, str]]) -> str:
     ) + "\n    "
 
 
+def merge_avaliacao() -> None:
+    """Junta data/avaliacao/*.json (um por grupo de temas) em data/avaliacao.json."""
+    pasta = ROOT / "data" / "avaliacao"
+    if not pasta.is_dir():
+        return
+    itens: list[object] = []
+    for f in sorted(pasta.glob("*.json")):
+        itens.extend(json.loads(f.read_text(encoding="utf-8")).get("itens", []))
+    (ROOT / "data" / "avaliacao.json").write_text(json.dumps({"itens": itens}, ensure_ascii=False), encoding="utf-8")
+    print("data/avaliacao.json", len(itens), "itens")
+
+
 def main() -> None:
+    merge_avaliacao()
     eleicao = load("eleicao.json")
     assert isinstance(eleicao, dict)
     cands = eleicao["candidatos"]

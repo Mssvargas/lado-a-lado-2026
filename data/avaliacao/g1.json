@@ -1,0 +1,2366 @@
+{
+ "grupo": "g1",
+ "temas": [
+  "impostos",
+  "contas-publicas",
+  "trabalho"
+ ],
+ "itens": [
+  {
+   "tema": "impostos",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe consolidar os avanços da reforma tributária do consumo já aprovada, junto com as políticas de desenvolvimento produtivo.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A reforma do consumo já foi aprovada pela EC 132/2023 e regulamentada pelas LC 214/2025 e LC 227/2026; consolidá-la depende sobretudo de executar o cronograma de transição já previsto em lei. Mudanças de rumo exigiriam nova lei complementar ou PEC.",
+     "fontes": [
+      {
+       "titulo": "Emenda Constitucional nº 132/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+      },
+      {
+       "titulo": "Lei Complementar nº 214/2025 (IBS, CBS e Imposto Seletivo)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima custo nem efeito fiscal; afirma o objetivo de consolidar os avanços da reforma junto com as políticas de desenvolvimento produtivo.",
+     "estimativa_externa": "A reforma foi desenhada para manter a carga tributária; a Resolução CGIBS nº 14/2026 usa, para projeção, alíquota conjunta estimada de 27,91% (IBS 18,7% + CBS 9,21%), acima do teto de 26,5% previsto na LC 214/2025, que obriga o Executivo a propor medidas de redução se a estimativa de 2033 o superar.",
+     "fontes": [
+      {
+       "titulo": "Resolução CGIBS nº 14, de 29/07/2026",
+       "url": "https://www.cgibs.gov.br/upload/arquivos/202607/31144942-resoluc-ao-cgibs-n-14-de-29-de-julho-de-2026-proposta-percentual-ibs-cgibs-2027.pdf"
+      },
+      {
+       "titulo": "LC 214/2025, art. 475 (avaliação quinquenal e teto de 26,5%)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "alem_de_4_anos",
+     "explicacao": "A CBS é federal, mas o IBS é de estados e municípios, administrado pelo Comitê Gestor (art. 156-A da Constituição); a transição vai de 2026 a 2032, e ICMS e ISS só deixam de existir em 2033, depois do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 156-A",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "As estimativas disponíveis são simulações feitas antes da aplicação (Ipea, Ministério da Fazenda e Comitê Gestor do IBS), não avaliações de efeito observado. Elas indicam ganho de PIB menor no texto aprovado do que na proposta original, que tinha menos exceções, e alíquota de referência estimada acima do teto legal por causa dos regimes favorecidos.",
+     "estudos": [
+      {
+       "titulo": "Propostas de reforma tributária e seus impactos: uma avaliação comparativa (Carta de Conjuntura nº 60)",
+       "autor": "João Maria de Oliveira (Ipea)",
+       "ano": 2023,
+       "achado": "O substitutivo da PEC 45/2019 elevaria o PIB em 2,39% até 2032 e o emprego em 1,03% em relação ao cenário sem reforma; a PEC original, com menos exceções, chegaria a 5,75%.",
+       "url": "https://www.ipea.gov.br/cartadeconjuntura/index.php/2023/07/propostas-de-reforma-tributaria-e-seus-impactos-uma-avaliacao-comparativa/",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Fazenda divulga estudo com simulação de impacto na alíquota de referência da CBS e do IBS",
+       "autor": "Ministério da Fazenda",
+       "ano": 2024,
+       "achado": "As mudanças feitas pela Câmara no PLP 68/2024 elevaram a alíquota de referência estimada em 1,47 ponto percentual; quanto mais tratamentos favorecidos, maior a alíquota sobre os demais bens.",
+       "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/agosto/fazenda-divulga-estudo-com-simulacao-de-impacto-na-aliquota-de-referencia-da-cbs-e-do-ibs",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Resolução CGIBS nº 14/2026 (nota metodológica da estimativa do IBS)",
+       "autor": "Comitê Gestor do IBS",
+       "ano": 2026,
+       "achado": "A estimativa pública da alíquota conjunta subiu de cerca de 26,5% para cerca de 28% com a evolução da regulamentação; o Comitê adota 27,91% para projeção.",
+       "url": "https://www.cgibs.gov.br/upload/arquivos/202607/31144942-resoluc-ao-cgibs-n-14-de-29-de-julho-de-2026-proposta-percentual-ibs-cgibs-2027.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo o Ipea, setores com cadeias produtivas longas, em especial a indústria de transformação, e estados e municípios onde o consumo ocorre, já que a arrecadação passa ao destino.",
+    "quem_paga_ou_perde": "Bens e serviços sem tratamento favorecido pagam a alíquota padrão, que sobe a cada exceção, segundo a Fazenda; serviços que hoje pagam ISS ou PIS/Cofins cumulativo tendem a ter carga maior, segundo a mesma lógica de preços relativos do estudo do Ipea.",
+    "fontes": [
+     {
+      "titulo": "Ipea, Carta de Conjuntura nº 60 (2023)",
+      "url": "https://www.ipea.gov.br/cartadeconjuntura/index.php/2023/07/propostas-de-reforma-tributaria-e-seus-impactos-uma-avaliacao-comparativa/"
+     },
+     {
+      "titulo": "Ministério da Fazenda (2024)",
+      "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/agosto/fazenda-divulga-estudo-com-simulacao-de-impacto-na-aliquota-de-referencia-da-cbs-e-do-ibs"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "impostos",
+    "indice": 6,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe manter o desenho aprovado e completar a transição; Flávio propõe revisar a reforma para baixar a alíquota do IVA e reduzir as exceções."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 68/2024",
+     "ementa": "Institui o IBS, a CBS e o Imposto Seletivo.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (LC 214/2025)",
+     "ultima_acao": "2025-07-07: recebido ofício do Senado comunicando a promulgação das partes vetadas (Veto nº 7/2025).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2430143",
+     "direcao": "fora do RILE",
+     "relacao": "É a primeira lei de regulamentação da reforma que o plano quer consolidar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 108/2024",
+     "ementa": "Institui o Comitê Gestor do IBS e trata do processo administrativo e da distribuição da arrecadação do IBS.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (LC 227/2026), com veto parcial",
+     "ultima_acao": "2026-01-13: transformado na Lei Complementar 227/2026, publicada no DOU de 14/01/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2438459",
+     "direcao": "fora do RILE",
+     "relacao": "Completa a regulamentação do IBS, peça necessária para a transição que o plano quer manter."
+    }
+   ],
+   "situacao_atual": {
+    "status": "em_vigor",
+    "texto": "A reforma do consumo está em vigor pela EC 132/2023, regulamentada pelas LC 214/2025 e LC 227/2026, com cronograma de transição previsto em lei.",
+    "fonte": {
+     "titulo": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+    }
+   }
+  },
+  {
+   "tema": "impostos",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe usar o Imposto Seletivo, ao regulamentar a reforma tributária, para desestimular produtos nocivos à saúde.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "O Imposto Seletivo já foi criado (art. 153, VIII, da Constituição) e a LC 214/2025 lista os produtos sujeitos a ele, mas o art. 422 da mesma lei deixa as alíquotas para lei ordinária, que ainda não foi aprovada. Em outubro de 2026 o governo anunciou que enviaria a proposta de alíquotas depois do segundo turno.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 153, VIII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei Complementar nº 214/2025, art. 422",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+      },
+      {
+       "titulo": "TAGD Advogados: governo adia envio das alíquotas do Imposto Seletivo (13/10/2026)",
+       "url": "https://tagdlaw.com.br/?p=16333"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não estima arrecadação nem custo; diz que o Imposto Seletivo será usado para desestimular produtos nocivos à saúde, sem listar quais.",
+     "estimativa_externa": "Segundo o anúncio do Ministério da Fazenda relatado em 13/10/2026, a arrecadação prevista com o Imposto Seletivo em 2027 é de cerca de R$ 42 bilhões, valor que pode cair se a cobrança atrasar. Pela LC 214/2025, essa receita reduz a alíquota necessária de IBS e CBS.",
+     "fontes": [
+      {
+       "titulo": "TAGD Advogados (13/10/2026)",
+       "url": "https://tagdlaw.com.br/?p=16333"
+      },
+      {
+       "titulo": "Ministério da Fazenda (2024): Imposto Seletivo e alíquota de referência",
+       "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/agosto/fazenda-divulga-estudo-com-simulacao-de-impacto-na-aliquota-de-referencia-da-cbs-e-do-ibs"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O Imposto Seletivo é tributo da União (art. 153, VIII) e a lei de alíquotas pode ser aprovada dentro do mandato, respeitadas a anterioridade anual e a nonagesimal.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 150 e 153",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "alto",
+     "resumo": "Revisões da literatura, incluindo uma meta-análise, indicam que impostos sobre tabaco e bebidas açucaradas elevam preços e reduzem as compras desses produtos. No Brasil, estudo descritivo registrou aumento da parcela de cigarros ilegais depois de altas de tributo, o que pode limitar parte do efeito.",
+     "estudos": [
+      {
+       "titulo": "Tobacco taxes as a tobacco control strategy",
+       "autor": "Chaloupka, Yurekli e Fong (Tobacco Control)",
+       "ano": 2012,
+       "achado": "Mais de 100 estudos mostram que aumentos significativos de impostos sobre tabaco reduzem o consumo e a iniciação, com maior efeito entre jovens e mais pobres, e geram receita.",
+       "url": "https://europepmc.org/article/MED/22345242",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Outcomes Following Taxation of Sugar-Sweetened Beverages: A Systematic Review and Meta-analysis",
+       "autor": "Andreyeva, Marple, Marinello, Moore e Powell (JAMA Network Open)",
+       "ano": 2022,
+       "achado": "Em 62 estudos, o repasse médio do imposto ao preço foi de 82% e as vendas caíram 15%, sem substituição por bebidas não tributadas; a variação no consumo medido não foi significativa.",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9161017",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Trends in Illicit Cigarette Use in Brazil Estimated From Legal Sales, 2012–2016",
+       "autor": "Iglesias, Souza, Szklo, Almeida e Szklo (American Journal of Public Health)",
+       "ano": 2018,
+       "achado": "A parcela estimada de consumo ilícito de cigarros no Brasil passou de 28,6% em 2012 para 42,8% em 2016.",
+       "url": "https://ninho.inca.gov.br/jspui/handle/123456789/12381",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo as revisões citadas, a saúde pública, pela redução do consumo de tabaco e bebidas açucaradas, e o Tesouro, pela receita; pela LC 214/2025, a receita do Seletivo também reduz a alíquota de IBS e CBS paga pelos demais bens.",
+    "quem_paga_ou_perde": "Consumidores e fabricantes dos produtos tributados; a carga pesa proporcionalmente mais sobre a renda das famílias pobres que mantêm o consumo, e o mercado ilegal pode ocupar parte das vendas, segundo o estudo sobre cigarros no Brasil.",
+    "fontes": [
+     {
+      "titulo": "Chaloupka et al. (2012)",
+      "url": "https://europepmc.org/article/MED/22345242"
+     },
+     {
+      "titulo": "Iglesias et al. (2018)",
+      "url": "https://ninho.inca.gov.br/jspui/handle/123456789/12381"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 68/2024",
+     "ementa": "Institui o IBS, a CBS e o Imposto Seletivo.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (LC 214/2025)",
+     "ultima_acao": "2025-07-07: recebido ofício do Senado comunicando a promulgação das partes vetadas (Veto nº 7/2025).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2430143",
+     "direcao": "fora do RILE",
+     "relacao": "Criou o Imposto Seletivo e a lista de produtos; as alíquotas ficaram para lei ordinária."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 42/2026",
+     "ementa": "Altera a LC 214/2025 para dispor sobre os limites de alíquotas do Imposto Seletivo.",
+     "autor": "Gilson Marques e outros",
+     "partido": "NOVO/SC",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-03-04: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2606668",
+     "direcao": "direita",
+     "relacao": "Propõe limitar as alíquotas do tributo que o plano quer usar contra produtos nocivos."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4353/2025",
+     "ementa": "Vincula a arrecadação do Imposto Seletivo sobre cigarros, fumígenos e bebidas alcoólicas ao Fundo Nacional de Saúde.",
+     "autor": "Eduardo da Fonte",
+     "partido": "PP/PE",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-02-04: apresentado requerimento de semana de esforço concentrado para votar proposições de saúde.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2555423",
+     "direcao": "esquerda",
+     "relacao": "Trata do destino da receita do Imposto Seletivo sobre produtos nocivos à saúde."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Imposto Seletivo já foi criado (art. 153, VIII, da Constituição) e a LC 214/2025 lista os produtos sujeitos a ele, mas as alíquotas dependem de lei ordinária ainda não aprovada.",
+    "fonte": {
+     "titulo": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+    }
+   }
+  },
+  {
+   "tema": "impostos",
+   "indice": 4,
+   "candidato": "lula",
+   "proposta": "Propõe acompanhar o endividamento das famílias, manter controles sobre gastos excessivos em apostas on-line e aprimorar as regras de concessão de crédito.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A regulação das apostas de quota fixa (Lei 14.790/2023) e os limites ao rotativo do cartão e o programa Desenrola (Lei 14.690/2023) já existem; o plano propõe mantê-los e aprimorar regras, o que pode ser feito por portarias do Ministério da Fazenda e normas do CMN/Banco Central. Mudanças maiores exigiriam lei ordinária.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.790/2023 (apostas de quota fixa)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14790.htm"
+      },
+      {
+       "titulo": "Lei nº 14.690/2023 (Desenrola e limite de juros do rotativo)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14690.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima custo; fala em monitorar o endividamento, manter os fundos garantidores, manter controles sobre gastos excessivos em apostas e aprimorar as regras de crédito.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Política de crédito, sistema financeiro e loterias são competência da União (arts. 21, VIII, e 22, VII e XX, da Constituição), e as medidas descritas são de continuidade.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 21 e 22",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A proposta é genérica e não diz quais regras mudariam, o que impede avaliar seu efeito. Há diagnóstico oficial sobre o peso das apostas no orçamento das famílias e uma revisão internacional que recomenda regulação mais forte do setor, mas não foram encontradas avaliações de impacto publicadas sobre o Desenrola ou sobre o teto do rotativo.",
+     "estudos": [
+      {
+       "titulo": "Análise técnica sobre o mercado de apostas online no Brasil e o perfil dos apostadores (Estudo Especial nº 119)",
+       "autor": "Banco Central do Brasil",
+       "ano": 2024,
+       "achado": "Em agosto de 2024, cerca de 5 milhões de pessoas de famílias do Bolsa Família enviaram R$ 3 bilhões a empresas de apostas via Pix, com mediana de R$ 100 por pessoa.",
+       "url": "https://www.bcb.gov.br/conteudo/relatorioinflacao/EstudosEspeciais/EE119_Analise_tecnica_sobre_o_mercado_de_apostas_online_no_Brasil_e_o_perfil_dos_apostadores.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "The Lancet Public Health Commission on gambling",
+       "autor": "Wardle et al. (Lancet Public Health)",
+       "ano": 2024,
+       "achado": "Estima cerca de 448 milhões de adultos em risco de danos ligados a apostas no mundo e recomenda priorizar regulação sobre arrecadação e restringir publicidade.",
+       "url": "https://www.gla.ac.uk/research/az/grg/ourprojects/lancetcommission",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias endividadas e apostadores com perdas recorrentes, que são o público das regras de proteção, segundo o Banco Central e a Comissão do Lancet.",
+    "quem_paga_ou_perde": "Operadoras de apostas e instituições de crédito, que arcam com custos de cumprimento e limites de oferta; o plano não detalha a medida, então a distribuição exata não pode ser estimada.",
+    "fontes": [
+     {
+      "titulo": "Banco Central, Estudo Especial nº 119 (2024)",
+      "url": "https://www.bcb.gov.br/conteudo/relatorioinflacao/EstudosEspeciais/EE119_Analise_tecnica_sobre_o_mercado_de_apostas_online_no_Brasil_e_o_perfil_dos_apostadores.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "impostos",
+    "indice": 10,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe manter e aprimorar os controles existentes sobre apostas e crédito em geral; Flávio propõe proibir especificamente o uso de dinheiro de programas sociais em apostas e fazer campanhas sobre o risco de endividamento."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2278/2025",
+     "ementa": "Altera a Lei 14.790/2023 para determinar a limitação das apostas nos casos que especifica.",
+     "autor": "Duarte Jr. e outros",
+     "partido": "AVANTE/MA",
+     "situacao": "Aguardando designação de relator na Comissão de Finanças e Tributação",
+     "ultima_acao": "2025-06-10: recebimento pela CFT.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2508461",
+     "direcao": "esquerda",
+     "relacao": "Propõe limites a apostas, tema dos controles de gasto excessivo citados no plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3545/2026",
+     "ementa": "Altera a Lei 14.790/2023 para proibir publicidade e marketing de apostas em todos os meios de comunicação.",
+     "autor": "Aécio Neves",
+     "partido": "PSDB/MG",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-07-08: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2637990",
+     "direcao": "esquerda",
+     "relacao": "Trata de restrição às apostas on-line, área em que o plano promete manter controles."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 7721",
+     "ementa": "Questiona normas sobre apostas de quota fixa; o relator determinou medidas para impedir o uso de recursos do Bolsa Família e do BPC em apostas, liminar referendada pelo Plenário em novembro de 2024.",
+     "autor": "Confederação Nacional do Comércio (CNC)",
+     "partido": "não se aplica",
+     "situacao": "Em andamento, com liminar referendada",
+     "ultima_acao": "2026-10-15: conclusos ao relator, ministro Luiz Fux.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7044517",
+     "direcao": "fora do RILE",
+     "relacao": "Orienta as regras de controle de apostas que o governo editou e que o plano propõe manter."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "As regras sobre apostas de quota fixa (Lei 14.790/2023) e o limite de juros do rotativo do cartão (Lei 14.690/2023) estão em vigor; os aprimoramentos propostos não foram definidos.",
+    "fonte": {
+     "titulo": "Lei nº 14.790/2023 (apostas de quota fixa)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14790.htm"
+    }
+   }
+  },
+  {
+   "tema": "impostos",
+   "indice": 6,
+   "candidato": "flavio",
+   "proposta": "Propõe reduzir o IVA, que o plano diz estar projetado em torno de 30%, e garantir que não se cobre imposto sobre imposto.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec",
+     "explicacao": "A alíquota da CBS é fixada por lei federal e a do IBS por lei de cada ente (art. 156-A, §1º, V), mas baixar a alíquota sem perder arrecadação exige reduzir os regimes diferenciados listados no art. 9º da EC 132/2023, o que depende de PEC, e na LC 214/2025, o que depende de lei complementar. A não cumulatividade já está prevista no art. 156-A, §1º, VIII.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 156-A",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Emenda Constitucional nº 132/2023, art. 9º",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que o IVA está projetado em torno de 30%, um dos mais altos do mundo, e propõe reduzi-lo, sem dizer para quanto nem como compensar a receita.",
+     "estimativa_externa": "A Resolução CGIBS nº 14/2026 adota 27,91% como estimativa da alíquota conjunta necessária para manter a arrecadação. Pela nota da Fazenda de 2024, cada exceção eleva essa alíquota; logo, uma alíquota menor sem cortar exceções significa arrecadação menor.",
+     "fontes": [
+      {
+       "titulo": "Resolução CGIBS nº 14/2026",
+       "url": "https://www.cgibs.gov.br/upload/arquivos/202607/31144942-resoluc-ao-cgibs-n-14-de-29-de-julho-de-2026-proposta-percentual-ibs-cgibs-2027.pdf"
+      },
+      {
+       "titulo": "Ministério da Fazenda (2024)",
+       "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/agosto/fazenda-divulga-estudo-com-simulacao-de-impacto-na-aliquota-de-referencia-da-cbs-e-do-ibs"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "A CBS é federal, mas o IBS pertence a estados e municípios, que precisariam aceitar alíquotas menores ou perda de exceções; a PEC exigiria 3/5 nas duas Casas.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 60 e 156-A",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Estudo com 17 países da zona do euro encontrou que cortes na alíquota padrão do IVA chegam quase integralmente aos preços, sem estudo de qualidade comparável em sentido contrário. As simulações do Ipea e da Fazenda, feitas antes da aplicação, associam menos exceções a mais crescimento e a alíquota menor; o efeito final depende de como a receita seria reposta, ponto que o plano não detalha.",
+     "estudos": [
+      {
+       "titulo": "Propostas de reforma tributária e seus impactos: uma avaliação comparativa (Carta de Conjuntura nº 60)",
+       "autor": "João Maria de Oliveira (Ipea)",
+       "ano": 2023,
+       "achado": "A versão original da PEC 45/2019, de menor alíquota e menos exceções, elevaria o PIB em 5,75% ao fim da transição, contra 2,39% do texto com mais exceções.",
+       "url": "https://www.ipea.gov.br/cartadeconjuntura/index.php/2023/07/propostas-de-reforma-tributaria-e-seus-impactos-uma-avaliacao-comparativa/",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Estimating VAT Pass Through (CESifo Working Paper 5531)",
+       "autor": "Benedek, De Mooij, Keen e Wingender",
+       "ano": 2015,
+       "achado": "Em 17 países da zona do euro, mudanças na alíquota padrão do IVA foram repassadas cerca de 100% aos preços; mudanças em alíquotas reduzidas, cerca de 30%.",
+       "url": "https://www.cesifo.org/DocDL/cesifo1_wp5531.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Fazenda divulga estudo com simulação de impacto na alíquota de referência da CBS e do IBS",
+       "autor": "Ministério da Fazenda",
+       "ano": 2024,
+       "achado": "As exceções aprovadas pela Câmara elevaram a alíquota de referência em 1,47 ponto; a regra de manter a carga liga a alíquota padrão à extensão dos favorecimentos.",
+       "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/agosto/fazenda-divulga-estudo-com-simulacao-de-impacto-na-aliquota-de-referencia-da-cbs-e-do-ibs",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Consumidores e setores que pagam a alíquota padrão, se o corte for repassado aos preços como indicam os estudos sobre IVA.",
+    "quem_paga_ou_perde": "Se a alíquota cair sem compensação, União, estados e municípios perdem receita; se a compensação vier do corte de exceções, perdem os setores hoje favorecidos, como alimentos da cesta, saúde e setor imobiliário citados pela Fazenda.",
+    "fontes": [
+     {
+      "titulo": "Ministério da Fazenda (2024)",
+      "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/agosto/fazenda-divulga-estudo-com-simulacao-de-impacto-na-aliquota-de-referencia-da-cbs-e-do-ibs"
+     },
+     {
+      "titulo": "Benedek et al. (2015)",
+      "url": "https://www.cesifo.org/DocDL/cesifo1_wp5531.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "impostos",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe revisar a reforma para reduzir a alíquota e as exceções; Lula propõe manter o desenho aprovado e concluir a transição."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 68/2024",
+     "ementa": "Institui o IBS, a CBS e o Imposto Seletivo.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (LC 214/2025)",
+     "ultima_acao": "2025-07-07: recebido ofício do Senado comunicando a promulgação das partes vetadas (Veto nº 7/2025).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2430143",
+     "direcao": "fora do RILE",
+     "relacao": "Fixou os regimes diferenciados e a trava de 26,5% que uma revisão da alíquota teria de alterar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 108/2024",
+     "ementa": "Institui o Comitê Gestor do IBS e trata do processo administrativo e da distribuição da arrecadação do IBS.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (LC 227/2026), com veto parcial",
+     "ultima_acao": "2026-01-13: transformado na Lei Complementar 227/2026, publicada no DOU de 14/01/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2438459",
+     "direcao": "fora do RILE",
+     "relacao": "Alterou a LC 214/2025, inclusive a avaliação quinquenal das alíquotas que o plano quer reduzir."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Constituição já prevê que o IBS e a CBS são não cumulativos e não integram a própria base de cálculo nem a de outros tributos (art. 156-A, § 1º, VIII e IX); a redução da alíquota não foi aprovada.",
+    "fonte": {
+     "titulo": "Constituição Federal, art. 156-A, § 1º",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    }
+   }
+  },
+  {
+   "tema": "impostos",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe reduzir impostos sobre energia elétrica e combustíveis.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Para combustíveis, o presidente pode reduzir PIS/Cofins e Cide por decreto (Lei 10.865/2004, art. 23, §5º; Constituição, art. 177, §4º, I, b), como fizeram os Decretos 12.875/2026 e 13.134/2026; a partir de 2027 a CBS sobre combustíveis também é fixada pelo Executivo (LC 214/2025, art. 174). Para energia elétrica e para ICMS/IBS seria preciso lei e acordo com os estados, e toda renúncia exige compensação pela Lei de Responsabilidade Fiscal (art. 14).",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 13.134/2026 (reduz PIS/Cofins e Cide sobre gasolina e etanol)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13134.htm"
+      },
+      {
+       "titulo": "Decreto nº 12.875/2026 (reduz PIS/Cofins sobre diesel)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12875.htm"
+      },
+      {
+       "titulo": "Lei Complementar nº 214/2025, art. 174",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+      },
+      {
+       "titulo": "Lei Complementar nº 101/2000 (LRF), art. 14",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano promete reduzir impostos sobre energia elétrica e combustíveis, sem dizer quais tributos, quanto nem como compensar a receita.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Os tributos federais sobre combustíveis podem ser reduzidos de imediato por decreto, mas ICMS e, depois, IBS são de estados e municípios (arts. 155 e 156-A da Constituição).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 155, 156-A e 177",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Avaliação do corte temporário de impostos sobre combustíveis na Alemanha em 2022 encontrou repasse integral ao preço da gasolina e parcial ao do diesel. Revisão do FMI mostra que reduções de preço de combustíveis beneficiam em valores absolutos sobretudo as famílias de maior renda.",
+     "estudos": [
+      {
+       "titulo": "Estimating pass-through rates for the 2022 tax reduction on fuel prices in Germany",
+       "autor": "Dovern, Frank, Glas, Müller e Perico Ortiz (Energy Economics)",
+       "ano": 2023,
+       "achado": "A redução foi repassada integralmente ao preço da gasolina; no diesel o repasse foi ao menos parcial e começou a cair ainda durante a vigência do corte.",
+       "url": "https://www.zew.de/PU84325",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Unequal Benefits of Fuel Subsidies: A Review of Evidence for Developing Countries",
+       "autor": "Arze del Granado, Coady e Gillingham (World Development)",
+       "ano": 2012,
+       "achado": "O quinto mais rico da população recebe cerca de seis vezes mais benefício absoluto de subsídios a combustíveis do que o quinto mais pobre.",
+       "url": "https://ideas.repec.org/a/eee/wdevel/v40y2012i11p2234-2248.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Consumidores de combustíveis e energia, com queda de preço quando há repasse; em valores absolutos, segundo o FMI, mais as famílias de maior renda, que consomem mais combustível.",
+    "quem_paga_ou_perde": "A União e, no caso do ICMS/IBS, estados e municípios perdem receita, que precisa ser compensada por outro tributo ou corte de gasto, segundo a LRF.",
+    "fontes": [
+     {
+      "titulo": "Arze del Granado et al. (2012)",
+      "url": "https://ideas.repec.org/a/eee/wdevel/v40y2012i11p2234-2248.html"
+     },
+     {
+      "titulo": "LRF, art. 14",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Congresso",
+     "tipo": "MPV",
+     "numero": "MPV 1391/2026",
+     "ementa": "Autoriza subvenção econômica a produtores e importadores de óleo diesel enquanto houver instabilidade na oferta de combustíveis por conflitos geopolíticos.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Em tramitação no Congresso Nacional",
+     "ultima_acao": "2026-09-11: aberto prazo para emendas (11 a 17/09/2026).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2646385",
+     "direcao": "esquerda",
+     "relacao": "É a medida atual de redução do preço do diesel, por subvenção em vez de corte de imposto."
+    },
+    {
+     "casa": "Congresso",
+     "tipo": "MPV",
+     "numero": "MPV 1340/2026",
+     "ementa": "Autoriza subvenção à comercialização de óleo diesel de uso rodoviário e dispõe sobre o imposto de exportação sobre óleo diesel.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Perdeu a eficácia",
+     "ultima_acao": "2026-09-09: ofício do Congresso comunica o término do prazo para edição de decreto legislativo.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2608662",
+     "direcao": "esquerda",
+     "relacao": "Medida de 2026 para baratear combustível, editada junto com o decreto que zerou PIS/Cofins do diesel."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 79/2026",
+     "ementa": "Concede crédito presumido da CBS para equalizar o preço da gasolina e do diesel na Região Norte, com repasse obrigatório ao consumidor e limite à renúncia.",
+     "autor": "Duda Ramos",
+     "partido": "PODE/RR",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-03-25: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2611961",
+     "direcao": "direita",
+     "relacao": "Propõe reduzir tributo sobre combustíveis no novo sistema, na linha da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Decreto 13.134/2026 zerou o PIS/Cofins sobre gasolina e etanol hidratado de 10/10/2026 a 9/11/2026 e reduziu a Cide sobre a gasolina; a redução é temporária e não alcança a energia elétrica.",
+    "fonte": {
+     "titulo": "Decreto nº 13.134/2026",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13134.htm"
+    }
+   }
+  },
+  {
+   "tema": "impostos",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe proibir o uso de dinheiro de programas sociais em apostas e fazer campanhas sobre o risco de endividamento com jogos.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Desde a liminar do STF nas ADIs 7721 e 7723 (referendada em novembro de 2024), o Ministério da Fazenda já impede, pela Instrução Normativa SPA/MF nº 22/2025 e pela Portaria SPA/MF nº 2.217/2025, o cadastro de beneficiários do Bolsa Família e do BPC em sites de apostas, com checagem por CPF. Tornar a proibição permanente em lei exigiria alterar a Lei 14.790/2023 por lei ordinária.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.790/2023 (apostas de quota fixa)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14790.htm"
+      },
+      {
+       "titulo": "STF: audiência de conciliação sobre uso de bets por beneficiários de programas sociais (17/12/2025)",
+       "url": "https://noticias.stf.jus.br/postsnoticias/stf-convoca-audiencia-de-conciliacao-sobre-uso-de-bets-por-beneficiarios-de-programas-sociais/"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano propõe proibir o uso de recursos de programas sociais em apostas e fazer campanhas sobre o risco de endividamento, sem estimar custo nem detalhar a fiscalização.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Loterias e apostas são de competência legislativa da União (art. 22, XX) e o Bolsa Família e o BPC são programas federais; a medida já está em vigor por norma infralegal.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, XX",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Há dados oficiais de que famílias do Bolsa Família enviaram bilhões de reais a sites de apostas, e a literatura internacional aponta danos das apostas concentrados em grupos vulneráveis. Não foram encontradas avaliações sobre a eficácia de proibir beneficiários de apostar, e revisão do Banco Mundial mostra que transferências de renda, em geral, não aumentam gastos com bens como álcool e tabaco.",
+     "estudos": [
+      {
+       "titulo": "Análise técnica sobre o mercado de apostas online no Brasil e o perfil dos apostadores (Estudo Especial nº 119)",
+       "autor": "Banco Central do Brasil",
+       "ano": 2024,
+       "achado": "Em agosto de 2024, cerca de 5 milhões de pessoas de famílias do Bolsa Família enviaram R$ 3 bilhões a empresas de apostas via Pix, com mediana de R$ 100 por pessoa.",
+       "url": "https://www.bcb.gov.br/conteudo/relatorioinflacao/EstudosEspeciais/EE119_Analise_tecnica_sobre_o_mercado_de_apostas_online_no_Brasil_e_o_perfil_dos_apostadores.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "The Lancet Public Health Commission on gambling",
+       "autor": "Wardle et al. (Lancet Public Health)",
+       "ano": 2024,
+       "achado": "Os danos das apostas recaem desproporcionalmente sobre populações socialmente desfavorecidas; a comissão recomenda regulação mais forte.",
+       "url": "https://www.gla.ac.uk/research/az/grg/ourprojects/lancetcommission",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Cash Transfers and Temptation Goods: A Review of Global Evidence",
+       "autor": "Evans e Popova (Banco Mundial; publicado em Economic Development and Cultural Change, 2017)",
+       "ano": 2014,
+       "achado": "Em 19 estudos de 10 países, transferências de renda quase nunca aumentaram gastos com álcool e tabaco; a maioria não encontrou efeito ou encontrou queda.",
+       "url": "https://gsdrc.org/document-library/cash-transfers-and-temptation-goods-a-review-of-global-evidence/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Beneficiários de programas sociais com risco de perdas em apostas e suas famílias, público que o Banco Central identificou entre os apostadores.",
+    "quem_paga_ou_perde": "Operadoras de apostas, que perdem esses clientes e arcam com a checagem; beneficiários que apostam com outros recursos também ficam impedidos, já que o bloqueio atual é por CPF, e não pela origem do dinheiro.",
+    "fontes": [
+     {
+      "titulo": "Banco Central, Estudo Especial nº 119 (2024)",
+      "url": "https://www.bcb.gov.br/conteudo/relatorioinflacao/EstudosEspeciais/EE119_Analise_tecnica_sobre_o_mercado_de_apostas_online_no_Brasil_e_o_perfil_dos_apostadores.pdf"
+     },
+     {
+      "titulo": "STF (17/12/2025)",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-convoca-audiencia-de-conciliacao-sobre-uso-de-bets-por-beneficiarios-de-programas-sociais/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "impostos",
+    "indice": 4,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe uma proibição dirigida ao dinheiro de programas sociais; Lula propõe manter os controles gerais sobre apostas e acompanhar o endividamento das famílias."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5205/2023",
+     "ementa": "Altera a Lei 14.601/2023 (Bolsa Família) para estabelecer restrições ao uso dos valores recebidos.",
+     "autor": "Delegado Paulo Bilynskyj",
+     "partido": "PL/SP",
+     "situacao": "Aguardando parecer na Comissão de Previdência, Assistência Social, Infância, Adolescência e Família",
+     "ultima_acao": "2026-09-03: devolvido à relatora, Dep. Silvia Cristina (PP-RO), por apensação do PL 3274/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2399474",
+     "direcao": "fora do RILE",
+     "relacao": "Projeto principal ao qual estão apensados vários projetos que proíbem beneficiários de apostar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3950/2024",
+     "ementa": "Altera as leis do Bolsa Família e das apostas para restringir o uso dos valores recebidos pelos beneficiários e dependentes.",
+     "autor": "Welter",
+     "partido": "PT/PR",
+     "situacao": "Tramitando em conjunto",
+     "ultima_acao": "2026-09-03: apensação do PL 3274/2026 a este projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2462507",
+     "direcao": "fora do RILE",
+     "relacao": "Propõe em lei a mesma restrição que o plano promete."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3274/2026",
+     "ementa": "Veda apostas de quota fixa por beneficiários de programas federais de transferência de renda e impõe às operadoras deveres de verificação.",
+     "autor": "Paulo Teixeira",
+     "partido": "PT/SP",
+     "situacao": "Tramitando em conjunto",
+     "ultima_acao": "2026-09-03: apensado ao PL 3950/2024.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2634922",
+     "direcao": "fora do RILE",
+     "relacao": "Transforma em lei a vedação hoje feita por norma do Ministério da Fazenda."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 7721",
+     "ementa": "Questiona normas sobre apostas de quota fixa; o relator determinou medidas para impedir o uso de recursos do Bolsa Família e do BPC em apostas, liminar referendada pelo Plenário em novembro de 2024.",
+     "autor": "Confederação Nacional do Comércio (CNC)",
+     "partido": "não se aplica",
+     "situacao": "Em andamento, com liminar referendada",
+     "ultima_acao": "2026-10-15: conclusos ao relator, ministro Luiz Fux.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7044517",
+     "direcao": "fora do RILE",
+     "relacao": "É a decisão que originou a proibição hoje aplicada aos beneficiários."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Desde a Portaria SPA/MF 2.217/2025 e a Instrução Normativa SPA/MF 22/2025, beneficiários do Bolsa Família e do BPC são impedidos de apostar em sites autorizados, com checagem por CPF; a proibição não foi incluída em lei.",
+    "fonte": {
+     "titulo": "Ministério da Fazenda (SPA): benefícios sociais e apostas – perguntas frequentes",
+     "url": "https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas/modulo-de-impedidos/beneficios-sociais-faq"
+    }
+   }
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe manter o arcabouço fiscal, a regra atual que limita o crescimento das despesas federais.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O arcabouço fiscal é a Lei Complementar 200/2023, editada com base no art. 6º da EC 126/2022; mantê-lo não exige nova norma. Qualquer ajuste nos limites de despesa ou nas metas exigiria lei complementar (maioria absoluta).",
+     "fontes": [
+      {
+       "titulo": "Lei Complementar nº 200/2023 (Regime Fiscal Sustentável)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm"
+      },
+      {
+       "titulo": "Emenda Constitucional nº 126/2022, art. 6º",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc126.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano diz que manterá o novo arcabouço, que segundo ele controlou o crescimento das despesas sem prejudicar as políticas sociais.",
+     "estimativa_externa": "A IFI (RAF nº 113, junho de 2026) projeta, sob as regras atuais, dívida bruta de 82,5% do PIB em 2026, 102% em 2032 e 115% em 2036, e estima que seria preciso superávit primário de 2,1% do PIB ao ano para estabilizá-la.",
+     "fontes": [
+      {
+       "titulo": "IFI, Relatório de Acompanhamento Fiscal nº 113 (junho de 2026)",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O arcabouço rege as contas da União (art. 163 e art. 165 da Constituição) e já está em vigor; a IFI projeta, porém, que no cenário base o limite de despesas deixa de comportar os gastos obrigatórios a partir de 2028.",
+     "fontes": [
+      {
+       "titulo": "IFI, RAF nº 113 (2026)",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "A literatura internacional encontra que regras fiscais bem desenhadas melhoram o resultado das contas, mas o efeito da simples existência de uma regra some quando se corrige a endogeneidade. A IFI avalia que, mantidas as regras atuais, a dívida segue em alta e o limite de despesas se torna insuficiente a partir de 2028.",
+     "estudos": [
+      {
+       "titulo": "Relatório de Acompanhamento Fiscal nº 113",
+       "autor": "Instituição Fiscal Independente (Senado Federal)",
+       "ano": 2026,
+       "achado": "No cenário base, a dívida bruta chega a 115% do PIB em 2036 e o crescimento das despesas obrigatórias consome todo o espaço do limite da LC 200 a partir de 2028.",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Do fiscal rules cause better fiscal balances? A new instrumental variable strategy",
+       "autor": "Caselli e Reynaud (European Journal of Political Economy)",
+       "ano": 2020,
+       "achado": "Em 142 países, a existência de regra fiscal deixa de ter efeito quando a endogeneidade é tratada, mas regras bem desenhadas têm efeito significativo sobre o saldo fiscal.",
+       "url": "https://ideas.repec.org/a/eee/poleco/v63y2020ics0176268020300215.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Do Fiscal Rules Constrain Fiscal Policy? A Meta-Regression-Analysis",
+       "autor": "Heinemann, Moessinger e Yeter (European Journal of Political Economy)",
+       "ano": 2018,
+       "achado": "Em 30 estudos, regras fiscais aparecem associadas a contas mais equilibradas, mas o efeito diminui com métodos de identificação mais rigorosos e há sinais de viés de publicação.",
+       "url": "https://www.zew.de/PU77836",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Políticas sociais e investimentos protegidos pelo desenho atual, que permite crescimento real da despesa entre 0,6% e 2,5% ao ano, segundo a LC 200/2023.",
+    "quem_paga_ou_perde": "Segundo a IFI, as despesas discricionárias, comprimidas pelo avanço das obrigatórias, e os contribuintes futuros, pela trajetória de alta da dívida e dos juros.",
+    "fontes": [
+     {
+      "titulo": "IFI, RAF nº 113 (2026)",
+      "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+     },
+     {
+      "titulo": "LC 200/2023",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "contas-publicas",
+    "indice": 7,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe manter o limite de crescimento da despesa atual; Flávio propõe substituir as regras por outras centradas na estabilização e redução da dívida, sem detalhar o desenho."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 93/2023",
+     "ementa": "Institui regime fiscal sustentável, nos termos do art. 6º da EC 126/2022.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (LC 200/2023)",
+     "ultima_acao": "2023-08-30: transformado na Lei Complementar 200/2023, com veto parcial depois rejeitado pelo Congresso.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2357053",
+     "direcao": "direita",
+     "relacao": "É o arcabouço fiscal que o plano propõe manter."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 211/2024",
+     "ementa": "Altera a LC 200/2023 para fixar diretrizes e metas com vistas a manter os pisos de saúde e educação, o BPC, o abono e a valorização do salário mínimo.",
+     "autor": "Sâmia Bomfim e outros",
+     "partido": "PSOL/SP",
+     "situacao": "Aguardando encaminhamento",
+     "ultima_acao": "2025-03-13: encaminhado à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2473530",
+     "direcao": "esquerda",
+     "relacao": "Propõe flexibilizar o arcabouço para proteger despesas sociais."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 120/2025",
+     "ementa": "Altera a LC 200/2023 para suprimir a variação real dos limites de despesas primárias com base no crescimento da receita.",
+     "autor": "Daniela Reinehr",
+     "partido": "PL/SC",
+     "situacao": "Aguardando designação de relator",
+     "ultima_acao": "2025-10-08: encaminhado à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2515286",
+     "direcao": "direita",
+     "relacao": "Propõe endurecer o limite de despesas do arcabouço."
+    }
+   ],
+   "situacao_atual": {
+    "status": "em_vigor",
+    "texto": "O arcabouço fiscal está em vigor pela Lei Complementar 200/2023.",
+    "fonte": {
+     "titulo": "Lei Complementar nº 200/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm"
+    }
+   }
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 1,
+   "candidato": "lula",
+   "proposta": "Prevê equilibrar as contas com crescimento econômico, controle do aumento do gasto e melhoria da eficiência do gasto público.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O controle do aumento do gasto primário já é feito pelos limites da LC 200/2023; a proposta descreve uma estratégia (crescimento econômico e eficiência do gasto) sem indicar nova medida, que poderia ser adotada por ato do Executivo ou por lei conforme o caso.",
+     "fontes": [
+      {
+       "titulo": "Lei Complementar nº 200/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que o resultado fiscal virá da retomada do crescimento, do controle do aumento do gasto primário e da melhoria da eficiência e da qualidade do gasto, sem números.",
+     "estimativa_externa": "A IFI (RAF nº 113) estima que seria necessário superávit primário de 2,1% do PIB ao ano para estabilizar a dívida, mesmo supondo crescimento médio de 2,3% ao ano a partir de 2028.",
+     "fontes": [
+      {
+       "titulo": "IFI, RAF nº 113 (junho de 2026)",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Trata das contas da União, mas o resultado depende do ritmo de crescimento da economia, que o governo não controla.",
+     "fontes": [
+      {
+       "titulo": "IFI, RAF nº 113 (2026)",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A proposta não diz quais gastos seriam contidos nem que ganhos de eficiência são esperados, o que impede avaliá-la. Como referência, a IFI projeta dívida em alta mesmo com crescimento de 2% a 2,3% ao ano, e estudo com países da OCDE indica que ajustes por corte de gasto reduzem menos o PIB do que ajustes por aumento de impostos.",
+     "estudos": [
+      {
+       "titulo": "Relatório de Acompanhamento Fiscal nº 113",
+       "autor": "Instituição Fiscal Independente (Senado Federal)",
+       "ano": 2026,
+       "achado": "Com PIB de 2,0% em 2026, 1,8% em 2027 e 2,3% ao ano depois, a dívida bruta sobe de 80,1% para 115% do PIB até 2036.",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "The output effect of fiscal consolidation plans",
+       "autor": "Alesina, Favero e Giavazzi (Journal of International Economics)",
+       "ano": 2015,
+       "achado": "Em 16 países da OCDE ao longo de 30 anos, planos de ajuste baseados em corte de gastos reduziram o produto bem menos que os baseados em aumento de impostos.",
+       "url": "https://ideas.repec.org/a/eee/inecon/v96y2015is1ps19-s42.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "As fontes não permitem identificar beneficiários, porque o plano não especifica quais gastos seriam contidos ou tornados mais eficientes.",
+    "quem_paga_ou_perde": "Segundo a IFI, se o resultado depender do controle da despesa sob o limite atual, a pressão recai sobre as despesas discricionárias, como investimento e custeio.",
+    "fontes": [
+     {
+      "titulo": "IFI, RAF nº 113 (2026)",
+      "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "contas-publicas",
+    "indice": 8,
+    "candidato": "flavio",
+    "diferenca": "Lula aposta no crescimento econômico e no controle do ritmo de alta do gasto para melhorar o resultado; Flávio propõe gerar superávits primários e limitar o crédito subsidiado pelo Tesouro."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 221/2025",
+     "ementa": "Estabelece plano de redução de benefícios financeiros e creditícios da União, medidas de governança para benefícios fiscais e limite anual para sua concessão.",
+     "autor": "Comissão de Finanças e Tributação",
+     "partido": "não se aplica",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2025-10-20: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2573466",
+     "direcao": "direita",
+     "relacao": "Trata da qualidade do gasto e dos benefícios da União, tema da eficiência citada no plano."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Os limites ao crescimento da despesa primária da LC 200/2023 estão em vigor; a proposta não define outras medidas.",
+    "fonte": {
+     "titulo": "Lei Complementar nº 200/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm"
+    }
+   }
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe enfrentar o sistema atual de emendas parlamentares e debatê-lo com a sociedade.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec",
+     "explicacao": "A execução obrigatória das emendas individuais e de bancada e as transferências especiais (\"emendas Pix\") estão na Constituição (arts. 166, §§ 9º a 20, e 166-A), de modo que reduzir seu volume ou sua obrigatoriedade exige PEC. Regras de transparência e execução podem ser mudadas por lei complementar, como a LC 210/2024.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 166 e 166-A",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei Complementar nº 210/2024 (emendas parlamentares)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp210.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano diz que as emendas somaram R$ 50 bilhões em 2026 e propõe enfrentar o sistema e debatê-lo com a sociedade, sem indicar a mudança.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "O orçamento federal é matéria da União, mas a mudança depende de 3/5 do Congresso, cujos membros indicam as emendas, e o tema também está sob decisão do STF na ADPF 854.",
+     "fontes": [
+      {
+       "titulo": "STF, ADPF 854",
+       "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6199750"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A proposta não diz o que mudaria no sistema de emendas, e não há avaliação de impacto de reformas desse tipo. Como contexto, estudo do Ipea encontrou que emendas elevaram o gasto municipal em saúde sem efeito robusto em leitos, profissionais ou mortalidade, e auditoria do TCU apontou problemas na maior parte das transferências especiais examinadas.",
+     "estudos": [
+      {
+       "titulo": "Emendas parlamentares e financiamento municipal do Sistema Único de Saúde: evidências de impacto de transferências federais (2013-2023)",
+       "autor": "Almeida, Vieira e Frio (Ipea)",
+       "ano": 2026,
+       "achado": "Receber emendas em alta intensidade elevou o gasto municipal em saúde de 7,5% a 11,8% e a cobertura de mamografias, sem efeito consistente sobre leitos, profissionais ou internações evitáveis.",
+       "url": "https://repositorio.ipea.gov.br/handle/11058/20417",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Minuto do TCU: auditorias sobre transferências especiais (emendas Pix)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2026,
+       "achado": "Em 100 transferências especiais a 73 municípios e 2 estados, somando R$ 198 milhões, 82% apresentaram problemas, com prejuízo potencial estimado em R$ 49 milhões.",
+       "url": "https://portal.tcu.gov.br/imprensa/minuto-do-tcu/ybfgsj9mq2s65i6htnsd42yo",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo o Ipea, um planejamento mais estável do financiamento federal favoreceria a organização regional dos serviços de saúde; o plano não detalha a mudança.",
+    "quem_paga_ou_perde": "Parlamentares perderiam poder de indicar recursos; municípios pequenos, que segundo o Ipea recebem proporcionalmente mais emendas na saúde, poderiam perder parte dessa fonte.",
+    "fontes": [
+     {
+      "titulo": "Ipea (2026)",
+      "url": "https://repositorio.ipea.gov.br/handle/11058/20417"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "contas-publicas",
+    "indice": 13,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe enfrentar o sistema de emendas e debatê-lo com a sociedade, sem detalhar; Flávio propõe manter as emendas com mais transparência, rastreabilidade e ligação às prioridades do Plano Plurianual."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 175/2024",
+     "ementa": "Dispõe sobre a proposição e a execução de emendas parlamentares na lei orçamentária anual.",
+     "autor": "Rubens Pereira Júnior",
+     "partido": "PT/MA",
+     "situacao": "Transformado em norma jurídica (LC 210/2024)",
+     "ultima_acao": "2024-11-26: transformado na Lei Complementar 210/2024.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2466104",
+     "direcao": "fora do RILE",
+     "relacao": "Fixou as regras atuais de transparência e execução das emendas que o plano quer rediscutir."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADPF",
+     "numero": "ADPF 854",
+     "ementa": "Trata da transparência e da rastreabilidade das emendas parlamentares (originalmente, das emendas de relator).",
+     "autor": "Partido Socialismo e Liberdade (PSOL)",
+     "partido": "PSOL",
+     "situacao": "Em andamento, sob relatoria do ministro Flávio Dino, com decisões referendadas pelo Plenário",
+     "ultima_acao": "2026-10-20: juntada de petição de manifestação; certidão de que a AGU não se manifestou no prazo encerrado em 19/10/2026.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6199750",
+     "direcao": "fora do RILE",
+     "relacao": "É a ação em que o STF impõe regras de transparência e de alinhamento ao SUS para as emendas."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 7,
+   "candidato": "flavio",
+   "proposta": "Propõe reformular as regras fiscais atuais, com regras focadas em estabilizar e reduzir a dívida pública.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_complementar",
+     "explicacao": "Substituir o arcabouço exige alterar ou revogar a LC 200/2023, o que pede lei complementar (art. 163 da Constituição e art. 6º da EC 126/2022); um limite para a dívida consolidada da União dependeria ainda de resolução do Senado (art. 52, VI). O art. 164-A já manda conduzir a política fiscal de modo a manter a dívida em níveis sustentáveis.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 52, 163 e 164-A",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei Complementar nº 200/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano propõe regras claras focadas na estabilização e na redução da dívida, sem detalhar o desenho nem a meta.",
+     "estimativa_externa": "A IFI (RAF nº 113, 2026) estima que estabilizar a dívida bruta exigiria superávit primário de 2,1% do PIB ao ano, o que dá a dimensão do ajuste implícito na proposta.",
+     "fontes": [
+      {
+       "titulo": "IFI, RAF nº 113 (junho de 2026)",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A aprovação da nova regra cabe no mandato; a redução efetiva da dívida em proporção do PIB, pelas projeções da IFI, levaria mais tempo.",
+     "fontes": [
+      {
+       "titulo": "IFI, RAF nº 113 (2026)",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudos do FMI e de pesquisadores associados indicam que o desenho da regra importa: regras bem desenhadas melhoram o saldo fiscal, enquanto a mera existência de regra não tem efeito causal comprovado, e regras complexas não melhoraram o cumprimento. Como o plano não detalha a nova regra, não é possível dizer em que grupo ela estaria.",
+     "estudos": [
+      {
+       "titulo": "Do fiscal rules cause better fiscal balances? A new instrumental variable strategy",
+       "autor": "Caselli e Reynaud (European Journal of Political Economy)",
+       "ano": 2020,
+       "achado": "Em 142 países, a simples existência de regra fiscal não melhora o saldo quando a endogeneidade é tratada; regras bem desenhadas, sim.",
+       "url": "https://ideas.repec.org/a/eee/poleco/v63y2020ics0176268020300215.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Second-Generation Fiscal Rules: Balancing Simplicity, Flexibility, and Enforceability (SDN/18/04)",
+       "autor": "Eyraud, Debrun, Hodge, Lledó e Pattillo (FMI)",
+       "ano": 2018,
+       "achado": "As reformas de regras fiscais após 2008 deram âncora de médio prazo, mas tornaram os sistemas mais complicados de operar, e o cumprimento não melhorou.",
+       "url": "https://econpapers.repec.org/RePEc:imf:imfsdn:2018/004",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Relatório de Acompanhamento Fiscal nº 113",
+       "autor": "Instituição Fiscal Independente (Senado Federal)",
+       "ano": 2026,
+       "achado": "Sob as regras atuais, a dívida bruta sobe de 80,1% para 115% do PIB até 2036; estabilizá-la exige superávit de 2,1% do PIB ao ano.",
+       "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo a IFI, uma trajetória de dívida estável reduz o custo de juros que recai sobre o orçamento federal; o plano associa a medida a juros e inflação menores.",
+    "quem_paga_ou_perde": "Um superávit de 2,1% do PIB, como estima a IFI, exigiria corte de despesas ou aumento de receitas; o plano não diz quais grupos arcariam com o ajuste.",
+    "fontes": [
+     {
+      "titulo": "IFI, RAF nº 113 (2026)",
+      "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "contas-publicas",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe trocar as regras atuais por outras centradas na dívida; Lula propõe manter o arcabouço que limita o crescimento da despesa."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 120/2025",
+     "ementa": "Altera a LC 200/2023 para suprimir a variação real dos limites de despesas primárias com base no crescimento da receita.",
+     "autor": "Daniela Reinehr",
+     "partido": "PL/SC",
+     "situacao": "Aguardando designação de relator",
+     "ultima_acao": "2025-10-08: encaminhado à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2515286",
+     "direcao": "direita",
+     "relacao": "Propõe endurecer a regra de despesa, na direção de reforçar o ajuste fiscal."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 221/2025",
+     "ementa": "Estabelece plano de redução de benefícios financeiros e creditícios da União e inclui esses benefícios nos gatilhos do regime fiscal.",
+     "autor": "Comissão de Finanças e Tributação",
+     "partido": "não se aplica",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2025-10-20: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2573466",
+     "direcao": "direita",
+     "relacao": "Mexe nos gatilhos do regime fiscal e no crédito subsidiado, temas da nova regra proposta."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PRS",
+     "numero": "PRS 84/2007",
+     "ementa": "Dispõe sobre o limite global para o montante da dívida consolidada da União.",
+     "autor": "Comissão de Assuntos Econômicos",
+     "partido": "não se aplica",
+     "situacao": "Arquivada ao final da legislatura",
+     "ultima_acao": "2018-12-21: arquivada definitivamente, nos termos do art. 332 do Regimento Interno.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/83503",
+     "direcao": "direita",
+     "relacao": "Foi a tentativa de criar o limite de dívida da União previsto no art. 52, VI, instrumento de uma regra centrada na dívida."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 11,
+   "candidato": "flavio",
+   "proposta": "Propõe cortar no mínimo 10 ministérios, reduzir cargos comissionados e despesas administrativas e combater supersalários.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "A criação e a extinção de ministérios dependem de lei (art. 88 da Constituição), em geral iniciada por medida provisória, como ocorreu com a Lei 14.600/2023; cargos comissionados vagos podem ser extintos por decreto (art. 84, VI, b). Limitar as verbas fora do teto exige lei que defina as parcelas indenizatórias (art. 37, §11), como o PL 2.721/2021.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 37, 84 e 88",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei nº 14.600/2023 (organização dos ministérios)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14600.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano fixa a meta de cortar no mínimo 10 ministérios e reduzir cargos comissionados, despesas administrativas, penduricalhos e supersalários, sem estimar a economia.",
+     "estimativa_externa": "Estudo de Sergio Guedes-Reis para o República.org (2026) estima que limitar as verbas acima do teto nas carreiras do sistema de Justiça pouparia de R$ 97,8 bilhões a R$ 186,4 bilhões em dez anos, conforme o cenário. Não foi encontrada estimativa oficial da economia com corte de ministérios.",
+     "fontes": [
+      {
+       "titulo": "Poder360: controle de supersalários pode poupar R$ 186,4 bi em 10 anos (21/03/2026)",
+       "url": "https://www.poder360.com.br/poder-economia/controle-de-supersalarios-pode-poupar-r-1864-bi-em-10-anos/"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A estrutura do Executivo federal pode ser mudada no início do mandato; os supersalários, porém, envolvem também Judiciário, Ministério Público, estados e municípios, que dependem de lei nacional e de decisões do STF.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 37 e 88",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto do efeito conjunto de cortar ministérios, cargos e verbas acima do teto. As fontes disponíveis são uma auditoria britânica, que não conseguiu demonstrar benefícios de reorganizações de ministérios, um estudo descritivo do Ipea sobre a rotatividade em cargos de confiança e uma projeção de economia com o limite às verbas acima do teto.",
+     "estudos": [
+      {
+       "titulo": "Reorganising central government (HC 452)",
+       "autor": "National Audit Office (Reino Unido)",
+       "ano": 2010,
+       "achado": "51 reorganizações custaram cerca de £780 milhões, perto de £15 milhões cada, e seu custo-benefício não pôde ser demonstrado por objetivos vagos e falta de acompanhamento dos benefícios.",
+       "url": "https://www.nao.org.uk/wp-content/uploads/2010/03/0910452es.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "O carrossel burocrático nos cargos de confiança: análise de sobrevivência dos cargos DAS do Executivo federal (1999-2017) (TD 2597)",
+       "autor": "Felix Lopez e Thiago Silva (Ipea)",
+       "ano": 2020,
+       "achado": "A permanência mediana em cargo DAS é de 25 meses e cerca de 30% dos nomeados não completam um ano, o que os autores apontam como obstáculo à eficiência do Estado.",
+       "url": "https://dx.doi.org/10.38116/td2597",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Estudo sobre verbas acima do teto nas carreiras jurídicas (encomendado pelo República.org)",
+       "autor": "Sergio Guedes-Reis",
+       "ano": 2026,
+       "achado": "Limitar as verbas acima do teto pouparia até R$ 186,4 bilhões em dez anos no cenário mais rígido e R$ 97,8 bilhões no cenário gradual.",
+       "url": "https://www.poder360.com.br/poder-economia/controle-de-supersalarios-pode-poupar-r-1864-bi-em-10-anos/",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "O orçamento público, pela economia com verbas acima do teto estimada no estudo citado; o plano associa a medida à redução de despesas administrativas.",
+    "quem_paga_ou_perde": "Servidores e membros de carreiras que recebem acima do teto e ocupantes de cargos comissionados; segundo o NAO, reorganizações também geram custos de transição com pessoal, tecnologia e imóveis.",
+    "fontes": [
+     {
+      "titulo": "NAO (2010)",
+      "url": "https://www.nao.org.uk/wp-content/uploads/2010/03/0910452es.pdf"
+     },
+     {
+      "titulo": "Poder360 (2026)",
+      "url": "https://www.poder360.com.br/poder-economia/controle-de-supersalarios-pode-poupar-r-1864-bi-em-10-anos/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "contas-publicas",
+    "indice": 4,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe cortar ministérios, cargos e verbas acima do teto; Lula propõe racionalizar o gasto compartilhando serviços administrativos entre ministérios, sem prever extinção de pastas."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 2721/2021",
+     "ementa": "Identifica as parcelas não sujeitas ao teto remuneratório do art. 37 da Constituição (projeto do extrateto).",
+     "autor": "Comissão Especial do Extrateto (Senado, 2016); substitutivo aprovado pela Câmara",
+     "partido": "não se aplica",
+     "situacao": "Na Comissão de Constituição e Justiça do Senado, com relator designado",
+     "ultima_acao": "2023-11-17: distribuído ao senador Eduardo Gomes para relatório.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/149262",
+     "direcao": "fora do RILE",
+     "relacao": "É a lei que regulamentaria o combate aos supersalários proposto no plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 38/2025",
+     "ementa": "Altera normas da Administração Pública para aperfeiçoar a governança, promover a transformação digital, profissionalizar e extinguir privilégios no serviço público (reforma administrativa).",
+     "autor": "Zé Trovão e outros (primeiro signatário na base da Câmara)",
+     "partido": "PL/SC",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-07-20: indeferido o Requerimento nº 3698/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2576168",
+     "direcao": "fora do RILE",
+     "relacao": "Trata de cargos, privilégios e estrutura do serviço público, temas da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "contas-publicas",
+   "indice": 14,
+   "candidato": "flavio",
+   "proposta": "Propõe retomar o Programa Nacional de Desestatização, avaliando caso a caso onde o Estado deve deixar de atuar.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "O Programa Nacional de Desestatização já existe (Lei 9.491/1997) e a inclusão de empresas e ativos é feita por decreto; mas o STF decidiu na ADI 5624 que vender o controle de empresas públicas e sociedades de economia mista exige autorização legislativa, e a própria Lei 9.491 exclui Banco do Brasil e Caixa. Por isso a venda de empresas-mãe depende de lei, como ocorreu com a Eletrobras e como tramita para os Correios.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 9.491/1997 (Programa Nacional de Desestatização)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9491.htm"
+      },
+      {
+       "titulo": "STF, ADI 5624",
+       "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5093069"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe retomar o programa com critério, avaliando caso a caso, sem listar empresas nem estimar receitas.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "A desestatização de empresas federais é da União, mas cada venda de controle depende de lei e de modelagem, e o plano não diz quais empresas.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 9.491/1997",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9491.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Revisões da literatura e estudo sobre o Brasil encontram aumento de lucratividade e eficiência das empresas privatizadas. Outra revisão encontra piora na distribuição de renda e de ativos no curto prazo, exceto em serviços como eletricidade e telefonia, em que os mais pobres ganharam acesso.",
+     "estudos": [
+      {
+       "titulo": "From State to Market: A Survey of Empirical Studies on Privatization",
+       "autor": "Megginson e Netter (Journal of Economic Literature)",
+       "ano": 2001,
+       "achado": "Na maioria dos casos estudados, as empresas privatizadas se tornaram mais eficientes, mais rentáveis e financeiramente mais saudáveis.",
+       "url": "https://ideas.repec.org/a/aea/jeclit/v39y2001i2p321-389.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Os efeitos da privatização sobre o desempenho econômico e financeiro das empresas privatizadas",
+       "autor": "Anuatti-Neto, Barossi-Filho, Carvalho e Macedo (Revista Brasileira de Economia)",
+       "ano": 2005,
+       "achado": "Empresas privatizadas no Brasil desde 1991 tiveram aumento de lucratividade e eficiência operacional; os efeitos sobre investimento, produção e impostos pagos não foram claros.",
+       "url": "https://www.scielo.br/j/rbe/a/TVjgv545MGj565LfWVRGc5M/abstract/?lang=en",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Winners and Losers: Assessing the Distributional Impact of Privatization",
+       "autor": "Birdsall e Nellis (World Development)",
+       "ano": 2003,
+       "achado": "A maioria dos programas de privatização piorou a distribuição de ativos e renda no curto prazo, com exceção de serviços como eletricidade e telecomunicações, em que os pobres ganharam acesso.",
+       "url": "https://ideas.repec.org/a/eee/wdevel/v31y2003i10p1617-1633.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo as revisões, os compradores e acionistas das empresas, e o Tesouro, com a receita da venda; nos serviços de infraestrutura, usuários que ganham acesso.",
+    "quem_paga_ou_perde": "Segundo Birdsall e Nellis, trabalhadores das estatais e grupos de menor renda no curto prazo; o Estado também deixa de receber dividendos das empresas vendidas.",
+    "fontes": [
+     {
+      "titulo": "Birdsall e Nellis (2003)",
+      "url": "https://ideas.repec.org/a/eee/wdevel/v31y2003i10p1617-1633.html"
+     },
+     {
+      "titulo": "Megginson e Netter (2001)",
+      "url": "https://ideas.repec.org/a/aea/jeclit/v39y2001i2p321-389.html"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 591/2021",
+     "ementa": "Marco regulatório do Sistema Nacional de Serviços Postais, que permite a desestatização dos Correios.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Aguardando audiência pública na Comissão de Assuntos Econômicos do Senado",
+     "ultima_acao": "2023-10-26: juntadas moções de câmaras municipais sobre a privatização da ECT.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/149593",
+     "direcao": "direita",
+     "relacao": "É o projeto de privatização de estatal federal parado no Senado que uma retomada do programa poderia destravar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 76/2026",
+     "ementa": "Susta o Decreto 12.856/2026, que revogou a inclusão de hidrovias federais no Programa Nacional de Desestatização.",
+     "autor": "Junio Amaral",
+     "partido": "PL/MG",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-03-04: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2606882",
+     "direcao": "direita",
+     "relacao": "Busca reincluir ativos no programa que o plano quer retomar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3163/2026",
+     "ementa": "Revoga a Lei 9.491/1997, do Programa Nacional de Desestatização.",
+     "autor": "Glauber Braga",
+     "partido": "PSOL/RJ",
+     "situacao": "Aguardando designação de relator na Comissão de Desenvolvimento Econômico",
+     "ultima_acao": "2026-09-04: recebimento pela CDE.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2633078",
+     "direcao": "esquerda",
+     "relacao": "Propõe extinguir o programa que o plano quer retomar."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Programa Nacional de Desestatização segue em vigor (Lei 9.491/1997); a inclusão de empresas depende de decreto e, para vender o controle de estatais, de lei.",
+    "fonte": {
+     "titulo": "Lei nº 9.491/1997 (Programa Nacional de Desestatização)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l9491.htm"
+    }
+   }
+  },
+  {
+   "tema": "trabalho",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe atuar no Senado pelo fim da escala 6x1 e pela redução da jornada para 40 horas, sem corte de salário.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec",
+     "explicacao": "A jornada máxima e o repouso semanal estão no art. 7º, XIII e XV, da Constituição, por isso a mudança exigiu PEC. Depois da publicação do plano, a PEC 221/2019 foi aprovada pelo Senado e promulgada como Emenda Constitucional 141, de 16/10/2026: 42 horas semanais dois meses após a publicação, 40 horas um ano depois, dois dias de repouso e nenhuma redução salarial; resta a regulamentação por lei, como a de regimes diferenciados e a de transição para micro e pequenas empresas.",
+     "fontes": [
+      {
+       "titulo": "Emenda Constitucional nº 141/2026",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 7º",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe a redução para 40 horas sem redução salarial, nos termos aprovados pela Câmara, sem estimar custos.",
+     "estimativa_externa": "Nota técnica do Ipea (Disoc nº 123, 2026) estima que a jornada de 40 horas eleva o custo médio da hora do trabalho celetista em 7,84%, com impacto inferior a 1% do custo operacional na indústria e no comércio e de até 6,6% em vigilância e segurança. Para o setor público, o custo aparece no reequilíbrio dos contratos terceirizados previsto no art. 9º da EC 141.",
+     "fontes": [
+      {
+       "titulo": "Ipea, Nota Técnica Disoc nº 123: Mudanças na jornada e na escala de trabalho (2026)",
+       "url": "https://static.poder360.com.br/2026/02/nota-tecnica-ipea.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Direito do trabalho é competência privativa da União (art. 22, I); pela EC 141, a jornada de 40 horas passa a valer cerca de 14 meses após 16/10/2026.",
+     "fontes": [
+      {
+       "titulo": "Emenda Constitucional nº 141/2026, art. 6º",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "No Brasil, a redução de 48 para 44 horas em 1988 diminuiu a jornada efetiva sem aumentar o desemprego dos afetados no curto prazo. Na França, a redução de 40 para 39 horas em 1982 elevou a perda de emprego dos afetados, e a lei das 35 horas não teve efeito mensurável sobre o emprego.",
+     "estudos": [
+      {
+       "titulo": "Os efeitos da redução da jornada de trabalho de 48 para 44 horas semanais em 1988",
+       "autor": "Gonzaga, Menezes-Filho e Camargo (Revista Brasileira de Economia)",
+       "ano": 2003,
+       "achado": "A jornada efetiva caiu, a probabilidade de desemprego dos afetados não aumentou e o salário-hora subiu em termos relativos, até 12 meses depois da mudança.",
+       "url": "https://ideas.repec.org/a/fgv/epgrbe/v57y2003i2a843.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Employed 40 Hours or Not Employed 39: Lessons from the 1982 Mandatory Reduction of the Workweek",
+       "autor": "Crépon e Kramarz (Journal of Political Economy)",
+       "ano": 2002,
+       "achado": "Na França, a redução de 40 para 39 horas elevou a probabilidade de perda de emprego dos afetados entre 2% e 4%, sobretudo entre quem ganhava o salário mínimo.",
+       "url": "https://ideas.repec.org/a/ucp/jpolec/v110y2002i6p1355-1389.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Using Alsace-Moselle Local Laws to Build a Difference-in-Differences Estimation Strategy of the Employment Effects of the 35-Hour Workweek Regulation in France",
+       "autor": "Chemin e Wasmer (Journal of Labor Economics)",
+       "ano": 2009,
+       "achado": "A lei francesa das 35 horas não produziu diferença significativa de emprego entre a região com aplicação menos rígida e o resto do país.",
+       "url": "https://ideas.repec.org/a/ucp/jlabec/v27y2009i4p487-524.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Mudanças na jornada e na escala de trabalho: elementos empíricos para o debate (Nota Técnica Disoc nº 123)",
+       "autor": "Pateo, Melo e Círiaco (Ipea)",
+       "ano": 2026,
+       "achado": "O custo médio da hora celetista sobe 7,84% com a jornada de 40 horas; empresas com até nove empregados, com cerca de 25% dos assalariados formais, podem precisar de apoio na transição.",
+       "url": "https://static.poder360.com.br/2026/02/nota-tecnica-ipea.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Cerca de 31,8 milhões de celetistas que trabalhavam 44 horas em 2023, segundo o Ipea, que passam a ter jornada menor e dois dias de repouso sem corte de salário.",
+    "quem_paga_ou_perde": "Empregadores, com alta do custo da hora de trabalho, em especial pequenas empresas e serviços intensivos em mão de obra, segundo o Ipea; a evidência francesa indica risco de perda de emprego para trabalhadores de salário mínimo.",
+    "fontes": [
+     {
+      "titulo": "Ipea, Nota Técnica Disoc nº 123 (2026)",
+      "url": "https://static.poder360.com.br/2026/02/nota-tecnica-ipea.pdf"
+     },
+     {
+      "titulo": "Crépon e Kramarz (2002)",
+      "url": "https://ideas.repec.org/a/ucp/jpolec/v110y2002i6p1355-1389.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "trabalho",
+    "indice": 10,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe reduzir por norma a jornada máxima para 40 horas; Flávio propõe jornada flexível definida em acordo entre trabalhador e empresa, com o negociado prevalecendo sobre a lei."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 221/2019",
+     "ementa": "Altera o art. 7º da Constituição para reduzir a jornada de trabalho (texto final: 40 horas semanais e dois dias de repouso).",
+     "autor": "Reginaldo Lopes",
+     "partido": "PT/MG",
+     "situacao": "Transformada na Emenda Constitucional 141/2026",
+     "ultima_acao": "2026-10-16: transformada na EC 141/2026, publicada no DOU de 16/10/2026 (edição extra).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2233802",
+     "direcao": "esquerda",
+     "relacao": "É a PEC que o plano prometia apoiar no Senado; já foi promulgada."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 8/2025",
+     "ementa": "Altera o art. 7º, XIII, da Constituição para reduzir a jornada a quatro dias por semana.",
+     "autor": "Erika Hilton e outros",
+     "partido": "PSOL/SP",
+     "situacao": "Arquivada",
+     "ultima_acao": "2026-05-27: desapensada da PEC 221/2019 em razão da aprovação desta em Plenário.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2485341",
+     "direcao": "esquerda",
+     "relacao": "Proposta de fim da escala 6x1 que tramitou junto com a PEC aprovada."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1838/2026",
+     "ementa": "Altera a CLT e leis de categorias específicas para dispor sobre a redução da duração do trabalho e o descanso semanal remunerado.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Em tramitação em regime de prioridade, com parecer preliminar de Plenário",
+     "ultima_acao": "2026-06-16: cancelada a urgência constitucional a pedido do Executivo; apresentado parecer preliminar do relator, Dep. Leo Prates (REPUBLIC/BA).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2616127",
+     "direcao": "esquerda",
+     "relacao": "Adapta a legislação ordinária à redução de jornada."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 147/2026",
+     "ementa": "Institui medidas transitórias de mitigação da redução constitucional da jornada, com desoneração previdenciária patronal integral para empregadores afetados.",
+     "autor": "Luiz Carlos Hauly",
+     "partido": "PODE/PR",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-06-16: apresentado requerimento de apensação ao PL 1838/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2628693",
+     "direcao": "direita",
+     "relacao": "Propõe compensar empregadores pelo custo da nova jornada, como prevê o art. 5º da EC 141."
+    }
+   ],
+   "situacao_atual": {
+    "status": "em_vigor",
+    "texto": "A EC 141/2026, publicada em 16/10/2026, reduz a jornada para 42 horas semanais dois meses após a publicação e para 40 horas um ano depois, com dois dias de repouso e sem redução salarial.",
+    "fonte": {
+     "titulo": "Emenda Constitucional nº 141/2026",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm"
+    }
+   }
+  },
+  {
+   "tema": "trabalho",
+   "indice": 1,
+   "candidato": "lula",
+   "proposta": "Propõe continuar a política de valorização do salário mínimo.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A política de valorização está na Lei 14.663/2023 (inflação mais crescimento do PIB de dois anos antes), aplicada por decreto anual; desde a Lei 15.077/2024, o ganho real fica limitado, de 2025 a 2030, à faixa de crescimento da despesa do arcabouço (0,6% a 2,5%). Mudar a fórmula exigiria lei ordinária.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.663/2023 (valorização do salário mínimo)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm"
+      },
+      {
+       "titulo": "Lei nº 15.077/2024, art. 4º",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15077.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano promete continuar a valorização do salário mínimo como meio de distribuir renda e combater a pobreza, sem trazer a fórmula nem o custo.",
+     "estimativa_externa": "Simulação das Consultorias de Orçamento da Câmara e do Senado sobre o PLDO 2027 estima que cada R$ 1 de aumento do salário mínimo gera R$ 413,2 milhões de despesa primária adicional, e que o reajuste para R$ 1.741 em 2027 custaria cerca de R$ 49,6 bilhões brutos.",
+     "fontes": [
+      {
+       "titulo": "Poder360: impacto do salário mínimo de R$ 1.741 deve chegar a R$ 49,6 bilhões (25/08/2026)",
+       "url": "https://www.poder360.com.br/poder-economia/impacto-do-salario-minimo-de-r-1-741-deve-chegar-a-r-496-bilhoes/"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O salário mínimo é nacionalmente unificado e fixado por lei federal (art. 7º, IV, da Constituição); a regra atual vale até 2030.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 7º, IV",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudo com dados brasileiros atribui ao aumento real do salário mínimo entre 1996 e 2018 cerca de 45% da queda da desigualdade salarial, com efeitos limitados sobre emprego. Outro estudo, com dados de 1982 a 2000, encontrou efeitos negativos sobre o emprego nos setores formal e informal, e o reajuste tem custo fiscal alto porque indexa benefícios previdenciários e assistenciais.",
+     "estudos": [
+      {
+       "titulo": "Earnings Inequality and the Minimum Wage: Evidence from Brazil",
+       "autor": "Engbom e Moser (American Economic Review)",
+       "ano": 2022,
+       "achado": "O aumento real de 128% do salário mínimo entre 1996 e 2018 explica 45% da queda da desigualdade salarial, com efeitos limitados sobre emprego e produto.",
+       "url": "https://ideas.repec.org/a/aea/aecrev/v112y2022i12p3803-47.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Minimum Wage Effects in a Developing Country (Labour Economics; versão IZA DP 1089)",
+       "autor": "Sara Lemos",
+       "ano": 2009,
+       "achado": "Com dados brasileiros de 1982 a 2000, encontrou efeitos negativos do salário mínimo sobre o emprego tanto no setor formal quanto no informal.",
+       "url": "https://iza.org/publications/dp/1089/imprint",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Mudanças na jornada e na escala de trabalho: elementos empíricos para o debate (Nota Técnica Disoc nº 123)",
+       "autor": "Pateo, Melo e Círiaco (Ipea)",
+       "ano": 2026,
+       "achado": "A nota registra que aumentos reais do salário mínimo de 12% (2001), 7,6% (2012) e 5,6% (2024) não foram seguidos de efeitos negativos sobre o nível de emprego.",
+       "url": "https://static.poder360.com.br/2026/02/nota-tecnica-ipea.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Trabalhadores que recebem o mínimo ou perto dele e beneficiários de aposentadorias, pensões, BPC e abono vinculados ao mínimo; segundo Engbom e Moser, também há efeito de transbordamento para salários um pouco acima.",
+    "quem_paga_ou_perde": "O orçamento federal, com cerca de R$ 413 milhões de despesa por real de aumento, segundo as consultorias do Congresso; empregadores de mão de obra de baixa remuneração, e, segundo Lemos, trabalhadores que perdem o emprego.",
+    "fontes": [
+     {
+      "titulo": "Engbom e Moser (2022)",
+      "url": "https://ideas.repec.org/a/aea/aecrev/v112y2022i12p3803-47.html"
+     },
+     {
+      "titulo": "Poder360 (2026)",
+      "url": "https://www.poder360.com.br/poder-economia/impacto-do-salario-minimo-de-r-1-741-deve-chegar-a-r-496-bilhoes/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4614/2024",
+     "ementa": "Altera leis de políticas públicas e estabelece disposições orçamentárias; entre elas, limita o ganho real do salário mínimo de 2025 a 2030 aos índices do arcabouço fiscal.",
+     "autor": "José Guimarães e outros",
+     "partido": "PT/CE",
+     "situacao": "Transformado em norma jurídica (Lei 15.077/2024), com veto parcial",
+     "ultima_acao": "2024-12-27: transformado na Lei 15.077/2024.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2473375",
+     "direcao": "direita",
+     "relacao": "Definiu o teto do aumento real do salário mínimo vigente até 2030."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 211/2024",
+     "ementa": "Altera a LC 200/2023 para manter pisos de saúde e educação, BPC, abono e a política de valorização real do salário mínimo.",
+     "autor": "Sâmia Bomfim e outros",
+     "partido": "PSOL/SP",
+     "situacao": "Aguardando encaminhamento",
+     "ultima_acao": "2025-03-13: encaminhado à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2473530",
+     "direcao": "esquerda",
+     "relacao": "Propõe proteger a valorização do salário mínimo dos limites do arcabouço."
+    }
+   ],
+   "situacao_atual": {
+    "status": "em_vigor",
+    "texto": "A política de valorização está em vigor pela Lei 14.663/2023; desde a Lei 15.077/2024, o ganho real de 2025 a 2030 fica limitado à faixa de crescimento da despesa do arcabouço.",
+    "fonte": {
+     "titulo": "Lei nº 14.663/2023 (valorização do salário mínimo)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm"
+    }
+   }
+  },
+  {
+   "tema": "trabalho",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe criar regras de proteção para quem trabalha por aplicativos e plataformas digitais, incluindo remuneração, direitos e Previdência.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_complementar",
+     "explicacao": "O projeto do governo para motoristas de aplicativo (PLP 12/2024) tramita como lei complementar, por tratar de inclusão previdenciária e de categoria intermediária entre empregado e autônomo; está pronto para a pauta da Câmara desde 2024. Regras sobre entregadores e transparência algorítmica poderiam vir por lei ordinária (art. 22, I, da Constituição).",
+     "fontes": [
+      {
+       "titulo": "Câmara: PLP 12/2024",
+       "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2419243"
+      },
+      {
+       "titulo": "Constituição Federal, arts. 22, I, e 195",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe uma lei com regras sobre relação de trabalho, remuneração, condições, direitos trabalhistas e previdenciários e transparência algorítmica, sem estimar custo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Direito do trabalho e previdência são de competência da União, mas o projeto está parado na Câmara desde 2024 e o STF ainda não julgou o Tema 1291, sobre vínculo de emprego com plataformas.",
+     "fontes": [
+      {
+       "titulo": "STF, RE 1.446.336 (Tema 1291)",
+       "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6679823"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Em Nova York, a remuneração mínima para motoristas de aplicativo elevou a renda por hora e reduziu o tempo de espera, sem queda relevante no número de viagens. Na Espanha, modelo calibrado para a lei que presume vínculo de emprego dos entregadores indica mais empregados, mas salários menores e perda de bem-estar; a evidência é recente e limitada.",
+     "estudos": [
+      {
+       "titulo": "New York City's Gig Driver Pay Standard: Effects on Drivers, Passengers, and the Companies",
+       "autor": "Parrott e Reich (Center for New York City Affairs)",
+       "ano": 2020,
+       "achado": "No primeiro ano da regra, a remuneração bruta por hora dos motoristas subiu 8,8%, o tempo de espera caiu quase 18% e o crescimento das viagens não foi reduzido de forma significativa.",
+       "url": "https://www.centernyc.org/reports-briefs/2020/12/8/new-york-citys-gig-driver-pay-standard-effects-on-drivers-passengers-and-the-companies",
+       "tipo": "think_tank"
+      },
+      {
+       "titulo": "Riders on the Storm (IZA Discussion Paper 17740)",
+       "autor": "Dolado, Jáñez e Wellschmied",
+       "ano": 2025,
+       "achado": "A Lei dos Riders espanhola elevou a parcela de entregadores empregados, mas não absorveu todos os que deixaram o trabalho autônomo e reduziu salários; combinada com corte de contribuições sobre a folha, manteria o emprego.",
+       "url": "https://www.iza.org/publications/dp/17740/riders-on-the-storm",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Motoristas e entregadores de aplicativo, com remuneração mínima e cobertura previdenciária; em Nova York, o ganho médio foi de US$ 1,33 por viagem, segundo Parrott e Reich.",
+    "quem_paga_ou_perde": "Plataformas, que absorveram parte do custo em Nova York; passageiros e clientes, se houver repasse a preços; e, segundo o estudo espanhol, trabalhadores que perdem acesso à atividade quando o vínculo é presumido.",
+    "fontes": [
+     {
+      "titulo": "Parrott e Reich (2020)",
+      "url": "https://www.centernyc.org/reports-briefs/2020/12/8/new-york-citys-gig-driver-pay-standard-effects-on-drivers-passengers-and-the-companies"
+     },
+     {
+      "titulo": "Dolado et al. (2025)",
+      "url": "https://www.iza.org/publications/dp/17740/riders-on-the-storm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "trabalho",
+    "indice": 12,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe uma lei com regras de remuneração, direitos e transparência algorítmica; Flávio propõe manter a flexibilidade do trabalho por aplicativo com proteção social e previdenciária, sem sindicatos à frente da regulação."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 12/2024",
+     "ementa": "Dispõe sobre a relação de trabalho intermediada por aplicativos de transporte de passageiros em veículos de quatro rodas e estabelece inclusão previdenciária e outros direitos.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Pronta para pauta no Plenário",
+     "ultima_acao": "2026-05-12: apresentado requerimento do Dep. Junio Amaral (PL/MG) para apensar os PLPs 113/2026 e 122/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2419243",
+     "direcao": "esquerda",
+     "relacao": "É o projeto do governo que materializa a proposta para motoristas."
+    },
+    {
+     "casa": "STF",
+     "tipo": "RE",
+     "numero": "RE 1.446.336 (Tema 1291)",
+     "ementa": "Discute se há vínculo de emprego entre motoristas de aplicativo e a plataforma.",
+     "autor": "Uber do Brasil Tecnologia Ltda. (recorrente)",
+     "partido": "não se aplica",
+     "situacao": "Pendente de julgamento no Plenário, sob relatoria do ministro Edson Fachin",
+     "ultima_acao": "2026-08-21: conclusos ao relator; o caso havia sido incluído no calendário de julgamento de 27/08/2026.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6679823",
+     "direcao": "fora do RILE",
+     "relacao": "A decisão definirá o enquadramento jurídico dos trabalhadores que a lei proposta quer regular."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "trabalho",
+   "indice": 7,
+   "candidato": "flavio",
+   "proposta": "Propõe reduzir gradualmente o custo de contratar com carteira assinada, sem retirar direitos.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "Os encargos sobre a folha, como a contribuição patronal de 20% ao INSS, estão na Lei 8.212/1991 e só podem ser reduzidos por lei; a renúncia precisa de estimativa de impacto e compensação (art. 113 do ADCT e art. 14 da LRF). A Constituição permite alíquotas diferenciadas por atividade ou porte da empresa (art. 195, §9º).",
+     "fontes": [
+      {
+       "titulo": "Lei nº 8.212/1991 (custeio da Seguridade Social)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 195, §9º, e ADCT, art. 113",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que o custo do trabalho chega a cerca de duas vezes o salário e promete reduzi-lo gradualmente, sem retirar direitos, sem dizer como nem quanto.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Contribuições sociais sobre a folha são da União (art. 195), mas o plano fala em redução gradual sem cronograma, e cada etapa depende de compensação fiscal.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 195",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Avaliação do Ipea não encontrou efeito sobre o emprego da desoneração da folha adotada no Brasil a partir de 2012, que trocou a contribuição sobre a folha por uma sobre o faturamento em setores escolhidos. Na Colômbia, o corte de encargos de 2012, amplo e voltado a salários mais baixos, aumentou o emprego formal, sobretudo em pequenas empresas.",
+     "estudos": [
+      {
+       "titulo": "Impacto da Desoneração da Folha de Pagamento sobre o Emprego: novas evidências (TD 2357)",
+       "autor": "Garcia, Sachsida e Carvalho (Ipea)",
+       "ano": 2018,
+       "achado": "Com dados da Rais de 2009 a 2015, a desoneração setorial da folha não teve efeito mensurável sobre o volume de empregos.",
+       "url": "https://ideas.repec.org/p/ipe/ipetds/2357.html",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Do Payroll Tax Breaks Stimulate Formality? Evidence from Colombia's Reform",
+       "autor": "Kugler, Kugler e Herrera-Prada (Economía/LACEA; NBER WP 23308)",
+       "ano": 2017,
+       "achado": "A redução de cerca de 13,5 pontos nos encargos para quem ganhava até 10 salários mínimos aumentou o emprego formal e os contratos permanentes, mais em empresas menores.",
+       "url": "https://www.nber.org/papers/w23308",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empregadores com folha formal e, segundo o estudo colombiano, trabalhadores de baixa renda e de pequenas empresas que passam a ter carteira assinada.",
+    "quem_paga_ou_perde": "A Previdência perde receita, que precisa ser compensada por outro tributo ou corte de gasto; no caso brasileiro, o Ipea não encontrou ganho de emprego que compensasse a renúncia.",
+    "fontes": [
+     {
+      "titulo": "Garcia, Sachsida e Carvalho (2018)",
+      "url": "https://ideas.repec.org/p/ipe/ipetds/2357.html"
+     },
+     {
+      "titulo": "Kugler et al. (2017)",
+      "url": "https://www.nber.org/papers/w23308"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1847/2024",
+     "ementa": "Estabelece regime de transição para a contribuição substitutiva sobre a receita bruta (desoneração da folha) e altera leis de custeio.",
+     "autor": "Efraim Filho (Senado Federal)",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (Lei 14.973/2024)",
+     "ultima_acao": "2025-06-30: recebido ofício do Congresso sobre a apreciação de veto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2454704",
+     "direcao": "fora do RILE",
+     "relacao": "Fixou a volta gradual dos encargos sobre a folha nos setores desonerados, em sentido oposto à redução proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 147/2026",
+     "ementa": "Institui medidas transitórias de mitigação da redução constitucional da jornada, com desoneração previdenciária patronal integral para empregadores afetados.",
+     "autor": "Luiz Carlos Hauly",
+     "partido": "PODE/PR",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-06-16: apresentado requerimento de apensação ao PL 1838/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2628693",
+     "direcao": "direita",
+     "relacao": "Propõe cortar a contribuição patronal sobre a folha, instrumento da redução de custo do trabalho."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "trabalho",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe um contrato de trabalho com menor custo para a empresa, voltado a jovens de 18 a 24 anos em busca do primeiro emprego.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "Um contrato de trabalho com menos encargos exige mudar a CLT e a Lei 8.212/1991 por lei, com estimativa de impacto e compensação da renúncia (art. 113 do ADCT). A tentativa anterior, o Contrato Verde e Amarelo da MP 905/2019, perdeu a eficácia em 2020 sem ser votada pelo Senado.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 8.212/1991",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"
+      },
+      {
+       "titulo": "Câmara: MPV 905/2019 (Contrato Verde e Amarelo)",
+       "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2229308"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe contrato com menor custo na folha para jovens de 18 a 24 anos em busca do primeiro emprego, sem dizer quanto menos nem como compensar a receita.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Direito do trabalho e contribuições sociais são competência da União (arts. 22, I, e 195), e a medida pode ser aprovada e aplicada no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 22 e 195",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Na Suécia, o corte de encargos para jovens elevou o emprego juvenil em 2 a 3 pontos percentuais. Estudo da mesma reforma concluiu que o efeito foi pequeno e que o custo por emprego criado superou em mais de quatro vezes o de contratar diretamente, porque o benefício também alcançou vagas que já existiam.",
+     "estudos": [
+      {
+       "titulo": "Payroll Taxes, Firm Behavior, and Rent Sharing: Evidence from a Young Workers' Tax Cut in Sweden",
+       "autor": "Saez, Schoefer e Seim (American Economic Review)",
+       "ano": 2019,
+       "achado": "O corte de encargos para jovens aumentou o emprego juvenil em 2 a 3 pontos percentuais, sem efeito sobre o salário líquido dos jovens.",
+       "url": "https://ideas.repec.org/a/aea/aecrev/v109y2019i5p1717-63.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Do payroll tax cuts raise youth employment? (IFAU WP 2013:27; versão publicada em Labour Economics, 2018)",
+       "autor": "Egebark e Kaunitz",
+       "ano": 2013,
+       "achado": "O efeito da redução sobre emprego e salários foi pequeno e o custo por emprego criado foi mais de quatro vezes o custo de contratar diretamente ao salário médio.",
+       "url": "https://ifau.se/en/Press/Abstracts/Do-payroll-tax-cuts-raise-youth-employment",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Jovens de 18 a 24 anos sem experiência, pela maior chance de contratação segundo o estudo sueco, e empresas que contratam jovens, pelo menor custo.",
+    "quem_paga_ou_perde": "A Previdência perde receita, inclusive sobre vagas que seriam criadas de qualquer forma, segundo Egebark e Kaunitz; trabalhadores fora da faixa etária podem ser preteridos.",
+    "fontes": [
+     {
+      "titulo": "Saez, Schoefer e Seim (2019)",
+      "url": "https://ideas.repec.org/a/aea/aecrev/v109y2019i5p1717-63.html"
+     },
+     {
+      "titulo": "Egebark e Kaunitz (2013)",
+      "url": "https://ifau.se/en/Press/Abstracts/Do-payroll-tax-cuts-raise-youth-employment"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3869/2026",
+     "ementa": "Institui o Programa Nacional de Incentivo ao Primeiro Emprego Jovem, com redução temporária da contribuição patronal na contratação de jovens sem vínculo formal anterior.",
+     "autor": "Amom Mandel",
+     "partido": "REPUBLICANOS/AM",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-07-17: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2640544",
+     "direcao": "direita",
+     "relacao": "Propõe o mesmo mecanismo: encargo menor para contratar jovens no primeiro emprego."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 7148/2025",
+     "ementa": "Institui a Política Nacional de Incentivo ao Primeiro Emprego e autoriza o Executivo a adotar medidas de estímulo à contratação de jovens.",
+     "autor": "Amom Mandel",
+     "partido": "REPUBLICANOS/AM",
+     "situacao": "Pronta para pauta na Comissão de Trabalho",
+     "ultima_acao": "2026-07-01: aprovados requerimentos de retirada de pauta.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2599757",
+     "direcao": "fora do RILE",
+     "relacao": "Cria política de estímulo ao primeiro emprego, objetivo da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 905/2019",
+     "ementa": "Institui o Contrato de Trabalho Verde e Amarelo, com encargos menores para o primeiro emprego de jovens de 18 a 29 anos.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Perdeu a eficácia",
+     "ultima_acao": "2020-09-29: publicado ato do Congresso sobre o encerramento da vigência da MP em 23/09/2020.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2229308",
+     "direcao": "direita",
+     "relacao": "Foi a versão anterior de contrato mais barato para jovens; não se converteu em lei."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "trabalho",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe jornada flexível e que acordos entre trabalhador e empresa prevaleçam sobre a regra geral da lei (negociado sobre o legislado).",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A prevalência do acordo coletivo sobre a lei em temas como jornada, banco de horas e intervalos já está no art. 611-A da CLT, criado pela Lei 13.467/2017, com limites no art. 611-B, e o STF a validou no Tema 1046 (2022). Ampliar os temas negociáveis exigiria lei ordinária; atingir direitos do art. 7º da Constituição, como os limites de jornada da EC 141/2026, exigiria PEC.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 13.467/2017 (reforma trabalhista; art. 611-A da CLT)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm"
+      },
+      {
+       "titulo": "STF, ARE 1.121.633 (Tema 1046)",
+       "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5415427"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano defende o negociado sobre o legislado e jornadas flexíveis, dentro da lei, sem estimar efeitos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Direito do trabalho é competência privativa da União (art. 22, I), e a base legal já está em vigor.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, I",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontradas avaliações de impacto da prevalência do acordo sobre a lei (art. 611-A da CLT). As fontes tratam de temas vizinhos: comparação da OCDE, citada em resumo de entidade sindical, associa sistemas coordenados de negociação a mais emprego, e estudo sobre a reforma de 2017 associa o enfraquecimento financeiro dos sindicatos a queda do emprego formal.",
+     "estudos": [
+      {
+       "titulo": "Negotiating Our Way Up: Collective Bargaining in a Changing World of Work (resumo do TUAC sobre o relatório da OCDE)",
+       "autor": "OCDE; resumo do Trade Union Advisory Committee",
+       "ano": 2019,
+       "achado": "Sistemas coordenados, inclusive com descentralização organizada, estão ligados a mais emprego e menos desemprego do que sistemas totalmente descentralizados, segundo o relatório citado no resumo.",
+       "url": "https://tuac.org/wp-content/uploads/2019/11/1911t_negotiating-our-way-up_TUAC-1.pdf",
+       "tipo": "entidade_interessada"
+      },
+      {
+       "titulo": "Can weakened unions fuel formal work? Lessons from Brazil's labor reform",
+       "autor": "Nikita Kohli (Duke University; blog Development Impact, Banco Mundial)",
+       "ano": 2024,
+       "achado": "Após o fim da contribuição sindical obrigatória, regiões com sindicatos mais atuantes tiveram queda de 2,5% no emprego formal e de 0,9% nos salários formais, com sinais de mais contratação informal.",
+       "url": "https://blogs.worldbank.org/en/impactevaluations/can-weakened-unions-fuel-formal-work--lessons-from-brazil-s-labo",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empresas e trabalhadores que preferem arranjos de jornada adaptados ao setor; segundo a OCDE, ganhos de flexibilidade aparecem quando a descentralização ocorre dentro de um sistema coordenado.",
+    "quem_paga_ou_perde": "Trabalhadores com menor poder de negociação, se os acordos reduzirem direitos; o estudo sobre a reforma de 2017 encontrou perdas de emprego formal e de salário onde os sindicatos se enfraqueceram, maiores entre os menos qualificados.",
+    "fontes": [
+     {
+      "titulo": "Resumo TUAC do relatório da OCDE (2019)",
+      "url": "https://tuac.org/wp-content/uploads/2019/11/1911t_negotiating-our-way-up_TUAC-1.pdf"
+     },
+     {
+      "titulo": "Kohli (2024)",
+      "url": "https://blogs.worldbank.org/en/impactevaluations/can-weakened-unions-fuel-formal-work--lessons-from-brazil-s-labo"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "trabalho",
+    "indice": 6,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe que os acordos entre trabalhador e empresa prevaleçam sobre a regra geral da lei; Lula propõe fortalecer a negociação coletiva por meio dos sindicatos e atualizar o sistema sindical."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 6787/2016",
+     "ementa": "Altera a CLT (reforma trabalhista), incluindo a prevalência de convenções e acordos coletivos sobre a lei em temas definidos.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (Lei 13.467/2017)",
+     "ultima_acao": "2019-02-12: requerimento declarado prejudicado porque o projeto já havia sido transformado na Lei 13.467/2017.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2122076",
+     "direcao": "direita",
+     "relacao": "Criou o negociado sobre o legislado que o plano defende."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ARE",
+     "numero": "ARE 1.121.633 (Tema 1046)",
+     "ementa": "Validade de acordos e convenções coletivas que limitam ou afastam direitos trabalhistas não absolutamente indisponíveis.",
+     "autor": "Mineração Serra Grande S.A. (recorrente)",
+     "partido": "não se aplica",
+     "situacao": "Decidido; tese fixada e trânsito em julgado",
+     "ultima_acao": "2023-05-09: trânsito em julgado e baixa dos autos ao TST.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5415427",
+     "direcao": "direita",
+     "relacao": "Confirmou a constitucionalidade dos acordos que prevalecem sobre a lei, base jurídica da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 221/2019",
+     "ementa": "Altera o art. 7º da Constituição para reduzir a jornada de trabalho (texto final: 40 horas semanais e dois dias de repouso).",
+     "autor": "Reginaldo Lopes",
+     "partido": "PT/MG",
+     "situacao": "Transformada na Emenda Constitucional 141/2026",
+     "ultima_acao": "2026-10-16: transformada na EC 141/2026, publicada no DOU de 16/10/2026 (edição extra).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2233802",
+     "direcao": "esquerda",
+     "relacao": "Fixou limites de jornada que os acordos não podem ultrapassar, mas admite regimes compensatórios por acordo coletivo."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A prevalência do acordo coletivo sobre a lei em temas como jornada e banco de horas está em vigor (art. 611-A da CLT, incluído pela Lei 13.467/2017); a ampliação para outros temas não foi aprovada.",
+    "fonte": {
+     "titulo": "Lei nº 13.467/2017 (reforma trabalhista)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm"
+    }
+   }
+  }
+ ]
+}

@@ -97,6 +97,21 @@ def main() -> None:
     if palavras and max(palavras.values()) > 1.15 * max(1, min(palavras.values())):
         erros.append(f"resumo desequilibrado em extensão: {palavras}")
 
+    pasta_av = ROOT / "data" / "avaliacao"
+    if pasta_av.is_dir():
+        por_tema: dict[str, dict[str, int]] = {}
+        for f in sorted(pasta_av.glob("*.json")):
+            for a in json.loads(f.read_text(encoding="utf-8")).get("itens", []):
+                t = temas.get(a.get("tema"))
+                ok = t and isinstance(a.get("indice"), int) and a["indice"] < len(t["itens"]) and t["itens"][a["indice"]]["candidato"] == a.get("candidato")
+                if not ok:
+                    erros.append(f"avaliação {f.name} {a.get('tema')}#{a.get('indice')}: não corresponde a um item do comparativo")
+                    continue
+                por_tema.setdefault(a["tema"], {k: 0 for k in ids})[a["candidato"]] += 1
+        for tema_id, cont in por_tema.items():
+            if len(set(cont.values())) > 1:
+                erros.append(f"avaliação {tema_id}: número de propostas avaliadas diferente por candidato {cont}")
+
     chk = load("data/checagens.json")["checagens"]
     contagem = {k: sum(1 for c in chk if c["candidato"] == k) for k in ids}
     if len(set(contagem.values())) > 1:

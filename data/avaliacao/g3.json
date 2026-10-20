@@ -1,0 +1,2256 @@
+{
+ "grupo": "g3",
+ "temas": [
+  "saude",
+  "programas-sociais",
+  "mulheres"
+ ],
+ "itens": [
+  {
+   "tema": "saude",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe ampliar o Agora Tem Especialistas, com terceiro turno, Carretas da Saúde e mutirões para consultas, exames e cirurgias.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O programa foi criado pela Medida Provisória 1.301/2025, convertida na Lei 15.233/2025, com vigência até 2030; terceiro turno, carretas e mutirões são ações de execução do Ministério da Saúde dentro dessa lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.233/2025 (Programa Agora Tem Especialistas)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15233.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano descreve resultados de 2025 e diz que as ações serão impulsionadas, sem informar custo adicional nem fonte.",
+     "estimativa_externa": "O TCU registrou cerca de R$ 1,6 bilhão aplicados no programa em 2025, e a MP 1.301 limitou a R$ 2 bilhões por ano os créditos a hospitais privados aderentes.",
+     "fontes": [
+      {
+       "titulo": "TCU: programa de redução de filas passa por fiscalização (10/02/2026)",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/programa-de-reducao-de-filas-na-saude-publica-passa-por-fiscalizacao-do-tcu"
+      },
+      {
+       "titulo": "Senado: sumário executivo da MP 1.301/2025",
+       "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/sumarios-de-proposicoes/mpv1301"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Saúde é competência comum (art. 23, II) e o programa é financiado pela União, mas executado com estados, municípios e hospitais conveniados; ele já está em funcionamento.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23 e 198",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto do programa: a auditoria do TCU, conhecida por reportagem, registrou aumento da produção de cirurgias com desaceleração em 2025 e queda da espera mediana, mas um quarto dos pacientes esperando cada vez mais. Comparação descritiva da OCDE entre 12 países indica que verbas temporárias para produção extra tendem a ter efeitos temporários.",
+     "estudos": [
+      {
+       "titulo": "Ritmo de cirurgias do Agora Tem Especialistas caiu em 2025, aponta TCU (reportagem sobre relatório de auditoria)",
+       "autor": "Tribunal de Contas da União, via Futuro da Saúde",
+       "ano": 2026,
+       "achado": "Crescimento da produção caiu de 45,6% (2022) para 4,5% (2025); espera mediana caiu na maioria dos procedimentos, mas um quarto dos usuários espera cada vez mais.",
+       "url": "https://futurodasaude.com.br/?p=47964",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Tackling Excessive Waiting Times for Elective Surgery: A Comparison of Policies in Twelve OECD Countries",
+       "autor": "Jeremy Hurst e Luigi Siciliani (OCDE)",
+       "ano": 2003,
+       "achado": "Políticas temporárias de financiamento extra tiveram efeitos temporários; Inglaterra e Espanha reduziram esperas longas combinando metas, atividade adicional e incentivos.",
+       "url": "https://ideas.repec.org/p/oec/elsaad/6-en.html",
+       "tipo": "organismo_internacional"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Pacientes na fila de consultas, exames e cirurgias eletivas atendidos pelos mutirões e turnos extras.",
+    "quem_paga_ou_perde": "Orçamento federal da saúde; segundo o TCU, parte dos pacientes segue com esperas crescentes.",
+    "fontes": [
+     {
+      "titulo": "Futuro da Saúde, sobre auditoria do TCU",
+      "url": "https://futurodasaude.com.br/?p=47964"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "saude",
+    "indice": 10,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe ampliar a oferta própria do SUS com terceiro turno, carretas e mutirões dentro de um programa já existente; Flávio propõe comprar exames e serviços da rede privada nos horários em que os aparelhos estão parados."
+   },
+   "proposicoes": [
+    {
+     "casa": "Congresso",
+     "tipo": "MPV",
+     "numero": "MPV 1.301/2025",
+     "ementa": "Institui o Programa Agora Tem Especialistas e altera leis da saúde.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada na Lei 15.233/2025",
+     "ultima_acao": "2025-10-07: transformada na Lei Ordinária 15.233/2025 (DOU de 08/10/2025).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2519886",
+     "direcao": "esquerda",
+     "relacao": "É a base legal do programa que a proposta pretende ampliar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 844/2026",
+     "ementa": "Institui o programa Cirurgia sem Espera para reduzir filas de cirurgias eletivas no SUS, com financiamento por emendas parlamentares e gatilhos automáticos de execução.",
+     "autor": "Rafael Prudente",
+     "partido": "MDB",
+     "situacao": "Aguardando parecer na Comissão de Saúde",
+     "ultima_acao": "2026-04-22: encerrado o prazo de emendas, sem emendas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2605625",
+     "direcao": "esquerda",
+     "relacao": "Propõe outro arranjo legal para o mesmo objetivo de reduzir filas de cirurgia."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Agora Tem Especialistas está em vigor pela Lei 15.233/2025, até 2030; a ampliação proposta depende de execução e orçamento.",
+    "fonte": {
+     "titulo": "Lei nº 15.233/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15233.htm"
+    }
+   }
+  },
+  {
+   "tema": "saude",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe fila única digital para atendimento especializado, ordenada pela gravidade e com uso de inteligência artificial.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "A regulação do acesso é organizada por normas do Ministério da Saúde pactuadas na Comissão Intergestores Tripartite, com base na Lei 8.080/1990 (arts. 7º e 16); uma fila única digital pode ser instituída por portaria e sistemas federais, sem nova lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 8.080/1990 (Lei Orgânica da Saúde)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima o custo do sistema, da inteligência artificial nem do transporte sanitário associado.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "As centrais de regulação são operadas por estados e municípios (art. 198 da Constituição, rede regionalizada); unificar a fila depende da adesão e da integração dos sistemas locais, que o TCU apontou como falha atual.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 198",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Revisão sistemática sobre filas únicas para cirurgia eletiva achou redução de espera em 9 de 11 estudos, todos de qualidade baixa, e a regulação com teleconsultoria no Rio Grande do Sul reduziu em 29% os encaminhamentos presenciais. Estudo na Science mostrou que um algoritmo de priorização usado nos EUA subestimava a gravidade de pacientes negros por usar custo como indicador de necessidade.",
+     "estudos": [
+      {
+       "titulo": "What is the influence of single-entry models on access to elective surgical procedures? A systematic review",
+       "autor": "Damani et al. (BMJ Open)",
+       "ano": 2017,
+       "achado": "Nove de 11 estudos registraram queda na espera com fila única, mas a baixa qualidade dos estudos não permite conclusão firme.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28237954/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Teleconsultations' Impact on Referral Streamlining and Waitlist Reduction: A Large-Scale Retrospective Cohort Study of Over 200,000 Cases",
+       "autor": "Pfeil et al. (Telemedicine and e-Health)",
+       "ano": 2025,
+       "achado": "No Rio Grande do Sul, o RegulaSUS reduziu em 29% a necessidade de consulta presencial com especialista e o tempo na fila.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40170629/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Dissecting racial bias in an algorithm used to manage the health of populations",
+       "autor": "Obermeyer, Powers, Vogeli e Mullainathan (Science)",
+       "ano": 2019,
+       "achado": "Algoritmo de priorização que usava custo como indicador de necessidade subestimou a gravidade de pacientes negros.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31649194/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Pacientes com casos mais graves, que seriam atendidos antes, e usuários que passariam a ver sua posição na fila.",
+    "quem_paga_ou_perde": "Pacientes com casos classificados como menos graves podem esperar mais; o estudo da Science mostra risco de erro de classificação contra grupos com menos acesso.",
+    "fontes": [
+     {
+      "titulo": "Obermeyer et al. (2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31649194/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "saude",
+    "indice": 12,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe uma fila única ordenada pelo risco clínico; Flávio propõe usar inteligência artificial para marcar cada paciente na primeira vaga disponível."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1291/2025",
+     "ementa": "Institui Fila Única Nacional e aplicativo da fila do SUS, metas de tempo máximo de espera, atendimento prioritário com inteligência artificial e transparência dos dados da fila.",
+     "autor": "Bia Kicis",
+     "partido": "PL",
+     "situacao": "Aguardando parecer na Comissão de Saúde",
+     "ultima_acao": "2026-04-13: designado relator Dep. Dr. Frederico (PRD-MG).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2490661",
+     "direcao": "esquerda",
+     "relacao": "Prevê em lei uma fila única nacional com IA, semelhante à proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2759/2025",
+     "ementa": "Obriga o gestor federal do SUS a criar plataforma digital nacional de transparência das filas de consultas, exames, procedimentos e cirurgias eletivas.",
+     "autor": "Marussa Boldrin",
+     "partido": "REPUBLICANOS",
+     "situacao": "Aguardando parecer na Comissão de Saúde",
+     "ultima_acao": "2026-07-29: apensado o PL 2911/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2521230",
+     "direcao": "fora do RILE",
+     "relacao": "Trata da transparência das filas citada na proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "saude",
+   "indice": 4,
+   "candidato": "lula",
+   "proposta": "Propõe manter o Farmácia Popular 100% gratuito e incluir exames para doenças crônicas, como hipertensão e diabetes.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O programa tem base na Lei 10.858/2004 e é regulado por portarias do Ministério da Saúde, que definem a lista de itens gratuitos; incluir exames exige nova regulamentação e credenciamento de laboratórios, sem necessidade de nova lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 10.858/2004 (base legal do Farmácia Popular)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.858.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano informa 27,3 milhões de pessoas atendidas em 2025 e 41 medicamentos gratuitos, mas não estima o custo da gratuidade nem da inclusão de exames.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O programa é financiado e gerido pela União, por convênio direto com farmácias privadas; a inclusão de exames depende de ato do Ministério da Saúde.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 10.858/2004",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.858.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Estudo publicado no Journal of Health Economics encontrou redução robusta nas internações por diabetes associada à expansão do programa, maior entre os mais pobres, e evidência fraca de queda na mortalidade. A CGU apontou cerca de R$ 2,6 bilhões em vendas sem comprovação de estoque entre 2015 e 2020, e a PNS 2019 mostra que menos da metade dos hipertensos obtinha remédios pelo programa; não foram localizadas avaliações da oferta de exames.",
+     "estudos": [
+      {
+       "titulo": "Subsidizing access to prescription drugs and health outcomes: The case of diabetes",
+       "autor": "Pedro Américo e Rudi Rocha (Journal of Health Economics)",
+       "ano": 2020,
+       "achado": "Cada farmácia credenciada adicional por 100 mil habitantes se associou a 3,6% menos internações por diabetes; efeito na mortalidade foi fraco.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/32622153/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "National Health Survey 2019: medication obtainment through the Brazilian Popular Pharmacy Program by adults being treated for hypertension and diabetes",
+       "autor": "Costa et al. (Epidemiologia e Serviços de Saúde)",
+       "ano": 2022,
+       "achado": "45,1% dos hipertensos e 51,5% dos diabéticos em tratamento obtinham remédio pelo programa, com desigualdades regionais e de renda.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/35830016/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "CGU indica irregularidades de R$ 2,6 bi no Farmácia Popular (reportagem sobre auditoria)",
+       "autor": "Controladoria-Geral da União, via Poder360",
+       "ano": 2024,
+       "achado": "Entre 2015 e 2020, cerca de R$ 2,6 bilhões (18,53% dos repasses) em vendas registradas sem nota fiscal de entrada dos medicamentos.",
+       "url": "https://www.poder360.com.br/saude/cgu-indica-irregularidades-de-r-26-bi-no-farmacia-popular/",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Pacientes com hipertensão e diabetes, sobretudo de menor renda, segundo o estudo de 2020; farmácias credenciadas recebem pelos itens dispensados.",
+    "quem_paga_ou_perde": "Orçamento federal da saúde; a auditoria da CGU registrou perdas com vendas sem comprovação no período 2015-2020.",
+    "fontes": [
+     {
+      "titulo": "Américo e Rocha (2020)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32622153/"
+     },
+     {
+      "titulo": "Poder360, sobre auditoria da CGU",
+      "url": "https://www.poder360.com.br/saude/cgu-indica-irregularidades-de-r-26-bi-no-farmacia-popular/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "saude",
+    "indice": 14,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe manter a retirada gratuita em farmácias conveniadas e somar exames; Flávio propõe entregar remédios em casa para idosos, pessoas com deficiência e doentes crônicos."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4861/2026",
+     "ementa": "Dispõe sobre a institucionalização do Programa Farmácia Popular do Brasil.",
+     "autor": "Dr. Francisco",
+     "partido": "PT",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-08-03: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2641800",
+     "direcao": "esquerda",
+     "relacao": "Daria base legal própria ao programa que a proposta quer manter."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 505/2024",
+     "ementa": "Altera a Lei 10.858/2004 para prever o fornecimento de testes de glicemia capilar pelas farmácias dos programas públicos de medicamentos.",
+     "autor": "Flávia Morais",
+     "partido": "MDB",
+     "situacao": "Tramitando em conjunto (apensado ao PL 9937/2018)",
+     "ultima_acao": "2026-03-04: designado relator Dep. Max Lemos (PDT-RJ) para o PL 9937/2018, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2418995",
+     "direcao": "esquerda",
+     "relacao": "Inclui no programa um teste de monitoramento do diabetes, na linha dos exames propostos."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3977/2025",
+     "ementa": "Institui o Farmácia Popular Digital, integrado ao Gov.br/Meu SUS Digital, com receita eletrônica e entrega domiciliar para idosos e pessoas com deficiência.",
+     "autor": "Marcos Tavares",
+     "partido": "PDT",
+     "situacao": "Aguardando parecer na Comissão de Saúde",
+     "ultima_acao": "2026-04-15: encerrado o prazo de emendas, sem emendas; relator Dep. Dr. Francisco (PT-PI).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2544871",
+     "direcao": "esquerda",
+     "relacao": "Amplia o programa que a proposta pretende manter."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Farmácia Popular está em vigor com base na Lei 10.858/2004 e em portarias do Ministério da Saúde; a oferta de exames não foi instituída.",
+    "fonte": {
+     "titulo": "Lei nº 10.858/2004",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.858.htm"
+    }
+   }
+  },
+  {
+   "tema": "saude",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe garantir condições para corrigir a tabela SUS, para que os valores pagos cubram o custo real do atendimento.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Desde a Lei 14.820/2024, o art. 26, § 5º, da Lei 8.080/1990 manda o Ministério da Saúde definir os valores da tabela todo dezembro por ato próprio, observada a disponibilidade orçamentária; o reajuste é feito por portaria, mas depende de dotação na lei orçamentária anual.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.820/2024 (revisão periódica da remuneração do SUS)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14820.htm"
+      },
+      {
+       "titulo": "Lei nº 8.080/1990 (Lei Orgânica da Saúde)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano afirma que a lei de reajuste existe mas está presa ao orçamento; não diz quanto subiriam os valores, quanto custaria nem de onde viria o dinheiro.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "A tabela é fixada pela União (Lei 8.080, art. 26), mas estados e municípios podem complementar valores; o ritmo depende do espaço no orçamento federal, que o plano não detalha.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 8.080/1990, art. 26",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Nos Estados Unidos, o aumento temporário dos pagamentos do Medicaid a médicos de atenção primária elevou em 7,7 pontos a disponibilidade de consultas e ampliou o pré-natal em alguns grupos, mas não aumentou consultas de beneficiários de duplo vínculo. Não foram localizadas avaliações brasileiras do efeito de reajustes da tabela SUS sobre oferta e filas.",
+     "estudos": [
+      {
+       "titulo": "Appointment availability after increases in Medicaid payments for primary care",
+       "autor": "Polsky et al. (New England Journal of Medicine)",
+       "ano": 2015,
+       "achado": "A disponibilidade de consultas para pacientes do Medicaid subiu de 58,7% para 66,4%, mais nos estados com maior aumento de pagamento.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/25607243/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Assessment of the Patient Protection and Affordable Care Act's Increase in Fees for Primary Care and Access to Care for Dual-Eligible Beneficiaries",
+       "autor": "Fung et al. (JAMA Network Open)",
+       "ano": 2021,
+       "achado": "O aumento de pagamento não se associou a mais consultas de atenção primária para beneficiários de duplo vínculo Medicare-Medicaid.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33475756/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Effect of the Medicaid Primary Care Rate Increase on Prenatal Care Utilization Among Medicaid-Insured Women",
+       "autor": "Li, Pesko, Unruh e Jung (Maternal and Child Health Journal)",
+       "ano": 2019,
+       "achado": "O aumento elevou o início do pré-natal no primeiro trimestre entre mulheres negras e brancas não hispânicas, sem efeito entre hispânicas.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/31240426/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Hospitais, santas casas e clínicas que atendem pelo SUS, que receberiam mais por procedimento; os estudos citados registram mais oferta de consultas em parte dos casos.",
+    "quem_paga_ou_perde": "Orçamento federal da saúde, que teria de acomodar o reajuste; o plano não indica a fonte.",
+    "fontes": [
+     {
+      "titulo": "Lei nº 14.820/2024",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14820.htm"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5257/2026",
+     "ementa": "Altera a Lei 8.080/1990 sobre a atualização dos valores pagos aos serviços do SUS e institui o Plano Nacional de Recomposição da Defasagem da Remuneração dos Serviços Prestados ao SUS.",
+     "autor": "Paulo Soares",
+     "partido": "PODE",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-09-01: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2645213",
+     "direcao": "esquerda",
+     "relacao": "Trata diretamente da recomposição da tabela que a proposta defende."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5164/2023",
+     "ementa": "Dispõe sobre a correção dos valores de referência da Tabela SUS relacionados ao Tratamento Fora do Domicílio.",
+     "autor": "Yandra Moura",
+     "partido": "UNIÃO",
+     "situacao": "Pronta para pauta na Comissão de Saúde",
+     "ultima_acao": "2025-03-20: apresentado requerimento de audiência pública (REQ 16/2025) para debater o projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2399193",
+     "direcao": "esquerda",
+     "relacao": "Corrige uma parte específica da tabela SUS."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Desde a Lei 14.820/2024, a Lei 8.080/1990 manda o Ministério da Saúde revisar a cada ano os valores pagos aos serviços do SUS, conforme a disponibilidade orçamentária; não há regra que garanta a cobertura do custo.",
+    "fonte": {
+     "titulo": "Lei nº 14.820/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14820.htm"
+    }
+   }
+  },
+  {
+   "tema": "saude",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe contratar serviços e exames da rede privada nos horários em que os aparelhos estão parados.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Lei 8.080/1990 (arts. 24 a 26) já permite contratar a rede privada de forma complementar quando a pública for insuficiente, e a Lei 15.233/2025 criou a adesão de hospitais privados ao Agora Tem Especialistas; contratar horários ociosos é decisão de gestão, por contrato ou credenciamento.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 8.080/1990, arts. 24 a 26",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+      },
+      {
+       "titulo": "Lei nº 15.233/2025",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15233.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que aproveitar a capacidade parada é atender mais sem construir do zero, mas não estima o custo das contratações nem a fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "União, estados e municípios podem contratar serviços complementares (Lei 8.080, art. 24; Constituição, art. 199, § 1º); a base legal já existe.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 199",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Revisão da OCDE indica que comprar do setor privado pode ser solução de curto e médio prazo quando a rede pública está no limite, e estudo inglês encontrou internações mais curtas e menos readmissões em hospitais privados contratados, sem excluir seleção de pacientes. Outro estudo inglês associou a expansão da terceirização a esperas maiores no sistema público e mais desigualdade, e a revisão Cochrane sobre contratação em países de renda baixa e média achou pouca diferença no uso de serviços.",
+     "estudos": [
+      {
+       "titulo": "Tackling Excessive Waiting Times for Elective Surgery: A Comparison of Policies in Twelve OECD Countries",
+       "autor": "Jeremy Hurst e Luigi Siciliani (OCDE)",
+       "ano": 2003,
+       "achado": "Comprar do setor privado pode ser melhor solução de curto e médio prazo quando a rede pública opera perto do limite, a depender dos preços relativos.",
+       "url": "https://ideas.repec.org/p/oec/elsaad/6-en.html",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Outcomes for surgical procedures funded by the English health service but carried out in public versus independent hospitals: a database study",
+       "autor": "Crothers et al. (BMJ Quality & Safety)",
+       "ano": 2022,
+       "achado": "Cirurgias em hospitais privados pagas pelo NHS tiveram internação mais curta e menos readmissões, sem excluir viés de seleção.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/34493605/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Outsourcing National Health Service Surgery to the Private Sector: Waiting Time Inequality and the Making of a Two-Tier System for Hip and Knee Replacement in England",
+       "autor": "Kirkwood e Pollock (Int. J. of Social Determinants of Health and Health Services)",
+       "ano": 2025,
+       "achado": "Após 2008, com mais contratos privados, as internações no NHS caíram, as esperas subiram e os 20% mais pobres esperaram mais.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40289569/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Contracting out to improve the use of clinical health services and health outcomes in low- and middle-income countries",
+       "autor": "Odendaal et al. (Cochrane)",
+       "ano": 2018,
+       "achado": "Contratar provedores não governamentais provavelmente reduz gasto do bolso, mas faz pouca ou nenhuma diferença no uso de serviços.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29611869/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Pacientes à espera de exames e cirurgias, e clínicas e hospitais privados que venderiam capacidade ociosa.",
+    "quem_paga_ou_perde": "Orçamento do SUS, que paga os serviços; estudo inglês registrou esperas maiores para pacientes mais pobres com a expansão da terceirização.",
+    "fontes": [
+     {
+      "titulo": "Kirkwood e Pollock (2025)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40289569/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "saude",
+    "indice": 1,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe pagar a rede privada pelo uso de horários ociosos; Lula propõe continuar a parceria em que hospitais privados atendem o SUS em troca de créditos financeiros ou abatimento de dívidas."
+   },
+   "proposicoes": [
+    {
+     "casa": "Congresso",
+     "tipo": "MPV",
+     "numero": "MPV 1.301/2025",
+     "ementa": "Institui o Programa Agora Tem Especialistas, com adesão de hospitais privados que atendem o SUS em troca de créditos financeiros.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada na Lei 15.233/2025",
+     "ultima_acao": "2025-10-07: transformada na Lei Ordinária 15.233/2025 (DOU de 08/10/2025).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2519886",
+     "direcao": "esquerda",
+     "relacao": "Já prevê compra de serviços da rede privada, embora pague com créditos e não por horário ocioso."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3752/2026",
+     "ementa": "Estabelece mecanismos de atendimento tempestivo no SUS, disciplina o aproveitamento de exames feitos na rede privada e prevê medidas quando os prazos de referência forem descumpridos.",
+     "autor": "Marcel van Hattem",
+     "partido": "NOVO",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-07-16: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2640024",
+     "direcao": "fora do RILE",
+     "relacao": "Trata do uso da rede privada para reduzir a espera no SUS."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "saude",
+   "indice": 14,
+   "candidato": "flavio",
+   "proposta": "Propõe entrega de remédios em casa para idosos, pessoas com deficiência e doentes crônicos, além de telessaúde por aplicativo.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "A entrega domiciliar pode ser organizada pelo Ministério da Saúde e pelos gestores locais dentro da assistência farmacêutica prevista na Lei 8.080/1990 (art. 6º, I, 'd') e por portarias do Farmácia Popular; a telessaúde já tem base na Lei 14.510/2022.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 8.080/1990, art. 6º",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+      },
+      {
+       "titulo": "Lei nº 14.510/2022 (telessaúde)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14510.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima o custo da logística de entrega nem da telessaúde por aplicativo, nem indica a fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A assistência farmacêutica é dividida entre União, estados e municípios (art. 23, II, da Constituição); a entrega pode começar por programas federais existentes, mas a cobertura nacional depende da rede local.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Revisão de 15 estudos nos EUA achou adesão maior ao tratamento com entrega por correio em 14 deles, mas a diferença diminui quando se controla o perfil de quem escolhe a entrega. Ensaio randomizado com 63 mil diabéticos que estimulou o uso da entrega elevou pouco o uso e melhorou a adesão só em alguns locais; não foram localizadas avaliações brasileiras.",
+     "estudos": [
+      {
+       "titulo": "Examination of the Link Between Medication Adherence and Use of Mail-Order Pharmacies in Chronic Disease States",
+       "autor": "Fernandez, McDaniel e Carroll (Journal of Managed Care & Specialty Pharmacy)",
+       "ano": 2016,
+       "achado": "14 de 15 estudos registraram adesão maior com entrega por correio, diferença menor ao controlar renda, adesão prévia e quantidade dispensada.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/27783552/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "A Randomized Encouragement Trial to Increase Mail Order Pharmacy Use and Medication Adherence in Patients with Diabetes",
+       "autor": "Ramachandran et al. (Journal of General Internal Medicine)",
+       "ano": 2021,
+       "achado": "O estímulo elevou o uso da entrega de 9,3% para 10,6% e melhorou modestamente a adesão em alguns locais.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33001334/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Evaluating the impact of differentiated service delivery (DSD) on retention in care and HIV viral suppression in South Africa",
+       "autor": "Huber et al. (PLoS Medicine)",
+       "ano": 2025,
+       "achado": "Modelos de entrega de tratamento fora da unidade de saúde tiveram retenção um pouco maior e supressão viral semelhante à do atendimento convencional.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/40857347/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Idosos, pessoas com deficiência e doentes crônicos com dificuldade de deslocamento, que deixariam de pagar transporte para buscar remédio.",
+    "quem_paga_ou_perde": "Orçamento da saúde, que arcaria com a logística de entrega; o plano não indica a fonte.",
+    "fontes": [
+     {
+      "titulo": "Fernandez et al. (2016)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27783552/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "saude",
+    "indice": 4,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe levar o remédio à casa de idosos, pessoas com deficiência e doentes crônicos; Lula propõe manter o Farmácia Popular gratuito nas farmácias conveniadas e incluir exames."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1307/2024",
+     "ementa": "Dispõe sobre a entrega domiciliar gratuita de medicamentos de uso contínuo a pessoas idosas e com deficiência.",
+     "autor": "Gilberto Nascimento",
+     "partido": "PODE",
+     "situacao": "Aguardando designação de relator na Comissão de Saúde",
+     "ultima_acao": "2025-10-24: recebido pela Comissão de Saúde.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2427633",
+     "direcao": "esquerda",
+     "relacao": "Prevê em lei a mesma entrega domiciliar para o mesmo público."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3342/2025",
+     "ementa": "Dispõe sobre medidas para facilitar o acesso aos medicamentos do Farmácia Popular por usuários impossibilitados de retirá-los.",
+     "autor": "Magda Mofatto",
+     "partido": "PL",
+     "situacao": "Aguardando designação de relator na Comissão de Saúde",
+     "ultima_acao": "2025-07-23: recebido pela Comissão de Saúde.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2534532",
+     "direcao": "esquerda",
+     "relacao": "Trata do acesso de quem não consegue ir à farmácia, alvo da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5577/2026",
+     "ementa": "Estabelece diretrizes para integrar telessaúde, acompanhamento remoto e entrega domiciliar de medicamentos no SUS, com prioridade a regiões de difícil acesso.",
+     "autor": "José Medeiros",
+     "partido": "PL",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-10-15: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647777",
+     "direcao": "esquerda",
+     "relacao": "Combina telessaúde e entrega domiciliar, os dois elementos da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A telessaúde no SUS está regulada pela Lei 14.510/2022; a entrega domiciliar de remédios proposta não foi instituída em norma federal.",
+    "fonte": {
+     "titulo": "Lei nº 14.510/2022 (telessaúde)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14510.htm"
+    }
+   }
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe manter, aperfeiçoar e ampliar as políticas de proteção social para quem mais precisa.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Os principais programas já existem em lei, como o Bolsa Família (Lei 14.601/2023) e a assistência social (Lei 8.742/1993); manter não exige norma nova, e ampliar valores ou público depende de lei ou regulamento conforme o caso e de dotação orçamentária.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.601/2023 (Programa Bolsa Família)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+      },
+      {
+       "titulo": "Lei nº 8.742/1993 (Lei Orgânica da Assistência Social)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8742.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não detalha mudanças de valores ou regras, nem o custo de ampliar os programas.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Assistência social é competência comum (art. 23, X) e o Bolsa Família é financiado pela União e operado com municípios via Cadastro Único; manter o que existe cabe no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23 e 203",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudo na Lancet associou maior cobertura do Bolsa Família a queda de 17% na mortalidade de crianças menores de 5 anos, e estudo sobre oferta de trabalho não achou redução nas horas trabalhadas pelas famílias, mas sim migração do trabalho formal para o informal nas cidades. Auditoria do TCU de 2023 estimou que 22,5% das famílias beneficiárias não cumpriam os requisitos; a proposta não detalha o que seria ampliado.",
+     "estudos": [
+      {
+       "titulo": "Effect of a conditional cash transfer programme on childhood mortality: a nationwide analysis of Brazilian municipalities",
+       "autor": "Rasella, Aquino, Santos, Paes-Sousa e Barreto (The Lancet)",
+       "ano": 2013,
+       "achado": "Cobertura consolidada do Bolsa Família associada a 17% menos mortes de menores de 5 anos, mais nas causadas por desnutrição e diarreia.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/23683599/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Bolsa Família and Household Labor Supply",
+       "autor": "de Brauw, Gilligan, Hoddinott e Roy (Economic Development and Cultural Change)",
+       "ano": 2015,
+       "achado": "Sem redução da oferta total de trabalho das famílias, mas com migração de horas do setor formal para o informal em áreas urbanas.",
+       "url": "https://ideas.repec.org/a/ucp/ecdecc/doi10.1086-680092.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Auditoria aponta falhas no CadÚnico com prejuízo potencial de R$ 34 bilhões (Acórdão 2342/2023-Plenário)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2023,
+       "achado": "Em amostra de 2.662 famílias, 22,5% não cumpriam os requisitos do Bolsa Família, com pagamentos indevidos estimados em R$ 14,24 bilhões de janeiro a maio de 2023.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/auditoria-aponta-falhas-no-cadunico-com-prejuizo-potencial-de-r-34-bilhoes-ate-dezembro",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias de baixa renda atendidas pelos programas; os estudos registram efeitos na saúde infantil.",
+    "quem_paga_ou_perde": "Orçamento federal; segundo o TCU, parte dos recursos foi paga a famílias fora dos critérios.",
+    "fontes": [
+     {
+      "titulo": "Rasella et al. (2013)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23683599/"
+     },
+     {
+      "titulo": "TCU, Acórdão 2342/2023",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/auditoria-aponta-falhas-no-cadunico-com-prejuizo-potencial-de-r-34-bilhoes-ate-dezembro"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "programas-sociais",
+    "indice": 7,
+    "candidato": "flavio",
+    "diferenca": "Os dois propõem manter os programas existentes; Lula fala em aperfeiçoar e ampliar, e Flávio em corrigir distorções e combater fraudes."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 82/2024",
+     "ementa": "Altera a Lei 14.601/2023 para estabelecer o fim da fila de espera ao Programa Bolsa Família.",
+     "autor": "José Guimarães e Rubens Pereira Júnior",
+     "partido": "PT",
+     "situacao": "Aguardando designação de relator na CCJC",
+     "ultima_acao": "2024-10-24: publicado o parecer da Comissão de Finanças e Tributação; projeto recebido pela CCJC.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2417026",
+     "direcao": "esquerda",
+     "relacao": "Ampliaria o acesso ao principal programa de proteção social."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5456/2026",
+     "ementa": "Estabelece correção anual e critério objetivo para os benefícios do Bolsa Família e transparência na divulgação dos reajustes.",
+     "autor": "Carlos Sampaio",
+     "partido": "PSD",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-09-24: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2646973",
+     "direcao": "esquerda",
+     "relacao": "Trata do valor dos benefícios, ponto que o plano não detalha."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Os principais programas, como o Bolsa Família (Lei 14.601/2023) e a assistência social (Lei 8.742/1993), estão em vigor; a ampliação proposta não foi definida.",
+    "fonte": {
+     "titulo": "Lei nº 14.601/2023 (Bolsa Família)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+    }
+   }
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe fortalecer a Política Nacional de Cuidados, com Cuidotecas para crianças de 3 a 12 anos, lavanderias públicas e formação de cuidadores.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Política Nacional de Cuidados foi instituída pela Lei 15.069/2024; apoiar Cuidotecas, lavanderias e um programa de formação de cuidadores são ações de execução e regulamentação do Executivo dentro dessa lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.069/2024 (Política Nacional de Cuidados)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15069.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que as ações ganharão escala e sustentabilidade, sem informar metas, custo ou fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "Assistência social e educação são competências comuns (art. 23); equipamentos como Cuidotecas dependem de estados, municípios e parceiros, e o plano não fixa metas de quantidade.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Sorteio de vagas em creches públicas no Rio de Janeiro elevou a participação dos cuidadores no trabalho e a renda das famílias por até quatro anos, e em Quebec a creche universal aumentou o emprego das mães. Na Noruega a expansão quase não alterou o emprego materno, porque substituiu cuidado informal, e em Quebec houve piora em indicadores de comportamento das crianças; os estudos tratam de creche para menores, não de espaços para 3 a 12 anos como as Cuidotecas.",
+     "estudos": [
+      {
+       "titulo": "Public Childcare, Labor Market Outcomes of Caregivers, and Child Development: Experimental Evidence from Brazil",
+       "autor": "Attanasio, Paes de Barros, Carneiro, Evans, Lima, Olinto e Schady (NBER WP 30653)",
+       "ano": 2024,
+       "achado": "Ganhar vaga por sorteio em creche pública no Rio elevou a renda das famílias e o trabalho dos cuidadores no primeiro ano e quatro anos depois, mas não após sete anos.",
+       "url": "https://www.nber.org/system/files/working_papers/w30653/w30653.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Universal Child Care, Maternal Labor Supply, and Family Well-Being",
+       "autor": "Baker, Gruber e Milligan (Journal of Political Economy)",
+       "ano": 2008,
+       "achado": "A creche universal de Quebec aumentou o emprego materno, mas piorou indicadores de comportamento e saúde das crianças e de relação familiar.",
+       "url": "https://ideas.repec.org/a/ucp/jpolec/v116y2008i4p709-745.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Money for nothing? Universal child care and maternal employment",
+       "autor": "Tarjei Havnes e Magne Mogstad (Journal of Public Economics)",
+       "ano": 2011,
+       "achado": "A expansão de creches subsidiadas na Noruega teve pouco ou nenhum efeito no emprego das mães, substituindo cuidado informal.",
+       "url": "https://iza.org/de/publications/dp/4504/money-for-nothing-universal-child-care-and-maternal-employment",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Mães e responsáveis por crianças, que ganhariam tempo para trabalhar ou estudar, segundo os estudos de Rio e Quebec.",
+    "quem_paga_ou_perde": "União, estados e municípios custeiam os equipamentos; o estudo norueguês indica gasto que substitui cuidado informal sem ganho de emprego.",
+    "fontes": [
+     {
+      "titulo": "Attanasio et al. (2024)",
+      "url": "https://www.nber.org/system/files/working_papers/w30653/w30653.pdf"
+     },
+     {
+      "titulo": "Havnes e Mogstad (2011)",
+      "url": "https://iza.org/de/publications/dp/4504/money-for-nothing-universal-child-care-and-maternal-employment"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "programas-sociais",
+    "indice": 10,
+    "candidato": "flavio",
+    "diferenca": "Lula trata o cuidado como direito, com foco em Cuidotecas para crianças e formação de cuidadores; Flávio propõe uma Rede Nacional de Cuidado voltada a idosos e pessoas com deficiência, com centros-dia e atendimento domiciliar em parceria com organizações sociais."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5791/2019",
+     "ementa": "Institui a Política Nacional do Cuidado.",
+     "autor": "Leandre",
+     "partido": "PSD",
+     "situacao": "Transformado na Lei 15.069/2024",
+     "ultima_acao": "2024-12-23: transformado na Lei Ordinária 15.069/2024 (DOU de 24/12/2024).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2227782",
+     "direcao": "esquerda",
+     "relacao": "Deu origem à lei que a proposta pretende fortalecer."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2388/2026",
+     "ementa": "Institui o Programa Nacional de Cuidotecas, dentro da Política Nacional de Cuidados e da Política Nacional de Assistência Estudantil.",
+     "autor": "Talíria Petrone",
+     "partido": "PSOL",
+     "situacao": "Tramitando em conjunto (apensado ao PL 2308/2026)",
+     "ultima_acao": "2026-06-24: apensado ao PL 2308/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2624653",
+     "direcao": "esquerda",
+     "relacao": "Criaria em lei as Cuidotecas citadas na proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3367/2025",
+     "ementa": "Altera a Lei 15.069/2024 para prever formação, capacitação e qualificação continuada de cuidadores de pessoas idosas, remunerados ou não.",
+     "autor": "Evair Vieira de Melo",
+     "partido": "REPUBLICANOS",
+     "situacao": "Aprovado nas comissões; aguardando redação final na CCJC",
+     "ultima_acao": "2026-08-26: recebido pela CCJC para redação final.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2535471",
+     "direcao": "esquerda",
+     "relacao": "Trata da formação de cuidadores, um dos pontos da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Política Nacional de Cuidados está em vigor pela Lei 15.069/2024; Cuidotecas, lavanderias e formação de cuidadores dependem de execução e regulamentação.",
+    "fonte": {
+     "titulo": "Lei nº 15.069/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15069.htm"
+    }
+   }
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 5,
+   "candidato": "lula",
+   "proposta": "Propõe rever o financiamento da Previdência com novas fontes, criar formas mais flexíveis de contribuir e concluir a modernização do INSS.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_complementar",
+     "explicacao": "Criar nova fonte de custeio da seguridade fora das previstas no art. 195 exige lei complementar (art. 195, § 4º, combinado com o art. 154, I); formas flexíveis de contribuição podem vir por lei ordinária que altere a Lei 8.212/1991, e a modernização do INSS é ato administrativo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 154 e 195",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei nº 8.212/1991 (custeio da Seguridade Social)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não diz quais seriam as novas fontes, quanto arrecadariam nem como seriam as contribuições flexíveis.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Previdência do regime geral e seu custeio são de competência da União (arts. 22, XXIII, e 195); a proposta depende de aprovação no Congresso e não tem desenho definido.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 22 e 195",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A proposta não define as novas fontes nem o formato da contribuição flexível, o que impede avaliar efeitos. Dados do IBGE mostram baixa contribuição entre trabalhadores de plataformas, e estudo sobre o regime do MEI, forma simplificada de contribuir, registrou ganho baixo de formalização e perda líquida de arrecadação.",
+     "estudos": [
+      {
+       "titulo": "IBGE: país tem 2,1 milhões de trabalhadores por aplicativo (PNAD Contínua, módulo Teletrabalho e Trabalho por Meio de Plataformas Digitais, 4º tri/2022)",
+       "autor": "IBGE, via Agência Brasil",
+       "ano": 2023,
+       "achado": "35,7% dos trabalhadores de plataformas contribuíam para a previdência, contra 60,8% no setor privado em geral.",
+       "url": "https://movimentoeconomico.com.br/economia/2023/10/25/ibge-pais-tem-21-milhoes-de-trabalhadores-por-aplicativo/",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Do lower taxes reduce informality? Evidence from Brazil",
+       "autor": "Rocha, Ulyssea e Rachter (Journal of Development Economics)",
+       "ano": 2018,
+       "achado": "A redução de tributos do programa do MEI formalizou negócios já existentes, com elasticidade baixa e perda líquida de arrecadação.",
+       "url": "https://ideas.repec.org/a/eee/deveco/v134y2018icp28-49.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Trabalhadores com vínculos intermitentes ou múltiplos, se passarem a ter cobertura previdenciária.",
+    "quem_paga_ou_perde": "Não definido: depende de quem arcaria com as novas fontes de custeio, que o plano não especifica.",
+    "fontes": [
+     {
+      "titulo": "IBGE, via Agência Brasil",
+      "url": "https://movimentoeconomico.com.br/economia/2023/10/25/ibge-pais-tem-21-milhoes-de-trabalhadores-por-aplicativo/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "programas-sociais",
+    "indice": 12,
+    "candidato": "flavio",
+    "diferenca": "Os dois falam em modernizar o INSS; Lula acrescenta rever o financiamento e flexibilizar a contribuição, e Flávio foca em digitalizar processos e profissionalizar a gestão para reduzir a fila."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 12/2024",
+     "ementa": "Regula o trabalho de motoristas de aplicativo de transporte individual e estabelece mecanismos de inclusão previdenciária.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Pronto para pauta no Plenário",
+     "ultima_acao": "2026-05-12: apresentado requerimento de apensação dos PLPs 113/2026 e 122/2026 (REQ 2771/2026).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2419243",
+     "direcao": "esquerda",
+     "relacao": "Cria contribuição previdenciária para trabalho por plataforma, como o plano propõe regular."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 7,
+   "candidato": "flavio",
+   "proposta": "Propõe manter os programas sociais existentes, com melhor gestão, correção de distorções e combate às fraudes.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Os programas já existem em lei, como o Bolsa Família (Lei 14.601/2023) e a assistência social (Lei 8.742/1993); revisões cadastrais e cruzamento de bases são atos administrativos do Executivo, e novas sanções a fraudes exigiriam lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.601/2023 (Programa Bolsa Família)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+      },
+      {
+       "titulo": "Lei nº 8.742/1993 (Lei Orgânica da Assistência Social)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8742.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano afirma que quem depende hoje da ajuda não a perderá, mas não estima custos nem a economia esperada com o combate a fraudes.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Assistência social é competência comum (art. 23, X) e o Cadastro Único é alimentado pelos municípios; manter os programas e revisar cadastros cabe no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23 e 203",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudo na Lancet associou maior cobertura do Bolsa Família a queda de 17% na mortalidade de crianças menores de 5 anos, e estudo sobre oferta de trabalho não achou redução nas horas trabalhadas pelas famílias, mas sim migração do trabalho formal para o informal nas cidades. Auditoria do TCU de 2023 estimou que 22,5% das famílias beneficiárias não cumpriam os requisitos; a proposta não detalha quais distorções seriam corrigidas.",
+     "estudos": [
+      {
+       "titulo": "Effect of a conditional cash transfer programme on childhood mortality: a nationwide analysis of Brazilian municipalities",
+       "autor": "Rasella, Aquino, Santos, Paes-Sousa e Barreto (The Lancet)",
+       "ano": 2013,
+       "achado": "Cobertura consolidada do Bolsa Família associada a 17% menos mortes de menores de 5 anos, mais nas causadas por desnutrição e diarreia.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/23683599/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Bolsa Família and Household Labor Supply",
+       "autor": "de Brauw, Gilligan, Hoddinott e Roy (Economic Development and Cultural Change)",
+       "ano": 2015,
+       "achado": "Sem redução da oferta total de trabalho das famílias, mas com migração de horas do setor formal para o informal em áreas urbanas.",
+       "url": "https://ideas.repec.org/a/ucp/ecdecc/doi10.1086-680092.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Auditoria aponta falhas no CadÚnico com prejuízo potencial de R$ 34 bilhões (Acórdão 2342/2023-Plenário)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2023,
+       "achado": "Em amostra de 2.662 famílias, 22,5% não cumpriam os requisitos do Bolsa Família, com pagamentos indevidos estimados em R$ 14,24 bilhões de janeiro a maio de 2023.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/auditoria-aponta-falhas-no-cadunico-com-prejuizo-potencial-de-r-34-bilhoes-ate-dezembro",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias de baixa renda que cumprem os critérios, que mantêm o benefício; o orçamento federal, se os pagamentos indevidos apontados pelo TCU forem reduzidos.",
+    "quem_paga_ou_perde": "Famílias cadastradas fora dos critérios, que podem perder o benefício após revisão cadastral.",
+    "fontes": [
+     {
+      "titulo": "TCU, Acórdão 2342/2023",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/auditoria-aponta-falhas-no-cadunico-com-prejuizo-potencial-de-r-34-bilhoes-ate-dezembro"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "programas-sociais",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem manter os programas existentes; Flávio enfatiza correção de distorções e combate a fraudes, e Lula fala em aperfeiçoar e ampliar."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3588/2026",
+     "ementa": "Altera a Lei Orgânica da Assistência Social para instituir regime de sanções administrativas a fraudes no Cadastro Único.",
+     "autor": "Romero Rodrigues",
+     "partido": "PODE",
+     "situacao": "Aguardando designação de relator na Comissão de Previdência, Assistência Social, Infância, Adolescência e Família",
+     "ultima_acao": "2026-09-03: recebido pela CPASF.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2638373",
+     "direcao": "fora do RILE",
+     "relacao": "Cria punições para fraudes no cadastro, tema central da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 201/2026",
+     "ementa": "Altera a Lei 14.601/2023 para dispor sobre integridade, transparência e governança no Bolsa Família e restringir ampliação de benefícios em observância às metas fiscais.",
+     "autor": "Messias Donato",
+     "partido": "UNIÃO",
+     "situacao": "Aguardando designação de relator na Comissão de Administração e Serviço Público",
+     "ultima_acao": "2026-03-13: recebido pela CASP.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2600558",
+     "direcao": "direita",
+     "relacao": "Trata de controle e integridade do programa, como a proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Os programas que a proposta quer manter, como o Bolsa Família (Lei 14.601/2023) e a assistência social (Lei 8.742/1993), estão em vigor; as medidas de gestão e de combate a fraudes não foram definidas.",
+    "fonte": {
+     "titulo": "Lei nº 14.601/2023 (Bolsa Família)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+    }
+   }
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe prioridade para beneficiários de programas sociais em primeiro emprego, qualificação e encaminhamento a vagas.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Critérios de prioridade em cursos e na intermediação de mão de obra podem ser fixados em regulamento dos próprios programas; a Lei 14.601/2023 (art. 32) já prevê instrumentos de crédito para a inclusão produtiva das famílias beneficiárias. Prioridade obrigatória em programas criados por lei pode exigir alteração legal.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.601/2023 (Programa Bolsa Família)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano prevê uma trilha de qualificação e intermediação desenhada para beneficiários, sem estimar custo nem fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Qualificação e intermediação envolvem União, estados, municípios e Sistema S (art. 23 da Constituição); fixar prioridade em programas federais cabe no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Meta-análise de mais de 200 avaliações encontrou efeitos de programas de qualificação perto de zero no curto prazo e mais positivos dois a três anos depois, maiores para mulheres e desempregados de longa duração. No Brasil, avaliações citadas pelo Ipea indicam que o Pronatec orientado pela oferta pode ser ineficaz na inserção de desempregados, e a versão orientada pela demanda das empresas elevou a chance de emprego sem ganho salarial relevante.",
+     "estudos": [
+      {
+       "titulo": "What Works? A Meta Analysis of Recent Active Labor Market Program Evaluations",
+       "autor": "Card, Kluve e Weber (Journal of the European Economic Association)",
+       "ano": 2018,
+       "achado": "Impactos médios perto de zero no curto prazo e mais positivos 2 a 3 anos após o programa, maiores em formação de capital humano.",
+       "url": "https://www.nber.org/papers/w21431",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Qualificação por demanda e rotatividade: os efeitos do Pronatec/MDIC em nível da firma e do trabalhador",
+       "autor": "Rodrigo Quintana e Túlio Cravo (Ipea, Mercado de Trabalho nº 66)",
+       "ano": 2019,
+       "achado": "Resenha avaliações em que o Pronatec orientado pela oferta pode ser ineficaz na inserção de desempregados e a versão por demanda das empresas eleva a chance de emprego.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/10274/15/bmt_66_qualificacao_demanda.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Beneficiários de programas sociais, que teriam preferência em cursos e vagas.",
+    "quem_paga_ou_perde": "Trabalhadores de baixa renda fora dos programas, que perderiam posição nas vagas limitadas de qualificação; o orçamento custeia a trilha.",
+    "fontes": [
+     {
+      "titulo": "Card, Kluve e Weber (2018)",
+      "url": "https://www.nber.org/papers/w21431"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 7150/2025",
+     "ementa": "Altera a Lei 14.601/2023 para instituir ações de qualificação profissional para beneficiários de transferência de renda, com bolsa adicional para transporte e alimentação.",
+     "autor": "Amom Mandel",
+     "partido": "REPUBLICANOS",
+     "situacao": "Aprovado na Comissão de Trabalho; aguardando relator na Comissão de Previdência, Assistência Social, Infância, Adolescência e Família",
+     "ultima_acao": "2026-05-21: recebido pela CPASF após aprovação do parecer na CTRAB em 20/05/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2599759",
+     "direcao": "esquerda",
+     "relacao": "Cria qualificação específica para beneficiários, como a trilha proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3469/2025",
+     "ementa": "Altera a Lei 14.601/2023 para dispor sobre a inclusão socioprodutiva das famílias em situação de pobreza.",
+     "autor": "Toninho Wandscheer",
+     "partido": "PP",
+     "situacao": "Tramitando em conjunto (apensado ao PL 564/2025) na CPASF",
+     "ultima_acao": "2026-05-06: designado relator Dep. Bruno Ganem (PODE-SP) para o PL 564/2025, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2537331",
+     "direcao": "esquerda",
+     "relacao": "Trata da passagem do benefício ao trabalho, objetivo da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "programas-sociais",
+   "indice": 9,
+   "candidato": "flavio",
+   "proposta": "Propõe garantir a volta imediata e sem fila ao benefício depois do seguro-desemprego, mantidas as regras de acesso.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "A Lei 14.601/2023 (art. 6º, § 3º) já dá prioridade de reingresso a famílias que saíram voluntariamente ou ao fim da regra de proteção; tornar o retorno imediato pode ser feito por regulamento, mas depende de espaço no orçamento, e uma garantia legal exigiria alterar a lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.601/2023, art. 6º",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima quantas famílias retornariam nem o custo do retorno sem fila.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O Bolsa Família e o seguro-desemprego são programas federais; a mudança depende de ato da União e de dotação orçamentária.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.601/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram localizadas avaliações de regras de retorno garantido ao benefício. Estudo sobre o Bolsa Família registrou migração de horas do trabalho formal para o informal nas cidades, que os autores ligam ao uso da renda formal no teste de elegibilidade, e outro estudo associou a expansão do programa a mais atividade econômica local.",
+     "estudos": [
+      {
+       "titulo": "Bolsa Família and Household Labor Supply",
+       "autor": "de Brauw, Gilligan, Hoddinott e Roy (Economic Development and Cultural Change)",
+       "ano": 2015,
+       "achado": "Sem queda na oferta total de trabalho, mas com migração do setor formal para o informal em áreas urbanas, provavelmente induzida pelo teste de renda formal.",
+       "url": "https://ideas.repec.org/a/ucp/ecdecc/doi10.1086-680092.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Cash Transfers and the Local Economy: Evidence from Brazil",
+       "autor": "Gerard, Naritomi e Silva (CEPR Discussion Paper 16286)",
+       "ano": 2021,
+       "achado": "A expansão do Bolsa Família aumentou a atividade econômica local, apesar do teste de renda.",
+       "url": "https://ideas.repec.org/p/cpr/ceprdp/16286.html",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Ex-beneficiários que aceitarem emprego formal e o perderem, que voltariam ao programa sem esperar.",
+    "quem_paga_ou_perde": "Orçamento federal; famílias na fila de entrada poderiam esperar mais se o orçamento não crescer, efeito que o plano não trata.",
+    "fontes": [
+     {
+      "titulo": "Lei nº 14.601/2023, art. 6º",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 304/2026",
+     "ementa": "Integra o Bolsa Família ao emprego formal, com incentivo à formalização dos beneficiários sem prejuízo temporário do benefício.",
+     "autor": "Diego Andrade",
+     "partido": "PSD",
+     "situacao": "Aguardando designação de relator",
+     "ultima_acao": "2026-03-11: encaminhado à publicação (DCD de 12/03/2026).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2601005",
+     "direcao": "esquerda",
+     "relacao": "Busca reduzir o risco de perder o benefício ao aceitar emprego formal, mesmo objetivo da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4976/2026",
+     "ementa": "Institui a Regra Especial de Transição Produtiva no Bolsa Família, para incentivar o trabalho formal e assegurar transição gradual para a autonomia econômica.",
+     "autor": "Rafael Prudente",
+     "partido": "MDB",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-08-11: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2642504",
+     "direcao": "esquerda",
+     "relacao": "Trata da saída do programa para o emprego, como a proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3622/2026",
+     "ementa": "Altera a Lei 14.601/2023 para instituir regra de incentivo ao trabalho formal no Bolsa Família.",
+     "autor": "Jorge Araújo",
+     "partido": "PP",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-07-09: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2638530",
+     "direcao": "esquerda",
+     "relacao": "Também mexe nas regras de saída do programa para o emprego formal."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 14.601/2023 (art. 6º, § 3º) já dá prioridade de reingresso a famílias que saíram voluntariamente ou ao fim da regra de proteção; o retorno imediato após o seguro-desemprego não está previsto.",
+    "fonte": {
+     "titulo": "Lei nº 14.601/2023 (Bolsa Família)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14601.htm"
+    }
+   }
+  },
+  {
+   "tema": "mulheres",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe seguir o Pacto de Enfrentamento ao Feminicídio e concluir 30 Casas da Mulher Brasileira e 15 Centros de Referência.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "As Casas da Mulher Brasileira fazem parte do Programa Mulher Viver sem Violência (Decreto 11.431/2023) e o Pacto tem comitê de gestão instituído pelo Decreto 12.839/2026; concluir as unidades depende de execução orçamentária e de convênios.",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 11.431/2023 (Programa Mulher Viver sem Violência)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+      },
+      {
+       "titulo": "Decreto nº 12.839/2026 (Comitê do Pacto contra o Feminicídio)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/D12839.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano fixa a meta de 30 Casas e 15 Centros de Referência, mas não informa custo nem fonte dos recursos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Pelo Decreto 11.431/2023, as unidades podem ser construídas e mantidas pela União, estados e municípios por instrumentos específicos; a meta se refere a unidades já em andamento, mas há registro de obras atrasadas.",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 11.431/2023, art. 3º",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram localizadas avaliações de impacto das Casas da Mulher Brasileira, e estudo de 2026 aponta que a eficácia de centros com serviços reunidos é pouco pesquisada. Como contexto, avaliação do Ipea associa a Lei Maria da Penha à contenção da violência doméstica, e delegacias da mulher reduziram homicídios de mulheres em áreas metropolitanas, sem efeito forte na média.",
+     "estudos": [
+      {
+       "titulo": "Avaliando a efetividade da Lei Maria da Penha (TD 2048)",
+       "autor": "Cerqueira, Martins e Pinto Junior (Ipea)",
+       "ano": 2015,
+       "achado": "A lei teve papel relevante na contenção da violência de gênero, com efetividade heterogênea atribuída à institucionalização desigual dos serviços de proteção.",
+       "url": "https://ideas.repec.org/p/ipe/ipetds/2048.html",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Women's police stations and intimate partner violence: Evidence from Brazil",
+       "autor": "Elizaveta Perova e Sarah Reynolds (Social Science & Medicine)",
+       "ano": 2017,
+       "achado": "Sem associação forte na média; redução de cerca de 17% na taxa de homicídios de mulheres em municípios metropolitanos.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28068577/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Lessons Learned from a Formative Evaluation of Intimate Partner and Sexual Violence Co-located Centers",
+       "autor": "Rizo, Van Deinse, Metz e Murray (Violence Against Women)",
+       "ano": 2026,
+       "achado": "Modelos que reúnem vários serviços num só local têm implementação e eficácia pouco examinadas pela pesquisa.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42693493/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Mulheres em situação de violência nos municípios que receberem as unidades, com serviços reunidos num só local.",
+    "quem_paga_ou_perde": "União, estados e municípios, que constroem e mantêm as unidades por convênio.",
+    "fontes": [
+     {
+      "titulo": "Decreto nº 11.431/2023",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "mulheres",
+    "indice": 7,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe concluir Casas da Mulher Brasileira e Centros de Referência voltados à violência; Flávio propõe a Central da Mulher, física e por aplicativo, que soma à proteção serviços de emprego, crédito e regularização da casa."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1336/2026",
+     "ementa": "Põe em lei o Comitê Interinstitucional de Gestão do Pacto Brasil entre os Três Poderes para Enfrentamento do Feminicídio, criado pelo Decreto 12.839/2026.",
+     "autor": "Laura Carneiro",
+     "partido": "PSD",
+     "situacao": "Pronta para pauta, com pedido de urgência",
+     "ultima_acao": "2026-08-20: apresentado o Requerimento de Urgência nº 4091/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2611305",
+     "direcao": "fora do RILE",
+     "relacao": "Tornaria permanente, por lei, o Pacto que a proposta pretende seguir."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3048/2025",
+     "ementa": "Altera a Lei Maria da Penha para tornar obrigatória a criação de Centros de Referência de Atendimento à Mulher nos estados, DF e municípios.",
+     "autor": "Delegada Adriana Accorsi",
+     "partido": "PT",
+     "situacao": "Pronta para pauta na Comissão de Defesa dos Direitos da Mulher",
+     "ultima_acao": "2026-07-01: parecer da relatora Laura Carneiro (PSD-RJ) pela aprovação, com substitutivo, incluindo os PLs 3990/2025 e 1742/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2528054",
+     "direcao": "fora do RILE",
+     "relacao": "Trata dos Centros de Referência que a proposta pretende concluir."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3990/2025",
+     "ementa": "Institui programa nacional de apoio à criação, manutenção e fortalecimento de centros especializados de atendimento a mulheres em situação de violência doméstica.",
+     "autor": "Delegada Adriana Accorsi",
+     "partido": "PT",
+     "situacao": "Tramitando em conjunto (apensado ao PL 3048/2025)",
+     "ultima_acao": "2026-05-21: designada relatora Laura Carneiro (PSD-RJ) para o PL 3048/2025, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2545295",
+     "direcao": "fora do RILE",
+     "relacao": "Criaria apoio federal permanente a equipamentos como os citados na proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Programa Mulher Viver sem Violência, que inclui as Casas da Mulher Brasileira (Decreto 11.431/2023), e o comitê do Pacto contra o Feminicídio (Decreto 12.839/2026) estão em vigor; a conclusão das unidades depende de execução.",
+    "fonte": {
+     "titulo": "Decreto nº 11.431/2023 (Programa Mulher Viver sem Violência)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+    }
+   }
+  },
+  {
+   "tema": "mulheres",
+   "indice": 1,
+   "candidato": "lula",
+   "proposta": "Propõe ampliar as Salas Lilás e distribuir aos estados kits para monitorar agressores.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Lei 15.125/2025 já permite cumular medida protetiva com monitoração eletrônica do agressor e dispositivo de alerta para a vítima; comprar e repassar kits e apoiar Salas Lilás são ações administrativas e de repasse dentro do Pacto contra o Feminicídio (Decreto 12.839/2026).",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.125/2025 (monitoração eletrônica do agressor)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15125.htm"
+      },
+      {
+       "titulo": "Decreto nº 12.839/2026 (Comitê do Pacto contra o Feminicídio)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/D12839.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa quantos kits seriam distribuídos, quanto custariam nem a fonte dos recursos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A União compra e repassa equipamentos, mas a monitoração e as delegacias são operadas pelos estados (segurança pública, art. 144); a lei que autoriza o monitoramento já está em vigor.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23 e 144",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Avaliação do NIJ nos EUA associou o monitoramento de agressores por GPS a menos tentativas de contato e, em dois de três locais, a menos novas prisões; no terceiro não houve efeito. Teste técnico da polícia de Queensland registrou que um quarto das violações simuladas não disparou alerta, e não foram localizadas avaliações das Salas Lilás.",
+     "estudos": [
+      {
+       "titulo": "GPS Monitoring Technologies and Domestic Violence: An Evaluation Study",
+       "autor": "Erez, Ibarra, Bales e Gur (National Institute of Justice)",
+       "ano": 2012,
+       "achado": "Monitoramento por GPS associado a quase nenhuma tentativa de contato e a menos novas prisões em dois de três locais; sem efeito no terceiro.",
+       "url": "https://nij.ojp.gov/library/publications/gps-monitoring-technologies-and-domestic-violence-evaluation-study",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "The Domestic and Family Violence GPS-enabled Electronic Monitoring Technology Trial – Evaluation Report",
+       "autor": "Queensland Police Service",
+       "ano": 2019,
+       "achado": "Em testes de campo, 26% das violações de zonas proibidas não acionaram nenhum alerta.",
+       "url": "https://cabinet.qld.gov.au/documents/2019/Apr/DFVGPS/Attachments/Report.PDF",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Women's police stations and intimate partner violence: Evidence from Brazil",
+       "autor": "Elizaveta Perova e Sarah Reynolds (Social Science & Medicine)",
+       "ano": 2017,
+       "achado": "Delegacias da mulher não tiveram associação forte com homicídios de mulheres na média, mas reduziram a taxa em cerca de 17% em municípios metropolitanos.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28068577/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Mulheres com medida protetiva nos estados que receberem os kits, pelo alerta de aproximação previsto na lei.",
+    "quem_paga_ou_perde": "União e estados custeiam equipamentos e centrais de monitoramento; agressores monitorados têm a circulação controlada.",
+    "fontes": [
+     {
+      "titulo": "Lei nº 15.125/2025",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15125.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "mulheres",
+    "indice": 9,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe a União distribuir kits de monitoramento aos estados; Flávio propõe tornozeleira para agressores de maior risco, ligada a uma plataforma nacional de denúncia com assistente de inteligência artificial e avaliação de risco."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 561/2023",
+     "ementa": "Obriga a instalação de Salas Lilás em todas as Delegacias Especializadas no Atendimento à Mulher e núcleos de polícia técnico-científica dos estados.",
+     "autor": "Delegada Adriana Accorsi",
+     "partido": "PT",
+     "situacao": "Na CCJC, aguardando designação de relator",
+     "ultima_acao": "2024-07-08: encerrado o prazo de emendas na CCJC, sem emendas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2348898",
+     "direcao": "fora do RILE",
+     "relacao": "Tornaria obrigatórias as Salas Lilás que a proposta quer ampliar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 6179/2025",
+     "ementa": "Torna obrigatório o monitoramento eletrônico do agressor quando a medida protetiva impuser afastamento ou proibição de aproximação da vítima.",
+     "autor": "Carlos Sampaio",
+     "partido": "PSD",
+     "situacao": "Tramitando em conjunto, com outros projetos apensados (como o PL 6393/2025)",
+     "ultima_acao": "2026-03-23: apensado o PL 858/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2592959",
+     "direcao": "direita",
+     "relacao": "Ampliaria a demanda pelos kits de monitoramento que a proposta pretende distribuir."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3121/2026",
+     "ementa": "Estabelece o ressarcimento, pelo agressor, dos custos da monitoração eletrônica e dos dispositivos de proteção da mulher.",
+     "autor": "Marcos Tavares",
+     "partido": "PDT",
+     "situacao": "Tramitando em conjunto (apensado ao PL 3006/2026) na Comissão de Segurança Pública",
+     "ultima_acao": "2026-09-04: apensado ao PL 3006/2026 e recebido pela CSPCCO.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2632533",
+     "direcao": "direita",
+     "relacao": "Trata de quem paga o monitoramento previsto na proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 15.125/2025 já permite somar a medida protetiva ao monitoramento eletrônico do agressor; a distribuição de kits e a ampliação das Salas Lilás dependem de execução.",
+    "fonte": {
+     "titulo": "Lei nº 15.125/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15125.htm"
+    }
+   }
+  },
+  {
+   "tema": "mulheres",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe tornar obrigatórios os planos de ação contra a diferença salarial entre homens e mulheres nas empresas, com metas progressivas.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "A Lei 14.611/2023 (art. 5º, § 2º) já obriga empresas com 100 ou mais empregados a apresentar e implementar plano de ação com metas e prazos quando houver desigualdade, e o Decreto 11.795/2023 regulamenta esse plano. Fixar metas progressivas e reforçar a fiscalização cabe em decreto e portaria; criar nova sanção pela não execução das metas exigiria lei ordinária.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.611/2023 (igualdade salarial)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm"
+      },
+      {
+       "titulo": "Decreto nº 11.795/2023 (regulamenta a Lei 14.611)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11795.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não estima custo; a medida recai sobre a gestão das empresas e a fiscalização do Ministério do Trabalho.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Direito do trabalho é competência privativa da União (art. 22, I, da Constituição) e a regulamentação já existe; a mudança depende de ato do Executivo federal.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, I",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Avaliações de leis de transparência salarial na Dinamarca e no Reino Unido registram redução da diferença entre homens e mulheres de 1,6 a 2 pontos percentuais, obtida principalmente por crescimento menor dos salários masculinos. Estudo sobre leis de transparência nos Estados Unidos registra queda de cerca de 2% no salário médio; não foram localizadas avaliações de planos de ação obrigatórios com metas progressivas.",
+     "estudos": [
+      {
+       "titulo": "Do Firms Respond to Gender Pay Gap Transparency?",
+       "autor": "Bennedsen, Simintzi, Tsoutsoura e Wolfenzon (Journal of Finance)",
+       "ano": 2022,
+       "achado": "A lei dinamarquesa de 2006 reduziu a diferença salarial de gênero em cerca de 2 pontos percentuais (13%), sobretudo por crescimento menor dos salários masculinos, sem efeito na lucratividade.",
+       "url": "https://www.iwh-halle.de/en/publications/detail/do-firms-respond-to-gender-pay-gap-transparency",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Wage responses to gender pay gap reporting requirements",
+       "autor": "Jack Blundell (CEP/LSE)",
+       "ano": 2021,
+       "achado": "A obrigação de divulgar a diferença salarial no Reino Unido reduziu a diferença em 1,6 ponto percentual nas empresas atingidas, principalmente por queda relativa dos salários masculinos.",
+       "url": "https://ideas.repec.org/p/cep/cepdps/dp1750.html",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Equilibrium Effects of Pay Transparency",
+       "autor": "Zoë Cullen e Bobak Pakzad-Hurson (Econometrica)",
+       "ano": 2023,
+       "achado": "Leis estaduais americanas de transparência salarial reduziram os salários médios em cerca de 2%, por diminuir o poder de barganha individual.",
+       "url": "https://ideas.repec.org/p/nbr/nberwo/28903.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Mulheres empregadas em empresas com diferença salarial identificada, segundo os estudos de Dinamarca e Reino Unido.",
+    "quem_paga_ou_perde": "Empresas com 100 ou mais empregados arcam com custos de cumprimento; os estudos registram crescimento salarial menor para homens nessas empresas e, nos EUA, salário médio menor.",
+    "fontes": [
+     {
+      "titulo": "Bennedsen et al. (2022)",
+      "url": "https://www.iwh-halle.de/en/publications/detail/do-firms-respond-to-gender-pay-gap-transparency"
+     },
+     {
+      "titulo": "Cullen e Pakzad-Hurson (2023)",
+      "url": "https://ideas.repec.org/p/nbr/nberwo/28903.html"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 7612 (julgada com ADI 7631 e ADC 92)",
+     "ementa": "Questionava a Lei 14.611/2023, incluindo relatórios de transparência e planos de ação.",
+     "autor": "CNI e CNC (ADI 7631: Partido Novo; ADC 92: CUT e confederações)",
+     "partido": "NOVO (ADI 7631)",
+     "situacao": "Julgada: Plenário validou a lei por unanimidade",
+     "ultima_acao": "2026-05-14: Plenário declarou constitucionais os trechos questionados; relator Alexandre de Moraes.",
+     "url": "https://noticias.stf.jus.br/postsnoticias/lei-que-institui-igualdade-salarial-entre-homens-e-mulheres-e-constitucional-decide-stf/",
+     "direcao": "fora do RILE",
+     "relacao": "Confirmou a validade do plano de ação que a proposta pretende tornar mais exigente."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 500/2024",
+     "ementa": "Adia a obrigatoriedade de publicação semestral dos relatórios de transparência salarial da Lei 14.611/2023.",
+     "autor": "Adriana Ventura, Gilson Marques e Marcel van Hattem",
+     "partido": "NOVO",
+     "situacao": "Aguardando parecer na Comissão de Defesa dos Direitos da Mulher",
+     "ultima_acao": "2025-05-06: encerrado o prazo de emendas, sem emendas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2418976",
+     "direcao": "direita",
+     "relacao": "Vai em sentido oposto: flexibiliza obrigações da lei que a proposta quer reforçar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4258/2026",
+     "ementa": "Inclui detalhamento étnico-racial nos relatórios de transparência salarial para cargos de direção, gerência e conselhos.",
+     "autor": "Amom Mandel",
+     "partido": "REPUBLICANOS",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-07-17: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2640938",
+     "direcao": "fora do RILE",
+     "relacao": "Amplia os relatórios da mesma lei; o plano de Lula também cita mulheres negras como foco."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 14.611/2023 já obriga empresas com 100 ou mais empregados a apresentar plano de ação com metas e prazos quando há desigualdade salarial; as metas progressivas propostas não foram fixadas.",
+    "fonte": {
+     "titulo": "Lei nº 14.611/2023 (igualdade salarial)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm"
+    }
+   }
+  },
+  {
+   "tema": "mulheres",
+   "indice": 7,
+   "candidato": "flavio",
+   "proposta": "Propõe a Central da Mulher, espaço físico e aplicativo que reúnem proteção, apoio jurídico e psicológico, saúde, emprego, crédito e regularização da casa.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Criar centrais e o aplicativo é ação administrativa que pode ser feita por decreto e convênios, como o Programa Mulher Viver sem Violência (Decreto 11.431/2023), que já prevê unidades com serviços integrados; o plano cita parceria com estados, municípios e Sistema S e uso de imóveis da União.",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 11.431/2023 (Programa Mulher Viver sem Violência)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que as centrais serão abertas em todo o Brasil, com unidades itinerantes em caminhões e barcos, mas não estima custo nem fonte de recursos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "Assistência, saúde e segurança são competências comuns (art. 23) e a execução depende de estados e municípios; o plano não define número de unidades nem cronograma.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram localizadas avaliações de impacto de centrais que reúnem serviços para mulheres, e estudo de 2026 aponta que a eficácia desse modelo é pouco pesquisada; um ensaio com ferramenta digital de segurança teve efeito só num subgrupo. Como contexto, avaliação do Ipea associa a Lei Maria da Penha à contenção da violência doméstica, e delegacias da mulher reduziram homicídios de mulheres em áreas metropolitanas, sem efeito forte na média.",
+     "estudos": [
+      {
+       "titulo": "Avaliando a efetividade da Lei Maria da Penha (TD 2048)",
+       "autor": "Cerqueira, Martins e Pinto Junior (Ipea)",
+       "ano": 2015,
+       "achado": "A lei teve papel relevante na contenção da violência de gênero, com efetividade heterogênea atribuída à institucionalização desigual dos serviços de proteção.",
+       "url": "https://ideas.repec.org/p/ipe/ipetds/2048.html",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Women's police stations and intimate partner violence: Evidence from Brazil",
+       "autor": "Elizaveta Perova e Sarah Reynolds (Social Science & Medicine)",
+       "ano": 2017,
+       "achado": "Sem associação forte na média; redução de cerca de 17% na taxa de homicídios de mulheres em municípios metropolitanos.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/28068577/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Lessons Learned from a Formative Evaluation of Intimate Partner and Sexual Violence Co-located Centers",
+       "autor": "Rizo, Van Deinse, Metz e Murray (Violence Against Women)",
+       "ano": 2026,
+       "achado": "Modelos que reúnem vários serviços num só local têm implementação e eficácia pouco examinadas pela pesquisa.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/42693493/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Efficacy of a Web-Based Safety Decision Aid for Women Experiencing Intimate Partner Violence: Randomized Controlled Trial",
+       "autor": "Koziol-McLain et al. (Journal of Medical Internet Research)",
+       "ano": 2018,
+       "achado": "A ferramenta digital isafe reduziu a exposição à violência entre mulheres maori, sem efeito entre as demais participantes.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29321125/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Mulheres atendidas nas centrais e no aplicativo, que reuniriam proteção e serviços de emprego, crédito e moradia.",
+    "quem_paga_ou_perde": "União, estados, municípios e parceiros como o Sistema S, que custeariam e operariam as unidades.",
+    "fontes": [
+     {
+      "titulo": "Decreto nº 11.431/2023",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "mulheres",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe uma central física e digital que soma proteção a emprego, crédito e regularização da casa; Lula propõe concluir as Casas da Mulher Brasileira e os Centros de Referência dentro do Pacto contra o Feminicídio."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4577/2023",
+     "ementa": "Dispõe sobre a criação da Casa da Mulher para atendimento de mulheres vítimas de violência em razão de gênero.",
+     "autor": "Marcos Tavares",
+     "partido": "PDT",
+     "situacao": "Tramitando em conjunto (apensado ao PL 4100/2023) na Comissão de Defesa dos Direitos da Mulher",
+     "ultima_acao": "2025-08-15: designada relatora Célia Xakriabá (PSOL-MG) para o PL 4100/2023, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2389142",
+     "direcao": "fora do RILE",
+     "relacao": "Cria em lei um espaço único de atendimento, como a central proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3048/2025",
+     "ementa": "Altera a Lei Maria da Penha para tornar obrigatória a criação de Centros de Referência de Atendimento à Mulher nos estados, DF e municípios.",
+     "autor": "Delegada Adriana Accorsi",
+     "partido": "PT",
+     "situacao": "Pronta para pauta na Comissão de Defesa dos Direitos da Mulher",
+     "ultima_acao": "2026-07-01: parecer da relatora Laura Carneiro (PSD-RJ) pela aprovação, com substitutivo, incluindo os PLs 3990/2025 e 1742/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2528054",
+     "direcao": "fora do RILE",
+     "relacao": "Define a rede de atendimento especializado na qual a central se apoiaria."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Programa Mulher Viver sem Violência (Decreto 11.431/2023) já mantém as Casas da Mulher Brasileira, com serviços integrados de proteção e atendimento; a Central da Mulher, com aplicativo e serviços de emprego, crédito e regularização da casa, não foi criada.",
+    "fonte": {
+     "titulo": "Decreto nº 11.431/2023 (Programa Mulher Viver sem Violência)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+    }
+   }
+  },
+  {
+   "tema": "mulheres",
+   "indice": 9,
+   "candidato": "flavio",
+   "proposta": "Propõe unir canais de denúncia numa plataforma com a assistente virtual ClarIA e monitorar por tornozeleira os agressores de maior risco.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Lei 15.125/2025 já permite cumular a medida protetiva com monitoração eletrônica do agressor; integrar Ligue 180, delegacias online e botão de emergência numa plataforma com assistente virtual é ação administrativa do Executivo, que depende de convênios com os estados.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.125/2025 (monitoração eletrônica do agressor)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15125.htm"
+      },
+      {
+       "titulo": "Lei Maria da Penha (Lei nº 11.340/2006)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que há mais de meio milhão de mulheres com medida protetiva, mas não estima o custo das tornozeleiras, da plataforma ou da assistente virtual, nem a fonte dos recursos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A plataforma pode ser federal, mas a monitoração e o atendimento policial são feitos pelos estados (art. 144); a base legal já existe.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23 e 144",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Avaliação do NIJ nos EUA associou o monitoramento de agressores por GPS a menos tentativas de contato e, em dois de três locais, a menos novas prisões; teste técnico da polícia de Queensland registrou falha de alerta em um quarto das violações simuladas. Para a plataforma com assistente virtual não há avaliação; um ensaio de ferramenta digital de segurança na Nova Zelândia reduziu a violência só entre mulheres maori.",
+     "estudos": [
+      {
+       "titulo": "GPS Monitoring Technologies and Domestic Violence: An Evaluation Study",
+       "autor": "Erez, Ibarra, Bales e Gur (National Institute of Justice)",
+       "ano": 2012,
+       "achado": "Monitoramento por GPS associado a quase nenhuma tentativa de contato e a menos novas prisões em dois de três locais; sem efeito no terceiro.",
+       "url": "https://nij.ojp.gov/library/publications/gps-monitoring-technologies-and-domestic-violence-evaluation-study",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "The Domestic and Family Violence GPS-enabled Electronic Monitoring Technology Trial – Evaluation Report",
+       "autor": "Queensland Police Service",
+       "ano": 2019,
+       "achado": "Em testes de campo, 26% das violações de zonas proibidas não acionaram nenhum alerta.",
+       "url": "https://cabinet.qld.gov.au/documents/2019/Apr/DFVGPS/Attachments/Report.PDF",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Efficacy of a Web-Based Safety Decision Aid for Women Experiencing Intimate Partner Violence: Randomized Controlled Trial",
+       "autor": "Koziol-McLain et al. (Journal of Medical Internet Research)",
+       "ano": 2018,
+       "achado": "A ferramenta digital isafe reduziu a exposição à violência entre mulheres maori, sem efeito entre as demais participantes.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/29321125/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Mulheres sob medida protetiva classificadas como de maior risco, pelo alerta de aproximação do agressor.",
+    "quem_paga_ou_perde": "União e estados custeiam equipamentos, centrais e a plataforma; agressores monitorados têm a circulação controlada.",
+    "fontes": [
+     {
+      "titulo": "Lei nº 15.125/2025",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15125.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "mulheres",
+    "indice": 1,
+    "candidato": "lula",
+    "diferenca": "Flávio liga a tornozeleira a uma plataforma única de denúncia com avaliação de risco e assistente de IA; Lula propõe distribuir kits de monitoramento aos estados e ampliar as Salas Lilás."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 6179/2025",
+     "ementa": "Torna obrigatório o monitoramento eletrônico do agressor quando a medida protetiva impuser afastamento ou proibição de aproximação da vítima.",
+     "autor": "Carlos Sampaio",
+     "partido": "PSD",
+     "situacao": "Tramitando em conjunto, com outros projetos apensados (como o PL 6393/2025)",
+     "ultima_acao": "2026-03-23: apensado o PL 858/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2592959",
+     "direcao": "direita",
+     "relacao": "Tornaria obrigatória a tornozeleira que o plano propõe para os casos de maior risco."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1847/2026",
+     "ementa": "Torna obrigatória a monitoração eletrônica do agressor que descumprir medida protetiva e fixa distância mínima para alerta à vítima.",
+     "autor": "Vicentinho Júnior",
+     "partido": "PSDB",
+     "situacao": "Na Comissão de Segurança Pública, aguardando designação de relator",
+     "ultima_acao": "2026-08-10: devolvido pelo relator sem manifestação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2616611",
+     "direcao": "direita",
+     "relacao": "Define quando usar a tornozeleira, tema da avaliação de risco citada no plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3121/2026",
+     "ementa": "Estabelece o ressarcimento, pelo agressor, dos custos da monitoração eletrônica e dos dispositivos de proteção da mulher.",
+     "autor": "Marcos Tavares",
+     "partido": "PDT",
+     "situacao": "Tramitando em conjunto (apensado ao PL 3006/2026) na Comissão de Segurança Pública",
+     "ultima_acao": "2026-09-04: apensado ao PL 3006/2026 e recebido pela CSPCCO.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2632533",
+     "direcao": "direita",
+     "relacao": "Trata de quem paga o monitoramento previsto na proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 15.125/2025 já permite somar a medida protetiva ao monitoramento eletrônico do agressor; a plataforma única de denúncia com assistente virtual não foi criada.",
+    "fonte": {
+     "titulo": "Lei nº 15.125/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15125.htm"
+    }
+   }
+  },
+  {
+   "tema": "mulheres",
+   "indice": 11,
+   "candidato": "flavio",
+   "proposta": "Propõe aprovar e implementar a castração química de condenados por estupro e abuso de crianças.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec_clausula_petrea",
+     "explicacao": "Tratamento hormonal voluntário pode ser previsto em lei ordinária que altere o Código Penal e a Lei de Execução Penal, como nos projetos em tramitação. A aplicação obrigatória tem debate jurídico relevante diante da proibição de penas cruéis e da garantia de integridade física do preso (art. 5º, XLVII, 'e', e XLIX), protegidas como cláusula pétrea pelo art. 60, § 4º, IV.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 5º e 60",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei de Execução Penal (Lei nº 7.210/1984)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima custo nem fonte de recursos para medicação e acompanhamento médico.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Direito penal e processual é competência privativa da União (art. 22, I), mas a execução ocorreria sobretudo nos presídios e serviços de saúde estaduais; o prazo depende do Congresso e de eventual controle pelo STF.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, I",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Meta-análise de 2005 encontrou efeitos maiores para castração cirúrgica e hormonal do que para terapias psicossociais, diferença que os autores dizem se confundir com fatores metodológicos. A revisão Cochrane de 2015, só com ensaios randomizados, achou sete estudos pequenos e de baixa qualidade e concluiu que não é possível afirmar que a medicação reduz a reincidência sexual.",
+     "estudos": [
+      {
+       "titulo": "Pharmacological interventions for those who have sexually offended or are at risk of offending",
+       "autor": "Khan, Ferriter, Huband, Powney, Dennis e Duggan (Cochrane)",
+       "ano": 2015,
+       "achado": "Sete estudos com 138 participantes, de baixa qualidade; resultados não permitem conclusão firme sobre redução de reincidência e houve abandono e efeitos adversos.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/25692326/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The effectiveness of treatment for sexual offenders: A comprehensive meta-analysis",
+       "autor": "Friedrich Lösel e Martin Schmucker (Journal of Experimental Criminology)",
+       "ano": 2005,
+       "achado": "Terapias físicas (castração cirúrgica e hormonal) tiveram efeitos maiores que as psicossociais, diferença parcialmente confundida por variáveis metodológicas e de perfil dos infratores.",
+       "url": "https://ojp.gov/ncjrs/virtual-library/abstracts/effectiveness-treatment-sexual-offenders-comprehensive-meta",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Potenciais vítimas, caso a medida reduza a reincidência, efeito que as revisões não conseguem confirmar.",
+    "quem_paga_ou_perde": "Condenados submetidos ao tratamento, sujeitos a efeitos adversos registrados nos ensaios (ganho de peso, depressão), e o sistema prisional e de saúde que custearia a medicação.",
+    "fontes": [
+     {
+      "titulo": "Khan et al. (2015), Cochrane",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25692326/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3127/2019",
+     "ementa": "Dispõe sobre o tratamento químico hormonal (castração química voluntária) para condenados reincidentes em crimes contra a dignidade sexual.",
+     "autor": "Senador Styvenson Valentim",
+     "partido": "PODEMOS",
+     "situacao": "Aprovado no Senado (2024); na Câmara, aguardando parecer na Comissão de Saúde",
+     "ultima_acao": "2024-09-11: designado relator Dep. Padre João (PT-MG) na Comissão de Saúde.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2440756",
+     "direcao": "direita",
+     "relacao": "Prevê a medida em versão voluntária para reincidentes; é o projeto mais avançado sobre o tema."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4460/2025",
+     "ementa": "Torna obrigatória a castração química de condenados por estupro e violação sexual mediante fraude durante o cumprimento da pena.",
+     "autor": "Delegado Bruno Lima",
+     "partido": "PP",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2025-09-05: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2557477",
+     "direcao": "direita",
+     "relacao": "Versão obrigatória, próxima da proposta do plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3158/2026",
+     "ementa": "Institui tratamento químico hormonal inibidor da libido como condição de execução penal para condenados por crimes sexuais contra crianças e adolescentes, estupro e feminicídio com violência sexual.",
+     "autor": "José Nelto",
+     "partido": "UNIÃO",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-06-16: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2632917",
+     "direcao": "direita",
+     "relacao": "Abrange estupradores e abusadores de crianças, mesmo público citado no plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5398/2013",
+     "ementa": "Altera os arts. 83, 213 e 217-A do Código Penal e a Lei de Crimes Hediondos; a Câmara o lista na busca por castração química.",
+     "autor": "Jair Bolsonaro",
+     "partido": "PP (à época)",
+     "situacao": "Arquivado",
+     "ultima_acao": "2019-01-31: arquivado ao fim da legislatura (art. 105 do Regimento Interno).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=572800",
+     "direcao": "direita",
+     "relacao": "Proposta anterior sobre o mesmo tema, arquivada sem votação."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  }
+ ]
+}

@@ -88,6 +88,7 @@ Depois do comparativo, gere `data/resumo.json` com o prompt E. Ele alimenta a p�
 
 ```bash
 python tools/verificar.py      # confere trechos, páginas e equilíbrio
+node tools/testar_pagina.js    # confere se a página inicia sem erro
 python tools/build.py          # gera index.html
 python tools/og.py             # gera a imagem de prévia do link
 git add -A

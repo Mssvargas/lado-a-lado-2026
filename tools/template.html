@@ -201,6 +201,13 @@ dl.prova dd { margin: 0; }
 dl.prova ul { margin: 0; padding-left: 18px; }
 @media (max-width: 560px) { dl.prova { grid-template-columns: 1fr; } dl.prova dd { margin-bottom: 6px; } .lev-row { grid-template-columns: 8px minmax(0, 1fr); } .lev-row .pill { grid-column: 2; justify-self: start; } }
 
+.av { border-top: 1px dashed var(--line); padding-top: 10px; }
+.vigor { font-size: 14px; border: 1px solid var(--accent); border-radius: 8px; padding: 6px 10px; }
+.av-in { display: grid; gap: 10px; }
+.av-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.av dl.prova { grid-template-columns: 1fr; gap: 2px; }
+.av dl.prova dt { margin-top: 8px; }
+
 /* Novas abas */
 .stack { display: grid; gap: 14px; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
@@ -289,6 +296,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
   <div class="wrap">
     <a href="#comparar" data-view="comparar">Comparar propostas</a>
     <a href="#checar" data-view="checar">Checar uma fala</a>
+    <a href="#congresso" data-view="congresso">Congresso e tribunais</a>
     <a href="#espectro" data-view="espectro">Esquerda ou direita?</a>
     <a href="#ideologias" data-view="ideologias">Ideologias</a>
     <a href="#historico" data-view="historico">Promessas anteriores</a>
@@ -380,6 +388,21 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <li><span class="verdict v-nao_consta">Não está no plano</span> o assunto não aparece. Isso não prova que a frase é falsa, pois o candidato pode ter dito em outro lugar.</li>
         </ul>
       </div>
+    </section>
+
+    <section class="view" id="v-congresso" hidden aria-labelledby="t-congresso">
+      <div class="prose">
+        <h2 id="t-congresso">O que tramita no Congresso e nos tribunais</h2>
+        <p>Projetos de lei, emendas à Constituição e ações no STF e no TSE ligados às propostas principais dos candidatos. Cada um mostra onde está, quem é o autor e para que lado do eixo esquerda–direita aponta, pelo mesmo método usado na aba "Esquerda ou direita?".</p>
+      </div>
+      <div class="panel"><h3>Para que lado vai o que tramita</h3><div id="cgSum" class="bars"><p class="status">Carregando…</p></div></div>
+      <div class="row">
+        <div class="field grow"><label for="cgCasa">Onde</label><select id="cgCasa"></select></div>
+        <div class="field grow"><label for="cgTema">Tema</label><select id="cgTema"></select></div>
+        <div class="field grow"><label for="cgDir">Direção</label><select id="cgDir"><option value="">Todas</option><option value="esquerda">Esquerda</option><option value="direita">Direita</option><option value="fora do RILE">Fora do eixo</option></select></div>
+        <div class="field grow"><label for="cgQ">Buscar</label><input type="search" id="cgQ" placeholder="Ex.: PEC, maioridade, 6x1"></div>
+      </div>
+      <div class="stack" id="cgList"></div>
     </section>
 
     <section class="view" id="v-espectro" hidden aria-labelledby="t-espectro">
@@ -505,6 +528,8 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <li><b>Checagens.</b> Vêm só de agências de verificação reconhecidas (Agência Lupa, Aos Fatos, Estadão Verifica, Projeto Comprova). O número de itens é o mesmo para cada candidato: 7 falas e 5 alegações para cada um. A seleção prioriza propostas e dados, não ataques pessoais, e inclui vereditos de todo tipo. É uma amostra: o link de cada item leva à apuração completa, que traz outras frases checadas.</li>
           <li><b>Análise automática.</b> Uma IA de uso gratuito recebe três coisas: os trechos dos planos encontrados pela busca, as checagens desta página e o resultado de uma busca feita na hora. Essa busca é restrita a agências de checagem (Lupa, Aos Fatos, Comprova, AFP, Estadão Verifica), à imprensa de grande circulação e ao TSE. Antes de responder, o servidor descarta citação que não exista literalmente no plano e link que não tenha vindo da busca. Mesmo assim a IA pode errar, então confira sempre o trecho e a página.</li>
           <li><b>Print e voz.</b> Na consulta, dá para enviar um print ou gravar a pergunta. A imagem é lida por uma IA com visão, que só transcreve as afirmações do print sem julgar. O áudio é transcrito pelo Whisper. Nos dois casos, o texto vai para o campo de busca para a pessoa conferir antes da checagem. Imagem e áudio não ficam guardados neste site.</li>
+          <li><b>Viabilidade e evidências.</b> As propostas principais de cada candidato (2 a 3 por tema) foram avaliadas pelos mesmos critérios. Os critérios são: o instrumento exigido (decreto, lei, lei complementar ou emenda à Constituição), o custo e a fonte de recursos, a competência (União, estados ou municípios) e o prazo, e o que dizem estudos e experiências. Os estudos incluem achados favoráveis e desfavoráveis. O site não dá veredito de "boa" ou "ruim": mostra os critérios, os estudos e quem ganha ou paga, e a conclusão é de quem lê.</li>
+          <li><b>Congresso e tribunais.</b> Proposições ligadas às propostas principais, com situação conferida nos dados abertos da Câmara e do Senado e nos portais do STF e do TSE. A direção esquerda–direita segue as categorias do Manifesto Project.</li>
           <li><b>Esquerda ou direita.</b> As 261 propostas foram classificadas pelas categorias do Manifesto Project (MARPOR) e pelo índice RILE, o método acadêmico usado para programas de partidos em mais de 50 países. A referência de cada partido vem do próprio estatuto ou programa e de escalas de especialistas (Bolognesi, Ribeiro e Codato; V-Dem). A verificação de frases livres usa palavras-chave e é uma aproximação.</li>
           <li><b>Ideologias.</b> Verbetes apoiados em fontes de referência (Stanford Encyclopedia of Philosophy, Britannica, CPDOC/FGV). Todos têm o mesmo formato, críticas de mais de um lado e exemplos de países com o critério usado (constituição, partido governante, filiação a internacional partidária). As posições nas dimensões são aproximações didáticas.</li>
           <li><b>Promessa por promessa.</b> Para cada levantamento, o site lista cada promessa com o status dado pela própria fonte (rótulo original), a justificativa da fonte em trecho literal, as evidências que ela cita (leis, decretos, dados oficiais, com link quando existe) e a data da avaliação. Nenhum status foi atribuído pelo site. Para as cores, os rótulos foram agrupados pela mesma regra em todas as fontes; projetos "parados" ficam como "outra classificação", e não como "em andamento".</li>
@@ -647,7 +672,7 @@ function searchChecks(q, cand, limit = 4) {
 }
 
 /* ---------- Navegação ---------- */
-const VIEWS = ["comparar", "checar", "espectro", "ideologias", "historico", "eleicoes", "checagens", "integra", "metodo"];
+const VIEWS = ["comparar", "checar", "congresso", "espectro", "ideologias", "historico", "eleicoes", "checagens", "integra", "metodo"];
 function route() {
   let h = location.hash.replace("#", "");
   let theme = null;
@@ -666,29 +691,131 @@ window.addEventListener("hashchange", route);
 /* ---------- Comparar ---------- */
 let themeIdx = 0, mode = store.get("lal-mode") || "cols";
 function detBadge(d) { return `<span class="det">${esc(DET[d] || "")}</span>`; }
-function itemHTML(it, k) {
+function itemHTML(it, k, tid, idx) {
   if (!it.trecho) return `<div class="item"><div class="empty">${esc(it.proposta)}</div></div>`;
   const id = "q" + Math.random().toString(36).slice(2, 9);
   return `<article class="item">
     <div class="prop">${esc(it.proposta)}</div>
     <div class="simple"><b>Em palavras simples</b>${esc(it.simples)}</div>
+    ${vigorHTML(AV.get(tid + "|" + idx))}
     <div class="foot">${detBadge(it.detalha)}
       <button type="button" class="linkbtn" aria-expanded="false" aria-controls="${id}" data-toggle="${id}">Ver trecho original · p. ${esc(it.pagina)}</button>
-      <button type="button" class="linkbtn" data-open="${k}:${esc(it.pagina)}">Abrir a página</button></div>
+      <button type="button" class="linkbtn" data-open="${k}:${esc(it.pagina)}">Abrir a página</button>
+      ${AV.has(tid + "|" + idx) ? `<button type="button" class="btn ghost sm" data-av="${esc(tid)}|${idx}" aria-expanded="false">Viabilidade e evidências</button>` : ""}</div>
     <blockquote class="lit" id="${id}" hidden>“${esc(it.trecho)}”</blockquote>
+    <div class="av" data-av-box="${esc(tid)}|${idx}" hidden></div>
   </article>`;
 }
+/* ---------- Viabilidade, evidências e proposições ---------- */
+const AV = new Map();
+const AV_INSTR = { ato_executivo: "Ato do Executivo (decreto ou portaria)", lei_ordinaria: "Lei ordinária (maioria simples)", lei_complementar: "Lei complementar (maioria absoluta)", pec: "Emenda à Constituição (3/5, dois turnos)", pec_clausula_petrea: "Emenda à Constituição, com debate sobre cláusula pétrea", politica_existente: "Política que já existe (manter ou ampliar)", nao_se_aplica: "Instrumento não se aplica" };
+const AV_CUSTO = { estimado_com_fonte: "Custo e fonte de recursos indicados", estimado_sem_fonte: "Custo indicado, sem fonte de recursos", nao_estimado: "Custo não estimado no plano", sem_custo_relevante: "Sem custo relevante" };
+const AV_COMPET = { federal: "Competência federal", compartilhada: "Competência compartilhada", depende_estados_municipios: "Depende de estados e municípios" };
+const AV_PRAZO = { cabe_em_4_anos: "cabe em 4 anos", alem_de_4_anos: "vai além de 4 anos", incerto: "prazo incerto" };
+const AV_EVID = { favoravel: "Evidência favorável", mista: "Evidência mista", desfavoravel: "Evidência desfavorável", insuficiente: "Evidência insuficiente" };
+const AV_CONS = { alto: "consenso alto", medio: "consenso médio", baixo: "consenso baixo" };
+const AV_TIPO = { avaliacao_oficial: "avaliação oficial", academico_revisado: "estudo acadêmico revisado", working_paper: "texto acadêmico sem revisão por pares", organismo_internacional: "organismo internacional", think_tank: "centro de estudos (think tank)", entidade_interessada: "entidade com interesse no tema", imprensa: "imprensa" };
+function vigorHTML(a) {
+  const v = a?.situacao_atual;
+  if (!v || !v.status) return "";
+  return `<div class="vigor"><b>${v.status === "em_vigor" ? "Já em vigor" : "Já em vigor em parte"}:</b> ${esc(v.texto || "")}${v.fonte?.url ? ` <a href="${esc(v.fonte.url)}" target="_blank" rel="noopener">${esc(v.fonte.titulo || "fonte oficial")}</a>` : ""}</div>`;
+}
+const srcLinks = arr => (arr || []).filter(f => f && f.url).map(f => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo || "fonte")}</a>`).join(" · ");
+function avHTML(a) {
+  const v = a.viabilidade || {}, ins = v.instrumento || {}, cu = v.custo || {}, co = v.competencia || {}, ev = v.evidencia || {}, im = a.impactos || {};
+  const opp = a.comparacao && COMP?.temas.find(t => t.id === a.comparacao.tema)?.itens[a.comparacao.indice];
+  const props = a.proposicoes || [];
+  return `<div class="av-in">
+    <div class="av-badges">
+      <span class="pill out" data-tip="O que a proposta exige para sair do papel">${esc(AV_INSTR[ins.nivel] || ins.nivel || "")}</span>
+      <span class="pill out" data-tip="O que o plano diz sobre custo e financiamento">${esc(AV_CUSTO[cu.nivel] || cu.nivel || "")}</span>
+      <span class="pill out" data-tip="Quem executa e em quanto tempo">${esc(AV_COMPET[co.nivel] || co.nivel || "")} · ${esc(AV_PRAZO[co.prazo] || co.prazo || "")}</span>
+      <span class="pill out" data-tip="O que dizem estudos e experiências">${esc(AV_EVID[ev.nivel] || ev.nivel || "")}${ev.consenso ? ` · ${esc(AV_CONS[ev.consenso] || ev.consenso)}` : ""}</span>
+    </div>
+    <dl class="prova">
+      <dt>O que exige</dt><dd>${esc(ins.explicacao || "")} ${srcLinks(ins.fontes)}</dd>
+      <dt>Custo</dt><dd>${cu.plano_diz ? `<b>O plano diz:</b> ${esc(cu.plano_diz)} ` : ""}${cu.estimativa_externa ? `<br><b>Estimativa externa:</b> ${esc(cu.estimativa_externa)} ` : ""}${srcLinks(cu.fontes)}</dd>
+      <dt>Quem executa e prazo</dt><dd>${esc(co.explicacao || "")} ${srcLinks(co.fontes)}</dd>
+      <dt>O que dizem os estudos</dt><dd>${esc(ev.resumo || "")}${(ev.estudos || []).length ? `<ul>${ev.estudos.map(e => `<li>${esc(e.achado || "")} <span class="muted">${esc(e.autor || "")}${e.ano ? `, ${esc(e.ano)}` : ""}${e.tipo ? ` · <span data-tip="Tipo de fonte">${esc(AV_TIPO[e.tipo] || e.tipo)}</span>` : ""}</span>${e.url ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titulo || "estudo")}</a>` : ""}</li>`).join("")}</ul>` : ""}</dd>
+      <dt>Quem ganha</dt><dd>${esc(im.quem_ganha || "")}</dd>
+      <dt>Quem paga ou perde</dt><dd>${esc(im.quem_paga_ou_perde || "")} ${srcLinks(im.fontes)}</dd>
+      <dt>Proposta do adversário</dt><dd>${opp ? `<b>${esc(CAND[a.comparacao.candidato]?.nome || "")}:</b> ${esc(opp.proposta)} <span class="muted">${esc(a.comparacao.diferenca || "")}</span>` : "O outro plano não traz proposta equivalente neste ponto."}</dd>
+      <dt>No Congresso e nos tribunais</dt><dd>${props.length ? `<ul>${props.map(p => `<li><b>${esc(p.numero)}</b> (${esc(p.casa)}): ${esc(p.situacao || "")}${p.ultima_acao ? ` <span class="muted">· ${esc(p.ultima_acao)}</span>` : ""} · <a href="${esc(p.url)}" target="_blank" rel="noopener">ver</a></li>`).join("")}</ul><button type="button" class="linkbtn" data-goto="congresso">Ver todas na aba Congresso e tribunais</button>` : "Nenhuma proposição relacionada foi localizada."}</dd>
+    </dl>
+    <p class="status" style="margin:0">Sem veredito de "boa" ou "ruim": aqui estão critérios objetivos, estudos e quem é afetado, com fonte. A conclusão é de quem lê.</p>
+  </div>`;
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-av]");
+  if (b) {
+    const box = document.querySelector(`[data-av-box="${CSS.escape(b.dataset.av)}"]`), a = AV.get(b.dataset.av);
+    if (!box || !a) return;
+    if (box.hidden && !box.innerHTML) box.innerHTML = avHTML(a);
+    box.hidden = !box.hidden; b.setAttribute("aria-expanded", String(!box.hidden));
+  }
+  const g = e.target.closest("[data-goto]"); if (g) location.hash = g.dataset.goto;
+});
+function loadAvaliacao() {
+  loadData("avaliacao").then(d => {
+    for (const a of d.itens || []) AV.set(a.tema + "|" + a.indice, a);
+    showTheme(themeIdx, false);
+  }).catch(() => {});
+}
+
+/* ---------- Aba Congresso e tribunais ---------- */
+const DIRS_CG = [["esquerda", "--left", "Esquerda"], ["direita", "--right", "Direita"], ["fora do RILE", "--seg-out", "Fora do eixo"]];
+function proposicoesAll() {
+  const map = new Map();
+  for (const a of AV.values()) for (const p of a.proposicoes || []) {
+    const key = (p.casa + "|" + String(p.numero).replace(/\s+/g, "").toUpperCase());
+    if (!map.has(key)) map.set(key, { ...p, rel: [] });
+    map.get(key).rel.push({ tema: a.tema, indice: a.indice, candidato: a.candidato, proposta: a.proposta, relacao: p.relacao });
+  }
+  return [...map.values()];
+}
+function initCongresso() { return (initCongresso.p ??= (async () => {
+  try { await loadData("avaliacao"); } catch { failBox("#cgList", "as proposições"); return; }
+  const all = proposicoesAll();
+  DATA._cg = all;
+  const casas = [...new Set(all.map(p => p.casa))];
+  $("#cgCasa").innerHTML = `<option value="">Todas</option>` + casas.map(c => `<option>${esc(c)}</option>`).join("");
+  const temas = [...new Set(all.flatMap(p => p.rel.map(r => r.tema)))];
+  $("#cgTema").innerHTML = `<option value="">Todos</option>` + temas.map(t => `<option value="${esc(t)}">${esc(TEMA_NOME[t] || t)}</option>`).join("");
+  ["#cgCasa", "#cgTema", "#cgDir"].forEach(sel => $(sel).addEventListener("change", renderCongresso));
+  $("#cgQ").addEventListener("input", renderCongresso);
+  renderCongresso();
+})()); }
+function renderCongresso() {
+  const all = DATA._cg || [];
+  const casa = $("#cgCasa").value, tema = $("#cgTema").value, dir = $("#cgDir").value, q = fold($("#cgQ").value.trim());
+  const list = all.filter(p => (!casa || p.casa === casa) && (!tema || p.rel.some(r => r.tema === tema)) && (!dir || p.direcao === dir) && (!q || fold([p.numero, p.ementa, p.autor, p.partido, p.situacao].join(" ")).includes(q)));
+  const casas = [...new Set(list.map(p => p.casa))];
+  $("#cgSum").innerHTML = `<div class="keys">${DIRS_CG.map(([, v, l]) => `<span><i style="background:var(${v})"></i>${l}</span>`).join("")}</div>` + casas.map(c => {
+    const ps = list.filter(p => p.casa === c), tot = ps.length;
+    return `<div class="barrow"><div class="lbl"><span>${esc(c)}</span><span class="mono muted" style="font-weight:500">${tot} proposiç${tot === 1 ? "ão" : "ões"}</span></div>
+      <div class="bar">${DIRS_CG.map(([d, v, l]) => { const n = ps.filter(p => p.direcao === d).length; return n ? `<span style="width:${pct(n, tot)}%;background:var(${v})" data-tip="${esc(`${c} · ${l}: ${n} de ${tot} (${fmtPct(pct(n, tot))})`)}"></span>` : ""; }).join("")}</div></div>`;
+  }).join("") || `<p class="empty">Nenhuma proposição com estes filtros.</p>`;
+  $("#cgList").innerHTML = list.map(p => `<article class="fc">
+    <div class="tags"><span class="tag vd">${esc(p.casa)}</span><span class="tag">${esc(p.tipo || "")}</span><span class="pill ${dirClass(p.direcao)}">${esc(DIR_LABEL[p.direcao] || p.direcao || "")}</span></div>
+    <div class="claim">${esc(p.numero)}: ${esc(p.ementa || "")}</div>
+    <div class="muted" style="font-size:14px">${p.autor ? `Autoria: ${esc(p.autor)}${p.partido ? ` (${esc(p.partido)})` : ""} · ` : ""}Situação: ${esc(p.situacao || "não informada")}${p.ultima_acao ? ` · Último andamento: ${esc(p.ultima_acao)}` : ""}</div>
+    <div style="font-size:14px"><b>Relacionada a:</b> ${p.rel.map(r => `<a href="#tema-${esc(r.tema)}">${esc(CAND[r.candidato]?.nome || r.candidato)}: ${esc(r.proposta)}</a>${r.relacao ? ` <span class="muted">(${esc(r.relacao)})</span>` : ""}`).join("; ")}</div>
+    <a href="${esc(p.url)}" target="_blank" rel="noopener" style="font-size:14px">Ver na fonte oficial</a>
+  </article>`).join("") || `<p class="empty">Nenhuma proposição com estes filtros.</p>`;
+}
+
 function showTheme(i, scroll = true) {
   if (!COMP) return;
   themeIdx = (i + COMP.temas.length) % COMP.temas.length;
   const t = COMP.temas[themeIdx];
   $("#themeSel").value = String(themeIdx);
-  const by = k => t.itens.filter(x => x.candidato === k);
+  // Propostas avaliadas (principais) primeiro, na ordem do plano.
+  const by = k => t.itens.filter(x => x.candidato === k).sort((a, b) => AV.has(t.id + "|" + t.itens.indexOf(b)) - AV.has(t.id + "|" + t.itens.indexOf(a)));
   let body = `<div class="theme-head"><div class="eyebrow">Tema ${themeIdx + 1} de ${COMP.temas.length}</div><h2>${esc(t.nome)}</h2><p class="q">${esc(t.pergunta)}</p></div>
     <div class="cmp"><div><div class="eyebrow">Em comum</div><p>${esc(t.em_comum)}</p></div><div><div class="eyebrow">Principal diferença</div><p>${esc(t.diferenca)}</p></div></div>`;
   if (mode === "cols") {
     body += `<div class="cols">` + ORDER.map(k => `<div class="col"><div class="col-h"><span class="num">${CAND[k].numero}</span><h3>${esc(CAND[k].nome)}</h3><span class="muted" style="font-size:13px">${CAND[k].partido}</span></div>
-      ${by(k).map(it => itemHTML(it, k)).join("") || `<div class="empty">O plano não traz proposta específica sobre isto.</div>`}</div>`).join("") + `</div>`;
+      ${by(k).map(it => itemHTML(it, k, t.id, t.itens.indexOf(it))).join("") || `<div class="empty">O plano não traz proposta específica sobre isto.</div>`}</div>`).join("") + `</div>`;
   } else {
     body += `<div class="tablewrap"><table><thead><tr><th>Candidato</th><th>O que o plano propõe</th><th>O que isso quer dizer</th><th>Fonte</th></tr></thead><tbody>` +
       ORDER.flatMap(k => by(k).map(it => `<tr><td class="who">${esc(CAND[k].nome)}</td><td>${esc(it.proposta)}</td><td>${esc(it.simples || "")}</td>
@@ -1287,7 +1414,7 @@ function renderEl() {
       ${(x.fontes || []).length ? `<p class="status" style="margin:0">Fontes: ${x.fontes.map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">${i + 1}</a>`).join(" · ")}</p>` : ""}</div></details>`;
   }).join("") || `<p class="empty">Nenhuma eleição encontrada.</p>`;
 }
-const LAZY = { espectro: initEspectro, ideologias: initIdeologias, historico: initHistorico, eleicoes: initEleicoes };
+const LAZY = { congresso: initCongresso, espectro: initEspectro, ideologias: initIdeologias, historico: initHistorico, eleicoes: initEleicoes };
 
 /* ---------- Início ---------- */
 function initMeta() {
@@ -1496,7 +1623,7 @@ function initCandidateUI() {
   $("#metodoPlanos").textContent = ORDER.map(k => `${CAND[k].nome}: ${CAND[k].registro || ""}`).join("; ");
   if (ORDER.length > 3) document.documentElement.classList.add("many");
 }
-initCandidateUI(); initMeta(); initCompare(); initCheck(); initChecks(); initReader(); initShare(); initTheme(); route();
+initCandidateUI(); initMeta(); initCompare(); loadAvaliacao(); initCheck(); initChecks(); initReader(); initShare(); initTheme(); route();
 </script>
 </body>
 </html>

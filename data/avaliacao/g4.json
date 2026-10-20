@@ -1,0 +1,2445 @@
+{
+ "grupo": "g4",
+ "temas": [
+  "moradia-cidades",
+  "infraestrutura",
+  "energia"
+ ],
+ "itens": [
+  {
+   "tema": "moradia-cidades",
+   "indice": 0,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Minha Casa, Minha Vida já está em vigor pela Lei 14.620/2023, que define faixas de renda e subsídios; ampliar o programa depende sobretudo de orçamento (LOA) e de recursos do FGTS, não de lei nova. Programas de moradia são competência comum da União, dos estados e dos municípios (art. 23, IX, da Constituição).",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.620/2023 (Programa Minha Casa, Minha Vida)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 23, IX",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que o programa será mantido e ampliado para todas as faixas de renda e cita a meta de 3 milhões de moradias contratadas até o fim de 2026, mas não informa custo nem fonte para o próximo mandato.",
+     "estimativa_externa": "Não há estimativa externa para a ampliação proposta. Como referência histórica, o Ipea (TD 2888) calcula que o programa aplicou mais de R$ 223,1 bilhões (preços de 2019) entre subsídios públicos e privados de 2009 a 2019.",
+     "fontes": [
+      {
+       "titulo": "Ipea, TD 2888 (sumário executivo), 2023",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A União financia e define regras, mas a execução depende de municípios (terrenos, seleção de famílias, infraestrutura); como o programa já opera, a continuidade cabe no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23, IX",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Avaliações indicam que o programa melhorou as condições de moradia e a saúde ao nascer e alcançou famílias em déficit habitacional, mas também que os conjuntos ficam longe de empregos e serviços. Há achados de queda do emprego formal entre beneficiários e de nenhum efeito sobre o crescimento de favelas nos municípios.",
+     "estudos": [
+      {
+       "titulo": "Programa Minha Casa Minha Vida: avaliações de aderência ao déficit habitacional e de acesso a oportunidades urbanas (TD 2888)",
+       "autor": "Krause, Nadalin, Pereira e Simões (Ipea)",
+       "ano": 2023,
+       "achado": "Nas 20 maiores cidades, cerca de 31% dos mutuários da faixa subsidiada viviam em déficit habitacional, mas os conjuntos têm, em geral, pior acesso a empregos e escolas que as favelas das mesmas cidades.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Essays on Housing: Household Choices, Health, and Consumption (cap. 2: The effects of better houses on infant health)",
+       "autor": "Laísa Rachter (FGV), com Cecilia Machado",
+       "ano": 2020,
+       "achado": "O programa reduziu em 18 pontos percentuais a fração de famílias em moradia inadequada, com aumento do peso ao nascer e queda da mortalidade infantil por causas perinatais.",
+       "url": "https://cdn.abrainc.org.br/files/2022/11/ThesisLaisaRachter2020.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Housing program and social conditions impact: Evidences from Minha Casa Minha Vida program lotteries in Brazil",
+       "autor": "Chagas e Rocha (FEA-USP)",
+       "ano": 2019,
+       "achado": "Com base em sorteios no Rio de Janeiro e em São José do Rio Preto, o programa reduziu a probabilidade de emprego formal dos beneficiários e aumentou a fração que recebe transferência de renda.",
+       "url": "https://ideas.repec.org/p/spa/wpaper/2019wpecon40.html",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Avaliação de impacto do Programa Minha Casa Minha Vida sobre o processo de favelização",
+       "autor": "Raimundo Everton de Aquino Moreira (Enap)",
+       "ano": 2026,
+       "achado": "Com dados de 2010 a 2022, não encontra redução da área de favelas nos municípios atendidos; a especificação principal indica pequeno aumento.",
+       "url": "https://repositorio.enap.gov.br/handle/1/10069",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias de baixa renda contempladas, que passam a morar em imóvel adequado com custo de moradia menor; o setor de construção civil.",
+    "quem_paga_ou_perde": "O Tesouro e o FGTS, que custeiam subsídios; segundo os estudos, parte dos beneficiários passa a morar mais longe de empregos e serviços.",
+    "fontes": [
+     {
+      "titulo": "Ipea, TD 2888",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf"
+     },
+     {
+      "titulo": "Rachter (2020), tese FGV",
+      "url": "https://cdn.abrainc.org.br/files/2022/11/ThesisLaisaRachter2020.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "moradia-cidades",
+    "indice": 6,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe manter e ampliar o Minha Casa, Minha Vida para todas as faixas; Flávio propõe retomar o Casa Verde e Amarela, programa que o substituiu entre 2021 e 2023, com meta de 2,5 milhões de moradias."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1162/2023",
+     "ementa": "Dispõe sobre o Programa Minha Casa, Minha Vida e altera leis do setor habitacional.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 14.620/2023)",
+     "ultima_acao": "2023-09-12: recebido ofício do Congresso sobre término de prazo para decreto legislativo da MPV.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2348811",
+     "direcao": "esquerda",
+     "relacao": "Recriou o programa que a proposta pretende manter e ampliar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1350/2026",
+     "ementa": "Altera a Lei 11.977/2009 para aprimorar o Fundo Garantidor da Habitação Popular.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Em tramitação, com prazos suspensos",
+     "ultima_acao": "2026-08-04: prazos e vigência suspensos a partir de 1º/8/2026 até a votação da MPV 1382/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2616962",
+     "direcao": "esquerda",
+     "relacao": "Mexe no fundo que garante financiamentos habitacionais de baixa renda, parte do desenho do programa."
+    }
+   ],
+   "proposta": "Propõe manter e ampliar o Minha Casa Minha Vida para todas as faixas de renda, com foco nas famílias de menor renda.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Minha Casa, Minha Vida está em vigor pela Lei 14.620/2023; a ampliação depende de orçamento e de recursos do FGTS.",
+    "fonte": {
+     "titulo": "Lei nº 14.620/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm"
+    }
+   }
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 6,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "O Casa Verde e Amarela foi criado pela Lei 14.118/2021, mas a Lei 14.620/2023 revogou boa parte dela ao recriar o Minha Casa, Minha Vida; retomar o programa exigiria lei ordinária ou medida provisória. A meta de unidades e os juros dependem também de orçamento e de resoluções do FGTS.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.118/2021 (Programa Casa Verde e Amarela), com dispositivos revogados pela Lei 14.620/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14118.htm"
+      },
+      {
+       "titulo": "Lei nº 14.620/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano fixa a meta de 2,5 milhões de moradias e promete a menor taxa de juros possível no financiamento, sem informar custo nem fonte de recursos.",
+     "estimativa_externa": "Não há estimativa externa para a meta proposta. Como referência histórica, o Ipea (TD 2888) calcula que o Minha Casa, Minha Vida, modelo do qual o Casa Verde e Amarela derivou, aplicou mais de R$ 223,1 bilhões (preços de 2019) em subsídios de 2009 a 2019.",
+     "fontes": [
+      {
+       "titulo": "Ipea, TD 2888 (sumário executivo), 2023",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "A União financia e define regras, mas a produção depende de municípios e construtoras; a meta de 2,5 milhões de moradias exige um ritmo de contratação semelhante ao dos anos de pico do programa anterior e depende de orçamento e de funding do FGTS.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23, IX",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Não foram encontradas avaliações de impacto específicas do Casa Verde e Amarela; as evidências disponíveis tratam do Minha Casa, Minha Vida, de desenho semelhante. Elas mostram melhora da moradia e da saúde ao nascer, mas também conjuntos distantes de empregos, queda do emprego formal entre beneficiários e nenhum efeito sobre o crescimento de favelas.",
+     "estudos": [
+      {
+       "titulo": "Programa Minha Casa Minha Vida: avaliações de aderência ao déficit habitacional e de acesso a oportunidades urbanas (TD 2888)",
+       "autor": "Krause, Nadalin, Pereira e Simões (Ipea)",
+       "ano": 2023,
+       "achado": "Cerca de 31% dos mutuários da faixa subsidiada viviam em déficit habitacional, mas os conjuntos têm, em geral, pior acesso a empregos e escolas que as favelas das mesmas cidades.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Essays on Housing: Household Choices, Health, and Consumption (cap. 2: The effects of better houses on infant health)",
+       "autor": "Laísa Rachter (FGV), com Cecilia Machado",
+       "ano": 2020,
+       "achado": "O programa reduziu em 18 pontos percentuais a fração de famílias em moradia inadequada, com aumento do peso ao nascer.",
+       "url": "https://cdn.abrainc.org.br/files/2022/11/ThesisLaisaRachter2020.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Housing program and social conditions impact: Evidences from Minha Casa Minha Vida program lotteries in Brazil",
+       "autor": "Chagas e Rocha (FEA-USP)",
+       "ano": 2019,
+       "achado": "O programa reduziu a probabilidade de emprego formal dos beneficiários sorteados.",
+       "url": "https://ideas.repec.org/p/spa/wpaper/2019wpecon40.html",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Avaliação de impacto do Programa Minha Casa Minha Vida sobre o processo de favelização",
+       "autor": "Raimundo Everton de Aquino Moreira (Enap)",
+       "ano": 2026,
+       "achado": "Não encontra redução da área de favelas nos municípios atendidos entre 2010 e 2022.",
+       "url": "https://repositorio.enap.gov.br/handle/1/10069",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias que conseguem financiar a casa própria com juros subsidiados; o setor de construção civil.",
+    "quem_paga_ou_perde": "O Tesouro e o FGTS, que custeiam subsídios e juros menores; segundo os estudos do programa anterior, parte dos beneficiários passa a morar mais longe de empregos e serviços.",
+    "fontes": [
+     {
+      "titulo": "Ipea, TD 2888",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "moradia-cidades",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe voltar ao Casa Verde e Amarela com meta numérica de 2,5 milhões de moradias; Lula propõe manter e ampliar o Minha Casa, Minha Vida para todas as faixas, sem meta numérica para o novo mandato."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 996/2020",
+     "ementa": "Institui o Programa Casa Verde e Amarela.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 14.118/2021)",
+     "ultima_acao": "2021-07-14: apresentada declaração de voto; matéria já transformada em lei.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2260971",
+     "direcao": "esquerda",
+     "relacao": "Criou o programa que a proposta pretende retomar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1162/2023",
+     "ementa": "Dispõe sobre o Programa Minha Casa, Minha Vida e altera leis do setor habitacional.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 14.620/2023)",
+     "ultima_acao": "2023-09-12: recebido ofício do Congresso sobre término de prazo para decreto legislativo da MPV.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2348811",
+     "direcao": "esquerda",
+     "relacao": "A lei resultante revogou dispositivos do Casa Verde e Amarela; retomá-lo exigiria alterar esse quadro legal."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 381/2023",
+     "ementa": "Altera as leis do Casa Verde e Amarela e do Minha Casa, Minha Vida para destinar unidades a mulheres vítimas de violência doméstica.",
+     "autor": "Marangoni e Silvye Alves",
+     "partido": "PODE / UNIÃO",
+     "situacao": "Tramitando em conjunto (apensado ao PL 1714/2021)",
+     "ultima_acao": "2023-11-28: designada relatora na CCJC, Dep. Rosângela Moro (UNIÃO-SP), para o PL 1714/2021.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2348197",
+     "direcao": "esquerda",
+     "relacao": "Altera a lei do Casa Verde e Amarela, que a proposta pretende reativar."
+    }
+   ],
+   "proposta": "Propõe retomar o Casa Verde e Amarela, com meta de 2,5 milhões de moradias e a menor taxa de juros possível.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 1,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A destinação de imóveis da União à moradia de interesse social já é prevista na Lei 9.636/1998 e organizada pelo Decreto 11.929/2024 (Programa de Democratização de Imóveis da União); o Fundo Imobiliário citado no plano pode exigir ato adicional, mas a diretriz central é executiva.",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 11.929/2024",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11929.htm"
+      },
+      {
+       "titulo": "Lei nº 9.636/1998 (bens imóveis da União)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9636.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que dará sequência ao uso de áreas da União, inclusive centrais, para moradias do MCMV, com novos instrumentos como o Fundo Imobiliário da União, sem estimar custo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Os terrenos são federais, mas os projetos dependem de licenciamento e infraestrutura municipais; a medida dá continuidade a um programa em curso desde 2024.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23, IX, e 30, VIII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto do uso de terrenos da União para moradia; uma simulação do Ipea indica que esses terrenos em capitais dariam, em média, melhor acesso a empregos que os conjuntos do MCMV, mas não em todas as cidades. Auditorias do TCU apontam cadastro falho e estrutura insuficiente da Secretaria do Patrimônio da União para gerir esses imóveis.",
+     "estudos": [
+      {
+       "titulo": "Programa Minha Casa Minha Vida: avaliações de aderência ao déficit habitacional e de acesso a oportunidades urbanas (TD 2888)",
+       "autor": "Krause, Nadalin, Pereira e Simões (Ipea)",
+       "ano": 2023,
+       "achado": "Em 48 terrenos da União em 16 capitais, o acesso a empregos foi, em média, melhor que o dos conjuntos do MCMV, mas em seis cidades os imóveis ficaram abaixo da média municipal.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Acórdão 484/2017-TCU-Plenário: sistema que controla R$ 68 bilhões em imóveis apresenta falhas",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2017,
+       "achado": "O cadastro da SPU tinha mais de 30 mil registros com responsáveis falecidos e outras inconsistências, e o TCU exigiu plano de ação.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/sistema-que-controla-r-68-bilhoes-em-imoveis-apresenta-falhas-aponta-auditoria-do-tcu",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Relatório do TCU sobre a gestão do patrimônio imobiliário da União (noticiado pela Folha de Pernambuco/Estadão)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2024,
+       "achado": "O TCU considerou a estrutura da SPU insuficiente para gerir cerca de 764 mil imóveis; o programa Imóvel da Gente registrava 625 destinações em 22 meses, ante meta de mil até 2026.",
+       "url": "https://www.folhape.com.br/economia/venda-de-imoveis-da-uniao-trava-com-lula-e-em-2-anos-rendem-85/385341/",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias de baixa renda atendidas em áreas com mais empregos e serviços, segundo a simulação do Ipea.",
+    "quem_paga_ou_perde": "A União deixa de vender ou alugar esses imóveis a preço de mercado; as fontes citam queda da receita com venda de imóveis federais desde 2023.",
+    "fontes": [
+     {
+      "titulo": "Ipea, TD 2888",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/12107/2/TD_2888_sumex.pdf"
+     },
+     {
+      "titulo": "Folha de Pernambuco/Estadão, 18/01/2025",
+      "url": "https://www.folhape.com.br/economia/venda-de-imoveis-da-uniao-trava-com-lula-e-em-2-anos-rendem-85/385341/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 19/2024",
+     "ementa": "Susta o Decreto 11.929/2024, que institui o Programa de Democratização de Imóveis da União.",
+     "autor": "Rodrigo Valadares",
+     "partido": "PL",
+     "situacao": "Aguardando encaminhamento",
+     "ultima_acao": "2025-02-25: encaminhada à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2418919",
+     "direcao": "fora do RILE",
+     "relacao": "Busca anular o decreto em que se apoia a proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2061/2023",
+     "ementa": "Dispõe sobre a doação, aos municípios, de imóveis da União sem utilização há mais de 20 anos.",
+     "autor": "Daniel Soranz",
+     "partido": "PSD",
+     "situacao": "Tramitando em conjunto (apensado ao PL 4321/2012)",
+     "ultima_acao": "2024-08-13: designado relator na CASP, Dep. Reimont (PT-RJ), para o PL 4321/2012.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2357668",
+     "direcao": "fora do RILE",
+     "relacao": "Propõe outro destino para imóveis federais ociosos, passando-os aos municípios."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4444/2021",
+     "ementa": "Cria o Programa Nacional de Gestão Eficiente do Patrimônio Imobiliário Federal e altera a Lei 9.636/1998.",
+     "autor": "Isnaldo Bulhões Jr.",
+     "partido": "MDB",
+     "situacao": "Aguardando deliberação no Plenário",
+     "ultima_acao": "2022-02-24: designado relator, Dep. José Priante (MDB-PA).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2312502",
+     "direcao": "fora do RILE",
+     "relacao": "Altera a gestão dos imóveis da União que a proposta pretende destinar à moradia."
+    }
+   ],
+   "proposta": "Propõe usar terrenos e imóveis da União, inclusive em áreas centrais, para construir moradias do MCMV.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Decreto 11.929/2024 já organiza a destinação de imóveis da União à moradia de interesse social; o fundo imobiliário citado no plano não foi criado.",
+    "fonte": {
+     "titulo": "Decreto nº 11.929/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11929.htm"
+    }
+   }
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 8,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A regularização fundiária urbana (Reurb) já é regulada pela Lei 13.465/2017 e as parcerias público-privadas pela Lei 11.079/2004; contratos que juntem moradia e infraestrutura podem ser feitos nesse quadro, embora a execução caiba sobretudo aos municípios.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 13.465/2017 (regularização fundiária)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13465.htm"
+      },
+      {
+       "titulo": "Lei nº 11.079/2004 (parcerias público-privadas)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11079.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe urbanizar áreas degradadas, incentivar a regularização fundiária e usar PPPs que integrem moradia e infraestrutura, sem estimar custo nem fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "depende_estados_municipios",
+     "prazo": "incerto",
+     "explicacao": "Política urbana, ordenamento do solo e Reurb são conduzidos pelos municípios (arts. 30, VIII, e 182 da Constituição); a União pode financiar e incentivar, mas o ritmo depende de cada prefeitura e de contratos de PPP de longo prazo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 30, VIII, e 182",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "A titulação de terras tem evidência de aumento do investimento na casa e da escolaridade das crianças, e revisão sistemática sobre urbanização de favelas encontra evidência limitada, mas consistente, de menos diarreia e menor gasto com água. Não há avaliação do modelo de parcerias público-privadas proposto; a literatura teórica aponta que PPPs não liberam recursos públicos por si só.",
+     "estudos": [
+      {
+       "titulo": "Property Rights for the Poor: Effects of Land Titling",
+       "autor": "Galiani e Schargrodsky (Journal of Public Economics)",
+       "ano": 2010,
+       "achado": "Em Buenos Aires, famílias que receberam título investiram mais na moradia e tiveram filhos com mais escolaridade, sem efeito relevante via crédito.",
+       "url": "https://econ.umd.edu/publication/property-rights-poor-effects-land-titling",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Slum upgrading strategies and their effects on health and socio-economic outcomes (revisão sistemática Cochrane/3ie)",
+       "autor": "Turley, Saith, Bhan, Rehfuess e Carter",
+       "ano": 2013,
+       "achado": "Evidência limitada, mas consistente, de queda da diarreia e do gasto com água; resultados mistos para pobreza e desemprego.",
+       "url": "https://3ieimpact.org/node/147",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Basic Public Finance of Public-Private Partnerships",
+       "autor": "Engel, Fischer e Galetovic (Journal of the European Economic Association)",
+       "ano": 2013,
+       "achado": "PPPs não se justificam por liberar recursos públicos; quando eficientes, o contrato ótimo se aproxima da provisão pública quanto à alocação de risco.",
+       "url": "https://ideas.repec.org/a/bla/jeurec/v11y2013i1p83-111.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Moradores de áreas informais que recebem infraestrutura e escritura, o que, segundo os estudos, eleva o investimento na casa e reduz doenças ligadas à água.",
+    "quem_paga_ou_perde": "Municípios e União, que assumem contrapartidas e garantias de longo prazo nas PPPs; os estudos não identificam outro grupo perdedor direto.",
+    "fontes": [
+     {
+      "titulo": "Galiani e Schargrodsky (2010)",
+      "url": "https://econ.umd.edu/publication/property-rights-poor-effects-land-titling"
+     },
+     {
+      "titulo": "Engel, Fischer e Galetovic (2013)",
+      "url": "https://ideas.repec.org/a/bla/jeurec/v11y2013i1p83-111.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "moradia-cidades",
+    "indice": 2,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe urbanizar e regularizar áreas precárias com parcerias público-privadas; Lula propõe garantir recursos públicos para concluir as obras do Periferia Viva e abrir novas seleções."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2586/2021",
+     "ementa": "Altera a Lei 13.465/2017 para permitir a regularização fundiária de núcleos urbanos informais existentes até 31/12/2020.",
+     "autor": "Fausto Pinato",
+     "partido": "UNIÃO",
+     "situacao": "Pronta para pauta na CCJC",
+     "ultima_acao": "2026-10-20: parecer do relator, Dep. Diego Garcia (UNIÃO-PR), pela constitucionalidade, com emendas e subemenda substitutiva.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2291554",
+     "direcao": "fora do RILE",
+     "relacao": "Amplia o marco temporal da regularização fundiária urbana que a proposta pretende incentivar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4447/2020",
+     "ementa": "Altera a Lei 13.465/2017, que trata da regularização fundiária rural e urbana.",
+     "autor": "Daniel Freitas",
+     "partido": "PL",
+     "situacao": "Aguardando parecer na CDU",
+     "ultima_acao": "2025-04-03: designado relator, Dep. Fernando Monteiro (REPUBLICANOS-PE).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2261996",
+     "direcao": "fora do RILE",
+     "relacao": "Muda as regras da Reurb, instrumento central da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4600/2026",
+     "ementa": "Institui a Política Nacional de Mutirão Assistido de Regularização Fundiária Urbana Popular (Morar Legal).",
+     "autor": "Duda Ramos",
+     "partido": "PODE",
+     "situacao": "Aguardando despacho do presidente da Câmara",
+     "ultima_acao": "2026-07-17: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2641293",
+     "direcao": "fora do RILE",
+     "relacao": "Cria apoio técnico e jurídico para regularização fundiária de baixa renda."
+    }
+   ],
+   "proposta": "Propõe urbanizar áreas degradadas e incentivar a regularização fundiária, com parcerias público-privadas que juntem moradia e infraestrutura.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A regularização fundiária urbana (Reurb) está em vigor pela Lei 13.465/2017; o modelo de urbanização com parcerias público-privadas proposto não foi definido.",
+    "fonte": {
+     "titulo": "Lei nº 13.465/2017",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13465.htm"
+    }
+   }
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 2,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Periferia Viva foi instituído pelo Decreto 12.260/2024 e integra o Novo PAC (Decreto 11.632/2023); garantir recursos para concluir obras e abrir novas seleções depende de dotação no orçamento anual, não de lei nova.",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 12.260/2024 (Programa Periferia Viva)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12260.htm"
+      },
+      {
+       "titulo": "Decreto nº 11.632/2023 (Novo PAC)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11632.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que as 85 obras retomadas e as 59 propostas selecionadas terão recursos assegurados para conclusão e que haverá novas seleções, sem informar o valor necessário nem a fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "A União repassa recursos, mas projetos, licitações e obras são executados por municípios e estados; a auditoria do TCU sobre obras federais mostra atrasos frequentes nesse tipo de empreendimento.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23, IX, e 30, VIII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Revisão sistemática sobre urbanização de favelas encontra evidência limitada, mas consistente, de redução de diarreia e de gasto com água, e a regularização fundiária tem evidência de mais investimento das famílias na moradia. Auditoria do TCU mostra que mais de 30% das obras com recursos federais estavam paralisadas ou inacabadas, o que afeta a conclusão das intervenções.",
+     "estudos": [
+      {
+       "titulo": "Slum upgrading strategies and their effects on health and socio-economic outcomes (revisão sistemática Cochrane/3ie)",
+       "autor": "Turley, Saith, Bhan, Rehfuess e Carter",
+       "ano": 2013,
+       "achado": "Evidência limitada, mas consistente, de queda da diarreia e do gasto com água; resultados mistos para pobreza e desemprego.",
+       "url": "https://3ieimpact.org/node/147",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Property Rights for the Poor: Effects of Land Titling",
+       "autor": "Galiani e Schargrodsky (Journal of Public Economics)",
+       "ano": 2010,
+       "achado": "Famílias que receberam título investiram mais na moradia e tiveram filhos com mais escolaridade.",
+       "url": "https://econ.umd.edu/publication/property-rights-poor-effects-land-titling",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Acórdão 1079/2019-TCU-Plenário: obras paralisadas no país",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2019,
+       "achado": "De mais de 30 mil obras com recursos federais, mais de 30% estavam paralisadas ou inacabadas, sobretudo por projetos básicos deficientes e falta de contrapartida.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/obras-paralisadas-no-pais-causas-e-solucoes",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Moradores de favelas e periferias atendidos com infraestrutura, equipamentos e regularização, com menos doenças ligadas à água segundo a revisão sistemática.",
+    "quem_paga_ou_perde": "O orçamento federal e as contrapartidas municipais; as fontes não identificam outro grupo perdedor direto.",
+    "fontes": [
+     {
+      "titulo": "Turley et al. (2013)",
+      "url": "https://3ieimpact.org/node/147"
+     },
+     {
+      "titulo": "TCU, Acórdão 1079/2019",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/obras-paralisadas-no-pais-causas-e-solucoes"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "moradia-cidades",
+    "indice": 8,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe financiar com recursos federais a conclusão das obras do Periferia Viva; Flávio propõe urbanização e regularização fundiária apoiadas em parcerias público-privadas."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1985/2025",
+     "ementa": "Institui a Zona Franca das Favelas, com incentivos a empreendedorismo, tarifa de energia diferenciada, internet gratuita e isenção tributária.",
+     "autor": "Marcos Tavares",
+     "partido": "PDT",
+     "situacao": "Aguardando parecer na CICS",
+     "ultima_acao": "2025-08-07: encerrado o prazo para emendas, sem emendas apresentadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2502996",
+     "direcao": "fora do RILE",
+     "relacao": "Trata de política federal específica para favelas, público do Periferia Viva."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2586/2021",
+     "ementa": "Altera a Lei 13.465/2017 para permitir a regularização fundiária de núcleos urbanos informais existentes até 31/12/2020.",
+     "autor": "Fausto Pinato",
+     "partido": "UNIÃO",
+     "situacao": "Pronta para pauta na CCJC",
+     "ultima_acao": "2026-10-20: parecer do relator, Dep. Diego Garcia (UNIÃO-PR), pela constitucionalidade, com emendas e subemenda substitutiva.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2291554",
+     "direcao": "fora do RILE",
+     "relacao": "Amplia a regularização fundiária, componente do programa de urbanização de favelas."
+    }
+   ],
+   "proposta": "Propõe garantir recursos para concluir as obras do Periferia Viva em favelas e periferias e abrir novas seleções.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Periferia Viva está em vigor pelo Decreto 12.260/2024; a conclusão das obras e novas seleções dependem de orçamento.",
+    "fonte": {
+     "titulo": "Decreto nº 12.260/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12260.htm"
+    }
+   }
+  },
+  {
+   "tema": "moradia-cidades",
+   "indice": 9,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Marco Legal do Saneamento (Lei 14.026/2020) já está em vigor, com metas de universalização até 2033 e estímulo a concessões; aplicá-lo plenamente e acelerar concessões depende de decretos, de apoio federal e de decisões dos titulares do serviço.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.026/2020 (Marco Legal do Saneamento)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14026.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe garantir a plena aplicação do Marco e acelerar concessões e parcerias, com atenção ao saneamento rural, sem estimar custo; a ideia é que o investimento venha principalmente do setor privado.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "depende_estados_municipios",
+     "prazo": "alem_de_4_anos",
+     "explicacao": "A titularidade do saneamento é municipal ou de estruturas regionais (art. 30, V, da Constituição), e cabe a elas licitar concessões; a meta legal de universalização vai até 2033, além do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 30, V",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei nº 14.026/2020",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14026.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudos com municípios brasileiros e com a Argentina associam a concessão privada a mais acesso a água e esgoto e, no caso argentino, a menor mortalidade infantil. Um dos estudos brasileiros também registra tarifas mais altas após a concessão, e uma meta-regressão internacional não encontra custos sistematicamente menores na prestação privada.",
+     "estudos": [
+      {
+       "titulo": "Privatização e equidade no acesso a serviços de saneamento básico no Brasil",
+       "autor": "Saiani, Azevedo e Menezes (Ipea, Pesquisa e Planejamento Econômico)",
+       "ano": 2023,
+       "achado": "A privatização foi associada a aumento de 6,1 pontos percentuais (cerca de 26%) no acesso a esgoto, com ganhos maiores nos municípios mais pobres.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/14444/2/PPE_v53_n2_artigo1_privatizacao_e_equipe.pdf",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Impacto da privatização da água e do esgoto nas tarifas e no acesso aos serviços no Brasil",
+       "autor": "Côrtes, Riani e Ferreira Júnior (Revista Brasileira de Estudos de População)",
+       "ano": 2023,
+       "achado": "Com 3.536 municípios (1998-2019), prestadores privados elevaram o acesso a água, esgoto e tratamento, e também as tarifas cobradas.",
+       "url": "https://rebep.org.br/revista/article/view/2238",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Water for Life: The Impact of the Privatization of Water Services on Child Mortality",
+       "autor": "Galiani, Gertler e Schargrodsky (Journal of Political Economy)",
+       "ano": 2005,
+       "achado": "Na Argentina dos anos 1990, a mortalidade infantil caiu 8% nas áreas que privatizaram a água, e 26% nas mais pobres.",
+       "url": "https://econ.umd.edu/publication/water-life-impact-privatization-water-services-child-mortality",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Is Private Production of Public Services Cheaper than Public Production? A meta-regression analysis of solid waste and water services",
+       "autor": "Bel, Fageda e Warner (IREA/Universitat de Barcelona)",
+       "ano": 2009,
+       "achado": "Não há apoio sistemático para custos menores na produção privada de água e coleta de lixo.",
+       "url": "https://diposit.ub.edu/dspace/handle/2445/61505",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Moradores de áreas sem rede que passam a ter água e esgoto; segundo os estudos, os municípios mais pobres têm os maiores ganhos de acesso.",
+    "quem_paga_ou_perde": "Usuários pagam tarifas mais altas após a concessão, segundo um dos estudos; companhias estaduais perdem contratos para operadores privados.",
+    "fontes": [
+     {
+      "titulo": "Côrtes, Riani e Ferreira Júnior (2023)",
+      "url": "https://rebep.org.br/revista/article/view/2238"
+     },
+     {
+      "titulo": "Saiani, Azevedo e Menezes (2023)",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/14444/2/PPE_v53_n2_artigo1_privatizacao_e_equipe.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "moradia-cidades",
+    "indice": 3,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe acelerar concessões e parcerias privadas sob o Marco Legal; Lula propõe apoiar estados e municípios a universalizar água e esgoto, sem definir o modelo de prestação."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4162/2019",
+     "ementa": "Atualiza o marco legal do saneamento básico e dá à ANA competência para editar normas de referência.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (Lei 14.026/2020), com veto parcial",
+     "ultima_acao": "2020-07-15: transformado na Lei 14.026/2020, vetado parcialmente.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2213200",
+     "direcao": "direita",
+     "relacao": "Originou o marco legal cuja plena aplicação a proposta defende."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 98/2023",
+     "ementa": "Susta dispositivos do Decreto 11.467/2023, sobre prestação regionalizada do saneamento e alocação de recursos federais.",
+     "autor": "Evair Vieira de Melo",
+     "partido": "REPUBLICANOS",
+     "situacao": "Arquivado (declarado prejudicado no Senado)",
+     "ultima_acao": "2025-01-14: arquivamento registrado na Câmara; o Senado declarou o projeto prejudicado em 13/09/2023.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2355135",
+     "direcao": "direita",
+     "relacao": "Contestou o decreto de 2023 que, segundo o plano, tentou desarticular o Marco Legal."
+    }
+   ],
+   "proposta": "Propõe aplicar plenamente o Marco Legal do Saneamento e acelerar concessões e parcerias para universalizar água e esgoto.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Marco Legal do Saneamento está em vigor pela Lei 14.026/2020, com metas de universalização até 2033; o ritmo das concessões depende dos titulares do serviço.",
+    "fonte": {
+     "titulo": "Lei nº 14.026/2020",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14026.htm"
+    }
+   }
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 0,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Novo PAC foi instituído pelo Decreto 11.632/2023; uma nova edição pode ser lançada por decreto, com obras financiadas pelo orçamento anual e concessões feitas com base na Lei 8.987/1995 e na Lei 11.079/2004.",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 11.632/2023 (Novo PAC)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11632.htm"
+      },
+      {
+       "titulo": "Lei nº 8.987/1995 (concessões)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8987cons.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano informa que o Novo PAC executou R$ 1,3 trilhão e que o investimento em infraestrutura chegou a R$ 280 bilhões em 2025, mas não estima o valor nem a fonte da nova edição.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "A União coordena e financia, mas parte das obras é executada por estados, municípios e concessionárias; grandes obras costumam durar mais que um mandato, e o TCU registra alta proporção de obras federais paralisadas.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21, XII e XX",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "alto",
+     "resumo": "Meta-análise de 578 estimativas encontra efeito positivo do capital público sobre a produção, e estudo brasileiro estima multiplicador do investimento público acima de 2 em recessões. Diagnósticos do FMI e do TCU apontam baixa eficiência na seleção e execução de projetos no Brasil, com muitas obras paralisadas, o que pode reduzir esse efeito.",
+     "estudos": [
+      {
+       "titulo": "Investimento público no Brasil e suas relações com ciclo econômico e regime fiscal",
+       "autor": "Orair e Siqueira (Economia e Sociedade)",
+       "ano": 2018,
+       "achado": "O multiplicador do investimento público no Brasil pode passar de 2 em recessões e fica em no máximo 0,8 em expansões.",
+       "url": "https://www.eco.unicamp.br/images/arquivos/artigos/3710/09OrAIR.pdf",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "What Have We Learned From Three Decades of Research on the Productivity of Public Capital?",
+       "autor": "Bom e Ligthart (Journal of Economic Surveys)",
+       "ano": 2014,
+       "achado": "Meta-análise de 578 estimativas encontra elasticidade média da produção ao capital público de cerca de 0,08 no curto prazo e 0,12 no longo prazo.",
+       "url": "https://ucrisportal.univie.ac.at/en/publications/what-have-we-learned-from-three-decades-of-research-on-the-produc/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Brazil: Public Investment Management Assessment (PIMA)",
+       "autor": "Fundo Monetário Internacional",
+       "ano": 2018,
+       "achado": "O Brasil teria lacuna de eficiência de cerca de 39% na produção de infraestrutura, com fraquezas na seleção de projetos e na execução.",
+       "url": "https://blog-pfm.imf.org/en/pfmblog/2018/12/making-brazil-public-investment-more-efficient",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Acórdão 1079/2019-TCU-Plenário: obras paralisadas no país",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2019,
+       "achado": "Mais de 30% de cerca de 30 mil obras com recursos federais estavam paralisadas ou inacabadas.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/obras-paralisadas-no-pais-causas-e-solucoes",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Usuários das obras concluídas e trabalhadores e empresas da construção; segundo os estudos, o efeito sobre a economia é maior em períodos de recessão.",
+    "quem_paga_ou_perde": "O orçamento federal, que disputa recursos com outras despesas sob o arcabouço fiscal; obras paralisadas imobilizam recursos sem entregar benefício.",
+    "fontes": [
+     {
+      "titulo": "Orair e Siqueira (2018)",
+      "url": "https://www.eco.unicamp.br/images/arquivos/artigos/3710/09OrAIR.pdf"
+     },
+     {
+      "titulo": "TCU, Acórdão 1079/2019",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/obras-paralisadas-no-pais-causas-e-solucoes"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "infraestrutura",
+    "indice": 6,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe uma nova edição do Novo PAC combinando obras públicas e concessões, sem meta de valor; Flávio propõe meta de R$ 900 bilhões em quatro anos apoiada principalmente em capital privado."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4603/2023",
+     "ementa": "Exige conteúdo nacional mínimo nas contratações do Novo PAC e licitação exclusiva para empresas brasileiras em certos casos.",
+     "autor": "Félix Mendonça Júnior",
+     "partido": "PDT",
+     "situacao": "Aguardando parecer na CDE",
+     "ultima_acao": "2025-03-26: devolvido ao relator, Dep. Saulo Pedroso (PSD-SP).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2389587",
+     "direcao": "esquerda",
+     "relacao": "Altera as regras de compras do programa que a proposta pretende renovar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1643/2024",
+     "ementa": "Determina a aplicação de no mínimo 20% das ações orçamentárias do Novo PAC em resposta e prevenção a desastres nos municípios do Rio Grande do Sul em calamidade.",
+     "autor": "Sanderson",
+     "partido": "PL",
+     "situacao": "Aguardando despacho do presidente da Câmara",
+     "ultima_acao": "2024-05-08: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2431978",
+     "direcao": "fora do RILE",
+     "relacao": "Vincula parte dos recursos do Novo PAC a uma finalidade específica."
+    }
+   ],
+   "proposta": "Propõe uma nova edição do Novo PAC, combinando obras públicas e concessões em infraestrutura logística.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Novo PAC está em vigor pelo Decreto 11.632/2023; uma nova edição depende de novo ato e de orçamento.",
+    "fonte": {
+     "titulo": "Decreto nº 11.632/2023 (Novo PAC)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11632.htm"
+    }
+   }
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 1,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Concessões de rodovias e ferrovias já se apoiam na Lei 8.987/1995, na Lei 13.448/2017 (prorrogação e relicitação de contratos) e na Lei 14.273/2021 (Lei das Ferrovias); novos leilões e repactuações são atos do Executivo, da ANTT e passam pelo TCU.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 13.448/2017",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/L13448.htm"
+      },
+      {
+       "titulo": "Lei nº 14.273/2021 (Lei das Ferrovias)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14273.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano propõe manter o ritmo das concessões rodoviárias e intensificar as ferroviárias por novos leilões e repactuação de contratos, sem estimar valores; os investimentos ficam a cargo das concessionárias.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Rodovias e ferrovias federais são concedidas pela União (art. 21, XII, da Constituição); leilões e repactuações podem ser feitos no mandato, embora os investimentos se estendam por décadas.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21, XII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudo sobre uma concessão rodoviária paulista encontra queda de cerca de metade nos acidentes fatais e aumento da renda local, enquanto outro, sobre a BR-163, encontra menos acidentes só no quinto ano e nenhum efeito significativo nas mortes. Nas ferrovias, as renovações antecipadas trouxeram investimento, mas mantiveram concentração de mercado, e o TCU só aprovou a primeira delas com condições.",
+     "estudos": [
+      {
+       "titulo": "Does private mean better? Evaluating economic benefits and safety outcomes of a state highway concession",
+       "autor": "Bianchi, Mattos, Wink Junior e Sampaio (Research in Transportation Economics)",
+       "ano": 2026,
+       "achado": "Após uma concessão rodoviária em São Paulo, os acidentes fatais caíram cerca de 50% e a renda local subiu de 3% a 5%.",
+       "url": "https://trid.trb.org/View/2697065",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Avaliação de impacto da concessão de rodovias e seus efeitos sobre a ocorrência de acidentes e de focos de queima: o caso da BR-163 (Itiquira-Sinop)",
+       "autor": "Márcia Catarina David (UnB)",
+       "ano": 2021,
+       "achado": "Houve redução de acidentes no 5º ano da concessão, sem resultado significativo para acidentes com mortes.",
+       "url": "https://www.repositorio.unb.br/bitstream/10482/42406/1/2021_M%c3%a1rciaCatarinaDavid.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Analysis of the Brazilian railway system: concession renewals and the quest for a more diversified and competitive framework",
+       "autor": "Santos, Rodrigues, Leiva e Pereira (Railway Sciences)",
+       "ano": 2026,
+       "achado": "As renovações antecipadas garantiram investimento privado na expansão de capacidade, mas perpetuaram o modelo verticalizado e não ampliaram a concorrência nem a diversificação de cargas.",
+       "url": "https://castjournals.cast.org.cn/joweb/rs/EN/PDF/10.1108/RS-11-2025-0050",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Acórdão 2.876/2019-TCU-Plenário (prorrogação da Malha Paulista)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2019,
+       "achado": "O TCU aprovou a primeira prorrogação antecipada de ferrovia só com condições, após o Ministério Público junto ao TCU não ver vantagem sobre nova licitação.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/tribunal-aprova-com-condicoes-a-prorrogacao-da-malha-paulista.htm",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Usuários de rodovias concedidas, com menos acidentes segundo um dos estudos; embarcadores atendidos pela expansão de capacidade ferroviária.",
+    "quem_paga_ou_perde": "Usuários pagam pedágio e fretes definidos em contrato; segundo o estudo ferroviário, cargas fora de minério e grãos seguem com pouco acesso à malha.",
+    "fontes": [
+     {
+      "titulo": "Bianchi et al. (2026)",
+      "url": "https://trid.trb.org/View/2697065"
+     },
+     {
+      "titulo": "Santos et al. (2026)",
+      "url": "https://castjournals.cast.org.cn/joweb/rs/EN/PDF/10.1108/RS-11-2025-0050"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "infraestrutura",
+    "indice": 7,
+    "candidato": "flavio",
+    "diferenca": "Os dois apostam em concessões; Lula enfatiza leilões e repactuação de contratos ferroviários dentro do Novo PAC, e Flávio propõe um novo modelo de financiamento com uso intensivo de PPPs, concessões e fundo lastreado em bens da União."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3754/2021",
+     "ementa": "Estabelece a Lei das Ferrovias e altera leis do setor.",
+     "autor": "Senado Federal (senador José Serra)",
+     "partido": "PSDB",
+     "situacao": "Transformado em norma jurídica (Lei 14.273/2021)",
+     "ultima_acao": "2024-02-06: recebido ofício do Congresso sobre promulgação das partes vetadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2304326",
+     "direcao": "direita",
+     "relacao": "Criou o regime de autorizações ferroviárias que convive com as concessões que a proposta pretende ampliar."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 5991",
+     "ementa": "Questiona a Lei 13.448/2017, que permite prorrogação antecipada de concessões ferroviárias e rodoviárias.",
+     "autor": "Procuradora-Geral da República",
+     "partido": "não se aplica",
+     "situacao": "Julgada improcedente (lei mantida); processo arquivado",
+     "ultima_acao": "2021-03-22: baixa ao arquivo do STF, após julgamento de 07/12/2020.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5522428",
+     "direcao": "fora do RILE",
+     "relacao": "Confirmou a validade do instrumento de repactuação/prorrogação de contratos ferroviários citado na proposta."
+    }
+   ],
+   "proposta": "Propõe manter o ritmo das concessões de rodovias e intensificar as de ferrovias, com novos leilões e renegociação de contratos.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 3,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Obras de segurança hídrica e revitalização de bacias já integram o Novo PAC (Decreto 11.632/2023) e a Política Nacional de Recursos Hídricos (Lei 9.433/1997); ampliá-las depende de orçamento, não de lei nova.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 9.433/1997 (Política Nacional de Recursos Hídricos)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9433.htm"
+      },
+      {
+       "titulo": "Decreto nº 11.632/2023 (Novo PAC)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11632.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano informa que o Novo PAC investiu R$ 15 bilhões em obras complementares da transposição, canais, adutoras, barragens e 172,4 mil cisternas, mas não estima o custo da ampliação proposta.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "A União institui o sistema de gerenciamento de recursos hídricos (art. 21, XIX), mas obras e operação envolvem estados, companhias estaduais e municípios; grandes obras hídricas costumam durar mais que um mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 21, XIX, e 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Avaliação do programa de cisternas no semiárido encontra queda nas internações por doenças ligadas à água e aumento da renda formal. Para grandes obras como a transposição não há avaliação de impacto: a CGU apontou riscos de custo de operação, e estudo publicado pelo Ipea calculou água mais cara que em alternativas locais.",
+     "estudos": [
+      {
+       "titulo": "Cisterns for Life: Climate Adaptation Policies for Water Provision and Rural Lives (IZA DP 18250)",
+       "autor": "Barreto, Britto, Carrillo, Da Mata, Emanuel e Sampaio",
+       "ano": 2025,
+       "achado": "Em dez anos, as cisternas reduziram internações por doenças de veiculação hídrica em 16% entre adultos e 37% entre crianças e elevaram a renda formal em cerca de 20%.",
+       "url": "https://www.iza.org/cms/language/de/publications/dp/18250/cisterns-for-life-climate-adaptation-policies-for-water-provision-and-rural-lives",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Relatório da CGU sobre a pré-operação do Projeto de Integração do São Francisco (noticiado pela Agência Brasil)",
+       "autor": "Controladoria-Geral da União",
+       "ano": 2018,
+       "achado": "A CGU apontou falhas no planejamento de operação e manutenção; o custo de energia poderia chegar a R$ 800 milhões por ano aos estados, com reajustes de 5% a 21% nas tarifas de água.",
+       "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2018-04/cgu-aponta-risco-de-sustentabilidade-na-transposicao-do-sao-francisco",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Política de combate à seca: há alternativas mais eficientes que a transposição do rio São Francisco?",
+       "autor": "Feijó e Torggler (Planejamento e Políticas Públicas, Ipea)",
+       "ano": 2006,
+       "achado": "O custo do metro cúbico da transposição (US$ 0,11 a 0,61) ficou acima do da contenção da evaporação em açudes (US$ 0,06 a 0,15).",
+       "url": "https://ipea.gov.br/ppp/index.php/PPP/article/download/43/42/146",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias do semiárido com acesso a água, com menos internações e mais tempo para trabalho segundo a avaliação das cisternas; produtores atendidos por adutoras e canais.",
+    "quem_paga_ou_perde": "O orçamento federal e, nas grandes obras, os estados e usuários, que arcam com custos de energia e operação repassados às tarifas segundo a CGU.",
+    "fontes": [
+     {
+      "titulo": "Barreto et al. (2025)",
+      "url": "https://www.iza.org/cms/language/de/publications/dp/18250/cisterns-for-life-climate-adaptation-policies-for-water-provision-and-rural-lives"
+     },
+     {
+      "titulo": "Agência Brasil, 18/04/2018 (relatório da CGU)",
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2018-04/cgu-aponta-risco-de-sustentabilidade-na-transposicao-do-sao-francisco"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "infraestrutura",
+    "indice": 12,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe ampliar de forma geral a infraestrutura de segurança hídrica e a revitalização de bacias; Flávio lista obras específicas no Nordeste, como os Ramais do Apodi e do Salgado e a Adutora do Seridó."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1124/2022",
+     "ementa": "Cria prioridade para a segurança hídrica e destina recursos dos fundos constitucionais a saneamento e ao Programa Cisterna.",
+     "autor": "Pinheirinho",
+     "partido": "PP",
+     "situacao": "Aguardando designação de relator na CMADS",
+     "ultima_acao": "2023-04-26: encerrado o prazo para emendas, sem emendas apresentadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2321651",
+     "direcao": "fora do RILE",
+     "relacao": "Cria fonte de recursos para segurança hídrica e cisternas, foco da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2525/2023",
+     "ementa": "Institui a Política de Convivência com a Seca Nordestina.",
+     "autor": "Iza Arruda",
+     "partido": "MDB",
+     "situacao": "Aguardando designação de relator na CCJC",
+     "ultima_acao": "2026-07-01: recebimento pela CCJC.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2361928",
+     "direcao": "fora do RILE",
+     "relacao": "Trata de política federal para a seca no Nordeste, região das obras de segurança hídrica."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3294/2026",
+     "ementa": "Altera leis de recursos hídricos e saneamento para fortalecer o acesso à água e soluções comunitárias de abastecimento.",
+     "autor": "Sanderson",
+     "partido": "PL",
+     "situacao": "Aguardando designação de relator na CMADS",
+     "ultima_acao": "2026-08-24: recebimento pela CMADS.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2635213",
+     "direcao": "fora do RILE",
+     "relacao": "Altera a gestão de recursos hídricos e o acesso à água, objeto da proposta."
+    }
+   ],
+   "proposta": "Propõe revitalizar bacias hidrográficas e ampliar obras de segurança hídrica para beber, produzir e se proteger de cheias.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 6,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "nao_se_aplica",
+     "explicacao": "A meta de investimento não exige norma própria: depende de concessões e PPPs já previstas na Lei 8.987/1995 e na Lei 11.079/2004 e, na parte pública, do orçamento anual; o novo modelo de financiamento que a sustenta é tratado em proposta separada.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 8.987/1995 (concessões)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8987cons.htm"
+      },
+      {
+       "titulo": "Lei nº 11.079/2004 (PPPs)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11079.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "estimado_sem_fonte",
+     "plano_diz": "O plano fixa R$ 900 bilhões em quatro anos para rodovias, hidrovias, portos, aeroportos e ferrovias e diz que a estratégia se apoia na iniciativa privada, sem dizer quanto viria de recursos públicos e quanto de capital privado.",
+     "estimativa_externa": "Não há estimativa externa da meta. Como referência, a Inter.B, citada pela Gazeta do Povo, projetou R$ 75,3 bilhões de investimento em transportes em 2024 (0,65% do PIB); a meta equivale a cerca de R$ 225 bilhões por ano.",
+     "fontes": [
+      {
+       "titulo": "Gazeta do Povo, 05/02/2024, com dados da Inter.B",
+       "url": "https://www.gazetadopovo.com.br/economia/pais-so-investe-um-terco-do-necessario-em-transportes-atrair-investidor-privado-e-crucial/"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "A União responde pela infraestrutura federal de transportes (art. 21, XII), mas parte relevante depende de investidores privados e de estados; a meta exigiria triplicar o ritmo anual recente de investimento em transportes.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21, XII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "alto",
+     "resumo": "Meta-análise de 578 estimativas encontra efeito positivo do capital em infraestrutura sobre a produção, e estudo sobre ferrovias encontra redução de custos de comércio e aumento de renda. Diagnósticos do FMI e do TCU apontam baixa eficiência na seleção e execução de projetos no Brasil, o que pesa sobre metas de grande escala.",
+     "estudos": [
+      {
+       "titulo": "What Have We Learned From Three Decades of Research on the Productivity of Public Capital?",
+       "autor": "Bom e Ligthart (Journal of Economic Surveys)",
+       "ano": 2014,
+       "achado": "Meta-análise de 578 estimativas encontra elasticidade média da produção ao capital público de cerca de 0,08 no curto prazo e 0,12 no longo prazo.",
+       "url": "https://ucrisportal.univie.ac.at/en/publications/what-have-we-learned-from-three-decades-of-research-on-the-produc/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Railroads of the Raj: Estimating the Impact of Transportation Infrastructure",
+       "autor": "Dave Donaldson (American Economic Review)",
+       "ano": 2018,
+       "achado": "Na Índia colonial, as ferrovias reduziram custos de comércio e diferenças de preço entre regiões e elevaram a renda real.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20101199",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Brazil: Public Investment Management Assessment (PIMA)",
+       "autor": "Fundo Monetário Internacional",
+       "ano": 2018,
+       "achado": "O Brasil teria lacuna de eficiência de cerca de 39% na produção de infraestrutura, com atrasos e sobrecustos ligados à seleção e execução de projetos.",
+       "url": "https://blog-pfm.imf.org/en/pfmblog/2018/12/making-brazil-public-investment-more-efficient",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Acórdão 1079/2019-TCU-Plenário: obras paralisadas no país",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2019,
+       "achado": "Mais de 30% de cerca de 30 mil obras com recursos federais estavam paralisadas ou inacabadas.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/obras-paralisadas-no-pais-causas-e-solucoes",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Produtores e consumidores que dependem de transporte de cargas, pela redução do custo logístico apontada nos estudos; empresas de construção e investidores em concessões.",
+    "quem_paga_ou_perde": "Usuários pagam tarifas e pedágios nas concessões; a parte pública da meta disputa espaço no orçamento federal.",
+    "fontes": [
+     {
+      "titulo": "Donaldson (2018)",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20101199"
+     },
+     {
+      "titulo": "Bom e Ligthart (2014)",
+      "url": "https://ucrisportal.univie.ac.at/en/publications/what-have-we-learned-from-three-decades-of-research-on-the-produc/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "infraestrutura",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Flávio fixa meta de R$ 900 bilhões em quatro anos, principalmente com capital privado; Lula propõe nova edição do Novo PAC combinando obras públicas e concessões, sem meta de valor."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2646/2020",
+     "ementa": "Dispõe sobre as debêntures de infraestrutura e altera leis tributárias e de fundos de investimento.",
+     "autor": "Augusto Coutinho e outros",
+     "partido": "REPUBLICANOS e outros",
+     "situacao": "Transformado em norma jurídica (Lei 14.801/2024)",
+     "ultima_acao": "2024-02-09: remessa ao Senado de ofício informando restituição de autógrafo sancionado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2252649",
+     "direcao": "direita",
+     "relacao": "Criou incentivo ao financiamento privado de infraestrutura, base da meta apoiada em capital privado."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 733/2025",
+     "ementa": "Dispõe sobre o Sistema Portuário Brasileiro e regula a exploração dos portos.",
+     "autor": "Leur Lomanto Júnior",
+     "partido": "UNIÃO",
+     "situacao": "Aguardando parecer em comissão especial",
+     "ultima_acao": "2025-11-26: aprovado requerimento de seminário em Rio Grande (RS) para debater o projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2485830",
+     "direcao": "fora do RILE",
+     "relacao": "Redefine as regras dos portos, um dos setores incluídos na meta de investimento."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3754/2021",
+     "ementa": "Estabelece a Lei das Ferrovias e altera leis do setor.",
+     "autor": "Senado Federal (senador José Serra)",
+     "partido": "PSDB",
+     "situacao": "Transformado em norma jurídica (Lei 14.273/2021)",
+     "ultima_acao": "2024-02-06: recebido ofício do Congresso sobre promulgação das partes vetadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2304326",
+     "direcao": "direita",
+     "relacao": "Permite ferrovias privadas por autorização, um dos canais de investimento privado em ferrovias."
+    }
+   ],
+   "proposta": "Propõe investir R$ 900 bilhões em quatro anos em rodovias, hidrovias, portos, aeroportos e ferrovias.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 7,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "PPPs e concessões já têm base legal (Lei 11.079/2004 e Lei 8.987/1995), mas um fundo lastreado na securitização de ativos e imóveis da União e a mudança de marcos regulatórios exigem lei ordinária, inclusive alterações na Lei 9.636/1998, que rege esses imóveis.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 11.079/2004 (PPPs)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11079.htm"
+      },
+      {
+       "titulo": "Lei nº 9.636/1998 (bens imóveis da União)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9636.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe fundo lastreado em ativos e imóveis da União, uso intensivo de PPPs e concessões e financiamento do BNDES só para obras no Brasil, sem estimar quanto o fundo captaria nem seu custo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Criar o fundo e definir a política do BNDES cabe à União, mas o resultado depende de aprovação no Congresso e da capacidade de vender ou securitizar imóveis federais, que o TCU considera mal cadastrados.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, XXVII, e art. 48",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontradas avaliações de fundos lastreados em bens da União nem do modelo de financiamento proposto. A literatura teórica aponta que PPPs não liberam recursos públicos por si só, estudo do BNDES estima que parte do subsídio às debêntures de infraestrutura não chega aos projetos, e auditorias do TCU indicam cadastro falho e baixa efetividade na venda de imóveis da União.",
+     "estudos": [
+      {
+       "titulo": "The Basic Public Finance of Public-Private Partnerships",
+       "autor": "Engel, Fischer e Galetovic (Journal of the European Economic Association)",
+       "ano": 2013,
+       "achado": "PPPs não se justificam por liberar recursos públicos; quando eficientes, o contrato ótimo inclui garantia mínima e teto de receita.",
+       "url": "https://ideas.repec.org/a/bla/jeurec/v11y2013i1p83-111.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Debêntures de infraestrutura: qual fração do custo fiscal é transferida aos projetos? (TD 143)",
+       "autor": "Pereira e Miterhof (BNDES)",
+       "ano": 2019,
+       "achado": "Parte relevante da renúncia fiscal das debêntures incentivadas não é repassada ao custo de captação dos projetos.",
+       "url": "https://web.bndes.gov.br/bib/jspui/handle/1408/18601",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Acórdão 484/2017-TCU-Plenário: falhas no sistema de controle de imóveis da União",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2017,
+       "achado": "O cadastro da SPU tinha mais de 30 mil registros com responsáveis falecidos e outras inconsistências em imóveis avaliados em R$ 68 bilhões.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/sistema-que-controla-r-68-bilhoes-em-imoveis-apresenta-falhas-aponta-auditoria-do-tcu",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Relatório do TCU sobre a gestão do patrimônio imobiliário da União (noticiado pela Folha de Pernambuco/Estadão)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2024,
+       "achado": "O TCU considerou a estrutura da SPU insuficiente; a venda de imóveis federais rendeu R$ 374,5 milhões em 2022 e R$ 5,7 milhões em 2024.",
+       "url": "https://www.folhape.com.br/economia/venda-de-imoveis-da-uniao-trava-com-lula-e-em-2-anos-rendem-85/385341/",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Investidores privados e concessionárias de infraestrutura, que ganham novas fontes de financiamento e garantias.",
+    "quem_paga_ou_perde": "A União, que compromete imóveis e assume garantias de longo prazo; segundo o estudo do BNDES, parte do subsídio fica com investidores e não com os projetos.",
+    "fontes": [
+     {
+      "titulo": "Pereira e Miterhof (2019)",
+      "url": "https://web.bndes.gov.br/bib/jspui/handle/1408/18601"
+     },
+     {
+      "titulo": "Engel, Fischer e Galetovic (2013)",
+      "url": "https://ideas.repec.org/a/bla/jeurec/v11y2013i1p83-111.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "infraestrutura",
+    "indice": 1,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe um novo modelo de financiamento com fundo lastreado em imóveis da União e uso intensivo de PPPs; Lula propõe manter o ritmo das concessões rodoviárias e intensificar as ferroviárias no modelo atual."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2892/2011",
+     "ementa": "Dispõe sobre o aprimoramento das regras das parcerias público-privadas (aprovado na forma de substitutivo global).",
+     "autor": "Antonio Imbassahy e outros",
+     "partido": "PSDB e outros",
+     "situacao": "Aguardando apreciação pelo Senado Federal",
+     "ultima_acao": "2025-05-20: remessa ao Senado Federal, após aprovação no Plenário da Câmara em 07/05/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=530572",
+     "direcao": "direita",
+     "relacao": "Reformula as regras de PPPs e concessões, instrumentos centrais do modelo proposto."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4444/2021",
+     "ementa": "Cria o Programa Nacional de Gestão Eficiente do Patrimônio Imobiliário Federal e altera a Lei 9.636/1998.",
+     "autor": "Isnaldo Bulhões Jr.",
+     "partido": "MDB",
+     "situacao": "Aguardando deliberação no Plenário",
+     "ultima_acao": "2022-02-24: designado relator, Dep. José Priante (MDB-PA).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2312502",
+     "direcao": "fora do RILE",
+     "relacao": "Trata da gestão e da venda de imóveis da União, que serviriam de lastro ao fundo."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2646/2020",
+     "ementa": "Dispõe sobre as debêntures de infraestrutura e altera leis tributárias e de fundos de investimento.",
+     "autor": "Augusto Coutinho e outros",
+     "partido": "REPUBLICANOS e outros",
+     "situacao": "Transformado em norma jurídica (Lei 14.801/2024)",
+     "ultima_acao": "2024-02-09: remessa ao Senado de ofício informando restituição de autógrafo sancionado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2252649",
+     "direcao": "direita",
+     "relacao": "Criou outro instrumento de financiamento privado de infraestrutura que se somaria ao modelo proposto."
+    }
+   ],
+   "proposta": "Propõe novo modelo de financiamento da infraestrutura, com fundo baseado em bens da União, PPPs, concessões e BNDES só para obras no Brasil.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "infraestrutura",
+   "indice": 9,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Ferrogrão e Transnordestina já estão na carteira federal e dependem de atos do Executivo, da ANTT e do TCU; a lei que alterou o Parque do Jamanxim para viabilizar a Ferrogrão (Lei 13.452/2017) foi declarada constitucional pelo STF em 2026. O Trem do Nordeste e o trem de cargas MT-PR-SC exigiriam novos projetos e concessões ou autorizações sob a Lei 14.273/2021.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 13.452/2017",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/L13452.htm"
+      },
+      {
+       "titulo": "Lei nº 14.273/2021 (Lei das Ferrovias)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14273.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano lista as obras dentro da meta geral de R$ 900 bilhões, sem custo por projeto.",
+     "estimativa_externa": "O CPI/PUC-Rio cita custo de implantação de quase R$ 17 bilhões para a Ferrogrão; para o trecho Salgueiro–Suape da Transnordestina, a cobertura da decisão do TCU de 2026 cita lacuna de viabilidade de R$ 2,3 a 2,5 bilhões (out/2023).",
+     "fontes": [
+      {
+       "titulo": "CPI/PUC-Rio, Ferrogrão: weaknesses and lessons learned (2020)",
+       "url": "https://www.climatepolicyinitiative.org/publication/ferrograo-weaknesses-and-lessons-learned-in-implementing-a-sustainable-infrastructure-agenda/"
+      },
+      {
+       "titulo": "Agência iNFRA, 15/05/2026",
+       "url": "https://agenciainfra.com/blog/?p=41214"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "alem_de_4_anos",
+     "explicacao": "Ferrovias interestaduais são de competência da União (art. 21, XII, d); obras desse porte, ainda com estudos pendentes ou em disputa, tendem a ultrapassar um mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21, XII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto dos projetos citados: a análise disponível da Ferrogrão é uma estimativa ex-ante, que calcula desmatamento induzido com custo de emissões de cerca de 60% do custo da obra, e o TCU apontou projetos precários e falta de estudo de viabilidade atualizado na Transnordestina. O estudo sobre efeitos de ferrovias trata da Índia colonial, contexto muito diferente.",
+     "estudos": [
+      {
+       "titulo": "Railroads of the Raj: Estimating the Impact of Transportation Infrastructure",
+       "autor": "Dave Donaldson (American Economic Review)",
+       "ano": 2018,
+       "achado": "As ferrovias reduziram custos de comércio e diferenças de preço entre regiões e elevaram a renda real.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20101199",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Environmental Impacts of the Ferrogrão Railroad: an Ex-Ante Evaluation of Deforestation Risks",
+       "autor": "Assunção, Bragança e Araujo (CPI/PUC-Rio)",
+       "ano": 2020,
+       "achado": "Sem mitigação, a Ferrogrão induziria desmatamento de cerca de 2.043 km² em Mato Grosso, com custo de emissões de US$ 1,9 bilhão, cerca de 60% do custo da obra.",
+       "url": "https://www.climatepolicyinitiative.org/publication/the-environmental-impacts-of-the-ferrograo-railroad/",
+       "tipo": "think_tank"
+      },
+      {
+       "titulo": "Acórdão 2769/2022-TCU-Plenário (contratos da Nova Transnordestina)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2022,
+       "achado": "O TCU encontrou projetos precários e orçamento impreciso, pagamentos acima do executado e manteve bloqueio de recursos públicos federais até conciliação de valores.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-analisa-contratos-para-construcao-e-exploracao-da-ferrovia-nova-transnordestina",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Decisão cautelar do TCU sobre o trecho Salgueiro–Suape da Transnordestina (noticiada pela Agência iNFRA)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2026,
+       "achado": "O TCU suspendeu novos compromissos financeiros até a correção da motivação, por falta de estudo de viabilidade atualizado (o vigente é de 2017).",
+       "url": "https://agenciainfra.com/blog/?p=41214",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Produtores de grãos do Centro-Oeste e embarcadores do Nordeste, com frete potencialmente menor; passageiros, no caso do Trem do Nordeste.",
+    "quem_paga_ou_perde": "Áreas de floresta e comunidades no entorno da Ferrogrão, segundo a avaliação de desmatamento; o orçamento federal, se houver aporte público, como no caso da Transnordestina.",
+    "fontes": [
+     {
+      "titulo": "Assunção, Bragança e Araujo (2020)",
+      "url": "https://www.climatepolicyinitiative.org/publication/the-environmental-impacts-of-the-ferrograo-railroad/"
+     },
+     {
+      "titulo": "TCU, Acórdão 2769/2022",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-analisa-contratos-para-construcao-e-exploracao-da-ferrovia-nova-transnordestina"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "infraestrutura",
+    "indice": 1,
+    "candidato": "lula",
+    "diferenca": "Flávio nomeia obras ferroviárias específicas, como Ferrogrão e Trem do Nordeste; Lula propõe intensificar as concessões ferroviárias por novos leilões e repactuação de contratos, sem listar projetos."
+   },
+   "proposicoes": [
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 6553",
+     "ementa": "Questiona a Lei 13.452/2017, que reduziu o Parque Nacional do Jamanxim para viabilizar a Ferrogrão.",
+     "autor": "Partido Socialismo e Liberdade",
+     "partido": "PSOL",
+     "situacao": "Julgada improcedente (lei declarada constitucional); embargos de declaração pendentes",
+     "ultima_acao": "2026-10-14: opostos embargos de declaração e autos conclusos ao relator; acórdão publicado em 06/10/2026.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5997245",
+     "direcao": "fora do RILE",
+     "relacao": "A decisão de 21/05/2026 removeu o principal impedimento judicial à Ferrogrão."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "RQS",
+     "numero": "RQS 93/2024",
+     "ementa": "Requer comissão temporária externa para acompanhar a execução do projeto da Ferrogrão.",
+     "autor": "Jaime Bagattoli e Zequinha Marinho",
+     "partido": "PL / PODEMOS",
+     "situacao": "Pronto para deliberação do Plenário",
+     "ultima_acao": "2024-04-17: matéria pronta para deliberação do Plenário.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/162149",
+     "direcao": "fora do RILE",
+     "relacao": "Propõe acompanhamento parlamentar da obra que a proposta pretende destravar."
+    }
+   ],
+   "proposta": "Propõe destravar a Ferrogrão, um trem de cargas no Sul e Centro-Oeste, o Trem do Nordeste e concluir e ampliar a Transnordestina.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "energia",
+   "indice": 4,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "A Petrobras é sociedade de economia mista controlada pela União e já pode atuar em refino e distribuição pela Lei 9.478/1997; voltar à distribuição e ampliar o refino depende de decisões de seus órgãos de governança, orientadas pelo acionista controlador e sujeitas à Lei das Estatais (Lei 13.303/2016), sem necessidade de lei nova.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 9.478/1997 (Lei do Petróleo)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9478.htm"
+      },
+      {
+       "titulo": "Lei nº 13.303/2016 (Lei das Estatais)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13303.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que a Petrobras deverá retornar à distribuição, expandir o refino e ampliar a atuação da Transpetro em GNL, sem estimar o investimento; os recursos seriam da própria empresa.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "A política de petróleo e o controle da Petrobras são federais (art. 177 da Constituição); entrar na distribuição pode ser rápido, mas novas unidades de refino levam anos para ser concluídas.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 177",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Um estudo sobre a venda de refinarias da Petrobras encontra preços de combustíveis mais altos nos estados atendidos pelas unidades privatizadas, que passaram a operar como monopólios locais. Por outro lado, estudo internacional aponta menor eficiência de petroleiras estatais fora da OPEP, e o TCU registrou sobrecusto bilionário na Refinaria Abreu e Lima.",
+     "estudos": [
+      {
+       "titulo": "Privatizing Local Refining Monopolies",
+       "autor": "Figueiredo, Cardoso e Soares (UFV)",
+       "ano": 2024,
+       "achado": "Após a venda das refinarias da Bahia e do Amazonas, gasolina e diesel ficaram R$ 0,29 e R$ 0,14 por litro mais caros nesses estados, com perda de bem-estar de R$ 2,6 bilhões entre 2021 e 2023.",
+       "url": "https://brsa.org.br/wp-content/uploads/wpcf7-submissions/41156/Privatizing-Local-Refining-Monopolies.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Does Ownership Matter? The Performance and Efficiency of State Oil vs. Private Oil (1987-2006)",
+       "autor": "Christian Wolf (Universidade de Cambridge, EPRG)",
+       "ano": 2008,
+       "achado": "Petroleiras estatais fora da OPEP têm eficiência de trabalho e capital, receita e lucratividade menores que as privadas.",
+       "url": "https://jbs.cam.ac.uk/wp-content/uploads/2023/12/eprg-wp0813.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Fiscobras 25 anos: casos relevantes (Refinaria Abreu e Lima)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2022,
+       "achado": "O custo da Refinaria Abreu e Lima passou de US$ 2,4 bilhões para US$ 20,1 bilhões, com sobrepreço identificado em três unidades.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/fiscobras-25-anos-casos-relevantes-desafios-pioneirismo-e-evolucao-do-controle-externo",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Consumidores de regiões abastecidas por refinarias com poder de mercado local, segundo o estudo sobre privatizações; fornecedores da cadeia de refino.",
+    "quem_paga_ou_perde": "Acionistas da Petrobras, inclusive a União, assumem o risco dos investimentos, que nos casos auditados pelo TCU tiveram sobrecusto; distribuidoras privadas enfrentariam um concorrente estatal.",
+    "fontes": [
+     {
+      "titulo": "Figueiredo, Cardoso e Soares (2024)",
+      "url": "https://brsa.org.br/wp-content/uploads/wpcf7-submissions/41156/Privatizing-Local-Refining-Monopolies.pdf"
+     },
+     {
+      "titulo": "TCU, Fiscobras 25 anos",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/fiscobras-25-anos-casos-relevantes-desafios-pioneirismo-e-evolucao-do-controle-externo"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "energia",
+    "indice": 11,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe que a Petrobras amplie o refino e volte à distribuição; Flávio propõe estimular a modernização do refino com investimento privado e regras estáveis, sem papel central da estatal."
+   },
+   "proposicoes": [
+    {
+     "casa": "STF",
+     "tipo": "Rcl",
+     "numero": "Rcl 42576",
+     "ementa": "Reclamação das Mesas do Congresso e do Senado contra a venda de refinarias da Petrobras por meio de subsidiárias sem autorização legislativa.",
+     "autor": "Mesa do Congresso Nacional e Mesa do Senado Federal",
+     "partido": "não se aplica",
+     "situacao": "Julgada improcedente; embargos de declaração pendentes",
+     "ultima_acao": "2026-04-27: opostos embargos de declaração e autos conclusos ao relator; julgamento de mérito em 09/03/2026.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5971572",
+     "direcao": "fora do RILE",
+     "relacao": "Tratou da venda de refinarias que a proposta pretende reverter em parte com mais refino estatal."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1980/2022",
+     "ementa": "Exclui a Petrobras do Programa Nacional de Desestatização e exige lei específica para alienação de ativos que implique perda de controle da União.",
+     "autor": "Félix Mendonça Júnior",
+     "partido": "PDT",
+     "situacao": "Tramitando em conjunto",
+     "ultima_acao": "2022-07-15: encaminhado à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2332228",
+     "direcao": "esquerda",
+     "relacao": "Restringe a venda de ativos da Petrobras, em linha com a ampliação do papel da estatal."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1472/2021",
+     "ementa": "Define diretrizes de preços de combustíveis derivados de petróleo e cria a Conta de Estabilização de Preços de Combustíveis.",
+     "autor": "Senado Federal (senador Rogério Carvalho)",
+     "partido": "PT",
+     "situacao": "Aguardando despacho do presidente da Câmara",
+     "ultima_acao": "2022-03-10: apresentado requerimento de apensação do PL 535/2022.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2317617",
+     "direcao": "esquerda",
+     "relacao": "Trata da política de preços de derivados ligada à atuação da Petrobras no refino."
+    }
+   ],
+   "proposta": "Propõe que a Petrobras volte à distribuição de combustíveis e amplie sua capacidade de refino.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "energia",
+   "indice": 0,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A expansão de renováveis se faz por leilões e outorgas já previstos em lei; o armazenamento de energia ganhou diretrizes na Lei 15.269/2025 e a substituição de fósseis por biocombustíveis tem base na Lei 14.993/2024 (Combustível do Futuro). Dar sequência a essa estratégia depende de regulamentação da ANEEL e do MME.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.269/2025 (modernização do setor elétrico e armazenamento)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm"
+      },
+      {
+       "titulo": "Lei nº 14.993/2024 (Combustível do Futuro)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14993.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano cita a carteira de R$ 595 bilhões do Novo PAC em energia, petróleo, gás e refino, mas não estima o custo específico da expansão de renováveis, do armazenamento e da substituição de fósseis.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Energia elétrica e combustíveis são de competência da União (arts. 21, XII, b, e 22, IV, da Constituição); leilões e regulamentação podem avançar no mandato, embora a transição seja de longo prazo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 21, XII, e 22, IV",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto da estratégia proposta; os dados disponíveis são descritivos. A IRENA calcula que 91% da nova capacidade renovável em 2024 gerou energia mais barata que a alternativa fóssil mais barata, mas no Brasil cerca de 20% da geração eólica e solar possível foi cortada em 2025, e o TCU aponta subsídios cruzados e falta de plano de mitigação com metas.",
+     "estudos": [
+      {
+       "titulo": "Renewable Power Generation Costs in 2024",
+       "autor": "Agência Internacional de Energia Renovável (IRENA)",
+       "ano": 2025,
+       "achado": "91% da nova capacidade renovável de grande porte gerou energia a custo menor que a nova alternativa fóssil mais barata.",
+       "url": "https://app.climatepolicyradar.org/document/renewable-power-generation-costs-in-2024_a6e9",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Estudo da Volt Robotics sobre cortes de geração em 2025 (noticiado pela Agência iNFRA)",
+       "autor": "Volt Robotics",
+       "ano": 2026,
+       "achado": "Cerca de 20% da geração eólica e solar possível (4.021 MWmed) foi cortada em 2025, com perda de R$ 6,5 bilhões aos geradores.",
+       "url": "https://agenciainfra.com/blog/?p=35439",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Auditoria do TCU sobre a transição energética (noticiada pela Agência iNFRA)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2024,
+       "achado": "O TCU não encontrou plano de mitigação de emissões com metas claras no setor de energia e apontou subsídios cruzados que beneficiam grupos específicos.",
+       "url": "https://agenciainfra.com/blog/?p=19375",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Consumidores, pelo custo menor das novas renováveis segundo a IRENA; produtores de biocombustíveis e fabricantes de baterias.",
+    "quem_paga_ou_perde": "Geradores que sofrem cortes enquanto a rede e o armazenamento não acompanham, segundo o estudo de 2025; produtores de combustíveis fósseis, com a substituição gradual.",
+    "fontes": [
+     {
+      "titulo": "IRENA (2025)",
+      "url": "https://app.climatepolicyradar.org/document/renewable-power-generation-costs-in-2024_a6e9"
+     },
+     {
+      "titulo": "Agência iNFRA, 26/01/2026",
+      "url": "https://agenciainfra.com/blog/?p=35439"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "energia",
+    "indice": 12,
+    "candidato": "flavio",
+    "diferenca": "Os dois propõem baterias; Lula insere o armazenamento numa estratégia de substituir fósseis, e Flávio o associa a energia barata para atrair data centers, ao lado de permitir o fracking."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1304/2025",
+     "ementa": "Moderniza o marco do setor elétrico e estabelece diretrizes para a regulamentação do armazenamento de energia.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 15.269/2025), com veto parcial",
+     "ultima_acao": "2026-03-10: apresentado ofício do Congresso sobre término de prazo para decreto legislativo; lei sancionada em 24/11/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2535328",
+     "direcao": "fora do RILE",
+     "relacao": "Criou a base legal para o investimento em armazenamento citado na proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 528/2020",
+     "ementa": "Dispõe sobre mobilidade sustentável de baixo carbono, captura de carbono e programas de combustíveis sustentáveis (Combustível do Futuro).",
+     "autor": "Jerônimo Goergen",
+     "partido": "PP",
+     "situacao": "Transformado em norma jurídica (Lei 14.993/2024)",
+     "ultima_acao": "2025-06-30: recebido ofício do Congresso sobre apreciação de veto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2238434",
+     "direcao": "fora do RILE",
+     "relacao": "Base legal da substituição gradual de fósseis por biocombustíveis."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 576/2021",
+     "ementa": "Disciplina o aproveitamento de potencial energético offshore.",
+     "autor": "Senado Federal (senador Jean Paul Prates)",
+     "partido": "PT",
+     "situacao": "Transformado em norma jurídica",
+     "ultima_acao": "2025-07-07: recebido ofício do Senado sobre promulgação de veto rejeitado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2334482",
+     "direcao": "fora do RILE",
+     "relacao": "Criou regras para eólicas no mar, uma das fontes renováveis a expandir."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2308/2023",
+     "ementa": "Institui o marco legal do hidrogênio de baixa emissão de carbono.",
+     "autor": "Adriana Ventura e Gilson Marques",
+     "partido": "NOVO",
+     "situacao": "Transformado em norma jurídica",
+     "ultima_acao": "2025-06-30: recebido ofício do Congresso sobre apreciação de veto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2359608",
+     "direcao": "fora do RILE",
+     "relacao": "Regula os derivados de hidrogênio citados como substitutos de combustíveis fósseis."
+    }
+   ],
+   "proposta": "Propõe aumentar as fontes renováveis, investir em armazenamento e substituir aos poucos combustíveis fósseis.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 14.993/2024 (Combustível do Futuro) e a Lei 15.269/2025, que traz diretrizes para o armazenamento de energia, estão em vigor; a expansão proposta depende de regulamentação e de leilões.",
+    "fonte": {
+     "titulo": "Lei nº 14.993/2024 (Combustível do Futuro)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14993.htm"
+    }
+   }
+  },
+  {
+   "tema": "energia",
+   "indice": 2,
+   "candidato": "lula",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "nao_se_aplica",
+     "explicacao": "A proposta é promover um debate, sem medida definida; mudanças efetivas na tarifa dependeriam de lei (como a Lei 15.269/2025, que limitou o orçamento da CDE a partir de 2027) ou de regulação da ANEEL.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.269/2025",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano fala em promover um debate sobre o barateamento da energia para residências e empresas, com justiça tarifária e sustentabilidade financeira do setor, sem medida nem custo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Tarifas de energia elétrica são reguladas pela União por meio da ANEEL (art. 21, XII, b, da Constituição); como não há medida definida, não é possível estimar prazo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21, XII, b",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A proposta não define medida, o que impede avaliar efeitos. Como contexto, a ANEEL aprovou orçamento recorde de R$ 49,2 bilhões para a CDE em 2025, e o TCU recomendou revisar a estrutura de subsídios do setor elétrico.",
+     "estudos": [
+      {
+       "titulo": "Orçamento da CDE 2025 aprovado pela ANEEL (noticiado pela Agência iNFRA)",
+       "autor": "Agência Nacional de Energia Elétrica",
+       "ano": 2025,
+       "achado": "O orçamento da CDE foi de R$ 49,2 bilhões, 32% acima de 2024, com R$ 17 bilhões para descontos a fontes incentivadas e R$ 7,8 bilhões para a Tarifa Social.",
+       "url": "https://agenciainfra.com/blog/?p=24700",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Auditoria do TCU sobre a transição energética (noticiada pela Agência iNFRA)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2024,
+       "achado": "O TCU determinou ao MME plano de ação em 180 dias para revisar a estrutura de subsídios do setor elétrico, que beneficia grupos específicos em detrimento da maioria dos consumidores.",
+       "url": "https://agenciainfra.com/blog/?p=19375",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Não é possível identificar sem uma medida definida.",
+    "quem_paga_ou_perde": "Não é possível identificar sem uma medida definida.",
+    "fontes": []
+   },
+   "comparacao": {
+    "tema": "energia",
+    "indice": 10,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe abrir um debate sobre baratear a conta de luz, sem medida definida; Flávio propõe medida concreta: reduzir aos poucos a CDE e os subsídios a fontes incentivadas, mantendo a tarifa social."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1300/2025",
+     "ementa": "Altera leis do setor elétrico, incluindo a Tarifa Social de Energia Elétrica.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 15.235/2025)",
+     "ultima_acao": "2025-12-09: apresentado ofício do Congresso sobre término de prazo para decreto legislativo; lei publicada em 09/10/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2515300",
+     "direcao": "esquerda",
+     "relacao": "Ampliou a gratuidade da conta para famílias de baixa renda, citada pelo plano como base para o debate tarifário."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1304/2025",
+     "ementa": "Moderniza o marco do setor elétrico para promover a modicidade tarifária e a segurança energética.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 15.269/2025), com veto parcial",
+     "ultima_acao": "2026-03-10: apresentado ofício do Congresso sobre término de prazo para decreto legislativo; lei sancionada em 24/11/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2535328",
+     "direcao": "fora do RILE",
+     "relacao": "Limitou o orçamento da CDE a partir de 2027, tema central de qualquer debate sobre o preço da energia."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 414/2021",
+     "ementa": "Altera leis do setor elétrico para modernizar o modelo comercial e ampliar o mercado livre.",
+     "autor": "Senado Federal (senador Cássio Cunha Lima)",
+     "partido": "PSDB",
+     "situacao": "Aguardando criação de comissão temporária",
+     "ultima_acao": "2025-04-15: apresentado requerimento de redistribuição pela Comissão de Minas e Energia.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2270036",
+     "direcao": "direita",
+     "relacao": "Propõe mudanças estruturais no setor elétrico que afetam o preço da energia."
+    }
+   ],
+   "proposta": "Propõe promover um debate sobre baratear a energia elétrica para residências e empresas, preservando a saúde financeira do setor.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "energia",
+   "indice": 10,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "A CDE e as políticas que ela custeia foram criadas por lei (Lei 10.438/2002, art. 13), assim como os descontos às fontes incentivadas; reduzi-los exige lei ordinária. A Lei 15.269/2025 já limitou o orçamento da CDE a partir de 2027.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 10.438/2002 (CDE)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10438.htm"
+      },
+      {
+       "titulo": "Lei nº 15.269/2025",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe simplificar a conta de luz, racionalizar encargos e subsídios cruzados e reduzir gradualmente a CDE e as fontes incentivadas, mantendo a tarifa social, sem quantificar a redução nem dizer quem passaria a custear as políticas hoje pagas pela CDE.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Tarifas e encargos do setor elétrico são federais (arts. 21, XII, b, e 22, IV, da Constituição); a redução gradual pode começar no mandato se houver aprovação no Congresso.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 21, XII, e 22, IV",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A evidência disponível é diagnóstica: auditorias do TCU apontam subsídios da CDE sem avaliação, desalinhados do regime tarifário e pagos em grande parte pelos consumidores, e recomendam revisá-los. Não foram encontradas avaliações do efeito de cortes desses subsídios sobre a tarifa ou sobre a expansão das fontes renováveis.",
+     "estudos": [
+      {
+       "titulo": "Acórdão 1215/2019-TCU-Plenário (auditoria dos subsídios da CDE)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2019,
+       "achado": "O TCU encontrou falta de planejamento e de avaliação das políticas custeadas pela CDE, benefícios desalinhados do regime tarifário e despesas crescentes suportadas pelos consumidores.",
+       "url": "https://static.poder360.com.br/2019/05/032.981-2017-1-AC-CDE.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Auditoria do TCU sobre a transição energética (noticiada pela Agência iNFRA)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2024,
+       "achado": "O TCU apontou subsídios cruzados que beneficiam grupos específicos em detrimento da maioria dos consumidores e exigiu plano de revisão.",
+       "url": "https://agenciainfra.com/blog/?p=19375",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Orçamento da CDE 2025 aprovado pela ANEEL (noticiado pela Agência iNFRA)",
+       "autor": "Agência Nacional de Energia Elétrica",
+       "ano": 2025,
+       "achado": "Os descontos a fontes incentivadas somaram R$ 17 bilhões, a maior parcela de uma CDE de R$ 49,2 bilhões, com impacto de até 5,76% nas tarifas.",
+       "url": "https://agenciainfra.com/blog/?p=24700",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Consumidores que pagam a CDE na tarifa, especialmente os do mercado regulado, segundo os dados da ANEEL e do TCU.",
+    "quem_paga_ou_perde": "Geradores e consumidores que recebem descontos (fontes incentivadas, entre outros), que perderiam o benefício; políticas custeadas pela CDE precisariam de outra fonte.",
+    "fontes": [
+     {
+      "titulo": "Agência iNFRA, 15/07/2025",
+      "url": "https://agenciainfra.com/blog/?p=24700"
+     },
+     {
+      "titulo": "TCU, Acórdão 1215/2019",
+      "url": "https://static.poder360.com.br/2019/05/032.981-2017-1-AC-CDE.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "energia",
+    "indice": 2,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe cortar gradualmente a CDE e os subsídios a fontes incentivadas; Lula propõe abrir um debate sobre baratear a energia preservando a saúde financeira do setor, sem medida definida."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5579/2026",
+     "ementa": "Institui avaliação periódica e redução gradual de subsídios tarifários não sociais custeados pela CDE, preservando a Tarifa Social.",
+     "autor": "José Medeiros",
+     "partido": "PL",
+     "situacao": "Apresentado, aguardando despacho",
+     "ultima_acao": "2026-10-15: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647779",
+     "direcao": "direita",
+     "relacao": "Transforma em projeto de lei a redução gradual de subsídios da CDE descrita na proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2569/2025",
+     "ementa": "Dispõe sobre o custeio exclusivo pelo Tesouro Nacional das políticas da CDE não relacionadas ao setor elétrico.",
+     "autor": "Carlos Henrique Gaguim",
+     "partido": "UNIÃO",
+     "situacao": "Pronto para pauta na CME",
+     "ultima_acao": "2026-08-13: encerrado o prazo de emendas ao substitutivo, sem emendas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2516889",
+     "direcao": "fora do RILE",
+     "relacao": "Tira da conta de luz parte das despesas da CDE, transferindo-as ao Tesouro."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1304/2025",
+     "ementa": "Moderniza o marco do setor elétrico para promover a modicidade tarifária e a segurança energética.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 15.269/2025), com veto parcial",
+     "ultima_acao": "2026-03-10: apresentado ofício do Congresso sobre término de prazo para decreto legislativo; lei sancionada em 24/11/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2535328",
+     "direcao": "fora do RILE",
+     "relacao": "Fixou teto para o orçamento da CDE a partir de 2027."
+    }
+   ],
+   "proposta": "Propõe simplificar a conta de luz e reduzir aos poucos a CDE e os subsídios a fontes incentivadas, mantendo a tarifa social.",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 15.269/2025 já limita o orçamento da CDE a partir de 2027; a redução gradual dos subsídios a fontes incentivadas proposta não foi aprovada.",
+    "fonte": {
+     "titulo": "Lei nº 15.269/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm"
+    }
+   }
+  },
+  {
+   "tema": "energia",
+   "indice": 9,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Nova Lei do Gás (Lei 14.134/2021) já permite a construção de gasodutos de transporte por autorização e por investimento privado; apoiar a expansão com regras estáveis depende de regulação da ANP e de atos do Executivo.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.134/2021 (Nova Lei do Gás)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14134.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano propõe apoiar a expansão da rede de escoamento e transporte de gás conforme a demanda, com investimento privado, para integrar estados desconectados, sem estimar valores públicos.",
+     "estimativa_externa": "A EPE (Plano Indicativo de Gasodutos 2024) mapeou oito projetos indicativos, com cerca de 2.300 km e mais de R$ 29 bilhões de investimento.",
+     "fontes": [
+      {
+       "titulo": "Cenário Energia, 19/02/2025 (PIG 2024 da EPE)",
+       "url": "https://cenarioenergia.com.br/2025/02/19/epe-lanca-pig-2024-expansao-da-infraestrutura-de-gas-e-biometano-no-brasil/"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "alem_de_4_anos",
+     "explicacao": "O transporte de gás é regulado pela União (art. 177 da Constituição), mas a distribuição canalizada é dos estados (art. 25, § 2º); gasodutos de longa distância levam anos entre estudo, licenciamento e obra.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 25, § 2º, e 177",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontradas avaliações de impacto da expansão privada da malha de gasodutos no Brasil. As fontes disponíveis são descritivas: avaliação da indústria indica que a abertura do mercado após a Nova Lei do Gás ficou abaixo do esperado, com transporte caro, e a EPE mapeou gasodutos indicativos.",
+     "estudos": [
+      {
+       "titulo": "Gás natural: uma avaliação da abertura do mercado brasileiro (noticiado pela Agência Brasil)",
+       "autor": "Confederação Nacional da Indústria (CNI)",
+       "ano": 2025,
+       "achado": "O gás para a indústria custa cerca de US$ 20 por milhão de BTU, dos quais US$ 9 ligados a escoamento e processamento, que a EPE estima poderem cair a US$ 2.",
+       "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-04/gas-natural-para-industria-e-um-dos-mais-caros-do-mundo-diz-cni/",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Plano Indicativo de Gasodutos de Transporte 2024 (noticiado pelo Cenário Energia)",
+       "autor": "Empresa de Pesquisa Energética (EPE)",
+       "ano": 2025,
+       "achado": "Oito projetos indicativos somam cerca de 2.300 km e R$ 29 bilhões, com impacto potencial de até 0,15% do PIB conforme o traçado.",
+       "url": "https://cenarioenergia.com.br/2025/02/19/epe-lanca-pig-2024-expansao-da-infraestrutura-de-gas-e-biometano-no-brasil/",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Indústrias e estados hoje sem acesso à malha, pela possível redução do custo de transporte apontada pela EPE; investidores em gasodutos.",
+    "quem_paga_ou_perde": "Usuários da malha pagam as tarifas de transporte que remuneram os investimentos; as fontes não identificam outro grupo perdedor direto.",
+    "fontes": [
+     {
+      "titulo": "Agência Brasil, 03/04/2025",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-04/gas-natural-para-industria-e-um-dos-mais-caros-do-mundo-diz-cni/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "energia",
+    "indice": 5,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem expandir e interiorizar a rede de gás; Flávio enfatiza o investimento privado com regras estáveis, e Lula inclui a integração gasífera sul-americana e um papel maior da Petrobras e da Transpetro."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2815/2021",
+     "ementa": "Prevê licenciamento ambiental simplificado para gasodutos de transporte em faixas de dutos e linhas de transmissão já existentes.",
+     "autor": "Julio Lopes",
+     "partido": "PP",
+     "situacao": "Aguardando deliberação na CCJC",
+     "ultima_acao": "2025-08-22: parecer do relator, Dep. Aureo Ribeiro (SOLIDARIEDADE-RJ), pela aprovação na forma do substitutivo da CMADS, com subemenda.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2294110",
+     "direcao": "direita",
+     "relacao": "Facilitaria a construção de novos gasodutos, objeto da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 165/2022",
+     "ementa": "Adapta o ISS e a Lei Kandir ao regime de contratação de capacidade da Nova Lei do Gás.",
+     "autor": "Paulo Ganime",
+     "partido": "NOVO",
+     "situacao": "Aguardando parecer na CME",
+     "ultima_acao": "2025-06-17: designado relator, Dep. Arnaldo Jardim (CIDADANIA-SP).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2345337",
+     "direcao": "fora do RILE",
+     "relacao": "Ajusta a tributação do transporte de gás, um dos entraves citados ao investimento privado."
+    }
+   ],
+   "proposta": "Propõe expandir gasodutos com investimento privado para levar o gás do pré-sal a estados hoje desconectados.",
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "energia",
+   "indice": 8,
+   "candidato": "flavio",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Não há lei federal que proíba o fraturamento hidráulico; a exploração depende de licitação de blocos e de regulação da ANP e do CNPE com base na Lei 9.478/1997, além de licenciamento ambiental. Um programa nacional de segurança energética pode ser criado por decreto.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 9.478/1997 (Lei do Petróleo)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9478.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe um Programa Nacional de Segurança Energética com foco em refino, escoamento e transporte, e permitir o fracking com responsabilidade ambiental, sem estimar custos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "A pesquisa e lavra de petróleo e gás são monopólio da União (art. 177 da Constituição), mas a proteção ambiental é competência comum (art. 23, VI) e envolve licenciamento estadual; projetos de gás não convencional dependem de interesse de empresas e de licenças.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23, VI, e 177",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Nos Estados Unidos, a expansão do fracking aumentou renda e emprego locais, mas um estudo com 1,1 milhão de nascimentos encontrou piora da saúde de bebês cujas mães moravam a até 3 km de poços. Revisão de 32 estudos de saúde conclui que todos têm fragilidades e que os mecanismos ainda não estão claros; não foram encontradas avaliações para o Brasil.",
+     "estudos": [
+      {
+       "titulo": "Geographic Dispersion of Economic Shocks: Evidence from the Fracking Revolution",
+       "autor": "Feyrer, Mansur e Sacerdote (American Economic Review)",
+       "ano": 2017,
+       "achado": "Cada US$ 1 milhão em nova produção elevou em cerca de US$ 80 mil a renda salarial e em US$ 132 mil royalties e renda de negócios no condado.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20151326",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Hydraulic fracturing and infant health: New evidence from Pennsylvania",
+       "autor": "Currie, Greenstone e Meckel (Science Advances)",
+       "ano": 2017,
+       "achado": "A exposição na gestação a poços a até 3 km piorou a saúde ao nascer, com efeitos maiores a até 1 km, incluindo mais baixo peso.",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5729015/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Health Impacts of Unconventional Oil and Gas Development",
+       "autor": "Krupnick e Echarte (Resources for the Future)",
+       "ano": 2017,
+       "achado": "Os 32 estudos epidemiológicos revisados têm fragilidades e não identificam mecanismos, o que não descarta efeitos sobre a saúde.",
+       "url": "https://www.rff.org/publications/reports/health-impacts-of-unconventional-oil-and-gas-development/",
+       "tipo": "think_tank"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Municípios e trabalhadores das áreas produtoras, com mais renda e emprego segundo o estudo americano; consumidores, se a oferta de gás aumentar.",
+    "quem_paga_ou_perde": "Moradores próximos aos poços, com risco à saúde ao nascer segundo o estudo da Pensilvânia; o meio ambiente local.",
+    "fontes": [
+     {
+      "titulo": "Feyrer, Mansur e Sacerdote (2017)",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20151326"
+     },
+     {
+      "titulo": "Currie, Greenstone e Meckel (2017)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5729015/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1935/2019",
+     "ementa": "Proíbe a outorga de concessão de lavra para exploração de gás por fraturamento hidráulico (fracking).",
+     "autor": "Schiavinato",
+     "partido": "PP",
+     "situacao": "Aguardando parecer na CMADS",
+     "ultima_acao": "2026-08-12: designado relator, Dep. Tião Medeiros (PP-PR).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2196375",
+     "direcao": "fora do RILE",
+     "relacao": "Proibiria a técnica que a proposta pretende permitir."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 6135/2023",
+     "ementa": "Proíbe a exploração de gás natural de xisto por fraturamento hidráulico em todo o território nacional.",
+     "autor": "Cleber Verde",
+     "partido": "MDB",
+     "situacao": "Tramitando em conjunto (apensado ao PL 1935/2019)",
+     "ultima_acao": "2026-08-12: designado relator do PL 1935/2019, Dep. Tião Medeiros (PP-PR).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2415669",
+     "direcao": "fora do RILE",
+     "relacao": "Proibição nacional do fracking, em sentido oposto ao da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 6904/2013",
+     "ementa": "Estabelece medidas relativas à exploração de gás de folhelho (xisto).",
+     "autor": "Sarney Filho",
+     "partido": "PV",
+     "situacao": "Arquivado",
+     "ultima_acao": "2020-02-10: devolução à CCP; proposição arquivada.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=603565",
+     "direcao": "fora do RILE",
+     "relacao": "Tentativa anterior de regular ou restringir o gás de xisto."
+    }
+   ],
+   "proposta": "Propõe um Programa Nacional de Segurança Energética e permitir a exploração de gás não convencional (fracking).",
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Não há proibição federal ao fraturamento hidráulico, que a Resolução ANP 21/2014 regula em reservatórios não convencionais; o Programa Nacional de Segurança Energética não foi criado.",
+    "fonte": {
+     "titulo": "ANP: resoluções de segurança operacional (Resolução ANP nº 21/2014)",
+     "url": "https://www.gov.br/anp/pt-br/assuntos/exploracao-e-producao-de-oleo-e-gas/seguranca-operacional/resolucoes-procedimentos"
+    }
+   }
+  }
+ ]
+}

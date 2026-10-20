@@ -1,0 +1,2128 @@
+{
+ "grupo": "g5",
+ "temas": [
+  "meio-ambiente",
+  "agro",
+  "tecnologia"
+ ],
+ "itens": [
+  {
+   "tema": "meio-ambiente",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe alcançar o desmatamento líquido zero até 2030.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A meta dá continuidade aos planos de prevenção e controle do desmatamento já instituídos por decreto (PPCDAm e planos dos demais biomas) e se apoia no Código Florestal e na Política Nacional sobre Mudança do Clima, sem exigir lei nova. A parte de recomposição de vegetação, que torna a meta 'líquida', também usa instrumentos já previstos no Código Florestal.",
+     "fontes": [
+      {
+       "titulo": "Decreto nº 11.367/2023 (Comissão Interministerial e planos de prevenção e controle do desmatamento)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11367.htm"
+      },
+      {
+       "titulo": "Lei nº 12.651/2012 (Código Florestal)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm"
+      },
+      {
+       "titulo": "Lei nº 12.187/2009 (Política Nacional sobre Mudança do Clima)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa o custo da meta nem a fonte dos recursos; cita a atuação integrada do governo nos planos de controle do desmatamento e no Plano Nacional de Manejo Integrado do Fogo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "Proteger florestas é competência comum da União, dos estados e dos municípios (art. 23, VI e VII, da Constituição), e a meta de 2030 coincide com o fim do mandato, mas o resultado depende do ritmo de queda do desmatamento e da recomposição de vegetação.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Avaliações com método causal indicam que monitoramento por satélite e fiscalização reduziram o desmatamento na Amazônia, e o INPE registrou queda da taxa anual em 2025. Pesquisadores apontam que metas 'líquidas' podem compensar perda de floresta nativa com plantio novo, o que torna o resultado ambiental dependente de como a compensação é medida.",
+     "estudos": [
+      {
+       "titulo": "DETER-ing Deforestation in the Amazon: Environmental Monitoring and Law Enforcement",
+       "autor": "Juliano Assunção, Clarissa Gandour e Romero Rocha (American Economic Journal: Applied Economics)",
+       "ano": 2023,
+       "achado": "O monitoramento por satélite (DETER) usado para orientar a fiscalização reduziu o desmatamento, sem deslocá-lo para áreas vizinhas.",
+       "url": "https://www.aeaweb.org/doi/10.1257/app.20200196",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "What does zero deforestation mean?",
+       "autor": "Sandra Brown e Daniel Zarin (Science)",
+       "ano": 2013,
+       "achado": "Metas de desmatamento 'líquido' zero igualam o valor de proteger floresta nativa e de plantar floresta nova e podem conviver com perda de floresta nativa; os autores recomendam metas separadas para desmatamento bruto e para reflorestamento.",
+       "url": "https://sciencedaily.com/releases/2013/11/131114142127.htm",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Estimativa de desmatamento na Amazônia Legal para 2025 é de 5.796 km² (nota técnica Prodes)",
+       "autor": "Instituto Nacional de Pesquisas Espaciais (INPE)",
+       "ano": 2025,
+       "achado": "A taxa estimada de agosto de 2024 a julho de 2025 foi de 5.796 km², redução de 11,08% em relação aos 6.518 km² de 2024.",
+       "url": "https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/20251015Nota_tcnica_EstimativaPRODES_2025.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo as avaliações citadas, a redução do desmatamento diminui emissões de gases de efeito estufa e preserva floresta pública e privada; os planos também preveem destinar terras públicas a unidades de conservação, territórios indígenas e quilombolas e assentamentos.",
+    "quem_paga_ou_perde": "Quem desmata sem autorização fica sujeito a multas, embargos e restrição de crédito; o custo da fiscalização recai sobre o orçamento público, e a recomposição de vegetação recai sobre proprietários com passivo ambiental previsto no Código Florestal.",
+    "fontes": [
+     {
+      "titulo": "DETER-ing Deforestation in the Amazon (AEJ: Applied)",
+      "url": "https://www.aeaweb.org/doi/10.1257/app.20200196"
+     },
+     {
+      "titulo": "The Effect of Rural Credit on Deforestation: Evidence from the Brazilian Amazon (Economic Journal)",
+      "url": "https://ideas.repec.org/a/oup/econjl/v130y2020i626p290-330..html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "meio-ambiente",
+    "indice": 8,
+    "candidato": "flavio",
+    "diferenca": "Lula fixa a meta de desmatamento líquido zero até 2030, que admite compensar a área desmatada com vegetação recuperada; Flávio fixa a meta de zerar o desmatamento ilegal até 2029, sem tratar do desmatamento autorizado por lei."
+   },
+   "proposicoes": [
+    {
+     "casa": "STF",
+     "tipo": "ADPF",
+     "numero": "ADPF 760",
+     "ementa": "Pede a retomada efetiva do PPCDAm e metas de redução do desmatamento na Amazônia Legal.",
+     "autor": "PSB, Rede, PDT, PV, PT, PSOL e PCdoB",
+     "partido": "PSB, REDE, PDT, PV, PT, PSOL, PCdoB",
+     "situacao": "Julgada em 2024 (STF determinou à União executar o PPCDAm e reduzir o desmatamento); em fase de acompanhamento do cumprimento, relator Min. André Mendonça",
+     "ultima_acao": "2026-09-18: petição da Advocacia-Geral da União encaminhada ao gabinete do relator",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6049993",
+     "direcao": "fora do RILE",
+     "relacao": "A decisão obriga a União a executar o plano de controle do desmatamento que sustenta a meta do plano."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 3334/2023",
+     "ementa": "Altera o Código Florestal para permitir reduzir a Reserva Legal em florestas da Amazônia Legal em municípios com mais de 50% do território ocupado por áreas protegidas.",
+     "autor": "Sen. Jaime Bagattoli",
+     "partido": "PL",
+     "situacao": "Em tramitação; aguardando designação de relator",
+     "ultima_acao": "2026-05-13: devolvido pelo relator, Sen. Marcio Bittar, por não integrar mais a comissão; matéria será redistribuída",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158548",
+     "direcao": "fora do RILE",
+     "relacao": "Se aprovado, ampliaria a área de floresta que pode ser desmatada legalmente na Amazônia, o que afeta o cálculo de uma meta de desmatamento líquido."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 364/2019",
+     "ementa": "Dispõe sobre a utilização e proteção da vegetação nativa dos Campos de Altitude associados ou abrangidos pelo bioma Mata Atlântica.",
+     "autor": "Dep. Alceu Moreira",
+     "partido": "MDB",
+     "situacao": "Aprovado nas comissões; recurso para votação em Plenário rejeitado; aguardando redação final na CCJC",
+     "ultima_acao": "2026-08-27: designado relator da redação final, Dep. Lucas Redecker (PSD-RS)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2190986",
+     "direcao": "fora do RILE",
+     "relacao": "Muda as regras de uso da vegetação nativa em área da Mata Atlântica, bioma cuja lei o plano diz querer tornar efetiva."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 11276/2018",
+     "ementa": "Institui a Política Nacional de Manejo Integrado do Fogo.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei nº 14.944/2024",
+     "ultima_acao": "2024-07-31: transformado na Lei Ordinária 14.944/2024 (DOU 01/08/2024)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2190265",
+     "direcao": "fora do RILE",
+     "relacao": "O plano cita a implementação plena do Plano Nacional de Manejo Integrado do Fogo, previsto nessa lei, como parte da estratégia para a meta."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe zerar o desmatamento ilegal até 2029 e combater queimadas ilegais.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Fixar a meta e reorientar monitoramento e fiscalização cabe ao Executivo, com base na Lei de Crimes Ambientais e no decreto que regula as infrações ambientais; não exige lei nova. As ferramentas citadas (satélite, bases de dados, ação coordenada de órgãos federais) já existem e podem ser ampliadas por ato administrativo.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 9.605/1998 (Lei de Crimes Ambientais)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9605.htm"
+      },
+      {
+       "titulo": "Decreto nº 6.514/2008 (infrações e sanções administrativas ao meio ambiente)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6514.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa o custo da meta nem a fonte dos recursos; cita ferramentas de inteligência artificial, bancos de dados em tempo real, imagens de satélite e ação coordenada das agências do Estado.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "Combater a poluição e proteger florestas é competência comum da União, dos estados e dos municípios (art. 23, VI e VII, da Constituição); a meta de 2029 cabe no mandato, mas o resultado depende do comportamento do desmatamento e da atuação dos órgãos estaduais.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Estudos com método causal indicam que monitoramento por satélite associado à fiscalização reduziu o desmatamento na Amazônia, e pesquisas mostram que o desmatamento potencialmente ilegal se concentra em poucos imóveis. Levantamento do MapBiomas indica que a maior parte da área desmatada tem indício de ilegalidade e que a maior parte dela ainda não teve autorização nem ação de fiscalização registrada, o que dimensiona o tamanho da tarefa.",
+     "estudos": [
+      {
+       "titulo": "DETER-ing Deforestation in the Amazon: Environmental Monitoring and Law Enforcement",
+       "autor": "Juliano Assunção, Clarissa Gandour e Romero Rocha (American Economic Journal: Applied Economics)",
+       "ano": 2023,
+       "achado": "O monitoramento por satélite (DETER) usado para orientar a fiscalização reduziu o desmatamento, sem deslocá-lo para áreas vizinhas.",
+       "url": "https://www.aeaweb.org/doi/10.1257/app.20200196",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The rotten apples of Brazil's agribusiness",
+       "autor": "Raoni Rajão e outros (Science)",
+       "ano": 2020,
+       "achado": "Cerca de 2% dos imóveis da Amazônia e do Cerrado respondem por 62% do desmatamento potencialmente ilegal; a maior parte da produção agropecuária não está ligada a desmatamento.",
+       "url": "https://www.evidensia.eco/resources/the-rotten-apples-of-brazils-agribusiness/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Relatório Anual do Desmatamento (RAD) 2023",
+       "autor": "MapBiomas",
+       "ano": 2024,
+       "achado": "Mais de 93% da área desmatada no Brasil em 2023 tinha ao menos um indício de ilegalidade; da área desmatada desde 2019, 58,3% não tinha autorização nem ação de fiscalização registrada.",
+       "url": "https://alerta.mapbiomas.org/en/2024/05/28/indicios-de-ilegalidade-em-areas-desmatadas-prevalecem-de-norte-a-sul-do-brasil/",
+       "tipo": "think_tank"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo as fontes, a redução do desmatamento ilegal diminui emissões e a apropriação de terra pública; produtores que cumprem a lei deixam de disputar mercado com produção ligada a desmatamento ilegal.",
+    "quem_paga_ou_perde": "Quem desmata sem autorização fica sujeito a multas, embargos e processos; o custo de monitoramento e fiscalização recai sobre o orçamento federal e dos estados.",
+    "fontes": [
+     {
+      "titulo": "The rotten apples of Brazil's agribusiness (Science)",
+      "url": "https://www.evidensia.eco/resources/the-rotten-apples-of-brazils-agribusiness/"
+     },
+     {
+      "titulo": "DETER-ing Deforestation in the Amazon (AEJ: Applied)",
+      "url": "https://www.aeaweb.org/doi/10.1257/app.20200196"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "meio-ambiente",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Flávio mira o desmatamento ilegal, com prazo em 2029; Lula mira o desmatamento líquido, que inclui o desmatamento autorizado compensado por recuperação de vegetação, com prazo em 2030."
+   },
+   "proposicoes": [
+    {
+     "casa": "STF",
+     "tipo": "ADPF",
+     "numero": "ADPF 760",
+     "ementa": "Pede a retomada efetiva do PPCDAm e metas de redução do desmatamento na Amazônia Legal.",
+     "autor": "PSB, Rede, PDT, PV, PT, PSOL e PCdoB",
+     "partido": "PSB, REDE, PDT, PV, PT, PSOL, PCdoB",
+     "situacao": "Julgada em 2024 (STF determinou à União executar o PPCDAm e reduzir o desmatamento); em fase de acompanhamento do cumprimento, relator Min. André Mendonça",
+     "ultima_acao": "2026-09-18: petição da Advocacia-Geral da União encaminhada ao gabinete do relator",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6049993",
+     "direcao": "fora do RILE",
+     "relacao": "A decisão do STF já impõe à União metas de redução do desmatamento na Amazônia que qualquer governo terá de cumprir."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADPF",
+     "numero": "ADPF 743",
+     "ementa": "Questiona a omissão do poder público no combate a queimadas e incêndios na Amazônia e no Pantanal.",
+     "autor": "Rede Sustentabilidade",
+     "partido": "REDE",
+     "situacao": "Julgada; em fase de execução das medidas determinadas, sob condução do Min. Flávio Dino",
+     "ultima_acao": "2026-10-19: juntada de ofício do Operador Nacional do Sistema de Registro Eletrônico de Imóveis com informações e documentos",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6007933",
+     "direcao": "fora do RILE",
+     "relacao": "Trata do combate a queimadas ilegais, que a proposta também inclui."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 11276/2018",
+     "ementa": "Institui a Política Nacional de Manejo Integrado do Fogo.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei nº 14.944/2024",
+     "ultima_acao": "2024-07-31: transformado na Lei Ordinária 14.944/2024 (DOU 01/08/2024)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2190265",
+     "direcao": "fora do RILE",
+     "relacao": "A lei define as regras de prevenção e combate a incêndios florestais que um plano contra queimadas ilegais usaria."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 3334/2023",
+     "ementa": "Altera o Código Florestal para permitir reduzir a Reserva Legal em florestas da Amazônia Legal em municípios com mais de 50% do território ocupado por áreas protegidas.",
+     "autor": "Sen. Jaime Bagattoli",
+     "partido": "PL",
+     "situacao": "Em tramitação; aguardando designação de relator",
+     "ultima_acao": "2026-05-13: devolvido pelo relator, Sen. Marcio Bittar, por não integrar mais a comissão; matéria será redistribuída",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/158548",
+     "direcao": "fora do RILE",
+     "relacao": "Ao mudar o limite do que é desmatamento legal na Amazônia, altera a base sobre a qual se mede uma meta de desmatamento ilegal zero."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe regulamentar o Sistema Brasileiro de Comércio de Emissões, o mercado regulado de carbono.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "O mercado regulado já foi criado pela Lei nº 15.042/2024, que remete a decretos e atos do órgão gestor a definição de setores, limites e regras de monitoramento; a regulamentação é feita pelo Executivo. Se o órgão gestor definitivo for uma autarquia (agência), sua criação depende de lei específica (art. 37, XIX, da Constituição).",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.042/2024 (Sistema Brasileiro de Comércio de Emissões – SBCE)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15042.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 37, XIX",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não fala em custo; diz que a regulamentação do SBCE será articulada com os objetivos da Nova Indústria Brasil.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O SBCE é um sistema nacional criado por lei federal e gerido por órgão federal; a regulamentação infralegal pode ser concluída dentro do mandato, embora a lei preveja implantação em fases.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.042/2024",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15042.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "alto",
+     "resumo": "Meta-análise de 80 avaliações encontrou reduções imediatas de emissões na maioria dos 21 sistemas de preço de carbono estudados, e estudo com empresas francesas no mercado europeu achou queda de 14% a 16% nas emissões sem perda de atividade. Revisão de 2021 registra que a redução agregada tem sido pequena, em geral de 0% a 2% ao ano.",
+     "estudos": [
+      {
+       "titulo": "Systematic review and meta-analysis of ex-post evaluations on the effectiveness of carbon pricing",
+       "autor": "Niklas Döbbeling-Hildebrandt e outros (Nature Communications)",
+       "ano": 2024,
+       "achado": "Em 80 avaliações de 21 sistemas, pelo menos 17 produziram reduções imediatas de emissões, de cerca de 5% a 21% (4% a 15% após correção de viés de publicação).",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11099057/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Does pricing carbon mitigate climate change? Firm-level evidence from the European Union Emissions Trading System",
+       "autor": "Jonathan Colmer, Ralf Martin, Mirabelle Muûls e Ulrich Wagner (Review of Economic Studies)",
+       "ano": 2025,
+       "achado": "O mercado europeu de emissões reduziu em 14% a 16% as emissões de indústrias reguladas na França, sem queda detectável de atividade econômica nem deslocamento da produção.",
+       "url": "https://spiral.imperial.ac.uk/handle/10044/1/109773",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Does carbon pricing reduce emissions? A review of ex-post analyses",
+       "autor": "Jessica F. Green (Environmental Research Letters)",
+       "ano": 2021,
+       "achado": "A maior parte dos estudos encontra reduções agregadas pequenas, em geral de 0% a 2% ao ano; no mercado europeu, de 0% a 1,5% ao ano.",
+       "url": "https://iopscience.iop.org/article/10.1088/1748-9326/abdae9",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo os estudos, empresas que reduzem emissões abaixo do limite podem vender permissões, e projetos que geram créditos de carbono ganham um mercado com demanda obrigatória.",
+    "quem_paga_ou_perde": "Operadores que emitem acima dos limites da lei (acima de 25 mil toneladas de CO2e por ano ficam sujeitos ao limite) pagam pela compra de permissões ou pelo investimento em redução; parte desse custo pode chegar aos preços.",
+    "fontes": [
+     {
+      "titulo": "Lei nº 15.042/2024",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15042.htm"
+     },
+     {
+      "titulo": "Colmer et al. (2025), Review of Economic Studies",
+      "url": "https://spiral.imperial.ac.uk/handle/10044/1/109773"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "meio-ambiente",
+    "indice": 9,
+    "candidato": "flavio",
+    "diferenca": "Os dois propõem levar adiante o mercado regulado de carbono; Lula liga a regulamentação à política industrial (Nova Indústria Brasil), e Flávio enfatiza tornar o Brasil fornecedor global de ativos ambientais."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 182/2024",
+     "ementa": "Institui o Sistema Brasileiro de Comércio de Emissões de Gases de Efeito Estufa (SBCE).",
+     "autor": "Câmara dos Deputados",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei nº 15.042/2024",
+     "ultima_acao": "2025-02-05: comunicada a sanção e a conversão na Lei nº 15.042, de 11/12/2024; matéria arquivada",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/161961",
+     "direcao": "fora do RILE",
+     "relacao": "É a lei que criou o mercado regulado cuja regulamentação o plano propõe."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3230/2026",
+     "ementa": "Institui o Programa Nacional de Geração Distribuída com Créditos de Carbono, para mensurar, certificar e comercializar créditos de micro e minigeradores de energia renovável.",
+     "autor": "Dep. Professor Alcides",
+     "partido": "PSDB",
+     "situacao": "Em tramitação; aguardando designação de relator na Comissão de Meio Ambiente (CMADS)",
+     "ultima_acao": "2026-08-24: recebimento pela CMADS",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2634444",
+     "direcao": "fora do RILE",
+     "relacao": "Propõe uma nova fonte de créditos de carbono que dialoga com o mercado regulado em regulamentação."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O mercado regulado de carbono foi criado pela Lei 15.042/2024; a regulamentação proposta ainda depende de decretos e atos do órgão gestor.",
+    "fonte": {
+     "titulo": "Lei nº 15.042/2024 (SBCE)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15042.htm"
+    }
+   }
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe manter o Fundo Clima e o Eco Invest para financiar a descarbonização e pôr em funcionamento o Fundo Florestas Tropicais para Sempre.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Fundo Clima foi criado pela Lei nº 12.114/2009 e o Eco Invest Brasil pela Lei nº 14.995/2024; mantê-los depende de dotação na lei orçamentária anual, não de lei nova. O aporte no Fundo Florestas Tropicais para Sempre (TFFF) foi anunciado em 2025; não localizamos o ato normativo que o formaliza.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 12.114/2009 (Fundo Nacional sobre Mudança do Clima)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12114.htm"
+      },
+      {
+       "titulo": "Lei nº 14.995/2024 (institui o Programa Eco Invest Brasil)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14995.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano informa valores já mobilizados (R$ 179 bilhões pelo Fundo Clima e pelo Eco Invest desde 2023; R$ 52,4 bilhões só pelo Fundo Clima), mas não diz quanto custará manter os fundos no próximo mandato nem de onde virá o dinheiro.",
+     "estimativa_externa": "Levantamento do Política por Inteiro (2026), com dados do Ministério do Planejamento, aponta R$ 42,5 bilhões autorizados na lei orçamentária de 2026 para o Fundo Clima, sendo R$ 27,5 bilhões em empréstimos via BNDES e R$ 15 bilhões para o Eco Invest, emprestados a taxas abaixo das de mercado.",
+     "fontes": [
+      {
+       "titulo": "Política por Inteiro – Tá lá no gráfico, ed. 71: Fundo Clima",
+       "url": "https://politicaporinteiro.org/wp-content/uploads/2026/06/00_TalanoGraf-Fundo-Clima.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Os fundos são federais, geridos pelo Ministério do Meio Ambiente, pelo BNDES e pelo Ministério da Fazenda; mantê-los é decisão orçamentária anual, possível dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 12.114/2009",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12114.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não localizamos avaliação independente de impacto do Fundo Clima ampliado ou do Eco Invest; o TCU apontou falta de identificação dos gastos climáticos no orçamento, e uma análise de 2026 estima que os projetos aprovados em 2025 evitam 7,5 milhões de toneladas de CO2e por ano, diante de cerca de 120 milhões necessários até 2030. Para o TFFF, análises de risco divergem: a encomendada pela Rainforest Foundation Norway classifica o risco dos patrocinadores entre AAA e BB+ e trata o aporte como empréstimo concessional.",
+     "estudos": [
+      {
+       "titulo": "Auditoria operacional na governança federal para enfrentamento da crise climática (Acórdão 2201/2024-Plenário)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2024,
+       "achado": "O gasto climático não é plenamente identificado no orçamento federal e há limites de transparência sobre os fundos internacionais disponíveis ao Brasil.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/auditoria-do-tcu-aponta-falhas-na-governanca-climatica-e-propoe-atualizacoes-em-politicas-ambientais",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Tá lá no gráfico, ed. 71 – Fundo Clima: mais dinheiro não basta",
+       "autor": "Política por Inteiro",
+       "ano": 2026,
+       "achado": "Os projetos aprovados em 2025 evitam ou removem 7,5 milhões de tCO2e por ano; o texto recomenda alinhar o subsídio a projetos que o mercado não financiaria sozinho e medir resultados.",
+       "url": "https://politicaporinteiro.org/wp-content/uploads/2026/06/00_TalanoGraf-Fundo-Clima.pdf",
+       "tipo": "think_tank"
+      },
+      {
+       "titulo": "Our response to criticism of Vista Analyse's analysis of the Tropical Forest Forever Facility (TFFF)",
+       "autor": "Rainforest Foundation Norway / Vista Analyse",
+       "ano": 2025,
+       "achado": "O risco para os países patrocinadores fica entre AAA e BB+, o retorno esperado é menor que o risco e o aporte funciona como empréstimo concessional; críticos argumentam que o risco é maior.",
+       "url": "https://www.regnskog.no/en/our-response-to-criticism-of-vista-analyses-analysis-of-the-tropical-forest-forever-facility-tfff",
+       "tipo": "entidade_interessada"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empresas e projetos de transição energética, indústria verde, restauração e adaptação têm acesso a crédito com juros abaixo do mercado; segundo o Política por Inteiro, cerca de 70% dos empréstimos de 2024 a março de 2026 foram para transição energética.",
+    "quem_paga_ou_perde": "O Tesouro arca com a diferença entre os juros cobrados e o custo de captação, com recursos do orçamento (inclusive receitas do petróleo e títulos verdes); no TFFF, o risco de perda recai sobre os países patrocinadores.",
+    "fontes": [
+     {
+      "titulo": "Política por Inteiro – Fundo Clima (2026)",
+      "url": "https://politicaporinteiro.org/wp-content/uploads/2026/06/00_TalanoGraf-Fundo-Clima.pdf"
+     },
+     {
+      "titulo": "Rainforest Foundation Norway – resposta sobre a análise do TFFF",
+      "url": "https://www.regnskog.no/en/our-response-to-criticism-of-vista-analyses-analysis-of-the-tropical-forest-forever-facility-tfff"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1725/2024",
+     "ementa": "Institui o Programa Acredita no Primeiro Passo e o Programa de Mobilização de Capital Privado Externo e Proteção Cambial (Eco Invest Brasil).",
+     "autor": "Dep. Afonso Motta e outros",
+     "partido": "PDT",
+     "situacao": "Transformado na Lei nº 14.995/2024, com veto parcial",
+     "ultima_acao": "2025-06-30: recebido ofício do Congresso Nacional comunicando a apreciação do veto",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2432767",
+     "direcao": "fora do RILE",
+     "relacao": "É a lei que criou o Eco Invest, que o plano propõe manter."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADPF",
+     "numero": "ADPF 708",
+     "ementa": "Questionou a paralisação do Fundo Clima; o STF reconheceu o dever de fazer o fundo funcionar e vedou o contingenciamento de seus recursos.",
+     "autor": "PSB, PSOL, PT e outros partidos",
+     "partido": "PSB, PSOL, PT",
+     "situacao": "Julgada e transitada em julgado",
+     "ultima_acao": "2023-06-19: baixa ao arquivo do STF",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5951856",
+     "direcao": "fora do RILE",
+     "relacao": "A decisão limita a possibilidade de o governo deixar de aplicar os recursos do Fundo Clima."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Fundo Clima (Lei 12.114/2009) e o Eco Invest Brasil (Lei 14.995/2024) estão em vigor; não foi localizado ato normativo que formalize o aporte ao Fundo Florestas Tropicais para Sempre.",
+    "fonte": {
+     "titulo": "Lei nº 12.114/2009 (Fundo Clima)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12114.htm"
+    }
+   }
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 11,
+   "candidato": "flavio",
+   "proposta": "Propõe concentrar a fiscalização em grilagem, ocupação ilegal de terras públicas e desmatamento ilegal, sem novas obrigações ao produtor legal.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Definir prioridades de fiscalização e integrar bases fundiárias e ambientais é atribuição administrativa do Executivo, com base na Lei de Crimes Ambientais e no Decreto nº 6.514/2008. Deixar de criar novas obrigações ao produtor não exige norma; já retirar obrigações existentes do Código Florestal exigiria lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 9.605/1998 (Lei de Crimes Ambientais)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9605.htm"
+      },
+      {
+       "titulo": "Decreto nº 6.514/2008",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6514.htm"
+      },
+      {
+       "titulo": "Lei nº 12.651/2012 (Código Florestal)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo; propõe integrar e aprimorar sistemas e bases de dados já existentes, com informações fundiárias, ambientais e monitoramento por satélite.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A fiscalização ambiental é competência comum (art. 23, VI e VII, da Constituição), e a destinação de terras públicas envolve União e estados; reorientar a fiscalização federal é possível dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 23",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontradas avaliações de impacto de fiscalização concentrada em grilagem e terras públicas. Estudos descritivos mostram que o desmatamento potencialmente ilegal se concentra em poucos imóveis e que florestas públicas não destinadas são desmatadas e registradas como propriedade privada; avaliação causal de outra política, a exigência de regularidade ambiental para o crédito rural, aplicada a todos os produtores, encontrou redução do desmatamento.",
+     "estudos": [
+      {
+       "titulo": "The rotten apples of Brazil's agribusiness",
+       "autor": "Raoni Rajão e outros (Science)",
+       "ano": 2020,
+       "achado": "Cerca de 2% dos imóveis da Amazônia e do Cerrado respondem por 62% do desmatamento potencialmente ilegal.",
+       "url": "https://www.evidensia.eco/resources/the-rotten-apples-of-brazils-agribusiness/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Lawless land in no man's land: The undesignated public forests in the Brazilian Amazon",
+       "autor": "Claudia Azevedo-Ramos, Paulo Moutinho e outros (Land Use Policy)",
+       "ano": 2020,
+       "achado": "Havia 49,8 milhões de hectares de florestas públicas não destinadas; 2,6 milhões já tinham sido desmatados até 2018 e 11,6 milhões estavam registrados no CAR como propriedade privada.",
+       "url": "https://ipam.org.br/bibliotecas/lawless-land-in-no-mans-land-the-undesignated-public-forests-in-the-brazilian-amazon/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Effect of Rural Credit on Deforestation: Evidence from the Brazilian Amazon",
+       "autor": "Juliano Assunção, Clarissa Gandour, Romero Rocha e Rudi Rocha (The Economic Journal)",
+       "ano": 2020,
+       "achado": "A exigência de comprovar regularidade ambiental e fundiária para obter crédito rural, adotada em 2008, reduziu substancialmente o desmatamento, sobretudo em municípios de pecuária.",
+       "url": "https://ideas.repec.org/a/oup/econjl/v130y2020i626p290-330..html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Produtores em situação regular deixam de ter custos adicionais de comprovação; a União e os estados ganham proteção sobre terras públicas, que segundo os estudos concentram parte relevante do desmatamento ilegal.",
+    "quem_paga_ou_perde": "Grileiros e ocupantes ilegais de terra pública ficam mais sujeitos a autuação; segundo o estudo sobre crédito rural, deixar de usar exigências gerais pode reduzir um instrumento que se mostrou eficaz.",
+    "fontes": [
+     {
+      "titulo": "Lawless land in no man's land (Land Use Policy)",
+      "url": "https://ipam.org.br/bibliotecas/lawless-land-in-no-mans-land-the-undesignated-public-forests-in-the-brazilian-amazon/"
+     },
+     {
+      "titulo": "The Effect of Rural Credit on Deforestation (Economic Journal)",
+      "url": "https://ideas.repec.org/a/oup/econjl/v130y2020i626p290-330..html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "meio-ambiente",
+    "indice": 4,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem satélite e cruzamento de dados contra crimes ambientais; Lula acrescenta rastreabilidade e devida diligência nas cadeias produtivas, e Flávio enfatiza não criar novas obrigações ao produtor legal e concentrar o foco em grilagem e terras públicas."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 2633/2020",
+     "ementa": "Altera a lei de regularização fundiária em terras da União (Lei nº 11.952/2009) para ampliar o alcance da regularização.",
+     "autor": "Dep. Zé Silva (origem na Câmara)",
+     "partido": "UNIÃO",
+     "situacao": "Em tramitação no Senado, em conjunto com o PL 510/2021; matéria com a relatoria",
+     "ultima_acao": "2025-09-11: recebidas as Emendas nºs 133 a 137 e comunicado o recebimento ao relator, Sen. Marcos Rogério",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/149358",
+     "direcao": "fora do RILE",
+     "relacao": "Muda as regras de titulação de terras públicas ocupadas, que definem quem é ocupante legal e quem é grileiro."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 510/2021",
+     "ementa": "Altera a Lei nº 11.952/2009 sobre regularização fundiária de ocupações em terras da União.",
+     "autor": "Sen. Irajá",
+     "partido": "PSD",
+     "situacao": "Em tramitação, em conjunto com o PL 2633/2020; matéria com a relatoria",
+     "ultima_acao": "2025-09-11: recebidas as Emendas nºs 133 a 137 do Sen. Jaime Bagattoli; comunicado o recebimento ao relator, Sen. Marcos Rogério",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/146639",
+     "direcao": "fora do RILE",
+     "relacao": "Trata da regularização de ocupações em terras públicas, alvo central da fiscalização proposta."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADPF",
+     "numero": "ADPF 760",
+     "ementa": "Pede a retomada efetiva do PPCDAm e metas de redução do desmatamento na Amazônia Legal.",
+     "autor": "PSB, Rede, PDT, PV, PT, PSOL e PCdoB",
+     "partido": "PSB, REDE, PDT, PV, PT, PSOL, PCdoB",
+     "situacao": "Julgada em 2024; em fase de acompanhamento do cumprimento, relator Min. André Mendonça",
+     "ultima_acao": "2026-09-18: petição da Advocacia-Geral da União encaminhada ao gabinete do relator",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6049993",
+     "direcao": "fora do RILE",
+     "relacao": "O acompanhamento judicial inclui as ações federais de fiscalização na Amazônia que a proposta pretende reorientar."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "meio-ambiente",
+   "indice": 14,
+   "candidato": "flavio",
+   "proposta": "Propõe licenciamento ambiental com prazo definido; se o órgão não decidir no prazo, a licença seria concedida.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_complementar",
+     "explicacao": "Hoje a Lei Complementar nº 140/2011 (art. 14, § 3º) e a Lei Geral do Licenciamento (Lei nº 15.190/2025, art. 47, § 3º) dizem que o fim do prazo sem decisão não gera licença tácita, apenas transfere a análise a outro ente; mudar isso exige alterar a lei complementar (maioria absoluta) e a lei ordinária. Em 2022 o STF (ADI 6808) considerou inconstitucional a concessão automática de licença ambiental, com base no art. 225 da Constituição, o que indica risco jurídico para a proposta.",
+     "fontes": [
+      {
+       "titulo": "Lei Complementar nº 140/2011, art. 14, § 3º",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm"
+      },
+      {
+       "titulo": "Lei nº 15.190/2025 (Lei Geral do Licenciamento Ambiental), art. 47",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 225",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não fala em custo; diz que a análise continua sendo responsabilidade do poder público, mas a inércia deixa de travar quem quer investir.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "O licenciamento é dividido entre União, estados e municípios pela LC 140/2011 (competência comum do art. 23 e concorrente do art. 24, VI), e a mudança depende de aprovação por maioria absoluta no Congresso e de eventual exame no STF.",
+     "fontes": [
+      {
+       "titulo": "Lei Complementar nº 140/2011",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm"
+      },
+      {
+       "titulo": "Constituição Federal, arts. 23 e 24",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Os estudos localizados documentam a demora do licenciamento no Brasil, que no setor de energia superava em mais de três vezes o prazo legal, e apontam como causas tanto falhas dos órgãos quanto estudos ambientais de baixa qualidade apresentados pelos empreendedores. Não localizamos avaliação empírica dos efeitos da aprovação tácita de licenças ambientais sobre prazos ou sobre danos ambientais.",
+     "estudos": [
+      {
+       "titulo": "Licenciamento Ambiental de Empreendimentos Hidrelétricos no Brasil: Uma Contribuição para o Debate (Relatório nº 40995-BR)",
+       "autor": "Banco Mundial",
+       "ano": 2008,
+       "achado": "Considera o licenciamento um obstáculo para que a expansão da geração hidrelétrica ocorra de forma previsível e em prazos razoáveis e propõe reduzir as incertezas do processo.",
+       "url": "https://documents1.worldbank.org/curated/en/977341468020696724/pdf/409950v10PORTU1rio1S1NTESE01PUBLIC1.pdf",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Estudo sobre prazos de licenciamento de projetos de energia (divulgado como 'Licença demorada e cara')",
+       "autor": "Centro Brasileiro de Infraestrutura (CBIE)",
+       "ano": 2012,
+       "achado": "A licença prévia levava em média 958 dias, mais de três vezes o prazo legal de 285 dias; as causas citadas incluem falta de técnicos, sobreposição de órgãos e estudos de impacto de baixa qualidade.",
+       "url": "https://cbic.org.br/licenca-demorada-e-cara/",
+       "tipo": "think_tank"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empreendedores que apresentam toda a documentação teriam previsibilidade de prazo, segundo o argumento do plano e os estudos sobre demora no licenciamento.",
+    "quem_paga_ou_perde": "Segundo a decisão do STF na ADI 6808, a licença sem análise técnica pode comprometer a proteção ambiental prevista no art. 225; o risco recai sobre a população afetada pelos empreendimentos e sobre o meio ambiente.",
+    "fontes": [
+     {
+      "titulo": "ConJur – STF derruba MP que concedia licença ambiental automática (ADI 6808)",
+      "url": "https://www.conjur.com.br/2022-abr-29/stf-derruba-mp-bolsonaro-concedia-licenca-ambiental-automatica/"
+     },
+     {
+      "titulo": "CBIC – Licença demorada e cara (CBIE)",
+      "url": "https://cbic.org.br/licenca-demorada-e-cara/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2159/2021 (PL 3729/2004 na Câmara)",
+     "ementa": "Dispõe sobre o licenciamento ambiental e regulamenta o inciso IV do § 1º do art. 225 da Constituição (Lei Geral do Licenciamento).",
+     "autor": "Dep. Iara Bernardi e outros",
+     "partido": "PT",
+     "situacao": "Transformado na Lei nº 15.190/2025, com vetos parciais; o Congresso derrubou 52 vetos em novembro de 2025",
+     "ultima_acao": "2026-07-03: apresentado ofício do Congresso Nacional que comunica a declaração de prejudicialidade de veto",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=257161",
+     "direcao": "direita",
+     "relacao": "A lei fixou prazos máximos de análise e afirmou expressamente que o fim do prazo não gera licença tácita (art. 47, § 3º)."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 7913",
+     "ementa": "Questiona dispositivos da Lei Geral do Licenciamento (Lei nº 15.190/2025), como a ampliação da licença por adesão e compromisso.",
+     "autor": "Partido Verde",
+     "partido": "PV",
+     "situacao": "Pendente de julgamento; relator Min. Alexandre de Moraes; retirada do calendário de julgamento em agosto de 2026",
+     "ultima_acao": "2026-10-07: autos conclusos ao relator após petição de amicus curiae",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7468448",
+     "direcao": "fora do RILE",
+     "relacao": "O julgamento definirá limites constitucionais para formas de licenciamento sem análise prévia, tema próximo ao da aprovação por decurso de prazo."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1308/2025",
+     "ementa": "Dispõe sobre o licenciamento ambiental especial (LAE) para atividades e empreendimentos estratégicos.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada na Lei nº 15.300/2025",
+     "ultima_acao": "2025-12-22: transformada na Lei 15.300/2025 (DOU 23/12/2025)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2541991",
+     "direcao": "direita",
+     "relacao": "Criou rito com prazo máximo de 12 meses para empreendimentos considerados estratégicos, outra forma de acelerar o licenciamento."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 6808",
+     "ementa": "Questionou a concessão automática de licenças, inclusive ambientais, a empresas de risco médio pela Redesim (MP 1.040/2021, convertida na Lei nº 14.195/2021).",
+     "autor": "Partido Socialista Brasileiro",
+     "partido": "PSB",
+     "situacao": "Julgada em 28/04/2022: STF afastou a aplicação da licença automática às licenças ambientais; transitada em julgado",
+     "ultima_acao": "2022-08-09: trânsito em julgado e baixa ao arquivo",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6160181",
+     "direcao": "fora do RILE",
+     "relacao": "É o precedente do STF mais próximo da proposta de licença por decurso de prazo."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "agro",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe expandir o Plano Safra da Agricultura Familiar, com juros adequados a cada perfil e prioridade para alimentos da cesta básica.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Pronaf e o Plano Safra da Agricultura Familiar já estão previstos em lei (Lei nº 15.223/2025), com regras de crédito definidas pelo Conselho Monetário Nacional e subvenção de juros paga pelo Tesouro com base na Lei nº 8.427/1992; ampliar o programa depende do orçamento anual, não de lei nova.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.223/2025 (institui o Pronaf e o Plano Safra da agricultura familiar)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15223.htm"
+      },
+      {
+       "titulo": "Lei nº 8.427/1992 (subvenção econômica e equalização de juros no crédito rural)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8427.htm"
+      },
+      {
+       "titulo": "Lei nº 11.326/2006 (Política Nacional da Agricultura Familiar)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11326.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa quanto a expansão custaria; diz que o crédito do Pronaf foi recorde ano após ano e que haverá juros compatíveis com o perfil do agricultor e linhas específicas para jovens, mulheres e cooperativas.",
+     "estimativa_externa": "Para o Plano Safra da Agricultura Familiar 2026/27, o governo anunciou R$ 97,3 bilhões, dos quais R$ 44,4 bilhões com juros equalizados pelo Tesouro Nacional; o custo da equalização não foi informado separadamente nessa divulgação.",
+     "fontes": [
+      {
+       "titulo": "CNN Brasil – Plano Safra da Agricultura Familiar tem R$ 44 bilhões equalizados (01/07/2026)",
+       "url": "https://www.cnnbrasil.com.br/agro/plano-safra-da-agricultura-familiar-tem-r-44-bilhoes-equalizados/"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Política agrícola e crédito rural são definidos pela União (art. 187 da Constituição), e o Plano Safra é renovado a cada ano agrícola, o que permite ampliá-lo dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 187",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Avaliações com pareamento e painel encontram efeito positivo do Pronaf sobre o valor da produção, a produtividade e o PIB agropecuário dos municípios, com magnitudes diferentes entre regiões e perfis de agricultor. As mesmas avaliações registram ausência de efeito em algumas regiões e efeito negativo do crédito para milho e soja na agricultura familiar, e não medem a renda líquida.",
+     "estudos": [
+      {
+       "titulo": "Avaliação do impacto do Pronaf sobre a renda e o pessoal ocupado (Relatório de Pesquisa)",
+       "autor": "Ipea e Ministério do Desenvolvimento Agrário (coord. Regina Helena Rosa Sambuichi)",
+       "ano": 2025,
+       "achado": "O crédito do Pronaf elevou em cerca de 18,5% o valor bruto da produção e em cerca de 5% a mão de obra familiar ocupada; no Sul o efeito não foi significativo e o crédito para milho e soja teve associação negativa.",
+       "url": "https://www.gov.br/mda/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/programa-nacional-de-fortalecimento-da-agricultura-familiar-pronaf/estudos-e-pesquisas/relatorio-de-pesquisa-avaliacao-do-impacto-do-pronaf-sobre-a-renda-e-o-pessoal-ocupado.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Avaliação dos impactos regionais do Programa Nacional da Agricultura Familiar (Pronaf) – TD 1974",
+       "autor": "César Nunes de Castro, Guilherme Mendes Resende e Murilo José de Souza Pires (Ipea)",
+       "ano": 2014,
+       "achado": "De 2000 a 2010, o Pronaf teve impacto positivo sobre o PIB per capita e o PIB agropecuário municipal no Nordeste, Sudeste e Sul, e nenhum impacto identificado no Norte e no Centro-Oeste.",
+       "url": "https://repositorio.ipea.gov.br/entities/publication/ac504e08-88d7-43ae-9d4b-195453ae43ec",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Assessment of rural credit impact on land and labor productivity for Brazilian family farmers",
+       "autor": "Marcos de Oliveira Garcias e Ana Lucia Kassouf (Nova Economia)",
+       "ano": 2016,
+       "achado": "Quando estatisticamente significativo, o crédito aumentou a produtividade da terra e do trabalho, com efeito que varia conforme a integração do agricultor ao mercado.",
+       "url": "https://repositorio.usp.br/item/002899582",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Agricultores familiares com acesso ao crédito, que segundo o Ipea tiveram aumento do valor da produção e da mão de obra ocupada.",
+    "quem_paga_ou_perde": "O Tesouro Nacional paga a diferença de juros nas linhas equalizadas; segundo o Ipea, a distribuição dos recursos é desigual entre regiões e perfis de agricultor.",
+    "fontes": [
+     {
+      "titulo": "Ipea/MDA – Avaliação do impacto do Pronaf (2025)",
+      "url": "https://www.gov.br/mda/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/programa-nacional-de-fortalecimento-da-agricultura-familiar-pronaf/estudos-e-pesquisas/relatorio-de-pesquisa-avaliacao-do-impacto-do-pronaf-sobre-a-renda-e-o-pessoal-ocupado.pdf"
+     },
+     {
+      "titulo": "CNN Brasil – Plano Safra da Agricultura Familiar 2026/27",
+      "url": "https://www.cnnbrasil.com.br/agro/plano-safra-da-agricultura-familiar-tem-r-44-bilhoes-equalizados/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 4384/2023",
+     "ementa": "Institui o Programa Nacional de Fortalecimento da Agricultura Familiar (Pronaf) e o Plano Safra da Agricultura Familiar.",
+     "autor": "Sen. Beto Faro",
+     "partido": "PT",
+     "situacao": "Transformado na Lei nº 15.223/2025",
+     "ultima_acao": "2025-10-24: comunicada a sanção e a conversão na Lei nº 15.223, de 30/09/2025; matéria arquivada",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/159849",
+     "direcao": "fora do RILE",
+     "relacao": "Transformou em lei o programa e o plano que a proposta pretende expandir."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1154/2026",
+     "ementa": "Altera a Lei nº 15.223/2025 e a Lei nº 8.171/1991 para institucionalizar garantias de crédito e transparência orçamentária para mulheres e jovens da agricultura familiar.",
+     "autor": "Dep. Elisangela Araujo",
+     "partido": "PT",
+     "situacao": "Em tramitação; aguardando parecer na Comissão de Agricultura (CAPADR)",
+     "ultima_acao": "2026-07-08: encerrado o prazo para emendas, sem emendas apresentadas",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2608782",
+     "direcao": "fora do RILE",
+     "relacao": "Trata das linhas para mulheres e jovens agricultores que o plano promete manter."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5122/2023",
+     "ementa": "Dispõe sobre liquidação, renegociação e rebate de dívidas de crédito rural; o Senado aprovou substitutivo que autoriza usar o Fundo Social do pré-sal em linha especial de financiamento.",
+     "autor": "Dep. Domingos Neto",
+     "partido": "PSD",
+     "situacao": "Aprovado pela Câmara e, com emendas, pelo Senado; aguarda nova votação na Câmara",
+     "ultima_acao": "2026-07-01: apresentado requerimento de inclusão na Ordem do Dia do Plenário para votação imediata",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2398530",
+     "direcao": "fora do RILE",
+     "relacao": "Afeta a capacidade de agricultores endividados, inclusive familiares, voltarem a tomar crédito do Plano Safra."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Pronaf e o Plano Safra da Agricultura Familiar estão em vigor pela Lei 15.223/2025; a expansão depende de orçamento e de regras do Conselho Monetário Nacional.",
+    "fonte": {
+     "titulo": "Lei nº 15.223/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15223.htm"
+    }
+   }
+  },
+  {
+   "tema": "agro",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe ampliar o Seguro Rural e criar ferramentas de securitização e reorganização das dívidas do setor.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "A subvenção ao prêmio do seguro rural já existe (Lei nº 10.823/2003) e pode ser ampliada pelo orçamento; já a securitização e a reorganização de dívidas rurais com recursos ou garantias da União exigem lei, como mostra o PL 5.122/2023 em tramitação.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 10.823/2003 (subvenção econômica ao prêmio do seguro rural)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.823.htm"
+      },
+      {
+       "titulo": "Lei nº 8.427/1992 (subvenção econômica nas operações de crédito rural)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8427.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo nem fonte; diz que ampliará o seguro rural e trará ferramentas de securitização e reorganização de dívidas para dar ao produtor horizonte de mais de um ano.",
+     "estimativa_externa": "Para o PL 5.122/2023, que renegocia dívidas rurais com recursos do Fundo Social do pré-sal, reportagem de junho de 2026 cita estimativa do governo de impacto fiscal de R$ 140 bilhões em dez anos; a metodologia não foi divulgada.",
+     "fontes": [
+      {
+       "titulo": "Congresso em Foco – Bancada ruralista quer acelerar votação do socorro ao agro na Câmara (11/06/2026)",
+       "url": "https://www.congressoemfoco.com.br/noticia/119572/bancada-ruralista-quer-acelerar-votacao-do-socorro-ao-agro-na-camara"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Política agrícola, crédito e seguro rural são competência da União (art. 187 da Constituição); a ampliação do seguro e uma lei de renegociação podem ser aprovadas e executadas no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 187",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Experimento em Gana mostrou que o seguro agrícola aumenta o investimento do produtor, e avaliação do programa brasileiro de subvenção ao seguro apontou eficácia parcial e problemas de garantia de orçamento. Para a renegociação de dívidas, estudo sobre o perdão de dívidas rurais na Índia não encontrou aumento de investimento e registrou queda de produtividade e piora da disciplina de pagamento.",
+     "estudos": [
+      {
+       "titulo": "Agricultural Decisions after Relaxing Credit and Risk Constraints",
+       "autor": "Dean Karlan, Robert Darko Osei, Isaac Osei-Akoto e Christopher Udry (Quarterly Journal of Economics)",
+       "ano": 2014,
+       "achado": "Em experimento no norte de Gana, o seguro por índice de chuva aumentou significativamente o investimento agrícola; o risco sem seguro foi a principal restrição ao investimento.",
+       "url": "https://www.nber.org/papers/w18463",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Avaliação da Implementação do Programa de Subvenção do Prêmio do Seguro Rural",
+       "autor": "Estela Alves de Medeiros (Revista de Economia e Sociologia Rural)",
+       "ano": 2013,
+       "achado": "O programa teve eficácia parcial, com demanda alta, e precisa de melhor atuação do comitê gestor e de garantia de recursos orçamentários no momento necessário.",
+       "url": "https://ideas.repec.org/a/ags/revi24/341477.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "What Does Debt Relief Do for Development? Evidence from India's Bailout for Rural Households",
+       "autor": "Martin Kanz (American Economic Journal: Applied Economics)",
+       "ano": 2016,
+       "achado": "O perdão de dívidas rurais não alterou poupança, consumo nem investimento; os beneficiários investiram menos, tiveram menor produtividade e passaram a se preocupar menos com o custo de inadimplir.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/app.20130399",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Produtores com perdas de safra ou endividados, que teriam prazos mais longos e cobertura contra perdas; segundo o experimento em Gana, o seguro estimula investimento.",
+    "quem_paga_ou_perde": "O Tesouro arca com a subvenção ao seguro e com o custo da renegociação (estimado pelo governo em R$ 140 bilhões em dez anos para o PL 5.122/2023); o estudo indiano aponta risco de piora no pagamento de dívidas futuras.",
+    "fontes": [
+     {
+      "titulo": "Congresso em Foco (11/06/2026)",
+      "url": "https://www.congressoemfoco.com.br/noticia/119572/bancada-ruralista-quer-acelerar-votacao-do-socorro-ao-agro-na-camara"
+     },
+     {
+      "titulo": "Kanz (2016), AEJ: Applied",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/app.20130399"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "agro",
+    "indice": 2,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem ampliar a proteção contra perdas de safra; Lula propõe um instrumento novo para quebras severas, criado em diálogo com o setor, e Flávio propõe ampliar o seguro rural e renegociar as dívidas já existentes."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5122/2023",
+     "ementa": "Dispõe sobre liquidação, renegociação e rebate de dívidas de crédito rural; o Senado aprovou substitutivo que autoriza usar o Fundo Social do pré-sal em linha especial de financiamento.",
+     "autor": "Dep. Domingos Neto",
+     "partido": "PSD",
+     "situacao": "Aprovado pela Câmara e, com emendas, pelo Senado; aguarda nova votação na Câmara",
+     "ultima_acao": "2026-07-01: apresentado requerimento de inclusão na Ordem do Dia do Plenário para votação imediata",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2398530",
+     "direcao": "fora do RILE",
+     "relacao": "É a principal proposta em tramitação de reorganização de dívidas rurais com recursos públicos."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 96/2026",
+     "ementa": "Altera a Lei de Responsabilidade Fiscal para vedar o contingenciamento das despesas com subvenção ao prêmio do seguro rural.",
+     "autor": "Dep. Márcio Honaiser",
+     "partido": "PDT",
+     "situacao": "Aguardando despacho do Presidente da Câmara",
+     "ultima_acao": "2026-04-08: apresentação do projeto",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2614729",
+     "direcao": "fora do RILE",
+     "relacao": "Garantiria o orçamento do seguro rural que a proposta pretende ampliar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5596/2026",
+     "ementa": "Institui o Certificado de Recebíveis do Seguro Rural (CRSR).",
+     "autor": "Dep. Sergio Souza",
+     "partido": "MDB",
+     "situacao": "Apresentado; aguardando despacho",
+     "ultima_acao": "2026-10-19: apresentação do projeto",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648382",
+     "direcao": "fora do RILE",
+     "relacao": "Cria instrumento de securitização ligado ao seguro rural, na linha das ferramentas citadas na proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A subvenção ao prêmio do seguro rural está em vigor pela Lei 10.823/2003; a securitização e a reorganização de dívidas propostas não foram aprovadas.",
+    "fonte": {
+     "titulo": "Lei nº 10.823/2003",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.823.htm"
+    }
+   }
+  },
+  {
+   "tema": "agro",
+   "indice": 4,
+   "candidato": "lula",
+   "proposta": "Propõe avançar na reforma agrária, assentando famílias acampadas e ampliando o crédito fundiário.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A reforma agrária está prevista nos arts. 184 a 186 da Constituição e regulada pela Lei nº 8.629/1993; o crédito fundiário tem base na Lei Complementar nº 93/1998. Assentar famílias e ampliar o crédito depende de orçamento e de atos do Incra, sem necessidade de lei nova.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 184 a 186",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei nº 8.629/1993 (regulamenta a reforma agrária)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8629.htm"
+      },
+      {
+       "titulo": "Lei Complementar nº 93/1998 (Fundo de Terras e da Reforma Agrária)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp93.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo, metas de famílias assentadas nem fonte de recursos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Desapropriar imóvel para reforma agrária é competência da União (art. 184 da Constituição), executada pelo Incra; a continuidade da política cabe no mandato, mas o número de assentamentos depende do orçamento anual.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 184",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudo clássico sobre a Índia associou reformas agrárias à redução da pobreza, mas uma avaliação com pareamento no Ceará não encontrou efeito significativo na qualidade de vida dos assentados. Pesquisas estimam que assentamentos responderam por cerca de 30% do desmatamento da Amazônia em 2014, e o TCU apontou em 2016 indícios de irregularidade na seleção de beneficiários, contestados pelo Incra.",
+     "estudos": [
+      {
+       "titulo": "Land reform, poverty reduction and growth: evidence from India",
+       "autor": "Timothy Besley e Robin Burgess (Quarterly Journal of Economics)",
+       "ano": 2000,
+       "achado": "Com dados de 16 estados indianos de 1958 a 1992, as reformas agrárias aprovadas foram associadas à redução da pobreza, embora a implementação tenha sido limitada por restrições políticas.",
+       "url": "https://researchonline.lse.ac.uk/id/eprint/1202",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Avaliação dos impactos do programa de reforma agrária entre os agricultores do estado do Ceará",
+       "autor": "Germano Silva Maia, Ahmad Saeed Khan e Patrícia Verônica Pinheiro Sales Lima (Revista Políticas Públicas)",
+       "ano": 2013,
+       "achado": "Comparados a não beneficiários semelhantes, os assentados não tiveram impacto significativo em qualidade de vida, desenvolvimento ambiental nem desenvolvimento político-institucional.",
+       "url": "https://repositorio.ufc.br/handle/riufc/14224?locale=en",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Assentamentos Rurais e Desmatamento na Amazônia",
+       "autor": "Juliano Assunção e Romero Rocha (Climate Policy Initiative/PUC-Rio)",
+       "ano": 2016,
+       "achado": "Os assentamentos responderam por cerca de 30% do desmatamento da Amazônia em 2014 e passaram de 4,8% para 8,3% do território do bioma entre 2002 e 2014.",
+       "url": "https://www.climatepolicyinitiative.org/pt-br/publication/assentamentos-rurais-e-desmatamento-na-amazonia",
+       "tipo": "think_tank"
+      },
+      {
+       "titulo": "Acórdão 775/2016-Plenário (fiscalização do Programa Nacional de Reforma Agrária)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2016,
+       "achado": "Cruzamento de bases indicou beneficiários fora dos requisitos e prejuízo potencial de R$ 2,83 bilhões; o TCU suspendeu cautelarmente novas concessões, medida depois revista.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-suspende-concessao-de-beneficios-da-reforma-agraria",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Famílias acampadas sem terra, que recebem lote e acesso a crédito; o estudo sobre a Índia associa a redistribuição de terra à redução da pobreza rural.",
+    "quem_paga_ou_perde": "O Tesouro paga as indenizações das desapropriações e a estruturação dos assentamentos; proprietários de imóveis improdutivos desapropriados recebem indenização em títulos da dívida agrária (art. 184 da Constituição).",
+    "fontes": [
+     {
+      "titulo": "Besley e Burgess (2000), QJE",
+      "url": "https://researchonline.lse.ac.uk/id/eprint/1202"
+     },
+     {
+      "titulo": "Constituição Federal, art. 184",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "agro",
+    "indice": 10,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe distribuir terra a famílias sem terra pela reforma agrária e pelo crédito fundiário; Flávio propõe titular quem já ocupa e trabalha a terra e reforçar a segurança jurídica do direito de propriedade."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 709/2023",
+     "ementa": "Altera a Lei nº 8.629/1993 para impedir que ocupantes e invasores de propriedades recebam benefícios de programas federais, inclusive da reforma agrária.",
+     "autor": "Dep. Marcos Pollon (origem na Câmara)",
+     "partido": "PL",
+     "situacao": "Aprovado na Câmara em maio de 2024; no Senado, aguardando despacho",
+     "ultima_acao": "2024-05-28: recebido no Senado; aguardando despacho",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/163848",
+     "direcao": "direita",
+     "relacao": "Mudaria quem pode ser beneficiário da reforma agrária, excluindo participantes de ocupações."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 2633/2020",
+     "ementa": "Altera a Lei nº 11.952/2009 para ampliar o alcance da regularização fundiária em terras da União.",
+     "autor": "Dep. Zé Silva (origem na Câmara)",
+     "partido": "UNIÃO",
+     "situacao": "Em tramitação no Senado, em conjunto com o PL 510/2021; matéria com a relatoria",
+     "ultima_acao": "2025-09-11: recebidas as Emendas nºs 133 a 137 e comunicado o recebimento ao relator, Sen. Marcos Rogério",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/149358",
+     "direcao": "fora do RILE",
+     "relacao": "Define a destinação de terras públicas, que concorre com a destinação a assentamentos citada no plano."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A reforma agrária (Lei 8.629/1993) e o crédito fundiário (LC 93/1998) estão em vigor; o ritmo de assentamentos depende de orçamento e de atos do Incra.",
+    "fonte": {
+     "titulo": "Lei nº 8.629/1993",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8629.htm"
+    }
+   }
+  },
+  {
+   "tema": "agro",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe ampla titulação do pequeno proprietário rural e segurança jurídica “irreversível” do direito de propriedade.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A titulação de pequenos ocupantes de terras da União e de assentados já tem base na Lei nº 11.952/2009, na Lei nº 13.465/2017 e na Lei nº 8.629/1993, e pode ser acelerada por atos do Incra. A promessa de segurança 'irreversível' do direito de propriedade é vaga: a Constituição condiciona a propriedade à função social (arts. 5º, XXIII, e 186), e afastar essa condição exigiria PEC, com debate sobre cláusula pétrea.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 11.952/2009 (regularização fundiária em terras da União na Amazônia Legal)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l11952.htm"
+      },
+      {
+       "titulo": "Lei nº 13.465/2017 (regularização fundiária rural e urbana)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13465.htm"
+      },
+      {
+       "titulo": "Constituição Federal, arts. 5º, XXIII, e 186",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo nem meta numérica; afirma que o governo Bolsonaro emitiu mais de 450 mil documentos de titulação e propõe retomar esse ritmo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A União titula terras federais e assentamentos pelo Incra, e os estados titulam terras estaduais; legislar sobre direito agrário é competência privativa da União (art. 22, I, da Constituição). A emissão de títulos pode ser ampliada dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, I",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Revisão sistemática sobre países em desenvolvimento encontrou ganhos de produtividade e investimento com a formalização da terra que dependem do contexto e de acesso a crédito e mercados, além de efeitos sociais adversos em alguns casos. Na Amazônia, estudo sobre o programa Terra Legal encontrou aumento do desmatamento entre pequenos e médios titulados, e outro trabalho mostra florestas públicas registradas irregularmente como propriedade privada.",
+     "estudos": [
+      {
+       "titulo": "The impact of land property rights interventions on investment and agricultural productivity in developing countries: a systematic review",
+       "autor": "Steven Lawry, Cyrus Samii, Ruth Hall e outros (Campbell Systematic Reviews)",
+       "ano": 2014,
+       "achado": "Os 20 estudos quantitativos mostraram resultados mistos; ganhos de produtividade e investimento dependeram das condições locais, como acesso a crédito, insumos e mercados.",
+       "url": "https://gov.uk/dfid-research-outputs/the-impact-of-land-property-rights-interventions-on-investment-and-agricultural-productivity-in-developing-countries-a-systematic-review",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Impacts of a large-scale titling initiative on deforestation in the Brazilian Amazon",
+       "autor": "Benedict Probst, Ariel BenYishay, Andreas Kontoleon e Tiago Reis (Nature Sustainability)",
+       "ano": 2020,
+       "achado": "Com dados de 10.647 imóveis de 2011 a 2016, pequenos e médios titulados pelo Terra Legal aumentaram o desmatamento; grandes não foram afetados.",
+       "url": "https://ideas.repec.org/a/nat/natsus/v3y2020i12d10.1038_s41893-020-0537-2.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Lawless land in no man's land: The undesignated public forests in the Brazilian Amazon",
+       "autor": "Claudia Azevedo-Ramos, Paulo Moutinho e outros (Land Use Policy)",
+       "ano": 2020,
+       "achado": "11,6 milhões de hectares de florestas públicas não destinadas estavam registrados no CAR como propriedade privada; os autores estimam emissões adicionais se essas áreas forem legalizadas.",
+       "url": "https://ipam.org.br/bibliotecas/lawless-land-in-no-mans-land-the-undesignated-public-forests-in-the-brazilian-amazon/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Pequenos ocupantes e assentados que recebem título, que segundo a revisão sistemática podem ter mais segurança e investimento quando há acesso a crédito e mercados.",
+    "quem_paga_ou_perde": "Segundo os estudos sobre a Amazônia, sem coordenação com a política ambiental a titulação pode aumentar o desmatamento e legalizar ocupações de florestas públicas.",
+    "fontes": [
+     {
+      "titulo": "Probst et al. (2020), Nature Sustainability",
+      "url": "https://ideas.repec.org/a/nat/natsus/v3y2020i12d10.1038_s41893-020-0537-2.html"
+     },
+     {
+      "titulo": "Lawry et al. (2014), Campbell Systematic Reviews",
+      "url": "https://gov.uk/dfid-research-outputs/the-impact-of-land-property-rights-interventions-on-investment-and-agricultural-productivity-in-developing-countries-a-systematic-review"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "agro",
+    "indice": 4,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe titular quem já ocupa a terra e reforçar o direito de propriedade; Lula propõe assentar famílias sem terra pela reforma agrária, além de regularização fundiária no Norte."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 2633/2020",
+     "ementa": "Altera a Lei nº 11.952/2009 para ampliar o alcance da regularização fundiária em terras da União.",
+     "autor": "Dep. Zé Silva (origem na Câmara)",
+     "partido": "UNIÃO",
+     "situacao": "Em tramitação no Senado, em conjunto com o PL 510/2021; matéria com a relatoria",
+     "ultima_acao": "2025-09-11: recebidas as Emendas nºs 133 a 137 e comunicado o recebimento ao relator, Sen. Marcos Rogério",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/149358",
+     "direcao": "fora do RILE",
+     "relacao": "Ampliaria as regras de titulação de ocupantes de terras da União, base da proposta."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 510/2021",
+     "ementa": "Altera a Lei nº 11.952/2009 sobre regularização fundiária de ocupações em terras da União.",
+     "autor": "Sen. Irajá",
+     "partido": "PSD",
+     "situacao": "Em tramitação, em conjunto com o PL 2633/2020; matéria com a relatoria",
+     "ultima_acao": "2025-09-11: recebidas as Emendas nºs 133 a 137 do Sen. Jaime Bagattoli; comunicado o recebimento ao relator, Sen. Marcos Rogério",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/146639",
+     "direcao": "fora do RILE",
+     "relacao": "Trata da titulação de ocupações em terras públicas, objeto da proposta."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 709/2023",
+     "ementa": "Altera a Lei nº 8.629/1993 para impedir que ocupantes e invasores de propriedades recebam benefícios de programas federais.",
+     "autor": "Dep. Marcos Pollon (origem na Câmara)",
+     "partido": "PL",
+     "situacao": "Aprovado na Câmara em maio de 2024; no Senado, aguardando despacho",
+     "ultima_acao": "2024-05-28: recebido no Senado; aguardando despacho",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/163848",
+     "direcao": "direita",
+     "relacao": "Busca reforçar a proteção do direito de propriedade contra ocupações, tema da 'segurança jurídica' citada na proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A titulação de ocupantes de terras da União e de assentados está em vigor pelas Leis 11.952/2009 e 13.465/2017; a segurança 'irreversível' do direito de propriedade não está em norma.",
+    "fonte": {
+     "titulo": "Lei nº 11.952/2009",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l11952.htm"
+    }
+   }
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe aprimorar a neoindustrialização, com foco em inovação, inteligência artificial e minerais críticos.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A proposta continua a política industrial atual (Nova Indústria Brasil), que usa instrumentos já previstos em lei, como os incentivos da Lei do Bem e da Lei de Inovação, o crédito do BNDES e da Finep e o FNDCT. Mudanças pontuais podem exigir lei, como ocorreu com a política de minerais críticos (Lei nº 15.506/2026).",
+     "fontes": [
+      {
+       "titulo": "Lei nº 11.196/2005 (Lei do Bem – incentivos à inovação)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+      },
+      {
+       "titulo": "Lei nº 10.973/2004 (Lei de Inovação)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm"
+      },
+      {
+       "titulo": "Lei nº 15.506/2026 (Política Nacional de Minerais Críticos e Estratégicos)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15506.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano informa valores passados (R$ 860 bilhões em financiamentos do Plano Mais Produção entre 2023 e 2026), mas não diz quanto custará a política no próximo mandato nem a fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Política industrial, crédito de bancos federais e incentivos tributários federais são competência da União; dar continuidade à política cabe no mandato, embora seus resultados sejam de longo prazo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 21, 22 e 174",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Revisão recente da literatura internacional conclui que estudos mais rigorosos têm visão mais favorável da política industrial, mas dependente de contexto e governança, e avaliações no Brasil mostram que os incentivos fiscais à pesquisa e desenvolvimento (Lei do Bem) aumentaram o investimento das empresas. Por outro lado, estudo sobre a expansão do crédito direcionado após 2008 encontrou benefício concentrado em empresas grandes e efeito insignificante sobre o investimento de companhias abertas.",
+     "estudos": [
+      {
+       "titulo": "The New Economics of Industrial Policy",
+       "autor": "Réka Juhász, Nathan Lane e Dani Rodrik (Annual Review of Economics)",
+       "ano": 2024,
+       "achado": "A nova geração de estudos empíricos, mais rigorosa, tem visão mais favorável da política industrial, com resultados que dependem do contexto, da governança e dos instrumentos usados.",
+       "url": "https://www.nber.org/papers/w31538",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "O que sabemos sobre a efetividade dos incentivos fiscais para P&D da Lei do Bem?",
+       "autor": "Fernanda De Negri (Ipea)",
+       "ano": 2021,
+       "achado": "Os cinco estudos com método adequado concluíram que a Lei do Bem aumenta o investimento privado em P&D ou a inovação, com efeitos de 7% a 80%; a base de avaliações ainda é pequena.",
+       "url": "https://www.ipea.gov.br/cts/pt/central-de-conteudo/artigos/artigos/269-o-que-sabemos-sobre-a-efetividade-dos-incentivos-fiscais-para-p-d-da-lei-do-bem",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "The after crisis government-driven credit expansion in Brazil: A firm level analysis",
+       "autor": "Marco Bonomo, Ricardo Brito e Bruno Martins (Journal of International Money and Finance)",
+       "ano": 2015,
+       "achado": "Empresas maiores, mais antigas e menos arriscadas foram as mais beneficiadas pelo crédito direcionado; o efeito sobre o investimento de companhias abertas foi insignificante.",
+       "url": "https://ideas.repec.org/a/eee/jimfin/v55y2015icp111-134.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empresas industriais e de tecnologia que recebem crédito subsidiado, incentivos fiscais e compras públicas; segundo o Ipea, empresas que usam a Lei do Bem ampliaram gastos em P&D.",
+    "quem_paga_ou_perde": "O Tesouro arca com subsídios de juros e renúncia fiscal; segundo Bonomo, Brito e Martins, o crédito direcionado tende a beneficiar empresas grandes, que já teriam acesso a financiamento.",
+    "fontes": [
+     {
+      "titulo": "Ipea – efetividade da Lei do Bem (2021)",
+      "url": "https://www.ipea.gov.br/cts/pt/central-de-conteudo/artigos/artigos/269-o-que-sabemos-sobre-a-efetividade-dos-incentivos-fiscais-para-p-d-da-lei-do-bem"
+     },
+     {
+      "titulo": "Bonomo, Brito e Martins (2015)",
+      "url": "https://ideas.repec.org/a/eee/jimfin/v55y2015icp111-134.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "tecnologia",
+    "indice": 11,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe o Estado como indutor da indústria e da inovação, com financiamento e incentivos dirigidos; Flávio propõe o Estado como regulador e coordenador, apoiado em capital privado e estrangeiro, inclusive nos minerais críticos."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2780/2024",
+     "ementa": "Institui a Política Nacional de Minerais Críticos e Estratégicos e o Comitê de Minerais Críticos e Estratégicos.",
+     "autor": "Dep. Duda Ramos e outros",
+     "partido": "PODE",
+     "situacao": "Transformado na Lei nº 15.506/2026",
+     "ultima_acao": "2026-09-28: recebido ofício do Senado que comunica a restituição do projeto sancionado (Lei nº 15.506, de 16/09/2026)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2447259",
+     "direcao": "fora do RILE",
+     "relacao": "Cria a política de minerais críticos que o plano aponta como foco estratégico da neoindustrialização."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2338/2023",
+     "ementa": "Dispõe sobre o desenvolvimento, o fomento e o uso ético e responsável da inteligência artificial.",
+     "autor": "Sen. Rodrigo Pacheco (aprovado pelo Senado)",
+     "partido": "PSD",
+     "situacao": "Em tramitação na Câmara; aguardando parecer",
+     "ultima_acao": "2026-09-02: notificação de apensação de proposições correlatas",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262",
+     "direcao": "esquerda",
+     "relacao": "Define as regras para desenvolver e usar IA no país, um dos focos da política industrial proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Política Nacional de Minerais Críticos e Estratégicos (Lei 15.506/2026) e os incentivos à inovação da Lei do Bem estão em vigor; os aprimoramentos propostos não foram definidos.",
+    "fonte": {
+     "titulo": "Lei nº 15.506/2026 (Política Nacional de Minerais Críticos e Estratégicos)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15506.htm"
+    }
+   }
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 1,
+   "candidato": "lula",
+   "proposta": "Propõe usar financiamento direcionado, compras públicas e benefícios condicionados a conteúdo local para apoiar a indústria.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Os instrumentos citados já existem em lei: a margem de preferência para produtos e serviços nacionais nas compras públicas (Lei nº 14.133/2021, art. 26), a política de conteúdo local no petróleo e gás (alterada pela Lei nº 15.075/2024) e o crédito de bancos públicos. Novas exigências de conteúdo local em outros setores ou novos benefícios tributários dependem de lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.133/2021 (Licitações e Contratos), art. 26",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm"
+      },
+      {
+       "titulo": "Lei nº 11.196/2005 (Lei do Bem)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo; cita financiamento direcionado com parceria entre crédito público e privado, compras públicas, concessões, regulações e benefícios condicionados a conteúdo local, além do uso do FNDCT.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Normas gerais de licitação (art. 22, XXVII, da Constituição), crédito dos bancos federais e tributos federais são competência da União; os instrumentos podem ser usados dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, XXVII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudo com dados brasileiros mostra que vencer contratos de compras federais aumentou o crescimento e o emprego das empresas, mas a OCDE e o TCU apontam evidência majoritariamente negativa ou inconclusiva sobre exigências de conteúdo local. Avaliação do crédito direcionado após 2008 encontrou benefício concentrado em empresas grandes e efeito insignificante sobre o investimento de companhias abertas.",
+     "estudos": [
+      {
+       "titulo": "Procuring Firm Growth: The Effects of Government Purchases on Firm Dynamics",
+       "autor": "Claudio Ferraz, Frederico Finan e Dimitri Szerman (NBER)",
+       "ano": 2015,
+       "achado": "Empresas brasileiras que venceram contratos federais cresceram 2,2 pontos percentuais a mais no trimestre, com efeito persistente após o fim do contrato.",
+       "url": "https://www.nber.org/papers/w21219",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Emerging Policy Issues: Localisation Barriers to Trade (OECD Trade Policy Paper 180)",
+       "autor": "Susan Stone, James Messent e Dorothee Flaig (OCDE)",
+       "ano": 2015,
+       "achado": "A evidência sobre exigências de conteúdo local é majoritariamente negativa: prejudicam a economia que as adota e reduzem exportações dos setores não cobertos.",
+       "url": "https://ideas.repec.org/p/oec/traaab/180-en.html",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Auditoria operacional na Política de Conteúdo Local no setor de petróleo e gás (Acórdão 1880/2026-Plenário)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2026,
+       "achado": "A política não tem objetivos, metas e indicadores definidos, e os dados disponíveis não permitem concluir sobre seus efeitos em emprego e renda; o TCU já havia apontado custos sem comprovação de benefícios em 2016.",
+       "url": "https://agenciainfra.com/blog/wp-content/uploads/2026/07/008.928-2025-8-AN-Auditoria-Politica-no-Setor-Petroleo-e-Gas-Natural.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "The after crisis government-driven credit expansion in Brazil: A firm level analysis",
+       "autor": "Marco Bonomo, Ricardo Brito e Bruno Martins (Journal of International Money and Finance)",
+       "ano": 2015,
+       "achado": "O crédito direcionado beneficiou mais empresas grandes, antigas e de menor risco e teve efeito insignificante sobre o investimento de companhias abertas.",
+       "url": "https://ideas.repec.org/a/eee/jimfin/v55y2015icp111-134.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Fornecedores nacionais beneficiados por preferência em compras públicas, exigência de conteúdo local e crédito em condições especiais; o estudo sobre compras federais mostra aumento de contratações nessas empresas.",
+    "quem_paga_ou_perde": "Segundo a OCDE e o TCU, exigências de conteúdo local elevam custos e prazos para quem compra, como a Petrobras e a própria União; subsídios de crédito recaem sobre o Tesouro.",
+    "fontes": [
+     {
+      "titulo": "TCU – Acórdão 1880/2026-Plenário",
+      "url": "https://agenciainfra.com/blog/wp-content/uploads/2026/07/008.928-2025-8-AN-Auditoria-Politica-no-Setor-Petroleo-e-Gas-Natural.pdf"
+     },
+     {
+      "titulo": "Ferraz, Finan e Szerman (2015)",
+      "url": "https://www.nber.org/papers/w21219"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3337/2024",
+     "ementa": "Dispõe sobre a transferência de excedentes de conteúdo local entre contratos de exploração e produção de petróleo e gás natural.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei nº 15.075/2024",
+     "ultima_acao": "2024-12-26: transformado na Lei Ordinária 15.075/2024 (DOU 27/12/2024)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2455557",
+     "direcao": "fora do RILE",
+     "relacao": "Alterou as regras de conteúdo local, um dos instrumentos que o plano propõe usar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5852/2025",
+     "ementa": "Altera a Lei nº 15.075/2024 e as leis do petróleo e da partilha para dispor sobre bonificações de conteúdo local em contratos de exploração e produção.",
+     "autor": "Dep. Lucas Abrahao",
+     "partido": "REDE",
+     "situacao": "Em tramitação; aguardando parecer na Comissão de Minas e Energia (CME)",
+     "ultima_acao": "2026-03-24: encerrado o prazo de emendas, com 4 emendas apresentadas",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2584883",
+     "direcao": "esquerda",
+     "relacao": "Mexe nos incentivos de conteúdo local do setor de petróleo e gás."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A margem de preferência a produtos nacionais em compras públicas (Lei 14.133/2021, art. 26) e a política de conteúdo local no petróleo e gás estão em vigor; novas exigências em outros setores não foram aprovadas.",
+    "fonte": {
+     "titulo": "Lei nº 14.133/2021, art. 26",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm"
+    }
+   }
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe infraestrutura computacional nacional, com supercomputadores e modelos de IA em português.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A infraestrutura de supercomputação e os modelos de IA em português fazem parte do Plano Brasileiro de Inteligência Artificial (PBIA 2024-2028), executado pelo MCTI com recursos do FNDCT, criados por lei; a continuidade depende de orçamento e de atos do Executivo. Incentivos tributários a data centers foram aprovados pela Lei nº 15.504/2026 (Redata).",
+     "fontes": [
+      {
+       "titulo": "Lei nº 10.973/2004 (Lei de Inovação)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm"
+      },
+      {
+       "titulo": "Lei nº 11.196/2005 (alterada pela Lei nº 15.504/2026 para instituir o Redata)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo nem fonte para os supercomputadores e os modelos de IA em português.",
+     "estimativa_externa": "Estimativa do próprio governo, não de órgão independente: o PBIA prevê cerca de R$ 23 bilhões até 2028, e o MCTI anunciou em 2025 R$ 1,8 bilhão do FNDCT para um novo supercomputador de IA.",
+     "fontes": [
+      {
+       "titulo": "Exame – Plano brasileiro de IA prevê R$ 23 bi, supercomputador e sistema para o SUS",
+       "url": "https://exame.com/inteligencia-artificial/plano-brasileiro-de-ia-preve-r-23-bi-supercomputador-e-sistema-para-o-sus"
+      },
+      {
+       "titulo": "Baguete – MCTI investe R$ 1,8 bi em supercomputador (25/09/2025)",
+       "url": "https://www.baguete.com.br/noticias/mcti-investe-r-18-bi-em-supercomputador"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Ciência e tecnologia são de competência comum (art. 23, V, da Constituição), mas o PBIA e o FNDCT são federais; o supercomputador anunciado tem previsão de ampliar a capacidade nacional até 2027.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23, V, e 218",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não localizamos avaliação de impacto de programas públicos de supercomputação para IA; a OCDE registrou em 2023 que nenhum país tinha dados ou plano específico para sua capacidade nacional de computação em IA. Há evidência técnica de que treinar modelos em português melhora o desempenho em tarefas na língua, mas ela não mede o efeito econômico de uma infraestrutura estatal.",
+     "estudos": [
+      {
+       "titulo": "A blueprint for building national compute capacity for artificial intelligence (OECD Digital Economy Papers nº 350)",
+       "autor": "OCDE",
+       "ano": 2023,
+       "achado": "Nenhum país tinha dados ou plano específico para capacidade nacional de computação em IA; o relatório propõe avaliar capacidade, efetividade e resiliência.",
+       "url": "https://oecd.ai/en/ai-publications/national-compute-blueprint",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Sabiá: Portuguese Large Language Models",
+       "autor": "Ramon Pires, Hugo Abonizio, Thales Sales Almeida e Rodrigo Nogueira (BRACIS)",
+       "ano": 2023,
+       "achado": "Continuar o treinamento de modelos com texto em português, com até 3% do custo original, superou modelos em inglês e multilíngues em 14 conjuntos de dados em português.",
+       "url": "https://arxiv.org/abs/2304.07880v2",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Pesquisadores, universidades, órgãos públicos e empresas que usariam capacidade de computação nacional e modelos treinados em português.",
+    "quem_paga_ou_perde": "O FNDCT e o orçamento federal financiam os equipamentos e sua operação; as fontes não identificam perdedores específicos.",
+    "fontes": [
+     {
+      "titulo": "Baguete – MCTI investe R$ 1,8 bi em supercomputador",
+      "url": "https://www.baguete.com.br/noticias/mcti-investe-r-18-bi-em-supercomputador"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2338/2023",
+     "ementa": "Dispõe sobre o desenvolvimento, o fomento e o uso ético e responsável da inteligência artificial.",
+     "autor": "Sen. Rodrigo Pacheco (aprovado pelo Senado)",
+     "partido": "PSD",
+     "situacao": "Em tramitação na Câmara; aguardando parecer",
+     "ultima_acao": "2026-09-02: notificação de apensação de proposições correlatas",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262",
+     "direcao": "esquerda",
+     "relacao": "Estabelece as regras para desenvolver e usar sistemas de IA, inclusive os modelos nacionais propostos."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 278/2026",
+     "ementa": "Altera a Lei nº 11.196/2005 para instituir o Regime Especial de Tributação para Serviços de Datacenter (Redata).",
+     "autor": "Dep. José Guimarães",
+     "partido": "PT",
+     "situacao": "Transformado na Lei nº 15.504/2026",
+     "ultima_acao": "2026-09-28: recebido ofício do Senado que comunica a restituição do projeto sancionado (Lei nº 15.504, de 15/09/2026)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2600838",
+     "direcao": "direita",
+     "relacao": "Cria incentivos tributários para data centers, parte da infraestrutura de computação citada no plano."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 7,
+   "candidato": "flavio",
+   "proposta": "Propõe digitalizar 100% dos serviços federais que puderem ser digitalizados e não pedir documentos que o governo já tem.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Lei do Governo Digital (Lei nº 14.129/2021) já prevê a prestação digital de serviços, e a Lei nº 13.726/2018 já dispensa a exigência de documentos que o poder público possa obter por conta própria; ampliar a digitalização federal depende de atos do Executivo e de orçamento.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 14.129/2021 (Lei do Governo Digital)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm"
+      },
+      {
+       "titulo": "Lei nº 13.726/2018 (racionaliza atos e procedimentos administrativos)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13726.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo; diz que o Brasil se tornou referência mundial em governo digital no governo Bolsonaro e que vai aprofundar essa liderança.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "A proposta trata só de serviços do governo federal, que a União organiza (art. 21 da Constituição); o plano não informa quantos serviços ainda faltam digitalizar, o que torna incerto atingir 100% no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontradas avaliações de impacto da digitalização de serviços federais; as fontes são uma auditoria e uma pesquisa descritiva. O TCU registrou ganhos de eficiência com a transformação digital, mas alertou para o risco de ampliar a desigualdade digital, e a TIC Domicílios 2025 contou 28 milhões de brasileiros que não usam internet, mais da metade com 60 anos ou mais.",
+     "estudos": [
+      {
+       "titulo": "Auditoria na governança das estratégias de transformação digital da administração pública federal (Acórdão 1784/2021-Plenário)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2021,
+       "achado": "Houve ganhos de eficiência na produção e entrega de serviços, mas o uso pela população é limitado entre os mais pobres e a transformação deve aumentar a desigualdade digital.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-avalia-governanca-das-estrategias-de-transformacao-digital-da-administracao-publica-federal",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "TIC Domicílios 2025",
+       "autor": "Cetic.br/NIC.br (divulgação MobileTime)",
+       "ano": 2025,
+       "achado": "157 milhões de pessoas (85%) usam internet e 28 milhões não usam; 16 milhões dos não usuários têm 60 anos ou mais e 14 milhões são da classe DE.",
+       "url": "https://www.mobiletime.com.br/noticias/09/12/2025/tic-domicilios-2025/",
+       "tipo": "imprensa"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Cidadãos com acesso à internet, que deixam de se deslocar e de reapresentar documentos; segundo o TCU, a administração ganha eficiência.",
+    "quem_paga_ou_perde": "Segundo o TCU e a TIC Domicílios, pessoas sem acesso ou habilidade digital, sobretudo idosos e mais pobres, podem ter mais dificuldade se o atendimento presencial for reduzido.",
+    "fontes": [
+     {
+      "titulo": "TCU – Acórdão 1784/2021",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-avalia-governanca-das-estrategias-de-transformacao-digital-da-administracao-publica-federal"
+     },
+     {
+      "titulo": "TIC Domicílios 2025 (MobileTime)",
+      "url": "https://www.mobiletime.com.br/noticias/09/12/2025/tic-domicilios-2025/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "tecnologia",
+    "indice": 6,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem ampliar serviços públicos digitais; Flávio fixa a meta de 100% dos serviços federais digitalizáveis e o fim da reapresentação de documentos, e Lula combina a universalização com uma Política Nacional de Letramento Digital."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3675/2026",
+     "ementa": "Altera as Leis nº 13.726/2018 e nº 14.129/2021 para vedar a exigência de reapresentar informações ou documentos já apresentados ou disponíveis em base de dados oficial.",
+     "autor": "Dep. Nikolas Ferreira",
+     "partido": "PL",
+     "situacao": "Em tramitação; aguardando designação de relator na Comissão de Administração e Serviço Público (CASP)",
+     "ultima_acao": "2026-10-13: recebimento pela CASP",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2639348",
+     "direcao": "fora do RILE",
+     "relacao": "Transforma em regra legal a promessa de não pedir ao cidadão documentos que o governo já tem."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2992/2026",
+     "ementa": "Altera o Estatuto da Pessoa Idosa e a Lei do Governo Digital para assegurar à pessoa idosa acesso facilitado aos serviços públicos e atendimento por múltiplos canais.",
+     "autor": "Dep. Eros Biondini",
+     "partido": "PL",
+     "situacao": "Em tramitação, em conjunto com outras proposições, na CASP",
+     "ultima_acao": "2026-10-13: devolvido ao relator, Dep. Bruno Farias (Republicanos-MG)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2631177",
+     "direcao": "fora do RILE",
+     "relacao": "Trata do acesso de idosos a serviços digitais, grupo apontado pelas fontes como o mais afetado pela digitalização."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 7843/2017",
+     "ementa": "Dispõe sobre princípios, regras e instrumentos para o Governo Digital e para o aumento da eficiência pública.",
+     "autor": "Dep. Alessandro Molon e outros",
+     "partido": "PSB",
+     "situacao": "Transformado na Lei nº 14.129/2021",
+     "ultima_acao": "2022-04-26: recebido ofício do Congresso sobre a restituição das partes vetadas promulgadas",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2141142",
+     "direcao": "fora do RILE",
+     "relacao": "É a lei que serve de base para a digitalização de serviços proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei do Governo Digital (Lei 14.129/2021) prevê a prestação digital de serviços e a Lei 13.726/2018 dispensa documentos que o poder público pode obter por conta própria; a meta de digitalizar 100% dos serviços é da proposta.",
+    "fonte": {
+     "titulo": "Lei nº 14.129/2021 (Lei do Governo Digital)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm"
+    }
+   }
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe uma Estratégia Nacional de IA para levar inteligência artificial a micro, pequenas e médias empresas.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Uma estratégia nacional de difusão de IA pode ser adotada por decreto ou portaria e executada com instrumentos já previstos na Lei de Inovação e no FNDCT; o plano não detalha medidas que exijam lei, como novos benefícios tributários.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 10.973/2004 (Lei de Inovação)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo nem fonte; diz que a estratégia difundirá IA às micro, pequenas e médias empresas em larga escala, com prioridade para indústria, agronegócio, saúde e logística.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Ciência, tecnologia e inovação são competência comum (art. 23, V, da Constituição), mas uma estratégia nacional e seus recursos são federais; lançar e executar a estratégia cabe no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23, V, e 218",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram localizadas avaliações de programas públicos de difusão de IA em pequenas empresas. Como contexto, estudo com mais de 5 mil atendentes encontrou ganho médio de 14% de produtividade com um assistente de IA generativa numa empresa, e estimativa macroeconômica projeta ganho de produtividade total de no máximo 0,66% em dez anos.",
+     "estudos": [
+      {
+       "titulo": "Generative AI at Work",
+       "autor": "Erik Brynjolfsson, Danielle Li e Lindsey Raymond (Quarterly Journal of Economics)",
+       "ano": 2025,
+       "achado": "O acesso a um assistente de IA generativa elevou em 14%, em média, os atendimentos resolvidos por hora, e em 34% entre trabalhadores novatos ou menos qualificados.",
+       "url": "https://www.nber.org/papers/w31161",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Simple Macroeconomics of AI",
+       "autor": "Daron Acemoglu (Economic Policy)",
+       "ano": 2025,
+       "achado": "Com base na exposição atual das tarefas, o ganho de produtividade total dos fatores em dez anos seria de no máximo 0,66%, ou menos de 0,53% considerando tarefas difíceis de aprender.",
+       "url": "https://www.nber.org/papers/w32487",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Micro, pequenas e médias empresas que adotarem IA e seus trabalhadores menos experientes, que segundo Brynjolfsson, Li e Raymond tiveram os maiores ganhos de produtividade.",
+    "quem_paga_ou_perde": "O orçamento federal arcaria com o programa; as fontes não estimam perdas específicas para as empresas atendidas.",
+    "fontes": [
+     {
+      "titulo": "Brynjolfsson, Li e Raymond – Generative AI at Work",
+      "url": "https://www.nber.org/papers/w31161"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2338/2023",
+     "ementa": "Dispõe sobre o desenvolvimento, o fomento e o uso ético e responsável da inteligência artificial.",
+     "autor": "Sen. Rodrigo Pacheco (aprovado pelo Senado)",
+     "partido": "PSD",
+     "situacao": "Em tramitação na Câmara; aguardando parecer",
+     "ultima_acao": "2026-09-02: notificação de apensação de proposições correlatas",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262",
+     "direcao": "esquerda",
+     "relacao": "Define as obrigações que empresas, inclusive pequenas, terão ao usar IA, o que afeta o custo de adoção."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "tecnologia",
+   "indice": 11,
+   "candidato": "flavio",
+   "proposta": "Propõe agregar valor aos minerais críticos no Brasil com o Estado como regulador e coordenador e atração de capital estrangeiro.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Política Nacional de Minerais Críticos e Estratégicos foi criada pela Lei nº 15.506/2026, e a Constituição já permite que empresas constituídas no Brasil, inclusive de capital estrangeiro, explorem recursos minerais por concessão da União (art. 176). Regulação, atração de investimento e aceleração de licenças e direitos minerários dependem sobretudo de atos do Executivo; mudanças no regime de licenciamento ambiental exigiriam lei.",
+     "fontes": [
+      {
+       "titulo": "Lei nº 15.506/2026 (Política Nacional de Minerais Críticos e Estratégicos)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15506.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 176",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo; diz que o Estado atuará como regulador e coordenador, 'não como empresário', e que vai equacionar garantias de crédito ao financiamento dos projetos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Recursos minerais são bens da União, e legislar sobre mineração é competência privativa da União (arts. 20, IX, e 22, XII, da Constituição); as medidas regulatórias cabem no mandato, mas a entrada em operação de novas plantas de processamento depende do investimento privado e pode levar mais tempo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 20, IX, e 22, XII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontradas avaliações de impacto de políticas de agregação de valor a minerais críticos comparáveis à proposta. As fontes são descritivas: estudo do Ipea aponta grande potencial geológico pouco convertido em produção, e análise de organizações independentes sobre o níquel na Indonésia registra alta do valor exportado com perdas ambientais e de renda local depois de alguns anos.",
+     "estudos": [
+      {
+       "titulo": "Qual a importância do Brasil na cadeia global de minerais críticos da transição energética?",
+       "autor": "Rafael da Silveira Soares Leão, Mariano Laio de Oliveira e Danúbia Rodrigues da Cunha (Ipea, com apoio da ANM)",
+       "ano": 2025,
+       "achado": "O Brasil tem grande potencial geológico, mas participação modesta na produção e no comércio; o aumento recente de investimento pode abrir um ciclo de expansão, com expectativas que devem ser realistas.",
+       "url": "https://www.jb.com.br/economia/2025/12/1057860-estudo-do-ipea-analisa-potencial-dos-minerais-criticos-no-brasil.html",
+       "tipo": "imprensa"
+      },
+      {
+       "titulo": "Debunking the Value-Added Myth in Nickel Downstream Industry",
+       "autor": "Centre for Research on Energy and Clean Air (CREA) e Center of Economic and Law Studies (CELIOS)",
+       "ano": 2024,
+       "achado": "Após a proibição de exportar minério, o valor exportado de níquel da Indonésia subiu de US$ 4 bilhões (2017) para US$ 34 bilhões (2022), mas os ganhos econômicos regionais se reduzem a partir do oitavo ano por perdas ambientais e de renda de agricultores e pescadores.",
+       "url": "https://energyandcleanair.org/wp/wp-content/uploads/2024/02/Press-release_CREA_Celios_Nickel-downstreaming_02-2024_EN.pdf",
+       "tipo": "think_tank"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empresas mineradoras e de transformação, inclusive estrangeiras, e regiões produtoras, que segundo o Ipea podem ter um novo ciclo de investimento.",
+    "quem_paga_ou_perde": "Segundo o estudo sobre a Indonésia, comunidades próximas a áreas de processamento podem arcar com custos de saúde, ambientais e perda de renda na agricultura e na pesca.",
+    "fontes": [
+     {
+      "titulo": "JB – Estudo do Ipea analisa potencial dos minerais críticos no Brasil",
+      "url": "https://www.jb.com.br/economia/2025/12/1057860-estudo-do-ipea-analisa-potencial-dos-minerais-criticos-no-brasil.html"
+     },
+     {
+      "titulo": "CREA/CELIOS (2024)",
+      "url": "https://energyandcleanair.org/wp/wp-content/uploads/2024/02/Press-release_CREA_Celios_Nickel-downstreaming_02-2024_EN.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "tecnologia",
+    "indice": 2,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem processar minerais críticos no Brasil em vez de exportá-los brutos; Flávio enfatiza o Estado como regulador e a atração de capital estrangeiro, e Lula propõe uma política específica dentro da política industrial com papel indutor do Estado."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2780/2024",
+     "ementa": "Institui a Política Nacional de Minerais Críticos e Estratégicos e o Comitê de Minerais Críticos e Estratégicos.",
+     "autor": "Dep. Duda Ramos e outros",
+     "partido": "PODE",
+     "situacao": "Transformado na Lei nº 15.506/2026",
+     "ultima_acao": "2026-09-28: recebido ofício do Senado que comunica a restituição do projeto sancionado (Lei nº 15.506, de 16/09/2026)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2447259",
+     "direcao": "fora do RILE",
+     "relacao": "É a lei que estrutura a política de minerais críticos sobre a qual a proposta atuaria."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 278/2026",
+     "ementa": "Altera a Lei nº 11.196/2005 para instituir o Regime Especial de Tributação para Serviços de Datacenter (Redata).",
+     "autor": "Dep. José Guimarães",
+     "partido": "PT",
+     "situacao": "Transformado na Lei nº 15.504/2026",
+     "ultima_acao": "2026-09-28: recebido ofício do Senado que comunica a restituição do projeto sancionado (Lei nº 15.504, de 15/09/2026)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2600838",
+     "direcao": "direita",
+     "relacao": "O plano liga os minerais críticos à demanda de data centers, que essa lei incentiva."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Política Nacional de Minerais Críticos e Estratégicos está em vigor pela Lei 15.506/2026; as medidas de atração de capital e de agregação de valor propostas dependem de atos do Executivo.",
+    "fonte": {
+     "titulo": "Lei nº 15.506/2026 (Política Nacional de Minerais Críticos e Estratégicos)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15506.htm"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2266 @@
+{
+ "grupo": "g2",
+ "temas": [
+  "pequenos-negocios",
+  "seguranca",
+  "educacao"
+ ],
+ "itens": [
+  {
+   "tema": "pequenos-negocios",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe simplificar o ambiente de negócios, ampliar as vendas de pequenas empresas ao governo e garantir a elas tratamento tributário justo na reforma tributária.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O tratamento diferenciado de micro e pequenas empresas em compras públicas já existe (arts. 42 a 49 da Lei Complementar 123/2006, aplicados pela Lei 14.133/2021, art. 4º); ampliá-lo pode ser feito por gestão e decreto, e regras novas exigiriam lei complementar. O tratamento tributário na reforma está em lei complementar já aprovada (LC 214/2025).",
+     "fontes": [
+      {
+       "titulo": "Lei Complementar 123/2006, arts. 42 a 49",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm"
+      },
+      {
+       "titulo": "Lei 14.133/2021, art. 4º",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 179",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima custo nem efeito sobre preços pagos pelo governo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A Constituição manda União, estados e municípios darem tratamento diferenciado às micro e pequenas empresas (art. 179); a União pode ampliar o acesso nas suas compras dentro do mandato, mas não nas compras de estados e municípios.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 179",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "No Brasil, empresas que venceram contratos federais cresceram mais e contrataram sobretudo pessoas antes desempregadas ou informais. No Japão, a reserva de contratos para pequenas e médias empresas manteve a concorrência, enquanto estudo dos EUA mostra que o efeito das preferências depende de como elas mudam a participação das empresas.",
+     "estudos": [
+      {
+       "titulo": "Procuring Firm Growth: The Effects of Government Purchases on Firm Dynamics",
+       "autor": "Claudio Ferraz, Frederico Finan e Dimitri Szerman (NBER)",
+       "ano": 2015,
+       "achado": "Vencer ao menos um contrato federal em um trimestre elevou o crescimento da empresa em 2,2 pontos percentuais, com efeito que persiste após o contrato.",
+       "url": "https://www.nber.org/papers/w21219",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Small business set-asides in procurement auctions: An empirical analysis",
+       "autor": "Jun Nakabayashi (Journal of Public Economics)",
+       "ano": 2013,
+       "achado": "Sem as reservas, cerca de 40% das PMEs japonesas sairiam das licitações, e a menor concorrência elevaria o custo do governo mais do que o ganho de eficiência.",
+       "url": "https://ideas.repec.org/a/eee/pubeco/v100y2013icp28-44.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Bid Preference Programs and Participation in Highway Procurement Auctions",
+       "autor": "Elena Krasnokutskaya e Katja Seim (American Economic Review)",
+       "ano": 2011,
+       "achado": "Na Califórnia, considerar como as empresas mudam a participação altera de forma significativa a avaliação das preferências a pequenas empresas.",
+       "url": "https://ideas.repec.org/a/aea/aecrev/v101y2011i6p2653-86.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Micro e pequenas empresas que passam a vencer contratos públicos e seus novos empregados, segundo Ferraz, Finan e Szerman.",
+    "quem_paga_ou_perde": "Empresas maiores perdem espaço em parte das licitações; o efeito sobre o preço pago pelo governo depende do desenho da preferência, segundo os estudos de leilões.",
+    "fontes": [
+     {
+      "titulo": "Ferraz, Finan e Szerman (2015)",
+      "url": "https://www.nber.org/papers/w21219"
+     },
+     {
+      "titulo": "Nakabayashi (2013)",
+      "url": "https://ideas.repec.org/a/eee/pubeco/v100y2013icp28-44.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "pequenos-negocios",
+    "indice": 7,
+    "candidato": "flavio",
+    "diferenca": "Os dois falam em simplificar o ambiente de negócios; Lula combina isso com mais acesso a compras públicas e tratamento tributário na reforma, e Flávio propõe um revogaço de normas."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 68/2024 (Lei Complementar 214/2025)",
+     "ementa": "Institui o IBS, a CBS e o Imposto Seletivo, regulamentando a reforma tributária, inclusive para optantes do Simples Nacional.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei Complementar 214/2025",
+     "ultima_acao": "2025-07-07: recebido ofício do Senado sobre a promulgação de partes vetadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2430143",
+     "direcao": "fora do RILE",
+     "relacao": "Define o tratamento tributário das pequenas empresas na reforma que a proposta quer assegurar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PLP",
+     "numero": "PLP 108/2021",
+     "ementa": "Altera a LC 123/2006 para elevar o limite do MEI a R$ 130 mil anuais e permitir que contrate até 2 empregados.",
+     "autor": "Senado Federal (Senador Jayme Campos)",
+     "partido": "UNIÃO-MT",
+     "situacao": "Aguardando parecer na Câmara",
+     "ultima_acao": "2026-08-24: apresentado requerimento de apensação do PLP 186/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2295251",
+     "direcao": "direita",
+     "relacao": "Mexe no regime simplificado das menores empresas, parte do “ambiente de negócios” citado."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O tratamento diferenciado a micro e pequenas empresas nas compras públicas (LC 123/2006, arts. 42 a 49) e o regime do Simples Nacional na reforma (LC 214/2025) estão em vigor; a ampliação proposta não foi definida.",
+    "fonte": {
+     "titulo": "Lei Complementar nº 123/2006",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm"
+    }
+   }
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 1,
+   "candidato": "lula",
+   "proposta": "Propõe ampliar o crédito para micro, pequenas e médias empresas por meio de fundos garantidores.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "Os fundos garantidores já existem (participação da União no FGO e no FGI pela Lei 12.087/2009) e o Pronampe foi tornado permanente (Lei 13.999/2020, alterada pela Lei 15.076/2024); ampliar o crédito depende de novos aportes da União, autorizados no orçamento.",
+     "fontes": [
+      {
+       "titulo": "Lei 12.087/2009 (fundos garantidores)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12087.htm"
+      },
+      {
+       "titulo": "Lei 13.999/2020 (Pronampe)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13999.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que seguirá potencializando o crédito por meio dos fundos garantidores, sem informar valores de aporte nem fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Política de crédito é competência da União (art. 22, VII, da Constituição) e os fundos já operam; novos aportes podem ser feitos a cada orçamento anual.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, VII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudos na França e no Japão mostram que garantias públicas ampliam o crédito e, na França, aceleram o crescimento de empresas novas. Os mesmos estudos encontram mais falências ou pior desempenho posterior entre parte das empresas beneficiadas; não foi localizada avaliação de impacto publicada do Pronampe.",
+     "estudos": [
+      {
+       "titulo": "Entrepreneurship and Credit Constraints: Evidence from a French Loan Guarantee Program",
+       "autor": "Claire Lelarge, David Sraer e David Thesmar (NBER)",
+       "ano": 2010,
+       "achado": "Empresas novas com garantia cresceram mais em emprego e capital e pagaram juros menores, mas faliram com mais frequência.",
+       "url": "https://ideas.repec.org/h/nbr/nberch/8218.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Effectiveness of Public Credit Guarantees in the Japanese Loan Market",
+       "autor": "Iichiro Uesugi, Koji Sakai e Guy M. Yamashiro (Journal of the Japanese and International Economies)",
+       "ano": 2010,
+       "achado": "O programa japonês de 1998-2001 ampliou o crédito, mas o desempenho posterior das participantes, exceto as de patrimônio elevado, piorou em relação às não participantes.",
+       "url": "https://ideas.repec.org/a/eee/jjieco/v24y2010i4p457-480.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Micro, pequenas e médias empresas que obtêm crédito com juros menores, segundo os estudos.",
+    "quem_paga_ou_perde": "A União, que aporta recursos nos fundos e cobre parte das perdas quando os empréstimos não são pagos.",
+    "fontes": [
+     {
+      "titulo": "Lelarge, Sraer e Thesmar (2010)",
+      "url": "https://ideas.repec.org/h/nbr/nberch/8218.html"
+     },
+     {
+      "titulo": "Lei 12.087/2009",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12087.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "pequenos-negocios",
+    "indice": 10,
+    "candidato": "flavio",
+    "diferenca": "Os dois querem facilitar o crédito a pequenos negócios; Lula aposta em fundos garantidores que cobrem parte do risco dos bancos, e Flávio em transformar a CAIXA em banco de crédito e orientação para empreender."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 6012/2023 (Lei 15.076/2024)",
+     "ementa": "Altera as leis do Pronampe e dos fundos garantidores para tornar permanentes os recursos do Pronampe.",
+     "autor": "Senado Federal (Senador Esperidião Amin e outros)",
+     "partido": "PP-SC",
+     "situacao": "Transformado na Lei 15.076/2024",
+     "ultima_acao": "2025-02-06: recebido ofício do Senado que comunica a restituição do projeto sancionado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2467306",
+     "direcao": "direita",
+     "relacao": "Tornou permanente o Pronampe, principal programa apoiado em fundo garantidor."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1213/2024",
+     "ementa": "Instituía o Programa Acredita no Primeiro Passo e alterava o Pronampe, entre outros programas de crédito.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Perdeu a eficácia; o Programa Acredita foi depois instituído pela Lei 14.995/2024",
+     "ultima_acao": "2024-10-23: recebido ofício que comunica o término do prazo para decreto legislativo.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2428579",
+     "direcao": "direita",
+     "relacao": "Ampliou o uso de garantias e crédito a microempreendedores, na linha da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Os fundos garantidores (Lei 12.087/2009) e o Pronampe (Lei 13.999/2020) estão em vigor; a ampliação depende de novos aportes da União.",
+    "fonte": {
+     "titulo": "Lei nº 13.999/2020 (Pronampe)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13999.htm"
+    }
+   }
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 4,
+   "candidato": "lula",
+   "proposta": "Propõe fortalecer a Economia Popular e Solidária, com apoio a cooperativas, crédito orientado e acesso a compras públicas.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Política Nacional de Economia Solidária e o Sistema Nacional de Economia Solidária foram criados pela Lei 15.068/2024 e regulamentados pelo Decreto 12.784/2025; fortalecê-los com crédito orientado e acesso a compras públicas é execução dessa política.",
+     "fontes": [
+      {
+       "titulo": "Lei 15.068/2024 (Lei Paul Singer)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15068.htm"
+      },
+      {
+       "titulo": "Decreto 12.784/2025",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12784.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima custo nem fonte para o apoio a cooperativas e o crédito orientado.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A lei cria um sistema nacional com participação de União, estados e municípios; a União pode ampliar programas e compras públicas dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Lei 15.068/2024",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15068.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foi localizada avaliação de impacto sobre renda ou emprego dos programas federais de economia solidária. Os estudos do Ipea disponíveis são descritivos: mostram empreendimentos muito heterogêneos e avaliam o funcionamento de incubadoras, sem medir efeito causal.",
+     "estudos": [
+      {
+       "titulo": "Análise das dimensões socioestruturais dos empreendimentos de economia solidária no Brasil (Texto para Discussão 2271)",
+       "autor": "Sandro Pereira Silva (Ipea)",
+       "ano": 2017,
+       "achado": "Com dados do Sistema de Informações da Economia Solidária, o estudo descreve os empreendimentos e confirma sua heterogeneidade estrutural, sem medir impacto.",
+       "url": "https://repositorio.ipea.gov.br/server/api/core/bitstreams/c7b31964-d5a0-42ef-af6f-1a6a27b5c4c2/content",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "A avaliação do Proninc 2017: metodologia e resultados (Boletim Mercado de Trabalho 63)",
+       "autor": "Camille Perissé, Felipe Addor e outros (Soltec/UFRJ, publicado pelo Ipea)",
+       "ano": 2017,
+       "achado": "Avaliação qualitativa e participativa das incubadoras de cooperativas apontou seu papel na articulação de políticas locais, sem estimativa de efeito sobre renda.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/10299/9/bmt_63_avaliacao_proninc.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Cooperativas e grupos de trabalhadores como catadores, artesãos e agricultores familiares, público atendido pelas incubadoras segundo a avaliação do Proninc.",
+    "quem_paga_ou_perde": "A União e os demais entes financiam crédito e apoio técnico; as fontes não identificam grupo prejudicado nem quantificam o custo.",
+    "fontes": [
+     {
+      "titulo": "Avaliação do Proninc 2017",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/10299/9/bmt_63_avaliacao_proninc.pdf"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4685/2012 (Lei 15.068/2024)",
+     "ementa": "Dispõe sobre a Política Nacional de Economia Solidária e cria o Sistema Nacional de Economia Solidária.",
+     "autor": "Paulo Teixeira e outros",
+     "partido": "PT-SP",
+     "situacao": "Transformado na Lei 15.068/2024, sem vetos",
+     "ultima_acao": "2025-05-13: matéria arquivada no Senado após a sanção.",
+     "url": "https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pl-4685-2012",
+     "direcao": "fora do RILE",
+     "relacao": "Criou a política que a proposta pretende fortalecer."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4784/2026",
+     "ementa": "Dispõe sobre a criação e o funcionamento de Cooperativas Solidárias.",
+     "autor": "Fernando Mineiro e outros",
+     "partido": "PT-RN",
+     "situacao": "Aguardando despacho do presidente da Câmara",
+     "ultima_acao": "2026-07-24: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2641582",
+     "direcao": "fora do RILE",
+     "relacao": "Cria uma forma jurídica específica para cooperativas solidárias."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4446/2026",
+     "ementa": "Institui a Política Nacional de Fortalecimento dos Circuitos Econômicos Locais e da Economia Popular.",
+     "autor": "Duda Ramos",
+     "partido": "PODE-RR",
+     "situacao": "Aguardando despacho do presidente da Câmara",
+     "ultima_acao": "2026-07-17: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2641133",
+     "direcao": "fora do RILE",
+     "relacao": "Trata da economia popular, público prioritário citado na proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Política Nacional de Economia Solidária está em vigor pela Lei 15.068/2024, regulamentada pelo Decreto 12.784/2025; o reforço proposto depende de execução.",
+    "fonte": {
+     "titulo": "Lei nº 15.068/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15068.htm"
+    }
+   }
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 6,
+   "candidato": "flavio",
+   "proposta": "Propõe levar as regras da Lei de Liberdade Econômica a todos os estados e municípios.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Lei 13.874/2019 já se declara norma geral de direito econômico a ser observada por estados e municípios nos atos de liberação de atividade (art. 1º, § 4º) e prevê classificação federal de baixo risco quando falta lei local (art. 3º, § 1º); levá-la a todo o país depende de cada ente adaptar suas normas, porque a competência é concorrente e municipal (arts. 24, I, e 30, I).",
+     "fontes": [
+      {
+       "titulo": "Lei 13.874/2019 (Lei de Liberdade Econômica)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13874.htm"
+      },
+      {
+       "titulo": "Constituição Federal, arts. 24 e 30",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não estima custo; a medida é de natureza regulatória.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "depende_estados_municipios",
+     "prazo": "incerto",
+     "explicacao": "A União só edita normas gerais; licenciamento e alvarás de interesse local são regulados por estados e municípios, que precisam aprovar ou ajustar suas próprias regras.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 30, I",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "No México, avaliações da simplificação do registro de empresas município a município encontraram cerca de 5% mais empresas novas, efeito em parte temporário segundo um dos estudos. No Brasil, uma dissertação encontrou efeito da Lei de Liberdade Econômica sobre o saldo de empregos, sem efeito significativo sobre o tempo de abertura de empresas.",
+     "estudos": [
+      {
+       "titulo": "License to Sell: The Effect of Business Registration Reform on Entrepreneurial Activity in Mexico",
+       "autor": "Miriam Bruhn (Review of Economics and Statistics)",
+       "ano": 2011,
+       "achado": "A reforma elevou em cerca de 5% o número de empresas registradas e em 2,2% o emprego assalariado, com queda de 3% na renda das empresas já existentes.",
+       "url": "https://ideas.repec.org/a/tpr/restat/v93y2011i1p382-386.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Entry regulation and business start-ups: Evidence from Mexico",
+       "autor": "David S. Kaplan, Eduardo Piedra e Enrique Seira (Journal of Public Economics)",
+       "ano": 2011,
+       "achado": "As novas empresas aumentaram cerca de 5% nos setores elegíveis, efeito em grande parte temporário e bem menor que o divulgado pelo governo e pelo Banco Mundial.",
+       "url": "https://ideas.repec.org/a/eee/pubeco/v95y2011i11p1501-1515.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Impactos da Lei da Liberdade Econômica em indicadores no mercado de trabalho e no tempo de abertura de empresas",
+       "autor": "André Vechi (dissertação, UDESC)",
+       "ano": 2024,
+       "achado": "A lei elevou o saldo de empregos em atividades de baixo risco, sobretudo no Sul e Sudeste, sem efeito significativo sobre tempo de abertura e alvarás.",
+       "url": "https://sistemabu.udesc.br/pergamumweb/vinculos/0000c8/0000c895.pdf",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Quem abre negócio de baixo risco, com menos licenças exigidas; os estudos do México registram mais empresas formais e mais emprego assalariado.",
+    "quem_paga_ou_perde": "Empresas já estabelecidas enfrentam mais concorrência (queda de 3% na renda no México, segundo Bruhn); órgãos locais perdem parte do controle prévio sobre atividades.",
+    "fontes": [
+     {
+      "titulo": "Bruhn (2011)",
+      "url": "https://ideas.repec.org/a/tpr/restat/v93y2011i1p382-386.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "pequenos-negocios",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem simplificar o ambiente de negócios; Flávio pela extensão das regras da Lei de Liberdade Econômica a estados e municípios, e Lula sem especificar instrumento, junto com compras públicas e tratamento tributário."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 4783/2020",
+     "ementa": "Institui o Código de Defesa do Empreendedor.",
+     "autor": "Câmara dos Deputados (autor original: Dep. Vinicius Poit e outros)",
+     "partido": "NOVO-SP",
+     "situacao": "Com a relatoria na Comissão de Assuntos Econômicos do Senado",
+     "ultima_acao": "2025-05-22: devolvido ao relator, Senador Alan Rick, para reexame.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/155615",
+     "direcao": "direita",
+     "relacao": "Amplia garantias ao empreendedor diante de exigências do poder público, na linha da Lei de Liberdade Econômica."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 1040/2021 (Lei 14.195/2021)",
+     "ementa": "Facilitou a abertura de empresas, entre outras medidas de ambiente de negócios.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 14.195/2021)",
+     "ultima_acao": "2021-10-28: recebido ofício que comunica o término do prazo para decreto legislativo.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2275840",
+     "direcao": "direita",
+     "relacao": "Alterou a Lei de Liberdade Econômica e simplificou a abertura de empresas."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 13.874/2019 já se declara norma geral a ser observada por estados e municípios e prevê classificação federal de baixo risco quando falta norma local; a adaptação das regras locais depende de cada ente.",
+    "fonte": {
+     "titulo": "Lei nº 13.874/2019 (Lei de Liberdade Econômica)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13874.htm"
+    }
+   }
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 7,
+   "candidato": "flavio",
+   "proposta": "Propõe um amplo “revogaço regulatório”, revisando normas obsoletas e simplificando procedimentos.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Revisar e revogar decretos, portarias e outras normas infralegais é ato do Executivo (art. 84, IV e VI, a, da Constituição), como no Decreto 10.139/2019, que mandou revisar os atos inferiores a decreto e foi revogado pelo Decreto 12.002/2024; revogar normas previstas em lei exigiria aprovação do Congresso.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 84, IV e VI",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Decreto 10.139/2019 (revisão e consolidação de atos normativos, revogado)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d10139.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não estima custo; a medida é de revisão normativa.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A revisão das normas federais cabe ao Executivo federal e pode ser feita no mandato; normas de estados e municípios ficam fora do alcance da União.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 84",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Um estudo sobre a Colúmbia Britânica (Canadá) associa o corte de cerca de 36% das regulações a crescimento econômico maior. Uma revisão feita para o governo britânico concluiu que o efeito da regulação sobre o crescimento pode ser positivo ou negativo conforme o tipo de norma, e que contar normas não capta sua qualidade.",
+     "estudos": [
+      {
+       "titulo": "Regulation and Economic Growth: Evidence from British Columbia’s Experiment in Regulatory Budgeting",
+       "autor": "Bentley Coffey e Patrick A. McLaughlin (Mercatus Center, working paper)",
+       "ano": 2021,
+       "achado": "Após o orçamento regulatório de 2001, a taxa de crescimento da província subiu cerca de 25% em relação a outras províncias.",
+       "url": "https://www.mercatus.org/system/files/mclaughlin_and_coffey_-_working_paper_-_regulation_and_economic_growth_evidence_from_british_columbias_experiment_in_regulatory_budgeting_-_v1.pdf",
+       "tipo": "think_tank"
+      },
+      {
+       "titulo": "The impact of regulation on growth",
+       "autor": "Frontier Economics (para o Department for Business, Innovation and Skills, Reino Unido)",
+       "ano": 2012,
+       "achado": "A relação entre regulação e crescimento pode ser positiva ou negativa conforme o tipo de regulação, e a força da evidência varia por área.",
+       "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/32107/12-821-impact-of-regulation-on-growth.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empresas, inclusive pequenas, com menos exigências e procedimentos, segundo a justificativa do plano e o estudo canadense.",
+    "quem_paga_ou_perde": "Depende das normas revogadas: segundo a revisão britânica, o efeito varia com o tipo de regulação; o plano não lista quais normas seriam retiradas nem quem elas protegem hoje.",
+    "fontes": [
+     {
+      "titulo": "Frontier Economics (2012)",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/32107/12-821-impact-of-regulation-on-growth.pdf"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "pequenos-negocios",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem simplificar o ambiente de negócios; Flávio por um revogaço amplo de normas, e Lula sem detalhar o instrumento, junto com compras públicas e tratamento tributário."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3066/2026",
+     "ementa": "Institui o Marco Nacional de Modernização Econômica e Simplificação Regulatória.",
+     "autor": "Josenildo",
+     "partido": "PDT-AP",
+     "situacao": "Aguardando designação de relator na Comissão de Administração e Serviço Público",
+     "ultima_acao": "2026-08-20: recebimento pela comissão.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2631841",
+     "direcao": "direita",
+     "relacao": "Propõe por lei um programa de simplificação regulatória com objetivo semelhante ao revogaço."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "pequenos-negocios",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe transformar a CAIXA em “Banco da Prosperidade”, reunindo crédito, orientação financeira, apoio a empreender e habitação.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "A CAIXA é empresa pública federal criada por decreto-lei (Decreto-Lei 759/1969) e já pode operar crédito, inclusive a empreendedores; reorientar sua atuação depende de decisões do governo como controlador e de mudanças no estatuto, sem necessidade de nova lei.",
+     "fontes": [
+      {
+       "titulo": "Decreto-Lei 759/1969 (constituição da Caixa Econômica Federal)",
+       "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0759.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa volume de crédito, custo de subsídios nem fonte de recursos para o Banco da Prosperidade.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A CAIXA é controlada pela União e a política de crédito é competência federal (art. 22, VII, da Constituição); a mudança pode ser feita dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, VII",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "No Brasil, bancos públicos ampliaram o crédito na crise de 2008-2009 e amorteceram a perda de empregos, mas o mesmo estudo encontrou alocação com motivação política e menor ganho de produtividade. Estudos internacionais associam a propriedade estatal de bancos a menor crescimento e encontram efeitos moderados, não transformadores, do microcrédito.",
+     "estudos": [
+      {
+       "titulo": "Bank ownership, lending, and local economic performance during the 2008–2009 financial crisis",
+       "autor": "Nicholas Coleman e Leo Feler (Journal of Monetary Economics)",
+       "ano": 2015,
+       "achado": "Municípios com mais presença de bancos públicos tiveram mais crédito e melhor emprego na crise, mas com alocação política, ineficiente e menor crescimento da produtividade.",
+       "url": "https://ideas.repec.org/a/eee/moneco/v71y2015icp50-66.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Government Ownership of Banks",
+       "autor": "Rafael La Porta, Florencio Lopez-de-Silanes e Andrei Shleifer (NBER; Journal of Finance, 2002)",
+       "ano": 2000,
+       "achado": "A maior participação estatal nos bancos está associada a desenvolvimento financeiro e crescimento da renda per capita mais lentos.",
+       "url": "https://www.nber.org/papers/w7620",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Six Randomized Evaluations of Microcredit: Introduction and Further Steps",
+       "autor": "Abhijit Banerjee, Dean Karlan e Jonathan Zinman (American Economic Journal: Applied Economics)",
+       "ano": 2015,
+       "achado": "Em seis experimentos em quatro continentes, o microcrédito teve efeitos moderadamente positivos, mas não transformadores.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/app.20140287",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Pessoas e pequenos empreendedores que obtêm crédito e orientação na CAIXA; em crises, municípios com mais crédito público tiveram melhor emprego, segundo Coleman e Feler.",
+    "quem_paga_ou_perde": "A União, como controladora, assume o risco das operações; os estudos apontam risco de alocação política do crédito e de menor produtividade.",
+    "fontes": [
+     {
+      "titulo": "Coleman e Feler (2015)",
+      "url": "https://ideas.repec.org/a/eee/moneco/v71y2015icp50-66.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "pequenos-negocios",
+    "indice": 1,
+    "candidato": "lula",
+    "diferenca": "Os dois querem facilitar o crédito a pequenos negócios; Flávio propõe que a CAIXA concentre crédito, orientação e apoio a empreender, e Lula propõe ampliar fundos garantidores que reduzem o risco dos bancos."
+   },
+   "proposicoes": [],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "seguranca",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe criar o Ministério da Segurança Pública, depois de aprovada a PEC da Segurança, para coordenar com estados e municípios as políticas do setor.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "A criação de ministério depende de lei (art. 88 da Constituição), que pode começar por medida provisória, como ocorreu em 2018 (MP 821, convertida na Lei 13.690/2018). O plano condiciona a criação à aprovação da PEC da Segurança Pública (PEC 18/2025), que exige 3/5 nas duas Casas.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 88 e art. 60",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 13.690/2018 (criou o Ministério da Segurança Pública em 2018)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13690.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima o custo da nova estrutura ministerial.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Organizar a administração federal é competência da União, mas o plano liga o ministério à PEC 18/2025, que está pronta para o Plenário do Senado e ainda precisa de dois turnos de votação.",
+     "fontes": [
+      {
+       "titulo": "Senado: PEC 18/2025",
+       "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foi encontrada avaliação sobre o efeito de ter um ministério próprio de segurança pública sobre indicadores de crime; o ministério criado em 2018 não teve avaliação de resultados localizada. Auditoria do TCU e estudo da UnB apontam fragilidades na coordenação entre União e estados e no uso dos recursos federais, problema que a proposta diz querer enfrentar.",
+     "estudos": [
+      {
+       "titulo": "Acórdão 2009/2015 – Plenário (auditoria de governança da segurança pública e convênios da Senasp)",
+       "autor": "Tribunal de Contas da União",
+       "ano": 2015,
+       "achado": "Bens comprados com recursos federais por convênios em estados ficaram sem uso ou com destinação diversa, e o TCU determinou cláusula de devolução nos convênios da Senasp.",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-fiscaliza-recursos-destinados-a-seguranca-publica-em-diversos-estados",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Coordenação federativa: análise da eficiência na alocação de recursos federais da área de segurança pública (2019-2022)",
+       "autor": "Agnaldo do Nascimento Filho (UnB, trabalho de especialização)",
+       "ano": 2024,
+       "achado": "Encontrou dissonâncias na aplicação dos recursos, distorções criadas por emendas parlamentares e fragilidade da governança e da coordenação do Susp.",
+       "url": "https://bdm.unb.br/bitstream/10483/41073/1/2024_AgnaldoDoNascimentoFilho_tcc.pdf",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Estados e municípios teriam um órgão federal dedicado à coordenação da segurança pública, segundo a justificativa da proposta e da PEC.",
+    "quem_paga_ou_perde": "A União arca com a nova estrutura; o Ministério da Justiça perde as áreas que seriam transferidas. As fontes não quantificam esses efeitos.",
+    "fontes": [
+     {
+      "titulo": "Lei 13.690/2018",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13690.htm"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PEC",
+     "numero": "PEC 18/2025",
+     "ementa": "PEC da Segurança Pública: altera competências da União, dos estados e dos municípios em segurança pública e o art. 144 da Constituição.",
+     "autor": "Poder Executivo (aprovada pela Câmara)",
+     "partido": "não se aplica",
+     "situacao": "Pronta para deliberação do Plenário do Senado, com calendário especial",
+     "ultima_acao": "2026-10-19: aguardando inclusão em Ordem do Dia para discussão em primeiro turno; retirada de pauta em 15/10/2026.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172997",
+     "direcao": "direita",
+     "relacao": "O plano condiciona a criação do ministério à aprovação desta PEC."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "MPV",
+     "numero": "MPV 821/2018 (Lei 13.690/2018)",
+     "ementa": "Criou o Ministério Extraordinário da Segurança Pública, depois Ministério da Segurança Pública.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformada em norma jurídica (Lei 13.690/2018)",
+     "ultima_acao": "2018-10-18: comunicado o término do prazo para decreto legislativo e a extinção da comissão mista.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2168386",
+     "direcao": "direita",
+     "relacao": "Precedente de criação de um ministério próprio de segurança pública por medida provisória."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "seguranca",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe manter o controle de armas e munições, melhorar o rastreamento e reforçar a fiscalização sobre CACs e segurança privada.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O controle de armas vigente vem do Estatuto do Desarmamento (Lei 10.826/2003) e do Decreto 11.615/2023, que o regulamenta; manter as regras e reforçar rastreamento e fiscalização sobre CACs e segurança privada pode ser feito por decreto e ato administrativo da Polícia Federal e do Exército.",
+     "fontes": [
+      {
+       "titulo": "Lei 10.826/2003 (Estatuto do Desarmamento)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm"
+      },
+      {
+       "titulo": "Decreto 11.615/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11615.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima o custo de ampliar a fiscalização da Polícia Federal e do Exército nem do aprimoramento do rastreamento de armas e munições.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Autorizar e fiscalizar a produção e o comércio de material bélico é competência da União (art. 21, VI, da Constituição); a medida continua política em vigor, mas pode ser alterada pelo Congresso por decreto legislativo ou lei.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 21 e 22",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudo do Ipea associa a política de desarmamento a queda de homicídios em São Paulo, sem efeito sobre crimes patrimoniais, e um estudo dos EUA associa leis de porte mais permissivas a mais crime violento. Uma revisão do National Research Council dos EUA (2005) concluiu que os dados disponíveis eram fracos demais para conclusões firmes sobre leis de armas.",
+     "estudos": [
+      {
+       "titulo": "Menos armas, menos crimes (Texto para Discussão 1721)",
+       "autor": "Daniel Cerqueira e João Manoel Pinho de Mello (Ipea)",
+       "ano": 2012,
+       "achado": "A política de desarmamento em São Paulo entre 2001 e 2007 foi um dos fatores da queda de homicídios (elasticidade em torno de 2,0), sem efeito encontrado sobre latrocínio, roubo de veículos e tráfico.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/2927/1/TD_1721.pdf",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Right-to-Carry Laws and Violent Crime: A Comprehensive Assessment Using Panel Data and a State-Level Synthetic Control Analysis",
+       "autor": "John J. Donohue, Abhay Aneja e Kyle D. Weber (NBER)",
+       "ano": 2017,
+       "achado": "Dez anos após adotarem leis de porte permissivas, estados dos EUA tinham crime violento cerca de 13% a 15% maior que o controle sintético.",
+       "url": "https://www.nber.org/papers/w23510",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Firearms and Violence: A Critical Review",
+       "autor": "National Research Council (EUA)",
+       "ano": 2005,
+       "achado": "O comitê concluiu que os dados eram fracos demais para conclusões inequívocas sobre efeitos de políticas de armas, inclusive leis de porte.",
+       "url": "https://www.nationalacademies.org/read/10881/chapter/2",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo o estudo do Ipea, a população exposta a homicídios, pela redução de armas em circulação.",
+    "quem_paga_ou_perde": "Caçadores, atiradores, colecionadores e empresas de segurança privada enfrentam mais restrições e fiscalização; o comércio de armas e munições vende menos.",
+    "fontes": [
+     {
+      "titulo": "Ipea, TD 1721",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/2927/1/TD_1721.pdf"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 188/2023",
+     "ementa": "Susta o Decreto 11.615/2023, que regulamenta o Estatuto do Desarmamento.",
+     "autor": "Marcos Pollon e outros",
+     "partido": "PL-MS",
+     "situacao": "Tramitando em conjunto (apensado ao PDL 3/2023) na CCJC",
+     "ultima_acao": "2025-04-14: devolvido ao relator, Dep. Delegado Paulo Bilynskyj, do PDL 3/2023, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2374339",
+     "direcao": "direita",
+     "relacao": "Derrubaria o decreto que sustenta o controle de armas que a proposta pretende manter."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 3/2023",
+     "ementa": "Susta o Decreto 11.366/2023, que limitou o registro e a aquisição de armas de fogo.",
+     "autor": "Sanderson e outros",
+     "partido": "PL-RS",
+     "situacao": "Aguardando parecer na CCJC",
+     "ultima_acao": "2025-04-14: devolvido ao relator, Dep. Delegado Paulo Bilynskyj.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2345680",
+     "direcao": "direita",
+     "relacao": "Proposição principal à qual estão apensados os pedidos de sustação das regras atuais de armas."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 3723/2019",
+     "ementa": "Altera o Estatuto do Desarmamento e o Código Penal, com regras para caçadores, atiradores e colecionadores.",
+     "autor": "Poder Executivo (enviado em 2019), aprovado pela Câmara",
+     "partido": "não se aplica",
+     "situacao": "Aguardando designação do relator na CCJ do Senado",
+     "ultima_acao": "2023-05-12: juntada a Emenda nº 107, do Senador Zequinha Marinho.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/140042",
+     "direcao": "direita",
+     "relacao": "Mudaria em lei as regras para CACs que a proposta quer fiscalizar mais."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Estatuto do Desarmamento (Lei 10.826/2003) e o Decreto 11.615/2023 estão em vigor; o reforço de rastreamento e fiscalização proposto não foi definido em norma.",
+    "fonte": {
+     "titulo": "Decreto nº 11.615/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11615.htm"
+    }
+   }
+  },
+  {
+   "tema": "seguranca",
+   "indice": 5,
+   "candidato": "lula",
+   "proposta": "Propõe ampliar o estímulo ao uso de câmeras corporais por policiais, com padrões nacionais, e programas de policiamento de proximidade.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "As diretrizes nacionais de câmeras corporais já existem (Portaria MJSP 648/2024, baseada na Lei 13.675/2018, do Susp) e condicionam repasses do Fundo Nacional de Segurança Pública; ampliar o estímulo é ato do Executivo, mas a adoção nas polícias estaduais depende de cada estado.",
+     "fontes": [
+      {
+       "titulo": "Lei 13.675/2018 (Sistema Único de Segurança Pública)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13675.htm"
+      },
+      {
+       "titulo": "Portaria MJSP 648/2024 (cópia do documento oficial)",
+       "url": "https://static.poder360.com.br/2024/05/PORTARIA-648-de-2024-1.pdf"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que ampliará o programa de estímulos ao uso de câmeras corporais, sem valor nem fonte.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "depende_estados_municipios",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Polícias militares e civis são estaduais (art. 144, §§ 4º a 6º, da Constituição); a União só induz com recursos e diretrizes, o que pode ser feito no mandato, mas a cobertura final depende da adesão dos governos estaduais.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 144",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudos no Brasil (São Paulo e Santa Catarina) encontraram queda de mortes e do uso da força pela polícia com câmeras corporais. Um experimento grande em Washington (EUA) não encontrou efeito estatisticamente significativo sobre uso da força e reclamações.",
+     "estudos": [
+      {
+       "titulo": "Body cameras on police uniforms: the case of São Paulo",
+       "autor": "Joana Monteiro, Eduardo Fagundes e Julia Guerra (FGV)",
+       "ano": 2023,
+       "achado": "Nos batalhões com câmeras, as mortes decorrentes de intervenção policial caíram 57% em relação à média anterior, sem mudança detectada em prisões e crimes registrados.",
+       "url": "https://portal.fgv.br/en/artigos/body-cameras-police-uniforms-case-sao-paulo",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "De-escalation technology: the impact of body-worn cameras on citizen-police interactions",
+       "autor": "Daniel Barbosa, Thiemo Fetzer, Caterina Soto e Pedro Souza (Universidade de Warwick)",
+       "ano": 2021,
+       "achado": "Experimento aleatorizado na PM de Santa Catarina: câmeras reduziram uso da força, algemas e prisões e aumentaram o registro de ocorrências.",
+       "url": "https://ideas.repec.org/p/wrk/warwec/1371.html",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "A randomized control trial evaluating the effects of police body-worn cameras",
+       "autor": "David Yokum, Anita Ravishankar e Alexander Coppock (PNAS)",
+       "ano": 2019,
+       "achado": "Com 2.224 policiais de Washington, os efeitos sobre uso da força e reclamações foram muito pequenos e não significativos.",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6535014",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo os estudos brasileiros, cidadãos abordados pela polícia (menos uso da força e mortes) e vítimas de violência doméstica (mais registros).",
+    "quem_paga_ou_perde": "União e estados pagam equipamentos, armazenamento e gestão das imagens; policiais passam a ter a atuação gravada e sujeita a controle.",
+    "fontes": [
+     {
+      "titulo": "FGV, Body cameras on police uniforms",
+      "url": "https://portal.fgv.br/en/artigos/body-cameras-police-uniforms-case-sao-paulo"
+     },
+     {
+      "titulo": "Barbosa et al. (2021)",
+      "url": "https://ideas.repec.org/p/wrk/warwec/1371.html"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3295/2024",
+     "ementa": "Dispõe sobre o uso de câmeras corporais pelos integrantes de órgãos de segurança pública.",
+     "autor": "Erika Kokay e Tadeu Veneri",
+     "partido": "PT-DF / PT-PR",
+     "situacao": "Aguardando designação de relator após parecer da Comissão de Segurança Pública",
+     "ultima_acao": "2025-10-01: publicado o parecer da Comissão de Segurança Pública e Combate ao Crime Organizado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2454889",
+     "direcao": "direita",
+     "relacao": "Transformaria em lei regras de uso de câmeras corporais hoje previstas em portaria."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 6118/2025",
+     "ementa": "Condiciona o repasse de recursos do Fundo Nacional de Segurança Pública à implementação de programas de câmeras corporais.",
+     "autor": "Amom Mandel",
+     "partido": "REPUBLICANOS-AM",
+     "situacao": "Aguardando parecer na Comissão de Segurança Pública",
+     "ultima_acao": "2026-03-17: encerrado o prazo para emendas, sem emendas apresentadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2591155",
+     "direcao": "direita",
+     "relacao": "Usa o mesmo mecanismo da proposta: condicionar repasses federais ao uso de câmeras."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4822/2023",
+     "ementa": "Dispõe sobre a discricionariedade dos agentes públicos no uso de câmeras individuais para filmar e monitorar suas atividades.",
+     "autor": "Daniela Reinehr",
+     "partido": "PL-SC",
+     "situacao": "Tramitando em conjunto (apensado ao PL 179/2003)",
+     "ultima_acao": "2025-06-10: designado relator, Dep. Tadeu Veneri, para o PL 179/2003, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2392942",
+     "direcao": "direita",
+     "relacao": "Abordagem oposta: deixaria a critério do agente ligar a câmera."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 984/2026",
+     "ementa": "Regulamenta o uso de câmeras corporais por agentes públicos da União, dos Estados, do Distrito Federal e dos Municípios.",
+     "autor": "Fernanda Melchionna e Sâmia Bomfim",
+     "partido": "PSOL-RS / PSOL-SP",
+     "situacao": "Aguardando despacho do presidente da Câmara",
+     "ultima_acao": "2026-03-05: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2607376",
+     "direcao": "direita",
+     "relacao": "Criaria padrão nacional obrigatório por lei, além do estímulo previsto no plano."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Portaria MJSP 648/2024 fixa diretrizes nacionais para câmeras corporais e condiciona a elas os repasses federais para esses projetos; a adoção depende de cada estado.",
+    "fonte": {
+     "titulo": "Ministério da Justiça e Segurança Pública: Portaria nº 648/2024",
+     "url": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/PORTARIA648de2024.pdf"
+    }
+   }
+  },
+  {
+   "tema": "seguranca",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe declarar PCC, CV, milícias e outras facções como organizações narcoterroristas, bloqueando seus bens e combatendo a lavagem de dinheiro.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "Classificar facções como organizações terroristas exige mudar a Lei Antiterrorismo (Lei 13.260/2016), que hoje define terrorismo por motivações como xenofobia e preconceito; legislar sobre direito penal é competência da União (art. 22, I), por lei aprovada no Congresso. Bloqueio de bens e combate à lavagem já têm base em leis existentes.",
+     "fontes": [
+      {
+       "titulo": "Lei 13.260/2016 (Lei Antiterrorismo)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13260.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 22, I",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano prevê convênios com estados e municípios para investir em inteligência, tecnologia, armamento e valorização do policial, sem valor nem fonte para esta medida.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A mudança depende só de lei federal ordinária; projetos com esse conteúdo já estão prontos para a pauta do Plenário da Câmara.",
+     "fontes": [
+      {
+       "titulo": "Câmara: PL 1283/2025",
+       "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2490514"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foi encontrada avaliação que isole o efeito de classificar facções criminosas como terroristas; a pesquisa disponível trata de grupos políticos ou religiosos, com efeitos que variam conforme o tipo de grupo. Análises sobre a designação recente de cartéis nos EUA afirmam que os efeitos de longo prazo ainda são desconhecidos.",
+     "estudos": [
+      {
+       "titulo": "Why the “Terrorist” Label Helps Some Groups and Hurts Others (sobre Best e Lahiri, 2021)",
+       "autor": "Rebecca Best (Political Violence at a Glance)",
+       "ano": 2021,
+       "achado": "A designação como organização terrorista nos EUA reduziu ataques de grupos nacionalistas ou seculares, não teve efeito em grupos religiosos jovens e pode ter mantido ou elevado ataques de grupos religiosos antigos.",
+       "url": "https://politicalviolenceataglance.org/2021/09/01/why-the-terrorist-label-helps-some-groups-and-hurts-others/",
+       "tipo": "think_tank"
+      },
+      {
+       "titulo": "When Crime Becomes Terror: Rethinking the FTO Designation",
+       "autor": "Rubi Bledsoe (CSIS)",
+       "ano": 2025,
+       "achado": "A designação de cartéis eleva a vigilância e o escrutínio financeiro sobre seus membros, mas não há dados que comprovem sua eficácia financeira ou de segurança.",
+       "url": "https://www.csis.org/analysis/when-crime-becomes-terror-rethinking-fto-designation",
+       "tipo": "think_tank"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Órgãos de investigação e de controle financeiro ganham instrumentos legais e penas mais altas contra membros e financiadores de facções, segundo as análises citadas.",
+    "quem_paga_ou_perde": "Integrantes e financiadores de facções ficam sujeitos a penas e bloqueios mais amplos; as análises apontam risco de militarização do policiamento e de efeitos sobre relações externas, ainda não medidos.",
+    "fontes": [
+     {
+      "titulo": "CSIS, When Crime Becomes Terror",
+      "url": "https://www.csis.org/analysis/when-crime-becomes-terror-rethinking-fto-designation"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "seguranca",
+    "indice": 2,
+    "candidato": "lula",
+    "diferenca": "Os dois miram as finanças das facções; Flávio propõe enquadrá-las juridicamente como terroristas, e Lula propõe manter a estratégia de asfixia financeira sem mudar essa classificação."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1283/2025",
+     "ementa": "Altera a Lei Antiterrorismo para estender sua aplicação a organizações criminosas e milícias privadas que realizem atos de terrorismo, entre outras mudanças.",
+     "autor": "Danilo Forte",
+     "partido": "PP-CE",
+     "situacao": "Pronta para pauta no Plenário",
+     "ultima_acao": "2026-03-11: notificação de apensação do PL 5896/2025 ao PL 5721/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2490514",
+     "direcao": "direita",
+     "relacao": "Aplica a Lei Antiterrorismo a facções e milícias, como propõe o plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2428/2025",
+     "ementa": "Inclui como ato de terrorismo as ações de organizações criminosas armadas que pratiquem domínio territorial, intimidação da população ou desestabilização da ordem pública.",
+     "autor": "Capitão Alden e André Fernandes",
+     "partido": "PL-BA / PL-CE",
+     "situacao": "Pronta para pauta",
+     "ultima_acao": "2026-07-17: deferido o Requerimento n. 3660/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2514611",
+     "direcao": "direita",
+     "relacao": "Equipara ações de facções armadas a terrorismo."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 3830/2024",
+     "ementa": "Altera a Lei Antiterrorismo e a Lei de Lavagem de Dinheiro para criar o Cadastro Brasileiro de Organizações Terroristas (CadTerror) e tratar do financiamento ao terrorismo.",
+     "autor": "Senador Jorge Seif",
+     "partido": "PL-SC",
+     "situacao": "Com a relatoria na Comissão de Defesa da Democracia",
+     "ultima_acao": "2024-11-11: distribuído ao Senador Humberto Costa para relatório.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/165648",
+     "direcao": "direita",
+     "relacao": "Criaria uma lista oficial de organizações terroristas, mecanismo próximo da “declaração” proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5582/2025 (Lei 15.358/2026)",
+     "ementa": "Institui o marco legal do combate ao crime organizado e tipifica o crime de domínio social estruturado.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei 15.358/2026, com veto parcial",
+     "ultima_acao": "2026-03-24: transformado em norma jurídica com veto parcial (DOU de 25/03/2026).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2579832",
+     "direcao": "direita",
+     "relacao": "Endureceu penas contra facções por lei própria, sem enquadrá-las na Lei Antiterrorismo."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Lei 15.358/2026 permite bloqueio e indisponibilidade de bens nos crimes de domínio social estruturado praticados por facções e milícias; a classificação de facções como terroristas não foi aprovada.",
+    "fonte": {
+     "titulo": "Lei nº 15.358/2026 (Marco Legal do Combate ao Crime Organizado)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm"
+    }
+   }
+  },
+  {
+   "tema": "seguranca",
+   "indice": 9,
+   "candidato": "flavio",
+   "proposta": "Propõe apoiar e sancionar a redução da maioridade penal de 18 para 16 anos e punir maiores de 14 anos por crimes graves.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec_clausula_petrea",
+     "explicacao": "A inimputabilidade dos menores de 18 anos está no art. 228 da Constituição, então a redução exige PEC; há debate jurídico sobre se essa garantia é direito individual protegido como cláusula pétrea (art. 60, § 4º, IV). O presidente não vota nem sanciona PEC: ela é promulgada pelo Congresso.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 228 e art. 60, §§ 2º e 4º",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima o custo de levar jovens de 16 e 17 anos (e de 14 e 15 anos, em crimes graves) ao sistema penal adulto.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "A matéria é constitucional e federal, mas depende de 3/5 nas duas Casas e de eventual julgamento no STF sobre cláusula pétrea; propostas semelhantes tramitam desde 1993.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 60",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudos dos EUA divergem: um encontra queda do crime quando a punição de adultos é mais dura que a juvenil, outro encontra resposta pequena ao completar 18 anos, e um terceiro associa a prisão de adolescentes a mais encarceramento na vida adulta. No Brasil, nota técnica do Ipea de 2015 descreve o perfil dos adolescentes internados e argumenta contra a redução.",
+     "estudos": [
+      {
+       "titulo": "Juvenile Crime and Punishment",
+       "autor": "Steven D. Levitt (NBER; Journal of Political Economy, 1998)",
+       "ano": 1997,
+       "achado": "Mudanças na punição relativa explicam cerca de 60% da diferença no crescimento do crime violento entre jovens e adultos nos EUA entre 1978 e 1993, sugerindo efeito dissuasório.",
+       "url": "https://www.nber.org/papers/w6191",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Crime, Punishment, and Myopia",
+       "autor": "David S. Lee e Justin McCrary (NBER)",
+       "ano": 2005,
+       "achado": "Ao completar 18 anos, quando passam a ter penas de adulto, jovens reduzem muito pouco a reincidência, o que os autores interpretam como baixa dissuasão.",
+       "url": "https://www.nber.org/papers/w11491",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Juvenile Incarceration, Human Capital and Future Crime: Evidence from Randomly-Assigned Judges",
+       "autor": "Anna Aizer e Joseph J. Doyle Jr. (NBER; Quarterly Journal of Economics, 2015)",
+       "ano": 2013,
+       "achado": "O encarceramento de adolescentes reduziu a conclusão do ensino médio e aumentou a probabilidade de prisão na vida adulta.",
+       "url": "https://www.nber.org/papers/w19102",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "O Adolescente em Conflito com a Lei e o Debate sobre a Redução da Maioridade Penal (Nota Técnica nº 20)",
+       "autor": "Enid Rocha Andrade da Silva e Raissa Menezes de Oliveira (Ipea)",
+       "ano": 2015,
+       "achado": "Havia 23,1 mil adolescentes privados de liberdade em 2013; a nota sustenta que a redução atingiria sobretudo jovens em exclusão social e conflita com o ECA e tratados internacionais.",
+       "url": "https://repositorio.ipea.gov.br/bitstreams/183ecbc0-950a-4d5d-b3fd-1372f48f1644/download",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo os estudos que encontram dissuasão, potenciais vítimas de crimes cometidos por adolescentes, se a pena mais dura reduzir esses crimes.",
+    "quem_paga_ou_perde": "Adolescentes de 16 e 17 anos (e de 14 e 15, em crimes graves) passariam ao sistema penal adulto, com efeitos sobre escolaridade e reincidência apontados por Aizer e Doyle; o sistema prisional, sobretudo estadual, recebe mais presos.",
+    "fontes": [
+     {
+      "titulo": "Aizer e Doyle (NBER w19102)",
+      "url": "https://www.nber.org/papers/w19102"
+     },
+     {
+      "titulo": "Levitt (NBER w6191)",
+      "url": "https://www.nber.org/papers/w6191"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PEC",
+     "numero": "PEC 32/2019",
+     "ementa": "Altera o art. 228 da Constituição para reduzir a maioridade penal para dezesseis anos.",
+     "autor": "Senador Flávio Bolsonaro e outros",
+     "partido": "PSL-RJ (à época)",
+     "situacao": "Aguardando designação do relator na CCJ",
+     "ultima_acao": "2026-05-13: devolvida pelo relator, Senador Marcio Bittar, por não integrar mais a CCJ; a matéria será redistribuída.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/135977",
+     "direcao": "direita",
+     "relacao": "PEC de autoria do próprio candidato com o mesmo conteúdo da proposta (16 anos)."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 32/2015",
+     "ementa": "Altera os arts. 14 e 228 da Constituição para estabelecer a plena maioridade civil e penal aos dezesseis anos.",
+     "autor": "Gonzaga Patriota",
+     "partido": "PSB-PE",
+     "situacao": "Aguardando parecer na comissão especial",
+     "ultima_acao": "2026-10-14: apresentado requerimento de audiência pública sobre recrutamento de adolescentes por organizações criminosas e efeitos da redução da maioridade.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=1228863",
+     "direcao": "direita",
+     "relacao": "Principal PEC sobre o tema na Câmara, com comissão especial e relator designado (Dep. Mendonça Filho)."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 8/2026",
+     "ementa": "Admite, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
+     "autor": "Capitão Alden e outros",
+     "partido": "PL-BA",
+     "situacao": "Tramitando em conjunto (apensada à PEC 32/2015)",
+     "ultima_acao": "2026-08-12: designado relator da PEC 32/2015, à qual está apensada, o Dep. Mendonça Filho.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2623400",
+     "direcao": "direita",
+     "relacao": "Versão restrita a crimes graves, próxima da parte da proposta que pune maiores de 14 anos por crimes graves."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 9/2026",
+     "ementa": "Altera o art. 228 da Constituição para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
+     "autor": "Julia Zanatta e outros",
+     "partido": "PL-SC",
+     "situacao": "Tramitando em conjunto (apensada à PEC 32/2015)",
+     "ultima_acao": "2026-08-12: designado relator da PEC 32/2015, à qual está apensada, o Dep. Mendonça Filho.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2623604",
+     "direcao": "direita",
+     "relacao": "Outra PEC recente de redução da idade penal, analisada junto com a PEC 32/2015."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "seguranca",
+   "indice": 12,
+   "candidato": "flavio",
+   "proposta": "Propõe acabar com a progressão de regime para quem comete crimes hediondos.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec_clausula_petrea",
+     "explicacao": "A progressão é regulada por lei ordinária (art. 112 da Lei de Execução Penal e Lei 8.072/1990), mas o STF declarou inconstitucional o regime integralmente fechado para crimes hediondos (HC 82.959 e Súmula Vinculante 26) com base na individualização da pena (art. 5º, XLVI, da Constituição), direito individual protegido pelo art. 60, § 4º, IV; há, portanto, debate jurídico sobre se nem uma PEC poderia vedar a progressão.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 5º, XLVI, e art. 60, § 4º, IV",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 7.210/1984 (Lei de Execução Penal), art. 112",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l7210.htm"
+      },
+      {
+       "titulo": "Lei 8.072/1990 (Crimes Hediondos)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8072.htm"
+      },
+      {
+       "titulo": "STF, Súmula Vinculante 26 (precedente HC 82.959)",
+       "url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1271"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima o custo de manter os condenados por crimes hediondos presos durante toda a pena; em outro item, prevê meio milhão de novas vagas prisionais em 4 anos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Legislar sobre direito penal e execução penal é competência da União (art. 22, I), mas a medida depende do Congresso e provavelmente seria contestada no STF; a Lei 15.358/2026 já elevou para 70% a 85% da pena o tempo mínimo para progressão nesses crimes.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, I",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 15.358/2026 (Marco Legal do Combate ao Crime Organizado)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Um experimento natural na Itália encontrou que pena esperada maior reduz a reincidência de ex-presos. Revisões da literatura de dissuasão indicam que a certeza da punição pesa mais que sua severidade e que alongar penas já longas tem efeito dissuasório modesto.",
+     "estudos": [
+      {
+       "titulo": "The Deterrent Effects of Prison: Evidence from a Natural Experiment",
+       "autor": "Francesco Drago, Roberto Galbiati e Pietro Vertova (IZA)",
+       "ano": 2007,
+       "achado": "Com o indulto coletivo italiano de 2006, cada mês adicional de pena esperada reduziu em 1,24% a propensão de ex-presos a reincidir.",
+       "url": "https://docs.iza.org/dp2912.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Five Things About Deterrence (síntese de Nagin, Deterrence in the Twenty-First Century, 2013)",
+       "autor": "National Institute of Justice (EUA)",
+       "ano": 2016,
+       "achado": "A certeza de ser pego dissuade mais que a severidade; aumentar penas já longas tem, no máximo, efeito dissuasório muito modesto.",
+       "url": "https://nij.ojp.gov/topics/articles/five-things-about-deterrence",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo a literatura de incapacitação, a sociedade deixa de sofrer crimes que esses condenados cometeriam durante o tempo adicional de prisão.",
+    "quem_paga_ou_perde": "Os condenados perdem a possibilidade de regime mais brando; os governos estaduais, que administram a maior parte das prisões, arcam com mais tempo de custódia e mais vagas.",
+    "fontes": [
+     {
+      "titulo": "Five Things About Deterrence",
+      "url": "https://nij.ojp.gov/topics/articles/five-things-about-deterrence"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5256/2023",
+     "ementa": "Altera o art. 112 da Lei de Execução Penal para proibir a progressão de regime nos crimes hediondos ou equiparados.",
+     "autor": "Coronel Assis",
+     "partido": "PL-MT",
+     "situacao": "Tramitando em conjunto (apensado ao PL 2053/2011) na CCJC",
+     "ultima_acao": "2026-02-13: devolvido ao relator, Dep. Ricardo Ayres, do PL 2053/2011, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2400058",
+     "direcao": "direita",
+     "relacao": "Propõe exatamente o fim da progressão de regime para crimes hediondos."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1610/2026",
+     "ementa": "Altera a Lei de Crimes Hediondos e a Lei de Execução Penal para vedar a progressão de regime e a remição nos crimes que especifica.",
+     "autor": "Saulo Pedroso",
+     "partido": "PSD-SP",
+     "situacao": "Tramitando em conjunto (apensado ao PL 4047/2025) na CCJC",
+     "ultima_acao": "2026-05-27: apensado ao PL 4047/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2613514",
+     "direcao": "direita",
+     "relacao": "Também veda a progressão de regime para crimes específicos."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 5582/2025 (Lei 15.358/2026)",
+     "ementa": "PL Antifacção: institui o marco legal do combate ao crime organizado e altera, entre outras, a Lei de Execução Penal.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei 15.358/2026, com veto parcial",
+     "ultima_acao": "2026-03-24: transformado em norma jurídica com veto parcial (DOU de 25/03/2026).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2579832",
+     "direcao": "direita",
+     "relacao": "Já elevou o tempo mínimo para progressão em crimes hediondos (70% para primário, até 85% para reincidente com resultado morte), sem extinguir a progressão."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "educacao",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe chegar a 80% das crianças alfabetizadas na idade certa, com ações pactuadas com estados e municípios.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A proposta mantém o Compromisso Nacional Criança Alfabetizada, criado pelo Decreto 11.556/2023 e transformado em lei pela Lei 15.247/2025, com coordenação da União e execução por estados e municípios.",
+     "fontes": [
+      {
+       "titulo": "Lei 15.247/2025 (Compromisso Nacional Criança Alfabetizada)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15247.htm"
+      },
+      {
+       "titulo": "Decreto 11.556/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11556.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano fixa a meta de 80% de crianças alfabetizadas na idade certa, sem prazo, custo nem fonte de recursos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "Os sistemas de ensino funcionam em regime de colaboração e os municípios respondem pelo ensino fundamental (art. 211 da Constituição); o plano não dá prazo para os 80%, o novo PNE (Lei 15.388/2026) fixa essa meta até o quinto ano de sua vigência, e o indicador estava em 66% em 2025.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 211",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 15.388/2026 (Plano Nacional de Educação), meta 3.a",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15388.htm"
+      },
+      {
+       "titulo": "Todos Pela Educação, nota técnica sobre o Indicador Criança Alfabetizada 2025",
+       "url": "https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2026/03/nota-tecnica-indicador-crianca-alfabetizada-2025-todos-pela-educacao.pdf"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "A experiência do Ceará, que inspirou o modelo de cooperação com municípios, é associada pelo Banco Mundial a ganhos de aprendizagem, e um estudo com desenho quase experimental encontrou efeito do financiamento por resultados com apoio técnico. O indicador nacional subiu de 56% (2023) para 66% (2025), mas parte da melhora coincide com a primeira turma sem os efeitos da pandemia.",
+     "estudos": [
+      {
+       "titulo": "Incentives for Mayors to Improve Learning: Evidence from state reforms in Ceará, Brazil (Policy Research Working Paper 9509)",
+       "autor": "Ildo Lautharte, Victor Hugo de Oliveira e André Loureiro (Banco Mundial)",
+       "ano": 2021,
+       "achado": "Alunos expostos ao financiamento por resultados do Ceará tiveram cerca de 0,15 desvio padrão a mais em matemática e português, e o efeito dobrou com assistência técnica aos municípios.",
+       "url": "https://ideas.repec.org/p/wbk/wbrwps/9509.html",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "The State of Ceará in Brazil is a Role Model for Reducing Learning Poverty",
+       "autor": "Banco Mundial",
+       "ano": 2020,
+       "achado": "O Ceará teve o maior aumento do índice nacional de qualidade da educação no ensino fundamental desde 2005, apesar de estar entre os estados de menor PIB per capita.",
+       "url": "https://www.worldbank.org/en/country/brazil/publication/state-ceara-brazil-role-model-reducing-learning-poverty",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Indicador Criança Alfabetizada 2025: nota técnica",
+       "autor": "Todos Pela Educação",
+       "ano": 2026,
+       "achado": "O indicador chegou a 66% em 2025, acima da meta de 64%; a nota atribui o avanço ao Compromisso e ao fato de ser a primeira turma sem os impactos da pandemia.",
+       "url": "https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2026/03/nota-tecnica-indicador-crianca-alfabetizada-2025-todos-pela-educacao.pdf",
+       "tipo": "entidade_interessada"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Crianças do 1º e 2º anos das redes públicas, sobretudo nas redes municipais com apoio técnico e financeiro, segundo os estudos do Ceará.",
+    "quem_paga_ou_perde": "União, estados e municípios dividem o custo de formação, materiais e avaliação; as fontes não indicam grupo prejudicado.",
+    "fontes": [
+     {
+      "titulo": "Lautharte, Oliveira e Loureiro (2021)",
+      "url": "https://ideas.repec.org/p/wbk/wbrwps/9509.html"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "educacao",
+    "indice": 8,
+    "candidato": "flavio",
+    "diferenca": "Os dois tratam da alfabetização; Lula propõe manter as ações pactuadas com estados e municípios rumo a uma meta de 80%, e Flávio propõe priorizar um método de ensino específico, o fônico."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 4937/2024 (Lei 15.247/2025)",
+     "ementa": "Dispõe sobre o Compromisso Nacional Criança Alfabetizada.",
+     "autor": "Comissão de Educação e Cultura do Senado",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei 15.247/2025",
+     "ultima_acao": "2026-02-26: comunicada a restituição do autógrafo sancionado; matéria arquivada após a sanção de 31/10/2025.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/166815",
+     "direcao": "esquerda",
+     "relacao": "Deu forma de lei ao programa que a proposta pretende continuar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2614/2024 (Lei 15.388/2026)",
+     "ementa": "Aprova o Plano Nacional de Educação (PNE 2026-2036).",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei 15.388/2026",
+     "ultima_acao": "2026-04-22: recebido ofício do Senado comunicando a sanção.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2443764",
+     "direcao": "esquerda",
+     "relacao": "O novo PNE (meta 3.a) prevê ao menos 80% das crianças alfabetizadas ao fim do 2º ano até o quinto ano de vigência, o mesmo número da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Compromisso Nacional Criança Alfabetizada, com ações pactuadas com estados e municípios, está em vigor pela Lei 15.247/2025; a meta de 80% é da proposta.",
+    "fonte": {
+     "titulo": "Lei nº 15.247/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15247.htm"
+    }
+   }
+  },
+  {
+   "tema": "educacao",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe dar prioridade absoluta à expansão da educação em tempo integral.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O fomento federal à escola em tempo integral já existe no Programa Escola em Tempo Integral (Lei 14.640/2023); dar prioridade a ele é decisão orçamentária e administrativa do Executivo.",
+     "fontes": [
+      {
+       "titulo": "Lei 14.640/2023 (Programa Escola em Tempo Integral)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14640.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que o fomento terá “absoluta prioridade” e que a inclusão do tempo integral no Fundeb deve acelerar a expansão, sem estimar valores.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "alem_de_4_anos",
+     "explicacao": "As matrículas são das redes estaduais e municipais e a União atua de forma supletiva (art. 211); o novo PNE (Lei 15.388/2026, meta 6.a) prevê tempo integral em ao menos 50% das escolas públicas ao longo do decênio.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 211",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 15.388/2026 (PNE), meta 6.a",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15388.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Avaliações do ensino médio integral de Pernambuco e da jornada completa no Chile, publicadas em periódico revisado, encontraram ganhos de aprendizagem, maiores em Pernambuco. Uma dissertação sobre o programa federal Mais Educação, que ampliava a jornada com atividades no contraturno, encontrou efeito nulo ou negativo sobre notas.",
+     "estudos": [
+      {
+       "titulo": "The effects of public high school subsidies on student test scores: The case of a full-day high school in Pernambuco, Brazil",
+       "autor": "Leonardo Rosa, Eric Bettinger, Martin Carnoy e Pedro Dantas (Economics of Education Review)",
+       "ano": 2022,
+       "achado": "Após três anos, o ensino médio integral elevou as notas em 0,22 desvio padrão em matemática e 0,19 em linguagem.",
+       "url": "https://lemanncenter.stanford.edu/node/744",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Does lengthening the school day increase students' academic achievement? Results from a natural experiment in Chile",
+       "autor": "Cristián Bellei (Economics of Education Review)",
+       "ano": 2009,
+       "achado": "A jornada escolar completa no Chile teve efeito positivo pequeno: 0,05 a 0,07 desvio padrão em linguagem e 0,00 a 0,12 em matemática.",
+       "url": "https://ideas.repec.org/a/eee/ecoedu/v28y2009i5p629-640.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "O impacto da educação em tempo integral no desempenho escolar: uma avaliação do Programa Mais Educação",
+       "autor": "Juliana Mara de Fátima Viana Gandra (dissertação, UFV)",
+       "ano": 2017,
+       "achado": "O Mais Educação não melhorou as notas de português e matemática na Prova Brasil, com efeito nulo ou negativo, maior nas escolas com mais tempo de programa.",
+       "url": "https://locus.ufv.br/items/f3e0fc1d-f3a8-4732-9b28-d8934c00ffb6",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Alunos que passam a ter jornada integral, com ganhos de aprendizagem quando o modelo é como o de Pernambuco, segundo os estudos.",
+    "quem_paga_ou_perde": "União, estados e municípios pagam mais professores, alimentação e infraestrutura; os estudos indicam que formatos sem mudança pedagógica podem não trazer ganho.",
+    "fontes": [
+     {
+      "titulo": "Rosa et al. (2022)",
+      "url": "https://lemanncenter.stanford.edu/node/744"
+     },
+     {
+      "titulo": "Gandra (2017)",
+      "url": "https://locus.ufv.br/items/f3e0fc1d-f3a8-4732-9b28-d8934c00ffb6"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "educacao",
+    "indice": 11,
+    "candidato": "flavio",
+    "diferenca": "Os dois apoiam a escola em tempo integral; Lula a coloca como prioridade de fomento federal, e Flávio a apoia e acrescenta escolas abertas nas férias (Escola nas Férias)."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2617/2023 (Lei 14.640/2023)",
+     "ementa": "Institui o Programa Escola em Tempo Integral.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei 14.640/2023",
+     "ultima_acao": "2023-12-21: recebido ofício que comunica a manutenção do veto aposto ao projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2362716",
+     "direcao": "esquerda",
+     "relacao": "Criou o programa federal que a proposta pretende priorizar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2614/2024 (Lei 15.388/2026)",
+     "ementa": "Aprova o Plano Nacional de Educação (PNE 2026-2036).",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei 15.388/2026",
+     "ultima_acao": "2026-04-22: recebido ofício do Senado comunicando a sanção.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2443764",
+     "direcao": "esquerda",
+     "relacao": "A meta 6.a do PNE prevê tempo integral em ao menos 50% das escolas públicas."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Programa Escola em Tempo Integral está em vigor pela Lei 14.640/2023; a prioridade proposta depende de orçamento.",
+    "fonte": {
+     "titulo": "Lei nº 14.640/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14640.htm"
+    }
+   }
+  },
+  {
+   "tema": "educacao",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe continuar e fortalecer o Pé-de-Meia para que jovens pobres não deixem a escola por falta de renda.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Pé-de-Meia foi instituído pela Lei 14.818/2024; continuar e fortalecer o programa depende de recursos no orçamento anual, e o TCU determinou em 2025 que seu financiamento passe a constar da Lei Orçamentária.",
+     "fontes": [
+      {
+       "titulo": "Lei 14.818/2024 (Pé-de-Meia)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14818.htm"
+      },
+      {
+       "titulo": "TCU, Acórdão 297/2025 – Plenário",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-da-prazo-de-120-dias-para-governo-federal-adequar-programa-pe-de-meia-ao-orcamento"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe dar continuidade e fortalecer o programa, sem informar custo nem fonte para a ampliação.",
+     "estimativa_externa": "Segundo o TCU (2025), o programa custa cerca de R$ 12,5 bilhões por ano e atende cerca de 3,9 milhões de estudantes do ensino médio.",
+     "fontes": [
+      {
+       "titulo": "TCU dá prazo de 120 dias para governo federal adequar programa Pé-de-Meia ao orçamento",
+       "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-da-prazo-de-120-dias-para-governo-federal-adequar-programa-pe-de-meia-ao-orcamento"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O incentivo é pago pela União diretamente aos estudantes; manter o programa no mandato depende de espaço no orçamento federal.",
+     "fontes": [
+      {
+       "titulo": "Lei 14.818/2024",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14818.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "alto",
+     "resumo": "Meta-análise de 94 estudos sobre transferências condicionadas encontra efeitos positivos sobre matrícula, frequência e conclusão, com forte variação entre programas. Para o Pé-de-Meia, há só uma avaliação ex-ante (simulação), que estima queda de cerca de 6,5 pontos percentuais na evasão de estudantes vulneráveis.",
+     "estudos": [
+      {
+       "titulo": "Bolsas de estudo e evasão: avaliação de impacto ex-ante",
+       "autor": "Laura de Abreu, Ricardo Paes de Barros, Samuel Franco e Laura Muller Machado (Centro de Evidências da Educação Integral/Insper)",
+       "ano": 2026,
+       "achado": "A evasão composta de estudantes vulneráveis no ensino médio cairia de 26,4% para 19,9% com o programa; os autores ressaltam que é projeção, a ser confirmada com dados observados.",
+       "url": "https://fpabramo.org.br/?p=181611",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Educational Impacts and Cost-Effectiveness of Conditional Cash Transfer Programs in Developing Countries: A Meta-Analysis",
+       "autor": "Sandra García e Juan Saavedra (NBER; Review of Educational Research)",
+       "ano": 2017,
+       "achado": "Em 94 estudos sobre 47 programas, as transferências condicionadas afetam matrícula, frequência e conclusão, com forte heterogeneidade de impacto e de custo-efetividade.",
+       "url": "https://www.nber.org/papers/w23594",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Estudantes de baixa renda do ensino médio público, que recebem o incentivo, e, segundo a avaliação ex-ante, permanecem mais na escola.",
+    "quem_paga_ou_perde": "O orçamento federal, com cerca de R$ 12,5 bilhões por ano segundo o TCU, o que disputa espaço com outras despesas sob o limite fiscal.",
+    "fontes": [
+     {
+      "titulo": "TCU, Acórdão 297/2025",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-da-prazo-de-120-dias-para-governo-federal-adequar-programa-pe-de-meia-ao-orcamento"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2313/2026",
+     "ementa": "Altera a Lei 14.818/2024 para adequar a execução orçamentária e financeira do Programa Pé-de-Meia.",
+     "autor": "Marcel van Hattem e outros",
+     "partido": "NOVO-RS",
+     "situacao": "Aguardando parecer na Comissão de Educação",
+     "ultima_acao": "2026-07-15: encerrado o prazo para emendas, sem emendas apresentadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2623539",
+     "direcao": "fora do RILE",
+     "relacao": "Trata da forma de financiamento do programa, ponto questionado pelo TCU."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 659/2026",
+     "ementa": "Universaliza o Pé-de-Meia para todos os estudantes do ensino médio das redes públicas.",
+     "autor": "Renildo Calheiros",
+     "partido": "PCdoB-PE",
+     "situacao": "Tramitando em conjunto (apensado ao PL 6255/2025) na Comissão de Educação",
+     "ultima_acao": "2026-04-14: designada relatora, Dep. Tabata Amaral, do PL 6255/2025, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2603901",
+     "direcao": "esquerda",
+     "relacao": "Ampliaria o programa além do público de baixa renda."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4319/2026",
+     "ementa": "Institui mecanismos permanentes de governança, monitoramento, avaliação de resultados e melhoria da gestão do Pé-de-Meia.",
+     "autor": "Duda Ramos",
+     "partido": "PODE-RR",
+     "situacao": "Aguardando designação de relator na Comissão de Educação",
+     "ultima_acao": "2026-09-08: recebimento pela Comissão de Educação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2641003",
+     "direcao": "fora do RILE",
+     "relacao": "Exigiria avaliação periódica dos resultados do programa."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "RQS",
+     "numero": "RQS 219/2026",
+     "ementa": "Requer informações ao ministro da Educação sobre os impactos da determinação do TCU na execução e no pagamento do Pé-de-Meia.",
+     "autor": "Senadora Damares Alves",
+     "partido": "REPUBLICANOS-DF",
+     "situacao": "Com a relatoria na Comissão Diretora",
+     "ultima_acao": "2026-04-08: distribuído ao Senador Eduardo Gomes para relatório.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/173269",
+     "direcao": "fora do RILE",
+     "relacao": "Fiscaliza a execução do programa após a decisão do TCU."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Pé-de-Meia está em vigor pela Lei 14.818/2024; o fortalecimento proposto não foi definido em norma.",
+    "fonte": {
+     "titulo": "Lei nº 14.818/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14818.htm"
+    }
+   }
+  },
+  {
+   "tema": "educacao",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe priorizar o método fônico na alfabetização.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "A orientação federal por um método de alfabetização pode ser feita por decreto, como na Política Nacional de Alfabetização (Decreto 9.765/2019), que enfatizava a instrução fônica e foi revogada pelo Decreto 11.556/2023. A adoção em sala depende das redes de ensino.",
+     "fontes": [
+      {
+       "titulo": "Decreto 9.765/2019 (Política Nacional de Alfabetização, revogado)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9765.htm"
+      },
+      {
+       "titulo": "Decreto 11.556/2023",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11556.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima o custo de formação de professores e materiais para o método fônico.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A União pode induzir por formação, material didático e programas, mas a alfabetização é oferecida pelas redes municipais e estaduais em regime de colaboração (art. 211), que decidem sua proposta pedagógica.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 211",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Revisões dos EUA e do Reino Unido encontraram que o ensino fônico sistemático melhora a precisão de leitura em relação a ensino com pouca atenção à relação letra-som, com evidência inconclusiva sobre compreensão na revisão britânica. Revisão publicada em 2023 sustenta que não há evidência confiável de que o método supere as alternativas comuns, leitura contestada por outros autores.",
+     "estudos": [
+      {
+       "titulo": "Report of the National Reading Panel: findings and determinations",
+       "autor": "National Reading Panel (NICHD, EUA)",
+       "ano": 2000,
+       "achado": "O ensino fônico sistemático foi significativamente mais eficaz que ensino com pouca ou nenhuma atenção à relação letra-som, da educação infantil ao 6º ano.",
+       "url": "https://www.nichd.nih.gov/publications/pubs/nrp/findings",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "A systematic review of the research literature on the use of phonics in the teaching of reading and spelling",
+       "autor": "Carole Torgerson, Greg Brooks e Jill Hall (para o DfES, Reino Unido)",
+       "ano": 2006,
+       "achado": "Em 12 ensaios randomizados pequenos, o fônico sistemático melhorou a precisão de leitura; os efeitos sobre compreensão e ortografia foram inconclusivos.",
+       "url": "https://www.york.ac.uk/news-and-events/news/2006/phonics-teaching/",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "There is still little or no evidence that systematic phonics is more effective than common alternative methods of reading instruction",
+       "autor": "Jeffrey S. Bowers (Review of Education)",
+       "ano": 2023,
+       "achado": "O autor sustenta que não há evidência confiável de que o fônico sistemático supere os métodos alternativos comuns.",
+       "url": "https://research-information.bris.ac.uk/en/publications/there-is-still-little-or-no-evidence-that-systematic-phonics-is-m/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Crianças em alfabetização, sobretudo as com dificuldade de leitura, segundo o National Reading Panel.",
+    "quem_paga_ou_perde": "Redes de ensino arcam com formação e materiais; professores e redes que usam outras abordagens teriam de mudar a prática.",
+    "fontes": [
+     {
+      "titulo": "National Reading Panel",
+      "url": "https://www.nichd.nih.gov/publications/pubs/nrp/findings"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "educacao",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Os dois tratam da alfabetização; Flávio propõe priorizar um método de ensino específico, o fônico, e Lula propõe manter as ações pactuadas com estados e municípios rumo a uma meta de 80%."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4985/2025",
+     "ementa": "Institui a Política Nacional de Alfabetização baseada em evidências científicas, com ênfase em consciência fonêmica e instrução fônica sistemática.",
+     "autor": "Nikolas Ferreira",
+     "partido": "PL-MG",
+     "situacao": "Tramitando em conjunto (apensado ao PL 3431/2025) na Comissão de Educação",
+     "ultima_acao": "2026-04-22: designada relatora, Dep. Fernanda Melchionna, do PL 3431/2025, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2567738",
+     "direcao": "esquerda",
+     "relacao": "Transformaria em lei a ênfase na instrução fônica sistemática."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 123/2019",
+     "ementa": "Susta os efeitos do Decreto 9.765/2019, que instituiu a Política Nacional de Alfabetização.",
+     "autor": "Ivan Valente e outros",
+     "partido": "PSOL-SP",
+     "situacao": "Pronto para pauta na CCJC",
+     "ultima_acao": "2025-05-21: parecer do relator, Dep. Diego Garcia.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2198086",
+     "direcao": "fora do RILE",
+     "relacao": "Contestava a política federal de 2019 que dava ênfase ao método fônico."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "educacao",
+   "indice": 9,
+   "candidato": "flavio",
+   "proposta": "Propõe gestão escolar por indicadores e repasses de dinheiro ligados a metas de aprendizagem.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "Uma parcela da complementação da União ao Fundeb já é ligada a resultados (complementação-VAAR, 2,5 pontos percentuais, art. 212-A, V, c, da Constituição, e Lei 14.113/2020); ampliar critérios por resultado em programas federais exige lei, e elevar a fatia do Fundeb ligada a resultados exigiria PEC.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 212-A, V, c",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 14.113/2020 (Fundeb)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano propõe orçamento por resultados com repasses vinculados a metas de aprendizagem, sem abandonar regiões com mais dificuldade, e não informa valores.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A União define critérios dos seus repasses, mas a gestão das escolas é de estados e municípios em regime de colaboração (art. 211); mudanças legais e novos ciclos de avaliação cabem no mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 211",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "No Ceará, repasses a municípios ligados a resultados elevaram a aprendizagem, com efeito maior quando havia apoio técnico, e a responsabilização nos EUA elevou notas de matemática, mas não de leitura. Um experimento no Quênia mostrou que incentivos atrelados a provas podem gerar preparação para o teste sem ganho duradouro.",
+     "estudos": [
+      {
+       "titulo": "Incentives for Mayors to Improve Learning: Evidence from state reforms in Ceará, Brazil",
+       "autor": "Ildo Lautharte, Victor Hugo de Oliveira e André Loureiro (Banco Mundial)",
+       "ano": 2021,
+       "achado": "O repasse estadual por desempenho elevou as notas do 9º ano em cerca de 0,15 desvio padrão, e uma regra que penaliza municípios com mais alunos de baixo desempenho reduziu desigualdades.",
+       "url": "https://ideas.repec.org/p/wbk/wbrwps/9509.html",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "The Impact of No Child Left Behind on Student Achievement",
+       "autor": "Thomas Dee e Brian Jacob (NBER)",
+       "ano": 2009,
+       "achado": "A responsabilização por resultados elevou a matemática do 4º ano (efeito de 0,22 até 2007), sem evidência de ganho em leitura.",
+       "url": "https://www.nber.org/papers/w15531",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Teacher Incentives",
+       "autor": "Paul Glewwe, Nauman Ilias e Michael Kremer (NBER)",
+       "ano": 2003,
+       "achado": "Bônus ligados a notas no Quênia elevaram resultados enquanto vigoraram, via sessões de preparação para a prova, e os ganhos não persistiram.",
+       "url": "https://www.nber.org/papers/w9671",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Redes que melhoram indicadores recebem mais recursos; no Ceará, os alunos dessas redes tiveram ganhos de aprendizagem.",
+    "quem_paga_ou_perde": "Redes com piores resultados podem receber menos, e os estudos apontam risco de foco excessivo na prova; o desenho da regra define se as desigualdades aumentam ou diminuem.",
+    "fontes": [
+     {
+      "titulo": "Lautharte, Oliveira e Loureiro (2021)",
+      "url": "https://ideas.repec.org/p/wbk/wbrwps/9509.html"
+     },
+     {
+      "titulo": "Glewwe, Ilias e Kremer (2003)",
+      "url": "https://www.nber.org/papers/w9671"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4614/2023",
+     "ementa": "Altera a Lei do Fundeb para acrescentar nova condicionalidade para receber a complementação-VAAR, entre outras mudanças.",
+     "autor": "Mendonça Filho",
+     "partido": "PL-PE",
+     "situacao": "Tramitando em conjunto, com o PL 5032/2023 apensado",
+     "ultima_acao": "2023-10-25: apensado a ele o PL 5032/2023.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2389711",
+     "direcao": "esquerda",
+     "relacao": "Mexe na parcela do Fundeb que já é ligada a resultados."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 15/2015 (Emenda Constitucional 108/2020)",
+     "ementa": "Tornou o Fundeb permanente e criou a complementação-VAAR, além de critérios educacionais na distribuição da cota municipal do ICMS.",
+     "autor": "Raquel Muniz",
+     "partido": "PSD-MG",
+     "situacao": "Transformada na Emenda Constitucional 108/2020",
+     "ultima_acao": "2020-08-26: transformada em norma jurídica.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=1198512",
+     "direcao": "esquerda",
+     "relacao": "Criou o mecanismo existente de repasse federal ligado a resultados que a proposta ampliaria."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "Parte da complementação da União ao Fundeb já é repassada conforme resultados de aprendizagem (complementação-VAAR, EC 108/2020 e Lei 14.113/2020); a ampliação proposta não foi aprovada.",
+    "fonte": {
+     "titulo": "Lei nº 14.113/2020 (Fundeb)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm"
+    }
+   }
+  },
+  {
+   "tema": "educacao",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe ampliar as Escolas Cívico-Militares e uma educação “livre de doutrinação político-partidária”.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "O programa federal de escolas cívico-militares (Pecim) foi criado por decreto (Decreto 10.004/2019, com base no art. 84, IV, da Constituição) e revogado em 2023; recriá-lo pode ser feito por decreto, com adesão voluntária das redes. A parte sobre educação “livre de doutrinação” não tem instrumento definido no plano.",
+     "fontes": [
+      {
+       "titulo": "Decreto 10.004/2019 (Pecim, revogado)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d10004.htm"
+      },
+      {
+       "titulo": "Constituição Federal, art. 84, IV",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não informa custo nem fonte para ampliar as escolas cívico-militares.",
+     "estimativa_externa": "Estudo da UFJF, UFMG e USP registra que, em 2020, o Pecim destinou R$ 54 milhões às 54 primeiras escolas, cerca de R$ 1 milhão por escola, para infraestrutura e pagamento de militares da reserva.",
+     "fontes": [
+      {
+       "titulo": "Avaliação do impacto do Programa Nacional das Escolas Cívico-Militares (Pecim) nos indicadores educacionais",
+       "url": "https://diamantina.cedeplar.ufmg.br/portal/download/diamantina-2024/D20_463.pdf"
+      }
+     ]
+    },
+    "competencia": {
+     "nivel": "depende_estados_municipios",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "As escolas são das redes estaduais e municipais, que decidem aderir (art. 211); a União pode oferecer recursos e militares da reserva. O STF julga ações contra a lei paulista do modelo, o que pode definir limites.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 211",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "STF, ADI 7662",
+       "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6943348"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "baixo",
+     "resumo": "Dois estudos sem revisão por pares, um sobre Goiás e outro sobre o programa federal, encontraram melhora de notas e de indicadores de fluxo escolar nas escolas do modelo. Documento de posição do Todos Pela Educação contesta a atribuição desses ganhos à presença militar, porque as escolas já partiam de melhores condições, e cita estudo em Santa Catarina sem efeito significativo.",
+     "estudos": [
+      {
+       "titulo": "Um estudo sobre os impactos do modelo cívico-militar nas escolas públicas do Estado de Goiás (Cadernos Enap 124)",
+       "autor": "Jevuks Matheus de Araújo (Enap)",
+       "ano": 2023,
+       "achado": "O modelo reduziu a distorção idade-série em 10% e elevou as notas em 15,25 pontos em matemática e 11,61 em português.",
+       "url": "https://repositorio.enap.gov.br/handle/1/7587",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Avaliação do impacto do Programa Nacional das Escolas Cívico-Militares (Pecim) nos indicadores educacionais",
+       "autor": "Vitória Rocha, Ingrid Mendonça, Matheus dos Reis e Pedro Soares (UFJF, UFMG e USP)",
+       "ano": 2024,
+       "achado": "Com dados do Censo Escolar de 2015 a 2023, encontrou melhora de aprovação, reprovação, abandono e distorção idade-série nos anos finais do fundamental e no ensino médio.",
+       "url": "https://diamantina.cedeplar.ufmg.br/portal/download/diamantina-2024/D20_463.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "O que o Todos pensa sobre escolas cívico-militares",
+       "autor": "Todos Pela Educação",
+       "ano": 2026,
+       "achado": "Afirma que não há evidência robusta de que ganhos se devam à presença militar, porque as escolas do Pecim já tinham melhores condições, e cita estudo em Santa Catarina sem impacto significativo.",
+       "url": "https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2026/07/o-que-o-todos-pensa-sobre-escolas-civicos-militares.pdf",
+       "tipo": "entidade_interessada"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Alunos das escolas que aderem, segundo os estudos de Goiás e do Pecim, que encontram melhora de notas e de fluxo escolar.",
+    "quem_paga_ou_perde": "União e redes pagam militares e infraestrutura (cerca de R$ 1 milhão por escola no início do Pecim); segundo o Todos Pela Educação, alunos vulneráveis passaram a ser proporcionalmente menos atendidos nessas escolas.",
+    "fontes": [
+     {
+      "titulo": "Rocha et al. (2024)",
+      "url": "https://diamantina.cedeplar.ufmg.br/portal/download/diamantina-2024/D20_463.pdf"
+     },
+     {
+      "titulo": "Todos Pela Educação (2026)",
+      "url": "https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2026/07/o-que-o-todos-pensa-sobre-escolas-civicos-militares.pdf"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2154/2023",
+     "ementa": "Institui o Programa Nacional das Escolas Cívico-Militares.",
+     "autor": "Capitão Alberto Neto",
+     "partido": "PL-AM",
+     "situacao": "Aguardando parecer na Comissão de Educação (relator Dep. Moses Rodrigues)",
+     "ultima_acao": "2026-06-16: encerrado o prazo para emendas, sem emendas apresentadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2358496",
+     "direcao": "direita",
+     "relacao": "Recriaria por lei o programa federal que a proposta quer ampliar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2363/2023",
+     "ementa": "Institui a Política Nacional das Escolas Cívico-Militares (Pnacim).",
+     "autor": "Tenente Coronel Zucco",
+     "partido": "PL-RS",
+     "situacao": "Tramitando em conjunto (apensado ao PL 2154/2023)",
+     "ultima_acao": "2026-05-28: designado relator, Dep. Moses Rodrigues, do PL 2154/2023, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2360152",
+     "direcao": "direita",
+     "relacao": "Outra versão de política nacional para o modelo."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 7662 (com ADI 7675)",
+     "ementa": "Questiona a Lei Complementar paulista 1.398/2024, que criou o programa de escolas cívico-militares em São Paulo.",
+     "autor": "PSOL",
+     "partido": "PSOL",
+     "situacao": "Julgamento suspenso por pedido de vista; relator, Min. Gilmar Mendes, votou pela procedência parcial com interpretação conforme",
+     "ultima_acao": "2026-09-22: pedido de vista renovado (art. 134, § 4º, do RISTF).",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6943348",
+     "direcao": "fora do RILE",
+     "relacao": "A decisão pode fixar limites constitucionais para o modelo nas redes estaduais."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  }
+ ]
+}

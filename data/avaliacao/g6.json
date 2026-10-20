@@ -1,0 +1,2105 @@
+{
+ "grupo": "g6",
+ "temas": [
+  "instituicoes",
+  "politica-externa",
+  "cultura-esporte"
+ ],
+ "itens": [
+  {
+   "tema": "instituicoes",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe uma reforma política e eleitoral para que a representação política reflita melhor a composição da sociedade.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "A maior parte das regras eleitorais está em lei ordinária (Código Eleitoral e Lei 9.504/1997), mas mudanças no sistema proporcional de eleição de deputados (art. 45) ou nas regras de partidos fixadas na Constituição exigem PEC. Como o plano não diz quais regras mudariam, o instrumento depende do conteúdo; qualquer mudança só vale para eleição que ocorra mais de um ano depois (art. 16).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 16, 17 e 45",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 9.504/1997 (Lei das Eleições)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9504.htm"
+      },
+      {
+       "titulo": "Lei 4.737/1965 (Código Eleitoral)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l4737compilado.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não detalha as regras nem menciona custo.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Direito eleitoral é competência privativa da União (art. 22, I). Por causa da regra da anualidade, uma reforma aprovada até outubro de 2027 valeria para as eleições de 2028 e 2030.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 16 e 22",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A proposta não diz quais regras mudariam, o que impede avaliar seu efeito. Estudos brasileiros mostram que mudanças de regra alteram a composição das casas legislativas, como o fim das coligações, que reduziu a fragmentação partidária, e a reserva de recursos para candidatas, associada a mais deputadas eleitas em 2018.",
+     "estudos": [
+      {
+       "titulo": "Contextos competitivos fazem diferença?: o efeito do fim das coligações proporcionais sobre a fragmentação partidária (2016-2020)",
+       "autor": "Bruno Schaefer, Wagner Pralon Mancuso e Silvana Krause (E-Legis)",
+       "ano": 2024,
+       "achado": "A proibição das coligações proporcionais (EC 97/2017) reduziu em média o número efetivo de partidos nas câmaras municipais, mais onde os partidos se coligavam mais.",
+       "url": "https://e-legis.camara.leg.br/cefor/index.php/e-legis/article/view/839",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "A baixa representatividade feminina nos órgãos de direção partidária e a dificuldade de implementação das ações afirmativas",
+       "autor": "Bianca Maria Gonçalves e Silva (Resenha Eleitoral, TRE-SC)",
+       "ano": 2019,
+       "achado": "Com a reserva de recursos de campanha para mulheres aplicada pela primeira vez em 2018, o número de deputadas federais eleitas passou de 51 em 2014 para 78; a autora aponta a baixa presença de mulheres na direção dos partidos como obstáculo.",
+       "url": "https://resenhaeleitoral.tre-sc.jus.br/revista/article/download/122/111/208",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Não é possível dizer sem saber quais regras mudariam; os estudos indicam que regras eleitorais redistribuem cadeiras entre partidos e entre grupos sociais.",
+    "quem_paga_ou_perde": "Depende do desenho; no caso do fim das coligações, os estudos mostram perda de cadeiras para partidos pequenos.",
+    "fontes": [
+     {
+      "titulo": "Schaefer, Mancuso e Krause (2024)",
+      "url": "https://e-legis.camara.leg.br/cefor/index.php/e-legis/article/view/839"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "instituicoes",
+    "indice": 13,
+    "candidato": "flavio",
+    "diferenca": "Os dois propõem reforma política sem detalhar regras; Lula enfatiza que a representação reflita a composição da sociedade, e Flávio enfatiza partidos com mais nitidez programática e proximidade entre eleitor e eleito."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PLP",
+     "numero": "PLP 112/2021",
+     "ementa": "Dispõe sobre as normas eleitorais e as normas processuais eleitorais (novo Código Eleitoral).",
+     "autor": "Deputada Soraya Santos e outros",
+     "partido": "PL",
+     "situacao": "Aprovado na Câmara em 2021; no plenário do Senado, com prazo de emendas encerrado.",
+     "ultima_acao": "2025-08-29: encerrado o prazo de emendas no plenário do Senado; publicadas as emendas 375 a 421.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/149849",
+     "direcao": "esquerda",
+     "relacao": "Reúne e reescreve as regras eleitorais, principal veículo para uma reforma eleitoral por lei."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 9212/2017",
+     "ementa": "Altera a legislação eleitoral para instituir o voto distrital misto nas eleições proporcionais.",
+     "autor": "Senador José Serra",
+     "partido": "PSDB (à época)",
+     "situacao": "Aprovado no Senado; aguarda parecer na CCJC da Câmara.",
+     "ultima_acao": "2025-04-10: designado relator na CCJC o deputado Domingos Neto (PSD-CE).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2163674",
+     "direcao": "esquerda",
+     "relacao": "Propõe mudar o sistema de eleição de deputados, um dos temas centrais de qualquer reforma política."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 1,
+   "candidato": "lula",
+   "proposta": "Propõe avançar na regulação das redes sociais e plataformas digitais para impedir a difusão de desinformação e campanhas de ódio.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "Criar deveres e responsabilidades para plataformas digitais exige lei aprovada pelo Congresso, como o PL 2630/2020, que alteraria o regime do Marco Civil da Internet (Lei 12.965/2014). Em 2025 o STF já ampliou, por decisão judicial, a responsabilidade das plataformas prevista no art. 19 dessa lei.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22, I e IV",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 12.965/2014 (Marco Civil da Internet)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não detalha as regras nem menciona custo. Uma regulação com órgão fiscalizador teria custo de supervisão para o Estado e de adaptação para as empresas.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Legislar sobre direito civil e comunicações é competência privativa da União (art. 22). O PL 2630/2020 está pronto para o plenário da Câmara desde 2023 sem votação.",
+     "fontes": [
+      {
+       "titulo": "Câmara dos Deputados: tramitação do PL 2630/2020",
+       "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2256735"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Dois estudos sobre a lei alemã de 2017 (NetzDG), que obriga grandes plataformas a remover conteúdo ilegal, encontraram queda do discurso de ódio on-line e, em um deles, de crimes de ódio contra refugiados. Não há avaliação sobre desinformação; relatório de think tank documenta que leis semelhantes foram adotadas por países com baixa liberdade na internet para restringir discurso, e o plano não detalha o modelo.",
+     "estudos": [
+      {
+       "titulo": "The Effect of Content Moderation on Online and Offline Hate: Evidence from Germany's NetzDG",
+       "autor": "Rafael Jiménez Durán, Karsten Müller e Carlo Schwarz (CAGE Working Paper 701)",
+       "ano": 2024,
+       "achado": "A lei tornou o discurso on-line menos odioso e reduziu crimes de ódio contra refugiados em cerca de 1% por desvio-padrão de exposição a redes de extrema direita.",
+       "url": "https://econpapers.repec.org/RePEc:cge:wacage:701",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Combating online hate speech: The impact of legislation on Twitter",
+       "autor": "Raphaela Andres e Olga Slivko (ZEW Discussion Paper 21-103)",
+       "ano": 2021,
+       "achado": "Após a NetzDG, caíram a intensidade e o volume do discurso de ódio em tweets sobre migração, sem mudança em tweets sobre outros temas.",
+       "url": "https://ideas.repec.org/p/zbw/zewdip/21103.html",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "The Digital Berlin Wall: How Germany (Accidentally) Created a Prototype for Global Online Censorship",
+       "autor": "Jacob Mchangama e Joelle Fiss (Justitia)",
+       "ano": 2019,
+       "achado": "Ao menos 13 países adotaram ou propuseram leis no modelo da NetzDG, vários deles citando a lei alemã para restringir discurso on-line com categorias vagas como 'notícias falsas'.",
+       "url": "https://globalfreedomofexpression.columbia.edu/publications/the-digital-berlin-wall-how-germany-accidentally-created-a-prototype-for-global-online-censorship/",
+       "tipo": "think_tank"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo os estudos alemães, grupos alvo de discurso de ódio, como refugiados, tiveram menos exposição a ataques on-line e a crimes de ódio.",
+    "quem_paga_ou_perde": "As plataformas arcam com custos de moderação e multas; segundo o relatório da Justitia, usuários podem ter conteúdo legítimo removido quando as regras usam categorias vagas.",
+    "fontes": [
+     {
+      "titulo": "Jiménez Durán, Müller e Schwarz (2024)",
+      "url": "https://econpapers.repec.org/RePEc:cge:wacage:701"
+     },
+     {
+      "titulo": "Mchangama e Fiss (2019)",
+      "url": "https://globalfreedomofexpression.columbia.edu/publications/the-digital-berlin-wall-how-germany-accidentally-created-a-prototype-for-global-online-censorship/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "instituicoes",
+    "indice": 14,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe ampliar a regulação das plataformas contra desinformação e ódio; Flávio propõe extinguir estruturas estatais que classifiquem falas como desinformação."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2630/2020",
+     "ementa": "Institui a Lei Brasileira de Liberdade, Responsabilidade e Transparência na Internet.",
+     "autor": "Senador Alessandro Vieira",
+     "partido": "CIDADANIA (à época)",
+     "situacao": "Aprovado no Senado em 2020; pronto para pauta no plenário da Câmara.",
+     "ultima_acao": "2024-04-24: apresentado requerimento de apensação do PL 847/2019 ao PL 2630/2020.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2256735",
+     "direcao": "esquerda",
+     "relacao": "É o principal projeto de regulação de plataformas e de combate à desinformação em tramitação."
+    },
+    {
+     "casa": "STF",
+     "tipo": "RE",
+     "numero": "RE 1037396 (Tema 987)",
+     "ementa": "Constitucionalidade do art. 19 do Marco Civil da Internet, que exigia ordem judicial para responsabilizar plataformas por conteúdo de terceiros.",
+     "autor": "Facebook Serviços Online do Brasil (recorrente)",
+     "partido": "não se aplica",
+     "situacao": "Julgado em 2025, com ampliação da responsabilidade das plataformas; embargos julgados em junho de 2026 e processo baixado.",
+     "ultima_acao": "2026-06-28: autos devolvidos ao tribunal de origem, após publicação da ata dos embargos em 2026-06-19.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5160549",
+     "direcao": "esquerda",
+     "relacao": "A decisão já criou deveres para as plataformas sem lei nova, o que muda o ponto de partida de uma regulação pelo Congresso."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe ampliar a participação social no Plano Plurianual 2028-2031 e no ciclo do orçamento federal.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O PPA 2024-2027 (Lei 14.802/2024) já foi elaborado com plenárias estaduais e a plataforma Brasil Participativo, e o Sistema de Participação Social foi criado pelo Decreto 11.407/2023. A proposta amplia essa prática; o PPA continua sendo lei de iniciativa do Executivo aprovada pelo Congresso (art. 165).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 165",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 14.802/2024 (PPA 2024-2027)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14802.htm"
+      },
+      {
+       "titulo": "Decreto 11.407/2023 (Sistema de Participação Social)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11407.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo; a participação ocorre por plenárias e plataformas digitais já existentes.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "O projeto do PPA 2028-2031 deve ser enviado ao Congresso no primeiro ano do mandato, e o orçamento é votado todo ano.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 165",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudos com cidades brasileiras encontram associação entre orçamento participativo, mais gasto em saúde e menor mortalidade infantil, mas outro estudo não encontrou efeito mensurável nos resultados. Sobre o PPA federal de 2024-2027, um estudo aponta participação recorde em números absolutos, mas pouca deliberação real sobre as propostas.",
+     "estudos": [
+      {
+       "titulo": "Improving Social Well-Being Through New Democratic Institutions",
+       "autor": "Michael Touchton e Brian Wampler (Comparative Political Studies)",
+       "ano": 2014,
+       "achado": "Em grandes cidades brasileiras, o orçamento participativo está associado a mais gasto em saúde, mais organizações civis e menor mortalidade infantil, com efeito maior quanto mais tempo o programa dura.",
+       "url": "https://experts.boisestate.edu/en/publications/improving-social-well-being-through-new-democratic-institutions-2/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Voice, Votes, and Resources: Evaluating the Effect of Participatory Democracy on Well-being",
+       "autor": "Carew Boulding e Brian Wampler (World Development)",
+       "ano": 2010,
+       "achado": "Nas 220 maiores cidades brasileiras, o orçamento participativo elevou um pouco a parcela do gasto em saúde e educação, sem efeito mensurável nos indicadores de bem-estar.",
+       "url": "https://ideas.repec.org/a/eee/wdevel/v38y2010i1p125-135.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Entre dinâmicas digitais e presenciais: os desafios da participação social na formulação do Plano Plurianual 2024-2027",
+       "autor": "Diego de Menezes, Felipe Bezerra e Matheus Pereira (Revista do Serviço Público)",
+       "ano": 2024,
+       "achado": "O PPA 2024-2027 teve a maior participação da história em números absolutos, mas a participação não gerou debate real sobre as pautas e enfrentou dificuldade para mobilizar alguns setores.",
+       "url": "https://revista.enap.gov.br/index.php/RSP/article/view/10316",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Cidadãos e organizações civis que participam das plenárias e da plataforma ganham um canal para propor prioridades; os estudos municipais associam esse canal a mais gasto em saúde.",
+    "quem_paga_ou_perde": "Os estudos não apontam perdedores diretos; a definição de prioridades passa a dividir espaço com demandas apresentadas na consulta, e setores com menos capacidade de mobilização participam menos.",
+    "fontes": [
+     {
+      "titulo": "Touchton e Wampler (2014)",
+      "url": "https://experts.boisestate.edu/en/publications/improving-social-well-being-through-new-democratic-institutions-2/"
+     },
+     {
+      "titulo": "Menezes, Bezerra e Pereira (2024)",
+      "url": "https://revista.enap.gov.br/index.php/RSP/article/view/10316"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Congresso",
+     "tipo": "PLN",
+     "numero": "PLN 28/2023",
+     "ementa": "Institui o Plano Plurianual da União para 2024 a 2027, elaborado com participação social.",
+     "autor": "Presidência da República",
+     "partido": "não se aplica",
+     "situacao": "Transformado na Lei 14.802/2024.",
+     "ultima_acao": "2024-02-06: recebido ofício que comunica a restituição do autógrafo sancionado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2384710",
+     "direcao": "esquerda",
+     "relacao": "É o PPA participativo atual, que a proposta quer ampliar no ciclo 2028-2031."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 31/2023",
+     "ementa": "Susta os efeitos do Decreto 11.407/2023, que institui o Sistema de Participação Social.",
+     "autor": "Deputado Altineu Côrtes",
+     "partido": "PL",
+     "situacao": "Aguardando recebimento, sem andamento desde 2023.",
+     "ultima_acao": "2023-03-27: encaminhada à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2348082",
+     "direcao": "fora do RILE",
+     "relacao": "Busca derrubar o decreto que organiza a participação social no governo federal, base da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Sistema de Participação Social (Decreto 11.407/2023) está em vigor e o PPA 2024-2027 (Lei 14.802/2024) foi elaborado com participação social; a ampliação proposta não foi definida.",
+    "fonte": {
+     "titulo": "Decreto nº 11.407/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11407.htm"
+    }
+   }
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe limitar as decisões individuais de ministros do STF e privilegiar decisões colegiadas.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec",
+     "explicacao": "Limitar por regra constitucional as decisões monocráticas do STF exige emenda à Constituição (art. 60), como a PEC 8/2021, que já passou pelo Senado. Parte das regras de processo das ações de controle de constitucionalidade está em lei ordinária (Lei 9.868/1999) e pode ser alterada por lei, como propõe o PL 3640/2023.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 60, 97 e 102",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 9.868/1999 (processo da ADI e da ADC)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l9868.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo; a medida altera regras de funcionamento do STF.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Mudar a Constituição e as leis processuais é competência da União (arts. 22, I, e 60). A PEC 8/2021 foi aprovada no Senado em 2023 e aguarda comissão especial na Câmara, onde precisa de 308 votos em dois turnos.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 22 e 60",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Câmara dos Deputados: tramitação da PEC 8/2021",
+       "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2410488"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação dos efeitos de uma limitação constitucional das decisões individuais; os estudos disponíveis são descritivos. Eles mostram que decisões individuais superam as colegiadas e que liminares já ficaram anos sem análise do plenário, e o STF informa queda de 70,6% nas liminares individuais concedidas após mudar o regimento em 2022.",
+     "estudos": [
+      {
+       "titulo": "Ministrocracia: o Supremo Tribunal individual e o processo democrático brasileiro",
+       "autor": "Diego Werneck Arguelhes e Leandro Molhano Ribeiro (Novos Estudos CEBRAP)",
+       "ano": 2018,
+       "achado": "Liminares monocráticas e controle individual da pauta permitem a um único ministro suspender normas, às vezes por anos, sem análise do plenário.",
+       "url": "https://www.scielo.br/j/nec/a/GsYDWpRwSKzRGsyVY9zPSCP/?lang=pt",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Ao relator, tudo: o impacto do aumento do poder do ministro relator no Supremo",
+       "autor": "Ivar Hartmann e Lívia da Silva Ferreira (Revista Opinião Jurídica)",
+       "ano": 2015,
+       "achado": "Com dados do projeto Supremo em Números (FGV), decisões individuais de relatores superam muito as colegiadas, no controle concreto e no concentrado.",
+       "url": "https://periodicos.unichristus.edu.br/opiniaojuridica/article/view/266",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "STF reduz em mais de 70% liminares monocráticas concedidas desde 2022",
+       "autor": "Supremo Tribunal Federal (Relatório de Atividades)",
+       "ano": 2026,
+       "achado": "Após a Emenda Regimental 58/2022, que exige referendo imediato das liminares, as liminares monocráticas concedidas caíram 70,6%; 94 seguiam pendentes de análise colegiada.",
+       "url": "https://noticias.stf.jus.br/postsnoticias/stf-reduz-em-mais-de-70-liminares-monocraticas-concedidas-desde-2022/",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo os estudos, o plenário e as turmas passam a controlar decisões que suspendem leis, e as leis aprovadas pelo Congresso ficam em vigor até decisão colegiada.",
+    "quem_paga_ou_perde": "O ministro relator perde o poder de suspender sozinho uma norma; quem aciona o STF (partidos, entidades, governos) pode ter de esperar decisão colegiada em casos urgentes.",
+    "fontes": [
+     {
+      "titulo": "Arguelhes e Ribeiro (2018)",
+      "url": "https://www.scielo.br/j/nec/a/GsYDWpRwSKzRGsyVY9zPSCP/?lang=pt"
+     },
+     {
+      "titulo": "STF: queda das liminares monocráticas",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-reduz-em-mais-de-70-liminares-monocraticas-concedidas-desde-2022/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PEC",
+     "numero": "PEC 8/2021",
+     "ementa": "Altera a Constituição para dispor sobre pedidos de vista, declaração de inconstitucionalidade e medidas cautelares nos tribunais, limitando decisões monocráticas.",
+     "autor": "Senador Oriovisto Guimarães e outros",
+     "partido": "PODEMOS (à época)",
+     "situacao": "Aprovada no Senado em 2023 e na CCJ da Câmara em 2024; aguarda criação de comissão especial.",
+     "ultima_acao": "2025-12-04: apresentado requerimento (REQ 5423/2025) pedindo a criação da comissão especial da PEC.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2410488",
+     "direcao": "fora do RILE",
+     "relacao": "É a principal proposta em tramitação que limita decisões individuais de ministros do STF, como propõe o plano."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 3640/2023",
+     "ementa": "Dispõe sobre o processo e o julgamento das ações de controle concentrado de constitucionalidade no STF e revoga as Leis 9.868/1999 e 9.882/1999.",
+     "autor": "Deputado Marcos Pereira",
+     "partido": "REPUBLICANOS",
+     "situacao": "Aprovado na Câmara em 2025; aguarda despacho no Senado.",
+     "ultima_acao": "2025-12-22: autuado no Senado, proveniente da Câmara.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172313",
+     "direcao": "fora do RILE",
+     "relacao": "Regula por lei as ações de controle de constitucionalidade, incluindo regras para decisões cautelares individuais."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "A Emenda Regimental 58/2022 do STF já exige referendo imediato do plenário para liminares individuais; a limitação por emenda constitucional (PEC 8/2021) não foi aprovada.",
+    "fonte": {
+     "titulo": "STF: queda de liminares monocráticas após a Emenda Regimental 58/2022",
+     "url": "https://noticias.stf.jus.br/postsnoticias/stf-reduz-em-mais-de-70-liminares-monocraticas-concedidas-desde-2022/"
+    }
+   }
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 12,
+   "candidato": "flavio",
+   "proposta": "Propõe o fim da reeleição para Presidente da República.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "pec",
+     "explicacao": "A reeleição do presidente para um mandato seguido está prevista no art. 14, § 5º, da Constituição, incluído pela Emenda Constitucional 16/1997; acabar com ela exige nova emenda (art. 60), com 3/5 dos votos nas duas Casas em dois turnos.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 14 e 60",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Emenda Constitucional 16/1997",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc16.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo; a medida muda uma regra eleitoral.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Só o Congresso Nacional pode emendar a Constituição. Há PECs no Senado sobre o tema, uma delas pronta para o plenário desde 2025, mas a aprovação depende de quórum qualificado e da regra de transição que for adotada.",
+     "fontes": [
+      {
+       "titulo": "Senado Federal: PEC 12/2022",
+       "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/153068"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Estudos com dados de prefeitos brasileiros indicam que a possibilidade de reeleição reduz desvio de recursos e que limites de mandato combinados com partidos fracos enfraquecem a cobrança do eleitor. Outro estudo, com dados de governadores, encontrou ciclos de gasto mais intensos em ano eleitoral depois que a reeleição foi aprovada; não há estudo específico sobre o cargo de presidente.",
+     "estudos": [
+      {
+       "titulo": "Electoral Accountability and Corruption: Evidence from the Audits of Local Governments",
+       "autor": "Claudio Ferraz e Frederico Finan (American Economic Review)",
+       "ano": 2011,
+       "achado": "Prefeitos que podiam disputar a reeleição desviaram cerca de 27% menos recursos do que prefeitos em último mandato.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.101.4.1274",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "A emenda da reeleição e a Lei de Responsabilidade Fiscal: impactos sobre ciclos políticos e performance fiscal dos Estados (1986-2002)",
+       "autor": "Marcos Yamada Nakaguma e Siegfried Bender (Economia Aplicada)",
+       "ano": 2006,
+       "achado": "A emenda da reeleição intensificou os ciclos políticos de gasto nos estados, com manipulação oportunista no período eleitoral.",
+       "url": "https://revistas.usp.br/ecoa/article/view/928",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Incumbency Curse: Weak Parties, Term Limits, and Unfulfilled Accountability",
+       "autor": "Marko Klašnja e Rocío Titiunik (American Political Science Review)",
+       "ano": 2017,
+       "achado": "Em eleições municipais brasileiras de 1996 a 2012, limites de mandato combinados com partidos fracos levam o partido no poder a perder votos na eleição seguinte, o que os autores associam a menor responsabilização.",
+       "url": "https://ideas.repec.org/a/cup/apsrev/v111y2017i01p129-148_00.html",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo os estudos, a regra reduz o uso da máquina pública e dos ciclos de gasto em favor de quem está no cargo, e candidatos de oposição disputam sem enfrentar o presidente em exercício.",
+    "quem_paga_ou_perde": "O eleitor perde a opção de reconduzir um presidente bem avaliado, e os estudos sobre prefeitos indicam que sem reeleição se perde um incentivo a evitar desvios de recursos.",
+    "fontes": [
+     {
+      "titulo": "Ferraz e Finan (2011)",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.101.4.1274"
+     },
+     {
+      "titulo": "Nakaguma e Bender (2006)",
+      "url": "https://revistas.usp.br/ecoa/article/view/928"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PEC",
+     "numero": "PEC 12/2022",
+     "ementa": "Torna inelegíveis para o mesmo cargo, no período seguinte, os chefes do Poder Executivo e fixa seus mandatos em cinco anos.",
+     "autor": "Senador Jorge Kajuru e outros",
+     "partido": "PODEMOS (à época)",
+     "situacao": "Aprovada na CCJ do Senado; pronta para deliberação do plenário.",
+     "ultima_acao": "2025-08-13: recebida a Emenda nº 13, do senador Ciro Nogueira e outros, no plenário.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/153068",
+     "direcao": "fora do RILE",
+     "relacao": "Acaba com a reeleição de presidente, governadores e prefeitos, tema da proposta."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PEC",
+     "numero": "PEC 4/2026",
+     "ementa": "Torna o Presidente da República inelegível para o mesmo cargo no período subsequente.",
+     "autor": "Senador Flávio Bolsonaro e outros",
+     "partido": "PL",
+     "situacao": "Aguardando despacho.",
+     "ultima_acao": "2026-10-19: recebido o Requerimento nº 720/2026, do senador Laércio Oliveira, de apoiamento à PEC.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/172830",
+     "direcao": "fora do RILE",
+     "relacao": "PEC do próprio candidato que trata só do fim da reeleição para presidente, como diz o plano."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "instituicoes",
+   "indice": 14,
+   "candidato": "flavio",
+   "proposta": "Propõe o “Tesouraço da Censura”: extinguir estruturas do Estado que rotulem ou punam falas como desinformação e revogar atos do governo atual nesse sentido.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Estruturas do Executivo, como a Procuradoria Nacional da União de Defesa da Democracia, criada na AGU pelo Decreto 11.328/2023, podem ser extintas e reorganizadas por decreto (art. 84, VI, a). Estruturas de outros Poderes, como o centro de enfrentamento à desinformação do TSE, não dependem do presidente, e o STF já validou a norma do TSE sobre desinformação (ADI 7261).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 84, VI",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Decreto 11.328/2023 (estrutura da AGU)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11328.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo; a medida extingue estruturas e revoga atos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A parte que cabe ao Executivo federal pode ser feita por decreto logo no início do mandato; a parte ligada ao Judiciário e à Justiça Eleitoral não depende do governo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 84",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foi encontrada avaliação dos efeitos das estruturas federais de enfrentamento à desinformação que o plano quer extinguir, nem da sua extinção. Há evidência indireta nos dois sentidos: correções de informação falsa reduzem crenças erradas de forma moderada, e a percepção de vigilância estatal reduz a busca por temas sensíveis.",
+     "estudos": [
+      {
+       "titulo": "Fact-Checking: A Meta-Analysis of What Works and for Whom",
+       "autor": "Nathan Walter, Jonathan Cohen, R. Lance Holbert e Yasmin Morag (Political Communication)",
+       "ano": 2020,
+       "achado": "Em 30 estudos com 20.963 participantes, checagens de fatos corrigiram crenças políticas erradas com efeito moderado (d = 0,29), menor entre quem já tinha opinião formada.",
+       "url": "https://cris.haifa.ac.il/en/publications/fact-checking-a-meta-analysis-of-what-works-and-for-whom/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Chilling Effects: Online Surveillance and Wikipedia Use",
+       "autor": "Jonathon Penney (Berkeley Technology Law Journal)",
+       "ano": 2016,
+       "achado": "Depois que a vigilância on-line do governo dos EUA se tornou pública em 2013, o acesso a artigos da Wikipédia sobre temas sensíveis caiu de forma imediata e persistente.",
+       "url": "https://citizenlab.ca/2016/04/jon-penney-publishes-paper-chilling-effects-online-surveillance/",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo o plano, críticos do governo e usuários de redes deixariam de ter falas rotuladas ou monitoradas por órgãos do Executivo; o estudo de Penney associa a percepção de monitoramento estatal a autocensura.",
+    "quem_paga_ou_perde": "Órgãos públicos perdem um canal próprio para contestar informações falsas sobre políticas públicas; a meta-análise de Walter e outros indica que correções reduzem crenças erradas.",
+    "fontes": [
+     {
+      "titulo": "Penney (2016), resumo do Citizen Lab",
+      "url": "https://citizenlab.ca/2016/04/jon-penney-publishes-paper-chilling-effects-online-surveillance/"
+     },
+     {
+      "titulo": "Walter e outros (2020)",
+      "url": "https://cris.haifa.ac.il/en/publications/fact-checking-a-meta-analysis-of-what-works-and-for-whom/"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "instituicoes",
+    "indice": 1,
+    "candidato": "lula",
+    "diferenca": "Flávio propõe extinguir estruturas estatais que classifiquem falas como desinformação; Lula propõe ampliar a regulação das plataformas para impedir desinformação e campanhas de ódio."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 4/2023",
+     "ementa": "Susta os dispositivos do Decreto 11.328/2023 que criam a Procuradoria Nacional da União de Defesa da Democracia na AGU.",
+     "autor": "Deputados Deltan Dallagnol e Mendonça Filho",
+     "partido": "PODEMOS e PL (segundo a Câmara)",
+     "situacao": "Na Comissão de Constituição e Justiça da Câmara; a discussão foi suspensa por pedido de vista em 2024.",
+     "ultima_acao": "2024-06-26: encerrado o prazo de vista na CCJC.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2345681",
+     "direcao": "direita",
+     "relacao": "Extingue a estrutura da AGU que o plano descreve como um órgão de rotulagem de falas."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 34/2024",
+     "ementa": "Susta a Portaria TSE nº 180/2024, que institui o Centro Integrado de Enfrentamento à Desinformação e Defesa da Democracia.",
+     "autor": "Deputada Julia Zanatta",
+     "partido": "PL",
+     "situacao": "Aguardando designação de relator na CCJC.",
+     "ultima_acao": "2025-03-14: recebimento pela CCJC.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2421184",
+     "direcao": "direita",
+     "relacao": "Busca extinguir a estrutura de enfrentamento à desinformação da Justiça Eleitoral."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 7261",
+     "ementa": "Questionava a Resolução TSE 23.714/2022, sobre o enfrentamento à desinformação no processo eleitoral.",
+     "autor": "Procurador-Geral da República",
+     "partido": "não se aplica",
+     "situacao": "Julgada improcedente pelo plenário, por maioria; transitada em julgado.",
+     "ultima_acao": "2024-03-18: decisão de julgamento publicada no DJE e no DOU, após trânsito em julgado em 2024-03-14.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6507787",
+     "direcao": "direita",
+     "relacao": "O STF validou a atuação do TSE contra desinformação, o que limita o alcance da proposta sobre estruturas fora do Executivo."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe consolidar o Mercosul como principal plataforma de integração da América do Sul.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Brasil integra o Mercosul desde o Tratado de Assunção (Decreto 350/1991), e a Constituição manda buscar a integração econômica, política, social e cultural da América Latina (art. 4º, parágrafo único). Novos acordos negociados pelo bloco precisam ser aprovados pelo Congresso (art. 49, I).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 4º e 49",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Decreto 350/1991 (Tratado de Assunção)",
+       "url": "https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0350.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano prevê também integração de infraestrutura e um mercado comum sul-americano de energia, sem estimar custos.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Relações exteriores são competência da União (art. 21, I). Os avanços dependem de decisões conjuntas com os demais sócios do bloco, sem prazo definido no plano.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontradas avaliações de impacto recentes do Mercosul; as fontes são uma análise descritiva do Banco Mundial dos anos 1990, que associa as barreiras do bloco a desvio de comércio, e uma simulação do Ipea. A simulação projeta que o acordo com a União Europeia elevaria o PIB brasileiro em 0,46% até 2040, com efeitos negativos em alguns setores.",
+     "estudos": [
+      {
+       "titulo": "Does Mercosur's trade performance raise concerns about the effects of regional trade arrangements?",
+       "autor": "Alexander Yeats (Banco Mundial)",
+       "ano": 1997,
+       "achado": "O comércio dentro do bloco cresceu mais em bens intensivos em capital nos quais os sócios não tinham vantagem comparativa, o que o autor atribui às barreiras do Mercosul a terceiros.",
+       "url": "https://ideas.repec.org/p/wbk/wbrwps/1729.html",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Avaliação dos impactos do acordo de livre comércio Mercosul-União Europeia (Nota Técnica Dinte 68)",
+       "autor": "Fernando Ribeiro, Admir Betarelli Junior e Weslem Faria (Ipea)",
+       "ano": 2023,
+       "achado": "A simulação projeta alta acumulada de 0,46% no PIB e de 1,49% no investimento do Brasil entre 2024 e 2040, com o agronegócio como maior beneficiário.",
+       "url": "https://repositorio.ipea.gov.br/bitstream/11058/12718/1/NT_68_Dinte_Avaliacao_dos_impactos.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo a simulação do Ipea para o acordo com a União Europeia, o agronegócio e os exportadores de alimentos são os maiores beneficiários da agenda externa do bloco.",
+    "quem_paga_ou_perde": "Segundo o estudo de Yeats, consumidores e empresas dos países do bloco pagam mais quando a proteção comum desvia compras para fornecedores menos competitivos; a simulação do Ipea aponta perdas em parte da indústria.",
+    "fontes": [
+     {
+      "titulo": "Yeats (1997), Banco Mundial",
+      "url": "https://ideas.repec.org/p/wbk/wbrwps/1729.html"
+     },
+     {
+      "titulo": "Ipea, Nota Técnica Dinte 68",
+      "url": "https://repositorio.ipea.gov.br/bitstream/11058/12718/1/NT_68_Dinte_Avaliacao_dos_impactos.pdf"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Congresso",
+     "tipo": "PDL",
+     "numero": "PDL 41/2026",
+     "ementa": "Aprova o Acordo Provisório de Comércio entre o Mercosul e a União Europeia, assinado em Assunção em 17/01/2026.",
+     "autor": "Representação Brasileira no Parlamento do Mercosul",
+     "partido": "não se aplica",
+     "situacao": "Transformado no Decreto Legislativo 14/2026.",
+     "ultima_acao": "2026-03-18: recebido o autógrafo do Decreto Legislativo 14/2026, publicado no DOU de 17/03/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2604013",
+     "direcao": "direita",
+     "relacao": "É o principal acordo externo negociado pelo Mercosul, já aprovado pelo Brasil."
+    },
+    {
+     "casa": "Congresso",
+     "tipo": "PDL",
+     "numero": "PDL 570/2026",
+     "ementa": "Aprova o Acordo de Livre Comércio entre o Mercosul e os Estados da EFTA, assinado no Rio de Janeiro em 16/09/2025.",
+     "autor": "Representação Brasileira no Parlamento do Mercosul",
+     "partido": "não se aplica",
+     "situacao": "Transformado no Decreto Legislativo 146/2026.",
+     "ultima_acao": "2026-06-24: recebido o Decreto Legislativo 146/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2630608",
+     "direcao": "direita",
+     "relacao": "Amplia a rede de acordos comerciais negociados pelo Mercosul como bloco."
+    },
+    {
+     "casa": "Congresso",
+     "tipo": "PDL",
+     "numero": "PDL 571/2026",
+     "ementa": "Aprova o Acordo de Livre Comércio entre o Mercosul e a República de Singapura, assinado no Rio de Janeiro em 07/12/2023.",
+     "autor": "Representação Brasileira no Parlamento do Mercosul",
+     "partido": "não se aplica",
+     "situacao": "Transformado no Decreto Legislativo 147/2026.",
+     "ultima_acao": "2026-06-24: recebido o Decreto Legislativo 147/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2630626",
+     "direcao": "direita",
+     "relacao": "Outro acordo do bloco com parceiro fora da região, parte da agenda externa do Mercosul."
+    }
+   ],
+   "situacao_atual": {
+    "status": "parcialmente_em_vigor",
+    "texto": "O Brasil integra o Mercosul desde o Tratado de Assunção, promulgado pelo Decreto 350/1991; o aprofundamento proposto depende de negociação no bloco.",
+    "fonte": {
+     "titulo": "Decreto nº 350/1991 (Tratado de Assunção)",
+     "url": "https://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0350.htm"
+    }
+   }
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 2,
+   "candidato": "lula",
+   "proposta": "Propõe aprofundar a aproximação com o BRICS, o Sul Global e o G20.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Brasil já participa do BRICS e do G20, e a aproximação é conduzida pelo presidente na diplomacia (art. 84, VII). Compromissos financeiros ou acordos formais, como aportes ao Novo Banco de Desenvolvimento, dependem de lei ou de aprovação do Congresso (art. 49, I).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 4º, 49 e 84",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não menciona custo. Aportes ao Novo Banco de Desenvolvimento, como o previsto no PL 4259/2024, teriam impacto no orçamento.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Relações exteriores são competência da União (art. 21, I), e a participação nos fóruns já ocorre; a proposta é de intensidade, sem metas que dependam de prazo longo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "A proposta é genérica e não diz que resultados busca, o que limita a avaliação. Um estudo do Ipea conclui que o banco do BRICS ainda enfrenta desafios para cumprir seus objetivos, e uma monografia de graduação estima aumento de comércio entre os membros só a partir de 2020.",
+     "estudos": [
+      {
+       "titulo": "Arquitetura financeira conjunta dos BRICS: o Novo Banco de Desenvolvimento (Texto para Discussão 243)",
+       "autor": "Luciana Acioly (Ipea)",
+       "ano": 2019,
+       "achado": "O Novo Banco de Desenvolvimento foi criado para financiar infraestrutura e desenvolvimento sustentável com práticas diferentes das instituições do pós-guerra, mas ainda enfrenta desafios importantes para cumprir esses objetivos.",
+       "url": "https://repositorio.ipea.gov.br/entities/publication/55ef0414-dba2-4bcc-a534-bf31c30a77f3/full",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "BRICS Matters: Analyzing the Effect of BRICS on Trade Amid Western Resistance and the Erosion of World Order",
+       "autor": "Blake Peters (monografia de graduação, Princeton University)",
+       "ano": 2025,
+       "achado": "Com modelo gravitacional, o BRICS não teve efeito significativo sobre o comércio entre os membros na primeira década, mas de 2020 a 2023 se associou a aumento de 37% no comércio interno do grupo.",
+       "url": "https://theses-dissertations.princeton.edu/entities/publication/a43c80f0-e2f8-48c6-b6e9-9b2f4b882b71",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo o Ipea, o país passa a ter acesso a uma fonte adicional de financiamento de infraestrutura pelo Novo Banco de Desenvolvimento; exportadores para os membros podem se beneficiar se houver efeito sobre o comércio.",
+    "quem_paga_ou_perde": "O Tesouro arca com eventuais aportes ao banco; as fontes consultadas não medem efeitos sobre as relações com outros parceiros.",
+    "fontes": [
+     {
+      "titulo": "Acioly (2019), Ipea",
+      "url": "https://repositorio.ipea.gov.br/entities/publication/55ef0414-dba2-4bcc-a534-bf31c30a77f3/full"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "politica-externa",
+    "indice": 9,
+    "candidato": "flavio",
+    "diferenca": "Lula propõe aprofundar a aproximação com BRICS, Sul Global e G20; Flávio propõe priorizar a adesão à OCDE, que reúne principalmente países desenvolvidos."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4259/2024",
+     "ementa": "Autoriza o Poder Executivo federal a efetuar contribuições a fundo do Novo Banco de Desenvolvimento.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Aguardando despacho do presidente da Câmara.",
+     "ultima_acao": "2026-06-09: apresentado requerimento de urgência (REQ 3411/2026) pelo deputado Paulo Pimenta (PT-RS) e outros.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2467116",
+     "direcao": "esquerda",
+     "relacao": "Trata do financiamento ao banco criado pelo BRICS, principal instrumento econômico do grupo."
+    },
+    {
+     "casa": "Congresso",
+     "tipo": "PDL",
+     "numero": "PDL 657/2019",
+     "ementa": "Aprova o acordo com o Novo Banco de Desenvolvimento sobre a sede do Escritório Regional das Américas do banco no Brasil.",
+     "autor": "Comissão de Relações Exteriores e de Defesa Nacional da Câmara",
+     "partido": "não se aplica",
+     "situacao": "Transformado em norma jurídica (decreto legislativo promulgado).",
+     "ultima_acao": "2020-07-17: recebido ofício do Senado com o autógrafo promulgado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2224729",
+     "direcao": "esquerda",
+     "relacao": "Instalou no Brasil o escritório regional do banco do BRICS, base institucional da aproximação proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe defender a reforma da ONU, em especial do Conselho de Segurança, e de instituições como OMC, FMI e Banco Mundial.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A defesa da reforma do Conselho de Segurança é posição diplomática já mantida pelo Brasil, conduzida pelo presidente (art. 84, VII). A reforma em si não depende do Brasil: exige emenda à Carta da ONU aprovada por dois terços da Assembleia Geral e ratificada pelos membros permanentes.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 4º e 84",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Carta das Nações Unidas, art. 108",
+       "url": "https://www.un.org/en/about-us/un-charter/chapter-18"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo; a medida é de atuação diplomática.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "alem_de_4_anos",
+     "explicacao": "A atuação diplomática é competência da União (art. 21, I), mas o resultado depende de negociação entre os 193 membros da ONU, que segundo o próprio G4 avança pouco há anos.",
+     "fontes": [
+      {
+       "titulo": "Declaração conjunta dos ministros do G4 (2022)",
+       "url": "https://www.auswaertiges-amt.de/en/newsroom/news/-/2554268"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não foram encontrados estudos que avaliem efeitos de uma reforma do Conselho de Segurança, que não ocorreu. Há registro de que a reforma de cotas do FMI de 2010, em vigor desde 2016, transferiu mais de 6% das cotas para países emergentes, enquanto as negociações sobre o Conselho seguem sem avanço substantivo.",
+     "estudos": [
+      {
+       "titulo": "Historic Quota and Governance Reforms Become Effective (Press Release 16/25)",
+       "autor": "Fundo Monetário Internacional",
+       "ano": 2016,
+       "achado": "A reforma de 2010 passou mais de 6% das cotas a países emergentes e em desenvolvimento, e Brasil, China, Índia e Rússia ficaram entre os dez maiores membros.",
+       "url": "https://www.imf.org/en/News/Articles/2015/09/14/01/49/pr1625a",
+       "tipo": "organismo_internacional"
+      },
+      {
+       "titulo": "Joint Press Statement following the Meeting of the Foreign Ministers of the G4 countries",
+       "autor": "Ministros das Relações Exteriores de Brasil, Alemanha, Índia e Japão",
+       "ano": 2022,
+       "achado": "Os ministros registraram a falta de progresso significativo nas negociações intergovernamentais sobre a reforma do Conselho de Segurança.",
+       "url": "https://www.auswaertiges-amt.de/en/newsroom/news/-/2554268",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "No caso do FMI, a reforma aumentou o peso de voto de países emergentes, entre eles o Brasil; uma reforma do Conselho poderia ampliar a representação de países em desenvolvimento.",
+    "quem_paga_ou_perde": "Na reforma do FMI, países considerados sobrerrepresentados, sobretudo europeus avançados, cederam cotas e cadeiras na diretoria.",
+    "fontes": [
+     {
+      "titulo": "FMI, Press Release 16/25",
+      "url": "https://www.imf.org/en/News/Articles/2015/09/14/01/49/pr1625a"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe recompor relações com Argentina, Estados Unidos e Israel e negociar com todos os parceiros, da China à União Europeia.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Manter relações com Estados estrangeiros e conduzir a diplomacia é competência privativa do presidente (art. 84, VII). Acordos que resultem dessas negociações precisam de aprovação do Congresso (art. 49, I).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 49 e 84",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo; a medida é de orientação diplomática.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Relações exteriores são competência da União (art. 21, I), e a reaproximação pode começar no início do mandato; o resultado depende também da resposta dos outros governos.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 21",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "favoravel",
+     "consenso": "medio",
+     "resumo": "Estudos de comércio internacional encontram que tensões políticas entre governos reduzem o comércio bilateral, em alguns casos de forma temporária. Não foram encontrados estudos específicos sobre as relações do Brasil com Argentina, Estados Unidos e Israel, nem sobre efeitos de reaproximação sobre terceiros parceiros.",
+     "estudos": [
+      {
+       "titulo": "Freedom Fries",
+       "autor": "Guy Michaels e Xiaojia Zhi (American Economic Journal: Applied Economics)",
+       "ano": 2010,
+       "achado": "A piora da opinião dos EUA sobre a França em 2002-2003 reduziu o comércio bilateral em cerca de 9%.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/app.2.3.256",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Paying a visit: The Dalai Lama effect on international trade",
+       "autor": "Andreas Fuchs e Nils-Hendrik Klann (Journal of International Economics)",
+       "ano": 2013,
+       "achado": "Países cujos chefes de governo receberam o Dalai Lama exportaram menos para a China, sobretudo máquinas e equipamentos de transporte; o efeito desapareceu em cerca de dois anos.",
+       "url": "https://econpapers.repec.org/RePEc:zbw:cegedp:113",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Exportadores para os três países citados, se a melhora das relações se refletir em comércio, como sugerem os estudos sobre tensões diplomáticas.",
+    "quem_paga_ou_perde": "Os estudos não identificam perdedores diretos; o efeito sobre a relação com outros parceiros depende de como a reaproximação for conduzida.",
+    "fontes": [
+     {
+      "titulo": "Michaels e Zhi (2010)",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/app.2.3.256"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "politica-externa",
+    "indice": 1,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem negociar com todos os parceiros; Flávio destaca a recomposição com Argentina, Estados Unidos e Israel, e Lula destaca uma política universalista com abertura de novos mercados."
+   },
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 2088/2023",
+     "ementa": "Estabelece critérios para suspender concessões comerciais, de investimentos e de propriedade intelectual em resposta a medidas unilaterais de país ou bloco que prejudiquem a competitividade brasileira (Lei da Reciprocidade).",
+     "autor": "Senador Zequinha Marinho",
+     "partido": "PL",
+     "situacao": "Transformado na Lei 15.122/2025.",
+     "ultima_acao": "2025-04-14: transformado em norma jurídica.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157055",
+     "direcao": "esquerda",
+     "relacao": "É o instrumento legal de resposta a tarifas de outros países, como as aplicadas pelos Estados Unidos ao Brasil em 2025."
+    },
+    {
+     "casa": "Congresso",
+     "tipo": "MPV",
+     "numero": "MPV 1309/2025",
+     "ementa": "Institui o Plano Brasil Soberano e o Comitê de Acompanhamento das Relações Comerciais com os Estados Unidos.",
+     "autor": "Poder Executivo",
+     "partido": "não se aplica",
+     "situacao": "Perdeu a eficácia.",
+     "ultima_acao": "2026-03-24: ofício do Congresso comunica o fim do prazo para edição de decreto legislativo sobre a medida.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2545055",
+     "direcao": "direita",
+     "relacao": "Medida de apoio a exportadores afetados pelas tarifas dos EUA, ligada ao desgaste na relação bilateral citado no plano."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 9,
+   "candidato": "flavio",
+   "proposta": "Propõe retomar a adesão do Brasil à OCDE, incluindo o fim gradual do IOF sobre câmbio.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Conduzir a negociação de adesão é atribuição do presidente (art. 84, VII e VIII), e as alíquotas do IOF podem ser alteradas por decreto (art. 153, § 1º), como fez o Decreto 10.997/2022, que zerava o IOF câmbio até 2029. A adesão final à OCDE é um tratado e precisa ser aprovada pelo Congresso por decreto legislativo (art. 49, I).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 49, 84 e 153",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Decreto 10.997/2022 (redução gradual do IOF câmbio)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d10997.htm"
+      },
+      {
+       "titulo": "Decreto 12.499/2025 (alterou alíquotas do IOF)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12499.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que o fim gradual do IOF sobre câmbio é condição obrigatória do processo, mas não estima a perda de arrecadação nem indica compensação.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Relações exteriores e impostos federais são competência da União (art. 21, I, e art. 153). O IOF pode ser reduzido por decreto no mandato, mas a conclusão da adesão depende da avaliação dos membros da OCDE e da aprovação do Congresso, e o plano não indica prazo.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 21 e 153",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Um estudo do Ipea estimou que a adesão do Chile à OCDE elevou a entrada de investimento direto estrangeiro em cerca de 35% do PIB acumulados em oito anos. Outro estudo, com o mesmo método, não encontrou diferença significativa no desempenho econômico de Chile e México após a adesão.",
+     "estudos": [
+      {
+       "titulo": "A acessão à OCDE produz algum efeito sobre o ingresso de investimento direto estrangeiro? Uma análise do caso do Chile",
+       "autor": "André Pineli (Ipea)",
+       "ano": 2020,
+       "achado": "Pelo método de controle sintético, a entrada acumulada de investimento estrangeiro no Chile nos oito anos após o início da adesão foi cerca de 35% do PIB maior, sobretudo após a conclusão do processo.",
+       "url": "https://repositorio.ipea.gov.br/entities/publication/c6649f38-6b94-4b4f-a673-58d76d3c6b35",
+       "tipo": "avaliacao_oficial"
+      },
+      {
+       "titulo": "Examining the benefits of Brazil joining the OECD: Lessons from Chile and Mexico",
+       "autor": "Edson Roberto Vieira e outros (Estudios Económicos, El Colegio de México)",
+       "ano": 2026,
+       "achado": "A adesão à OCDE não gerou diferença significativa no desempenho econômico de Chile e México em comparação com economias sintéticas.",
+       "url": "https://revistas.colmex.mx/Record/oai:oai.estudioseconomicos.colmex.mx:article-471/Description",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Quem compra moeda estrangeira, viaja ou paga despesas no exterior deixa de pagar IOF câmbio; segundo o estudo do Ipea, o país pode atrair mais investimento estrangeiro.",
+    "quem_paga_ou_perde": "A União perde a arrecadação do IOF sobre câmbio, sem compensação indicada no plano; o país também assume compromissos de adequar leis e práticas aos padrões da OCDE.",
+    "fontes": [
+     {
+      "titulo": "Pineli (2020), Ipea",
+      "url": "https://repositorio.ipea.gov.br/entities/publication/c6649f38-6b94-4b4f-a673-58d76d3c6b35"
+     },
+     {
+      "titulo": "Decreto 10.997/2022",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d10997.htm"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "politica-externa",
+    "indice": 2,
+    "candidato": "lula",
+    "diferenca": "Flávio prioriza a entrada na OCDE, que reúne principalmente países desenvolvidos; Lula prioriza a aproximação com BRICS, Sul Global e G20."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 214/2025",
+     "ementa": "Susta os efeitos do Decreto 12.466/2025, que aumentou alíquotas do IOF, inclusive sobre câmbio.",
+     "autor": "Deputado Zucco",
+     "partido": "PL",
+     "situacao": "Aprovado e transformado no Decreto Legislativo 176/2025.",
+     "ultima_acao": "2025-06-27: recebido o autógrafo do Decreto Legislativo 176/2025.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2515648",
+     "direcao": "direita",
+     "relacao": "O Congresso derrubou o aumento do IOF de 2025, que ia na direção oposta ao fim do IOF câmbio citado no plano."
+    },
+    {
+     "casa": "STF",
+     "tipo": "ADI",
+     "numero": "ADI 7827 (com ADI 7839 e ADC 96)",
+     "ementa": "Questiona os decretos de 2025 que aumentaram o IOF e o decreto legislativo que os sustou.",
+     "autor": "Partido Liberal",
+     "partido": "PL",
+     "situacao": "Liminar do relator, Alexandre de Moraes, restabeleceu em 2025 quase todo o Decreto 12.499/2025; mérito pendente.",
+     "ultima_acao": "2026-10-16: autos conclusos ao relator.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7280244",
+     "direcao": "fora do RILE",
+     "relacao": "Define se o aumento do IOF, incluindo o de câmbio, segue em vigor, o que afeta o ponto de partida para zerar o tributo."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "politica-externa",
+   "indice": 10,
+   "candidato": "flavio",
+   "proposta": "Propõe preparar uma abertura comercial que facilite importar máquinas, tecnologia e insumos.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "O Executivo pode alterar alíquotas do imposto de importação por ato próprio (art. 153, § 1º), hoje por resoluções do Gecex/Camex. Como o Brasil aplica a Tarifa Externa Comum do Mercosul, cortes amplos e permanentes dependem de negociação com os sócios do bloco ou de acordos comerciais, que passam pelo Congresso (art. 49, I).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 49 e 153",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano diz que a abertura aumenta a concorrência e reduz preços, mas não estima a perda de arrecadação do imposto de importação.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "incerto",
+     "explicacao": "Comércio exterior é competência privativa da União (art. 22, VIII). O plano fala em 'preparar' a abertura, sem calendário, e parte das reduções depende do Mercosul.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, art. 22",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudos sobre a abertura brasileira dos anos 1990 mostram ganho de produtividade nas empresas, em parte pelo acesso a insumos importados com melhor tecnologia. Também mostram que regiões mais expostas aos cortes de tarifa tiveram perdas de emprego formal e de salários que se aprofundaram por 20 anos.",
+     "estudos": [
+      {
+       "titulo": "Heterogeneous Productivity Response to Tariff Reduction: Evidence from Brazilian Manufacturing Firms",
+       "autor": "Adriana Schor (Journal of Development Economics)",
+       "ano": 2004,
+       "achado": "Em 4.484 indústrias brasileiras de 1986 a 1998, tarifas menores sobre produtos e insumos se associaram a maior produtividade, com respostas muito diferentes entre empresas.",
+       "url": "https://nber.org/papers/w10544",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Trade Liberalization and Regional Dynamics",
+       "autor": "Rafael Dix-Carneiro e Brian Kovak (American Economic Review)",
+       "ano": 2017,
+       "achado": "Regiões brasileiras com cortes de tarifa maiores tiveram queda persistente de emprego formal e de renda; o efeito após 20 anos foi cerca de três vezes o observado após 10 anos.",
+       "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20161214",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Empresas que usam máquinas e insumos importados, que segundo Schor ganham produtividade, e consumidores, se a concorrência reduzir preços.",
+    "quem_paga_ou_perde": "Trabalhadores e regiões ligados a setores que competem com importados, que segundo Dix-Carneiro e Kovak perderam emprego formal e renda de forma duradoura; a União perde arrecadação de imposto de importação.",
+    "fontes": [
+     {
+      "titulo": "Schor (2004)",
+      "url": "https://nber.org/papers/w10544"
+     },
+     {
+      "titulo": "Dix-Carneiro e Kovak (2017)",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20161214"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Congresso",
+     "tipo": "PDL",
+     "numero": "PDL 41/2026",
+     "ementa": "Aprova o Acordo Provisório de Comércio entre o Mercosul e a União Europeia, assinado em Assunção em 17/01/2026.",
+     "autor": "Representação Brasileira no Parlamento do Mercosul",
+     "partido": "não se aplica",
+     "situacao": "Aprovado pela Câmara e pelo Senado; transformado no Decreto Legislativo 14/2026.",
+     "ultima_acao": "2026-03-18: recebido o autógrafo do Decreto Legislativo 14/2026, publicado no DOU de 17/03/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2604013",
+     "direcao": "direita",
+     "relacao": "O acordo prevê redução de tarifas de importação entre os blocos, uma forma negociada de abertura comercial."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PDL",
+     "numero": "PDL 44/2026",
+     "ementa": "Susta a Resolução Gecex nº 852/2026, que eleva alíquotas do imposto de importação sobre bens de capital e equipamentos industriais, agrícolas, hospitalares e de infraestrutura.",
+     "autor": "Deputado Nikolas Ferreira",
+     "partido": "PL",
+     "situacao": "Aguardando despacho do presidente da Câmara.",
+     "ultima_acao": "2026-02-24: apresentação do projeto.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2604363",
+     "direcao": "direita",
+     "relacao": "Trata justamente da tarifa de importação de máquinas e equipamentos, que a proposta quer reduzir."
+    },
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 2088/2023",
+     "ementa": "Estabelece critérios para suspender concessões comerciais, de investimentos e de propriedade intelectual em resposta a medidas unilaterais de país ou bloco que prejudiquem a competitividade brasileira (Lei da Reciprocidade).",
+     "autor": "Senador Zequinha Marinho",
+     "partido": "PL",
+     "situacao": "Transformado na Lei 15.122/2025.",
+     "ultima_acao": "2025-04-14: transformado em norma jurídica.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157055",
+     "direcao": "esquerda",
+     "relacao": "Cria instrumentos de retaliação tarifária, que podem conviver ou entrar em tensão com uma política de abertura."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 0,
+   "candidato": "lula",
+   "proposta": "Propõe aperfeiçoar a Lei Aldir Blanc e a Lei Rouanet e desconcentrar regionalmente o apoio à cultura.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "A Lei Rouanet (Lei 8.313/1991) e a Política Nacional Aldir Blanc (Lei 14.399/2022, alterada pela Lei 15.132/2025) já existem. Parte das regras de seleção e distribuição pode ser mudada por normas do Ministério da Cultura; mudanças nos limites de renúncia ou nos repasses exigem lei ordinária.",
+     "fontes": [
+      {
+       "titulo": "Lei 8.313/1991 (Lei Rouanet)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8313cons.htm"
+      },
+      {
+       "titulo": "Lei 14.399/2022 (Política Nacional Aldir Blanc)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14399.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima quanto custaria aperfeiçoar e desconcentrar as duas leis.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Proteger e incentivar a cultura é competência comum da União, dos estados e dos municípios (arts. 23, V, e 215); a Aldir Blanc depende da execução local dos repasses. Ajustes de regra podem ser feitos dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23 e 215",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto das leis de incentivo sobre a desconcentração regional da cultura. As fontes são um estudo descritivo, que mostra recursos da Lei Rouanet concentrados no Sudeste e em municípios maiores e mais ricos, e uma estimativa de impacto econômico encomendada pelo Ministério da Cultura, que calcula R$ 27,5 bilhões movimentados em 2024.",
+     "estudos": [
+      {
+       "titulo": "Distribuição geográfica de projetos culturais com captação de recursos via Lei Rouanet",
+       "autor": "Lusvanio Teixeira, Wescley Xavier e Evandro de Faria (DRd - Desenvolvimento Regional em Debate)",
+       "ano": 2024,
+       "achado": "Os recursos se concentram no Sudeste e em municípios com mais população e PIB; os autores consideram a lei limitada para democratizar o acesso geograficamente.",
+       "url": "https://www.periodicos.unc.br/index.php/drd/article/view/5320",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Lei Rouanet: uma força estratégica para o desenvolvimento do Brasil (Pesquisa de Impacto Econômico da Lei Rouanet)",
+       "autor": "Fundação Getulio Vargas, sob encomenda do Ministério da Cultura e da OEI",
+       "ano": 2026,
+       "achado": "Em 2024, os projetos apoiados movimentaram R$ 27,5 bilhões na economia, retorno superior a R$ 7 por real investido; o estudo foi encomendado pelo próprio ministério.",
+       "url": "https://static.poder360.com.br/2026/01/PESQUISA-ROUANET-fgv-1.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Artistas, produtores e fornecedores do setor cultural, segundo a pesquisa da FGV; com a desconcentração, proponentes fora do Sudeste e de cidades menores.",
+    "quem_paga_ou_perde": "A União deixa de arrecadar o imposto renunciado e repassa recursos a estados e municípios; com a desconcentração, proponentes das regiões que hoje captam mais podem receber parcela menor.",
+    "fontes": [
+     {
+      "titulo": "FGV (2026)",
+      "url": "https://static.poder360.com.br/2026/01/PESQUISA-ROUANET-fgv-1.pdf"
+     },
+     {
+      "titulo": "Teixeira, Xavier e Faria (2024)",
+      "url": "https://www.periodicos.unc.br/index.php/drd/article/view/5320"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "cultura-esporte",
+    "indice": 8,
+    "candidato": "flavio",
+    "diferenca": "Os dois propõem aperfeiçoar as leis de incentivo e levar recursos a outras regiões; Lula cita também a Lei Aldir Blanc, de repasse a estados e municípios, e Flávio fala em corrigir distorções e apoiar artistas de pouca projeção."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 363/2025",
+     "ementa": "Altera a Lei 14.399/2022, que institui a Política Nacional Aldir Blanc de Fomento à Cultura.",
+     "autor": "Deputado José Guimarães",
+     "partido": "PT",
+     "situacao": "Transformado na Lei 15.132/2025.",
+     "ultima_acao": "2025-04-30: transformado na Lei 15.132/2025 (DOU de 02/05/2025).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2483495",
+     "direcao": "fora do RILE",
+     "relacao": "Mudou as regras de repasse da Aldir Blanc, uma das duas leis que o plano quer aperfeiçoar."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3411/2025",
+     "ementa": "Acrescenta o art. 30-A à Lei 8.313/1991 para que o incentivo a projetos culturais contenha medidas de democratização, descentralização e regionalização.",
+     "autor": "Deputado Merlong Solano",
+     "partido": "PT",
+     "situacao": "Com parecer da Comissão de Cultura; aguardando designação de relator na comissão seguinte.",
+     "ultima_acao": "2025-12-05: parecer da Comissão de Cultura encaminhado à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2536616",
+     "direcao": "fora do RILE",
+     "relacao": "Trata da desconcentração regional da Lei Rouanet, objetivo citado no plano."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 3,
+   "candidato": "lula",
+   "proposta": "Propõe aprovar no Congresso uma regulamentação do streaming de vídeo que atenda ao interesse nacional.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "Cobrar a Condecine de serviços de streaming e impor obrigações de conteúdo nacional exige lei, por se tratar de contribuição de intervenção no domínio econômico (art. 149) e de regras para um setor econômico. O texto em análise altera a MP 2.228-1/2001 e a Lei 12.485/2011.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 149 e 221",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Medida Provisória 2.228-1/2001 (Ancine e Condecine)",
+       "url": "https://www.planalto.gov.br/ccivil_03/mpv/2228-1.htm"
+      },
+      {
+       "titulo": "Lei 12.485/2011 (TV por assinatura)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12485.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo. A regulação proposta no Congresso cria receita de Condecine para o fomento ao audiovisual, paga pelas plataformas.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "federal",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Legislar sobre comunicação e criar contribuições é competência da União (arts. 22, IV, e 149). O projeto já passou pelo Senado e pela Câmara e aguarda a análise final do Senado sobre o texto da Câmara.",
+     "fontes": [
+      {
+       "titulo": "Senado Federal: PL 2331/2022 (substitutivo da Câmara)",
+       "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/171663"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Na Europa, 13 países ou regiões já impõem obrigações de investimento às plataformas, mas um estudo de 2022 afirma que os efeitos são difíceis de avaliar e aponta riscos, como alta de custos de produção. No Brasil, as cotas da TV por assinatura foram cumpridas e superadas nos primeiros anos, com parte relevante das obras feita em coprodução com um grande grupo de mídia.",
+     "estudos": [
+      {
+       "titulo": "Investment obligations for VOD providers to contribute to the production of European works: A 2022 update",
+       "autor": "Ivana Kostovska, Tim Raats e outros (imec-SMIT, Vrije Universiteit Brussel)",
+       "ano": 2022,
+       "achado": "Treze países ou regiões da UE impõem obrigações financeiras às plataformas; os autores afirmam que avaliar os efeitos é difícil e que é preciso evitar superestimá-los, citando riscos de alta de custos de produção.",
+       "url": "https://cris.vub.be/ws/portalfiles/portal/87666116/Kostovska_et_al_2022_Investment_Obligations_VOD_Providers_Study_1.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "Independente, pero no mucho: a coprodução das obras audiovisuais ficcionais independentes brasileiras",
+       "autor": "Ana Heloiza Vita Pessotto e Pedro Santoro Zambon (anais, Universidade do Sagrado Coração)",
+       "ano": 2017,
+       "achado": "As cotas de produção independente da Lei da TV paga foram cumpridas e excedidas de 2012 a 2014, mas parte das obras foi coproduzida pela Globo Filmes, o que relativiza a independência.",
+       "url": "https://unisagrado.edu.br/uploads/2008/anais/comunic_social_2017/Estudos_de_Midia/Ana_Heloiza_Vita_Pessotto_indapendente_pero_no_mucho.pdf",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Produtoras brasileiras, em especial independentes, que passam a contar com recursos e espaço nos catálogos, segundo a experiência das cotas da TV paga.",
+    "quem_paga_ou_perde": "As plataformas de streaming pagam a contribuição e arcam com as obrigações; o estudo europeu aponta risco de alta dos custos de produção, e o custo pode ser repassado ao assinante.",
+    "fontes": [
+     {
+      "titulo": "Kostovska e outros (2022)",
+      "url": "https://cris.vub.be/ws/portalfiles/portal/87666116/Kostovska_et_al_2022_Investment_Obligations_VOD_Providers_Study_1.pdf"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Senado",
+     "tipo": "PL",
+     "numero": "PL 2331/2022 (substitutivo da Câmara)",
+     "ementa": "Dispõe sobre os serviços de streaming audiovisual e altera a MP 2.228-1/2001 e as Leis 11.437/2006 e 12.485/2011, incluindo a oferta de vídeo sob demanda na Condecine.",
+     "autor": "Senador Nelsinho Trad",
+     "partido": "PSD",
+     "situacao": "Aprovado no Senado em 2024 e na Câmara em 2025 com mudanças; o texto da Câmara aguarda despacho no Senado.",
+     "ultima_acao": "2025-11-17: autuado no Senado o texto da Câmara que alterou o projeto.",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/171663",
+     "direcao": "esquerda",
+     "relacao": "É a regulamentação do streaming que o plano diz querer aprovar no Congresso."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 8889/2017",
+     "ementa": "Dispõe sobre a provisão de conteúdo audiovisual por demanda.",
+     "autor": "Deputado Paulo Teixeira",
+     "partido": "PT",
+     "situacao": "Aprovado na Câmara em 2025; arquivado no Senado, que seguiu com o PL 2331/2022.",
+     "ultima_acao": "2025-11-27: recebido ofício do Senado comunicando o arquivamento da matéria.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2157806",
+     "direcao": "esquerda",
+     "relacao": "Projeto da Câmara sobre o mesmo tema; o Senado arquivou-o e passou a analisar o texto da Câmara como alteração ao PL 2331/2022."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 4,
+   "candidato": "lula",
+   "proposta": "Propõe ampliar o Bolsa Atleta e manter o patrocínio de empresas estatais ao esporte.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "O Bolsa-Atleta existe desde 2004 e hoje está na Lei Geral do Esporte (Lei 14.597/2023); ampliar o número de bolsas depende de orçamento, e o patrocínio de estatais é decisão de gestão dessas empresas.",
+     "fontes": [
+      {
+       "titulo": "Lei 14.597/2023 (Lei Geral do Esporte)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm"
+      },
+      {
+       "titulo": "Lei 10.891/2004 (Bolsa-Atleta, origem)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.891.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima quanto custaria ampliar o programa nem quanto as estatais investiriam.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Fomentar o esporte é dever do Estado em todos os níveis (art. 217) e legislar sobre desporto é competência concorrente (art. 24, IX); o programa federal pode ser ampliado a cada orçamento anual.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 24 e 217",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto do Bolsa-Atleta; os estudos disponíveis são correlacionais. Comparação de 15 países encontrou relação positiva entre financiamento ao esporte de elite e medalhas, e estudo sobre o Bolsa-Atleta de 2005 a 2016 encontrou correlação entre valor investido e resultados só no último ciclo.",
+     "estudos": [
+      {
+       "titulo": "How did the SPLISS 2.0 nations do in Rio?",
+       "autor": "Veerle De Bosscher, Simon Shibli e David Barrett (SPLISS, Vrije Universiteit Brussel)",
+       "ano": 2016,
+       "achado": "Houve relação positiva forte entre o financiamento ao esporte de elite em 2012 e o sucesso nos Jogos do Rio em 2016; os países que mais investiram estiveram entre os mais bem-sucedidos.",
+       "url": "https://spliss.research.vub.be/sites/default/files/2022-10/Factsheet-5-2016-SPLISS-nations-afterr-Rio.pdf",
+       "tipo": "working_paper"
+      },
+      {
+       "titulo": "O programa brasileiro Bolsa-Atleta: relações entre o investimento e os resultados esportivos entre 2005-2016",
+       "autor": "Isabelle Plociniak Costa e outros, UFPR (Research, Society and Development)",
+       "ano": 2021,
+       "achado": "O programa distribuiu recursos de forma desigual entre modalidades, e só no ciclo 2013-2016 houve correlação positiva entre valor investido e participações, diplomas e medalhas olímpicas.",
+       "url": "https://rsdjournal.org/index.php/rsd/article/download/12699/11793",
+       "tipo": "academico_revisado"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Atletas de alto rendimento que recebem a bolsa e confederações patrocinadas por estatais; o estudo SPLISS associa mais financiamento a mais medalhas.",
+    "quem_paga_ou_perde": "O orçamento federal e as empresas estatais, que destinam recursos ao esporte em vez de outros usos; o estudo da UFPR aponta distribuição desigual entre modalidades.",
+    "fontes": [
+     {
+      "titulo": "De Bosscher, Shibli e Barrett (SPLISS)",
+      "url": "https://spliss.research.vub.be/sites/default/files/2022-10/Factsheet-5-2016-SPLISS-nations-afterr-Rio.pdf"
+     },
+     {
+      "titulo": "Costa e outros (2021)",
+      "url": "https://rsdjournal.org/index.php/rsd/article/download/12699/11793"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "cultura-esporte",
+    "indice": 13,
+    "candidato": "flavio",
+    "diferenca": "Os dois propõem manter e aperfeiçoar bolsas para atletas; Lula propõe ampliar o Bolsa-Atleta e manter o patrocínio de estatais, e Flávio propõe atrair a iniciativa privada para patrocinar o alto rendimento."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2181/2026",
+     "ementa": "Altera a Lei 14.597/2023 para criar a categoria 'Bolsa Atleta Social' e ampliar o acesso ao benefício a atletas em situação de vulnerabilidade social.",
+     "autor": "Deputado Ribeiro Neto",
+     "partido": "SOLIDARIEDADE",
+     "situacao": "Aguardando parecer na Comissão do Esporte.",
+     "ultima_acao": "2026-10-15: designado relator o deputado Luciano Vieira (PSDB-RJ).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2621568",
+     "direcao": "fora do RILE",
+     "relacao": "Amplia o alcance do Bolsa-Atleta, na linha da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2690/2024",
+     "ementa": "Altera a Lei 14.597/2023 para dobrar, no ano seguinte, o valor da Bolsa-Atleta de quem conquistar ouro olímpico ou paralímpico.",
+     "autor": "Deputada Carla Zambelli",
+     "partido": "PL",
+     "situacao": "Com parecer da Comissão do Esporte; aguardando designação de relator na comissão seguinte.",
+     "ultima_acao": "2024-12-09: parecer da Comissão do Esporte encaminhado à publicação.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2445039",
+     "direcao": "fora do RILE",
+     "relacao": "Muda o valor das bolsas do programa que o plano quer ampliar."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 8,
+   "candidato": "flavio",
+   "proposta": "Propõe aperfeiçoar as leis de incentivo à cultura, corrigindo distorções e favorecendo outros polos regionais.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "politica_existente",
+     "explicacao": "As leis de incentivo à cultura já existem, a principal delas a Lei Rouanet (Lei 8.313/1991). Parte das regras de seleção pode ser mudada por normas do Ministério da Cultura; mudanças nos limites de dedução ou nos critérios fixados em lei exigem lei ordinária.",
+     "fontes": [
+      {
+       "titulo": "Lei 8.313/1991 (Lei Rouanet)",
+       "url": "https://www.planalto.gov.br/ccivil_03/leis/l8313cons.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima custo nem diz se o volume de renúncia mudaria.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "Incentivar a cultura é competência comum da União, dos estados e dos municípios (arts. 23, V, e 215), mas a Lei Rouanet é federal e pode ser ajustada dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 23 e 215",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "insuficiente",
+     "consenso": "baixo",
+     "resumo": "Não há avaliação de impacto das leis de incentivo sobre a desconcentração regional da cultura. As fontes são um estudo descritivo, que mostra recursos da Lei Rouanet concentrados no Sudeste e em municípios maiores e mais ricos, e uma estimativa de impacto econômico encomendada pelo Ministério da Cultura, que calcula R$ 27,5 bilhões movimentados em 2024.",
+     "estudos": [
+      {
+       "titulo": "Distribuição geográfica de projetos culturais com captação de recursos via Lei Rouanet",
+       "autor": "Lusvanio Teixeira, Wescley Xavier e Evandro de Faria (DRd - Desenvolvimento Regional em Debate)",
+       "ano": 2024,
+       "achado": "Os recursos se concentram no Sudeste e em municípios com mais população e PIB; os autores consideram a lei limitada para democratizar o acesso geograficamente.",
+       "url": "https://www.periodicos.unc.br/index.php/drd/article/view/5320",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Lei Rouanet: uma força estratégica para o desenvolvimento do Brasil (Pesquisa de Impacto Econômico da Lei Rouanet)",
+       "autor": "Fundação Getulio Vargas, sob encomenda do Ministério da Cultura e da OEI",
+       "ano": 2026,
+       "achado": "Em 2024, os projetos apoiados movimentaram R$ 27,5 bilhões na economia, retorno superior a R$ 7 por real investido; o estudo foi encomendado pelo próprio ministério.",
+       "url": "https://static.poder360.com.br/2026/01/PESQUISA-ROUANET-fgv-1.pdf",
+       "tipo": "avaliacao_oficial"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Segundo o plano, artistas de pouca projeção e polos regionais fora dos grandes centros; o estudo de Teixeira e outros mostra que essas regiões hoje captam pouco.",
+    "quem_paga_ou_perde": "Proponentes das regiões e cidades que hoje concentram a captação podem receber parcela menor; a União mantém a renúncia de imposto.",
+    "fontes": [
+     {
+      "titulo": "Teixeira, Xavier e Faria (2024)",
+      "url": "https://www.periodicos.unc.br/index.php/drd/article/view/5320"
+     }
+    ]
+   },
+   "comparacao": {
+    "tema": "cultura-esporte",
+    "indice": 0,
+    "candidato": "lula",
+    "diferenca": "Os dois propõem aperfeiçoar as leis de incentivo e levar recursos a outras regiões; Flávio fala em corrigir distorções e apoiar artistas de pouca projeção, e Lula cita também a Lei Aldir Blanc, de repasse a estados e municípios."
+   },
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 4612/2024",
+     "ementa": "Altera as Leis 11.438/2006 e 8.313/1991 para beneficiar projetos esportivos e culturais executados em municípios com menos de 50 mil habitantes.",
+     "autor": "Deputado Thiago de Joaldo",
+     "partido": "REPUBLICANOS (segundo a Câmara)",
+     "situacao": "Pronto para pauta na Comissão de Cultura, com substitutivo.",
+     "ultima_acao": "2026-07-07: encerrado o prazo de emendas ao substitutivo, sem emendas apresentadas.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2473355",
+     "direcao": "fora do RILE",
+     "relacao": "Busca levar incentivos a cidades menores, fora dos grandes centros, como propõe o plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1045/2023",
+     "ementa": "Altera a Lei 8.313/1991 para que se observem valores de mercado no pagamento de cachês em projetos culturais de espetáculos.",
+     "autor": "Senadora Ivete da Silveira",
+     "partido": "MDB",
+     "situacao": "Arquivado na Câmara após rejeição nas comissões de mérito.",
+     "ultima_acao": "2024-12-19: arquivado nos termos do art. 133 do Regimento Interno.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2374220",
+     "direcao": "fora do RILE",
+     "relacao": "Tratava de uma das distorções apontadas no debate sobre a Lei Rouanet, os valores de cachês."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 11,
+   "candidato": "flavio",
+   "proposta": "Propõe o Programa Escola de Campeões, com parcerias público-privadas para levar o esporte competitivo às escolas.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "ato_executivo",
+     "explicacao": "Um programa federal de esporte escolar pode ser criado por ato do Executivo, com orçamento e convênios com as redes de ensino; parcerias público-privadas seguem a Lei 11.079/2004. Como a maioria das escolas é estadual ou municipal, a execução depende da adesão dos entes.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 84, 211 e 217",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 11.079/2004 (parcerias público-privadas)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11079.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "nao_estimado",
+     "plano_diz": "O plano não estima custo nem diz quanto viria de parceiros privados.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "depende_estados_municipios",
+     "prazo": "cabe_em_4_anos",
+     "explicacao": "A educação básica é oferecida sobretudo por estados e municípios (art. 211), e legislar sobre desporto é competência concorrente (art. 24, IX); a União pode financiar e induzir o programa dentro do mandato.",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 24 e 211",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "medio",
+     "resumo": "Estudos nos Estados Unidos associam atividades extracurriculares, inclusive esporte, a menor evasão escolar e a menos faltas, mas apontam que parte da diferença vem de características dos próprios alunos e que os efeitos variam por grupo. Não foram encontradas avaliações de programas brasileiros de esporte escolar nem do modelo com parcerias privadas.",
+     "estudos": [
+      {
+       "titulo": "Extracurricular Participation, 'At-Risk' Status, and the High School Dropout Decision",
+       "autor": "Laura M. Crispin (Education Finance and Policy)",
+       "ano": 2017,
+       "achado": "Alunos que participaram de atividades extracurriculares tiveram de 14 a 20 pontos percentuais menos chance de abandonar o ensino médio, com efeito parecido para alunos em situação de risco.",
+       "url": "https://ideas.repec.org/a/tpr/edfpol/v12y2017i2p166-196.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "The Effects of High School Athletic Participation on Education and Labor Market Outcomes",
+       "autor": "John Barron, Bradley Ewing e Glen Waddell (Review of Economics and Statistics)",
+       "ano": 2000,
+       "achado": "Há alguma evidência de efeito direto do esporte escolar sobre escolaridade e salários, mas grande parte da diferença reflete habilidade e preferências dos próprios alunos.",
+       "url": "https://ideas.repec.org/a/tpr/restat/v82y2000i3p409-421.html",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Too Busy for School? The Effect of Athletic Participation on Absenteeism",
+       "autor": "Harold Cuffe, Glen Waddell e Wesley Bignell (IZA Discussion Paper 8426)",
+       "ano": 2014,
+       "achado": "A competição esportiva reduziu faltas injustificadas, sobretudo de meninos, mas as faltas aumentaram no dia seguinte aos jogos; efeitos sobre notas foram pequenos e variaram por grupo.",
+       "url": "https://ideas.repec.org/p/iza/izadps/dp8426.html",
+       "tipo": "working_paper"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Alunos que passam a ter treino e competição na escola, com menor evasão segundo o estudo de Crispin; empresas parceiras ganham associação de marca ao programa.",
+    "quem_paga_ou_perde": "União, redes de ensino e parceiros privados, conforme a divisão de custos que o plano não detalha; o estudo de Cuffe e outros indica perda de presença no dia seguinte às competições.",
+    "fontes": [
+     {
+      "titulo": "Crispin (2017)",
+      "url": "https://ideas.repec.org/a/tpr/edfpol/v12y2017i2p166-196.html"
+     },
+     {
+      "titulo": "Cuffe, Waddell e Bignell (2014)",
+      "url": "https://ideas.repec.org/p/iza/izadps/dp8426.html"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3651/2025",
+     "ementa": "Institui o Programa Nacional de Incentivo ao Esporte Escolar no Contraturno.",
+     "autor": "Deputado Nikolas Ferreira",
+     "partido": "PL",
+     "situacao": "Tramitando em conjunto com o PL 3047/2015 na Comissão do Esporte.",
+     "ultima_acao": "2026-04-15: designado relator o deputado Danrlei de Deus Hinterholz (PSD-RS) para o PL 3047/2015, ao qual está apensado.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2539047",
+     "direcao": "fora do RILE",
+     "relacao": "Cria um programa nacional de esporte escolar no contraturno, formato parecido com o da proposta."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 3047/2015",
+     "ementa": "Altera o art. 26 da LDB para estabelecer carga horária mínima de educação física na educação básica.",
+     "autor": "Senador Eduardo Amorim",
+     "partido": "não informado na ficha da Câmara",
+     "situacao": "Aguardando parecer na Comissão do Esporte.",
+     "ultima_acao": "2026-04-15: designado relator o deputado Danrlei de Deus Hinterholz (PSD-RS).",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=1734799",
+     "direcao": "esquerda",
+     "relacao": "Projeto principal ao qual estão apensadas propostas de esporte nas escolas."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  },
+  {
+   "tema": "cultura-esporte",
+   "indice": 14,
+   "candidato": "flavio",
+   "proposta": "Propõe que a categoria feminina, da base ao alto rendimento, seja disputada apenas por atletas do sexo feminino.",
+   "viabilidade": {
+    "instrumento": {
+     "nivel": "lei_ordinaria",
+     "explicacao": "Uma regra nacional de elegibilidade exigiria lei sobre desporto (art. 24, IX), por exemplo alterando a Lei Geral do Esporte (Lei 14.597/2023). Há debate jurídico porque a Constituição garante autonomia às entidades esportivas (art. 217, I), argumento usado pelo STF em 2026 para suspender lei municipal com regra parecida, e porque envolve o princípio da igualdade (art. 5º).",
+     "fontes": [
+      {
+       "titulo": "Constituição Federal, arts. 5º, 24 e 217",
+       "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+       "titulo": "Lei 14.597/2023 (Lei Geral do Esporte)",
+       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm"
+      }
+     ]
+    },
+    "custo": {
+     "nivel": "sem_custo_relevante",
+     "plano_diz": "O plano não menciona custo; a medida é uma regra de elegibilidade.",
+     "estimativa_externa": null,
+     "fontes": []
+    },
+    "competencia": {
+     "nivel": "compartilhada",
+     "prazo": "incerto",
+     "explicacao": "Legislar sobre desporto é competência concorrente da União, dos estados e do DF (art. 24, IX), e as competências internacionais seguem regras das federações e do COI. A validade de uma lei sobre o tema pode ser contestada no STF.",
+     "fontes": [
+      {
+       "titulo": "STF: Rcl 91022",
+       "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7512666"
+      }
+     ]
+    },
+    "evidencia": {
+     "nivel": "mista",
+     "consenso": "baixo",
+     "resumo": "Revisões de 2021 concluem que, mesmo após anos de supressão hormonal, mulheres trans mantêm força e massa muscular acima das de mulheres cisgênero. Uma meta-análise de 2026 encontrou mais massa magra, mas força e capacidade aeróbica comparáveis, com evidência de baixa certeza e sem dados de atletas de elite; o COI adotou em 2026 regra que limita a categoria feminina a atletas do sexo feminino a partir de 2028.",
+     "estudos": [
+      {
+       "titulo": "Transgender Women in the Female Category of Sport: Perspectives on Testosterone Suppression and Performance Advantage",
+       "autor": "Emma Hilton e Tommy Lundberg (Sports Medicine)",
+       "ano": 2021,
+       "achado": "A supressão de testosterona reduz massa magra e força em cerca de 5% após 12 meses, o que remove pouco da vantagem muscular masculina.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33289906/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "How does hormone transition in transgender women change body composition, muscle strength and haemoglobin? Systematic review",
+       "autor": "Joanna Harper e outros (British Journal of Sports Medicine)",
+       "ano": 2021,
+       "achado": "A hemoglobina cai ao nível de mulheres cisgênero em 4 meses, mas força, massa magra e área muscular seguem acima mesmo após 36 meses de terapia hormonal.",
+       "url": "https://pubmed.ncbi.nlm.nih.gov/33648944/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "Body composition and physical fitness in transgender versus cisgender individuals: a systematic review with meta-analysis",
+       "autor": "Sofia Mendes Sieczkowska e outros (British Journal of Sports Medicine)",
+       "ano": 2026,
+       "achado": "Em 52 estudos, mulheres trans tinham mais massa magra que mulheres cisgênero, mas força e VO2 máximo sem diferença observada; a evidência é de qualidade variável e não inclui atletas de elite.",
+       "url": "https://bmjgroup.com/physical-fitness-of-transgender-and-cisgender-women-is-comparable-current-evidence-suggests/",
+       "tipo": "academico_revisado"
+      },
+      {
+       "titulo": "IOC announces new policy on protection of the female category in Olympic sport",
+       "autor": "Comitê Olímpico Internacional (via Comitê Olímpico da Nova Zelândia)",
+       "ano": 2026,
+       "achado": "A partir de Los Angeles 2028, a elegibilidade para a categoria feminina em eventos do COI passa a se basear no sexo biológico, verificado por teste do gene SRY, sem efeito sobre o esporte de base ou recreativo.",
+       "url": "https://olympic.org.nz/news/ioc-announces-new-policy-on-protection-of-the-female-category-in-olympic-sport",
+       "tipo": "entidade_interessada"
+      }
+     ]
+    }
+   },
+   "impactos": {
+    "quem_ganha": "Atletas da categoria feminina que competiriam com mulheres trans, que segundo Hilton e Lundberg e Harper e outros mantêm vantagem de força.",
+    "quem_paga_ou_perde": "Atletas trans que deixariam de competir na categoria feminina, da base ao alto rendimento; as entidades esportivas perdem parte da autonomia para definir suas regras, segundo a decisão do STF na Rcl 91022.",
+    "fontes": [
+     {
+      "titulo": "Hilton e Lundberg (2021)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33289906/"
+     },
+     {
+      "titulo": "STF afasta restrição à participação de atletas trans nas finais da Copa do Brasil de Vôlei",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-afasta-restricao-a-participacao-de-atletas-trans-nas-finais-da-copa-do-brasil-de-volei/"
+     }
+    ]
+   },
+   "comparacao": null,
+   "proposicoes": [
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 2200/2019",
+     "ementa": "Proíbe a participação de atletas transexuais nascidos do sexo masculino em competições femininas em todo o território nacional (resumo da ementa oficial).",
+     "autor": "Deputado Pastor Sargento Isidório",
+     "partido": "AVANTE",
+     "situacao": "Aguardando designação de relator; tramita com vários projetos apensados, como o PL 2596/2019 e o PL 1305/2024.",
+     "ultima_acao": "2026-09-01: notificada a apensação do PL 3112/2026, sobre o mesmo tema, ao conjunto de projetos.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2197492",
+     "direcao": "direita",
+     "relacao": "Principal projeto na Câmara que restringe a categoria feminina a atletas do sexo feminino, como propõe o plano."
+    },
+    {
+     "casa": "Câmara",
+     "tipo": "PL",
+     "numero": "PL 1305/2024",
+     "ementa": "Altera a Lei Geral do Esporte para estabelecer o sexo biológico como critério exclusivo de definição do gênero em todos os esportes e competições oficiais.",
+     "autor": "Deputada Dayany Bittencourt",
+     "partido": "UNIÃO",
+     "situacao": "Tramitando em conjunto com o PL 2200/2019.",
+     "ultima_acao": "2026-06-18: apensado a ele o PL 2216/2026.",
+     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2427601",
+     "direcao": "direita",
+     "relacao": "Faria a mudança diretamente na Lei Geral do Esporte, da base ao alto rendimento."
+    },
+    {
+     "casa": "STF",
+     "tipo": "Rcl",
+     "numero": "Rcl 91022",
+     "ementa": "Reclamação da Confederação Brasileira de Voleibol contra a aplicação da Lei Municipal 13.770/2024 de Londrina, que veda atletas cuja identidade de gênero difere do sexo biológico em competições em equipamentos públicos.",
+     "autor": "Confederação Brasileira de Voleibol e Osasco Voleibol Clube",
+     "partido": "não se aplica",
+     "situacao": "Liminar concedida pela ministra Cármen Lúcia em fevereiro de 2026, com base na autonomia das entidades esportivas; mérito pendente.",
+     "ultima_acao": "2026-08-03: autos conclusos à relatora.",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=7512666",
+     "direcao": "fora do RILE",
+     "relacao": "Indica como o STF tem tratado leis que restringem a categoria feminina, o que afeta a viabilidade jurídica da proposta."
+    }
+   ],
+   "situacao_atual": {
+    "status": null,
+    "texto": null,
+    "fonte": null
+   }
+  }
+ ]
+}
