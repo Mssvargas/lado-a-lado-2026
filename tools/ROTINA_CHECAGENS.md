@@ -77,6 +77,7 @@ checagens novas equilibradas hoje." Se houve:
 - commit em português no padrão Conventional Commits, por exemplo
   `docs(checagens): acrescenta 4 checagens de 21/10`, SEM rodapé "Co-Authored-By" e sem
   qualquer assinatura;
+- `git pull --rebase origin main`, porque o site pode ter mudado desde o início desta execução. Se houver conflito em `index.html` ou `resumo.html`, aceite a versão remota desses dois arquivos, rode de novo `python tools/build.py`, adicione-os e continue o rebase;
 - `git push origin main`.
 
 Não altere nenhum outro arquivo.
