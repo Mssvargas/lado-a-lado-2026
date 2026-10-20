@@ -55,13 +55,33 @@ def main() -> None:
         "__SITE_URL__": SITE_URL.rstrip("/") + "/",
         "__REPO_URL__": REPO_URL,
     }
+    write("index.html", html_text, subs)
+
+    # Página de resumo (leve, para compartilhar no WhatsApp)
+    comp = load("comparativo.json")
+    assert isinstance(comp, dict)
+    temas = [
+        {"id": t["id"], "nome": t["nome"], "em_comum": t.get("em_comum", ""),
+         "itens": [{"candidato": i["candidato"], "proposta": i["proposta"], "pagina": i.get("pagina")} for i in t["itens"]]}
+        for t in comp["temas"]
+    ]
+    resumo_subs = dict(subs)
+    resumo_subs.update({
+        "/*__TEMAS__*/null": blob(temas),
+        "/*__RESUMO__*/null": blob(load("resumo.json")),
+        "__TURNO__": html.escape(eleicao.get("turno", "")),
+    })
+    write("resumo.html", (ROOT / "tools" / "resumo-template.html").read_text(encoding="utf-8"), resumo_subs)
+
+
+def write(name: str, text: str, subs: dict[str, str]) -> None:
     for key, value in subs.items():
-        html_text = html_text.replace(key, value)
-    left = [k for k in subs if k.startswith("__") and k in html_text]
+        text = text.replace(key, value)
+    left = [k for k in subs if k in text]
     if left:
-        raise SystemExit(f"Marcadores sem substituir: {left}")
-    (ROOT / "index.html").write_text(html_text, encoding="utf-8", newline="\n")
-    print("index.html", len(html_text))
+        raise SystemExit(f"{name}: marcadores sem substituir: {left}")
+    (ROOT / name).write_text(text, encoding="utf-8", newline="\n")
+    print(name, len(text))
 
 
 if __name__ == "__main__":

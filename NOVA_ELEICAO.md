@@ -71,6 +71,9 @@ critério na aba "Como foi feito".
 Esta é a parte que exige leitura dos planos. Abra o Claude Code na pasta do projeto e use
 os prompts A e B abaixo. Confira o resultado antes de publicar.
 
+Depois do comparativo, gere `data/resumo.json` com o prompt E. Ele alimenta a página
+`resumo.html`, a versão curta para compartilhar no WhatsApp.
+
 ### 5. Checagens, histórico e eleições
 
 - `data/checagens.json`: use o prompt C. O número de itens precisa ser igual por
@@ -150,3 +153,12 @@ Cole no Claude Code, trocando os marcadores `<...>`.
 > cumpridas, parciais e não cumpridas, com números literais da fonte, data, método e
 > URL. Sem números, registre só o link. Nunca recalcule nem invente. Atualize os
 > indicadores do IBGE (PIB, IPCA, desocupação) até o último ano disponível.
+
+### E. Resumo para WhatsApp
+
+> A partir de `data/comparativo.json`, escreva `data/resumo.json` no formato atual: para
+> cada tema e cada candidato, no máximo 2 frases. A primeira começa com "Propõe…" e traz
+> as 2 ou 3 propostas centrais do tema; a segunda é opcional e começa com "Quer…" ou
+> "Prevê…". Use a mesma extensão para todos: a diferença no total de palavras entre os
+> candidatos não pode passar de 15%. Não use opinião, adjetivo valorativo nem informação
+> que não esteja no comparativo. No fim, rode `python tools/verificar.py`.

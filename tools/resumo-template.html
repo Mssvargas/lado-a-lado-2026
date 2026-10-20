@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Resumo das propostas __ANO__</title>
+<meta name="description" content="O que __NOMES__ propõem, tema por tema, em duas frases. Toque no tema para ver todas as propostas.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Resumo das propostas: __NOMES__">
+<meta property="og:description" content="Os planos de governo oficiais lado a lado, tema por tema, em duas frases. Toque no tema para ver todas as propostas.">
+<meta property="og:image" content="__SITE_URL__og.png">
+<meta property="og:url" content="__SITE_URL__resumo.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234A47A3'/%3E%3Crect x='6' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3Crect x='18' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<script>try { const t = localStorage.getItem("lal-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&family=Literata:opsz,wght@7..72,600&display=swap">
+<style>
+/* Layout: uma coluna de leitura para celular; cada tema é uma linha da tabela que abre para as propostas. */
+:root {
+  --bg: #F5F6F8; --surface: #FFFFFF; --ink: #161B26; --muted: #586174; --line: #DCE0E8;
+  --accent: #4A47A3; --accent-ink: #FFFFFF; --soft: #ECECF8; --wa: #128C4A;
+  --display: "Literata", Georgia, serif; --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140; --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --wa: #4CC384; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140; --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --wa: #4CC384; color-scheme: dark; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5; }
+.wrap { max-width: 900px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2 { font-family: var(--display); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+header { background: var(--surface); border-bottom: 1px solid var(--line); }
+header .wrap { padding-block: 22px 18px; display: grid; gap: 10px; }
+.eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+h1 { font-size: clamp(26px, 6vw, 36px); }
+.lede { margin: 0; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); border-radius: 8px; padding: 9px 14px; font: inherit; font-weight: 700; cursor: pointer; text-decoration: none; }
+.btn.wa { background: var(--wa); border-color: var(--wa); color: #fff; }
+.btn.ghost { background: transparent; color: var(--accent); }
+main .wrap { padding-block: 16px 40px; display: grid; gap: 10px; }
+/* Cabeçalho da tabela */
+.thead, .cells { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 12px; }
+.thead { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding: 8px 0; border-bottom: 2px solid var(--ink); }
+.who { display: flex; align-items: center; gap: 8px; font-weight: 700; min-width: 0; }
+.num { font-family: var(--mono); font-size: 14px; background: var(--ink); color: var(--surface); border-radius: 4px; padding: 1px 6px; letter-spacing: .08em; flex: none; }
+/* Linhas */
+details.row { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+details.row > summary { list-style: none; cursor: pointer; padding: 12px 14px; display: grid; gap: 8px; }
+details.row > summary::-webkit-details-marker { display: none; }
+.tema { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.tema h2 { font-size: 18px; }
+.more { font-size: 13px; color: var(--accent); font-weight: 700; white-space: nowrap; }
+.more::after { content: " ▾"; }
+details[open] .more::after { content: " ▴"; }
+.cell { font-size: 15px; min-width: 0; }
+.cell .lab { display: none; }
+.inner { padding: 0 14px 14px; display: grid; gap: 10px; border-top: 1px solid var(--line); }
+.comum { margin: 10px 0 0; font-size: 14px; background: var(--soft); border-radius: 8px; padding: 8px 10px; }
+ul.props { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; }
+.pg { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.full { font-size: 14px; }
+footer { color: var(--muted); font-size: 13px; }
+footer .wrap { padding-block: 0 32px; display: grid; gap: 6px; }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--surface); padding: 8px 16px; border-radius: 8px; font-weight: 700; z-index: 20; }
+/* Celular: as colunas viram blocos com o nome do candidato */
+@media (max-width: 560px) {
+  .thead { display: none; }
+  .cells { grid-template-columns: 1fr; gap: 10px; }
+  .cell .lab { display: flex; margin-bottom: 2px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Eleição presidencial __ANO__ · __TURNO__</div>
+    <h1>O que cada um propõe, em duas frases</h1>
+    <p class="lede">Resumo dos planos de governo oficiais. Toque num tema para ver todas as propostas daquele assunto.</p>
+    <div class="actions">
+      <a class="btn wa" id="waBtn" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+      <button type="button" class="btn ghost" id="copyBtn">Copiar resumo em texto</button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="thead" id="thead"></div>
+    <div id="rows" style="display:grid;gap:10px"></div>
+    <p class="full"><a href="./">Ver a comparação completa</a>, com o trecho original e a página de cada proposta, checagens e outras ferramentas.</p>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Fonte: planos de governo oficiais das candidaturas. Resumos escritos com a mesma estrutura e extensão para todos os candidatos, sem opinião.</span>
+    <span>Lado a Lado __ANO__ é uma página independente, sem vínculo com partidos, campanhas ou com o TSE. <a href="__REPO_URL__" target="_blank" rel="noopener">Código e dados abertos</a>.</span>
+  </div>
+</footer>
+<script>
+const ELEICAO = /*__ELEICAO__*/null;
+const TEMAS = /*__TEMAS__*/null;
+const RESUMO = /*__RESUMO__*/null;
+const ORDER = ELEICAO.candidatos.map(c => c.id);
+const CAND = Object.fromEntries(ELEICAO.candidatos.map(c => [c.id, c]));
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+document.documentElement.style.setProperty("--n", String(ORDER.length));
+const res = Object.fromEntries(RESUMO.temas.map(t => [t.id, t.resumos]));
+const who = k => `<span class="num">${esc(CAND[k].numero)}</span><span>${esc(CAND[k].nome)}</span>`;
+$("#thead").innerHTML = ORDER.map(k => `<div class="who">${who(k)}</div>`).join("");
+$("#rows").innerHTML = TEMAS.filter(t => res[t.id]).map(t => `<details class="row" id="${esc(t.id)}"><summary>
+    <div class="tema"><h2>${esc(t.nome)}</h2><span class="more">ver propostas</span></div>
+    <div class="cells">${ORDER.map(k => `<div class="cell"><div class="lab who">${who(k)}</div>${esc(res[t.id][k] || "O plano não traz proposta específica sobre isto.")}</div>`).join("")}</div>
+  </summary>
+  <div class="inner">
+    ${t.em_comum ? `<p class="comum"><b>Em comum:</b> ${esc(t.em_comum)}</p>` : ""}
+    <div class="cells">${ORDER.map(k => {
+      const its = t.itens.filter(i => i.candidato === k && i.pagina);
+      return `<div class="cell"><div class="lab who">${who(k)}</div><ul class="props">${its.map(i => `<li>${esc(i.proposta)} <span class="pg">p. ${esc(i.pagina)}</span></li>`).join("") || "<li>O plano não traz proposta específica sobre isto.</li>"}</ul></div>`;
+    }).join("")}</div>
+    <a class="full" href="./#tema-${esc(t.id)}">Ver este tema com os trechos originais</a>
+  </div></details>`).join("");
+// Abre o tema indicado no link (#saude)
+const h = location.hash.slice(1); if (h && document.getElementById(h)) { document.getElementById(h).open = true; document.getElementById(h).scrollIntoView(); }
+// WhatsApp e texto
+const url = location.href.split("#")[0];
+const nomes = ORDER.map(k => CAND[k].nome).join(" e ");
+$("#waBtn").href = "https://wa.me/?text=" + encodeURIComponent(`O que ${nomes} propõem nos planos de governo oficiais, tema por tema, em duas frases: ${url}`);
+function texto() {
+  const linhas = [`*O que ${nomes} propõem* (planos de governo oficiais, ${ELEICAO.ano})`, ""];
+  for (const t of TEMAS) {
+    if (!res[t.id]) continue;
+    linhas.push(`*${t.nome}*`);
+    for (const k of ORDER) linhas.push(`• _${CAND[k].nome} (${CAND[k].numero})_: ${res[t.id][k]}`);
+    linhas.push("");
+  }
+  linhas.push(`Todas as propostas, com o trecho e a página de cada uma: ${url}`);
+  return linhas.join("\n");
+}
+function toast(m) { const t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); t.textContent = m; document.body.append(t); setTimeout(() => t.remove(), 2600); }
+$("#copyBtn").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(texto()); toast("Resumo copiado. Cole no WhatsApp."); }
+  catch { const ta = document.createElement("textarea"); ta.value = texto(); document.body.append(ta); ta.select(); try { document.execCommand("copy"); toast("Resumo copiado."); } catch { toast("Não foi possível copiar."); } ta.remove(); }
+});
+</script>
+</body>
+</html>

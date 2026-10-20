@@ -1,0 +1,59 @@
+{
+ "nota": "Resumo de até duas frases por candidato em cada tema, escrito a partir das propostas listadas em comparativo.json, com a mesma estrutura e extensão parecida para todos.",
+ "temas": [
+  {"id": "impostos", "resumos": {
+   "lula": "Propõe manter e regulamentar a reforma tributária já aprovada, com foco em justiça tributária e no Imposto Seletivo sobre produtos nocivos à saúde. Quer inflação controlada e mais controle sobre endividamento e apostas.",
+   "flavio": "Propõe revisar a reforma tributária para reduzir o IVA, que o plano estima em cerca de 30%, e cortar impostos sobre energia e combustíveis. Quer proibir o uso de dinheiro de benefícios sociais em apostas."}},
+  {"id": "contas-publicas", "resumos": {
+   "lula": "Propõe manter o arcabouço fiscal atual e equilibrar as contas com crescimento econômico e gasto mais eficiente. Quer debater com a sociedade o sistema de emendas parlamentares.",
+   "flavio": "Propõe novas regras fiscais focadas em reduzir a dívida, com superávits e corte de pelo menos 10 ministérios e de cargos comissionados. Quer retomar privatizações, avaliadas caso a caso."}},
+  {"id": "trabalho", "resumos": {
+   "lula": "Propõe atuar pelo fim da escala 6x1 e pela jornada de 40 horas sem corte de salário, e manter a valorização do salário mínimo. Quer regras de proteção para trabalhadores de aplicativos.",
+   "flavio": "Propõe reduzir aos poucos o custo de contratar com carteira assinada e criar contratos mais baratos para jovens e para pessoas com 50 anos ou mais. Quer que acordos entre trabalhador e empresa prevaleçam sobre a lei."}},
+  {"id": "pequenos-negocios", "resumos": {
+   "lula": "Propõe ampliar o crédito por meio de fundos garantidores, as compras do governo feitas de pequenas empresas e o apoio a cooperativas e à economia solidária.",
+   "flavio": "Propõe estender a Lei de Liberdade Econômica a todo o país, revogar normas burocráticas e usar a CAIXA como banco de crédito para quem empreende."}},
+  {"id": "seguranca", "resumos": {
+   "lula": "Propõe criar o Ministério da Segurança Pública, manter o controle de armas e o combate ao dinheiro das facções e ampliar o uso de câmeras corporais por policiais.",
+   "flavio": "Propõe classificar facções como narcoterroristas, reduzir a maioridade penal para 16 anos e acabar com a progressão de pena em crimes hediondos. Prevê 5 novos presídios de segurança máxima."}},
+  {"id": "educacao", "resumos": {
+   "lula": "Propõe chegar a 80% das crianças alfabetizadas na idade certa, priorizar o tempo integral e manter o Pé-de-Meia. Quer expandir institutos federais e universidades públicas.",
+   "flavio": "Propõe o método fônico na alfabetização, repasses ligados a resultados e mais escolas cívico-militares. Prevê voucher para escola ou creche privada onde faltar vaga pública."}},
+  {"id": "saude", "resumos": {
+   "lula": "Propõe ampliar o Agora Tem Especialistas, criar uma fila digital única ordenada pela gravidade e manter o Farmácia Popular gratuito, incluindo exames. Quer reforçar a vacinação nas escolas.",
+   "flavio": "Propõe corrigir a tabela de pagamentos do SUS, contratar a rede privada nos horários ociosos e entregar remédios em casa a idosos e doentes crônicos. Quer um programa de atendimento aos idosos."}},
+  {"id": "programas-sociais", "resumos": {
+   "lula": "Propõe manter e ampliar a proteção social e criar uma política de cuidados, com Cuidotecas e formação de cuidadores. Quer rever o financiamento da Previdência.",
+   "flavio": "Propõe manter os programas sociais com combate a fraudes e dar aos beneficiários prioridade em emprego e qualificação. Prevê a volta imediata ao benefício depois do seguro-desemprego."}},
+  {"id": "mulheres", "resumos": {
+   "lula": "Propõe concluir 30 Casas da Mulher Brasileira, distribuir kits de monitoramento de agressores e tornar obrigatórios os planos de igualdade salarial nas empresas.",
+   "flavio": "Propõe a Central da Mulher, física e por aplicativo, tornozeleira para agressores de maior risco, cumprimento integral da pena e castração química para condenados por estupro."}},
+  {"id": "moradia-cidades", "resumos": {
+   "lula": "Propõe manter e ampliar o Minha Casa Minha Vida para todas as faixas de renda e usar imóveis da União. Quer concluir as obras em favelas e periferias.",
+   "flavio": "Propõe retomar o Casa Verde e Amarela, com meta de 2,5 milhões de moradias, e acelerar concessões privadas para universalizar água e esgoto."}},
+  {"id": "infraestrutura", "resumos": {
+   "lula": "Propõe uma nova edição do Novo PAC, combinando obras públicas e concessões, com mais leilões de ferrovias e obras de segurança hídrica.",
+   "flavio": "Propõe investir R$ 900 bilhões em quatro anos, principalmente com capital privado, e destravar obras como Ferrogrão, Trem do Nordeste e Transnordestina."}},
+  {"id": "energia", "resumos": {
+   "lula": "Propõe que a Petrobras volte à distribuição de combustíveis e amplie o refino, além de mais fontes renováveis. Para a conta de luz, propõe abrir um debate.",
+   "flavio": "Propõe reduzir encargos da conta de luz, expandir gasodutos com investimento privado e permitir a exploração de gás por fracking."}},
+  {"id": "meio-ambiente", "resumos": {
+   "lula": "Propõe desmatamento líquido zero até 2030 e cumprir as metas climáticas do Brasil, com mercado regulado de carbono e fundos de financiamento.",
+   "flavio": "Propõe zerar o desmatamento ilegal até 2029, sem novas obrigações ao produtor legal, e conceder a licença ambiental automaticamente se o órgão perder o prazo."}},
+  {"id": "agro", "resumos": {
+   "lula": "Propõe ampliar o Plano Safra da agricultura familiar e do agronegócio, avançar na reforma agrária e demarcar terras indígenas.",
+   "flavio": "Propõe ampliar o seguro rural, reorganizar as dívidas do setor, titular pequenos proprietários e reforçar o direito de propriedade."}},
+  {"id": "tecnologia", "resumos": {
+   "lula": "Propõe o Estado como indutor da indústria, com financiamento direcionado, compras públicas e conteúdo local, além de supercomputadores com IA em português.",
+   "flavio": "Propõe digitalizar 100% dos serviços federais possíveis, levar IA a pequenas empresas e atrair capital estrangeiro para os minerais críticos."}},
+  {"id": "instituicoes", "resumos": {
+   "lula": "Propõe uma reforma política, regular as redes sociais contra desinformação e discurso de ódio e ampliar a participação social no orçamento.",
+   "flavio": "Propõe limitar decisões individuais no STF, acabar com a reeleição para presidente e extinguir estruturas do Estado que rotulem falas como desinformação."}},
+  {"id": "politica-externa", "resumos": {
+   "lula": "Propõe priorizar o Mercosul e a integração sul-americana, aproximar o Brasil do BRICS e do Sul Global e defender a reforma da ONU.",
+   "flavio": "Propõe retomar a adesão à OCDE, abrir o comércio e reaproximar o Brasil de Estados Unidos, Israel e Argentina."}},
+  {"id": "cultura-esporte", "resumos": {
+   "lula": "Propõe aperfeiçoar as leis Rouanet e Aldir Blanc, regular o streaming e garantir pagamento a artistas pelo uso de obras pela IA. Quer ampliar o Bolsa Atleta.",
+   "flavio": "Propõe aperfeiçoar as leis de incentivo, levar esporte competitivo às escolas com parcerias privadas e restringir a categoria feminina a atletas do sexo feminino."}}
+ ]
+}

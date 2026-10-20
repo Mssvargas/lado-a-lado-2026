@@ -62,7 +62,8 @@ regras de neutralidade, está em [NOVA_ELEICAO.md](NOVA_ELEICAO.md). Em resumo:
 2. Edite `data/eleicao.json` com o ano e os candidatos. O código não tem nome de
    candidato fixo.
 3. Gere `comparativo.json`, `espectro.json` e `checagens.json` com os prompts do guia.
-4. Rode `python tools/verificar.py`, `python tools/build.py` e `python tools/og.py`, e
+4. Escreva `data/resumo.json` (até 2 frases por candidato e tema, mesma extensão para todos).
+5. Rode `python tools/verificar.py`, `python tools/build.py` e `python tools/og.py`, e
    publique.
 
 ## Hospedagem

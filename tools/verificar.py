@@ -80,6 +80,23 @@ def main() -> None:
                 if k in planos and not found(planos[k], ev["pagina"], ev["trecho"]):
                     erros.append(f"liberdade de expressão {k}/{crit}: trecho não encontrado (p. {ev['pagina']})")
 
+    resumo = load("data/resumo.json")
+    por_tema = {t["id"]: t["resumos"] for t in resumo["temas"]}
+    for t in comp["temas"]:
+        r = por_tema.get(t["id"])
+        if not r:
+            erros.append(f"resumo: falta o tema {t['id']}")
+            continue
+        for k in ids:
+            texto = r.get(k, "")
+            if not texto:
+                erros.append(f"resumo {t['id']}: falta {k}")
+            elif len(re.findall(r"[.!?](\s|$)", texto)) > 2:
+                erros.append(f"resumo {t['id']}/{k}: mais de 2 frases")
+    palavras = {k: sum(len(r.get(k, "").split()) for r in por_tema.values()) for k in ids}
+    if palavras and max(palavras.values()) > 1.15 * max(1, min(palavras.values())):
+        erros.append(f"resumo desequilibrado em extensão: {palavras}")
+
     chk = load("data/checagens.json")["checagens"]
     contagem = {k: sum(1 for c in chk if c["candidato"] == k) for k in ids}
     if len(set(contagem.values())) > 1:
