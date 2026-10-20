@@ -13,6 +13,8 @@
 <meta property="og:url" content="__SITE_URL__">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234A47A3'/%3E%3Crect x='6' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3Crect x='18' y='8' width='8' height='16' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<script>if (location.hostname.endsWith("github.io")) location.replace("__SITE_URL__" + location.pathname.split("/").pop() + location.hash);</script>
+<link rel="canonical" href="__SITE_URL__">
 <script>try { const t = localStorage.getItem("lal-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +35,8 @@
   --part: #8A5D00;
   --none: #4F5869;
   --contra: #9B3434;
-  --left: #0E7378;
-  --right: #A8620C;
+  --left: #B4560A;
+  --right: #1E7B4C;
   --seg-out: #B7BDC9;
   --display: "Literata", Georgia, "Times New Roman", serif;
   --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
@@ -45,13 +47,13 @@
   :root:not([data-theme="light"]) {
     --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140;
     --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --mark: #5B4A0E;
-    --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; --left: #5CC4C8; --right: #E7A65A; --seg-out: #4A5268; color-scheme: dark;
+    --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; --left: #F2A35E; --right: #4CBF86; --seg-out: #4A5268; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #10131A; --surface: #181C26; --ink: #E7EAF1; --muted: #A1A9B9; --line: #2B3140;
   --accent: #ABA8F6; --accent-ink: #12131F; --soft: #22243A; --mark: #5B4A0E;
-  --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; --left: #5CC4C8; --right: #E7A65A; --seg-out: #4A5268; color-scheme: dark;
+  --ok: #6CCB9C; --part: #E2B961; --none: #A9B1C2; --contra: #EE9090; --left: #F2A35E; --right: #4CBF86; --seg-out: #4A5268; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -966,7 +968,7 @@ function renderEsp({ head, cat, cand, dir, sinal, extra }) {
   if (cand) {
     if (dir === "fora do RILE" || !dir) fitParty = `<p><span class="pill out">Não se aplica</span> O tema fica fora do eixo esquerda–direita do método.</p>`;
     else if (!side) fitParty = `<p class="status">Sem posição de referência do partido para comparar.</p>`;
-    else fitParty = `<p><span class="pill" style="${dir === side ? "color:var(--ok);border-color:var(--ok)" : "color:var(--contra);border-color:var(--contra)"}">${dir === side ? "Converge" : "Diverge"}</span>
+    else fitParty = `<p><span class="pill" style="${dir === side ? "color:var(--accent);border-color:var(--accent)" : "color:var(--contra);border-color:var(--contra)"}">${dir === side ? "Converge" : "Diverge"}</span>
       A proposta é classificada como de <b>${esc(dir)}</b>. O ${esc(CAND[cand].partido)} é posicionado à <b>${esc(side)}</b> pelas referências acima.</p>`;
   }
   const fit = cat ? ideologyFit(cat, sinal) : null;
@@ -1040,8 +1042,8 @@ function renderCmp() {
     if (va == null || vb == null) continue;
     if (Math.abs(va - vb) <= 1) same.push(d.nome); else if (Math.sign(va) !== Math.sign(vb) && va && vb) opp.push(d.nome);
   }
-  $("#idCmp").innerHTML = `<div class="keys"><span><i style="background:var(--left)"></i>A: ${esc(a.nome)}</span><span><i style="background:var(--right)"></i>B: ${esc(b.nome)}</span></div>
-    ${dimPlot([{ i: a, tag: "A", color: "var(--left)" }, { i: b, tag: "B", color: "var(--right)" }])}
+  $("#idCmp").innerHTML = `<div class="keys"><span><i style="background:var(--accent)"></i>A: ${esc(a.nome)}</span><span><i style="background:var(--ink)"></i>B: ${esc(b.nome)}</span></div>
+    ${dimPlot([{ i: a, tag: "A", color: "var(--accent)" }, { i: b, tag: "B", color: "var(--ink)" }])}
     <div class="grid2">
       <div><div class="eyebrow">Onde convergem</div><ul class="legend">${(rel?.convergem || []).map(x => `<li>${esc(x)}</li>`).join("")}${same.length ? `<li class="muted">Posição parecida em: ${esc(same.join(", "))}.</li>` : ""}</ul>${!rel?.convergem?.length && !same.length ? `<p class="empty">Nenhum ponto de convergência registrado.</p>` : ""}</div>
       <div><div class="eyebrow">Onde divergem</div><ul class="legend">${(rel?.divergem || []).map(x => `<li>${esc(x)}</li>`).join("")}${opp.length ? `<li class="muted">Polos opostos em: ${esc(opp.join(", "))}.</li>` : ""}</ul>${!rel?.divergem?.length && !opp.length ? `<p class="empty">Nenhum ponto de divergência registrado.</p>` : ""}</div>

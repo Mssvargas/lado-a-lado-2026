@@ -68,7 +68,8 @@ regras de neutralidade, está em [NOVA_ELEICAO.md](NOVA_ELEICAO.md). Em resumo:
 
 ## Hospedagem
 
-- **GitHub Pages** serve o site estático. A análise automática fica escondida, porque
+- **Endereço principal:** https://lado-a-lado-2026-six.vercel.app (Vercel, com a análise automática). O GitHub Pages redireciona para lá.
+- **GitHub Pages** serve uma cópia estática. A análise automática fica escondida, porque
   não há servidor.
 - **Vercel** serve o site e a função `api/checar.js`. Importe o repositório na Vercel e
   configure as variáveis de ambiente abaixo. O site detecta a função sozinho e mostra a

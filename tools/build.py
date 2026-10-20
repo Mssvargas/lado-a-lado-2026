@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = sys.argv[1] if len(sys.argv) > 1 else "https://mssvargas.github.io/lado-a-lado-2026/"
+SITE_URL = sys.argv[1] if len(sys.argv) > 1 else "https://lado-a-lado-2026-six.vercel.app/"
 REPO_URL = "https://github.com/Mssvargas/lado-a-lado-2026"
 
 

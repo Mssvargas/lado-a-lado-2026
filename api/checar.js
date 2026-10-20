@@ -132,6 +132,27 @@ function pontuar(p, ts) {
 }
 
 // Junta as páginas mais relevantes de várias consultas, sem repetir página.
+// Trecho da página em volta das palavras buscadas. A página inteira pode passar do
+// tamanho que cabe no pedido, e cortar só o começo perdia o trecho que importava.
+function janela(p, consultas, max) {
+  if (p.t.length <= max) return p.t;
+  const ts = [...new Set(consultas.flatMap(termos))];
+  const hits = [];
+  for (const t of ts) {
+    let i = p.f.indexOf(t);
+    while (i !== -1) { hits.push(i); i = p.f.indexOf(t, i + t.length); }
+  }
+  if (!hits.length) return p.t.slice(0, max) + '…';
+  let inicio = 0, melhor = -1;
+  for (const h of hits) {
+    const a = Math.max(0, h - 400);
+    const n = hits.filter((x) => x >= a && x < a + max).length;
+    if (n > melhor) { melhor = n; inicio = a; }
+  }
+  inicio = Math.max(0, Math.min(inicio, p.t.length - max));
+  return (inicio > 0 ? '…' : '') + p.t.slice(inicio, inicio + max) + (inicio + max < p.t.length ? '…' : '');
+}
+
 function paginasRelevantes(k, consultas, limite) {
   const placar = new Map();
   for (const q of consultas) {
@@ -281,10 +302,10 @@ function promptTermos(frase) {
     'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|ambos|indefinido","consultas_plano":["3 a 5 consultas curtas de 1 a 3 palavras, com sinônimos que um plano de governo usaria"],"consulta_web":"uma consulta curta para achar checagens e reportagens sobre a frase"}';
 }
 
-function promptResposta(frase, cand, trechos, fcs, web) {
+function promptResposta(frase, cand, trechos, fcs, web, consultas) {
   const blocos = [];
   for (const k of Object.keys(trechos)) {
-    for (const p of trechos[k]) blocos.push('[PLANO ' + k + ' p.' + p.p + ']\n' + p.t.slice(0, 3200));
+    for (const p of trechos[k]) blocos.push('[PLANO ' + k + ' p.' + p.p + ']\n' + janela(p, consultas, 2400));
   }
   const fcTxt = fcs.map((x) => '[CHECAGEM ' + x.i + '] ' + CAND[x.c.candidato].nome + ' | ' + x.c.alegacao + ' | veredito: ' + x.c.veredito + ' | ' + x.c.fonte + ', ' + x.c.data + ' | ' + x.c.explicacao).join('\n');
   const webTxt = web.map((x, i) => '[WEB ' + i + '] ' + x.fonte + ' | ' + x.titulo + '\n' + x.trecho).join('\n\n');
@@ -309,7 +330,7 @@ function promptResposta(frase, cand, trechos, fcs, web) {
 function promptEspectro(frase, trechos) {
   const cats = dados().categorias.map((c) => c.codigo + ' | ' + c.nome + ' | ' + c.descricao).join('\n');
   const blocos = [];
-  for (const k of Object.keys(trechos)) for (const p of trechos[k]) blocos.push('[PLANO ' + k + ' p.' + p.p + ']\n' + p.t.slice(0, 2800));
+  for (const k of Object.keys(trechos)) for (const p of trechos[k]) blocos.push('[PLANO ' + k + ' p.' + p.p + ']\n' + janela(p, [frase], 2400));
   return 'Você classifica frases políticas pelo codebook do Manifesto Project (MARPOR), de forma apartidária.\n' +
     'Regras:\n' +
     '- Escolha UMA categoria da lista, pelo que a MEDIDA faz, não pela justificativa dada. Ex.: "acabar com o programa X" é a categoria de limitação, não a de expansão.\n' +
@@ -426,7 +447,7 @@ module.exports = async (req, res) => {
   const web = (await webP).resultados || [];
 
   // 4. resposta
-  const r = await perguntar(promptResposta(frase, cand, trechos, fcs, web), 1800, prazo, trilha);
+  const r = await perguntar(promptResposta(frase, cand, trechos, fcs, web, consultas), 1800, prazo, trilha);
   if (!r) {
     console.log('[checar] sem resposta: ' + trilha.join(' ; '));
     return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.' });
