@@ -326,6 +326,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
         <div id="espPerfil" class="bars"></div>
         <details><summary class="linkbtn" style="font-size:14px">Como a classificação foi feita e seus limites</summary><p class="status" id="espNota"></p></details>
       </div>
+      <div class="panel" id="espLib" hidden></div>
       <form class="panel" id="espForm">
         <h3>Verificar uma proposta</h3>
         <div class="field"><label for="espSel">Escolha uma proposta dos planos</label><select id="espSel"><option value="">Carregando…</option></select></div>
@@ -830,6 +831,20 @@ const initEspectro = once(async () => {
       <div class="bar" role="img" aria-label="${esc(CAND[k].nome)}: ${pf.esquerda} propostas de esquerda, ${pf.direita} de direita, ${pf.fora} fora do eixo">${seg(pf.esquerda, "--left")}${seg(pf.direita, "--right")}${seg(pf.fora, "--seg-out")}</div></div>`;
   }).join("");
   $("#espNota").textContent = [esp.metodo?.resumo, ...(esp.metodo?.limites || [])].filter(Boolean).join(" ");
+  const L = esp.liberdade_expressao;
+  if (L) {
+    const st = { sim: ["Sim", "var(--ok)"], nao: ["Não", "var(--contra)"], nao_detalha: ["Não detalha", "var(--muted)"] };
+    const ev = e => (e || []).map(x => `<blockquote class="lit">“${esc(x.trecho)}” <button type="button" class="linkbtn" data-open="${x.k}:${esc(x.pagina)}">p. ${esc(x.pagina)}</button></blockquote>`).join("");
+    $("#espLib").hidden = false;
+    $("#espLib").innerHTML = `<h3>${esc(L.titulo)}: o que cada plano garante</h3>
+      <div class="hits">${L.referencia.map(r => `<div class="hit"><div>${esc(r.texto)}</div><div class="src"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.fonte)}</a></div></div>`).join("")}</div>
+      <div class="tablewrap"><table><thead><tr><th>Pergunta</th>${ORDER.map(k => `<th>${esc(CAND[k].nome)}</th>`).join("")}</tr></thead><tbody>${L.criterios.map(c => `<tr><td><b>${esc(c.pergunta)}</b></td>${ORDER.map(k => {
+        const a = L.candidatos[k]?.[c.id] || {};
+        const s = st[a.status];
+        return `<td>${s ? `<span class="pill" style="color:${s[1]};border-color:${s[1]}">${s[0]}</span> ` : ""}${esc(a.resposta || "")}${ev((a.evidencias || []).map(x => ({ ...x, k })))}</td>`;
+      }).join("")}</tr>`).join("")}</tbody></table></div>
+      <p class="status" style="margin:0">${esc(L.nota)}</p>`;
+  }
   const byKey = new Map((esp.itens || []).map(x => [x.tema + "|" + x.indice, x]));
   DATA._espByKey = byKey;
   $("#espSel").innerHTML = `<option value="">Selecione…</option>` + (COMP?.temas || []).map(t =>
@@ -866,37 +881,68 @@ function classifyText(text) {
   const flip = neg && OPOSTA[best.codigo] ? (esp.categorias || []).find(c => c.codigo === OPOSTA[best.codigo]) : null;
   return { cat: flip || best, cand, neg: !!flip };
 }
+const aiBtnHTML = () => aiOn ? `<div class="row"><button type="button" class="btn ghost" id="espAiBtn">Classificar com IA (mais preciso)</button></div>` : "";
 async function verifyEspectro() {
   const out = $("#espOut"), esp = DATA._esp;
   if (!esp) return;
   out.hidden = false;
   const txt = $("#espTxt").value.trim(), sel = $("#espSel").value;
-  let cat, dir, sinal, cand, head, extra = "";
   if (txt) {
     const r = classifyText(txt);
-    head = `<div class="eyebrow">Frase digitada</div><p style="margin:0;font-weight:700">${esc(txt)}</p>`;
-    if (!r.cat) { out.innerHTML = head + `<p class="empty">Não reconheci o tema da frase. Tente palavras mais diretas (ex.: "privatizar", "imposto", "polícia", "aborto").</p>`; return; }
-    cat = r.cat; cand = r.cand; sinal = cat.sinal || 0; dir = cat.direcao;
-    extra = `<p class="status">Classificação automática por palavras-chave${r.neg ? ". Como a frase fala em acabar, cortar ou proibir, foi usada a categoria oposta prevista no método" : ""}. Confira o que o plano diz na aba “Checar uma fala”.</p>`;
-    const ks = cand ? [cand] : ORDER;
+    const head = `<div class="eyebrow">Frase digitada</div><p style="margin:0;font-weight:700">${esc(txt)}</p>`;
+    if (!r.cat) { out.innerHTML = head + `<p class="empty">Não reconheci o tema da frase por palavras-chave. Tente palavras mais diretas (ex.: "privatizar", "imposto", "polícia", "aborto").</p>` + aiBtnHTML(); return; }
+    let extra = `<p class="status">Classificação automática por palavras-chave${r.neg ? ". Como a frase fala em acabar, cortar ou proibir, foi usada a categoria oposta prevista no método" : ""}. Confira o que o plano diz na aba “Checar uma fala”.</p>` + aiBtnHTML();
+    const ks = r.cand ? [r.cand] : ORDER;
     const hits = await Promise.all(ks.map(k => searchPlan(k, txt, 2).then(r2 => ({ k, ...r2 })).catch(() => ({ k, hits: [], ts: [] }))));
     extra += `<div class="hits"><div class="eyebrow">O que o plano diz sobre o assunto</div>` + hits.map(h => h.hits.length
       ? h.hits.map(x => `<div class="hit"><div class="src mono">${esc(CAND[h.k].nome)} · p. ${x.page}</div><div>…${highlight(x.text, h.ts)}…</div><button type="button" class="linkbtn" data-open="${h.k}:${x.page}">Ler a página</button></div>`).join("")
       : `<p class="empty">${esc(CAND[h.k].nome)}: nenhum trecho com essas palavras.</p>`).join("") + `</div>`;
+    renderEsp({ head, cat: r.cat, cand: r.cand, dir: r.cat.direcao, sinal: r.cat.sinal || 0, extra });
   } else if (sel) {
     const [tema, idx] = sel.split("|"); const t = COMP.temas.find(x => x.id === tema); const it = t?.itens[+idx]; const cl = DATA._espByKey.get(sel);
     if (!it || !cl) return;
-    cat = (esp.categorias || []).find(c => c.codigo === cl.categoria); cand = it.candidato; dir = cl.direcao; sinal = cat?.sinal || 0;
-    head = `<div class="eyebrow">${esc(CAND[cand].nome)} · ${esc(t.nome)}</div><p style="margin:0;font-weight:700">${esc(it.proposta)}</p>
-      <blockquote class="lit">“${esc(it.trecho)}” (p. ${esc(it.pagina)})</blockquote>`;
-    extra = cl.justificativa ? `<p class="status"><b>Por que esta categoria:</b> ${esc(cl.justificativa)}</p>` : "";
-  } else { out.hidden = true; return; }
+    const cat = (esp.categorias || []).find(c => c.codigo === cl.categoria);
+    renderEsp({
+      head: `<div class="eyebrow">${esc(CAND[it.candidato].nome)} · ${esc(t.nome)}</div><p style="margin:0;font-weight:700">${esc(it.proposta)}</p>
+        <blockquote class="lit">“${esc(it.trecho)}” (p. ${esc(it.pagina)})</blockquote>`,
+      cat, cand: it.candidato, dir: cl.direcao, sinal: cat?.sinal || 0,
+      extra: cl.justificativa ? `<p class="status"><b>Por que esta categoria:</b> ${esc(cl.justificativa)}</p>` : ""
+    });
+  } else out.hidden = true;
+}
+async function espAI() {
+  const txt = $("#espTxt").value.trim(), btn = $("#espAiBtn"), esp = DATA._esp;
+  if (!txt || !btn) return;
+  btn.disabled = true; btn.textContent = "Classificando… (até 1 minuto)";
+  try {
+    const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ modo: "espectro", frase: txt }) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) { btn.textContent = j.erro || "Não foi possível classificar agora."; return; }
+    const cat = (esp.categorias || []).find(c => c.codigo === j.categoria);
+    const cand = CAND[j.sobre] ? j.sobre : null;
+    const ev = (j.evidencias || []).filter(e => CAND[e.candidato]);
+    renderEsp({
+      head: `<div class="eyebrow">Frase digitada · classificada com IA</div><p style="margin:0;font-weight:700">${esc(txt)}</p>`,
+      cat, cand, dir: cat?.direcao, sinal: cat?.sinal || 0,
+      extra: `${j.justificativa ? `<p class="status"><b>Por que esta categoria:</b> ${esc(j.justificativa)}</p>` : ""}
+        ${cand ? `<div class="hits"><div class="eyebrow">E o plano de ${esc(CAND[cand].nome)}?</div><span class="verdict v-${esc(j.plano)}">${esc(VERD[j.plano] || "")}</span><p style="margin:0">${esc(j.explicacao_plano || "")}</p>
+          ${ev.map(e => `<div class="hit"><div class="src mono">${esc(CAND[e.candidato].nome)} · p. ${esc(e.pagina)}</div><blockquote class="lit">“${esc(e.trecho)}”</blockquote><button type="button" class="linkbtn" data-open="${e.candidato}:${esc(e.pagina)}">Conferir na página</button></div>`).join("")}</div>` : ""}
+        ${j.descartadas ? `<p class="status">${j.descartadas} citação(ões) descartada(s) por não aparecer(em) literalmente no plano.</p>` : ""}
+        <p class="status">Classificação automática. Confira o trecho e a página.</p>`
+    });
+  } catch { btn.textContent = "Sem conexão com o servidor. Tente de novo."; }
+  finally { if (document.body.contains(btn)) btn.disabled = false; }
+}
+document.addEventListener("click", e => { if (e.target.closest("#espAiBtn")) espAI(); });
+function renderEsp({ head, cat, cand, dir, sinal, extra }) {
+  const esp = DATA._esp, out = $("#espOut");
+  out.hidden = false;
   const party = cand ? esp.partidos?.[CAND[cand].partido] : null, side = partySide(party);
   let fitParty = "";
   if (cand) {
     if (dir === "fora do RILE" || !dir) fitParty = `<p><span class="pill out">Não se aplica</span> O tema fica fora do eixo esquerda–direita do método.</p>`;
     else if (!side) fitParty = `<p class="status">Sem posição de referência do partido para comparar.</p>`;
-    else fitParty = `<p><span class="pill ${dir === side ? "left" : "right"}" style="${dir === side ? "color:var(--ok);border-color:var(--ok)" : "color:var(--contra);border-color:var(--contra)"}">${dir === side ? "Converge" : "Diverge"}</span>
+    else fitParty = `<p><span class="pill" style="${dir === side ? "color:var(--ok);border-color:var(--ok)" : "color:var(--contra);border-color:var(--contra)"}">${dir === side ? "Converge" : "Diverge"}</span>
       A proposta é classificada como de <b>${esc(dir)}</b>. O ${esc(CAND[cand].partido)} é posicionado à <b>${esc(side)}</b> pelas referências acima.</p>`;
   }
   const fit = cat ? ideologyFit(cat, sinal) : null;

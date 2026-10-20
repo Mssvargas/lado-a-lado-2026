@@ -4,6 +4,7 @@
 //
 // GET  /api/checar  -> { ok, ia, busca }  (diz o que está configurado; não gasta cota)
 // POST /api/checar  { frase, candidato: "ambos"|"lula"|"flavio" }
+// POST /api/checar  { modo: "espectro", frase }  -> categoria do Manifesto Project + o que o plano diz
 //
 // Etapas:
 //   1. termos de busca (IA rápida; sem IA, usa as palavras da frase)
@@ -18,11 +19,12 @@
 //   GROQ_API_KEY, CEREBRAS_API_KEY, OPENROUTER_API_KEY, GEMINI_API_KEY
 //   TAVILY_API_KEY     busca na web
 //   WEB_DOMINIOS       lista de domínios separada por vírgula (entra na frente da padrão)
+//   TAVILY_DEPTH       "basic" (padrão, 1 crédito) ou "advanced" (2 créditos, trechos melhores)
 
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-19a';
+const VERSAO = '2026-10-20a';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -77,8 +79,22 @@ function dados() {
       return { p: p.p, t, f: fold(t), l: loose(t), toc: (t.match(/\.{8,}/g) || []).length > 3 };
     });
   }
-  CACHE = { planos, checagens: ler('checagens.json').checagens };
+  const esp = ler('espectro.json');
+  CACHE = { planos, checagens: ler('checagens.json').checagens, categorias: esp.categorias || [] };
   return CACHE;
+}
+
+// Respostas recentes: a mesma pergunta não gasta cota de novo (vale por instância).
+const RESPOSTAS = new Map(), RESPOSTA_TTL = 6 * 60 * 60 * 1000;
+function lembrada(chave) {
+  const r = RESPOSTAS.get(chave);
+  if (r && Date.now() - r.t < RESPOSTA_TTL) return r.v;
+  RESPOSTAS.delete(chave);
+  return null;
+}
+function lembrar(chave, v) {
+  if (RESPOSTAS.size > 500) RESPOSTAS.delete(RESPOSTAS.keys().next().value);
+  RESPOSTAS.set(chave, { t: Date.now(), v });
 }
 
 const STOP = new Set(('a o os as um uma uns umas de do da dos das em no na nos nas por para pra com sem que e ou se ao aos à às é ser foi vai vão vou ir sobre como mais menos muito ' +
@@ -216,7 +232,7 @@ async function pesquisarWeb(consulta, timeoutMs) {
     headers: { 'content-type': 'application/json', authorization: 'Bearer ' + process.env.TAVILY_API_KEY },
     body: JSON.stringify({
       query: String(consulta).slice(0, 380),
-      search_depth: 'basic',
+      search_depth: process.env.TAVILY_DEPTH === 'advanced' ? 'advanced' : 'basic',
       max_results: 6,
       time_range: 'year',
       include_domains: DOMINIOS(),
@@ -281,6 +297,21 @@ function promptResposta(frase, cand, trechos, fcs, web) {
     '{"sobre":"lula|flavio|ambos|indefinido","classificacao":"...","explicacao":"2 a 4 frases","evidencias":[{"candidato":"lula|flavio","pagina":0,"trecho":"..."}],"imprensa":[{"indice":0,"resumo":"..."}],"checagens":[0],"limites":"1 frase sobre o que não dá para saber só por este material"}';
 }
 
+function promptEspectro(frase, trechos) {
+  const cats = dados().categorias.map((c) => c.codigo + ' | ' + c.nome + ' | ' + c.descricao).join('\n');
+  const blocos = [];
+  for (const k of Object.keys(trechos)) for (const p of trechos[k]) blocos.push('[PLANO ' + k + ' p.' + p.p + ']\n' + p.t.slice(0, 2800));
+  return 'Você classifica frases políticas pelo codebook do Manifesto Project (MARPOR), de forma apartidária.\n' +
+    'Regras:\n' +
+    '- Escolha UMA categoria da lista, pelo que a MEDIDA faz, não pela justificativa dada. Ex.: "acabar com o programa X" é a categoria de limitação, não a de expansão.\n' +
+    '- Diga de quem a frase fala (lula = Lula, PT; flavio = Flávio Bolsonaro, PL; indefinido).\n' +
+    '- Compare com os trechos do PLANO do candidato: consta | consta_em_parte | nao_consta | contraria. "nao_consta" não prova que a frase é falsa.\n' +
+    '- "evidencias": cópia LITERAL de um bloco [PLANO], até 40 palavras, com a página certa.\n' +
+    '- Português simples, sem adjetivos valorativos.\n\n' +
+    'Frase: """' + frase + '"""\n\n=== CATEGORIAS ===\n' + cats + '\n\n=== TRECHOS DOS PLANOS ===\n' + (blocos.join('\n\n') || '(nenhum)') + '\n\n' +
+    'Responda só com JSON: {"sobre":"lula|flavio|indefinido","categoria":"perXXX","justificativa":"1 a 2 frases","plano":"consta|consta_em_parte|nao_consta|contraria","explicacao_plano":"1 a 2 frases","evidencias":[{"candidato":"lula|flavio","pagina":0,"trecho":"..."}]}';
+}
+
 // ---------- validação ----------
 
 function validar(r, trechos, fcs, web) {
@@ -330,11 +361,42 @@ module.exports = async (req, res) => {
   const cand = ['lula', 'flavio'].includes(corpo && corpo.candidato) ? corpo.candidato : 'ambos';
   if (frase.length < 8 || frase.length > 400) return envia(400, { erro: 'Escreva uma frase entre 8 e 400 caracteres.' });
 
+  const modo = corpo && corpo.modo === 'espectro' ? 'espectro' : 'checar';
+  const chave = modo + '|' + cand + '|' + fold(frase);
+  const ja = lembrada(chave);
+  if (ja) return envia(200, Object.assign({}, ja, { cache: true }));
+
   const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
   if (!dentroDoLimite(ip)) return envia(429, { erro: 'Muitas análises seguidas. Tente de novo em alguns minutos.' });
 
   const prazo = Date.now() + 55000;
   const trilha = [];
+
+  if (modo === 'espectro') {
+    const f = ' ' + fold(frase) + ' ';
+    const quem = /\b(lula|inacio|pt)\b/.test(f) ? 'lula' : /\b(flavio|bolsonaro|pl)\b/.test(f) ? 'flavio' : null;
+    const ks = quem ? [quem] : ['lula', 'flavio'];
+    const trechos = {};
+    for (const k of ks) trechos[k] = paginasRelevantes(k, [frase], quem ? 4 : 2);
+    const r = await perguntar(promptEspectro(frase, trechos), 900, prazo, trilha);
+    if (!r) {
+      console.log('[espectro] sem resposta: ' + trilha.join(' ; '));
+      return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.' });
+    }
+    const j = r.json || {};
+    const cat = dados().categorias.find((c) => c.codigo === j.categoria);
+    if (!cat) return envia(502, { erro: 'A IA não devolveu uma categoria válida. Tente reescrever a frase.' });
+    const v = validar({ evidencias: j.evidencias }, trechos, [], []);
+    const out = {
+      modo, sobre: ['lula', 'flavio'].includes(j.sobre) ? j.sobre : (quem || 'indefinido'),
+      categoria: cat.codigo, justificativa: String(j.justificativa || '').slice(0, 600),
+      plano: ['consta', 'consta_em_parte', 'nao_consta', 'contraria'].includes(j.plano) ? j.plano : 'nao_consta',
+      explicacao_plano: String(j.explicacao_plano || '').slice(0, 600),
+      evidencias: v.evidencias, descartadas: v.descartadas, modelo: r.modelo
+    };
+    lembrar(chave, out);
+    return envia(200, out);
+  }
 
   // 1. termos de busca
   let consultas = [frase], consultaWeb = frase, sobre = cand;
@@ -367,5 +429,6 @@ module.exports = async (req, res) => {
   out.checagens = out.checagens.map((i) => Object.assign({ id: i }, dados().checagens[i]));
   out.busca_web = !!process.env.TAVILY_API_KEY;
   out.modelo = r.modelo;
+  lembrar(chave, out);
   return envia(200, out);
 };

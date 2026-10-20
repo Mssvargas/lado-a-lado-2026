@@ -3,6 +3,7 @@
   "resumo": "Cada proposta foi classificada numa categoria do Manifesto Project (MARPOR), o método acadêmico que codifica programas de partidos no mundo todo. As mesmas regras valem para os dois candidatos, e o que conta é o que a frase propõe, não quem propõe. O índice soma as propostas em categorias que o índice RILE (Laver & Budge) chama de direita, subtrai as de esquerda e divide pelo total.",
   "fonte": "https://manifesto-project.wzb.eu/down/data/2026a/codebooks/codebook_MPDataset_MPDS2026a.pdf",
   "limites": [
+   "Regra geral: classifica-se a medida proposta, não a justificativa que o plano dá para ela. Ex.: regular plataformas digitais é 'Regulação' mesmo quando o plano diz que é para defender a democracia; extinguir estruturas de rotulagem de conteúdo é 'Liberdade' pelo efeito da medida.",
    "O MARPOR original conta quase-sentenças do programa inteiro; aqui a unidade é a proposta, já selecionada e resumida no comparativo (261 itens). O índice é aproximado e não se compara ao RILE oficial.",
    "Só a categoria principal entra na contagem; a secundária é informativa.",
    "Temas com mais propostas pesam mais. A seleção dos itens veio do comparativo, não de uma codificação do documento completo.",
@@ -3108,10 +3109,10 @@
    "tema": "instituicoes",
    "indice": 1,
    "candidato": "lula",
-   "categoria": "per202",
+   "categoria": "per403",
    "secundaria": "per403",
    "direcao": "esquerda",
-   "justificativa": "O texto apresenta a regulação das redes contra desinformação como defesa da democracia; na prática, regula plataformas."
+   "justificativa": "A medida é criar regras para empresas de plataformas digitais (regulação). Pela regra de classificar a medida e não a justificativa, sai de 'Democracia' (per202) e vai para 'Regulação do mercado' (per403). A posição no eixo esquerda–direita não muda."
   },
   {
    "tema": "instituicoes",
@@ -3518,5 +3519,107 @@
    "indice": 17.3,
    "nota": "Índice = (direita − esquerda) / total × 100, contando propostas; o MARPOR original conta quase-sentenças, então o valor é só aproximado."
   }
+ },
+ "liberdade_expressao": {
+  "titulo": "Liberdade de expressão e regulação das redes",
+  "referencia": [
+   {
+    "texto": "Restrições à liberdade de expressão precisam estar previstas em lei de forma precisa, ter objetivo legítimo e ser necessárias e proporcionais.",
+    "fonte": "ONU, Comitê de Direitos Humanos, Comentário Geral nº 34 (2011)",
+    "url": "https://www2.ohchr.org/english/bodies/hrc/docs/gc34.pdf"
+   },
+   {
+    "texto": "Proibições gerais de divulgar informações com base em ideias vagas e ambíguas, como 'notícias falsas' ou 'informação não objetiva', são incompatíveis com os padrões internacionais.",
+    "fonte": "Declaração Conjunta sobre Liberdade de Expressão e 'Notícias Falsas', relatores da ONU, OSCE, OEA e CADHP (2017)",
+    "url": "https://www.osce.org/files/f/documents/6/8/302796.pdf"
+   }
+  ],
+  "criterios": [
+   {
+    "id": "medida",
+    "pergunta": "O que o plano propõe?"
+   },
+   {
+    "id": "definicao",
+    "pergunta": "Define com precisão o que seria proibido ou retirado?"
+   },
+   {
+    "id": "quem_decide",
+    "pergunta": "Quem decide: a Justiça, um órgão independente ou o governo?"
+   },
+   {
+    "id": "defesa",
+    "pergunta": "Garante direito de defesa e de recurso?"
+   }
+  ],
+  "candidatos": {
+   "lula": {
+    "medida": {
+     "resposta": "Regular as redes sociais e as plataformas digitais para impedir desinformação e campanhas de ódio. Também cria um conselho sobre soberania digital e um programa de letramento digital.",
+     "evidencias": [
+      {
+       "trecho": "avançar ainda mais na regulação democrática das redes sociais e das plataformas digitais, de modo a impedir que elas difundam desinformação, acolham campanhas de ódio e outras formas de comunicação nocivas para a democracia",
+       "pagina": 16
+      },
+      {
+       "trecho": "Propomos a criação de um Conselho Nacional pela Soberania Digital, com participação da sociedade",
+       "pagina": 17
+      }
+     ]
+    },
+    "definicao": {
+     "status": "nao_detalha",
+     "resposta": "Não detalha. Os termos 'desinformação' e 'campanhas de ódio' aparecem sem definição."
+    },
+    "quem_decide": {
+     "status": "nao_detalha",
+     "resposta": "Não detalha quem decidiria o que é desinformação nem quem aplicaria as regras."
+    },
+    "defesa": {
+     "status": "nao_detalha",
+     "resposta": "Não detalha. O plano afirma o valor da liberdade de expressão.",
+     "evidencias": [
+      {
+       "trecho": "Nenhuma democracia sobrevive sem uma opinião pública plural e sem a garantia plena da liberdade de expressão",
+       "pagina": 16
+      }
+     ]
+    }
+   },
+   "flavio": {
+    "medida": {
+     "resposta": "Extinguir estruturas do Estado que rotulem ou punam falas como desinformação e revogar atos do governo atual nesse sentido.",
+     "evidencias": [
+      {
+       "trecho": "acabar com qualquer estrutura estatal que funcione como um “Ministério da Verdade\", encarregada de vigiar, rotular ou punir o que as pessoas dizem",
+       "pagina": 66
+      },
+      {
+       "trecho": "vamos revogar todos os atos que o atual governo produziu para silenciar seus críticos",
+       "pagina": 66
+      }
+     ]
+    },
+    "definicao": {
+     "status": "nao_detalha",
+     "resposta": "Não lista quais estruturas seriam extintas nem quais atos seriam revogados."
+    },
+    "quem_decide": {
+     "status": "sim",
+     "resposta": "A Justiça.",
+     "evidencias": [
+      {
+       "trecho": "Crime se combate na Justiça, com regras claras e direito de defesa",
+       "pagina": 67
+      }
+     ]
+    },
+    "defesa": {
+     "status": "sim",
+     "resposta": "Sim, menciona direito de defesa (mesmo trecho acima)."
+    }
+   }
+  },
+  "nota": "O quadro aplica as mesmas perguntas aos dois planos, com base nos padrões internacionais acima. Ele registra o que está escrito; não presume como uma medida não detalhada seria executada."
  }
 }
