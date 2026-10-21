@@ -1145,6 +1145,142 @@
     }
    ],
    "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 22,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O fim do 'orçamento secreto' não foi ato do governo: o STF declarou a prática inconstitucional em 19/12/2022, antes da posse. A parte do orçamento participativo foi atendida no Plano Plurianual 2024-2027 (Lei 14.802/2024), cujas prioridades incluem as 'advindas do processo de participação social'; o orçamento anual não passou a ser definido por participação direta.",
+   "evidencias": [
+    {
+     "descricao": "STF: resumo do julgamento das ADPFs 850, 851, 854 e 1.014 (orçamento secreto), 19/12/2022",
+     "tipo": "decisao",
+     "url": "https://www.stf.jus.br/arquivo/cms/publicacaoBOInternet/anexo/link_download/casos_relevantes/pt/ADPF_850_ADPF_851_ADPF_854_ADPF_1014.pdf"
+    },
+    {
+     "descricao": "Lei 14.802/2024 (PPA 2024-2027), prioridades e processo de participação social",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14802.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 23,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Pelos resultados oficiais do TSE para a eleição presidencial de 2026, Luiz Inácio Lula da Silva é candidato a presidente e disputa o segundo turno, com Geraldo Alckmin de vice. A promessa de não se candidatar a novo mandato já não pode ser cumprida, pois o fato está consumado.",
+   "evidencias": [
+    {
+     "descricao": "TSE: resultados oficiais da eleição presidencial de 2026 (arquivo do 2º turno, candidatos a Presidente)",
+     "tipo": "dado_oficial",
+     "url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 24,
+   "status": "em_andamento",
+   "percentual": null,
+   "mandato_em_curso": true,
+   "justificativa": "A pasta segue como Ministério da Justiça e Segurança Pública: o Decreto 13.131, de 30/09/2026, ainda altera a estrutura regimental do MJSP. Não há ato de criação de um Ministério da Segurança Pública. O ato mais próximo é a PEC 18/2025, do Executivo, que trata de competências na segurança pública, aprovada pela Câmara e aguardando o Senado. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Senado, dados abertos: decretos de 2026, incluindo o Decreto 13.131/2026 (estrutura do Ministério da Justiça e Segurança Pública)",
+     "tipo": "norma",
+     "url": "https://legis.senado.leg.br/dadosabertos/legislacao/lista?tipo=DEC&ano=2026"
+    },
+    {
+     "descricao": "Câmara: PEC 18/2025 (Poder Executivo), 'Aguardando Apreciação pelo Senado Federal'",
+     "tipo": "tramitacao",
+     "url": "https://www.camara.leg.br/propostas-legislativas/2500080"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 25,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Decreto 11.628/2023 relançou o Programa Nacional de Universalização do Acesso e Uso da Energia Elétrica (Luz para Todos) para a população rural e de regiões remotas da Amazônia Legal. Esta verificação não localizou dado oficial que mostre universalização plena de energia e de água até 21/10/2026.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.628/2023 (Programa Luz para Todos)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11628.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 26,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.601/2023 instituiu o novo Bolsa Família com benefício complementar que garante no mínimo R$ 600,00 por família e Benefício Primeira Infância de R$ 150,00 por criança de 0 a 7 anos incompletos.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.601/2023 (Programa Bolsa Família), benefícios financeiros",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14601.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 27,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.663/2023 fixou o salário mínimo em R$ 1.320 a partir de maio de 2023 e criou a política de valorização permanente. Os decretos anuais o elevaram para R$ 1.412 em 2024 (+6,97%), R$ 1.518 em 2025 (+7,51%) e R$ 1.621 em 2026 (+6,79%), acima do INPC de 12 meses até novembro anterior medido pelo IBGE (3,85%, 4,84% e 4,18%).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.663/2023 (salário mínimo e política de valorização)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14663.htm"
+    },
+    {
+     "descricao": "Decreto 11.864/2023 (salário mínimo de 2024)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11864.htm"
+    },
+    {
+     "descricao": "Decreto 12.342/2024 (salário mínimo de 2025)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12342.htm"
+    },
+    {
+     "descricao": "Decreto 12.797/2025 (salário mínimo de 2026)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12797.htm"
+    },
+    {
+     "descricao": "IBGE/SIDRA, tabela 1736: INPC acumulado em 12 meses",
+     "tipo": "dado_oficial",
+     "url": "https://apisidra.ibge.gov.br/values/t/1736/n1/all/v/2292/p/202212,202311,202312,202411,202412,202511"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 28,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O critério do Mapa da Fome é da FAO: prevalência de subalimentação (PoU) acima de 2,5% na média de três anos. Pelo painel do Ministério do Desenvolvimento Social, com dados do relatório SOFI 2025 da FAO, a média de 2022 a 2024 do Brasil ficou abaixo de 2,5%, e o país saiu do Mapa da Fome.",
+   "evidencias": [
+    {
+     "descricao": "MDS: painel oficial sobre o relatório SOFI 2025 (PoU do Brasil 2022-2024 abaixo de 2,5%)",
+     "tipo": "dado_oficial",
+     "url": "https://paineis.mds.gov.br/public/extensions/BSF/SOFI.html"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
   }
  ]
 }

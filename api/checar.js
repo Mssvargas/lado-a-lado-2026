@@ -28,7 +28,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-21c';
+const VERSAO = '2026-10-21d';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -222,8 +222,10 @@ const AC_SINONIMOS = {
 };
 
 // Artigos do acervo mais ligados às consultas. "art. 5", "artigo 7º" na pergunta puxam o artigo citado.
-function artigosRelevantes(consultas, docIds, limite) {
+// alvos: artigos que a IA apontou como prováveis ("cf|228"). Só ajudam a achar; a resposta usa o texto oficial.
+function artigosRelevantes(consultas, docIds, limite, alvos) {
   const A = acervo();
+  const alvo = new Set(alvos || []);
   const ids = docIds.filter((d) => A.docs[d]);
   const refs = [];
   // Número de artigo só conta quando vem do texto da pessoa (a primeira consulta).
@@ -240,6 +242,7 @@ function artigosRelevantes(consultas, docIds, limite) {
       for (const ts of tss) s += pontuar(a, ts);
       const num = (/^Art\. (\d+)/.exec(a.n) || [])[1];
       if (num && refs.indexOf(num) >= 0) s += 400;
+      if (alvo.has(id + '|' + normArt(a.n))) s += 300;
       if (s > 0) placar.push({ doc: id, a, s });
     }
   }
@@ -543,7 +546,8 @@ function promptTermosAcervo(pergunta) {
   return 'Você prepara a busca de artigos de lei para responder a pergunta de um cidadão.\n' +
     'Documentos disponíveis: ' + docs + '.\n' +
     'Pergunta: """' + pergunta + '"""\n' +
-    'Responda só com JSON: {"consultas":["3 a 6 consultas de 1 a 4 palavras, com os termos que a própria lei usaria (ex.: para jornada, \\"duração do trabalho\\" e \\"horas semanais\\"; para maioridade penal, \\"penalmente inimputáveis\\" e \\"menores de dezoito anos\\")"],"documentos":["ids dos documentos mais prováveis, até 3"]}';
+    'Responda só com JSON: {"consultas":["3 a 6 consultas de 1 a 4 palavras, com os termos que a própria lei usaria (ex.: para jornada, \\"duração do trabalho\\" e \\"horas semanais\\"; para maioridade penal, \\"penalmente inimputáveis\\" e \\"menores de dezoito anos\\")"],"documentos":["ids dos documentos mais prováveis, até 3"],"artigos":[{"doc":"id do documento","artigo":"número do artigo que provavelmente trata do assunto, ex.: 228"}]}\n' +
+    'Em "artigos", indique até 4 artigos que você acredita tratar do assunto. Eles só servem para localizar o texto; a resposta virá do texto oficial.';
 }
 
 function promptAcervo(pergunta, achados, consultas) {
@@ -613,16 +617,21 @@ async function responderAcervo(req, corpo, envia) {
   const fp = ' ' + fold(pergunta).replace(/[^a-z0-9]+/g, ' ') + ' ';
   let consultas = [pergunta].concat(Object.keys(AC_SINONIMOS).filter((k) => fp.includes(' ' + k + ' ')).map((k) => AC_SINONIMOS[k]));
   let docIds = doc ? [doc] : [];
-  const t = await perguntar(promptTermosAcervo(pergunta), 400, Math.min(prazo, Date.now() + 12000), trilha);
+  let alvos = [];
+  const t = await perguntar(promptTermosAcervo(pergunta), 500, Math.min(prazo, Date.now() + 12000), trilha);
   if (t && t.json) {
     consultas = consultas.concat((Array.isArray(t.json.consultas) ? t.json.consultas : []).map(String).slice(0, 6));
     if (!doc && Array.isArray(t.json.documentos)) docIds = t.json.documentos.map(String).filter((d) => A.docs[d]).slice(0, 3);
+    alvos = (Array.isArray(t.json.artigos) ? t.json.artigos : []).slice(0, 4)
+      .filter((x) => x && A.docs[x.doc] && (!doc || x.doc === doc))
+      .map((x) => x.doc + '|' + normArt('Art. ' + String(x.artigo).replace(/^\s*art(?:igo)?\.?\s*/i, '')));
+    for (const a of alvos) { const d = a.split('|')[0]; if (!doc && docIds.indexOf(d) < 0) docIds.push(d); }
   }
-  const achados = artigosRelevantes(consultas, docIds, 8);
+  const achados = artigosRelevantes(consultas, docIds, 8, alvos);
   if (!doc && docIds.length) {
     // Completa com a busca em todos os documentos, para não depender só da escolha da IA.
     const vistos = new Set(achados.map((x) => x.doc + '|' + x.a.n));
-    for (const x of artigosRelevantes(consultas, [], 8)) {
+    for (const x of artigosRelevantes(consultas, [], 8, alvos)) {
       if (achados.length >= 10) break;
       if (!vistos.has(x.doc + '|' + x.a.n)) achados.push(x);
     }

@@ -44,6 +44,11 @@ const confere = (nome, ok, extra) => { console.log((ok ? "ok    " : "FALHA ") + 
   const b = await chamar({ modo: "acervo", pergunta: "O que diz o artigo 5 da Constituição?" });
   confere("\"artigo 5\" traz o Art. 5º", b.j.artigos?.[0]?.n === "Art. 5º", b.j.artigos?.[0]?.n);
 
+  // Artigo apontado pela IA na etapa de busca entra na lista, mesmo sem palavra em comum.
+  resposta = p => p.includes("prepara a busca") ? { consultas: ["idade adulto"], documentos: [], artigos: [{ doc: "cf", artigo: "Art. 228" }] } : { resposta: "São penalmente inimputáveis os menores de dezoito anos.", citacoes: [] };
+  const c = await chamar({ modo: "acervo", pergunta: "A partir de que idade a pessoa responde criminalmente como adulto?" });
+  confere("artigo apontado pela IA é lido", (c.j.artigos || []).some(x => x.doc === "cf" && x.n === "Art. 228"), (c.j.artigos || []).slice(0, 3).map(x => x.doc + " " + x.n).join(", "));
+
   // Extrair afirmações de texto lido por OCR.
   resposta = { afirmacoes: ["Fulano vai acabar com o Bolsa Família"] };
   const e = await chamar({ modo: "extrair", texto: "URGENTE compartilhe: fulano vai acabar com o bolsa familia" });
