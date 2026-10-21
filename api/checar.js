@@ -7,6 +7,8 @@
 // POST /api/checar  { modo: "espectro", frase }  -> categoria do Manifesto Project + o que o plano diz
 // POST /api/checar  { modo: "imagem", imagem: "data:image/...;base64,..." }  -> texto e afirmações do print
 // POST /api/checar  { modo: "audio", audio: "<base64>", mime }  -> transcrição da pergunta (Whisper no Groq)
+// POST /api/checar  { modo: "extrair", texto }  -> afirmações de um texto lido do print no navegador (OCR)
+// POST /api/checar  { modo: "acervo", pergunta, doc? }  -> resposta com artigos do Acervo Constitucional
 //
 // Etapas:
 //   1. termos de busca (IA rápida; sem IA, usa as palavras da frase)
@@ -26,7 +28,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-20c';
+const VERSAO = '2026-10-21a';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -85,8 +87,33 @@ function dados() {
     });
   }
   const esp = ler('espectro.json');
-  CACHE = { planos, checagens: ler('checagens.json').checagens, categorias: esp.categorias || [] };
+  // Propostas já classificadas: servem de exemplo para a IA seguir o mesmo critério.
+  const comp = ler('comparativo.json');
+  const exemplos = (esp.itens || []).map((x) => {
+    const t = comp.temas.find((tm) => tm.id === x.tema);
+    const it = t && t.itens[x.indice];
+    return it && it.trecho ? { proposta: it.proposta, categoria: x.categoria, f: fold(it.proposta) } : null;
+  }).filter(Boolean);
+  CACHE = { planos, checagens: ler('checagens.json').checagens, categorias: esp.categorias || [], exemplos };
   return CACHE;
+}
+
+// Acervo Constitucional: textos compilados do Planalto, separados por artigo (tools/acervo.py).
+let ACERVO = null;
+function acervo() {
+  if (ACERVO) return ACERVO;
+  const base = path.join(process.cwd(), 'data');
+  const idx = JSON.parse(fs.readFileSync(path.join(base, 'acervo.json'), 'utf8')).documentos;
+  const docs = {};
+  for (const d of idx) {
+    const j = JSON.parse(fs.readFileSync(path.join(process.cwd(), d.arquivo), 'utf8'));
+    docs[d.id] = {
+      id: d.id, titulo: d.titulo, url: d.url, baixado_em: d.baixado_em,
+      artigos: j.artigos.map((a) => ({ n: a.n, hier: a.hier, t: a.t, f: fold(a.hier + ' ' + a.t), l: loose(a.t) }))
+    };
+  }
+  ACERVO = { idx, docs };
+  return ACERVO;
 }
 
 // Respostas recentes: a mesma pergunta não gasta cota de novo (vale por instância).
@@ -178,6 +205,37 @@ function paginasRelevantes(k, consultas, limite) {
   }
   return [...placar.entries()].sort((a, b) => b[1] - a[1]).slice(0, limite)
     .map(([n]) => dados().planos[k].find((p) => p.p === n));
+}
+
+// Artigos do acervo mais ligados às consultas. "art. 5", "artigo 7º" na pergunta puxam o artigo citado.
+function artigosRelevantes(consultas, docIds, limite) {
+  const A = acervo();
+  const ids = docIds.filter((d) => A.docs[d]);
+  const refs = [];
+  for (const q of consultas) {
+    const re = /\bart(?:igo)?s?\.?\s*(\d+)/g;
+    let m;
+    while ((m = re.exec(fold(q)))) refs.push(m[1]);
+  }
+  const tss = consultas.map(termos).filter((ts) => ts.length);
+  const placar = [];
+  for (const id of ids.length ? ids : Object.keys(A.docs)) {
+    for (const a of A.docs[id].artigos) {
+      let s = 0;
+      for (const ts of tss) s += pontuar(a, ts);
+      const num = (/^Art\. (\d+)/.exec(a.n) || [])[1];
+      if (num && refs.indexOf(num) >= 0) s += 400;
+      if (s > 0) placar.push({ doc: id, a, s });
+    }
+  }
+  return placar.sort((x, y) => y.s - x.s).slice(0, limite);
+}
+
+function exemplosEspectro(frase) {
+  const ts = termos(frase);
+  if (!ts.length) return [];
+  return dados().exemplos.map((x) => ({ x, n: ts.filter((t) => achar(x.f, t) !== -1).length }))
+    .filter((y) => y.n).sort((a, b) => b.n - a.n).slice(0, 8).map((y) => y.x);
 }
 
 function checagensRelevantes(consultas, cand) {
@@ -328,6 +386,10 @@ async function transcrever(b64, mime, trilha) {
     form.append('language', 'pt');
     form.append('response_format', 'json');
     form.append('temperature', '0');
+    // Vocabulário do assunto: ajuda o Whisper com nomes próprios e siglas da pergunta.
+    form.append('prompt', 'Pergunta de um eleitor sobre a eleição presidencial de ' + ELEICAO.ano + ' no Brasil, ' +
+      ELEICAO.candidatos.map((c) => c.nome + ' (' + c.partido + ')').join(', ') +
+      '. Plano de governo, Constituição Federal, artigo, emenda, escala 6x1, Bolsa Família, SUS, CLT, INSS, imposto de renda, reforma tributária, segurança pública.');
     const r = await comTempo('https://api.groq.com/openai/v1/audio/transcriptions', {
       method: 'POST', headers: { authorization: 'Bearer ' + process.env.GROQ_API_KEY }, body: form
     }, 30000);
@@ -417,19 +479,59 @@ function promptResposta(frase, cand, trechos, fcs, web, consultas) {
     '{"sobre":"' + LISTA_IDS + '|ambos|indefinido","classificacao":"...","explicacao":"2 a 4 frases","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}],"imprensa":[{"indice":0,"resumo":"..."}],"checagens":[0],"limites":"1 frase sobre o que não dá para saber só por este material"}';
 }
 
+// Casos em que a IA confundia categorias vizinhas. Vale para qualquer candidato.
+const GUIA_ESPECTRO =
+  '- Imposto: aumentar imposto de quem ganha ou tem mais (grandes fortunas, heranças, lucros e dividendos, IR progressivo) ou isentar quem ganha pouco é per503 (igualdade). Reduzir imposto de empresas, desonerar a folha ou dar incentivo fiscal a setores é per402. Equilíbrio das contas e corte de gastos é per414.\n' +
+  '- Privatizar ou conceder é per401; estatizar ou retomar controle estatal é per413.\n' +
+  '- Ampliar SUS, Previdência ou programa social é per504; cortar ou limitar benefício é per505.\n' +
+  '- Polícia, penas, presídios e controle de armas é per605.\n' +
+  '- Reduzir jornada, ampliar direitos trabalhistas ou apoiar sindicatos é per701; fazer o acordo entre empresa e trabalhador prevalecer sobre a lei é per401.\n';
+
 function promptEspectro(frase, trechos) {
   const cats = dados().categorias.map((c) => c.codigo + ' | ' + c.nome + ' | ' + c.descricao).join('\n');
   const blocos = [];
   for (const k of Object.keys(trechos)) for (const p of trechos[k]) blocos.push('[PLANO ' + k + ' p.' + p.p + ']\n' + janela(p, [frase], 2400));
+  const ex = exemplosEspectro(frase).map((x) => '- "' + x.proposta + '" -> ' + x.categoria).join('\n');
   return 'Você classifica frases políticas pelo codebook do Manifesto Project (MARPOR), de forma apartidária.\n' +
     'Regras:\n' +
     '- Escolha UMA categoria da lista, pelo que a MEDIDA faz, não pela justificativa dada. Ex.: "acabar com o programa X" é a categoria de limitação, não a de expansão.\n' +
+    GUIA_ESPECTRO +
+    (ex ? '- Propostas parecidas já classificadas neste site (siga o mesmo critério):\n' + ex + '\n' : '') +
     '- Diga de quem a frase fala (' + LEGENDA_IDS + '; ou indefinido).\n' +
     '- Compare com os trechos do PLANO do candidato: consta | consta_em_parte | nao_consta | contraria. "nao_consta" não prova que a frase é falsa.\n' +
     '- "evidencias": cópia LITERAL de um bloco [PLANO], até 40 palavras, com a página certa.\n' +
     '- Português simples, sem adjetivos valorativos.\n\n' +
     'Frase: """' + frase + '"""\n\n=== CATEGORIAS ===\n' + cats + '\n\n=== TRECHOS DOS PLANOS ===\n' + (blocos.join('\n\n') || '(nenhum)') + '\n\n' +
     'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|indefinido","categoria":"perXXX","justificativa":"1 a 2 frases","plano":"consta|consta_em_parte|nao_consta|contraria","explicacao_plano":"1 a 2 frases","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}]}';
+}
+
+function promptExtrair(texto) {
+  return 'O texto abaixo foi lido (OCR) de um print enviado por um eleitor: post, notícia ou mensagem. Pode ter erros de leitura.\n' +
+    'Liste até 3 afirmações verificáveis sobre os candidatos à Presidência do Brasil em ' + ELEICAO.ano + ' (' + LEGENDA_IDS + ') ou sobre suas propostas, ' +
+    'cada uma como frase curta, fiel ao texto, citando o nome do candidato. Corrija só erros evidentes de leitura. Não julgue e não acrescente nada. ' +
+    'Se não houver afirmação desse tipo, devolva a lista vazia.\n\n' +
+    'Texto: """' + texto + '"""\n\nResponda só com JSON: {"afirmacoes":["..."]}';
+}
+
+function promptTermosAcervo(pergunta) {
+  const docs = acervo().idx.map((d) => d.id + ' = ' + d.titulo).join('; ');
+  return 'Você prepara a busca de artigos de lei para responder a pergunta de um cidadão.\n' +
+    'Documentos disponíveis: ' + docs + '.\n' +
+    'Pergunta: """' + pergunta + '"""\n' +
+    'Responda só com JSON: {"consultas":["3 a 6 consultas de 1 a 4 palavras, com os termos que a própria lei usaria (ex.: \\"jornada\\", \\"duração do trabalho\\", \\"horas semanais\\")"],"documentos":["ids dos documentos mais prováveis, até 3"]}';
+}
+
+function promptAcervo(pergunta, achados) {
+  const blocos = achados.map((x) => '[' + x.doc + ' | ' + x.a.n + '] (' + x.a.hier + ')\n' + janela(x.a, [pergunta], 1800)).join('\n\n');
+  return 'Você explica a legislação brasileira a um cidadão, de forma apartidária, usando SOMENTE os artigos abaixo. ' +
+    'Eles vêm do texto compilado oficial do Planalto, com a redação em vigor.\n' +
+    'Regras:\n' +
+    '- Responda em português simples, de 2 a 5 frases curtas. Diga o que a lei estabelece e cite o artigo.\n' +
+    '- Não opine, não avalie candidatos nem propostas, não dê orientação jurídica para um caso particular.\n' +
+    '- Se os artigos abaixo não respondem a pergunta, diga isso claramente e não complete com memória.\n' +
+    '- "citacoes": trechos LITERAIS de até 40 palavras, com "doc" e "artigo" exatamente como no rótulo [doc | artigo].\n\n' +
+    'Pergunta: """' + pergunta + '"""\n\n=== ARTIGOS ===\n' + (blocos || '(nenhum artigo encontrado)') + '\n\n' +
+    'Responda só com JSON: {"resposta":"...","citacoes":[{"doc":"cf","artigo":"Art. 7º","trecho":"..."}],"limites":"1 frase sobre o que estes artigos não respondem"}';
 }
 
 // ---------- validação ----------
@@ -461,6 +563,65 @@ function validar(r, trechos, fcs, web) {
   return out;
 }
 
+// Só provedor, modelo e tipo da falha: mostra no navegador por que a IA não respondeu.
+function resumoTrilha(trilha) {
+  return trilha.slice(-4).map((s) => String(s).replace(/(gsk_|sk-|AIza)[\w-]{6,}/g, '***').slice(0, 100));
+}
+
+// "Art. 7º", "art 7", "artigo 7o" -> "art7"
+const normArt = (s) => fold(String(s)).replace(/artigo/g, 'art').replace(/(\d)\s*[ºo°]/g, '$1').replace(/[^a-z0-9-]/g, '');
+
+async function responderAcervo(req, corpo, envia) {
+  const pergunta = String(corpo.pergunta || '').replace(/\s+/g, ' ').trim();
+  if (pergunta.length < 5 || pergunta.length > 500) return envia(400, { erro: 'Escreva uma pergunta entre 5 e 500 caracteres.' });
+  try { acervo(); } catch (e) { return envia(503, { erro: 'O acervo não está disponível neste servidor.' }); }
+  const A = acervo();
+  const doc = A.docs[corpo.doc] ? corpo.doc : '';
+  const chave = 'acervo|' + doc + '|' + fold(pergunta);
+  const ja = lembrada(chave);
+  if (ja) return envia(200, Object.assign({}, ja, { cache: true }));
+  const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
+  if (!dentroDoLimite(ip)) return envia(429, { erro: 'Muitas consultas seguidas. Tente de novo em alguns minutos.' });
+
+  const prazo = Date.now() + 52000, trilha = [];
+  let consultas = [pergunta], docIds = doc ? [doc] : [];
+  const t = await perguntar(promptTermosAcervo(pergunta), 300, Math.min(prazo, Date.now() + 12000), trilha);
+  if (t && t.json) {
+    consultas = consultas.concat((Array.isArray(t.json.consultas) ? t.json.consultas : []).map(String).slice(0, 6));
+    if (!doc && Array.isArray(t.json.documentos)) docIds = t.json.documentos.map(String).filter((d) => A.docs[d]).slice(0, 3);
+  }
+  const achados = artigosRelevantes(consultas, docIds, 8);
+  if (!doc && docIds.length) {
+    // Completa com a busca em todos os documentos, para não depender só da escolha da IA.
+    const vistos = new Set(achados.map((x) => x.doc + '|' + x.a.n));
+    for (const x of artigosRelevantes(consultas, [], 8)) {
+      if (achados.length >= 10) break;
+      if (!vistos.has(x.doc + '|' + x.a.n)) achados.push(x);
+    }
+  }
+  const artigos = achados.map((x) => ({ doc: x.doc, titulo: A.docs[x.doc].titulo, url: A.docs[x.doc].url, n: x.a.n, hier: x.a.hier, t: x.a.t.slice(0, 1500) }));
+  const r = await perguntar(promptAcervo(pergunta, achados), 1200, prazo, trilha);
+  if (!r) {
+    console.log('[acervo] sem resposta: ' + trilha.join(' ; '));
+    return envia(503, { erro: 'A IA não respondeu agora. Os artigos encontrados pela busca estão abaixo.', detalhe: resumoTrilha(trilha), artigos });
+  }
+  const citacoes = [];
+  let descartadas = 0;
+  for (const c of Array.isArray(r.json.citacoes) ? r.json.citacoes.slice(0, 6) : []) {
+    const x = achados.find((y) => y.doc === String(c && c.doc) && normArt(y.a.n) === normArt(c && c.artigo));
+    const segs = String((c && c.trecho) || '').split(/\.\.\.|…/).map(loose).filter((s) => s.length > 10);
+    if (x && segs.length && segs.every((s) => x.a.l.includes(s))) {
+      citacoes.push({ doc: x.doc, titulo: A.docs[x.doc].titulo, artigo: x.a.n, trecho: String(c.trecho).slice(0, 400), url: A.docs[x.doc].url });
+    } else descartadas++;
+  }
+  const out = {
+    modo: 'acervo', resposta: String(r.json.resposta || '').slice(0, 1500), citacoes, descartadas,
+    limites: String(r.json.limites || '').slice(0, 400), artigos, modelo: r.modelo
+  };
+  lembrar(chave, out);
+  return envia(200, out);
+}
+
 // ---------- handler ----------
 
 module.exports = async (req, res) => {
@@ -474,7 +635,8 @@ module.exports = async (req, res) => {
   if (req.method === 'GET') {
     return envia(200, {
       ok: true, versao: VERSAO, ia: configurados().length > 0, busca: !!process.env.TAVILY_API_KEY,
-      imagem: ORDEM_VISAO.some((p) => !!process.env[CHAVE[p]]), audio: !!process.env.GROQ_API_KEY
+      imagem: ORDEM_VISAO.some((p) => !!process.env[CHAVE[p]]), audio: !!process.env.GROQ_API_KEY,
+      acervo: fs.existsSync(path.join(process.cwd(), 'data', 'acervo.json'))
     });
   }
   if (req.method !== 'POST') return envia(405, { erro: 'Use POST.' });
@@ -494,10 +656,10 @@ module.exports = async (req, res) => {
       if (!/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(url) || url.length > 4500000) {
         return envia(400, { erro: 'Envie uma imagem JPG, PNG ou WEBP de até 3 MB.' });
       }
-      const r = await lerImagem(url, Date.now() + 50000, trilhaM);
+      const r = await lerImagem(url, Date.now() + 40000, trilhaM);
       if (!r) {
         console.log('[imagem] sem resposta: ' + trilhaM.join(' ; '));
-        return envia(503, { erro: 'Não foi possível ler a imagem agora. Tente de novo ou digite a frase.' });
+        return envia(503, { erro: 'Não foi possível ler a imagem agora. Tente de novo ou digite a frase.', detalhe: resumoTrilha(trilhaM) });
       }
       const afirmacoes = (Array.isArray(r.json.afirmacoes) ? r.json.afirmacoes : []).map((x) => String(x).replace(/\s+/g, ' ').trim().slice(0, 400)).filter((x) => x.length >= 8).slice(0, 3);
       return envia(200, { modo: 'imagem', texto: String(r.json.texto || '').slice(0, 1500), afirmacoes, modelo: r.modelo });
@@ -511,10 +673,25 @@ module.exports = async (req, res) => {
     const t = await transcrever(b64, mime, trilhaM);
     if (!t) {
       console.log('[audio] sem resposta: ' + trilhaM.join(' ; '));
-      return envia(503, { erro: 'Não foi possível entender o áudio agora. Tente de novo ou digite a frase.' });
+      return envia(503, { erro: 'Não foi possível entender o áudio agora. Tente de novo ou digite a frase.', detalhe: resumoTrilha(trilhaM) });
     }
     return envia(200, { modo: 'audio', texto: t.slice(0, 600) });
   }
+
+  // Texto lido do print no próprio navegador (OCR): a IA de texto separa as afirmações.
+  if (corpo && corpo.modo === 'extrair') {
+    const texto = String(corpo.texto || '').replace(/\s+/g, ' ').trim().slice(0, 2500);
+    if (texto.length < 8) return envia(400, { erro: 'O print não tem texto legível.' });
+    const ipE = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
+    if (!dentroDoLimite(ipE)) return envia(429, { erro: 'Muitas consultas seguidas. Tente de novo em alguns minutos.' });
+    const trilhaE = [];
+    const r = await perguntar(promptExtrair(texto), 500, Date.now() + 40000, trilhaE);
+    if (!r) return envia(503, { erro: 'Não foi possível separar as afirmações agora. O texto lido está no campo.', detalhe: resumoTrilha(trilhaE) });
+    const afirmacoes = (Array.isArray(r.json.afirmacoes) ? r.json.afirmacoes : []).map((x) => String(x).replace(/\s+/g, ' ').trim().slice(0, 400)).filter((x) => x.length >= 8).slice(0, 3);
+    return envia(200, { modo: 'extrair', texto, afirmacoes, modelo: r.modelo });
+  }
+
+  if (corpo && corpo.modo === 'acervo') return responderAcervo(req, corpo, envia);
   const frase = String((corpo && corpo.frase) || '').replace(/\s+/g, ' ').trim();
   const cand = IDS.includes(corpo && corpo.candidato) ? corpo.candidato : 'ambos';
   if (frase.length < 8 || frase.length > 400) return envia(400, { erro: 'Escreva uma frase entre 8 e 400 caracteres.' });
@@ -539,7 +716,7 @@ module.exports = async (req, res) => {
     const r = await perguntar(promptEspectro(frase, trechos), 900, prazo, trilha);
     if (!r) {
       console.log('[espectro] sem resposta: ' + trilha.join(' ; '));
-      return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.' });
+      return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.', detalhe: resumoTrilha(trilha) });
     }
     const j = r.json || {};
     const cat = dados().categorias.find((c) => c.codigo === j.categoria);
@@ -578,7 +755,7 @@ module.exports = async (req, res) => {
   const r = await perguntar(promptResposta(frase, cand, trechos, fcs, web, consultas), 1800, prazo, trilha);
   if (!r) {
     console.log('[checar] sem resposta: ' + trilha.join(' ; '));
-    return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.' });
+    return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.', detalhe: resumoTrilha(trilha) });
   }
   if (trilha.length) console.log('[checar] ok via ' + r.modelo + ' apos: ' + trilha.join(' ; '));
 

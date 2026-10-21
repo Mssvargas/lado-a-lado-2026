@@ -50,8 +50,22 @@ def merge_avaliacao() -> None:
     print("data/avaliacao.json", len(itens), "itens")
 
 
+def merge_verificacao() -> None:
+    """Junta data/verificacao/*.json (um por grupo de levantamentos) em data/verificacao.json."""
+    pasta = ROOT / "data" / "verificacao"
+    if not pasta.is_dir():
+        return
+    itens: list[dict[str, object]] = []
+    for f in sorted(pasta.glob("*.json")):
+        itens.extend(json.loads(f.read_text(encoding="utf-8")).get("itens", []))
+    itens.sort(key=lambda x: (str(x.get("levantamento")), int(str(x.get("indice", 0)))))
+    (ROOT / "data" / "verificacao.json").write_text(json.dumps({"itens": itens}, ensure_ascii=False), encoding="utf-8")
+    print("data/verificacao.json", len(itens), "itens")
+
+
 def main() -> None:
     merge_avaliacao()
+    merge_verificacao()
     eleicao = load("eleicao.json")
     assert isinstance(eleicao, dict)
     cands = eleicao["candidatos"]

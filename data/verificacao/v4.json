@@ -1,0 +1,1881 @@
+{
+ "grupo": "v4",
+ "levantamentos": [
+  "folha-lula"
+ ],
+ "itens": [
+  {
+   "levantamento": "folha-lula",
+   "indice": 0,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.995/2024 instituiu o Programa Terra da Gente, que regula a incorporação de imóveis à Política Nacional de Reforma Agrária. Leitura literal: a promessa é de retomada, e há ato oficial que a retoma; o volume de assentamentos não foi conferido em dado oficial.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.995/2024 (Programa Terra da Gente)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11995.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 1,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.820/2023 instituiu a Política Nacional de Abastecimento Alimentar e o plano correspondente; a Lei 14.628/2023 recriou o PAA, com compras executadas também pela Conab.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.820/2023 (Política Nacional de Abastecimento Alimentar)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11820.htm"
+    },
+    {
+     "descricao": "Lei 14.628/2023 (PAA, execução via Conab)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14628.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 2,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "A promessa não define meta ou critério para o fortalecimento da Conab. Há atos relacionados, como a Lei 14.628/2023 (PAA executado via Conab) e a Política Nacional de Abastecimento Alimentar.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.628/2023 (PAA, execução via Conab)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14628.htm"
+    },
+    {
+     "descricao": "Decreto 11.820/2023 (Política Nacional de Abastecimento Alimentar)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11820.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 3,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica, sem meta mensurável. Há atos relacionados: a Lei 15.223/2025 pôs o Pronaf e o Plano Safra da agricultura familiar em lei, e o Decreto 11.584/2023 criou o Programa Mais Alimentos.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.223/2025 (institui o Pronaf e o Plano Safra da agricultura familiar)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15223.htm"
+    },
+    {
+     "descricao": "Decreto 11.584/2023 (Programa Mais Alimentos)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11584.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 4,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "A promessa não fixa valor para o investimento na Embrapa, e a série orçamentária oficial da empresa não pôde ser consultada nesta verificação. O único ato específico localizado é a Lei 15.282/2025, que isenta a Embrapa de taxas regulatórias.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.282/2025 (isenção de taxas regulatórias à Embrapa)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15282.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 5,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Os três programas foram mantidos e reforçados por lei: a Lei 15.223/2025 institui o Pronaf e o Plano Safra da agricultura familiar, a Lei 14.995/2024 trata do Pronampe como política de crédito e a Lei 15.076/2024 tornou permanentes os recursos do Pronampe.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.223/2025 (institui o Pronaf e o Plano Safra da agricultura familiar)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15223.htm"
+    },
+    {
+     "descricao": "Lei 14.995/2024 (Programa Acredita; Eco Invest)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14995.htm"
+    },
+    {
+     "descricao": "Lei 15.076/2024 (recursos do Pronampe permanentes)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15076.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 6,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Lei 14.577/2023 abriu crédito suplementar de R$ 4,18 bilhões que recompôs o FNDCT em 2023. Não foi conferida, em dado oficial, a recomposição dos orçamentos do CNPq e da Capes.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.577/2023 (crédito suplementar de R$ 4,18 bi ao FNDCT)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14577.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 7,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica, sem meta mensurável. Atos relacionados: recomposição do FNDCT pela Lei 14.577/2023 e convocação da V Conferência Nacional de CT&I (Decreto 11.596/2023).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.577/2023 (crédito suplementar de R$ 4,18 bi ao FNDCT)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14577.htm"
+    },
+    {
+     "descricao": "Decreto 11.596/2023 (V Conferência Nacional de CT&I)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11596.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 8,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "A Lei 14.533/2023 instituiu a Política Nacional de Educação Digital e o Decreto 11.713/2023 criou a Estratégia Nacional de Escolas Conectadas, com objetivo de universalizar a conectividade das escolas públicas. Não há dado oficial consultado que mostre acesso de qualidade em todo o território.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.533/2023 (Política Nacional de Educação Digital)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14533.htm"
+    },
+    {
+     "descricao": "Decreto 11.713/2023 (Estratégia Nacional de Escolas Conectadas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11713.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 9,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.835/2024 instituiu o marco regulatório do Sistema Nacional de Cultura, em regime de colaboração entre os entes federativos.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.835/2024 (Sistema Nacional de Cultura)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14835.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 10,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.600/2023 (conversão da MP 1.154/2023) lista o Ministério da Cultura entre os ministérios.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.600/2023 (organização dos ministérios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 11,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Decreto 11.740/2023, que regulamenta a Política Nacional Aldir Blanc, prevê recursos para ações da Política Nacional de Cultura Viva. Não foi conferido em dado oficial o número de pontos de cultura criados em regiões periféricas.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.740/2023 (regulamenta a Política Nacional Aldir Blanc)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11740.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 12,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.337/2023, de 1º/1/2023, é referendado por José Múcio Monteiro Filho como ministro da Defesa. O cadastro da Câmara registra-o como ex-deputado, com profissões de engenheiro e empresário, ou seja, civil.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.337/2023 (estrutura do Ministério da Defesa, referendado pelo ministro)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11337.htm"
+    },
+    {
+     "descricao": "Câmara dos Deputados: cadastro de José Múcio Monteiro Filho (profissões)",
+     "tipo": "dado_oficial",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74426/profissoes"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 13,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Não foi localizada lei que mude o modelo previdenciário nas listas de leis e decretos de 2023 a 2026 do Planalto. As únicas PECs do Executivo apresentadas na Câmara no período (PEC 45/2024 e PEC 18/2025) não tratam do tema. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Câmara: PECs de autoria do Executivo apresentadas em 2024 (PEC 45/2024)",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2024&autor=Executivo&itens=100"
+    },
+    {
+     "descricao": "Câmara: PECs de autoria do Executivo apresentadas em 2025 (PEC 18/2025)",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2025&autor=Executivo&itens=100"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 14,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (estímulo), sem meta mensurável. Ato relacionado: a Lei 15.068/2024 instituiu a Política Nacional de Economia Solidária e o Sinaes.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.068/2024 (Política Nacional de Economia Solidária)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15068.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 15,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Lei Complementar 210/2024 passou a disciplinar a proposição e a execução de emendas parlamentares, e o PPA 2024-2027 (Lei 14.802/2024) teve programas validados por processo de participação social. Não há ato que institua orçamento anual participativo pela internet.",
+   "evidencias": [
+    {
+     "descricao": "Lei Complementar 210/2024 (proposição e execução de emendas parlamentares)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp210.htm"
+    },
+    {
+     "descricao": "Lei 14.802/2024 (PPA 2024-2027, programas validados por participação social)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14802.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 16,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 12.088/2024 criou o Programa Coopera Mais Brasil, de fortalecimento do cooperativismo e de integração em redes, e a Lei 15.068/2024 instituiu a Política Nacional de Economia Solidária, que fomenta o trabalho cooperativado.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 12.088/2024 (Programa Nacional de Fortalecimento do Cooperativismo)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12088.htm"
+    },
+    {
+     "descricao": "Lei 15.068/2024 (Política Nacional de Economia Solidária)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15068.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 17,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Executivo enviou o PLP 12/2024, que regula o trabalho por aplicativo de transporte; na Câmara, o projeto está pronto para pauta e não foi votado. Não há nova legislação trabalhista aprovada.",
+   "evidencias": [
+    {
+     "descricao": "Câmara: PLP 12/2024 (trabalho por aplicativo), situação 'Pronta para Pauta'",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2419243"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 18,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica, sem meta ou indicador definido; não há critério objetivo para conferir o combate à sonegação em dado oficial.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 19,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A ADI 7385, proposta pela Presidência contra o limite de voto da União, terminou com a homologação pelo STF, em 11/12/2025, de acordo que dá à União 3 dos 10 assentos do conselho, sem reverter a desestatização prevista na Lei 14.182/2021. O mandato não terminou, mas o instrumento usado foi encerrado sem reversão.",
+   "evidencias": [
+    {
+     "descricao": "STF: homologação do acordo entre União e Eletrobras na ADI 7385 (11/12/2025)",
+     "tipo": "decisao",
+     "url": "https://noticias.stf.jus.br/postsnoticias/stf-homologa-acordo-sobre-participacao-da-uniao-na-eletrobras/"
+    },
+    {
+     "descricao": "Lei 14.182/2021 (desestatização da Eletrobras), em vigor",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14182.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 20,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 15.270/2025 instituiu redução do imposto de renda que zera o imposto devido para rendimentos mensais de até R$ 5.000,00, com efeitos a partir de 2026.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.270/2025 (redução do IR até R$ 5.000)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm"
+    },
+    {
+     "descricao": "Câmara: PL 1087/2025 transformado em norma jurídica",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487436"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 21,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Pelo IPCA, de jan/2023 a set/2026 o óleo diesel subiu 7,75%, alimentação e bebidas 16,88% e produtos farmacêuticos 22,0%; o diesel chegou a cair 7,84% em 2023. Os preços não ficaram abaixo do nível de dez/2022; a classificação é provisória, pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "IBGE/SIDRA tabela 7060: IPCA mensal (índice geral, alimentação e bebidas, óleo diesel, produtos farmacêuticos), jan/2022-set/2026",
+     "tipo": "dado_oficial",
+     "url": "https://apisidra.ibge.gov.br/values/t/7060/n1/all/v/63/p/202201-202609/c315/7169,7170,7171,7659,7662"
+    },
+    {
+     "descricao": "Petrobras (estatal): aprovação da estratégia comercial de diesel e gasolina, 16/05/2023",
+     "tipo": "ato_publicado",
+     "url": "https://agencia.petrobras.com.br/w/petrobras-aprova-estrategia-comercial-de-diesel-e-gasolina"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 22,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Emenda Constitucional 132/2023 alterou o sistema tributário e a Lei Complementar 214/2025 instituiu IBS, CBS e Imposto Seletivo.",
+   "evidencias": [
+    {
+     "descricao": "Emenda Constitucional 132/2023 (reforma tributária)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+    },
+    {
+     "descricao": "Lei Complementar 214/2025 (IBS, CBS e Imposto Seletivo)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 23,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "Houve medidas regulatórias: limites para juros do rotativo do cartão (Lei 14.690/2023), marco das garantias (Lei 14.711/2023) e o Acredita (Lei 14.995/2024). Mas a taxa média de juros do crédito passou de 29,64% a.a. (dez/2022) para 32,26% (ago/2026), e o spread de 18,81 para 21,16 p.p., segundo o Banco Central.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.690/2023 (Desenrola Brasil; limites de juros do rotativo)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14690.htm"
+    },
+    {
+     "descricao": "Lei 14.711/2023 (marco das garantias)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14711.htm"
+    },
+    {
+     "descricao": "Lei 14.995/2024 (Programa Acredita; Eco Invest)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14995.htm"
+    },
+    {
+     "descricao": "Banco Central, SGS 20714: taxa média de juros das operações de crédito (total)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20714/dados?formato=json&dataInicial=01/12/2022&dataFinal=21/10/2026"
+    },
+    {
+     "descricao": "Banco Central, SGS 20783: spread médio das operações de crédito (total)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.20783/dados?formato=json&dataInicial=01/12/2022&dataFinal=21/10/2026"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 24,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.690/2023 instituiu o Programa Emergencial de Renegociação de Dívidas de Pessoas Físicas Inadimplentes (Desenrola Brasil).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.690/2023 (Desenrola Brasil; limites de juros do rotativo)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14690.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 25,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Pelo IPCA, a inflação de alimentação e bebidas foi de 11,63% em 2022 e caiu para 1,02% (2023), 7,70% (2024), 2,94% (2025) e 4,36% (jan-set/2026). Em todos os anos do mandato ficou abaixo do nível de 2022, embora tenha subido em 2024.",
+   "evidencias": [
+    {
+     "descricao": "IBGE/SIDRA tabela 7060: IPCA mensal (índice geral, alimentação e bebidas, óleo diesel, produtos farmacêuticos), jan/2022-set/2026",
+     "tipo": "dado_oficial",
+     "url": "https://apisidra.ibge.gov.br/values/t/7060/n1/all/v/63/p/202201-202609/c315/7169,7170,7171,7659,7662"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 26,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.995/2024 criou o Programa Acredita no Primeiro Passo, de crédito a pequenos empreendedores, e alterou a lei do Pronampe; a Lei 15.076/2024 tornou permanentes os recursos do Pronampe. O fortalecimento dos bancos públicos não tem critério mensurável.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.995/2024 (Programa Acredita; Eco Invest)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14995.htm"
+    },
+    {
+     "descricao": "Lei 15.076/2024 (recursos do Pronampe permanentes)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15076.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 27,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A EC 132/2023 manteve o diferencial competitivo da Zona Franca de Manaus no novo sistema tributário, e a Lei 14.788/2023 aplicou o prazo constitucional de vigência aos benefícios fiscais da ZFM.",
+   "evidencias": [
+    {
+     "descricao": "Emenda Constitucional 132/2023 (reforma tributária)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+    },
+    {
+     "descricao": "Lei 14.788/2023 (prazo dos benefícios fiscais da ZFM)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14788.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 28,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.722/2023 criou o Concurso Público Nacional Unificado, e a Lei 15.141/2025 alterou a remuneração de servidores do Executivo federal.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.722/2023 (Concurso Público Nacional Unificado)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11722.htm"
+    },
+    {
+     "descricao": "Lei 15.141/2025 (altera a remuneração de servidores federais)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15141.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 29,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.600/2023 lista o Ministério da Pesca e Aquicultura entre os ministérios.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.600/2023 (organização dos ministérios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 30,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.600/2023 lista o Ministério do Planejamento e Orçamento entre os ministérios.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.600/2023 (organização dos ministérios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 31,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei Complementar 200/2023 instituiu o regime fiscal sustentável, com fundamento no art. 6º da EC 126/2022, em substituição ao teto de gastos.",
+   "evidencias": [
+    {
+     "descricao": "Lei Complementar 200/2023 (regime fiscal sustentável)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm"
+    },
+    {
+     "descricao": "Emenda Constitucional 126/2022",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc126.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 32,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "Em 16/05/2023 a Petrobras encerrou a vinculação obrigatória ao preço de paridade de importação para diesel e gasolina. A ampliação da produção de derivados não foi conferida em dado oficial nesta verificação.",
+   "evidencias": [
+    {
+     "descricao": "Petrobras (estatal): aprovação da estratégia comercial de diesel e gasolina, 16/05/2023",
+     "tipo": "ato_publicado",
+     "url": "https://agencia.petrobras.com.br/w/petrobras-aprova-estrategia-comercial-de-diesel-e-gasolina"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 33,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Não foi localizado ato de desestatização da Petrobras; a empresa segue no Orçamento de Investimento da União, como na Lei 14.779/2023.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.779/2023 (Orçamento de Investimento da União, inclui a Petrobras)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14779.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 34,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.478/2023 excluiu a Empresa Brasileira de Correios e Telégrafos do Programa Nacional de Desestatização e revogou sua qualificação no PPI.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.478/2023 (exclui Correios e outras estatais do PND)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11478.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 35,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A LC 194/2022, que trata combustíveis como bens essenciais para o ICMS, segue em vigor. A LC 201/2023 tratou só da compensação devida pela União aos estados.",
+   "evidencias": [
+    {
+     "descricao": "Lei Complementar 194/2022 (em vigor)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp194.htm"
+    },
+    {
+     "descricao": "Lei Complementar 201/2023 (compensação aos estados)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp201.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 36,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.663/2023 instituiu a política de valorização do salário mínimo. Os decretos fixaram R$ 1.412 (2024, +6,97%), R$ 1.518 (2025, +7,51%) e R$ 1.621 (2026, +6,79%), acima do INPC de 12 meses até novembro de cada ano anterior (3,85%, 4,84% e 4,18%).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.663/2023 (política de valorização do salário mínimo)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14663.htm"
+    },
+    {
+     "descricao": "Decreto 11.864/2023 (salário mínimo de 2024)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11864.htm"
+    },
+    {
+     "descricao": "Decreto 12.342/2024 (salário mínimo de 2025)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12342.htm"
+    },
+    {
+     "descricao": "Decreto 12.797/2025 (salário mínimo de 2026)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12797.htm"
+    },
+    {
+     "descricao": "IBGE/SIDRA tabela 1736: INPC acumulado em 12 meses",
+     "tipo": "dado_oficial",
+     "url": "https://apisidra.ibge.gov.br/values/t/1736/n1/all/v/2292/p/202211,202311,202411,202511"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 37,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Lei 14.601/2023 garante piso de R$ 600 por família e R$ 150 por criança de 0 a 7 anos incompletos; filhos de outras idades recebem benefício menor. Na leitura literal ('R$ 150 por filho'), o valor vale só para parte dos filhos.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.601/2023 (Programa Bolsa Família)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14601.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 38,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "A Lei 14.645/2023 articulou a educação profissional técnica com a aprendizagem e a Lei 14.945/2024 manteve a formação técnica no novo ensino médio. Os dados oficiais de matrícula no ensino técnico não foram conferidos nesta verificação.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.645/2023 (educação profissional e tecnológica)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14645.htm"
+    },
+    {
+     "descricao": "Lei 14.945/2024 (novo ensino médio)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14945.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 39,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.934/2024 prorrogou o PNE até 2025 e a Lei 15.388/2026, originada do PL 2614/2024 do Executivo, aprovou o novo Plano Nacional de Educação. O cumprimento das metas do plano não foi avaliado.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.934/2024 (prorroga o PNE)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14934.htm"
+    },
+    {
+     "descricao": "Lei 15.388/2026 (novo PNE)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15388.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 40,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 12.391/2025 instituiu o Pacto Nacional pela Recomposição das Aprendizagens. O texto do decreto não menciona a pandemia de forma expressa.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 12.391/2025 (Pacto Nacional pela Recomposição das Aprendizagens)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12391.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 41,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Não foi localizado ato federal específico para órfãos da Covid-19 nas listas de leis e decretos do Planalto. O PL 2291/2021, que cria pensão especial, aguarda designação de relator na CAE do Senado desde 23/11/2023. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Senado: PL 2291/2021 (pensão a órfãos da Covid-19), aguardando relator",
+     "tipo": "tramitacao",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/148882"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 42,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.723/2023 revisou e ampliou a Lei de Cotas, incluindo quilombolas, e a Lei 14.719/2023 alterou a lei do Fies. Fortalecer o Enem e o Prouni não tem critério mensurável.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.723/2023 (revisão da Lei de Cotas, inclui quilombolas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14723.htm"
+    },
+    {
+     "descricao": "Lei 14.719/2023 (altera a Lei 10.260/2001, do Fies)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14719.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 43,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.640/2023 instituiu o Programa Escola em Tempo Integral, com apoio financeiro da União para criar matrículas em tempo integral.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.640/2023 (Programa Escola em Tempo Integral)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14640.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 44,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.818/2024 instituiu incentivo financeiro-educacional, na modalidade de poupança, a estudantes do ensino médio público (Pé-de-Meia).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.818/2024 (incentivo-poupança no ensino médio)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14818.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 45,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 12.108/2024 revisou os valores do Bolsa Atleta; a categoria de base, por exemplo, passou a R$ 410.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 12.108/2024 (revisão dos valores do Bolsa Atleta)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12108.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 46,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.600/2023 lista o Ministério dos Povos Indígenas entre os ministérios.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.600/2023 (organização dos ministérios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 47,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica, sem meta mensurável. Atos relacionados: o Decreto 11.482/2023 reestruturou o CNDI, a Lei 14.902/2024 criou o Programa Mover e o Decreto 12.214/2024 regulamentou o fundo de desenvolvimento industrial.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.482/2023 (Conselho Nacional de Desenvolvimento Industrial)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11482.htm"
+    },
+    {
+     "descricao": "Lei 14.902/2024 (Programa Mover)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14902.htm"
+    },
+    {
+     "descricao": "Decreto 12.214/2024 (Fundo Nacional de Desenvolvimento Industrial e Tecnológico)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12214.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 48,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Não foi localizada proposta de reforma urbana nas listas de leis e decretos de 2023 a 2026 do Planalto. O Novo PAC (Decreto 11.632/2023) é programa de investimentos, não uma proposta de reforma urbana. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.632/2023 (Novo PAC)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11632.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 49,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Pelas contas nacionais do IBGE, a taxa de investimento (FBCF/PIB) foi de 17,80% em 2022 e caiu para 16,41% (2023), 16,91% (2024) e 16,84% (2025); nos quatro trimestres até o 2º tri/2026 ficou em 16,46%. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "IBGE/SIDRA tabela 1846: PIB e formação bruta de capital fixo a preços correntes (trimestral)",
+     "tipo": "dado_oficial",
+     "url": "https://apisidra.ibge.gov.br/values/t/1846/n1/all/v/585/p/202101-202602/c11255/90707,93406"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 50,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.632/2023 instituiu o Novo PAC, programa de investimentos com comitê gestor e grupo executivo.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.632/2023 (Novo PAC)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11632.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 51,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (estimular), sem meta mensurável. Atos relacionados: debêntures de infraestrutura (Lei 14.801/2024), marco das garantias (Lei 14.711/2023) e Eco Invest Brasil (Lei 14.995/2024).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.801/2024 (debêntures de infraestrutura)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14801.htm"
+    },
+    {
+     "descricao": "Lei 14.711/2023 (marco das garantias)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14711.htm"
+    },
+    {
+     "descricao": "Lei 14.995/2024 (Programa Acredita; Eco Invest)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14995.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 52,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "A Lei 14.719/2023 instituiu o Pacto Nacional pela Retomada de Obras de educação básica, profissionalizante e saúde. Não foi conferido em dado oficial quantas obras paradas foram retomadas ou concluídas.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.719/2023 (Pacto Nacional pela Retomada de Obras)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14719.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 53,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Os Decretos 11.598 e 11.599/2023 regulamentaram o marco do saneamento, incluindo apoio federal à universalização. A universalização não foi alcançada nem conferida em dado oficial.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.598/2023 (capacidade econômico-financeira dos prestadores)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11598.htm"
+    },
+    {
+     "descricao": "Decreto 11.599/2023 (prestação regionalizada e apoio à universalização)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11599.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 54,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica, sem meta mensurável. Atos relacionados: a Lei 14.993/2024 (mobilidade de baixo carbono e combustíveis sustentáveis) e a Lei 15.097/2025 (energia offshore).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.993/2024 (mobilidade sustentável de baixo carbono)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14993.htm"
+    },
+    {
+     "descricao": "Lei 15.097/2025 (aproveitamento energético offshore)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15097.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 55,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (recuperar), sem meta mensurável. Atos relacionados: a Lei 14.875/2024 criou carreiras e plano de cargos da Funai, e o Decreto 11.367/2023 restabeleceu o PPCDAm.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.875/2024 (carreiras da Funai)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14875.htm"
+    },
+    {
+     "descricao": "Decreto 11.367/2023 (restabelece o PPCDAm)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11367.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 56,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (aperfeiçoar, combater), sem meta mensurável. Atos relacionados: medidas contra o garimpo ilegal no território Yanomami (Decreto 11.405/2023), alteração da Política Mineral (Decreto 12.674/2025) e Política Nacional de Minerais Críticos (Lei 15.506/2026).",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.405/2023 (combate ao garimpo ilegal no território Yanomami)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11405.htm"
+    },
+    {
+     "descricao": "Decreto 12.674/2025 (altera a Política Mineral Brasileira)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12674.htm"
+    },
+    {
+     "descricao": "Lei 15.506/2026 (Política Nacional de Minerais Críticos e Estratégicos)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15506.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 57,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "A meta brasileira no Acordo de Paris tem marcos em 2025 e 2030, e as estimativas oficiais de emissões do MCTI para os anos do mandato não puderam ser consultadas nesta verificação.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 58,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Decreto 11.815/2023 instituiu o Programa Nacional de Conversão de Pastagens Degradadas. Não há dado oficial consultado sobre a área efetivamente recuperada.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.815/2023 (Programa Nacional de Conversão de Pastagens Degradadas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11815.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 59,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Há atos voltados à recuperação da vegetação, como o PPCDAm restabelecido (Decreto 11.367/2023) e a Política Nacional para Recuperação da Vegetação da Caatinga (Lei 15.430/2026). Não há dado oficial consultado sobre área reflorestada.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.367/2023 (restabelece o PPCDAm)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11367.htm"
+    },
+    {
+     "descricao": "Lei 15.430/2026 (recuperação da vegetação da Caatinga)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15430.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 60,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (combater), sem meta mensurável. Atos relacionados: PPCDAm (Decreto 11.367/2023), ações no bioma Amazônia (Decreto 11.687/2023) e Plano Amas (Decreto 11.614/2023).",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.367/2023 (restabelece o PPCDAm)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11367.htm"
+    },
+    {
+     "descricao": "Decreto 11.687/2023 (prevenção e controle do desmatamento no bioma Amazônia)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11687.htm"
+    },
+    {
+     "descricao": "Decreto 11.614/2023 (Plano Amazônia: Segurança e Soberania, com o CCPI)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11614.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 61,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Decreto 11.367/2023 restabeleceu o PPCDAm e o Decreto 11.687/2023 dispôs sobre a redução do desmatamento na Amazônia. Não há registro oficial de desmatamento líquido zero; os dados do Prodes não foram consultados nesta verificação.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.367/2023 (restabelece o PPCDAm)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11367.htm"
+    },
+    {
+     "descricao": "Decreto 11.687/2023 (prevenção e controle do desmatamento no bioma Amazônia)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11687.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 62,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Decreto 11.815/2023 instituiu o programa de conversão de pastagens degradadas. Não há dado oficial consultado que mostre a área recuperada em relação à meta de 30 milhões de hectares.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.815/2023 (Programa Nacional de Conversão de Pastagens Degradadas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11815.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 63,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.620/2023 (conversão da MP 1.162/2023) dispõe sobre o Programa Minha Casa, Minha Vida.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.620/2023 (Minha Casa, Minha Vida)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14620.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 64,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Foram criados programas de proteção à mulher: Programa Mulher Viver sem Violência (Decreto 11.431/2023), Pacto Nacional de Prevenção aos Feminicídios (Decreto 11.640/2023) e plano de metas de enfrentamento da violência (Lei 14.899/2024).",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.431/2023 (Programa Mulher Viver sem Violência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+    },
+    {
+     "descricao": "Decreto 11.640/2023 (Pacto Nacional de Prevenção aos Feminicídios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11640.htm"
+    },
+    {
+     "descricao": "Lei 14.899/2024 (plano de metas de enfrentamento da violência contra a mulher)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14899.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 65,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.600/2023 lista o Ministério das Mulheres entre os ministérios.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.600/2023 (organização dos ministérios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 66,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.611/2023 dispõe sobre a igualdade salarial e de critérios remuneratórios entre mulheres e homens. A diferença salarial efetiva não foi avaliada.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.611/2023 (igualdade salarial)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14611.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 67,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O Decreto 11.431/2023 prevê a implementação de Casas da Mulher Brasileira e de delegacias especializadas, e as Leis 14.994/2024 e 15.125/2025 endureceram a legislação. Não foi conferido em dado oficial o aumento do número de delegacias.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.431/2023 (Programa Mulher Viver sem Violência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+    },
+    {
+     "descricao": "Lei 14.994/2024 (feminicídio como crime autônomo, penas agravadas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14994.htm"
+    },
+    {
+     "descricao": "Lei 15.125/2025 (monitoração eletrônica do agressor)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15125.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 68,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Atendendo ao despacho presidencial de 1º/1/2023, a CGU publicou parecer de revisão dos sigilos impostos a pedidos de acesso à informação no período anterior.",
+   "evidencias": [
+    {
+     "descricao": "CGU: Parecer sobre Acesso à Informação para atender ao Despacho Presidencial de 1º/1/2023",
+     "tipo": "auditoria",
+     "url": "https://repositorio.cgu.gov.br/handle/1/73916"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 69,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa sem critério mensurável em dado oficial.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 70,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Não foi localizada lei de reforma política nas listas de leis e decretos de 2023 a 2026 do Planalto. As únicas PECs do Executivo apresentadas na Câmara no período (PEC 45/2024 e PEC 18/2025) não tratam do tema. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Câmara: PECs de autoria do Executivo apresentadas em 2024 (PEC 45/2024)",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2024&autor=Executivo&itens=100"
+    },
+    {
+     "descricao": "Câmara: PECs de autoria do Executivo apresentadas em 2025 (PEC 18/2025)",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2025&autor=Executivo&itens=100"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 71,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O PL 2630/2020, que regula as plataformas, está pronto para pauta na Câmara desde 2024, sem votação. A Lei 15.211/2025 tratou da proteção de crianças em ambientes digitais, mas não de desinformação.",
+   "evidencias": [
+    {
+     "descricao": "Câmara: PL 2630/2020, situação 'Pronta para Pauta'",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2256735"
+    },
+    {
+     "descricao": "Lei 15.211/2025 (Estatuto Digital da Criança e do Adolescente)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15211.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 72,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Pelo resultado oficial do TSE, Luiz Inácio Lula da Silva disputou o 1º turno da eleição presidencial de 2026 e foi ao 2º turno.",
+   "evidencias": [
+    {
+     "descricao": "TSE: resultado oficial do 1º turno presidencial de 2026",
+     "tipo": "dado_oficial",
+     "url": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/br/br-c0001-e006257-u.json"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 73,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa sem critério mensurável. Ato relacionado: o Decreto 11.475/2023 promulgou o Tratado Constitutivo da Unasul.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.475/2023 (promulga o Tratado Constitutivo da Unasul)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11475.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 74,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa sem meta ou critério mensurável em dado oficial.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 75,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (fortalecer), sem meta mensurável. Atos relacionados: promulgação do tratado da Unasul (Decreto 11.475/2023) e da adesão da Bolívia ao Mercosul (Decreto 11.817/2023).",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.475/2023 (promulga o Tratado Constitutivo da Unasul)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11475.htm"
+    },
+    {
+     "descricao": "Decreto 11.817/2023 (adesão da Bolívia ao Mercosul)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11817.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 76,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.621/2023 (conversão da MP 1.165/2023) criou novos incentivos e regras no âmbito do Programa Mais Médicos.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.621/2023 (Mais Médicos)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14621.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 77,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Portaria GM/MS 675/2023 tornou gratuitos os contraceptivos, os medicamentos para osteoporose e todo o elenco do programa para beneficiários do Bolsa Família. A série orçamentária do programa não foi conferida.",
+   "evidencias": [
+    {
+     "descricao": "Portaria GM/MS 675/2023 (gratuidade no Farmácia Popular)",
+     "tipo": "norma",
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2023/prt0675_07_06_2023.html"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 78,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Os dados oficiais de cobertura vacinal do Ministério da Saúde não puderam ser consultados nesta verificação, e não foi localizado ato normativo específico no Planalto.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 79,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "A Lei 15.233/2025 instituiu o Programa Agora Tem Especialistas, voltado à ampliação da atenção especializada. Não há dado oficial consultado que mostre filas zeradas.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.233/2025 (Programa Agora Tem Especialistas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15233.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 80,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Não foi localizado ato que crie um Centro Nacional de Telemedicina; a Lei 15.233/2025 apenas prevê telessaúde e telemedicina no Programa Agora Tem Especialistas. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.233/2025 (Programa Agora Tem Especialistas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15233.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 81,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Há atos iniciados: Pronasci 2 (Decreto 11.436/2023), Plano Juventude Negra Viva para reduzir a violência letal (Decreto 11.956/2024) e a PEC 18/2025 da segurança pública, ainda no Senado.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.436/2023 (Pronasci 2)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11436.htm"
+    },
+    {
+     "descricao": "Decreto 11.956/2024 (Plano Juventude Negra Viva)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11956.htm"
+    },
+    {
+     "descricao": "Câmara: PEC 18/2025 (segurança pública), aguardando apreciação pelo Senado",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2500080"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 82,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "A PEC 18/2025, que trata das competências em segurança pública, foi aprovada na Câmara e teve votação concluída na CCJ do Senado em 14/10/2026, com alterações; ainda não foi promulgada.",
+   "evidencias": [
+    {
+     "descricao": "Câmara: PEC 18/2025 (segurança pública), aguardando apreciação pelo Senado",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2500080"
+    },
+    {
+     "descricao": "Senado: CCJ conclui votação da PEC 18/2025 em 14/10/2026; texto vai ao Plenário",
+     "tipo": "tramitacao",
+     "url": "https://www12.senado.leg.br/noticias/materias/2026/10/14/ccj-conclui-votacao-da-pec-da-seguranca-texto-vai-ao-plenario"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 83,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Decreto 9.761/2019 (Política Nacional sobre Drogas) segue sem revogação. O Decreto 11.480/2023 reestruturou o Conad e o Plano Juventude Negra Viva (Decreto 11.956/2024) prevê adequar a política sobre drogas com ações de redução de danos, mas não há nova política instituída.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 9.761/2019 (Política Nacional sobre Drogas), sem revogação",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9761.htm"
+    },
+    {
+     "descricao": "Decreto 11.480/2023 (Conselho Nacional de Políticas sobre Drogas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11480.htm"
+    },
+    {
+     "descricao": "Decreto 11.956/2024 (Plano Juventude Negra Viva)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11956.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 84,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.366/2023 suspendeu registros e restringiu aquisições de armas, e o Decreto 11.615/2023 regulamentou o Estatuto do Desarmamento com novas regras de aquisição, registro e porte.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.366/2023 (suspende registros de armas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11366.htm"
+    },
+    {
+     "descricao": "Decreto 11.615/2023 (regulamenta a Lei 10.826/2003)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11615.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 85,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O Decreto 11.431/2023 inclui rondas e patrulhas especializadas no atendimento às mulheres entre as ações do programa. Não há dado oficial consultado sobre a presença da Patrulha Maria da Penha em todos os estados.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.431/2023 (Programa Mulher Viver sem Violência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 86,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "Em 2026 foram promulgados o Acordo de Cooperação Policial nos Espaços Fronteiriços do Mercosul (firmado em 2019) e o Acordo-Quadro de segurança regional (firmado em 2006); o Plano Amas criou centro de cooperação policial que pode envolver outros países. Não houve acordo novo com os vizinhos para uma política integrada de fronteiras.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 13.008/2026 (promulga acordo de cooperação policial em fronteiras do Mercosul)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13008.htm"
+    },
+    {
+     "descricao": "Decreto 13.010/2026 (promulga Acordo-Quadro de segurança regional)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13010.htm"
+    },
+    {
+     "descricao": "Decreto 11.614/2023 (Plano Amazônia: Segurança e Soberania, com o CCPI)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11614.htm"
+    },
+    {
+     "descricao": "Decreto 12.038/2024 (Política Nacional de Fronteiras)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12038.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 87,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "O plano Pena Justa, coordenado pelo CNJ e pelo Ministério da Justiça por determinação do STF na ADPF 347, foi lançado em fevereiro de 2025 com mais de 300 metas até 2027.",
+   "evidencias": [
+    {
+     "descricao": "CNJ: Plano Pena Justa",
+     "tipo": "ato_publicado",
+     "url": "https://www.cnj.jus.br/sistema-carcerario/plano-pena-justa/"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 88,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "A Lei 14.600/2023 manteve o Ministério da Justiça e Segurança Pública, sem ministério próprio para a segurança, e o plano nacional vigente segue o Decreto 10.822/2021, do governo anterior. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.600/2023 (organização dos ministérios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm"
+    },
+    {
+     "descricao": "Decreto 10.822/2021 (Plano Nacional de Segurança Pública 2021-2030), em vigor",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/decreto/D10822.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 89,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "A Portaria MJSP 648/2024 estabeleceu diretrizes para o uso de câmeras corporais, sem obrigar os estados a adotá-las. Não há dado oficial consultado sobre o uso em todos os estados.",
+   "evidencias": [
+    {
+     "descricao": "Portaria MJSP 648/2024 (diretrizes sobre câmeras corporais)",
+     "tipo": "norma",
+     "url": "https://www.in.gov.br/web/dou/-/portaria-mjsp-n-648-de-28-de-maio-de-2024-562417137"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 90,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.436/2023 regulamentou o Pronasci para o biênio 2023-2024, denominado Pronasci 2.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.436/2023 (Pronasci 2)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11436.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 91,
+   "status": "em_andamento",
+   "percentual": null,
+   "justificativa": "Na leitura literal, não existe Ministério da Igualdade Social: a Lei 14.600/2023 criou o Ministério da Igualdade Racial. Se a promessa se referia a ele, estaria cumprida. , pois o mandato vai até 31/12/2026. Mandato em curso: até 21/10/2026 não há ato oficial ou dado que mostre a promessa cumprida.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.600/2023 (organização dos ministérios)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21",
+   "mandato_em_curso": true
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 92,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (reconstruir e fortalecer), sem meta mensurável.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 93,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Foram criadas políticas de igualdade racial: o feriado da Consciência Negra (Lei 14.759/2023), a reserva de 30% em concursos federais (Lei 15.142/2025) e o Plano Juventude Negra Viva (Decreto 11.956/2024).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.759/2023 (feriado nacional da Consciência Negra)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14759.htm"
+    },
+    {
+     "descricao": "Lei 15.142/2025 (reserva de 30% das vagas em concursos federais)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15142.htm"
+    },
+    {
+     "descricao": "Decreto 11.956/2024 (Plano Juventude Negra Viva)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D11956.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 94,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "As homologações de terras indígenas foram retomadas: o Planalto registra ao menos 16 decretos de homologação entre 2023 e 2025, entre eles Arara do Rio Amônia (2023), Morro dos Cavalos (2024) e Kaxuyana-Tunayana (2025).",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.504/2023 (homologa TI Arara do Rio Amônia)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11504.htm"
+    },
+    {
+     "descricao": "Decreto 12.290/2024 (homologa TI Morro dos Cavalos)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12290.htm"
+    },
+    {
+     "descricao": "Decreto 12.720/2025 (homologa TI Kaxuyana-Tunayana)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12720.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 95,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O Decreto 11.471/2023 criou o Conselho Nacional dos Direitos das Pessoas LGBTQIA+ e o Decreto 11.848/2023 convocou a 4ª conferência nacional. Não foi localizada política nacional instituída por lei ou decreto.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.471/2023 (Conselho Nacional LGBTQIA+)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11471.htm"
+    },
+    {
+     "descricao": "Decreto 11.848/2023 (4ª Conferência Nacional LGBTQIA+)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11848.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 96,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (ampliar benefícios), sem meta mensurável. Ato relacionado: a Lei 14.723/2023 incluiu quilombolas na Lei de Cotas.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.723/2023 (revisão da Lei de Cotas, inclui quilombolas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14723.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 97,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Pelas estimativas da FAO (relatório SOFI 2025, edição regional), a prevalência de subalimentação no Brasil ficou abaixo de 2,5% no triênio 2022-2024, limite do Mapa da Fome. O Decreto 11.679/2023 criou o Plano Brasil Sem Fome com duração até essa saída; o dispositivo foi revogado pelo Decreto 12.779/2025.",
+   "evidencias": [
+    {
+     "descricao": "FAO: SOFI 2025, América Latina e Caribe, prevalência de subalimentação",
+     "tipo": "dado_oficial",
+     "url": "https://openknowledge.fao.org/server/api/core/bitstreams/bbb03b9c-c34c-48cb-b993-1db491e92a69/content/sofi-statistics-rlc-2025/sdg-2-prevalence-undernourishment.html"
+    },
+    {
+     "descricao": "Decreto 11.679/2023 (Plano Brasil Sem Fome)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11679.htm"
+    },
+    {
+     "descricao": "Decreto 12.779/2025 (revoga o § 2º do art. 1º do Decreto 11.679/2023)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12779.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 98,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O Decreto 11.628/2023 dispôs sobre o Programa Luz para Todos. Não foi localizado, nas fontes oficiais consultadas, ato de retomada do programa de cisternas.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.628/2023 (Luz para Todos)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11628.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 99,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.793/2023 instituiu o Plano Nacional dos Direitos da Pessoa com Deficiência, Novo Viver sem Limite.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.793/2023 (Novo Viver sem Limite)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11793.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 100,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica (restabelecer instrumentos), sem meta mensurável. Ato relacionado: o Decreto 11.529/2023 instituiu o Sistema de Integridade, Transparência e Acesso à Informação.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.529/2023 (Sistema de Integridade, Transparência e Acesso à Informação)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11529.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 101,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Promessa genérica, sem meta mensurável. Atos relacionados: a CGU revisou sigilos do período anterior, o Decreto 11.527/2023 alterou o regulamento da LAI e o Decreto 11.529/2023 instituiu política de transparência.",
+   "evidencias": [
+    {
+     "descricao": "CGU: Parecer sobre Acesso à Informação para atender ao Despacho Presidencial de 1º/1/2023",
+     "tipo": "auditoria",
+     "url": "https://repositorio.cgu.gov.br/handle/1/73916"
+    },
+    {
+     "descricao": "Decreto 11.527/2023 (altera o regulamento da LAI)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11527.htm"
+    },
+    {
+     "descricao": "Decreto 11.529/2023 (Sistema de Integridade, Transparência e Acesso à Informação)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11529.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "folha-lula",
+   "indice": 102,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 12.136/2024 aprovou o Plano Nacional de Turismo 2024-2027, com objetivo de qualificar profissionais do setor, e a Lei 14.782/2023 abriu crédito suplementar de R$ 405,5 milhões ao Ministério do Turismo.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 12.136/2024 (Plano Nacional de Turismo 2024-2027)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/D12136.htm"
+    },
+    {
+     "descricao": "Lei 14.782/2023 (crédito suplementar ao Ministério do Turismo)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14782.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  }
+ ]
+}

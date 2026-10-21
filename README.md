@@ -11,6 +11,12 @@ linguagem simples, com o trecho literal e a página do PDF.
 - **Checar uma fala**: busca a frase nos dois planos completos e nas checagens
   reunidas. Com o servidor configurado, faz também a análise automática com busca ao
   vivo em agências de checagem e na imprensa.
+- **Acervo Constitucional**: a Constituição Federal e 15 leis (CLT, Código Penal,
+  Código Eleitoral, LRF, arcabouço fiscal, reforma tributária e outras), no texto
+  compilado do Planalto, separados por artigo. Busca por palavra, por número do artigo,
+  por print e por voz. Com o servidor, a IA responde citando os artigos.
+- **Print e voz**: em todas as consultas. A voz vira texto no navegador enquanto a
+  pessoa fala. O print é lido por IA com visão ou, se ela falhar, no próprio navegador.
 - **Checagens publicadas**: 12 por candidato (7 falas e 5 alegações), de agências de
   checagem reconhecidas.
 - **Esquerda ou direita?**: cada proposta classificada pelo método do Manifesto Project
@@ -20,7 +26,10 @@ linguagem simples, com o trecho literal e a página do PDF.
   um lado, países que se enquadram e comparação entre duas ideologias.
 - **Promessas anteriores**: planos anteriores do mesmo candidato ou partido, com a
   porcentagem de promessas cumpridas, parciais e não cumpridas segundo levantamentos
-  independentes, e indicadores oficiais (IBGE) iguais para todos os governos.
+  independentes, e indicadores oficiais (IBGE) iguais para todos os governos. Cada
+  promessa também foi conferida só em fontes oficiais (normas, tramitação, dados
+  oficiais, auditorias, decisões), e o site mostra a diferença em número e em pontos
+  percentuais entre a classificação da fonte jornalística e a verificação oficial.
 - **Eleições desde 1891**: candidatos, partidos e votos de todas as eleições
   presidenciais.
 - **Planos na íntegra**: o texto de todos os planos cadastrados, página por página, com
@@ -41,10 +50,15 @@ linguagem simples, com o trecho literal e a página do PDF.
 | `data/ideologias.json` | Enciclopédia de ideologias, dimensões, relações e países. |
 | `data/historico.json` | Planos anteriores, levantamentos de promessas e indicadores oficiais. |
 | `data/promessas.json` | Promessas item a item de cada levantamento: status da fonte, justificativa, evidências. |
+| `data/verificacao/*.json` | Verificação de cada promessa em fontes oficiais, por grupo. O build junta em `data/verificacao.json`. Critérios em `tools/PROMPT_VERIFICACAO.md`. |
+| `data/acervo.json`, `data/acervo/` | Acervo Constitucional: índice e um arquivo por documento, com os artigos. Gerado por `tools/acervo.py`. |
 | `data/eleicoes.json` | Eleições presidenciais desde 1891. |
 | `data/eleicao.json` | Eleição atual: ano, candidatos, exemplos. Único lugar com nomes de candidatos. |
 | `tools/add_plano.py` | Converte o PDF de um plano e o registra no site. |
-| `tools/verificar.py` | Confere trechos, páginas e equilíbrio antes de publicar. |
+| `tools/verificar.py` | Confere trechos, páginas, equilíbrio, verificação oficial e acervo antes de publicar. |
+| `tools/acervo.py` | Baixa do Planalto os textos do Acervo Constitucional e separa os artigos. |
+| `tools/testar_pagina.js` | Confere se a página inicia sem erro (Node, sem navegador). |
+| `tools/testar_api.js` | Testa a API com a IA simulada: busca no acervo, validação de citações, erros. |
 | `api/checar.js` | Função de servidor (Vercel) da análise automática. |
 | `og.png` | Prévia do link (WhatsApp e redes), gerada por `tools/og.py`. |
 

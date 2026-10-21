@@ -3,3 +3,5 @@ __pycache__/
 .vercel/
 .env
 .env.*
+# configuração local do Claude Code
+.claude/settings.local.json

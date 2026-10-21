@@ -37,6 +37,67 @@ def found(pages: dict[int, str], page: object, quote: str) -> bool:
     return bool(text and segs and all(s in text for s in segs))
 
 
+STATUS_OFICIAL = {"cumprida", "parcial", "nao_cumprida", "em_andamento", "nao_verificavel"}
+# Reportagem não vale como prova na verificação oficial.
+IMPRENSA = re.compile(r"(g1\.globo|globo\.com|folha\.uol|uol\.com\.br|estadao|metropoles|cnnbrasil|poder360|lupa|aosfatos|congressoemfoco|valor\.globo|veja\.abril|bbc\.)")
+
+
+def verificar_verificacao(eleicao: dict) -> list[str]:
+    """data/verificacao/*.json: status válido, item existente, evidência oficial com link."""
+    erros: list[str] = []
+    pasta = ROOT / "data" / "verificacao"
+    if not pasta.is_dir():
+        return erros
+    levs = {lv["id"]: lv for lv in load("data/promessas.json")["levantamentos"]}
+    vistos: set[tuple[str, int]] = set()
+    for f in sorted(pasta.glob("*.json")):
+        for it in json.loads(f.read_text(encoding="utf-8")).get("itens", []):
+            chave = (it.get("levantamento"), it.get("indice"))
+            lv = levs.get(chave[0])
+            onde = f"verificação {f.name} {chave[0]}#{chave[1]}"
+            if not lv or not isinstance(chave[1], int) or not 0 <= chave[1] < len(lv.get("itens", [])):
+                erros.append(f"{onde}: não corresponde a uma promessa de data/promessas.json")
+                continue
+            if chave in vistos:
+                erros.append(f"{onde}: verificada mais de uma vez")
+            vistos.add(chave)
+            st = it.get("status")
+            if st not in STATUS_OFICIAL:
+                erros.append(f"{onde}: status desconhecido {st}")
+            atual = str(eleicao["ano"]) in str(lv.get("governo", ""))
+            if st == "em_andamento" and not atual:
+                erros.append(f"{onde}: 'em_andamento' só vale para o mandato atual")
+            for ev in it.get("evidencias", []):
+                url = str(ev.get("url") or "")
+                if url and not url.startswith("https://") and not url.startswith("http://"):
+                    erros.append(f"{onde}: link inválido {url[:60]}")
+                if IMPRENSA.search(url):
+                    erros.append(f"{onde}: reportagem usada como evidência oficial ({url[:60]})")
+            if st != "nao_verificavel" and not it.get("evidencias"):
+                erros.append(f"{onde}: status '{st}' sem evidência oficial")
+    return erros
+
+
+def verificar_acervo() -> list[str]:
+    """data/acervo.json aponta para arquivos que existem e têm artigos."""
+    erros: list[str] = []
+    indice = ROOT / "data" / "acervo.json"
+    if not indice.exists():
+        return erros
+    for d in json.loads(indice.read_text(encoding="utf-8"))["documentos"]:
+        path = ROOT / d["arquivo"]
+        if not path.exists():
+            erros.append(f"acervo {d['id']}: arquivo não encontrado")
+            continue
+        artigos = json.loads(path.read_text(encoding="utf-8"))["artigos"]
+        nomes = [a["n"] for a in artigos]
+        if not artigos:
+            erros.append(f"acervo {d['id']}: nenhum artigo extraído")
+        if len(nomes) != len(set(nomes)):
+            erros.append(f"acervo {d['id']}: artigos repetidos")
+    return erros
+
+
 def main() -> None:
     erros: list[str] = []
     eleicao = load("data/eleicao.json")
@@ -111,6 +172,9 @@ def main() -> None:
         for tema_id, cont in por_tema.items():
             if len(set(cont.values())) > 1:
                 erros.append(f"avaliação {tema_id}: número de propostas avaliadas diferente por candidato {cont}")
+
+    erros.extend(verificar_verificacao(eleicao))
+    erros.extend(verificar_acervo())
 
     chk = load("data/checagens.json")["checagens"]
     contagem = {k: sum(1 for c in chk if c["candidato"] == k) for k in ids}

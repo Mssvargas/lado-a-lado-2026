@@ -199,7 +199,7 @@ dl.prova { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap
 dl.prova dt { font-weight: 700; color: var(--muted); }
 dl.prova dd { margin: 0; }
 dl.prova ul { margin: 0; padding-left: 18px; }
-@media (max-width: 560px) { dl.prova { grid-template-columns: 1fr; } dl.prova dd { margin-bottom: 6px; } .lev-row { grid-template-columns: 8px minmax(0, 1fr); } .lev-row .pill { grid-column: 2; justify-self: start; } }
+@media (max-width: 560px) { dl.prova { grid-template-columns: 1fr; } dl.prova dd { margin-bottom: 6px; } .lev-row { grid-template-columns: 8px minmax(0, 1fr); } .lev-row .pills { grid-column: 2; justify-content: flex-start; } }
 
 .av { border-top: 1px dashed var(--line); padding-top: 10px; }
 .vigor { font-size: 14px; border: 1px solid var(--accent); border-radius: 8px; padding: 6px 10px; }
@@ -267,6 +267,14 @@ li.prop .src { font-size: 13px; color: var(--muted); margin-top: 2px; }
 .media-preview img { max-height: 96px; max-width: 160px; border-radius: 6px; border: 1px solid var(--line); object-fit: contain; background: var(--bg); }
 .media-note { font-size: 12px; color: var(--muted); margin: 0; }
 form.dragging { outline: 2px dashed var(--accent); outline-offset: 4px; }
+.meter { display: inline-block; width: 72px; height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; }
+.meter i { display: block; height: 100%; width: 0; background: var(--ok); }
+/* Acervo Constitucional */
+.ac-t { white-space: pre-line; font-size: 15px; overflow-wrap: anywhere; }
+/* Verificação oficial das promessas */
+.sq.sq-none { background: transparent !important; outline: 1px dashed var(--muted); outline-offset: -1px; }
+table.vtab { min-width: 520px; }
+.lev-row .pills { display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; }
 footer.site { border-top: 1px solid var(--line); background: var(--surface); }
 footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
 .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--surface); padding: 8px 16px; border-radius: 8px; font-weight: 700; z-index: 20; }
@@ -299,6 +307,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
   <div class="wrap">
     <a href="#comparar" data-view="comparar">Comparar propostas</a>
     <a href="#checar" data-view="checar">Checar uma fala</a>
+    <a href="#acervo" data-view="acervo">Acervo Constitucional</a>
     <a href="#congresso" data-view="congresso">Congresso e tribunais</a>
     <a href="#espectro" data-view="espectro">Esquerda ou direita?</a>
     <a href="#ideologias" data-view="ideologias">Ideologias</a>
@@ -393,6 +402,24 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
       </div>
     </section>
 
+    <section class="view" id="v-acervo" hidden aria-labelledby="t-acervo">
+      <div class="prose">
+        <h2 id="t-acervo">Acervo Constitucional</h2>
+        <p>A Constituição Federal e as leis que mais aparecem no debate eleitoral, no texto compilado oficial do Planalto, com a redação em vigor. Busque por palavras, pelo número do artigo, por print ou por voz. Trechos revogados ficam de fora.</p>
+      </div>
+      <form class="panel" id="acForm">
+        <div class="field"><label for="acDoc">Documento</label><select id="acDoc"><option value="">Carregando…</option></select></div>
+        <div class="field"><label for="acQ">O que você quer saber?</label><input type="search" id="acQ" placeholder="Ex.: jornada de trabalho, art. 5, licença-maternidade"></div>
+        <div class="media" data-media-for="acQ" hidden></div>
+        <div class="row"><button type="submit" class="btn">Buscar na lei</button><button type="button" class="btn ghost" id="acAiBtn" hidden>Perguntar à IA</button></div>
+        <div><div class="eyebrow" style="margin-bottom:6px">Exemplos</div><div class="chips" id="acEx"></div></div>
+      </form>
+      <div class="panel" id="acAi" hidden aria-live="polite"></div>
+      <p class="status" id="acStatus" style="margin:0"></p>
+      <div class="stack" id="acList"></div>
+      <div class="prose" id="acFontes"></div>
+    </section>
+
     <section class="view" id="v-congresso" hidden aria-labelledby="t-congresso">
       <div class="prose">
         <h2 id="t-congresso">O que tramita no Congresso e nos tribunais</h2>
@@ -460,6 +487,11 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
       </div>
       <div class="seg" role="group" aria-label="Candidato da eleição atual" id="histSeg"></div>
       <p class="status" id="histNota"></p>
+      <div class="panel" id="histVer" hidden>
+        <h3>Fonte jornalística × verificação em fonte oficial</h3>
+        <p class="status" style="margin:0">Cada promessa dos levantamentos foi conferida de novo só em registros oficiais: leis e decretos, tramitação na Câmara e no Senado, dados do IBGE, Banco Central e Tesouro, auditorias do TCU e da CGU, e decisões do STF. A comparação usa só as promessas já verificadas.</p>
+        <div id="histVerBody"></div>
+      </div>
       <div id="histList" class="stack"><p class="status">Carregando…</p></div>
       <div class="panel">
         <h3>Indicadores oficiais por governo</h3>
@@ -530,12 +562,14 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <li><b>O selo de detalhamento</b> indica se o plano diz como, quanto ou quando ("Diz como"), se diz só em parte ("Em parte") ou se registra só a intenção ("Só intenção").</li>
           <li><b>Checagens.</b> Vêm só de agências de verificação reconhecidas (Agência Lupa, Aos Fatos, Estadão Verifica, Projeto Comprova). O número de itens é o mesmo para cada candidato: 7 falas e 5 alegações para cada um. A seleção prioriza propostas e dados, não ataques pessoais, e inclui vereditos de todo tipo. É uma amostra: o link de cada item leva à apuração completa, que traz outras frases checadas.</li>
           <li><b>Análise automática.</b> Uma IA de uso gratuito recebe três coisas: os trechos dos planos encontrados pela busca, as checagens desta página e o resultado de uma busca feita na hora. Essa busca é restrita a agências de checagem (Lupa, Aos Fatos, Comprova, AFP, Estadão Verifica), à imprensa de grande circulação e ao TSE. Antes de responder, o servidor descarta citação que não exista literalmente no plano e link que não tenha vindo da busca. Mesmo assim a IA pode errar, então confira sempre o trecho e a página.</li>
-          <li><b>Print e voz.</b> Na consulta, dá para enviar um print ou gravar a pergunta. A imagem é lida por uma IA com visão, que só transcreve as afirmações do print sem julgar. O áudio é transcrito pelo Whisper. Nos dois casos, o texto vai para o campo de busca para a pessoa conferir antes da checagem. Imagem e áudio não ficam guardados neste site.</li>
+          <li><b>Print e voz.</b> Nas consultas, dá para enviar um print ou falar a pergunta. A voz vira texto no próprio navegador, enquanto a pessoa fala (Chrome e Edge usam o serviço de voz da empresa do navegador). Onde isso não existe, o áudio gravado é transcrito pelo Whisper. O print é lido por uma IA com visão, que só transcreve as afirmações sem julgar. Se ela falhar, o texto é lido no próprio navegador (Tesseract) e uma IA de texto separa as afirmações. Nos dois casos, o texto vai para o campo de busca para a pessoa conferir antes. Imagem e áudio não ficam guardados neste site.</li>
+          <li><b>Acervo Constitucional.</b> A Constituição Federal (com o ADCT) e 15 leis, como CLT, Código Penal, Código Eleitoral, LRF, arcabouço fiscal e reforma tributária, no texto compilado oficial do Planalto, com a redação em vigor. Os trechos revogados, que o Planalto mostra riscados, ficam de fora. A busca é feita no navegador. A resposta da IA usa só os artigos encontrados, e toda citação é conferida com o texto do artigo antes de aparecer. Não é orientação jurídica.</li>
           <li><b>Viabilidade e evidências.</b> As propostas principais de cada candidato (2 a 3 por tema) foram avaliadas pelos mesmos critérios. Os critérios são: o instrumento exigido (decreto, lei, lei complementar ou emenda à Constituição), o custo e a fonte de recursos, a competência (União, estados ou municípios) e o prazo, e o que dizem estudos e experiências. Os estudos incluem achados favoráveis e desfavoráveis. O site não dá veredito de "boa" ou "ruim": mostra os critérios, os estudos e quem ganha ou paga, e a conclusão é de quem lê.</li>
           <li><b>Congresso e tribunais.</b> Proposições ligadas às propostas principais, com situação conferida nos dados abertos da Câmara e do Senado e nos portais do STF e do TSE. A direção esquerda–direita segue as categorias do Manifesto Project.</li>
           <li><b>Esquerda ou direita.</b> As 261 propostas foram classificadas pelas categorias do Manifesto Project (MARPOR) e pelo índice RILE, o método acadêmico usado para programas de partidos em mais de 50 países. A referência de cada partido vem do próprio estatuto ou programa e de escalas de especialistas (Bolognesi, Ribeiro e Codato; V-Dem). A verificação de frases livres usa palavras-chave e é uma aproximação.</li>
           <li><b>Ideologias.</b> Verbetes apoiados em fontes de referência (Stanford Encyclopedia of Philosophy, Britannica, CPDOC/FGV). Todos têm o mesmo formato, críticas de mais de um lado e exemplos de países com o critério usado (constituição, partido governante, filiação a internacional partidária). As posições nas dimensões são aproximações didáticas.</li>
-          <li><b>Promessa por promessa.</b> Para cada levantamento, o site lista cada promessa com o status dado pela própria fonte (rótulo original), a justificativa da fonte em trecho literal, as evidências que ela cita (leis, decretos, dados oficiais, com link quando existe) e a data da avaliação. Nenhum status foi atribuído pelo site. Para as cores, os rótulos foram agrupados pela mesma regra em todas as fontes; projetos "parados" ficam como "outra classificação", e não como "em andamento".</li>
+          <li><b>Promessa por promessa.</b> Para cada levantamento, o site lista cada promessa com o status dado pela própria fonte (rótulo original), a justificativa da fonte em trecho literal, as evidências que ela cita (leis, decretos, dados oficiais, com link quando existe) e a data da avaliação. Para as cores, os rótulos foram agrupados pela mesma regra em todas as fontes; projetos "parados" ficam como "outra classificação", e não como "em andamento".</li>
+          <li><b>Verificação em fonte oficial.</b> Cada promessa dos levantamentos foi conferida de novo só em registros oficiais e primários: legislação no Planalto e no Diário Oficial, tramitação nos dados abertos da Câmara e do Senado, dados do IBGE, Banco Central, Tesouro e Portal da Transparência, auditorias do TCU e da CGU e decisões do STF. Reportagens não contam como prova, e notícias de sites do governo só provam que um ato aconteceu, nunca o resultado. O critério é o mesmo para todos os governos: "cumprida" exige ato oficial ou dado oficial que atenda o núcleo da promessa; "parcial" atende só parte; "não cumprida" exige que o mandato tenha terminado (no mandato atual, só quando o fato já está consumado); "em andamento" vale só para o mandato atual; promessa genérica, sem meta que dê para medir, fica "não verificável". A verificação olhou até 21/10/2026, então atos posteriores à data de cada levantamento entram só nela. A tabela compara as duas classificações nas mesmas promessas e mostra a diferença em número e em pontos percentuais. Cada promessa traz a justificativa e o link de cada evidência oficial.</li>
           <li><b>Promessas anteriores.</b> Os números de promessas cumpridas são os publicados por cada levantamento jornalístico, sem recálculo. Como cada veículo usa sua própria lista e critério, os números não são comparáveis entre fontes nem entre governos. Os indicadores (PIB, IPCA, desocupação) são do IBGE e iguais para todos os governos, mas não medem cumprimento de promessas.</li>
           <li><b>Eleições desde 1891.</b> Votos de 1945 a 2026 vêm dos dados abertos do TSE. Antes de 1945 e nas eleições indiretas, as fontes são históricas (Anuário do IBGE, CPDOC, Nohlen) e alguns números divergem entre elas, o que está anotado em cada eleição.</li>
           <li><b>Limites.</b> Plano de governo é intenção registrada, não lei nem garantia. Falas em debates e entrevistas podem ir além do plano.</li>
@@ -675,7 +709,7 @@ function searchChecks(q, cand, limit = 4) {
 }
 
 /* ---------- Navegação ---------- */
-const VIEWS = ["comparar", "checar", "congresso", "espectro", "ideologias", "historico", "eleicoes", "checagens", "integra", "metodo"];
+const VIEWS = ["comparar", "checar", "acervo", "congresso", "espectro", "ideologias", "historico", "eleicoes", "checagens", "integra", "metodo"];
 function route() {
   let h = location.hash.replace("#", "");
   let theme = null;
@@ -930,12 +964,15 @@ function initCheck() {
   $("#aiBtn").onclick = runAI;
   $("#aiStop").onclick = () => aiCtl?.abort();
   (async () => {
+    let cap = {};
     try {
       const r = await fetch("api/checar", { headers: { accept: "application/json" } });
       const j = r.ok ? await r.json() : null;
-      if (j?.ok && j.ia) { aiOn = true; $("#aiPanel").hidden = false; }
-      if (j?.ok) initMedia({ imagem: !!j.imagem, audio: !!j.audio });
+      if (j?.ok && j.ia) { aiOn = true; $("#aiPanel").hidden = false; if ($("#acQ").value.trim()) $("#acAiBtn").hidden = false; }
+      if (j?.ok) cap = { imagem: !!j.imagem, audio: !!j.audio, ia: !!j.ia };
     } catch { /* site sem servidor: a análise fica escondida */ }
+    // Voz e leitura de print também funcionam sem servidor, no próprio navegador.
+    initMedia(cap);
   })();
 }
 async function runAI() {
@@ -951,7 +988,7 @@ async function runAI() {
   try {
     const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ frase: q, candidato: cand }), signal: aiCtl.signal });
     const j = await r.json().catch(() => ({}));
-    if (!r.ok) { st.textContent = j.erro || "Não foi possível concluir a análise agora. Tente de novo."; return; }
+    if (!r.ok) { st.textContent = j.erro || "Não foi possível concluir a análise agora. Tente de novo."; st.insertAdjacentHTML("afterend", detalheHTML(j)); return; }
     renderAI(j);
   } catch (e) {
     st.textContent = e?.name === "AbortError" ? "Análise interrompida." : "Sem conexão com o servidor. Tente de novo.";
@@ -1147,7 +1184,7 @@ async function espAI() {
   try {
     const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ modo: "espectro", frase: txt }) });
     const j = await r.json().catch(() => ({}));
-    if (!r.ok) { btn.textContent = j.erro || "Não foi possível classificar agora."; return; }
+    if (!r.ok) { btn.textContent = j.erro || "Não foi possível classificar agora."; btn.insertAdjacentHTML("afterend", detalheHTML(j)); return; }
     const cat = (esp.categorias || []).find(c => c.codigo === j.categoria);
     const cand = CAND[j.sobre] ? j.sobre : null;
     const ev = (j.evidencias || []).filter(e => CAND[e.candidato]);
@@ -1278,6 +1315,7 @@ const initHistorico = once(async () => {
   try { h = await loadData("historico"); } catch { failBox("#histList", "o histórico"); return; }
   DATA._hist = h;
   try { DATA._prom = await loadData("promessas"); } catch { DATA._prom = null; }
+  try { for (const v of (await loadData("verificacao")).itens || []) VER.set(v.levantamento + "|" + v.indice, v); } catch { /* sem verificação oficial ainda */ }
   $("#histSeg").addEventListener("click", e => { const b = e.target.closest("[data-hist]"); if (!b) return; histCand = b.dataset.hist; renderHist(); });
   $("#histNota").textContent = h.nota_metodo || "";
   renderHist();
@@ -1286,19 +1324,66 @@ const initHistorico = once(async () => {
 const PST = { cumprida: ["Cumprida", "--ok"], parcial: ["Parcialmente cumprida", "--part"], em_andamento: ["Em andamento", "--seg-out"], outro: ["Outra classificação", "--line"], nao_cumprida: ["Não cumprida", "--contra"] };
 const PORDER = Object.keys(PST);
 const levById = id => (DATA._prom?.levantamentos || []).find(l => l.id === id);
+/* Verificação em fonte oficial (data/verificacao.json): mesmo critério para todos os governos */
+const VER = new Map();
+const VST = { cumprida: ["Cumprida", "--ok"], parcial: ["Parcialmente cumprida", "--part"], em_andamento: ["Em andamento", "--seg-out"], nao_cumprida: ["Não cumprida", "--contra"], nao_verificavel: ["Não verificável em fonte oficial", "--line"] };
+const VTIPO = { norma: "norma", tramitacao: "tramitação", dado_oficial: "dado oficial", auditoria: "auditoria", decisao: "decisão judicial", ato_publicado: "ato publicado" };
+const verOf = (l, i) => VER.get(l.id + "|" + i);
+const fmtPP = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + " p.p.";
+const sgn = n => (n > 0 ? "+" : n < 0 ? "−" : "") + Math.abs(n);
+// Mesmas promessas nas duas classificações; "não verificável" fica fora da conta de concordância.
+function verStats(l) {
+  const pares = l.itens.map((it, i) => ({ it, v: verOf(l, i) })).filter(x => x.v);
+  const comp = pares.filter(x => x.v.status !== "nao_verificavel");
+  const iguais = comp.filter(x => x.v.status === x.it.status).length;
+  return { pares, base: pares.length, comp: comp.length, iguais, difs: comp.length - iguais };
+}
+function verCompareHTML(l) {
+  const s = verStats(l), tot = l.itens.length;
+  if (!s.base) return `<p class="status" style="margin:0">A verificação em fonte oficial deste levantamento ainda não foi feita.</p>`;
+  const rows = [...PORDER.map(k => [k, PST[k][0]]), ["nao_verificavel", VST.nao_verificavel[0]]];
+  const nf = k => s.pares.filter(x => x.it.status === k).length, no = k => s.pares.filter(x => x.v.status === k).length;
+  return `<div class="tablewrap"><table class="vtab"><thead><tr><th>Status</th><th class="num">${esc(l.fonte)}</th><th class="num">Verificação oficial</th><th class="num">Diferença</th></tr></thead><tbody>${rows.map(([k, nome]) => {
+    const a = nf(k), b = no(k);
+    if (!a && !b) return "";
+    return `<tr><td>${esc(nome)}</td><td class="num">${a} (${fmtPct(pct(a, s.base))})</td><td class="num">${b} (${fmtPct(pct(b, s.base))})</td><td class="num">${sgn(b - a)} (${fmtPP(pct(b, s.base) - pct(a, s.base))})</td></tr>`;
+  }).join("")}</tbody></table></div>
+  <p class="status" style="margin:0">Base: ${s.base} de ${tot} promessas já verificadas${s.base < tot ? " (verificação em andamento)" : ""}. Das ${s.comp} que deu para conferir em fonte oficial, ${s.iguais} (${fmtPct(pct(s.iguais, s.comp))}) têm o mesmo status da fonte e ${s.difs} (${fmtPct(pct(s.difs, s.comp))}) têm status diferente.${l.data ? ` A fonte avaliou em ${esc(fmtDate(l.data))}; a verificação oficial olhou até 21/10/2026, então atos posteriores entram só nela.` : ""}</p>`;
+}
+function sqHTML(l, it, view) {
+  const v = verOf(l, it.i);
+  if (view === "oficial") {
+    if (!v) return `<button type="button" class="sq sq-none" data-lev-item="${esc(l.id)}|${it.i}" data-tip="${esc(`Ainda não verificada · ${it.promessa}`)}" aria-label="${esc(`${it.promessa}: ainda não verificada`)}"></button>`;
+    return `<button type="button" class="sq${v.status === "nao_verificavel" ? " sq-out" : ""}" style="background:var(${VST[v.status]?.[1] || "--line"})" data-lev-item="${esc(l.id)}|${it.i}" data-tip="${esc(`Oficial: ${VST[v.status]?.[0] || v.status} · Fonte: ${it.status_original} · ${it.promessa}`)}" aria-label="${esc(`${it.promessa}: verificação oficial ${VST[v.status]?.[0] || v.status}`)}"></button>`;
+  }
+  return `<button type="button" class="sq${it.status === "outro" ? " sq-out" : ""}" style="background:var(${PST[it.status]?.[1] || "--line"})" data-lev-item="${esc(l.id)}|${it.i}" data-tip="${esc(`${PST[it.status]?.[0] || it.status_original} · ${it.promessa}`)}" aria-label="${esc(`${it.promessa}: ${it.status_original}`)}"></button>`;
+}
+function keysHTML(l, view) {
+  if (view === "oficial") {
+    const vs = l.itens.map((_, i) => verOf(l, i)).filter(Boolean);
+    return Object.keys(VST).map(k => { const n = vs.filter(v => v.status === k).length; return n ? `<span><i style="background:var(${VST[k][1]})"></i>${VST[k][0]}: <b class="mono">${n}</b> (${fmtPct(pct(n, vs.length))})</span>` : ""; }).join("")
+      + (vs.length < l.itens.length ? `<span><i style="outline:1px dashed var(--muted)"></i>Ainda não verificadas: <b class="mono">${l.itens.length - vs.length}</b></span>` : "");
+  }
+  return PORDER.map(k => { const n = l.itens.filter(x => x.status === k).length; return n ? `<span><i style="background:var(${PST[k][1]})"></i>${PST[k][0]}: <b class="mono">${n}</b> (${fmtPct(pct(n, l.itens.length))})</span>` : ""; }).join("");
+}
 function levsFor(r) {
   const levs = (DATA._prom?.levantamentos || []).filter(l => l.registro === r.id);
   return levs.map(l => {
     if (!l.itens_disponiveis || !(l.itens || []).length) return `<p class="status">${esc(l.fonte)}: a lista promessa por promessa não está disponível. ${esc(l.motivo_indisponivel || "")}</p>`;
     const items = l.itens.map((it, i) => ({ ...it, i })).sort((a, b) => PORDER.indexOf(a.status) - PORDER.indexOf(b.status));
     const temas = [...new Set(l.itens.map(x => x.tema))];
-    return `<details class="dd lev" data-lev="${esc(l.id)}"><summary><span class="chev" aria-hidden="true">▸</span> <b>Ver as ${l.itens.length} promessas avaliadas por ${esc(l.fonte)}, uma a uma</b> <span class="muted" style="font-size:14px">quem avaliou, por quê e com que evidência</span></summary>
+    const s = verStats(l);
+    return `<details class="dd lev" data-lev="${esc(l.id)}" data-view="fonte"><summary><span class="chev" aria-hidden="true">▸</span> <b>Ver as ${l.itens.length} promessas avaliadas por ${esc(l.fonte)}, uma a uma</b> <span class="muted" style="font-size:14px">quem avaliou, por quê, com que evidência${s.base ? " e o que mostram as fontes oficiais" : ""}</span></summary>
       <div class="lev-in">
-        <p class="status" style="margin:0">Cada quadrado é uma promessa, colorida pelo status que ${esc(l.fonte)} deu${l.data ? ` (avaliação de ${esc(fmtDate(l.data))})` : ""}. Toque num quadrado ou na lista para ver a justificativa e as evidências.</p>
-        <div class="waffle">${items.map(it => `<button type="button" class="sq${it.status === "outro" ? " sq-out" : ""}" style="background:var(${PST[it.status]?.[1] || "--line"})" data-lev-item="${esc(l.id)}|${it.i}" data-tip="${esc(`${PST[it.status]?.[0] || it.status_original} · ${it.promessa}`)}" aria-label="${esc(`${it.promessa}: ${it.status_original}`)}"></button>`).join("")}</div>
-        <div class="keys">${PORDER.map(k => { const n = l.itens.filter(x => x.status === k).length; return n ? `<span><i style="background:var(${PST[k][1]})"></i>${PST[k][0]}: <b class="mono">${n}</b> (${fmtPct(pct(n, l.itens.length))})</span>` : ""; }).join("")}</div>
+        <div class="eyebrow">${esc(l.fonte)} × verificação em fonte oficial</div>
+        ${verCompareHTML(l)}
+        ${s.base ? `<div class="seg" role="group" aria-label="Colorir as promessas por"><button type="button" data-lev-view="fonte" aria-pressed="true">Status dado por ${esc(l.fonte)}</button><button type="button" data-lev-view="oficial" aria-pressed="false">Verificação oficial (${s.base} de ${l.itens.length})</button></div>` : ""}
+        <p class="status" style="margin:0">Cada quadrado é uma promessa. Toque num quadrado ou na lista para ver a justificativa e as evidências${s.base ? " da fonte e da verificação oficial" : ""}.</p>
+        <div class="waffle">${items.map(it => sqHTML(l, it, "fonte")).join("")}</div>
+        <div class="keys" data-lev-keys>${keysHTML(l, "fonte")}</div>
         <div class="row">
-          <div class="field grow"><label class="eyebrow">Status</label><select data-lev-f="status"><option value="">Todos</option>${PORDER.filter(k => l.itens.some(x => x.status === k)).map(k => `<option value="${k}">${PST[k][0]}</option>`).join("")}</select></div>
+          <div class="field grow"><label class="eyebrow">Status da fonte</label><select data-lev-f="status"><option value="">Todos</option>${PORDER.filter(k => l.itens.some(x => x.status === k)).map(k => `<option value="${k}">${PST[k][0]}</option>`).join("")}</select></div>
+          ${s.base ? `<div class="field grow"><label class="eyebrow">Comparação</label><select data-lev-f="cmp"><option value="">Todas</option><option value="dif">Status diferente na verificação oficial</option><option value="igual">Mesmo status</option><option value="nv">Não verificável em fonte oficial</option><option value="pend">Ainda não verificadas</option></select></div>` : ""}
           <div class="field grow"><label class="eyebrow">Tema</label><select data-lev-f="tema"><option value="">Todos</option>${temas.map(t => `<option value="${esc(t)}">${esc(TEMA_NOME[t] || "Outro")}</option>`).join("")}</select></div>
           <div class="field grow"><label class="eyebrow">Buscar</label><input type="search" data-lev-f="q" placeholder="Ex.: armas, imposto de renda"></div>
         </div>
@@ -1308,15 +1393,63 @@ function levsFor(r) {
   }).join("");
 }
 function levListHTML(l, items) {
-  return items.map(it => `<li><button type="button" class="lev-row" data-lev-item="${esc(l.id)}|${it.i}"><span class="sw" style="background:var(${PST[it.status]?.[1] || "--line"})" aria-hidden="true"></span><span>${esc(it.promessa)}</span><span class="pill out">${esc(it.status_original)}</span></button></li>`).join("") || `<li class="empty">Nenhuma promessa com estes filtros.</li>`;
+  return items.map(it => {
+    const v = verOf(l, it.i);
+    return `<li><button type="button" class="lev-row" data-lev-item="${esc(l.id)}|${it.i}"><span class="sw" style="background:var(${PST[it.status]?.[1] || "--line"})" aria-hidden="true"></span><span>${esc(it.promessa)}</span><span class="pills"><span class="pill out">${esc(it.status_original)}</span>${v ? `<span class="pill" style="border-color:var(${VST[v.status]?.[1] || "--line"})">Oficial: ${esc(VST[v.status]?.[0] || v.status)}</span>` : ""}</span></button></li>`;
+  }).join("") || `<li class="empty">Nenhuma promessa com estes filtros.</li>`;
 }
 function levFilter(box) {
   const l = levById(box.dataset.lev); if (!l) return;
-  const st = box.querySelector('[data-lev-f="status"]').value, tm = box.querySelector('[data-lev-f="tema"]').value, q = fold(box.querySelector('[data-lev-f="q"]').value.trim());
-  const items = l.itens.map((it, i) => ({ ...it, i })).filter(it => (!st || it.status === st) && (!tm || it.tema === tm) && (!q || fold(it.promessa + " " + (it.avaliacao || "")).includes(q)))
+  const val = k => box.querySelector(`[data-lev-f="${k}"]`)?.value || "";
+  const st = val("status"), tm = val("tema"), cmp = val("cmp"), q = fold(val("q").trim());
+  const okCmp = it => {
+    const v = verOf(l, it.i);
+    if (!cmp) return true;
+    if (cmp === "pend") return !v;
+    if (!v) return false;
+    if (cmp === "nv") return v.status === "nao_verificavel";
+    if (v.status === "nao_verificavel") return false;
+    return cmp === "dif" ? v.status !== it.status : v.status === it.status;
+  };
+  const items = l.itens.map((it, i) => ({ ...it, i })).filter(it => (!st || it.status === st) && (!tm || it.tema === tm) && okCmp(it) && (!q || fold(it.promessa + " " + (it.avaliacao || "") + " " + (verOf(l, it.i)?.justificativa || "")).includes(q)))
     .sort((a, b) => PORDER.indexOf(a.status) - PORDER.indexOf(b.status));
   box.querySelector(".lev-list").innerHTML = levListHTML(l, items);
   box.querySelectorAll(".sq").forEach(sq => { const i = +sq.dataset.levItem.split("|")[1]; sq.classList.toggle("dim", !items.some(x => x.i === i)); });
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-lev-view]"); if (!b) return;
+  const box = b.closest(".lev"), l = levById(box.dataset.lev), view = b.dataset.levView;
+  box.dataset.view = view;
+  box.querySelectorAll("[data-lev-view]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  const items = l.itens.map((it, i) => ({ ...it, i })).sort((a, c) => PORDER.indexOf(a.status) - PORDER.indexOf(c.status));
+  box.querySelector(".waffle").innerHTML = items.map(it => sqHTML(l, it, view)).join("");
+  box.querySelector("[data-lev-keys]").innerHTML = keysHTML(l, view);
+  levFilter(box);
+});
+function histVerHTML(regs) {
+  const levs = (DATA._prom?.levantamentos || []).filter(l => regs.some(r => r.id === l.registro) && (l.itens || []).length);
+  const rows = levs.map(l => ({ l, s: verStats(l) })).filter(x => x.s.base);
+  if (!rows.length) return "";
+  const cell = (s, k, who) => { const n = s.pares.filter(x => (who === "f" ? x.it.status : x.v.status) === k).length; return `${n} (${fmtPct(pct(n, s.base))})`; };
+  const dif = (s, k) => { const a = s.pares.filter(x => x.it.status === k).length, b = s.pares.filter(x => x.v.status === k).length; return fmtPP(pct(b, s.base) - pct(a, s.base)); };
+  return `<div class="tablewrap"><table><thead><tr><th>Levantamento</th><th class="num">Verificadas</th><th class="num">Cumpridas: fonte</th><th class="num">Cumpridas: oficial</th><th class="num">Diferença</th><th class="num">Não cumpridas: fonte</th><th class="num">Não cumpridas: oficial</th><th class="num">Diferença</th><th class="num">Mesmo status</th></tr></thead><tbody>${rows.map(({ l, s }) =>
+    `<tr><td><b>${esc(l.fonte)}</b><br><span class="muted">governo ${esc(l.governo || "")}</span></td><td class="num">${s.base} de ${l.itens.length}</td><td class="num">${cell(s, "cumprida", "f")}</td><td class="num">${cell(s, "cumprida", "o")}</td><td class="num">${dif(s, "cumprida")}</td><td class="num">${cell(s, "nao_cumprida", "f")}</td><td class="num">${cell(s, "nao_cumprida", "o")}</td><td class="num">${dif(s, "nao_cumprida")}</td><td class="num">${s.iguais} de ${s.comp} (${fmtPct(pct(s.iguais, s.comp))})</td></tr>`).join("")}</tbody></table></div>
+    <p class="status" style="margin:0">Percentuais sobre as promessas já verificadas de cada levantamento. Diferença em pontos percentuais (oficial menos fonte). "Mesmo status" desconsidera as promessas genéricas demais para conferir em fonte oficial. Abra cada levantamento abaixo para ver todos os status e cada promessa.</p>`;
+}
+function verDetailHTML(it, v) {
+  if (!v) return `<p class="status" style="margin:0">A verificação desta promessa em fonte oficial ainda não foi feita.</p>`;
+  const cor = `var(${VST[v.status]?.[1] || "--line"})`;
+  const ev = (v.evidencias || []).filter(e => e && e.descricao);
+  const mesmo = v.status === "nao_verificavel" ? "" : v.status === it.status ? "Mesmo status da fonte." : "Status diferente do dado pela fonte.";
+  return `<div class="av" style="display:grid;gap:8px">
+    <div class="eyebrow">Verificação em fonte oficial</div>
+    <p style="margin:0"><span class="pill" style="color:${v.status === "nao_verificavel" ? "var(--muted)" : cor};border-color:${cor}">${esc(VST[v.status]?.[0] || v.status)}${v.percentual != null ? ` · ${esc(v.percentual)}%` : ""}</span> <span class="muted" style="font-size:14px">${mesmo}</span></p>
+    <dl class="prova">
+      <dt>O que mostram os registros</dt><dd>${esc(v.justificativa || "")}</dd>
+      <dt>Evidências oficiais</dt><dd>${ev.length ? `<ul>${ev.map(e => `<li>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.descricao)}</a>` : esc(e.descricao)}${e.tipo ? ` <span class="muted">(${esc(VTIPO[e.tipo] || e.tipo)})</span>` : ""}</li>`).join("")}</ul>` : "Nenhum registro oficial encontrado sobre esta promessa."}</dd>
+      <dt>Verificado em</dt><dd>${esc(fmtDate(v.data_verificacao || ""))}</dd>
+    </dl>
+  </div>`;
 }
 function levDetail(levId, i) {
   const l = levById(levId), it = l?.itens[i]; if (!it) return;
@@ -1335,6 +1468,7 @@ function levDetail(levId, i) {
       <dt>Método da fonte</dt><dd>${esc(l.metodo || "")}</dd>
     </dl>
     <a href="${esc(it.url || l.url)}" target="_blank" rel="noopener">Ver a avaliação na fonte</a>
+    ${verDetailHTML(it, verOf(l, i))}
   </article>`;
   box.scrollIntoView({ block: "nearest" });
 }
@@ -1371,6 +1505,9 @@ function renderHist() {
     ${r.resultado === "eleito" ? ((r.rastreadores || []).length ? `<div class="hits"><div class="eyebrow">Levantamentos de promessas</div>${r.rastreadores.map(trackerHTML).join("")}</div>${levsFor(r)}` : `<p class="empty">Nenhum levantamento independente de promessas encontrado para este governo.</p>`) : ""}
     ${(r.exemplos || []).length ? `<div class="hits"><div class="eyebrow">Exemplos</div>${r.exemplos.map(x => `<div class="hit"><div><span class="pill out">${esc(SL[x.status] || x.status)}</span> ${esc(x.promessa)}</div><div class="src">${esc(x.explicacao || "")} <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.fonte)}</a></div></div>`).join("")}</div>` : ""}
   </article>`).join("") || `<p class="empty">Nenhum registro.</p>`;
+  const hv = histVerHTML(regs);
+  $("#histVer").hidden = !hv;
+  $("#histVerBody").innerHTML = hv;
   renderInd(regs);
 }
 function renderInd(regs) {
@@ -1417,7 +1554,151 @@ function renderEl() {
       ${(x.fontes || []).length ? `<p class="status" style="margin:0">Fontes: ${x.fontes.map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">${i + 1}</a>`).join(" · ")}</p>` : ""}</div></details>`;
   }).join("") || `<p class="empty">Nenhuma eleição encontrada.</p>`;
 }
-const LAZY = { congresso: initCongresso, espectro: initEspectro, ideologias: initIdeologias, historico: initHistorico, eleicoes: initEleicoes };
+/* ---------- Acervo Constitucional ---------- */
+const ACV = {};
+function loadAcervoDoc(id) {
+  const meta = DATA._acIdx.find(d => d.id === id);
+  if (!ACV[id]) ACV[id] = fetch(meta.arquivo).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(j => {
+    for (const a of j.artigos) { a.t = a.t.normalize("NFC"); a.ft = fold(a.t); a.fh = fold(a.n + " " + a.hier); }
+    j.meta = meta;
+    return j;
+  }).catch(e => { delete ACV[id]; throw e; });
+  return ACV[id];
+}
+let acLast = { res: [], ts: [], q: "" }, acShown = 20;
+const initAcervo = once(async () => {
+  let idx;
+  try { idx = (await loadData("acervo")).documentos; } catch { failBox("#acList", "o acervo"); return; }
+  DATA._acIdx = idx;
+  const tipos = [...new Set(idx.map(d => d.tipo))];
+  $("#acDoc").innerHTML = `<option value="">Todos os documentos (${idx.length})</option>` + tipos.map(t => `<optgroup label="${esc(t)}">${idx.filter(d => d.tipo === t).map(d => `<option value="${esc(d.id)}">${esc(d.titulo)}</option>`).join("")}</optgroup>`).join("");
+  $("#acEx").innerHTML = ["jornada de trabalho", "art. 5", "licença-maternidade", "aposentadoria", "dados pessoais", "maioridade penal", "reeleição"].map(x => `<button type="button" class="chip">${esc(x)}</button>`).join("");
+  $("#acFontes").innerHTML = `<p class="status">Textos oficiais: ${idx.map(d => `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.titulo)}</a>`).join(" · ")}. Baixados do Planalto em ${esc(fmtDate(idx[0]?.baixado_em))}.</p>`;
+});
+function initAcervoUI() {
+  $("#acEx").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) { $("#acQ").value = b.textContent; runAcervo(false); } });
+  $("#acForm").addEventListener("submit", e => { e.preventDefault(); runAcervo(true); });
+  $("#acDoc").addEventListener("change", () => runAcervo(false));
+  $("#acAiBtn").onclick = acervoAI;
+  document.addEventListener("click", e => {
+    const m = e.target.closest("[data-ac-more]");
+    if (m) { document.getElementById(m.dataset.acMore).hidden = false; document.getElementById(m.dataset.acMore + "s").hidden = true; m.remove(); }
+    if (e.target.closest("#acMore")) { acShown += 20; renderAcervo(); }
+  });
+}
+// "art. 5", "artigo 103-A" -> "5", "103-a"
+const artNum = q => { const m = /\bart(?:igo)?s?\.?\s*(\d+(?:-[a-z])?)\b/.exec(fold(q)); return m ? m[1] : null; };
+// Termos do dia a dia que a lei escreve de outro jeito. A busca procura as duas formas.
+const AC_SINONIMOS = {
+  "maioridade penal": "penalmente inimputaveis menores de dezoito anos",
+  "carga horaria": "duracao do trabalho",
+  "6x1": "duracao do trabalho repouso semanal remunerado",
+  "jornada": "duracao do trabalho normal",
+  "reeleicao": "reeleito periodo subsequente",
+  "foro privilegiado": "processar e julgar originariamente",
+  "licenca maternidade": "licenca gestante",
+  "salario maternidade": "licenca gestante",
+  "porte de arma": "porte de arma de fogo",
+  "aborto": "aborto gestante"
+};
+function acScore(a, sets, phrase) {
+  const f = a.fh + " " + a.ft;
+  let best = 0, full = false;
+  for (const ts of sets) {
+    const hit = ts.filter(t => find(f, t) !== -1).length;
+    if (!hit) continue;
+    let s = scorePage({ f, t: "" }, ts);
+    if (hit === ts.length) { full = true; s *= 2; }
+    best = Math.max(best, s);
+  }
+  if (phrase && f.includes(phrase)) best += 60;
+  // Artigos muito longos (a CLT tem artigos de 20 mil caracteres) acumulam palavras por acaso.
+  return { s: best / Math.max(1, Math.sqrt(a.t.length / 1500)), full };
+}
+async function runAcervo(askAI) {
+  await initAcervo();
+  if (!DATA._acIdx) return;
+  const q = $("#acQ").value.trim(), doc = $("#acDoc").value;
+  $("#acAiBtn").hidden = !aiOn || !q;
+  $("#acAi").hidden = true;
+  if (!q && !doc) { $("#acList").innerHTML = ""; $("#acStatus").textContent = ""; return; }
+  const ids = doc ? [doc] : DATA._acIdx.map(d => d.id);
+  $("#acStatus").textContent = ids.length > 1 ? `Procurando nos ${ids.length} documentos…` : "Procurando…";
+  let docs;
+  try { docs = await Promise.all(ids.map(loadAcervoDoc)); } catch { failBox("#acList", "o acervo"); $("#acStatus").textContent = ""; return; }
+  if (!q) {
+    acLast = { res: docs[0].artigos.map(a => ({ d: docs[0], a })), ts: [], q: "" };
+  } else {
+    const semArt = q.replace(/\bart(?:igo)?s?\.?\s*\d+(?:-[a-z])?\b/gi, " ");
+    const num = artNum(q), ts = terms(semArt);
+    const fq = " " + fold(semArt).replace(/[^a-z0-9]+/g, " ") + " ";
+    const sets = [ts, ...Object.entries(AC_SINONIMOS).filter(([k]) => fq.includes(" " + k + " ")).map(([, v]) => terms(v))].filter(x => x.length);
+    const phrase = ts.length > 1 ? fold(semArt).replace(/\s+/g, " ").trim() : "";
+    let res = [];
+    for (const d of docs) for (const a of d.artigos) {
+      let s = 0, full = false;
+      if (num) { const n = /^art\. (\d+(?:-[a-z])?)/.exec(fold(a.n).replace(/º/g, "")); if (n && n[1] === num) { s += 1000; full = true; } }
+      if (sets.length) { const r = acScore(a, sets, phrase); s += r.s; full = full || r.full; }
+      if (s > 0) res.push({ d, a, s, full });
+    }
+    // Se há artigos com todas as palavras, mostra só esses.
+    if (res.some(x => x.full)) res = res.filter(x => x.full);
+    res.sort((x, y) => y.s - x.s);
+    acLast = { res, ts: [...new Set(sets.flat())], q };
+  }
+  acShown = 20;
+  renderAcervo();
+  // Pergunta completa (5 palavras ou mais) vai também para a IA, se ela estiver disponível.
+  if (askAI && aiOn && q.split(/\s+/).length >= 5) acervoAI();
+}
+function acItemHTML(d, a, ts) {
+  const id = "ac" + Math.random().toString(36).slice(2, 9);
+  const long = a.t.length > 900;
+  const sn = !long ? null : ts.length ? snippet({ f: a.ft, t: a.t }, ts, 700) : { a: 0, text: a.t.slice(0, 700) };
+  const short = long ? (sn.a > 0 ? "…" : "") + sn.text + "…" : a.t;
+  return `<article class="fc">
+    <div class="tags"><span class="tag vd">${esc(d.meta.titulo)}</span></div>
+    <div class="claim">${esc(a.n)}</div>
+    ${a.hier ? `<div class="muted" style="font-size:13px">${esc(a.hier)}</div>` : ""}
+    <div class="ac-t" id="${id}s">${highlight(short, ts)}</div>
+    ${long ? `<div class="ac-t" id="${id}" hidden>${highlight(a.t, ts)}</div><button type="button" class="linkbtn" data-ac-more="${id}">Ler o artigo inteiro</button>` : ""}
+    <a href="${esc(d.meta.url)}" target="_blank" rel="noopener" style="font-size:14px">Ver no site do Planalto</a>
+  </article>`;
+}
+function renderAcervo() {
+  const { res, ts, q } = acLast;
+  $("#acStatus").textContent = !q ? `${res[0]?.d.meta.titulo || ""}: ${res.length} artigos, na ordem do texto.`
+    : res.length ? `${res.length} artigo(s) para “${q}”, do mais ao menos relevante.`
+    : `Nada encontrado para “${q}”. Tente as palavras que a lei usaria (ex.: “duração do trabalho” em vez de “carga horária”).`;
+  $("#acList").innerHTML = res.slice(0, acShown).map(x => acItemHTML(x.d, x.a, ts)).join("")
+    + (res.length > acShown ? `<button type="button" class="btn ghost" id="acMore">Mostrar mais ${Math.min(20, res.length - acShown)}</button>` : "");
+}
+const detalheHTML = j => Array.isArray(j?.detalhe) && j.detalhe.length ? `<details><summary class="linkbtn" style="font-size:13px">Detalhe técnico</summary><p class="status mono" style="font-size:12px;margin:4px 0 0">${j.detalhe.map(esc).join("<br>")}</p></details>` : "";
+const artigosApiHTML = list => `<div class="hits">${(list || []).map(a => `<div class="hit"><div class="src mono">${esc(a.titulo)} · ${esc(a.n)}</div><div class="ac-t">${esc(a.t.slice(0, 600))}${a.t.length > 600 ? "…" : ""}</div><a href="${esc(a.url)}" target="_blank" rel="noopener" class="status">Ver no Planalto</a></div>`).join("")}</div>`;
+async function acervoAI() {
+  const q = $("#acQ").value.trim(), box = $("#acAi"), btn = $("#acAiBtn");
+  if (!q || !aiOn) return;
+  box.hidden = false;
+  box.innerHTML = `<h3>Resposta com base nos artigos</h3><p class="status">Procurando os artigos e preparando a resposta… (até 1 minuto)</p>`;
+  btn.disabled = true;
+  try {
+    const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ modo: "acervo", pergunta: q.slice(0, 500), doc: $("#acDoc").value }) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      box.innerHTML = `<h3>Resposta com base nos artigos</h3><p class="status">${esc(j.erro || "Não foi possível responder agora. Tente de novo.")}</p>${detalheHTML(j)}${j.artigos?.length ? artigosApiHTML(j.artigos) : ""}`;
+      return;
+    }
+    box.innerHTML = `<h3>Resposta com base nos artigos</h3><p style="margin:0">${esc(j.resposta)}</p>
+      ${j.citacoes?.length ? `<div class="hits"><div class="eyebrow">O que está escrito na lei</div>${j.citacoes.map(c => `<div class="hit"><div class="src mono">${esc(c.titulo)} · ${esc(c.artigo)}</div><blockquote class="lit">“${esc(c.trecho)}”</blockquote><a href="${esc(c.url)}" target="_blank" rel="noopener" class="status">Ver no Planalto</a></div>`).join("")}</div>` : ""}
+      ${j.descartadas ? `<p class="status">${j.descartadas} citação(ões) descartada(s) por não aparecer(em) literalmente no artigo.</p>` : ""}
+      ${j.limites ? `<p class="status"><b>Limite:</b> ${esc(j.limites)}</p>` : ""}
+      <details><summary class="linkbtn" style="font-size:14px">Artigos que a IA leu (${(j.artigos || []).length})</summary>${artigosApiHTML(j.artigos)}</details>
+      <p class="status" style="margin:0">Resposta automática, não é orientação jurídica. Confira o texto do artigo.</p>`;
+  } catch { box.innerHTML = `<p class="status">Sem conexão com o servidor. Tente de novo.</p>`; }
+  finally { btn.disabled = false; }
+}
+
+const LAZY = { acervo: initAcervo, congresso: initCongresso, espectro: initEspectro, ideologias: initIdeologias, historico: initHistorico, eleicoes: initEleicoes };
 
 /* ---------- Início ---------- */
 function initMeta() {
@@ -1440,9 +1721,30 @@ const ICON_MIC = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" str
 // O que fazer com o texto lido do print ou transcrito do áudio, em cada consulta.
 const MEDIA_AFTER = {
   fala: t => runCheck(t, $("#falaCand").value),
-  espTxt: () => { $("#espSel").value = ""; verifyEspectro(); }
+  espTxt: () => { $("#espSel").value = ""; verifyEspectro(); },
+  acQ: () => runAcervo(true)
 };
+// Campos que usam o texto do print como está (no Acervo não se procuram afirmações sobre candidatos).
+const MEDIA_RAW = { acQ: true };
 const MEDIA_SEND = {};
+const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+// Leitura do print no navegador, usada quando a IA com visão não responde.
+const OCR_URL = "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js";
+let ocrLib = null;
+function loadOCR() {
+  return (ocrLib ??= new Promise((res, rej) => {
+    const s = document.createElement("script");
+    s.src = OCR_URL;
+    s.onload = () => window.Tesseract ? res(window.Tesseract) : rej(new Error("ocr"));
+    s.onerror = () => { ocrLib = null; rej(new Error("ocr")); };
+    document.head.append(s);
+  }));
+}
+async function ocrImage(dataUrl, onProgress) {
+  const T = await loadOCR();
+  const r = await T.recognize(dataUrl, "por", { logger: m => { if (m.status === "recognizing text") onProgress?.(Math.round(m.progress * 100)); } });
+  return String(r?.data?.text || "").replace(/[ \t]+/g, " ").replace(/\s*\n\s*/g, "\n").trim();
+}
 function shrinkImage(f) {
   return new Promise((res, rej) => {
     const u = URL.createObjectURL(f), img = new Image();
@@ -1467,107 +1769,201 @@ async function postMedia(body) {
   return { ok: r.ok, j };
 }
 function initMedia(cap) {
-  if (!cap.imagem && !cap.audio) return;
   const canRec = cap.audio && !!navigator.mediaDevices?.getUserMedia && typeof MediaRecorder !== "undefined";
+  const canVoice = !!SpeechRec || canRec;
+  let srFalhou = false; // o reconhecimento do navegador falhou nesta visita: usa a gravação
   document.querySelectorAll("[data-media-for]").forEach(box => {
     const id = box.dataset.mediaFor, field = document.getElementById(id), form = field.closest("form");
+    const raw = !!MEDIA_RAW[id];
     box.hidden = false;
     box.innerHTML = `<div class="mediabar">
-        ${cap.imagem ? `<button type="button" class="btn ghost sm" data-act="img">${ICON_IMG} Enviar print</button><input type="file" accept="image/*" hidden>` : ""}
-        ${canRec ? `<button type="button" class="btn ghost sm" data-act="mic">${ICON_MIC} <span>Gravar pergunta</span></button>` : ""}
+        <button type="button" class="btn ghost sm" data-act="img">${ICON_IMG} Enviar print</button><input type="file" accept="image/*" hidden>
+        ${canVoice ? `<button type="button" class="btn ghost sm" data-act="mic">${ICON_MIC} <span>Falar a pergunta</span></button>` : ""}
+        <span class="meter" hidden aria-hidden="true"><i></i></span>
         <span class="status" role="status" aria-live="polite"></span></div>
       <div class="media-preview" hidden><img alt="Print enviado"><button type="button" class="linkbtn" data-act="clear">remover imagem</button></div>
       <div class="chips" data-opts hidden></div>
-      <p class="media-note">${cap.imagem ? "Você pode colar um print (Ctrl+V), arrastar a imagem para cá ou tocar em Enviar print. " : ""}O print ou o áudio vai para um serviço de IA só para virar texto; nada fica guardado neste site.</p>`;
+      <p class="media-note">Você pode colar um print (Ctrl+V), arrastar a imagem para cá ou tocar em Enviar print.${canVoice ? " Na voz, o texto aparece no campo enquanto você fala; toque em Parar quando terminar." : ""} Print e voz só viram texto; nada fica guardado neste site.</p>`;
     const st = box.querySelector(".status"), file = box.querySelector('input[type="file"]');
     const prev = box.querySelector(".media-preview"), opts = box.querySelector("[data-opts]");
+    const meter = box.querySelector(".meter"), bar = meter.querySelector("i");
     const use = text => { field.value = text; MEDIA_AFTER[id]?.(text); };
+    const showErr = (msg, j) => { st.textContent = msg; if (j?.detalhe) st.insertAdjacentHTML("afterend", detalheHTML(j)); };
 
+    function pickClaims(af) {
+      st.textContent = af.length > 1 ? "Achei mais de uma afirmação no print. Usei a primeira; toque em outra para trocar." : "Afirmação lida do print. Confira e ajuste se precisar.";
+      if (af.length > 1) {
+        opts.hidden = false;
+        opts.innerHTML = af.map((a, i) => `<button type="button" class="chip" data-i="${i}" aria-pressed="${i === 0}">${esc(a)}</button>`).join("");
+        opts.onclick = e => {
+          const b = e.target.closest(".chip"); if (!b) return;
+          opts.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === b)));
+          use(af[+b.dataset.i]);
+        };
+      }
+      use(af[0]);
+    }
     async function sendImage(f) {
       if (!f || !f.type.startsWith("image/")) { st.textContent = "Escolha um arquivo de imagem."; return; }
-      st.textContent = "Lendo o print… (alguns segundos)"; opts.hidden = true;
-      try {
-        const url = await shrinkImage(f);
-        prev.hidden = false; prev.querySelector("img").src = url;
-        const { ok, j } = await postMedia({ modo: "imagem", imagem: url });
-        if (!ok) { st.textContent = j.erro || "Não foi possível ler a imagem."; return; }
-        const af = j.afirmacoes || [];
-        if (!af.length) {
+      opts.hidden = true;
+      box.querySelector("details")?.remove();
+      let url;
+      try { url = await shrinkImage(f); } catch { st.textContent = "Não foi possível abrir a imagem. Tente outro arquivo."; return; }
+      prev.hidden = false; prev.querySelector("img").src = url;
+      // 1. IA com visão no servidor
+      if (cap.imagem) {
+        st.textContent = "Lendo o print… (alguns segundos)";
+        const { ok, j } = await postMedia({ modo: "imagem", imagem: url }).catch(() => ({ ok: false, j: {} }));
+        if (ok) {
+          const af = j.afirmacoes || [];
+          if (raw) { use((j.texto || af.join(" ")).replace(/\s+/g, " ").slice(0, 400)); st.textContent = "Texto lido do print. Confira e ajuste se precisar."; return; }
+          if (af.length) { pickClaims(af); return; }
           field.value = (j.texto || "").slice(0, 400);
           st.textContent = "Não achei no print uma afirmação sobre os candidatos. O texto lido está no campo para você ajustar.";
           return;
         }
-        st.textContent = af.length > 1 ? "Achei mais de uma afirmação no print. Usei a primeira; toque em outra para trocar." : "Afirmação lida do print. Confira e ajuste se precisar.";
-        if (af.length > 1) {
-          opts.hidden = false;
-          opts.innerHTML = af.map((a, i) => `<button type="button" class="chip" data-i="${i}" aria-pressed="${i === 0}">${esc(a)}</button>`).join("");
-          opts.onclick = e => {
-            const b = e.target.closest(".chip"); if (!b) return;
-            opts.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === b)));
-            use(af[+b.dataset.i]);
-          };
-        }
-        use(af[0]);
-      } catch { st.textContent = "Não foi possível processar a imagem. Tente outro arquivo."; }
+      }
+      // 2. Leitura no próprio navegador
+      st.textContent = "Lendo o texto do print no seu navegador… (na primeira vez, baixa o leitor)";
+      let txt = "";
+      try { txt = await ocrImage(url, p => { st.textContent = `Lendo o texto do print… ${p}%`; }); }
+      catch { st.textContent = "Não foi possível ler o print agora. Digite a frase."; return; }
+      if (txt.length < 8) { st.textContent = "Não achei texto legível no print. Digite a frase."; return; }
+      const curto = txt.replace(/\s+/g, " ").slice(0, 400);
+      if (raw) { use(curto); st.textContent = "Texto lido do print. Confira e ajuste se precisar."; return; }
+      if (!cap.ia) { field.value = curto; st.textContent = "Texto lido do print. Deixe só a frase que quer checar e toque no botão."; return; }
+      st.textContent = "Separando as afirmações do texto lido…";
+      const { ok, j } = await postMedia({ modo: "extrair", texto: txt }).catch(() => ({ ok: false, j: {} }));
+      if (ok && j.afirmacoes?.length) { pickClaims(j.afirmacoes); return; }
+      field.value = curto;
+      showErr("Texto lido do print. Deixe só a frase que quer checar e toque no botão.", ok ? null : j);
     }
-    MEDIA_SEND[id] = cap.imagem ? sendImage : null;
-    box.querySelector('[data-act="img"]')?.addEventListener("click", () => file.click());
-    file?.addEventListener("change", () => { sendImage(file.files[0]); file.value = ""; });
+    MEDIA_SEND[id] = sendImage;
+    box.querySelector('[data-act="img"]').addEventListener("click", () => file.click());
+    file.addEventListener("change", () => { sendImage(file.files[0]); file.value = ""; });
     box.querySelector('[data-act="clear"]').addEventListener("click", () => { prev.hidden = true; opts.hidden = true; st.textContent = ""; });
-    if (cap.imagem) {
-      form.addEventListener("dragover", e => { if ([...(e.dataTransfer?.items || [])].some(i => i.kind === "file")) { e.preventDefault(); form.classList.add("dragging"); } });
-      form.addEventListener("dragleave", () => form.classList.remove("dragging"));
-      form.addEventListener("drop", e => {
-        form.classList.remove("dragging");
-        const f = [...(e.dataTransfer?.files || [])].find(x => x.type.startsWith("image/"));
-        if (f) { e.preventDefault(); sendImage(f); }
-      });
-    }
+    form.addEventListener("dragover", e => { if ([...(e.dataTransfer?.items || [])].some(i => i.kind === "file")) { e.preventDefault(); form.classList.add("dragging"); } });
+    form.addEventListener("dragleave", () => form.classList.remove("dragging"));
+    form.addEventListener("drop", e => {
+      form.classList.remove("dragging");
+      const f = [...(e.dataTransfer?.files || [])].find(x => x.type.startsWith("image/"));
+      if (f) { e.preventDefault(); sendImage(f); }
+    });
 
     const mic = box.querySelector('[data-act="mic"]');
     if (!mic) return;
     const label = mic.querySelector("span");
-    let rec = null, stream = null, chunks = [], t0 = 0, timer = null;
-    mic.addEventListener("click", async () => {
-      if (rec && rec.state === "recording") { rec.stop(); return; }
-      try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); }
-      catch { st.textContent = "Permita o uso do microfone para gravar a pergunta."; return; }
-      const mime = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"].find(m => MediaRecorder.isTypeSupported?.(m));
-      rec = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
-      chunks = [];
-      rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
-      rec.onstop = async () => {
-        clearInterval(timer);
-        stream.getTracks().forEach(t => t.stop());
-        mic.classList.remove("rec"); mic.querySelector(".rec-dot")?.remove(); label.textContent = "Gravar pergunta";
-        const blob = new Blob(chunks, { type: rec.mimeType || mime || "audio/webm" });
-        if (blob.size < 2000) { st.textContent = "A gravação ficou muito curta. Tente de novo."; return; }
-        st.textContent = "Transcrevendo o áudio…";
-        try {
-          const { ok, j } = await postMedia({ modo: "audio", audio: await blobToBase64(blob), mime: blob.type });
-          if (!ok || !j.texto) { st.textContent = j.erro || "Não foi possível entender o áudio."; return; }
-          st.textContent = "Pergunta transcrita. Confira e ajuste se precisar.";
-          use(j.texto);
-        } catch { st.textContent = "Sem conexão com o servidor. Tente de novo."; }
-      };
-      rec.start();
+    let ativo = null, t0 = 0, timer = null;
+    const startUI = msg => {
       t0 = Date.now();
       mic.classList.add("rec");
       mic.insertAdjacentHTML("afterbegin", '<span class="rec-dot" aria-hidden="true"></span>');
       const tick = () => {
         const s = Math.floor((Date.now() - t0) / 1000);
-        label.textContent = `Parar e enviar (${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")})`;
-        if (s >= 60 && rec.state === "recording") rec.stop();
+        label.textContent = `Parar (${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")})`;
+        if (s >= 60) ativo?.parar();
       };
       tick(); timer = setInterval(tick, 500);
-      st.textContent = "Gravando… fale a frase ou a pergunta (até 1 minuto).";
+      st.textContent = msg;
+      box.querySelector("details")?.remove();
+    };
+    const endUI = () => {
+      clearInterval(timer); ativo = null;
+      mic.classList.remove("rec"); mic.querySelector(".rec-dot")?.remove(); label.textContent = "Falar a pergunta";
+      meter.hidden = true;
+    };
+    const finish = txt => {
+      txt = normNum(String(txt || "").replace(/\s+/g, " ").trim());
+      if (!txt) { st.textContent = "Não ouvi nada. Fale perto do microfone e tente de novo."; return; }
+      st.textContent = "Pergunta transcrita. Confira e ajuste se precisar.";
+      use(txt);
+    };
+
+    // Voz no navegador: o texto aparece enquanto a pessoa fala, sem limite de uma frase.
+    function startSpeech() {
+      const sr = new SpeechRec();
+      sr.lang = "pt-BR"; sr.continuous = true; sr.interimResults = true; sr.maxAlternatives = 1;
+      let finalTxt = "", parou = false, erro = "", ouviu = false;
+      sr.onresult = e => {
+        let interim = "";
+        for (let i = e.resultIndex; i < e.results.length; i++) {
+          const r = e.results[i];
+          if (r.isFinal) finalTxt += r[0].transcript.trim() + " "; else interim += r[0].transcript;
+        }
+        ouviu = true;
+        field.value = (finalTxt + interim).replace(/\s+/g, " ").trim();
+      };
+      sr.onerror = e => { if (e.error !== "no-speech" && e.error !== "aborted") erro = e.error; };
+      sr.onend = () => {
+        // O navegador encerra sozinho depois de uma pausa; continua até a pessoa tocar em Parar.
+        if (!parou && !erro && Date.now() - t0 < 60000) { try { sr.start(); return; } catch { /* encerra abaixo */ } }
+        endUI();
+        if (erro && !ouviu) {
+          if (erro === "not-allowed") { st.textContent = "Permita o uso do microfone para falar a pergunta."; return; }
+          srFalhou = true;
+          if (canRec) startRecorder();
+          else st.textContent = "O reconhecimento de voz não está disponível neste navegador. Digite a pergunta.";
+          return;
+        }
+        finish(field.value);
+      };
+      field.value = "";
+      ativo = { parar: () => { parou = true; try { sr.stop(); } catch { endUI(); } } };
+      try { sr.start(); } catch { srFalhou = true; ativo = null; if (canRec) startRecorder(); return; }
+      startUI("Ouvindo… fale a pergunta inteira. Toque em Parar quando terminar.");
+    }
+
+    // Gravação enviada ao Whisper: para navegadores sem reconhecimento de voz.
+    async function startRecorder() {
+      let stream;
+      try { stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true, channelCount: 1 } }); }
+      catch { st.textContent = "Permita o uso do microfone para falar a pergunta."; return; }
+      const mime = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"].find(m => MediaRecorder.isTypeSupported?.(m));
+      const rec = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+      const chunks = [];
+      rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+      // Medidor de volume: mostra se o microfone está captando a voz.
+      let ac = null, raf = 0;
+      try {
+        ac = new (window.AudioContext || window.webkitAudioContext)();
+        const an = ac.createAnalyser(); an.fftSize = 512;
+        ac.createMediaStreamSource(stream).connect(an);
+        const buf = new Uint8Array(an.fftSize);
+        meter.hidden = false;
+        const loop = () => { an.getByteTimeDomainData(buf); let m = 0; for (const v of buf) m = Math.max(m, Math.abs(v - 128)); bar.style.width = Math.min(100, m / 48 * 100) + "%"; raf = requestAnimationFrame(loop); };
+        loop();
+      } catch { /* sem medidor */ }
+      rec.onstop = async () => {
+        cancelAnimationFrame(raf); ac?.close().catch(() => {});
+        stream.getTracks().forEach(t => t.stop());
+        const dur = (Date.now() - t0) / 1000;
+        endUI();
+        const blob = new Blob(chunks, { type: rec.mimeType || mime || "audio/webm" });
+        if (blob.size < 2000 || dur < 1) { st.textContent = "A gravação ficou muito curta. Toque em Falar, diga a pergunta inteira e depois toque em Parar."; return; }
+        st.textContent = "Transcrevendo o áudio…";
+        try {
+          const { ok, j } = await postMedia({ modo: "audio", audio: await blobToBase64(blob), mime: blob.type });
+          if (!ok || !j.texto) { showErr(j.erro || "Não foi possível entender o áudio.", j); return; }
+          finish(j.texto);
+        } catch { st.textContent = "Sem conexão com o servidor. Tente de novo."; }
+      };
+      rec.start(250);
+      ativo = { parar: () => { if (rec.state === "recording") rec.stop(); } };
+      startUI("Gravando… fale a pergunta inteira. Toque em Parar quando terminar.");
+    }
+
+    mic.addEventListener("click", () => {
+      if (ativo) { ativo.parar(); return; }
+      if (SpeechRec && !srFalhou) startSpeech();
+      else if (canRec) startRecorder();
+      else st.textContent = "Este navegador não permite falar a pergunta. Digite.";
     });
   });
   // Colar print com Ctrl+V em qualquer ponto da aba aberta.
   document.addEventListener("paste", e => {
     const f = [...(e.clipboardData?.files || [])].find(x => x.type.startsWith("image/"));
     if (!f) return;
-    const id = !$("#v-checar").hidden ? "fala" : !$("#v-espectro").hidden ? "espTxt" : null;
+    const id = !$("#v-checar").hidden ? "fala" : !$("#v-espectro").hidden ? "espTxt" : !$("#v-acervo").hidden ? "acQ" : null;
     if (id && MEDIA_SEND[id]) { e.preventDefault(); MEDIA_SEND[id](f); }
   });
 }
@@ -1626,7 +2022,7 @@ function initCandidateUI() {
   $("#metodoPlanos").textContent = ORDER.map(k => `${CAND[k].nome}: ${CAND[k].registro || ""}`).join("; ");
   if (ORDER.length > 3) document.documentElement.classList.add("many");
 }
-initCandidateUI(); initMeta(); initCompare(); loadAvaliacao(); initCheck(); initChecks(); initReader(); initShare(); initTheme(); route();
+initCandidateUI(); initMeta(); initCompare(); loadAvaliacao(); initCheck(); initChecks(); initReader(); initAcervoUI(); initShare(); initTheme(); route();
 </script>
 </body>
 </html>

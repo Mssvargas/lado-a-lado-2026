@@ -1,0 +1,706 @@
+{
+ "grupo": "v2",
+ "levantamentos": [
+  "g1-bolsonaro",
+  "metropoles-bolsonaro"
+ ],
+ "itens": [
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 0,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A Constituição compilada mantém a reeleição para presidente (art. 14, § 5º, redação da EC 16/1997) e a composição da Câmara não foi alterada. O quadro de emendas constitucionais do Planalto não registra, entre 2019 e 2022, emenda sobre reeleição ou número de parlamentares.",
+   "evidencias": [
+    {
+     "descricao": "Constituição Federal compilada, art. 14, § 5º (reeleição) e art. 45",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    },
+    {
+     "descricao": "Quadro das emendas constitucionais (Planalto)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/quadro_emc.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 1,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "O Decreto 9.727/2019 fixou critérios e perfil profissional para cargos em comissão DAS e FCPE, mas não alcança a escolha de ministros. Se uma indicação é 'política' ou 'técnica' é juízo qualitativo, sem critério mensurável em fonte oficial.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 9.727/2019 (critérios para ocupação de cargos DAS/FCPE)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9727.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 2,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 13.844/2019 (conversão da MP 870/2019) transformou o Ministério da Integração Nacional e o Ministério das Cidades no Ministério do Desenvolvimento Regional, e a pasta não foi recriada no mandato.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.844/2019, art. 57, IV",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13844.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 3,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 13.844/2019 listou 16 ministérios no art. 19, além dos titulares com status de ministro no art. 20 (Casa Civil, Secretaria de Governo, Secretaria-Geral, GSI, AGU). No mandato foram recriados o Ministério das Comunicações (Lei 14.074/2020) e o do Trabalho e Previdência (Lei 14.261/2021), ou seja, o número nunca ficou em 15 ou menos.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.844/2019, arts. 19 e 20",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13844.htm"
+    },
+    {
+     "descricao": "Lei 14.074/2020 (cria o Ministério das Comunicações)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L14074.htm"
+    },
+    {
+     "descricao": "Lei 14.261/2021 (cria o Ministério do Trabalho e Previdência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14261.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 4,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O Decreto 9.725/2019 extinguiu cargos em comissão, funções e gratificações do Executivo. Os dados do Atlas do Estado Brasileiro (Ipea, com base no Painel Estatístico de Pessoal e no Siape) mostram, porém, que a ocupação de cargos DAS + FCPE passou de 22.740 (jun/2018) para 21.519 (2019) e voltou a 22.620 (jun/2021), queda de apenas 0,5%. Houve o ato de corte de postos, sem redução relevante de ocupantes.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 9.725/2019 (extingue cargos em comissão e funções de confiança)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9725.htm"
+    },
+    {
+     "descricao": "Ipea/Atlas do Estado Brasileiro, nota técnica 'Presença de militares em cargos e funções comissionados do Executivo federal', tabela 5 (total DAS e FCPE, 2013-2021)",
+     "tipo": "dado_oficial",
+     "url": "https://www.ipea.gov.br/atlasestado/arquivos/rmd/6838-ntpresencademilitarespublicacaopreliminar.pdf"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 5,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 13.844/2019 transformou os ministérios da Fazenda, do Planejamento, da Indústria e Comércio Exterior e do Trabalho no Ministério da Economia.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.844/2019, art. 57, I",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13844.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 6,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.284/2021 instituiu o Auxílio Brasil em substituição ao Bolsa Família, e a Lei 14.342/2022 criou em caráter permanente um benefício extraordinário que complementa a renda das famílias até R$ 400.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.284/2021 (Programa Auxílio Brasil)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14284.htm"
+    },
+    {
+     "descricao": "Lei 14.342/2022 (benefício extraordinário permanente, piso de R$ 400)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14342.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 7,
+   "status": "parcial",
+   "percentual": 25,
+   "justificativa": "A MP 898/2019 autorizou o pagamento de dezembro de 2019 como abono natalino, mas perdeu a vigência sem conversão em lei. Não há norma equivalente para 2020, 2021 ou 2022 (a Lei 14.284/2021, que substituiu o Bolsa Família, não prevê 13º). O pagamento ocorreu em 1 dos 4 anos do mandato.",
+   "evidencias": [
+    {
+     "descricao": "MP 898/2019 (abono natalino de 2019; vigência encerrada)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/mpv/mpv898.htm"
+    },
+    {
+     "descricao": "Lei 14.284/2021 (Auxílio Brasil, sem 13º)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14284.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 9,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Segundo o TCU (Contas do Presidente), o Governo Central teve déficit primário de R$ 88,9 bilhões em 2019 e de R$ 745,3 bilhões em 2020. O primeiro superávit do mandato veio só em 2022 (R$ 54,9 bilhões).",
+   "evidencias": [
+    {
+     "descricao": "TCU, Contas do Presidente 2022, Política Fiscal (resultado primário 2020-2022)",
+     "tipo": "auditoria",
+     "url": "https://sites.tcu.gov.br/contas-do-governo-2022/03-politica-fiscal.html"
+    },
+    {
+     "descricao": "TCU, Contas do Governo 2019, Política Fiscal (déficit de R$ 88,9 bi em 2019)",
+     "tipo": "auditoria",
+     "url": "https://sites.tcu.gov.br/contas-do-governo-2019/politica-fiscal.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 10,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A dívida bruta do governo geral (série 13761 do Banco Central) passou de R$ 5,27 trilhões em dez/2018 para R$ 7,22 trilhões em dez/2022, alta de 37%. Em proporção do PIB (série 13762), caiu de 75,3% para 71,7%, recuo de 4,8%. Por nenhum dos dois critérios houve redução de 20%.",
+   "evidencias": [
+    {
+     "descricao": "Banco Central, SGS 13761 – Dívida bruta do governo geral (R$ milhões)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13761/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    },
+    {
+     "descricao": "Banco Central, SGS 13762 – Dívida bruta do governo geral (% do PIB)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 11,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A EC 103/2019 reformou a Previdência sem instituir regime de capitalização; o texto promulgado não contém o termo.",
+   "evidencias": [
+    {
+     "descricao": "Emenda Constitucional 103/2019",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 12,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Pelo estudo oficial da Receita Federal, a carga tributária bruta foi de 32,58% do PIB em 2018, 32,53% em 2019, 30,91% em 2020, 32,95% em 2021 e 33,56% em 2022. A parcela federal foi de 22,09% para 22,72%. Ao fim do mandato, a carga estava acima do nível de 2018; as quedas de 2019 e 2020 não se mantiveram.",
+   "evidencias": [
+    {
+     "descricao": "Receita Federal, Carga Tributária no Brasil 2022 (série 2018-2022, % do PIB)",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/estudos/carga-tributaria/carga-tributaria-no-brasil-2022"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 13,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "O PL 3887/2020, enviado pelo Executivo para unificar PIS e Cofins na CBS, não foi votado no mandato; em 2023 ainda aguardava criação de comissão na Câmara. Nenhuma lei unificou tributos federais entre 2019 e 2022.",
+   "evidencias": [
+    {
+     "descricao": "Câmara dos Deputados, PL 3887/2020 (CBS) – situação da tramitação",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2258196"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 14,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei Complementar 179/2021 definiu os objetivos do Banco Central e dispôs sobre sua autonomia técnica, operacional, administrativa e financeira, com mandatos fixos para presidente e diretores.",
+   "evidencias": [
+    {
+     "descricao": "Lei Complementar 179/2021",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp179.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 15,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A MP 905/2019 instituiu o Contrato de Trabalho Verde e Amarelo, mas foi revogada pela MP 955/2020. Nenhuma norma posterior recriou o modelo no mandato.",
+   "evidencias": [
+    {
+     "descricao": "MP 905/2019 (revogada)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/mpv/mpv905.htm"
+    },
+    {
+     "descricao": "MP 955/2020 (revoga a MP 905)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/mpv/mpv955.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 16,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Resolução Gecex 269/2021 reduziu em 10% as alíquotas do Imposto de Importação de cerca de 87% do universo tarifário, e a Resolução Gecex 353/2022 fez nova redução de 10%. A parte sobre barreiras não tarifárias não tem indicador oficial que permita medir.",
+   "evidencias": [
+    {
+     "descricao": "MDIC/Camex – Perguntas sobre a Resolução Gecex 269/2021",
+     "tipo": "norma",
+     "url": "https://www.gov.br/mdic/pt-br/assuntos/camex/estrategia-comercial/tarifas/perguntas-sobre-resolucao-gecex-269"
+    },
+    {
+     "descricao": "MDIC/Camex – Resoluções Gecex sobre alterações tarifárias (Gecex 269/2021 e 353/2022)",
+     "tipo": "norma",
+     "url": "https://www.gov.br/mdic/pt-br/assuntos/camex/estrategia-comercial/resolucoes-gecex-sobre-alteracoes-tarifarias"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 17,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.195/2021 trata da facilitação da abertura de empresas: ficha cadastral simplificada, integração dos órgãos de registro e baixa automática de CNPJ inapto. A Lei 13.874/2019 (Liberdade Econômica) dispensou atos de liberação para atividades de baixo risco.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.195/2021 (facilitação para abertura de empresas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14195.htm"
+    },
+    {
+     "descricao": "Lei 13.874/2019 (Declaração de Direitos de Liberdade Econômica)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13874.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 18,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "A política de preços de derivados é decisão empresarial da Petrobras, sem norma federal que a fixe. Não foi localizada série oficial pública que compare os preços praticados com a paridade internacional no período e que permita aferir a promessa sem recorrer a análises de terceiros.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 19,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O TCU fiscalizou e registrou a alienação da Refinaria Landulpho Alves (Rlam) ao fundo Mubadala, concluída com pagamento de US$ 1,8 bilhão, dentro do programa de desinvestimento em refino. Pelo Termo de Compromisso de Cessação firmado com o Cade em 2019, a Petrobras se comprometeu a vender participações na NTS, na TAG, na TBG e na Gaspetro.",
+   "evidencias": [
+    {
+     "descricao": "TCU – Fiscalização do desinvestimento em refino pela Petrobras: alienação da Rlam (TC 024.763/2020-9)",
+     "tipo": "auditoria",
+     "url": "https://portal.tcu.gov.br/data/files/30/26/80/89/6C6F0810B4FE0FF7E18818A8/Alienacao%20RLAM%20SE.pdf"
+    },
+    {
+     "descricao": "Cade – TCC com a Petrobras para venda de ativos de gás natural (2019)",
+     "tipo": "ato_publicado",
+     "url": "https://www.gov.br/cade/pt-br/assuntos/noticias/cade-e-petrobras-celebram-acordo-para-venda-de-ativos-no-mercado-de-gas-natural"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 20,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A tabela progressiva do IR da pessoa física (Lei 11.482/2007, art. 1º, IX) seguiu a mesma de abril de 2015 durante todo o mandato, com várias alíquotas; só foi alterada pela Lei 14.663/2023. O PL 2337/2021, que mudava o IR, não criava alíquota única e parou no Senado.",
+   "evidencias": [
+    {
+     "descricao": "Lei 11.482/2007, art. 1º (tabela progressiva mensal do IRPF)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11482.htm"
+    },
+    {
+     "descricao": "Câmara dos Deputados, PL 2337/2021 – aguardando apreciação pelo Senado",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2288389"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 21,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Lei 14.288/2021, sancionada no mandato, prorrogou até 31/12/2023 a contribuição sobre a receita bruta, que substitui a contribuição sobre a folha, para os setores já beneficiados (Lei 12.546/2011). Não houve desoneração ampla ou nova da folha; a medida manteve o regime que já existia.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.288/2021 (prorroga a desoneração da folha até 2023)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14288.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 22,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 10.797/2021 elevou as alíquotas do IOF-crédito entre 20/09/2021 e 31/12/2021 (por exemplo, para 0,00559% ao dia no caso de pessoa jurídica). É aumento de tributo feito pelo próprio Executivo.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 10.797/2021 (altera o Decreto 6.306/2007 – IOF)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/decreto/D10797.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 23,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "O art. 8º, II, da Constituição continua vedando mais de uma organização sindical por categoria na mesma base territorial. Nenhuma emenda de 2019-2022 alterou o dispositivo.",
+   "evidencias": [
+    {
+     "descricao": "Constituição Federal compilada, art. 8º, II",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    },
+    {
+     "descricao": "Quadro das emendas constitucionais (Planalto)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/quadro_emc.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 24,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Nenhuma emenda constitucional ou lei de 2019-2022 recriou contribuição sobre movimentação financeira. O estudo de carga tributária da Receita Federal de 2022 só cita a CPMF entre as rubricas residuais de tributos extintos.",
+   "evidencias": [
+    {
+     "descricao": "Quadro das emendas constitucionais (Planalto)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/quadro_emc.htm"
+    },
+    {
+     "descricao": "Receita Federal, Carga Tributária no Brasil 2022",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/estudos/carga-tributaria/carga-tributaria-no-brasil-2022"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 25,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Em 2019 a Petrobras firmou com o Cade um TCC para vender suas participações nas transportadoras NTS, TAG e TBG e nas distribuidoras via Gaspetro. A Lei 14.134/2021 (Nova Lei do Gás), regulamentada pelo Decreto 10.712/2021, reorganizou o transporte e a comercialização para abrir o mercado. Os atos atendem o núcleo da promessa; o efeito sobre a participação de mercado da Petrobras não foi medido aqui.",
+   "evidencias": [
+    {
+     "descricao": "Cade – TCC com a Petrobras no mercado de gás natural (2019)",
+     "tipo": "ato_publicado",
+     "url": "https://www.gov.br/cade/pt-br/assuntos/noticias/cade-e-petrobras-celebram-acordo-para-venda-de-ativos-no-mercado-de-gas-natural"
+    },
+    {
+     "descricao": "Lei 14.134/2021 (Nova Lei do Gás)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14134.htm"
+    },
+    {
+     "descricao": "Decreto 10.712/2021 (regulamenta a Lei 14.134/2021)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/decreto/D10712.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 26,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A BNCC continua instituída pela Resolução CNE/CP 2/2017 e, para o ensino médio, pelo documento homologado em dezembro de 2018. No mandato, a única norma nova foi o complemento de Computação (Parecer CNE/CEB 2/2022 e Resolução CNE/CEB 1/2022), que não altera o conteúdo-base. Não foi localizada norma federal sobre 'aprovação automática'.",
+   "evidencias": [
+    {
+     "descricao": "MEC – Histórico da BNCC",
+     "tipo": "ato_publicado",
+     "url": "http://basenacionalcomum.mec.gov.br/historico"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 27,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Segundo a Diretoria de Educação Preparatória e Assistencial do Exército, o Sistema Colégio Militar tem 15 colégios, dos quais 12 em capitais. No mandato, o Colégio Militar de São Paulo (criado por portaria de outubro de 2018) começou as aulas em 2020 e o da Vila Militar foi criado em novembro de 2022, fora de capital. Ficaram 15 capitais sem colégio militar.",
+   "evidencias": [
+    {
+     "descricao": "Exército/DEPA – Histórico do Sistema Colégio Militar do Brasil",
+     "tipo": "ato_publicado",
+     "url": "https://www.depa.eb.mil.br/historico"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 28,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O Decreto 10.755/2021 regulamentou de novo a Lei 8.313/1991 (Rouanet) e a sistemática do Pronac, o que configura revisão normativa. Não foi localizado relatório oficial de auditoria específica da lei no mandato, a outra metade da promessa.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 10.755/2021 (regulamenta a Lei 8.313/1991 – Pronac)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/decreto/D10755.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 29,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "A promessa não define meta nem indicador (custo ou prazo de quê, em qual modal). Não foi localizada série oficial consolidada de custos e prazos de embarque e desembarque para 2018-2022 que permita aferi-la.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 30,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Prestação de Contas do Presidente de 2022 (Programa 2222 – Saneamento Básico, fonte Sisplan/MDR) registra 136 obras de abastecimento de água e 175 de esgotamento sanitário concluídas em municípios entre 2020 e 2022 com recursos federais. A Lei 14.026/2020 atualizou o marco legal e as condições de acesso a esses recursos.",
+   "evidencias": [
+    {
+     "descricao": "CGU – Prestação de Contas do Presidente da República 2022, item 3.2.5 (Programa 2222)",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2023/04/cgu-divulga-prestacao-de-contas-do-presidente-da-republica-de-2022/pcpr-2022.pdf"
+    },
+    {
+     "descricao": "Lei 14.026/2020 (novo marco legal do saneamento)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L14026.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 31,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 13.844/2019 (art. 21) passou ao Ministério da Agricultura a agricultura familiar, a reforma agrária e regularização fundiária, a aquicultura e pesca e o Serviço Florestal Brasileiro, e o Decreto 9.667/2019 aprovou a nova estrutura regimental.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.844/2019, art. 21",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13844.htm"
+    },
+    {
+     "descricao": "Decreto 9.667/2019 (estrutura regimental do MAPA)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9667.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 32,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "Não foi localizada série oficial pública do tempo médio de emissão de licenças ambientais federais (Ibama) para 2018-2022 que permita comparar prazos antes e depois. Sem esse dado, a redução não pode ser confirmada nem descartada.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 33,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Leitura literal: a Lei Complementar 87/1996 (Lei Kandir) foi alterada no mandato pelas LCs 190/2022 (DIFAL do ICMS) e 194/2022 (essencialidade de combustíveis, energia e comunicações), ambas sancionadas. Nenhuma delas mexeu na desoneração de exportações de produtos primários, que era o ponto citado na campanha.",
+   "evidencias": [
+    {
+     "descricao": "Lei Complementar 190/2022 (altera a Lei Kandir)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp190.htm"
+    },
+    {
+     "descricao": "Lei Complementar 194/2022 (altera o CTN e a Lei Kandir)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp194.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 34,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Instrução Normativa Ibama 12/2019 alterou a IN 3/2013, criou o Simaf e detalhou o controle do javali (abate com armas brancas e de fogo, armadilhas, uso de cães), o que facilitou o manejo. O abate já era permitido desde 2013 como 'controle' de espécie invasora, com cadastro; não foi criada uma liberação de caça propriamente dita, e a Lei 5.197/1967 não foi alterada.",
+   "evidencias": [
+    {
+     "descricao": "Instrução Normativa Ibama 12/2019 (DOU)",
+     "tipo": "norma",
+     "url": "https://www.in.gov.br/web/dou/-/instrucao-normativa-n-12-de-25-de-marco-de-2019-70006233"
+    },
+    {
+     "descricao": "Lei 5.197/1967 (proteção à fauna)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l5197.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 35,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "O Executivo enviou o PL 191/2020, que regulamentava mineração e geração de energia em terras indígenas, mas o projeto não foi votado no mandato e foi retirado pelo autor em 2023. Não houve titulação de terras indígenas a particulares nem autorização legal de venda.",
+   "evidencias": [
+    {
+     "descricao": "Câmara dos Deputados, PL 191/2020 – situação (retirado pelo autor)",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2236765"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 36,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "Pelos Boletins das Empresas Estatais Federais, havia 134 estatais ativas no 4º tri/2018, 133 no 1º tri/2019 e 200 no 4º tri/2019, já com nova base de contagem. A redução no primeiro ano ficou muito abaixo de 50. Ao longo do mandato o número caiu de 200 (4º tri/2019) para 127 (4º tri/2022), uma redução de 73, que supera a meta, mas fora do prazo prometido.",
+   "evidencias": [
+    {
+     "descricao": "Boletim das Empresas Estatais Federais nº 9 (4º tri/2018)",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/gestao/pt-br/central-de-conteudo/publicacoes/boletins/boletim-das-empresas-estatais-federais/arquivos/9a-edicao-boletim-das-empresas-estatais-federais.pdf"
+    },
+    {
+     "descricao": "Boletim das Empresas Estatais Federais nº 13 (4º tri/2019)",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/gestao/pt-br/central-de-conteudo/publicacoes/boletins/boletim-das-empresas-estatais-federais/arquivos/13a-edicao-boletim-das-empresas-estatais-federais.pdf"
+    },
+    {
+     "descricao": "Boletim das Estatais – 4º tri/2022",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/gestao/pt-br/central-de-conteudo/publicacoes/boletins/boletim-das-empresas-estatais-federais/arquivos/boletim-das-estatais-4t-2022.pdf"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 37,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.182/2021, que autorizou a desestatização da Eletrobras, destinou parte do valor adicionado pelas novas concessões à Conta de Desenvolvimento Energético (50%) e a programas regionais (revitalização de bacias, Amazônia Legal). Não vinculou os recursos ao pagamento da dívida pública.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.182/2021 (desestatização da Eletrobras), art. 3º",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14182.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 38,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Caixa e Banco do Brasil continuaram estatais, mas a Lei 14.182/2021 autorizou a desestatização da Eletrobras, controladora de Furnas e de grande parte da geração federal. A promessa de não privatizar Furnas e a geração foi descumprida.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.182/2021 (desestatização da Eletrobras, inclusive concessões de Furnas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14182.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 39,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A embaixada do Brasil em Israel continua em Tel Aviv, segundo o Itamaraty. Não houve ato oficial de transferência para Jerusalém.",
+   "evidencias": [
+    {
+     "descricao": "MRE – Embaixada do Brasil em Tel Aviv",
+     "tipo": "ato_publicado",
+     "url": "https://www.gov.br/mre/pt-br/embaixada-tel-aviv"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 40,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Não foi localizado ato oficial de rompimento de relações nem de fechamento da representação palestina em Brasília no mandato. O Itamaraty manteve o escritório de representação do Brasil em Ramala.",
+   "evidencias": [
+    {
+     "descricao": "MRE – Repartições do Brasil na Palestina (Escritório de Representação em Ramala)",
+     "tipo": "ato_publicado",
+     "url": "https://www.gov.br/mre/pt-br/assuntos/portal-consular/reparticoes-consulares-do-brasil/regiao/palestina/palestina"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  }
+ ]
+}

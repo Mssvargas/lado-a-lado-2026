@@ -84,11 +84,27 @@ Depois do comparativo, gere `data/resumo.json` com o prompt E. Ele alimenta a p�
 - `data/eleicoes.json`: acrescente o novo ano com os candidatos. Depois da eleição, inclua
   votos e eleito com os dados do TSE.
 
-### 6. Conferir, gerar e publicar
+- `data/verificacao/`: depois de atualizar as promessas, confira cada uma em fontes
+  oficiais com o prompt de `tools/PROMPT_VERIFICACAO.md`, um grupo de levantamentos por
+  vez. Ajuste no prompt a data de hoje e qual é o mandato atual.
+
+### 6. Atualizar o Acervo Constitucional
 
 ```bash
-python tools/verificar.py      # confere trechos, páginas e equilíbrio
+python tools/acervo.py
+```
+
+Baixa de novo, do Planalto, a Constituição e as leis do acervo, já com as emendas e
+alterações mais recentes. Para incluir uma lei, acrescente uma linha na lista `DOCS` de
+`tools/acervo.py`, com o link do texto compilado. Revise a contagem de artigos que o
+script imprime: um documento com 0 artigos indica mudança no formato da página.
+
+### 7. Conferir, gerar e publicar
+
+```bash
+python tools/verificar.py      # confere trechos, páginas, equilíbrio, verificação e acervo
 node tools/testar_pagina.js    # confere se a página inicia sem erro
+node tools/testar_api.js       # testa a API com a IA simulada
 python tools/build.py          # gera index.html
 python tools/og.py             # gera a imagem de prévia do link
 git add -A
