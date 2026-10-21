@@ -28,7 +28,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-21f';
+const VERSAO = '2026-10-21g';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -38,7 +38,7 @@ function fila(env, padrao) {
 }
 
 const MODELOS = {
-  groq: () => fila('GROQ_MODEL', ['openai/gpt-oss-120b', 'llama-3.3-70b-versatile', 'openai/gpt-oss-20b']),
+  groq: () => fila('GROQ_MODEL', ['openai/gpt-oss-120b', 'qwen/qwen3.8-27b', 'openai/gpt-oss-20b']),
   cerebras: () => fila('CEREBRAS_MODEL', ['gpt-oss-120b', 'llama-3.3-70b', 'qwen-3-235b-a22b-instruct-2507']),
   openrouter: () => fila('OPENROUTER_MODEL', ['openrouter/free', 'meta-llama/llama-3.3-70b-instruct:free']),
   gemini: () => fila('IA_MODEL', ['gemini-3.5-flash-lite', 'gemini-3.6-flash', 'gemini-3.5-flash'])
@@ -324,11 +324,25 @@ async function chamarGemini(prompt, modelo, maxTokens, timeoutMs) {
   return texto ? { ok: true, texto } : { ok: false, status: 502, msg: 'resposta vazia' };
 }
 
+// Modelos que o Groq oferece hoje. Os provedores tiram modelos do ar sem aviso; pular os que
+// sumiram evita gastar o prazo da resposta com erro. Sem a lista, tenta todos.
+let DISPONIVEIS = null, DISPONIVEIS_EM = 0;
+async function carregarDisponiveis() {
+  if (!process.env.GROQ_API_KEY || Date.now() - DISPONIVEIS_EM < 60 * 60 * 1000) return;
+  DISPONIVEIS_EM = Date.now();
+  const r = await comTempo('https://api.groq.com/openai/v1/models', { headers: { authorization: 'Bearer ' + process.env.GROQ_API_KEY } }, 4000);
+  const ids = ((r.data && r.data.data) || []).map((m) => m.id);
+  DISPONIVEIS = ids.length ? new Set(ids) : null;
+}
+const disponivel = (prov, modelo) => prov !== 'groq' || !DISPONIVEIS || DISPONIVEIS.has(modelo);
+
 // Percorre provedores e modelos até um responder com JSON válido.
 // aceita(json) rejeita resposta no formato certo mas sem conteúdo (ex.: o modelo copiou o molde).
 async function perguntar(prompt, maxTokens, prazo, trilha, aceita) {
+  await carregarDisponiveis();
   for (const prov of configurados()) {
     for (const modelo of MODELOS[prov]()) {
+      if (!disponivel(prov, modelo)) continue;
       let sobra = prazo - Date.now();
       if (sobra < 4000) return null;
       const chamar = () => prov === 'gemini'
@@ -356,7 +370,7 @@ async function perguntar(prompt, maxTokens, prazo, trilha, aceita) {
 
 const ORDEM_VISAO = ['groq', 'openrouter', 'gemini'];
 const MODELOS_VISAO = {
-  groq: () => fila('GROQ_MODEL_VISAO', ['meta-llama/llama-4-scout-17b-16e-instruct', 'qwen/qwen3.6-27b']),
+  groq: () => fila('GROQ_MODEL_VISAO', ['qwen/qwen3.8-27b', 'meta-llama/llama-4-scout-17b-16e-instruct']),
   openrouter: () => fila('OPENROUTER_MODEL_VISAO', ['openrouter/free']),
   gemini: () => MODELOS.gemini()
 };
@@ -373,10 +387,12 @@ function promptImagem() {
 }
 
 async function lerImagem(dataUrl, prazo, trilha) {
+  await carregarDisponiveis();
   const [, mime, b64] = /^data:(image\/[a-z]+);base64,(.*)$/.exec(dataUrl) || [];
   for (const prov of ORDEM_VISAO) {
     if (!process.env[CHAVE[prov]]) continue;
     for (const modelo of MODELOS_VISAO[prov]()) {
+      if (!disponivel(prov, modelo)) continue;
       const sobra = prazo - Date.now();
       if (sobra < 4000) return null;
       let r;
