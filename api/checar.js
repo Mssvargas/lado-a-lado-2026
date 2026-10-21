@@ -28,7 +28,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-21d';
+const VERSAO = '2026-10-21e';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -652,7 +652,7 @@ async function responderAcervo(req, corpo, envia) {
     } else descartadas++;
   }
   const out = {
-    modo: 'acervo', resposta: String(r.json.resposta || '').slice(0, 1500), citacoes, descartadas,
+    modo: 'acervo', busca: { consultas: consultas.slice(1), alvos, etapa: t ? t.modelo : 'sem IA: ' + resumoTrilha(trilha).join(' ; ') }, resposta: String(r.json.resposta || '').slice(0, 1500), citacoes, descartadas,
     limites: String(r.json.limites || '').slice(0, 400), artigos, modelo: r.modelo
   };
   lembrar(chave, out);
