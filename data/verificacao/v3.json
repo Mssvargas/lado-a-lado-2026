@@ -1281,6 +1281,136 @@
     }
    ],
    "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 29,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.723/2023 atualizou e manteve a Lei de Cotas no ensino superior e técnico federal. A Lei 15.142/2025 elevou para 30% a reserva de vagas para pessoas pretas, pardas, indígenas e quilombolas nos concursos federais, e o Decreto 11.443/2023 fixou mínimo de 30% de pessoas negras em cargos em comissão e funções de confiança.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.723/2023 (altera a Lei de Cotas, Lei 12.711/2012)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14723.htm"
+    },
+    {
+     "descricao": "Lei 15.142/2025 (reserva de 30% em concursos públicos)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15142.htm"
+    },
+    {
+     "descricao": "Decreto 11.443/2023 (30% de pessoas negras em cargos em comissão)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11443.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 30,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Minha Casa, Minha Vida foi retomado pela MP 1.162/2023, convertida na Lei 14.620/2023. A lei redefiniu faixas de renda e incluiu novas linhas, como fomento à locação social, unidades usadas e retrofit de prédios degradados em áreas centrais.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.620/2023 (Programa Minha Casa, Minha Vida)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14620.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 31,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.431, de 08/03/2023, instituiu o Programa Mulher Viver sem Violência, para integrar e ampliar os serviços públicos destinados a mulheres em situação de violência. A promessa era criar o programa e não fixava meta de cobertura; lacunas de atendimento em municípios não alteram a existência do ato.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.431/2023 (Programa Mulher Viver sem Violência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11431.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 32,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Nas listas oficiais de decretos e leis de 2023 a 2026 não há ato que inclua o Banco do Brasil no Programa Nacional de Desestatização ou autorize sua venda; a instituição segue sob controle da União até 21/10/2026. O cumprimento vale até a data da verificação, pois o mandato ainda está em curso.",
+   "evidencias": [
+    {
+     "descricao": "Senado, dados abertos: decretos federais de 2023",
+     "tipo": "norma",
+     "url": "https://legis.senado.leg.br/dadosabertos/legislacao/lista?tipo=DEC&ano=2023"
+    },
+    {
+     "descricao": "Senado, dados abertos: decretos federais de 2026",
+     "tipo": "norma",
+     "url": "https://legis.senado.leg.br/dadosabertos/legislacao/lista?tipo=DEC&ano=2026"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 33,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O Decreto 11.478, de 06/04/2023, excluiu a Empresa Brasileira de Correios e Telégrafos (ECT) do Programa Nacional de Desestatização e revogou sua qualificação no PPI. A empresa não foi privatizada até 21/10/2026.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 11.478/2023 (exclui os Correios do PND)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11478.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 34,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Não há ato de 2023 a 2026 que inclua a Petrobras no Programa Nacional de Desestatização. A empresa segue no Orçamento de Investimento da União, reservado às estatais, como mostra a Lei 15.061/2024, que abre crédito em favor da Petróleo Brasileiro S.A. O cumprimento vale até 21/10/2026, com o mandato ainda em curso.",
+   "evidencias": [
+    {
+     "descricao": "Senado, dados abertos: leis de 2024, incluindo a Lei 15.061/2024 (Orçamento de Investimento, Petróleo Brasileiro S.A.)",
+     "tipo": "norma",
+     "url": "https://legis.senado.leg.br/dadosabertos/legislacao/lista?tipo=LEI&ano=2024"
+    },
+    {
+     "descricao": "Senado, dados abertos: decretos federais de 2026",
+     "tipo": "norma",
+     "url": "https://legis.senado.leg.br/dadosabertos/legislacao/lista?tipo=DEC&ano=2026"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 35,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "Despacho presidencial de 1º/01/2023 mandou a CGU rever os sigilos impostos no governo anterior. O parecer da CGU, de 03/02/2023, fixou entendimentos pela publicidade de várias informações, como os registros de visitantes do Palácio do Planalto. Para as residências oficiais, o acesso continuou restrito a visitas de autoridades e de agentes privados com interesses junto à administração, e parte dos sigilos foi mantida.",
+   "evidencias": [
+    {
+     "descricao": "CGU: Parecer sobre Acesso à Informação para atender ao Despacho Presidencial de 1º de janeiro de 2023 (03/02/2023)",
+     "tipo": "auditoria",
+     "url": "https://basedeconhecimento.cgu.gov.br/handle/1/16744"
+    },
+    {
+     "descricao": "CGU: texto do parecer (seção 3.2, registros de entrada e saída de visitantes)",
+     "tipo": "auditoria",
+     "url": "https://www.gov.br/conarq/pt-br/assuntos/noticias/cgu-concluiu-o-parecer-sobre-acesso-a-informacao-para-atender-ao-despacho-presidencial-de-1o-de-janeiro-de-2023/copy_of_PARECERFINALSOBREACESSOINFORMAO_CGU_FEV2023.pdf"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
   }
  ]
 }
