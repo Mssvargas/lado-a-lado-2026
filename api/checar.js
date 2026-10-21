@@ -28,7 +28,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-21e';
+const VERSAO = '2026-10-21f';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -295,6 +295,11 @@ const limparPensamento = (t) => String(t || '').replace(/<think>[\s\S]*?<\/think
 async function chamarOpenAI(prov, prompt, modelo, maxTokens, timeoutMs) {
   const cfg = OPENAI_COMPAT[prov];
   const pedido = { model: modelo, messages: [{ role: 'user', content: prompt }], temperature: 0.1 };
+  // Modelos que raciocinam antes de responder (gpt-oss) gastam tokens nisso: com pouco limite,
+  // a resposta saía vazia ou cortada. Raciocínio curto e limite com folga.
+  const raciocina = /gpt-oss|qwen3|deepseek-r1|openrouter\/free/.test(modelo);
+  if (raciocina) maxTokens = Math.max(maxTokens, 3000);
+  if (/gpt-oss/.test(modelo) && prov !== 'openrouter') pedido.reasoning_effort = 'low';
   if (prov === 'groq') pedido.max_completion_tokens = maxTokens; else pedido.max_tokens = maxTokens;
   const headers = { 'content-type': 'application/json', authorization: 'Bearer ' + process.env[cfg.env] };
   if (prov === 'openrouter') headers['X-Title'] = 'Lado a Lado ' + ELEICAO.ano;
@@ -670,6 +675,11 @@ module.exports = async (req, res) => {
   };
 
   if (req.method === 'GET') {
+    // ?modelos=1 lista os modelos que o Groq oferece hoje (lista pública, sem chave na resposta).
+    if (/[?&]modelos=1/.test(String(req.url || '')) && process.env.GROQ_API_KEY) {
+      const r = await comTempo('https://api.groq.com/openai/v1/models', { headers: { authorization: 'Bearer ' + process.env.GROQ_API_KEY } }, 10000);
+      return envia(200, { groq: ((r.data && r.data.data) || []).map((m) => m.id).sort(), usados: MODELOS.groq() });
+    }
     return envia(200, {
       ok: true, versao: VERSAO, ia: configurados().length > 0, busca: !!process.env.TAVILY_API_KEY,
       imagem: ORDEM_VISAO.some((p) => !!process.env[CHAVE[p]]), audio: !!process.env.GROQ_API_KEY,
