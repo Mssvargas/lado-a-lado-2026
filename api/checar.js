@@ -28,7 +28,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-21b';
+const VERSAO = '2026-10-21c';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -40,7 +40,7 @@ function fila(env, padrao) {
 const MODELOS = {
   groq: () => fila('GROQ_MODEL', ['openai/gpt-oss-120b', 'llama-3.3-70b-versatile', 'openai/gpt-oss-20b']),
   cerebras: () => fila('CEREBRAS_MODEL', ['gpt-oss-120b', 'llama-3.3-70b', 'qwen-3-235b-a22b-instruct-2507']),
-  openrouter: () => fila('OPENROUTER_MODEL', ['openrouter/free', 'meta-llama/llama-3.3-70b-instruct:free', 'google/gemma-3-27b-it:free']),
+  openrouter: () => fila('OPENROUTER_MODEL', ['openrouter/free', 'meta-llama/llama-3.3-70b-instruct:free']),
   gemini: () => fila('IA_MODEL', ['gemini-3.5-flash-lite', 'gemini-3.6-flash', 'gemini-3.5-flash'])
 };
 const OPENAI_COMPAT = {
@@ -304,7 +304,7 @@ async function chamarOpenAI(prov, prompt, modelo, maxTokens, timeoutMs) {
 
 async function chamarGemini(prompt, modelo, maxTokens, timeoutMs) {
   const gc = { maxOutputTokens: Math.max(maxTokens, 4096), temperature: 0.1 };
-  if (/^gemini-3\.(5|6)/.test(modelo)) gc.thinkingLevel = 'minimal';
+  if (/^gemini-3\.(5|6)/.test(modelo)) gc.thinkingConfig = { thinkingLevel: 'minimal' };
   const r = await comTempo('https://generativelanguage.googleapis.com/v1beta/models/' + modelo + ':generateContent', {
     method: 'POST',
     headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY },
@@ -321,11 +321,20 @@ async function chamarGemini(prompt, modelo, maxTokens, timeoutMs) {
 async function perguntar(prompt, maxTokens, prazo, trilha, aceita) {
   for (const prov of configurados()) {
     for (const modelo of MODELOS[prov]()) {
-      const sobra = prazo - Date.now();
+      let sobra = prazo - Date.now();
       if (sobra < 4000) return null;
-      const r = prov === 'gemini'
-        ? await chamarGemini(prompt, modelo, maxTokens, Math.min(25000, sobra - 1000))
-        : await chamarOpenAI(prov, prompt, modelo, maxTokens, Math.min(25000, sobra - 1000));
+      const chamar = () => prov === 'gemini'
+        ? chamarGemini(prompt, modelo, maxTokens, Math.min(25000, sobra - 1000))
+        : chamarOpenAI(prov, prompt, modelo, maxTokens, Math.min(25000, sobra - 1000));
+      let r = await chamar();
+      // Limite por minuto do Groq: quando ele pede poucos segundos de espera, vale esperar e repetir.
+      const espera = !r.ok && /try again in ([\d.]+)s/i.exec(String(r.msg));
+      if (espera && Number(espera[1]) <= 8 && prazo - Date.now() > Number(espera[1]) * 1000 + 8000) {
+        trilha.push(prov + ':' + modelo + ': limite por minuto, esperou ' + espera[1] + 's');
+        await new Promise((ok) => setTimeout(ok, Number(espera[1]) * 1000 + 300));
+        sobra = prazo - Date.now();
+        r = await chamar();
+      }
       if (!r.ok) { trilha.push(prov + ':' + modelo + ': ' + String(r.msg).slice(0, 120)); continue; }
       const json = extrairJSON(r.texto);
       if (json && (!aceita || aceita(json))) return { json, modelo: prov + ':' + modelo };
@@ -340,7 +349,7 @@ async function perguntar(prompt, maxTokens, prazo, trilha, aceita) {
 const ORDEM_VISAO = ['groq', 'openrouter', 'gemini'];
 const MODELOS_VISAO = {
   groq: () => fila('GROQ_MODEL_VISAO', ['meta-llama/llama-4-scout-17b-16e-instruct', 'qwen/qwen3.6-27b']),
-  openrouter: () => fila('OPENROUTER_MODEL_VISAO', ['openrouter/free', 'google/gemma-3-27b-it:free']),
+  openrouter: () => fila('OPENROUTER_MODEL_VISAO', ['openrouter/free']),
   gemini: () => MODELOS.gemini()
 };
 
@@ -582,7 +591,7 @@ function validar(r, trechos, fcs, web) {
 
 // Só provedor, modelo e tipo da falha: mostra no navegador por que a IA não respondeu.
 function resumoTrilha(trilha) {
-  return trilha.slice(-4).map((s) => String(s).replace(/(gsk_|sk-|AIza)[\w-]{6,}/g, '***').slice(0, 100));
+  return trilha.slice(-12).map((s) => String(s).replace(/(gsk_|sk-|AIza)[\w-]{6,}/g, '***').slice(0, 100));
 }
 
 // "Art. 7º", "art 7", "artigo 7o" -> "art7"
