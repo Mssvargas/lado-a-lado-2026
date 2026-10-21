@@ -945,6 +945,91 @@
     }
    ],
    "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 10,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Emenda Constitucional 132, de 20/12/2023, alterou o Sistema Tributário Nacional, e a Lei Complementar 214/2025 a regulamentou, criando o IBS, a CBS e o Imposto Seletivo. A reforma tributária sobre o consumo foi aprovada e regulamentada no mandato.",
+   "evidencias": [
+    {
+     "descricao": "Emenda Constitucional 132/2023 (reforma tributária)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+    },
+    {
+     "descricao": "Lei Complementar 214/2025 (institui IBS, CBS e Imposto Seletivo)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp214.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 11,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Em 15/05/2023, a Diretoria Executiva da Petrobras, sociedade de economia mista controlada pela União, aprovou nova estratégia comercial para diesel e gasolina. Segundo o comunicado oficial da empresa, o anúncio 'encerra a subordinação obrigatória ao preço de paridade de importação'. A decisão é da companhia, e as referências de mercado continuam no novo modelo.",
+   "evidencias": [
+    {
+     "descricao": "Agência Petrobras: Petrobras aprova estratégia comercial de diesel e gasolina (16/05/2023)",
+     "tipo": "ato_publicado",
+     "url": "https://agencia.petrobras.com.br/w/petrobras-aprova-estrategia-comercial-de-diesel-e-gasolina"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 12,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.690, de 03/10/2023 (conversão da MP 1.176/2023), instituiu o Programa Emergencial de Renegociação de Dívidas de Pessoas Físicas Inadimplentes, o Desenrola Brasil. O programa de renegociação de dívidas das famílias foi criado por ato legal.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.690/2023 (Desenrola Brasil)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14690.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 13,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 15.270, de 26/11/2025, criou redução do imposto de renda que zera o imposto devido para rendimentos mensais de até R$ 5.000,00, com redução decrescente até R$ 7.350,00, além de tributação mínima para altas rendas.",
+   "evidencias": [
+    {
+     "descricao": "Lei 15.270/2025 (redução do IRPF até R$ 5 mil e tributação mínima de altas rendas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-lula",
+   "indice": 14,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "No Plano Safra 2023/2024, o CMN aprovou redução de no mínimo 0,5 ponto percentual nos juros de custeio para imóveis com Cadastro Ambiental Rural regular e práticas sustentáveis (Voto 24/2023). No Plano Safra 2025/2026, o Pronaf Custeio tem taxas de 2% ao ano para produtos da sociobiodiversidade e sistemas agroecológicos e de 3% para alimentos (Voto 38/2025).",
+   "evidencias": [
+    {
+     "descricao": "CMN: Voto 24/2023 (Plano Safra 2023/2024, item 6-A, redução para práticas sustentáveis)",
+     "tipo": "norma",
+     "url": "https://normativos.bcb.gov.br/Votos/CMN/202324/Voto_do_CMN_24_2023.pdf"
+    },
+    {
+     "descricao": "CMN: Voto 38/2025 (Plano Safra 2025/2026, taxas do Pronaf)",
+     "tipo": "norma",
+     "url": "https://normativos.bcb.gov.br/Votos/CMN/202538/Voto_do_CMN_38_2025.pdf"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
   }
  ]
 }

@@ -28,7 +28,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-21a';
+const VERSAO = '2026-10-21b';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -207,12 +207,27 @@ function paginasRelevantes(k, consultas, limite) {
     .map(([n]) => dados().planos[k].find((p) => p.p === n));
 }
 
+// Termos do dia a dia que a lei escreve de outro jeito (a mesma lista do site).
+const AC_SINONIMOS = {
+  'maioridade penal': 'penalmente inimputaveis menores de dezoito anos',
+  'carga horaria': 'duracao do trabalho',
+  '6x1': 'duracao do trabalho repouso semanal remunerado',
+  'jornada': 'duracao do trabalho normal horas semanais',
+  'reeleicao': 'reeleito periodo subsequente',
+  'foro privilegiado': 'processar e julgar originariamente',
+  'licenca maternidade': 'licenca gestante',
+  'salario maternidade': 'licenca gestante',
+  'porte de arma': 'porte de arma de fogo',
+  'aborto': 'aborto gestante'
+};
+
 // Artigos do acervo mais ligados às consultas. "art. 5", "artigo 7º" na pergunta puxam o artigo citado.
 function artigosRelevantes(consultas, docIds, limite) {
   const A = acervo();
   const ids = docIds.filter((d) => A.docs[d]);
   const refs = [];
-  for (const q of consultas) {
+  // Número de artigo só conta quando vem do texto da pessoa (a primeira consulta).
+  for (const q of consultas.slice(0, 1)) {
     const re = /\bart(?:igo)?s?\.?\s*(\d+)/g;
     let m;
     while ((m = re.exec(fold(q)))) refs.push(m[1]);
@@ -302,7 +317,8 @@ async function chamarGemini(prompt, modelo, maxTokens, timeoutMs) {
 }
 
 // Percorre provedores e modelos até um responder com JSON válido.
-async function perguntar(prompt, maxTokens, prazo, trilha) {
+// aceita(json) rejeita resposta no formato certo mas sem conteúdo (ex.: o modelo copiou o molde).
+async function perguntar(prompt, maxTokens, prazo, trilha, aceita) {
   for (const prov of configurados()) {
     for (const modelo of MODELOS[prov]()) {
       const sobra = prazo - Date.now();
@@ -312,8 +328,8 @@ async function perguntar(prompt, maxTokens, prazo, trilha) {
         : await chamarOpenAI(prov, prompt, modelo, maxTokens, Math.min(25000, sobra - 1000));
       if (!r.ok) { trilha.push(prov + ':' + modelo + ': ' + String(r.msg).slice(0, 120)); continue; }
       const json = extrairJSON(r.texto);
-      if (json) return { json, modelo: prov + ':' + modelo };
-      trilha.push(prov + ':' + modelo + ': JSON invalido');
+      if (json && (!aceita || aceita(json))) return { json, modelo: prov + ':' + modelo };
+      trilha.push(prov + ':' + modelo + ': ' + (json ? 'resposta incompleta' : 'JSON invalido'));
     }
   }
   return null;
@@ -502,7 +518,7 @@ function promptEspectro(frase, trechos) {
     '- "evidencias": cópia LITERAL de um bloco [PLANO], até 40 palavras, com a página certa.\n' +
     '- Português simples, sem adjetivos valorativos.\n\n' +
     'Frase: """' + frase + '"""\n\n=== CATEGORIAS ===\n' + cats + '\n\n=== TRECHOS DOS PLANOS ===\n' + (blocos.join('\n\n') || '(nenhum)') + '\n\n' +
-    'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|indefinido","categoria":"perXXX","justificativa":"1 a 2 frases","plano":"consta|consta_em_parte|nao_consta|contraria","explicacao_plano":"1 a 2 frases","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}]}';
+    'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|indefinido","categoria":"perXXX","justificativa":"<por que esta categoria, em 1 ou 2 frases>","plano":"consta|consta_em_parte|nao_consta|contraria","explicacao_plano":"<o que o plano diz sobre isso, em 1 ou 2 frases>","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}]}';
 }
 
 function promptExtrair(texto) {
@@ -518,11 +534,12 @@ function promptTermosAcervo(pergunta) {
   return 'Você prepara a busca de artigos de lei para responder a pergunta de um cidadão.\n' +
     'Documentos disponíveis: ' + docs + '.\n' +
     'Pergunta: """' + pergunta + '"""\n' +
-    'Responda só com JSON: {"consultas":["3 a 6 consultas de 1 a 4 palavras, com os termos que a própria lei usaria (ex.: \\"jornada\\", \\"duração do trabalho\\", \\"horas semanais\\")"],"documentos":["ids dos documentos mais prováveis, até 3"]}';
+    'Responda só com JSON: {"consultas":["3 a 6 consultas de 1 a 4 palavras, com os termos que a própria lei usaria (ex.: para jornada, \\"duração do trabalho\\" e \\"horas semanais\\"; para maioridade penal, \\"penalmente inimputáveis\\" e \\"menores de dezoito anos\\")"],"documentos":["ids dos documentos mais prováveis, até 3"]}';
 }
 
-function promptAcervo(pergunta, achados) {
-  const blocos = achados.map((x) => '[' + x.doc + ' | ' + x.a.n + '] (' + x.a.hier + ')\n' + janela(x.a, [pergunta], 1800)).join('\n\n');
+function promptAcervo(pergunta, achados, consultas) {
+  // Os dois artigos mais relevantes vão quase inteiros: artigos como o 7º da CF têm dezenas de incisos.
+  const blocos = achados.map((x, i) => '[' + x.doc + ' | ' + x.a.n + '] (' + x.a.hier + ')\n' + janela(x.a, consultas, i < 2 ? 4500 : 1200)).join('\n\n');
   return 'Você explica a legislação brasileira a um cidadão, de forma apartidária, usando SOMENTE os artigos abaixo. ' +
     'Eles vêm do texto compilado oficial do Planalto, com a redação em vigor.\n' +
     'Regras:\n' +
@@ -584,8 +601,10 @@ async function responderAcervo(req, corpo, envia) {
   if (!dentroDoLimite(ip)) return envia(429, { erro: 'Muitas consultas seguidas. Tente de novo em alguns minutos.' });
 
   const prazo = Date.now() + 52000, trilha = [];
-  let consultas = [pergunta], docIds = doc ? [doc] : [];
-  const t = await perguntar(promptTermosAcervo(pergunta), 300, Math.min(prazo, Date.now() + 12000), trilha);
+  const fp = ' ' + fold(pergunta).replace(/[^a-z0-9]+/g, ' ') + ' ';
+  let consultas = [pergunta].concat(Object.keys(AC_SINONIMOS).filter((k) => fp.includes(' ' + k + ' ')).map((k) => AC_SINONIMOS[k]));
+  let docIds = doc ? [doc] : [];
+  const t = await perguntar(promptTermosAcervo(pergunta), 400, Math.min(prazo, Date.now() + 12000), trilha);
   if (t && t.json) {
     consultas = consultas.concat((Array.isArray(t.json.consultas) ? t.json.consultas : []).map(String).slice(0, 6));
     if (!doc && Array.isArray(t.json.documentos)) docIds = t.json.documentos.map(String).filter((d) => A.docs[d]).slice(0, 3);
@@ -600,7 +619,7 @@ async function responderAcervo(req, corpo, envia) {
     }
   }
   const artigos = achados.map((x) => ({ doc: x.doc, titulo: A.docs[x.doc].titulo, url: A.docs[x.doc].url, n: x.a.n, hier: x.a.hier, t: x.a.t.slice(0, 1500) }));
-  const r = await perguntar(promptAcervo(pergunta, achados), 1200, prazo, trilha);
+  const r = await perguntar(promptAcervo(pergunta, achados, consultas), 1500, prazo, trilha, (j) => String(j.resposta || '').length > 20);
   if (!r) {
     console.log('[acervo] sem resposta: ' + trilha.join(' ; '));
     return envia(503, { erro: 'A IA não respondeu agora. Os artigos encontrados pela busca estão abaixo.', detalhe: resumoTrilha(trilha), artigos });
@@ -713,7 +732,8 @@ module.exports = async (req, res) => {
     const ks = quem ? [quem] : IDS;
     const trechos = {};
     for (const k of ks) trechos[k] = paginasRelevantes(k, [frase], quem ? 4 : 2);
-    const r = await perguntar(promptEspectro(frase, trechos), 900, prazo, trilha);
+    const r = await perguntar(promptEspectro(frase, trechos), 1500, prazo, trilha,
+      (j) => dados().categorias.some((c) => c.codigo === j.categoria) && String(j.justificativa || '').length > 25);
     if (!r) {
       console.log('[espectro] sem resposta: ' + trilha.join(' ; '));
       return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.', detalhe: resumoTrilha(trilha) });
@@ -752,7 +772,8 @@ module.exports = async (req, res) => {
   const web = (await webP).resultados || [];
 
   // 4. resposta
-  const r = await perguntar(promptResposta(frase, cand, trechos, fcs, web, consultas), 1800, prazo, trilha);
+  const r = await perguntar(promptResposta(frase, cand, trechos, fcs, web, consultas), 1800, prazo, trilha,
+    (j) => CLASSES.includes(j.classificacao) && String(j.explicacao || '').length > 20);
   if (!r) {
     console.log('[checar] sem resposta: ' + trilha.join(' ; '));
     return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.', detalhe: resumoTrilha(trilha) });

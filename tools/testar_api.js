@@ -26,16 +26,18 @@ const confere = (nome, ok, extra) => { console.log((ok ? "ok    " : "FALHA ") + 
   confere("GET informa acervo", g.j.acervo === true);
 
   // Acervo: a busca acha o art. 7º da CF; citação literal passa, inventada é descartada.
+  let promptAc = "";
   resposta = p => p.includes("prepara a busca de artigos")
     ? { consultas: ["duração do trabalho", "horas semanais"], documentos: ["cf"] }
-    : { resposta: "A Constituição fixa a jornada em 8 horas por dia e 40 por semana.", citacoes: [
+    : (promptAc = p, { resposta: "A Constituição fixa a jornada em 8 horas por dia e 40 por semana.", citacoes: [
         { doc: "cf", artigo: "Art. 7", trecho: "duração do trabalho normal não superior a 8 (oito) horas diárias e 40 (quarenta) horas semanais" },
-        { doc: "cf", artigo: "Art. 7º", trecho: "jornada de 36 horas para todos os trabalhadores do país sem exceção" }], limites: "" };
+        { doc: "cf", artigo: "Art. 7º", trecho: "jornada de 36 horas para todos os trabalhadores do país sem exceção" }], limites: "" });
   const a = await chamar({ modo: "acervo", pergunta: "Qual a jornada máxima de trabalho por semana?" });
   confere("acervo responde 200", a.status === 200, a.j.erro);
   confere("acervo acha o art. 7º da CF", (a.j.artigos || []).some(x => x.doc === "cf" && x.n === "Art. 7º"), (a.j.artigos || []).slice(0, 4).map(x => x.doc + " " + x.n).join(", "));
   confere("citação literal aceita", a.j.citacoes?.length === 1 && a.j.citacoes[0].artigo === "Art. 7º");
   confere("citação inventada descartada", a.j.descartadas === 1);
+  confere("a IA recebe o inciso XIII do art. 7º", promptAc.includes("40 (quarenta) horas semanais"));
 
   // Referência direta ao número do artigo.
   resposta = p => p.includes("prepara a busca") ? { consultas: [], documentos: ["cf"] } : { resposta: "x", citacoes: [] };
@@ -49,7 +51,7 @@ const confere = (nome, ok, extra) => { console.log((ok ? "ok    " : "FALHA ") + 
 
   // Espectro: o prompt leva os exemplos já classificados e o guia de impostos.
   let promptEsp = "";
-  resposta = p => { promptEsp = p; return { sobre: "indefinido", categoria: "per503", justificativa: "x", plano: "nao_consta", evidencias: [] }; };
+  resposta = p => { promptEsp = p; return { sobre: "indefinido", categoria: "per503", justificativa: "Tributar grandes fortunas é medida de redistribuição.", plano: "nao_consta", evidencias: [] }; };
   const s = await chamar({ modo: "espectro", frase: "taxar grandes fortunas e reduzir imposto de quem ganha pouco" });
   confere("espectro responde per503", s.j.categoria === "per503");
   confere("prompt do espectro tem guia e exemplos", promptEsp.includes("grandes fortunas") && promptEsp.includes("já classificadas"));
