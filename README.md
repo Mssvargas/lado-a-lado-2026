@@ -56,6 +56,9 @@ linguagem simples, com o trecho literal e a página do PDF.
 | `data/entregas/*.json` | Entregas de cada governo que não estavam no plano, com avaliações. O build junta em `data/entregas.json`. Critérios em `tools/PROMPT_ENTREGAS.md`. |
 | `data/acervo.json`, `data/acervo/` | Acervo Constitucional: índice e um arquivo por documento, com os artigos. Gerado por `tools/acervo.py`. |
 | `data/eleicoes.json` | Eleições presidenciais desde 1891. |
+| `data/eleicoes_ideologia.json` | Posição ideológica de cada candidato, com fonte. |
+| `data/governos/*.json` | Cada governo desde 1889: 3 avanços e 3 críticas com fonte. O build junta em `data/governos.json`. Critérios em `tools/PROMPT_HISTORIA.md`. |
+| `data/series_historicas.json` | PIB, inflação, resultado fiscal, dívida, analfabetismo, Ideb e pobreza por ano. |
 | `data/eleicao.json` | Eleição atual: ano, candidatos, exemplos. Único lugar com nomes de candidatos. |
 | `tools/add_plano.py` | Converte o PDF de um plano e o registra no site. |
 | `tools/verificar.py` | Confere trechos, páginas, equilíbrio, verificação oficial e acervo antes de publicar. |

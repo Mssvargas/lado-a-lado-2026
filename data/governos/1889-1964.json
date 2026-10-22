@@ -1,0 +1,1423 @@
+{
+ "periodo": "1889-11-15 a 1964-03-31",
+ "metodo": "Três avanços e três críticas por governo, cada um conferido no texto da fonte citada. Fontes: verbetes do CPDOC/FGV (DHBB e verbetes da Primeira República), a publicação oficial do Arquivo Nacional 'Os presidentes e a República', legislação oficial e artigo acadêmico. Entradas para presidentes, vices que assumiram, juntas e interinos com mais de 30 dias.",
+ "atualizado_em": "2026-10-22",
+ "governos": [
+  {
+   "id": "deodoro-1889",
+   "presidente": "Deodoro da Fonseca",
+   "inicio": "1889-11-15",
+   "fim": "1891-11-23",
+   "partido": null,
+   "chegada": "golpe ou ruptura",
+   "contexto": "Chefiou o governo provisório instalado pelo movimento militar que derrubou a Monarquia. Foi eleito presidente constitucional pelo Congresso em fevereiro de 1891 e renunciou nove meses depois.",
+   "avancos": [
+    {
+     "texto": "O governo provisório separou a Igreja do Estado, instituiu o casamento civil e laicizou os cemitérios, entre as primeiras transformações do regime republicano.",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    },
+    {
+     "texto": "O Decreto nº 6, de 19 de novembro de 1889, tornou eleitor todo cidadão que soubesse ler e escrever, trocando o critério de renda do Império pelo critério de instrução.",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Deodoro da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Deodoro%20da.pdf"
+     }
+    },
+    {
+     "texto": "Convocou a Assembleia Nacional Constituinte, que promulgou em 24 de fevereiro de 1891 a primeira Constituição republicana do país.",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Deodoro da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Deodoro%20da.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "O “decreto-rolha” (dezembro de 1889) permitiu julgar militarmente quem conspirasse contra a República; a imprensa foi duramente atingida e um jornal monarquista foi impedido de circular.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Deodoro da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Deodoro%20da.pdf"
+     }
+    },
+    {
+     "texto": "A política bancária do governo provisório, com emissão de moeda sem lastro, gerou o “Encilhamento”: especulação intensa, escalada inflacionária e quebra de empresas.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Deodoro da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Deodoro%20da.pdf"
+     }
+    },
+    {
+     "texto": "Em 3 de novembro de 1891 dissolveu o Congresso, medida inconstitucional apelidada de “golpe Lucena”, e decretou estado de sítio no Distrito Federal e em Niterói.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Deodoro da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Deodoro%20da.pdf"
+     }
+    }
+   ],
+   "nota": "Entrada única para o governo provisório (1889-1891) e o mandato constitucional (25/02 a 23/11/1891), que são contínuos. A chegada ao poder foi por golpe militar; a eleição indireta pelo Congresso Constituinte ocorreu em 25/02/1891. Militar sem filiação partidária indicada na fonte (partido = null)."
+  },
+  {
+   "id": "floriano-1891",
+   "presidente": "Floriano Peixoto",
+   "inicio": "1891-11-23",
+   "fim": "1894-11-15",
+   "partido": null,
+   "chegada": "sucessão (vice ou linha sucessória)",
+   "contexto": "Vice-presidente, assumiu com a renúncia de Deodoro. Governou sob a Revolta da Armada e a Revolução Federalista, com sucessivos estados de sítio.",
+   "avancos": [
+    {
+     "texto": "Suas primeiras medidas foram revogar o estado de sítio decretado por Deodoro e reabrir o Congresso Nacional dissolvido.",
+     "fonte": {
+      "titulo": "Verbete “PEIXOTO, Floriano” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PEIXOTO,%20Floriano.pdf"
+     }
+    },
+    {
+     "texto": "Procurou incentivar a indústria nacional, ainda incipiente, com a aprovação de um decreto que concedia auxílios financeiros às empresas.",
+     "fonte": {
+      "titulo": "Verbete “PEIXOTO, Floriano” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PEIXOTO,%20Floriano.pdf"
+     }
+    },
+    {
+     "texto": "Com a prefeitura do Rio, adotou medidas para os pobres urbanos, como a redução dos aluguéis de residências operárias, o barateamento da carne e o combate à especulação com gêneros básicos.",
+     "fonte": {
+      "titulo": "Verbete “PEIXOTO, Floriano” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PEIXOTO,%20Floriano.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Com apoio federal, os governadores que haviam apoiado o golpe de Deodoro foram derrubados, “pacífica ou violentamente”; a oposição o acusou de anular a autonomia dos estados.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “PEIXOTO, Floriano” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PEIXOTO,%20Floriano.pdf"
+     }
+    },
+    {
+     "texto": "Reformou compulsoriamente 13 generais que pediram eleições e, sob estado de sítio em abril de 1892, prendeu opositores civis e militares, muitos condenados ao desterro.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “PEIXOTO, Floriano” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PEIXOTO,%20Floriano.pdf"
+     }
+    },
+    {
+     "texto": "Depois que o STF anulou o Código Penal da Armada, em 1893, passou a obstar o funcionamento do tribunal, deixando vagas sem preencher por meses.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “PEIXOTO, Floriano” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PEIXOTO,%20Floriano.pdf"
+     }
+    }
+   ],
+   "nota": "Militar sem filiação partidária indicada na fonte (partido = null)."
+  },
+  {
+   "id": "prudente-1894",
+   "presidente": "Prudente de Morais",
+   "inicio": "1894-11-15",
+   "fim": "1898-11-15",
+   "partido": "PRP",
+   "chegada": "eleição direta",
+   "contexto": "Primeiro presidente civil, eleito pelo voto direto com apoio do Partido Republicano Federal. Governou entre a oposição jacobina e a Guerra de Canudos.",
+   "avancos": [
+    {
+     "texto": "Pôs fim à Revolução Federalista no Rio Grande do Sul com a assinatura da paz e a concessão de anistia aos revoltosos (1895).",
+     "fonte": {
+      "titulo": "Verbete “MORAIS, Prudente de” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MORAIS,%20Prudente%20de.pdf"
+     }
+    },
+    {
+     "texto": "A questão de limites com a Argentina, arbitrada pelo presidente dos Estados Unidos e negociada pelo barão do Rio Branco, foi resolvida a favor do Brasil.",
+     "fonte": {
+      "titulo": "Verbete “MORAIS, Prudente de” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MORAIS,%20Prudente%20de.pdf"
+     }
+    },
+    {
+     "texto": "Restabeleceu as relações com Portugal e assinou com o Japão, em 1895, o Tratado de Amizade, Comércio e Navegação, voltado a atrair imigrantes.",
+     "fonte": {
+      "titulo": "Verbete “MORAIS, Prudente de” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MORAIS,%20Prudente%20de.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "A repressão a Canudos terminou, em outubro de 1897, com mais de 20 mil mortos e o arraial de Belo Monte incendiado.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “GUERRA DE CANUDOS” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/GUERRA%20DE%20CANUDOS.pdf"
+     }
+    },
+    {
+     "texto": "Após o atentado de novembro de 1897, a alegada conspiração levou à detenção e à acusação de dezenas de opositores, sob estado de sítio no Distrito Federal e em Niterói.",
+     "autor_da_critica": "Raquel Sirotti, Varia Historia (2021)",
+     "fonte": {
+      "titulo": "SIROTTI, Raquel R. Direito penal e política na Primeira República: os processos judiciais relacionados à tentativa de assassinato de Prudente de Morais em 1897. Varia Historia, v. 37, n. 74, 2021",
+      "url": "https://doi.org/10.1590/0104-87752021000200005"
+     }
+    },
+    {
+     "texto": "Governou sob grave crise financeira herdada do Encilhamento, com grandes dívidas externas, e precisou negociar com banqueiros ingleses um empréstimo de consolidação (funding loan).",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MORAIS, Prudente de” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MORAIS,%20Prudente%20de.pdf"
+     }
+    }
+   ],
+   "nota": "Licenciou-se por doença de 10/11/1896 a 04/03/1897; o período do vice Manuel Vitorino tem entrada própria. Partido: chefe do PRP, eleito com apoio do PRF. O estado de sítio de 12/11/1897 consta do texto integral do artigo de Sirotti (conferido); o resumo confere as detenções."
+  },
+  {
+   "id": "vitorino-1896",
+   "presidente": "Manuel Vitorino",
+   "inicio": "1896-11-10",
+   "fim": "1897-03-04",
+   "partido": "PRF (Partido Republicano Federal)",
+   "chegada": "sucessão (vice ou linha sucessória)",
+   "contexto": "Vice-presidente, exerceu a Presidência por cerca de quatro meses durante a licença médica de Prudente de Morais. Era ligado aos florianistas (jacobinos).",
+   "avancos": [
+    {
+     "texto": "Comprou o palácio do Catete, no Rio de Janeiro, para ser a nova sede do governo federal, uma das medidas próprias que adotou na interinidade.",
+     "fonte": {
+      "titulo": "Verbete “VITORINO, Manuel” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/VITORINO,%20Manuel.pdf"
+     }
+    },
+    {
+     "texto": "Para saldar compromissos da dívida externa, arrendou estradas de ferro a companhias estrangeiras, medida financeira tomada nos quatro meses de interinidade.",
+     "fonte": {
+      "titulo": "Verbete “VITORINO, Manuel” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/VITORINO,%20Manuel.pdf"
+     }
+    },
+    {
+     "texto": "Manteve na Fazenda Bernardino de Campos, ministro do titular, preservando a condução da política financeira durante a interinidade.",
+     "fonte": {
+      "titulo": "Verbete “MORAIS, Prudente de” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MORAIS,%20Prudente%20de.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Enviou a terceira expedição a Canudos, sob o coronel Moreira César; o fracasso dela, com a morte do comandante, teve “desastrosa repercussão nacional”.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “VITORINO, Manuel” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/VITORINO,%20Manuel.pdf"
+     }
+    },
+    {
+     "texto": "Mudou o ministério à revelia do titular licenciado, colocando quatro baianos entre os sete ministros, o que aprofundou o atrito com Prudente.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MORAIS, Prudente de” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MORAIS,%20Prudente%20de.pdf"
+     }
+    },
+    {
+     "texto": "O interinato acabou em crise: Prudente reassumiu sem aviso, em março de 1897, dizendo saber de uma conspiração contra ele, enquanto o vice já tratava o afastamento como definitivo.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MORAIS, Prudente de” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MORAIS,%20Prudente%20de.pdf"
+     }
+    }
+   ],
+   "nota": "Interino com mais de 30 dias (10/11/1896 a 04/03/1897). Por ser um período curto, há poucos marcos registrados; o terceiro avanço é de menor alcance que os demais."
+  },
+  {
+   "id": "campos-sales-1898",
+   "presidente": "Campos Sales",
+   "inicio": "1898-11-15",
+   "fim": "1902-11-15",
+   "partido": "PRP",
+   "chegada": "eleição direta",
+   "contexto": "Republicano histórico paulista, eleito pelo voto direto. Concentrou o governo na estabilização financeira e num acordo com as situações estaduais.",
+   "avancos": [
+    {
+     "texto": "Negociou com a Casa Rothschild o funding loan, empréstimo de consolidação de dez milhões de libras que reorganizou o pagamento da dívida externa.",
+     "fonte": {
+      "titulo": "Verbete “SALES, Campos” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/SALES,%20Campos.pdf"
+     }
+    },
+    {
+     "texto": "Segundo o CPDOC, Campos Sales “promovera a recuperação financeira”, o que deu ao sucessor condições para um plano de obras reformista.",
+     "fonte": {
+      "titulo": "Verbete “ALVES, Rodrigues” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/ALVES,%20Rodrigues.pdf"
+     }
+    },
+    {
+     "texto": "Criou o Instituto de Manguinhos, voltado, entre outras tarefas, à fabricação de vacinas contra a peste bubônica.",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "A “política dos governadores” selou o compromisso da Presidência com as oligarquias dominantes nos estados e reduziu o espaço das oposições.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “POLÍTICA DOS GOVERNADORES” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/POL%C3%8DTICA%20DOS%20GOVERNADORES.pdf"
+     }
+    },
+    {
+     "texto": "A reforma da Comissão de Verificação de Poderes da Câmara permitiu as “degolas”: a não diplomação de eleitos da oposição.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “POLÍTICA DOS GOVERNADORES” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/POL%C3%8DTICA%20DOS%20GOVERNADORES.pdf"
+     }
+    },
+    {
+     "texto": "O ajuste trouxe quebra de bancos e empresas, arrocho salarial e desemprego acentuado durante todo o mandato, o que o tornou muito impopular.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “POLÍTICA DOS GOVERNADORES” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/POL%C3%8DTICA%20DOS%20GOVERNADORES.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "rodrigues-alves-1902",
+   "presidente": "Rodrigues Alves",
+   "inicio": "1902-11-15",
+   "fim": "1906-11-15",
+   "partido": "PRP",
+   "chegada": "eleição direta",
+   "contexto": "Ex-conselheiro do Império, eleito pelo voto direto. Seu governo priorizou a remodelação urbana e sanitária da capital e a política externa do barão do Rio Branco.",
+   "avancos": [
+    {
+     "texto": "Pelo Tratado de Petrópolis, negociado por Rio Branco, o Brasil comprou e anexou o Acre e se comprometeu a construir a ferrovia Madeira-Mamoré.",
+     "fonte": {
+      "titulo": "Verbete “ALVES, Rodrigues” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/ALVES,%20Rodrigues.pdf"
+     }
+    },
+    {
+     "texto": "Reformou o porto do Rio e entregou a Osvaldo Cruz a saúde pública, com a missão de melhorar as condições sanitárias de uma capital marcada por epidemias.",
+     "fonte": {
+      "titulo": "Verbete “ALVES, Rodrigues” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/ALVES,%20Rodrigues.pdf"
+     }
+    },
+    {
+     "texto": "O ministro Leopoldo Bulhões reformou o Tesouro e reorganizou o Banco do Brasil, que passou a funcionar como uma espécie de banco central.",
+     "fonte": {
+      "titulo": "Verbete “ALVES, Rodrigues” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/ALVES,%20Rodrigues.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "A abertura da avenida Central derrubou cortiços e habitações simples e expulsou a população mais pobre do centro do Rio.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “ALVES, Rodrigues” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/ALVES,%20Rodrigues.pdf"
+     }
+    },
+    {
+     "texto": "A vacinação obrigatória contra a varíola foi aplicada de forma autoritária, com agentes sanitários invadindo casas e vacinando à força, o que desencadeou a Revolta da Vacina.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “ALVES, Rodrigues” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/ALVES,%20Rodrigues.pdf"
+     }
+    },
+    {
+     "texto": "Na repressão à revolta, com estado de sítio, centenas de presos foram levados à ilha das Cobras e muitos deportados para o Norte, quase todos sem processo formal.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “REVOLTA DA VACINA” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/REVOLTA%20DA%20VACINA.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "afonso-pena-1906",
+   "presidente": "Afonso Pena",
+   "inicio": "1906-11-15",
+   "fim": "1909-06-14",
+   "partido": "PRM",
+   "chegada": "eleição direta",
+   "contexto": "Político mineiro, ex-ministro do Império, eleito pelo voto direto. Morreu no cargo em junho de 1909, durante a disputa pela sucessão.",
+   "avancos": [
+    {
+     "texto": "Adotou uma política imigrantista mais ativa, com colônias no Sul e incentivo à imigração japonesa; cerca de cem mil colonos entraram no país em seu mandato.",
+     "fonte": {
+      "titulo": "Verbete “PENA, Afonso” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PENA,%20Afonso.pdf"
+     }
+    },
+    {
+     "texto": "Liberou, em 1907, os recursos para que Cândido Rondon ligasse o Rio de Janeiro à Amazônia pelo telégrafo.",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    },
+    {
+     "texto": "A Caixa de Conversão, que apoiou desde antes da posse, garantiu a estabilidade cambial e o equilíbrio das finanças públicas no período.",
+     "fonte": {
+      "titulo": "Verbete “PENA, Afonso” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PENA,%20Afonso.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "A valorização do café do Convênio de Taubaté, avalizada pela União, acentuou as desigualdades regionais e a primazia da burguesia do café; ao manter lucros altos, estimulou nova superprodução.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “CONVÊNIO DE TAUBATÉ” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/CONV%C3%8ANIO%20DE%20TAUBAT%C3%89.pdf"
+     }
+    },
+    {
+     "texto": "Sancionou a Lei Adolfo Gordo (1907), que permitia expulsar estrangeiros por “segurança nacional”; jornais operários denunciavam arbitrariedades, e a lei era “uma constante ameaça”.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LEIS ADOLFO GORDO” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/LEIS%20ADOLFO%20GORDO.pdf"
+     }
+    },
+    {
+     "texto": "Condicionou o aval da União ao empréstimo do café, entre outros pontos, ao apoio paulista à candidatura de seu ministro Davi Campista à sucessão.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “PENA, Afonso” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PENA,%20Afonso.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "nilo-pecanha-1909",
+   "presidente": "Nilo Peçanha",
+   "inicio": "1909-06-14",
+   "fim": "1910-11-15",
+   "partido": "Partido Republicano Fluminense",
+   "chegada": "sucessão (vice ou linha sucessória)",
+   "contexto": "Vice-presidente, assumiu com a morte de Afonso Pena e governou 17 meses. O período foi marcado pela disputa entre Hermes da Fonseca e Rui Barbosa (Campanha Civilista).",
+   "avancos": [
+    {
+     "texto": "Criou o Ministério da Agricultura, Indústria e Comércio, voltado a modernizar o setor agrário com base no conhecimento científico.",
+     "fonte": {
+      "titulo": "Verbete “PEÇANHA, Nilo” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PE%C3%87ANHA,%20Nilo.pdf"
+     }
+    },
+    {
+     "texto": "Criou as Escolas de Aprendizes Artífices, que deram início ao ensino técnico no país, dentro de sua aposta na diversificação da produção.",
+     "fonte": {
+      "titulo": "Verbete “PEÇANHA, Nilo” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PE%C3%87ANHA,%20Nilo.pdf"
+     }
+    },
+    {
+     "texto": "Criou o Serviço de Proteção aos Índios (1910), dirigido por Cândido Rondon, primeira ação leiga e estatal de proteção aos povos indígenas.",
+     "fonte": {
+      "titulo": "Verbete “SERVIÇO DE PROTEÇÃO AOS ÍNDIOS” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/SERVI%C3%87O%20DE%20PROTE%C3%87%C3%83O%20AOS%20%C3%8DNDIOS.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Fez intervenções em estados para garantir a posse de presidentes estaduais aliados ao governo federal.",
+     "autor_da_critica": "Arquivo Nacional (publicação oficial)",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    },
+    {
+     "texto": "Com sua posse, a candidatura de Hermes da Fonseca passou a contar com a máquina federal; a eleição de 1910 foi marcada por denúncias recíprocas de fraude.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Hermes da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+     }
+    },
+    {
+     "texto": "O SPI nasceu sob uma política de integração que tratava a diversidade étnica como estágio transitório; segundo o CPDOC, o órgão acabou gerando resultados opostos à sua proposta.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “SERVIÇO DE PROTEÇÃO AOS ÍNDIOS” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/SERVI%C3%87O%20DE%20PROTE%C3%87%C3%83O%20AOS%20%C3%8DNDIOS.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "hermes-1910",
+   "presidente": "Hermes da Fonseca",
+   "inicio": "1910-11-15",
+   "fim": "1914-11-15",
+   "partido": null,
+   "chegada": "eleição direta",
+   "contexto": "Marechal e ex-ministro da Guerra, venceu Rui Barbosa na eleição de 1910. Governou entre a Revolta da Chibata, a “política das salvações” e a Guerra do Contestado.",
+   "avancos": [
+    {
+     "texto": "Diante da Revolta da Chibata, o governo decretou a extinção dos castigos físicos na Marinha e anistiou os marinheiros que se entregassem.",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Hermes da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+     }
+    },
+    {
+     "texto": "Cumprindo promessa feita ao operariado, construiu vilas operárias no subúrbio do Rio, em bairro que receberia seu nome, e na Gávea.",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Hermes da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+     }
+    },
+    {
+     "texto": "Concluiu a ferrovia Madeira-Mamoré, criou escolas técnico-profissionais e instalou a Universidade do Paraná.",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Hermes da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Após a anistia, reprimiu a revolta do Batalhão Naval: o bombardeio da ilha das Cobras matou centenas de marinheiros, e muitos outros morreram na prisão ou no desterro.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Hermes da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+     }
+    },
+    {
+     "texto": "A “política das salvações” substituiu grupos no poder nos estados por aliados, muitos deles militares, por manobras eleitorais ou uso da força.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Hermes da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+     }
+    },
+    {
+     "texto": "Em março de 1914 decretou estado de sítio no Distrito Federal e em Niterói, prorrogado até outubro, com prisão de oficiais e civis e fechamento de jornais.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FONSECA, Hermes da” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/FONSECA,%20Hermes%20da.pdf"
+     }
+    }
+   ],
+   "nota": "A fonte não indica filiação partidária, por isso partido = null; a candidatura foi lançada em convenção articulada por Pinheiro Machado."
+  },
+  {
+   "id": "venceslau-1914",
+   "presidente": "Venceslau Brás",
+   "inicio": "1914-11-15",
+   "fim": "1918-11-15",
+   "partido": "PRM",
+   "chegada": "eleição direta",
+   "contexto": "Ex-presidente de Minas e vice de Hermes, eleito pelo voto direto. Governou durante a Primeira Guerra Mundial, à qual o Brasil aderiu em 1917.",
+   "avancos": [
+    {
+     "texto": "Promulgou o novo Código Civil em 1º de janeiro de 1917 e incentivou concursos públicos na administração civil.",
+     "fonte": {
+      "titulo": "Verbete “BRÁS, Venceslau” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BR%C3%81S,%20Venceslau.pdf"
+     }
+    },
+    {
+     "texto": "Contra a carestia, criou o Comissariado de Alimentação, que tabelava preços de gêneros de primeira necessidade e fiscalizava depósitos.",
+     "fonte": {
+      "titulo": "Verbete “BRÁS, Venceslau” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BR%C3%81S,%20Venceslau.pdf"
+     }
+    },
+    {
+     "texto": "Promoveu em 1916 a solução da questão de limites entre Paraná e Santa Catarina, disputa ligada ao conflito do Contestado.",
+     "fonte": {
+      "titulo": "Verbete “BRÁS, Venceslau” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BR%C3%81S,%20Venceslau.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "No Contestado, o governo federal desmobilizou o movimento protegendo a madeireira estrangeira; após a retirada das tropas, a violência dos vaqueanos ficou conhecida como “açougue do Contestado”.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “GUERRA DO CONTESTADO” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/GUERRA%20DO%20CONTESTADO.pdf"
+     }
+    },
+    {
+     "texto": "Diante da greve geral de 1917 em São Paulo, mobilizou tropas e enviou dois navios de guerra ao porto de Santos para intimidar o movimento.",
+     "autor_da_critica": "Arquivo Nacional (publicação oficial)",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    },
+    {
+     "texto": "Na gripe espanhola, a saúde pública federal admitiu não conseguir controlar a epidemia; o país registrou mais de 35 mil mortes, com falta de leitos, remédios e caixões.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “GRIPE ESPANHOLA” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/GRIPE%20ESPANHOLA.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "delfim-1918",
+   "presidente": "Delfim Moreira",
+   "inicio": "1918-11-15",
+   "fim": "1919-07-28",
+   "partido": null,
+   "chegada": "sucessão (vice ou linha sucessória)",
+   "contexto": "Vice eleito, assumiu porque Rodrigues Alves, eleito presidente, adoeceu e morreu sem tomar posse. Governou até a posse de Epitácio Pessoa, escolhido em nova eleição.",
+   "avancos": [
+    {
+     "texto": "Sancionou a Lei nº 3.724, de 15 de janeiro de 1919, que regulou as indenizações por acidente de trabalho e equiparou a moléstia profissional ao acidente.",
+     "fonte": {
+      "titulo": "Verbete “MOREIRA, Delfim” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MOREIRA,%20Delfim.pdf"
+     }
+    },
+    {
+     "texto": "Transformou a Diretoria do Serviço de Povoamento no Departamento Nacional do Trabalho, com atribuições de inspeção do trabalho e questões operárias.",
+     "fonte": {
+      "titulo": "Verbete “MOREIRA, Delfim” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MOREIRA,%20Delfim.pdf"
+     }
+    },
+    {
+     "texto": "Ao fim da guerra, o Brasil passou a integrar o conselho executivo da recém-criada Liga das Nações e enviou delegação à Conferência de Paz de Paris.",
+     "fonte": {
+      "titulo": "Verbete “MOREIRA, Delfim” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MOREIRA,%20Delfim.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Enfrentou greves com violência: fechou sindicatos, extinguiu a União Geral dos Trabalhadores e expulsou lideranças anarquistas estrangeiras.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MOREIRA, Delfim” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MOREIRA,%20Delfim.pdf"
+     }
+    },
+    {
+     "texto": "Doente, manteve-se afastado das principais deliberações e delegou o poder ao ministro Afrânio de Melo Franco; o período ficou conhecido como “regência republicana”.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MOREIRA, Delfim” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MOREIRA,%20Delfim.pdf"
+     }
+    },
+    {
+     "texto": "Os déficits orçamentários da guerra se agravaram e o governo emitiu títulos de dívida e moeda sem lastro para cobrir despesas.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MOREIRA, Delfim” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/MOREIRA,%20Delfim.pdf"
+     }
+    }
+   ],
+   "nota": "Político do situacionismo mineiro, eleito vice na chapa de Rodrigues Alves; a fonte não explicita a filiação partidária, por isso partido = null."
+  },
+  {
+   "id": "epitacio-1919",
+   "presidente": "Epitácio Pessoa",
+   "inicio": "1919-07-28",
+   "fim": "1922-11-15",
+   "partido": null,
+   "chegada": "eleição direta",
+   "contexto": "Senador paraibano, eleito em 1919 na nova eleição aberta pela morte de Rodrigues Alves. Governou entre greves operárias e o início das revoltas tenentistas.",
+   "avancos": [
+    {
+     "texto": "Pelo Decreto nº 3.965, de 25 de dezembro de 1919, deu início a um plano de obras contra as secas do Nordeste.",
+     "fonte": {
+      "titulo": "Verbete “PESSOA, Epitácio” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PESSOA,%20Epit%C3%A1cio.pdf"
+     }
+    },
+    {
+     "texto": "Criou, em 7 de setembro de 1920, a Universidade do Rio de Janeiro, reunindo a Escola Politécnica e as faculdades de Medicina e de Direito.",
+     "fonte": {
+      "titulo": "Verbete “PESSOA, Epitácio” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PESSOA,%20Epit%C3%A1cio.pdf"
+     }
+    },
+    {
+     "texto": "Criou o Departamento Nacional de Saúde Pública e nomeou, pela primeira vez na República, civis para os ministérios militares.",
+     "fonte": {
+      "titulo": "Verbete “PESSOA, Epitácio” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PESSOA,%20Epit%C3%A1cio.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "A repressão às greves incluiu a prisão de dezenas de líderes e a deportação de cerca de 150; em 1921 promulgou nova Lei Adolfo Gordo contra o anarquismo, com fechamento de sindicatos.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “PESSOA, Epitácio” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PESSOA,%20Epit%C3%A1cio.pdf"
+     }
+    },
+    {
+     "texto": "Após a revolta de 1922, governou sob estado de sítio, fechou o Clube Militar por seis meses e o jornal Correio da Manhã e manteve jornalistas presos.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “PESSOA, Epitácio” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PESSOA,%20Epit%C3%A1cio.pdf"
+     }
+    },
+    {
+     "texto": "As obras contra as secas foram contratadas com três firmas estrangeiras sem respeitar as normas de concorrência pública, o que gerou severas críticas da oposição.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “PESSOA, Epitácio” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/PESSOA,%20Epit%C3%A1cio.pdf"
+     }
+    }
+   ],
+   "nota": "Candidatura lançada pelo PRM e apoiada pelo PRR e por parte do PRP; a filiação partidária própria não está indicada na fonte, por isso partido = null."
+  },
+  {
+   "id": "bernardes-1922",
+   "presidente": "Artur Bernardes",
+   "inicio": "1922-11-15",
+   "fim": "1926-11-15",
+   "partido": "PRM",
+   "chegada": "eleição direta",
+   "contexto": "Ex-presidente de Minas, tomou posse já sob estado de sítio. Governou entre a Revolução de 1924, a Coluna Prestes e conflitos estaduais.",
+   "avancos": [
+    {
+     "texto": "Promulgou a Lei Elói Chaves (1923), que criou caixas de aposentadorias e pensões nas ferrovias, considerada embrião da previdência social.",
+     "fonte": {
+      "titulo": "Verbete “BERNARDES, Artur” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BERNARDES,%20Artur.pdf"
+     }
+    },
+    {
+     "texto": "Sancionou a lei de 15 dias de férias pagas para empregados do comércio, da indústria e dos bancos e adotou medidas para proibir o trabalho de menores de 12 anos.",
+     "fonte": {
+      "titulo": "Verbete “BERNARDES, Artur” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BERNARDES,%20Artur.pdf"
+     }
+    },
+    {
+     "texto": "A política de contenção de gastos de 1925 reduziu o déficit a menos de 10% do de 1923 e conteve a alta do custo de vida.",
+     "fonte": {
+      "titulo": "Verbete “BERNARDES, Artur” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BERNARDES,%20Artur.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Governou sob estado de sítio prorrogado até o fim de 1926; em São Paulo cerca de dez mil pessoas foram presas de forma arbitrária, e presos enviados a Clevelândia morreram de tifo.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “BERNARDES, Artur” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BERNARDES,%20Artur.pdf"
+     }
+    },
+    {
+     "texto": "Contra a revolta de julho de 1924, mandou bombardear bairros da cidade de São Paulo com artilharia e, depois, por via aérea, provocando o êxodo da população.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “BERNARDES, Artur” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BERNARDES,%20Artur.pdf"
+     }
+    },
+    {
+     "texto": "Assinou a Lei de Imprensa, chamada de “Lei Infame”, e patrocinou a revisão constitucional de 1926, que limitou o habeas corpus e ampliou a intervenção nos estados.",
+     "autor_da_critica": "Francisco de Assis Barbosa, citado no verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “BERNARDES, Artur” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/BERNARDES,%20Artur.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "washington-luis-1926",
+   "presidente": "Washington Luís",
+   "inicio": "1926-11-15",
+   "fim": "1930-10-24",
+   "partido": "PRP",
+   "chegada": "eleição direta",
+   "contexto": "Ex-presidente de São Paulo, eleito sem concorrente em 1926. Foi deposto por chefes militares em outubro de 1930, durante a revolução da Aliança Liberal.",
+   "avancos": [
+    {
+     "texto": "Iniciou o governo com distensão: não renovou o estado de sítio, libertou presos políticos e militares detidos sem processo e extinguiu o presídio da ilha da Trindade.",
+     "fonte": {
+      "titulo": "Verbete “LUÍS, Washington” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/LU%C3%8DS,%20Washington.pdf"
+     }
+    },
+    {
+     "texto": "Aprovou a reforma monetária de 1926, com retorno ao padrão-ouro e criação da Caixa de Estabilização para o câmbio.",
+     "fonte": {
+      "titulo": "Verbete “LUÍS, Washington” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/LU%C3%8DS,%20Washington.pdf"
+     }
+    },
+    {
+     "texto": "Assinou em 1927 o Código de Menores, que consolidou as leis de assistência e proteção aos menores de 18 anos.",
+     "fonte": {
+      "titulo": "Decreto nº 17.943-A, de 12 de outubro de 1927 (Código de Menores) — Presidência da República, Legislação",
+      "url": "https://www.planalto.gov.br/ccivil_03/decreto/1910-1929/d17943a.htm"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Com a “Lei Celerada” (1927), restabeleceu rigorosa censura à imprensa e outras restrições à liberdade de expressão, e recolocou o PCB na ilegalidade.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LUÍS, Washington” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/LU%C3%8DS,%20Washington.pdf"
+     }
+    },
+    {
+     "texto": "Na sucessão de 1930, usou a máquina federal contra Minas e Paraíba (execução de dívidas, transferência de funcionários); depois, deputados aliancistas eleitos não foram diplomados.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LUÍS, Washington” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/LU%C3%8DS,%20Washington.pdf"
+     }
+    },
+    {
+     "texto": "Na crise de 1929, manteve o câmbio fixo e negou crédito à defesa do café, enquanto os preços desabavam e se acumulavam estoques invendáveis.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LUÍS, Washington” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/LU%C3%8DS,%20Washington.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "junta-1930",
+   "presidente": "Junta Governativa Provisória (Tasso Fragoso, Mena Barreto e Isaías de Noronha)",
+   "inicio": "1930-10-24",
+   "fim": "1930-11-03",
+   "partido": null,
+   "chegada": "junta",
+   "contexto": "Generais e um almirante depuseram Washington Luís no Rio de Janeiro enquanto a revolução avançava pelo país. A junta governou dez dias e entregou o poder a Getúlio Vargas.",
+   "avancos": [
+    {
+     "texto": "No mesmo dia da posse, propôs a Vargas a suspensão das hostilidades e negociou a transferência do poder, realizada em 3 de novembro.",
+     "fonte": {
+      "titulo": "Verbete “FRAGOSO, Tasso” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/augusto-tasso-fragoso"
+     }
+    },
+    {
+     "texto": "Dispensou os reservistas convocados nos últimos dias do governo deposto e renovou parte dos comandos militares.",
+     "fonte": {
+      "titulo": "Verbete “FRAGOSO, Tasso” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/augusto-tasso-fragoso"
+     }
+    },
+    {
+     "texto": "Autorizou o reinício das operações bancárias e abriu uma linha de crédito para o combate à febre amarela.",
+     "fonte": {
+      "titulo": "Verbete “FRAGOSO, Tasso” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/augusto-tasso-fragoso"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Chegou ao poder pela deposição, por chefes militares, de um presidente constitucional que se recusava a renunciar.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FRAGOSO, Tasso” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/augusto-tasso-fragoso"
+     }
+    },
+    {
+     "texto": "O presidente deposto saiu do palácio como prisioneiro, levado ao forte de Copacabana, e seus ministros também foram presos.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LUÍS, Washington” — verbete da Primeira República (1889-1930), CPDOC/FGV",
+      "url": "https://cpdoc.fgv.br/sites/default/files/verbetes/primeira-republica/LU%C3%8DS,%20Washington.pdf"
+     }
+    },
+    {
+     "texto": "O comando revolucionário desconfiou das intenções da junta e manteve as tropas em marcha para o Rio até a entrega do poder.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “FRAGOSO, Tasso” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/augusto-tasso-fragoso"
+     }
+    }
+   ],
+   "nota": "Incluída por ser junta, embora tenha durado só dez dias."
+  },
+  {
+   "id": "vargas-1930",
+   "presidente": "Getúlio Vargas",
+   "inicio": "1930-11-03",
+   "fim": "1945-10-29",
+   "partido": "PRR",
+   "chegada": "golpe ou ruptura",
+   "contexto": "Chefe da Revolução de 1930, assumiu o Governo Provisório. Foi eleito pela Constituinte em 1934 e, em 1937, implantou o Estado Novo, ditadura que durou até sua deposição em 1945.",
+   "avancos": [
+    {
+     "texto": "O Código Eleitoral de 1932 instituiu o voto secreto, a Justiça Eleitoral e o direito de voto das mulheres.",
+     "fonte": {
+      "titulo": "Verbete “VARGAS, Getúlio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/getulio-dornelles-vargas"
+     }
+    },
+    {
+     "texto": "A Consolidação das Leis do Trabalho (Decreto-Lei nº 5.452, de 1º de maio de 1943) reuniu as normas trabalhistas, com carteira profissional, salário mínimo e férias.",
+     "fonte": {
+      "titulo": "Verbete “CONSOLIDAÇÃO DAS LEIS DO TRABALHO (CLT)” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/consolidacao-das-leis-do-trabalho-clt"
+     }
+    },
+    {
+     "texto": "Fundou em 1941 a Companhia Siderúrgica Nacional, empresa de economia mista que construiu a usina de Volta Redonda.",
+     "fonte": {
+      "titulo": "Verbete “VARGAS, Getúlio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/getulio-dornelles-vargas"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Em 10 de novembro de 1937 fechou o Congresso, outorgou nova Constituição e proclamou o Estado Novo; em dezembro, todos os partidos foram extintos.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “ESTADO NOVO” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/estado-novo"
+     }
+    },
+    {
+     "texto": "O Departamento de Imprensa e Propaganda (DIP) fez censura prévia de imprensa, rádio, cinema e teatro e foi o “órgão coercitivo máximo da liberdade de pensamento”.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “DEPARTAMENTO DE IMPRENSA E PROPAGANDA (DIP)” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/departamento-de-imprensa-e-propaganda-dip"
+     }
+    },
+    {
+     "texto": "Após o levante de 1935, a repressão prendeu um senador e quatro deputados, ferindo a imunidade parlamentar, e criou o Tribunal de Segurança Nacional, “manifestamente inconstitucional”.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “ESTADO NOVO” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/estado-novo"
+     }
+    }
+   ],
+   "nota": "Entrada única para 1930-1945 (Governo Provisório, governo constitucional de 1934-1937 e Estado Novo), como no exemplo do prompt. Partido: vinha do PRR e foi candidato da Aliança Liberal em 1930."
+  },
+  {
+   "id": "linhares-1945",
+   "presidente": "José Linhares",
+   "inicio": "1945-10-29",
+   "fim": "1946-01-31",
+   "partido": null,
+   "chegada": "golpe ou ruptura",
+   "contexto": "Presidente do STF, recebeu o governo dos chefes militares que depuseram Vargas. Governou até a posse do presidente eleito em dezembro de 1945.",
+   "avancos": [
+    {
+     "texto": "Realizou as eleições de 2 de dezembro de 1945 para a Presidência e para a Assembleia Constituinte e deu ao novo Parlamento poderes constituintes (Lei Constitucional nº 13).",
+     "fonte": {
+      "titulo": "Verbete “LINHARES, José” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/linhares-jose-1"
+     }
+    },
+    {
+     "texto": "Extinguiu o Tribunal de Segurança Nacional e suprimiu o “estado de emergência” e o artigo que permitia aposentar servidores por conveniência do regime.",
+     "fonte": {
+      "titulo": "Verbete “LINHARES, José” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/linhares-jose-1"
+     }
+    },
+    {
+     "texto": "Permitiu que jornais importassem papel sem impostos, o que havia sido proibido em 1937 como forma de controle da imprensa, e deu autonomia à Universidade do Brasil.",
+     "fonte": {
+      "titulo": "Verbete “LINHARES, José” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/linhares-jose-1"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Assumiu por convite dos chefes militares que depuseram Vargas e declarou governar “com o apoio das forças armadas e da magistratura”.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LINHARES, José” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/linhares-jose-1"
+     }
+    },
+    {
+     "texto": "Nomeou parentes para cargos no governo, entre eles dois sobrinhos; a imprensa da época o acusou de empregar “todos os parentes” em três meses.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LINHARES, José” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/linhares-jose-1"
+     }
+    },
+    {
+     "texto": "As medidas contra a inflação foram parcialmente frustradas pelo crescimento das despesas públicas, causado por aumentos aos servidores civis e militares.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “LINHARES, José” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/linhares-jose-1"
+     }
+    }
+   ],
+   "nota": "Chegada classificada como ruptura: assumiu após a deposição militar de Vargas, sem vice nem Congresso em funcionamento; a posse formal ocorreu às 2h45 de 30/10/1945. Datas conforme o Arquivo Nacional."
+  },
+  {
+   "id": "dutra-1946",
+   "presidente": "Eurico Gaspar Dutra",
+   "inicio": "1946-01-31",
+   "fim": "1951-01-31",
+   "partido": "PSD",
+   "chegada": "eleição direta",
+   "contexto": "Ex-ministro da Guerra do Estado Novo, eleito em 1945 com apoio de Vargas. Governou na abertura da Guerra Fria, com aliança entre PSD e UDN.",
+   "avancos": [
+    {
+     "texto": "A Constituição de 18 de setembro de 1946 restabeleceu os direitos e garantias individuais e as eleições diretas em todos os níveis.",
+     "fonte": {
+      "titulo": "Verbete “DUTRA, Eurico Gaspar” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/dutra-eurico-gaspar"
+     }
+    },
+    {
+     "texto": "Constituiu a CHESF (1948) e iniciou a construção da usina de Paulo Afonso, a maior do Nordeste, considerada uma das iniciativas mais importantes do governo.",
+     "fonte": {
+      "titulo": "Verbete “DUTRA, Eurico Gaspar” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/dutra-eurico-gaspar"
+     }
+    },
+    {
+     "texto": "Abriu 2.800 km de estradas, completou a Rio-Bahia e construiu a nova rodovia Rio-São Paulo, a via Dutra.",
+     "fonte": {
+      "titulo": "Verbete “DUTRA, Eurico Gaspar” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/dutra-eurico-gaspar"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Com a posição do governo vitoriosa no TSE (1947), o PCB teve o registro cancelado e as sedes fechadas; o governo propôs depois a extinção dos mandatos de seus parlamentares.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “DUTRA, Eurico Gaspar” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/dutra-eurico-gaspar"
+     }
+    },
+    {
+     "texto": "O Ministério do Trabalho suspendeu eleições e interveio em sindicatos, e o governo fechou o MUT e a CTB, mantendo a tutela estatal sobre os sindicatos.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “DUTRA, Eurico Gaspar” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/dutra-eurico-gaspar"
+     }
+    },
+    {
+     "texto": "A política de importações livres esgotou rapidamente, em 1947, as reservas de divisas acumuladas na guerra; Thomas Skidmore a classificou como contraproducente.",
+     "autor_da_critica": "Thomas Skidmore, citado no verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “DUTRA, Eurico Gaspar” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/dutra-eurico-gaspar"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "vargas-1951",
+   "presidente": "Getúlio Vargas",
+   "inicio": "1951-01-31",
+   "fim": "1954-08-24",
+   "partido": "PTB",
+   "chegada": "eleição direta",
+   "contexto": "Eleito em 1950 pelo PTB, com política econômica de tendência nacionalista. A crise aberta pelo atentado contra Carlos Lacerda terminou com seu suicídio, em agosto de 1954.",
+   "avancos": [
+    {
+     "texto": "Sancionou a Lei nº 2.004, de 3 de outubro de 1953, que criou a Petrobras com monopólio estatal sobre a indústria do petróleo, exceto a distribuição.",
+     "fonte": {
+      "titulo": "Verbete “VARGAS, Getúlio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/getulio-dornelles-vargas"
+     }
+    },
+    {
+     "texto": "Criou o Banco Nacional de Desenvolvimento Econômico (BNDE), fundado em 20 de junho de 1952 para financiar a infraestrutura.",
+     "fonte": {
+      "titulo": "Verbete “VARGAS, Getúlio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/getulio-dornelles-vargas"
+     }
+    },
+    {
+     "texto": "No primeiro ano de seu mandato foi promulgada a Lei Afonso Arinos (1951), que tornou o racismo uma contravenção penal.",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "O atentado contra Carlos Lacerda, que matou o major Rubens Vaz, envolveu um membro da guarda pessoal do presidente e o chefe dela, Gregório Fortunato.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “VARGAS, Getúlio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/getulio-dornelles-vargas"
+     }
+    },
+    {
+     "texto": "Sancionou em 1953 nova Lei de Segurança Nacional, que punia quem fizesse comício ou reunião pública em lugar não autorizado pela polícia.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “VARGAS, Getúlio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/getulio-dornelles-vargas"
+     }
+    },
+    {
+     "texto": "O plano de estabilização foi ineficaz: o recurso à emissão monetária desequilibrou as alianças do governo com trabalhadores e com setores da elite.",
+     "autor_da_critica": "Arquivo Nacional (publicação oficial)",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "cafe-filho-1954",
+   "presidente": "Café Filho",
+   "inicio": "1954-08-24",
+   "fim": "1955-11-08",
+   "partido": "PSP",
+   "chegada": "sucessão (vice ou linha sucessória)",
+   "contexto": "Vice-presidente, assumiu com o suicídio de Vargas e formou ministério próximo da UDN. Afastou-se por doença em novembro de 1955 e teve o impedimento votado pelo Congresso.",
+   "avancos": [
+    {
+     "texto": "Recusou as propostas de adiar as eleições de 1954, alegando que a tarefa do governo era realizá-las nas datas previstas pela Constituição.",
+     "fonte": {
+      "titulo": "Verbete “CAFÉ FILHO, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-cafe-filho"
+     }
+    },
+    {
+     "texto": "Criou o imposto único sobre energia elétrica e o Fundo Federal de Eletrificação e implantou o desconto na fonte do imposto de renda sobre salários.",
+     "fonte": {
+      "titulo": "Verbete “CAFÉ FILHO, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-cafe-filho"
+     }
+    },
+    {
+     "texto": "Criou a Comissão de Localização da Nova Capital Federal, cujo relatório permitiu delimitar a área do futuro Distrito Federal.",
+     "fonte": {
+      "titulo": "Verbete “CAFÉ FILHO, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-cafe-filho"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "A política de Eugênio Gudin, de contenção do crédito e corte de gastos, reduziu pouco a inflação à custa de sensível queda no crescimento industrial.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “CAFÉ FILHO, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-cafe-filho"
+     }
+    },
+    {
+     "texto": "No “Acordo Jânio-Café”, entregou ao governador paulista a escolha dos ministros da Fazenda e da Viação e do presidente do Banco do Brasil em troca de apoio eleitoral.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “CAFÉ FILHO, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-cafe-filho"
+     }
+    },
+    {
+     "texto": "Apoiou e mandou divulgar documento de chefes militares que pedia candidato único para 1955, uma crítica indireta à candidatura de Juscelino Kubitschek.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “CAFÉ FILHO, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-cafe-filho"
+     }
+    }
+   ],
+   "nota": "Afastou-se em 03/11/1955 e foi substituído em 08/11 por Carlos Luz (presidente da Câmara), que governou três dias e não tem entrada própria (menos de 30 dias). Impedimento votado em 21-22/11/1955."
+  },
+  {
+   "id": "nereu-1955",
+   "presidente": "Nereu Ramos",
+   "inicio": "1955-11-11",
+   "fim": "1956-01-31",
+   "partido": "PSD",
+   "chegada": "sucessão (vice ou linha sucessória)",
+   "contexto": "Vice-presidente do Senado, assumiu após o movimento militar de 11 de novembro de 1955, liderado pelo general Lott, que depôs Carlos Luz. Governou até a posse dos eleitos de 1955.",
+   "avancos": [
+    {
+     "texto": "Ao assumir por decisão do Congresso, declarou aceitar o cargo “para manter o poder civil e, assim, defender a Constituição”.",
+     "fonte": {
+      "titulo": "Verbete “RAMOS, Nereu” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/nereu-de-oliveira-ramos"
+     }
+    },
+    {
+     "texto": "Garantiu a posse dos eleitos em 1955: transmitiu o governo a Juscelino Kubitschek em 31 de janeiro de 1956.",
+     "fonte": {
+      "titulo": "Verbete “RAMOS, Nereu” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/nereu-de-oliveira-ramos"
+     }
+    },
+    {
+     "texto": "Manteve Lott na Guerra e Mário Câmara na Fazenda e nomeou José Carlos de Macedo Soares para as Relações Exteriores, preservando a continuidade administrativa.",
+     "fonte": {
+      "titulo": "Verbete “RAMOS, Nereu” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/nereu-de-oliveira-ramos"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "Café Filho foi impedido de reassumir: o Congresso aprovou seu impedimento e o ex-presidente ficou cercado por tropas e blindados do Exército em seu apartamento.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “RAMOS, Nereu” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/nereu-de-oliveira-ramos"
+     }
+    },
+    {
+     "texto": "A pedido dos ministros militares, solicitou ao Congresso o estado de sítio por 30 dias, aprovado em novembro de 1955, embora a situação estivesse sob controle.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MOVIMENTO DO 11 DE NOVEMBRO” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/movimento-do-11-de-novembro"
+     }
+    },
+    {
+     "texto": "A oposição protestou contra a censura à imprensa e às rádios e acusou os militares de pressionar o Congresso; Jânio Quadros previu “um terrível julgamento da História”.",
+     "autor_da_critica": "Oposição (UDN) e Jânio Quadros, registrados pelo CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “MOVIMENTO DO 11 DE NOVEMBRO” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/movimento-do-11-de-novembro"
+     }
+    }
+   ],
+   "nota": "Chegada pela linha sucessória (vice-presidente do Senado), mas por efeito do movimento militar de 11/11/1955. Período curto, com poucos marcos administrativos; os avanços são de ordem institucional."
+  },
+  {
+   "id": "jk-1956",
+   "presidente": "Juscelino Kubitschek",
+   "inicio": "1956-01-31",
+   "fim": "1961-01-31",
+   "partido": "PSD",
+   "chegada": "eleição direta",
+   "contexto": "Ex-governador de Minas, eleito em 1955 pela aliança PSD-PTB. Governou com o Programa de Metas e transferiu a capital para Brasília.",
+   "avancos": [
+    {
+     "texto": "O Programa de Metas implantou a indústria automobilística no país, e o crescimento econômico médio de 1957 a 1960 chegou a quase 7,8% ao ano.",
+     "fonte": {
+      "titulo": "Verbete “KUBITSCHEK, Juscelino” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/juscelino-kubitschek-de-oliveira"
+     }
+    },
+    {
+     "texto": "Construiu e inaugurou Brasília, em 21 de abril de 1960, e propôs ao Congresso a criação da Universidade de Brasília.",
+     "fonte": {
+      "titulo": "Verbete “KUBITSCHEK, Juscelino” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/juscelino-kubitschek-de-oliveira"
+     }
+    },
+    {
+     "texto": "Promulgou a Lei nº 3.692, de 15 de dezembro de 1959, que criou a Sudene para planejar o desenvolvimento do Nordeste.",
+     "fonte": {
+      "titulo": "Verbete “SUPERINTENDÊNCIA DO DESENVOLVIMENTO DO NORDESTE (SUDENE)” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/superintendencia-do-desenvolvimento-do-nordeste-sudene"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "As importações para a industrialização aprofundaram a dependência externa e o déficit do balanço de pagamentos, o que influiu decisivamente no retorno da inflação.",
+     "autor_da_critica": "Arquivo Nacional (publicação oficial)",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    },
+    {
+     "texto": "O modelo favoreceu a concentração de capital, com pouco espaço para o pequeno capital, e os ganhos de produtividade não foram repassados aos preços nem aos salários.",
+     "autor_da_critica": "Arquivo Nacional (publicação oficial)",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    },
+    {
+     "texto": "Ao fim do governo, o país tinha déficit externo crescente, dívida externa em alta e déficit orçamentário de 113 bilhões de cruzeiros ao ano, coberto com emissão de moeda.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “QUADROS, Jânio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/janio-da-silva-quadros"
+     }
+    }
+   ],
+   "nota": ""
+  },
+  {
+   "id": "janio-1961",
+   "presidente": "Jânio Quadros",
+   "inicio": "1961-01-31",
+   "fim": "1961-08-25",
+   "partido": "PDC/UDN/PL (coligação)",
+   "chegada": "eleição direta",
+   "contexto": "Ex-governador de São Paulo, eleito em 1960 com 48% dos votos. Renunciou após menos de sete meses de mandato.",
+   "avancos": [
+    {
+     "texto": "A reforma cambial (Instruções 204, 205 e 208 da Sumoc) unificou as taxas de câmbio e permitiu renegociar a dívida, com prorrogações e novos créditos de 726 milhões de dólares.",
+     "fonte": {
+      "titulo": "Verbete “QUADROS, Jânio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/janio-da-silva-quadros"
+     }
+    },
+    {
+     "texto": "Adotou a política externa independente: recusou apoio à invasão de Cuba, abriu relações com o bloco socialista e embaixadas na África.",
+     "fonte": {
+      "titulo": "Verbete “QUADROS, Jânio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/janio-da-silva-quadros"
+     }
+    },
+    {
+     "texto": "Enviou ao Congresso o projeto da nova lei antitruste e da criação do CADE e o projeto de lei sobre remessa de lucros.",
+     "fonte": {
+      "titulo": "Verbete “QUADROS, Jânio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/janio-da-silva-quadros"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "A reforma cambial cortou subsídios a artigos essenciais de consumo popular e elevou o custo de vida, o que levou os partidos trabalhistas a combatê-la.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “QUADROS, Jânio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/janio-da-silva-quadros"
+     }
+    },
+    {
+     "texto": "Segundo o ministro da Justiça, o presidente julgava impossível governar com o Congresso e pretendia reformar a Constituição por meio de um estado de exceção.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “QUADROS, Jânio” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/janio-da-silva-quadros"
+     }
+    },
+    {
+     "texto": "A renúncia, em 25 de agosto de 1961, abriu grave crise: os ministros militares vetaram a posse do vice João Goulart, com risco real de confronto armado.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “GOULART, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-belchior-marques-goulart"
+     }
+    }
+   ],
+   "nota": "Candidatura homologada pelo PDC e apoiada pela UDN e pelo PL. Após a renúncia, Ranieri Mazzilli (presidente da Câmara) governou de 25/08 a 07/09/1961, menos de 30 dias, e não tem entrada própria."
+  },
+  {
+   "id": "jango-1961",
+   "presidente": "João Goulart",
+   "inicio": "1961-09-07",
+   "fim": "1964-03-31",
+   "partido": "PTB",
+   "chegada": "sucessão (vice ou linha sucessória)",
+   "contexto": "Vice-presidente, assumiu após a renúncia de Jânio sob o parlamentarismo, adotado para contornar o veto militar; o presidencialismo voltou por plebiscito em janeiro de 1963. Foi deposto pelo movimento político-militar de março-abril de 1964.",
+   "avancos": [
+    {
+     "texto": "Sancionou a lei que instituiu o 13º salário, uma das principais reivindicações da greve geral deflagrada pouco antes.",
+     "fonte": {
+      "titulo": "Verbete “GOULART, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-belchior-marques-goulart"
+     }
+    },
+    {
+     "texto": "Promulgou o Estatuto do Trabalhador Rural (Lei nº 4.214, de 2 de março de 1963), que estendeu a legislação social ao campo.",
+     "fonte": {
+      "titulo": "Verbete “ESTATUTO DO TRABALHADOR RURAL” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-tematico/estatuto-do-trabalhador-rural"
+     }
+    },
+    {
+     "texto": "Reatou relações diplomáticas com a URSS em 23 de novembro de 1961 e manteve a política externa independente.",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    }
+   ],
+   "criticas": [
+    {
+     "texto": "O Plano Trienal fracassou, como mostraram os altos índices de inflação, e o governo teve de anunciar outro plano de estabilização em outubro de 1963.",
+     "autor_da_critica": "Arquivo Nacional (publicação oficial)",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    },
+    {
+     "texto": "Em outubro de 1963 pediu ao Congresso o estado de sítio por 30 dias, sugerido pelos ministros militares para afastar Carlos Lacerda do governo da Guanabara.",
+     "autor_da_critica": "Historiografia: verbete do CPDOC/FGV",
+     "fonte": {
+      "titulo": "Verbete “GOULART, João” — Dicionário Histórico-Biográfico Brasileiro (DHBB), CPDOC/FGV",
+      "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-belchior-marques-goulart"
+     }
+    },
+    {
+     "texto": "Anistiou os marinheiros e fuzileiros que desobedeceram ao ministro da Marinha em março de 1964, o que acirrou a tensão com os setores militares.",
+     "autor_da_critica": "Arquivo Nacional (publicação oficial)",
+     "fonte": {
+      "titulo": "Arquivo Nacional. Os presidentes e a República: Deodoro da Fonseca a Dilma Rousseff. 3ª ed. Rio de Janeiro, 2012",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/OspresidenteseaRepblica_DeodoroDilma.pdf"
+     }
+    }
+   ],
+   "nota": "Data final de 31/03/1964 conforme o Arquivo Nacional e o recorte do período; Goulart deixou Brasília na noite de 1º/04 e Ranieri Mazzilli assumiu em 02/04/1964 (período coberto pelo arquivo 1964-2026)."
+  }
+ ]
+}

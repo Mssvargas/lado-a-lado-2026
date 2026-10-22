@@ -1,0 +1,1128 @@
+{
+  "periodo": "1964-04-02 a 2026-10-22",
+  "metodo": "Três avanços e três críticas por governo, cada um conferido no texto da fonte citada. Avanços: ato legal oficial (LexML ou texto original na Câmara dos Deputados), verbete do DHBB (CPDOC/FGV) ou dado oficial. Críticas: na ditadura, sempre o relatório da Comissão Nacional da Verdade, mais um verbete do DHBB ou ato legal e um dado oficial; de 1985 em diante, um órgão de controle ou julgamento (TCU, CGU, STF, Senado, comissão oficial), um dado oficial (IBGE, Banco Central, Inpe, Ipea) e uma obra acadêmica, decisão judicial ou organismo internacional. Entradas para presidentes, vices que assumiram e juntas; Mazzilli (13 dias) entra por pedido expresso.",
+  "atualizado_em": "2026-10-22",
+  "governos": [
+    {
+      "id": "mazzilli-1964",
+      "presidente": "Ranieri Mazzilli",
+      "inicio": "1964-04-02",
+      "fim": "1964-04-15",
+      "partido": "PSD",
+      "chegada": "golpe ou ruptura",
+      "contexto": "Presidente da Câmara dos Deputados, assumiu interinamente a Presidência na madrugada de 2 de abril de 1964, após a deposição de João Goulart; o poder de fato ficou com o Comando Supremo da Revolução, formado pelos ministros militares.",
+      "avancos": [
+        {
+          "texto": "Sancionou em 14 de abril de 1964 a Lei 4.324, que instituiu o Conselho Federal e os Conselhos Regionais de Odontologia para fiscalizar o exercício e a ética da profissão.",
+          "fonte": {
+            "titulo": "Câmara dos Deputados – Lei nº 4.324, de 14 de abril de 1964 (publicação original, assinada por Ranieri Mazzilli)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4324-14-abril-1964-376610-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em 11 de abril de 1964 a Lei 4.323, que criou a Escola Agrotécnica Antônio Versiani Athayde, no estado de Minas Gerais.",
+          "fonte": {
+            "titulo": "LexML – Lei nº 4.323, de 11 de abril de 1964",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1964-04-11;4323"
+          }
+        },
+        {
+          "texto": "Transmitiu o cargo em 15 de abril de 1964 ao presidente eleito pelo Congresso Nacional quatro dias antes, encerrando a interinidade de 13 dias sem prorrogá-la.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Pascoal Ranieri Mazzilli",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/pascoal-ranieri-mazzilli"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Nos dias seguintes ao golpe, cerca de 5 mil pessoas foram presas, pela estimativa da embaixada dos EUA, com torturas frequentes no Nordeste e centenas de inquéritos policiais-militares abertos.",
+          "autor_da_critica": "Comissão Nacional da Verdade (relatório oficial)",
+          "fonte": {
+            "titulo": "Comissão Nacional da Verdade – Relatório, volume I (2014), cap. 3, p. 98",
+            "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/comissoes-da-verdade/volume_1_digital.pdf/@@display-file/file"
+          }
+        },
+        {
+          "texto": "O poder de fato ficou com o Comando Supremo da Revolução, que editou o Ato Institucional nº 1 em 9 de abril e divulgou no dia seguinte a primeira lista de cassações.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Pascoal Ranieri Mazzilli",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/pascoal-ranieri-mazzilli"
+          }
+        },
+        {
+          "texto": "A vacância da Presidência foi declarada e Mazzilli foi empossado no mesmo ato, embora comunicação oficial lida no Congresso informasse que Goulart permanecia em território brasileiro.",
+          "autor_da_critica": "Atlas Histórico do Brasil, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "Atlas Histórico do Brasil (CPDOC/FGV) – verbete Golpe de 1964",
+            "url": "https://atlas.fgv.br/verbete/6367"
+          }
+        }
+      ],
+      "nota": "Governou 13 dias (2 a 15/04/1964), abaixo do critério de 30 dias do método; entra por pedido expresso. Formalmente, assumiu como primeiro na linha sucessória (presidente da Câmara) depois que o presidente do Congresso, Auro de Moura Andrade, declarou vaga a Presidência; a chegada foi classificada como 'golpe ou ruptura' porque a vacância foi declarada com Goulart ainda no país (Atlas FGV). O Atlas FGV situa a declaração na noite de 1º de abril e a posse na madrugada de 2 de abril. Avanços escassos: o terceiro item (transmissão do cargo) é ato de rotina, registrado por falta de marco legislativo maior em 13 dias. A terceira crítica não é dado econômico, porque 13 dias não produzem série anual comparável."
+    },
+    {
+      "id": "castelo-branco-1964",
+      "presidente": "Castelo Branco",
+      "inicio": "1964-04-15",
+      "fim": "1967-03-15",
+      "partido": "sem partido",
+      "chegada": "eleição indireta",
+      "contexto": "Chefe do Estado-Maior do Exército no golpe de 1964, foi eleito pelo Congresso em 11 de abril de 1964, um dia após a primeira lista de cassações; o mandato foi depois prorrogado até 15 de março de 1967.",
+      "avancos": [
+        {
+          "texto": "Sancionou em 31 de dezembro de 1964 a Lei 4.595, da Reforma Bancária, que criou o Conselho Monetário Nacional e o Banco Central, em substituição à Sumoc.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Humberto de Alencar Castelo Branco",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/humberto-de-alencar-castelo-branco"
+          }
+        },
+        {
+          "texto": "Promulgou em 30 de novembro de 1964 o Estatuto da Terra (Lei 4.504), com tributação progressiva conforme tamanho e uso da propriedade e criação do Ibra para planejar a reforma agrária.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Humberto de Alencar Castelo Branco",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/humberto-de-alencar-castelo-branco"
+          }
+        },
+        {
+          "texto": "Criou em 13 de setembro de 1966 o Fundo de Garantia do Tempo de Serviço (Lei 5.107), depósito de 8% da folha por trabalhador que passou a financiar a habitação.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Humberto de Alencar Castelo Branco",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/humberto-de-alencar-castelo-branco"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Figura entre os responsáveis político-institucionais por graves violações de direitos humanos; criou em junho de 1964 o Serviço Nacional de Informações para coordenar a ação repressiva do Estado.",
+          "autor_da_critica": "Comissão Nacional da Verdade (relatório oficial)",
+          "fonte": {
+            "titulo": "Comissão Nacional da Verdade – Relatório, volume I (2014), cap. 16, p. 844 e 846",
+            "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/comissoes-da-verdade/volume_1_digital.pdf/@@display-file/file"
+          }
+        },
+        {
+          "texto": "Editou em 27 de outubro de 1965 o AI-2, que extinguiu os partidos, tornou indireta a eleição presidencial, reabriu as cassações e levou civis à Justiça Militar.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Humberto de Alencar Castelo Branco",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/humberto-de-alencar-castelo-branco"
+          }
+        },
+        {
+          "texto": "O salário mínimo real caiu 32,7% entre abril de 1964 e março de 1967, com a fórmula de reajuste que repunha os salários abaixo da inflação efetiva.",
+          "autor_da_critica": "Ipea (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – Salário mínimo real (série GAC12_SALMINRE12, Ipea)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='GAC12_SALMINRE12')"
+          }
+        }
+      ],
+      "nota": "Sem filiação partidária: candidato único na eleição indireta de 11/04/1964, apoiado por nove partidos (PSD, UDN e outros), com 361 votos (DHBB). O bipartidarismo (Arena e MDB) foi criado no seu governo, após o AI-2. Variação do salário mínimo real calculada pelo autor desta base a partir da série do Ipeadata (abr/1964 = 1.539,17; mar/1967 = 1.036,19, em reais constantes); a ligação com a fórmula de reajuste vem do verbete do DHBB."
+    },
+    {
+      "id": "costa-e-silva-1967",
+      "presidente": "Artur da Costa e Silva",
+      "inicio": "1967-03-15",
+      "fim": "1969-08-31",
+      "partido": "ARENA",
+      "chegada": "eleição indireta",
+      "contexto": "Ministro da Guerra desde o golpe, foi eleito pelo Congresso em 3 de outubro de 1966, sem o voto do MDB, e tomou posse em 15 de março de 1967, sob a Constituição promulgada em janeiro daquele ano.",
+      "avancos": [
+        {
+          "texto": "Criou em dezembro de 1967 o Movimento Brasileiro de Alfabetização (Mobral), para alfabetizar adolescentes e adultos, e converteu o antigo Serviço de Proteção aos Índios na Funai.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Artur da Costa e Silva",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/artur-da-costa-e-silva"
+          }
+        },
+        {
+          "texto": "Autorizou em 19 de agosto de 1969, pelo Decreto-Lei 770, a União a constituir a Empresa Brasileira de Aeronáutica S.A. (Embraer), base da indústria aeronáutica nacional.",
+          "fonte": {
+            "titulo": "LexML – Decreto-Lei nº 770, de 19 de agosto de 1969",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1969-08-19;770"
+          }
+        },
+        {
+          "texto": "Reduziu a inflação de 38,8% em 1966 para 24,3% em 1967 e 20,2% em 1969, segundo estimativas do Instituto Brasileiro de Economia da FGV.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Artur da Costa e Silva",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/artur-da-costa-e-silva"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Figura entre os responsáveis político-institucionais por graves violações de direitos humanos; em julho de 1969 foi criada em São Paulo a Operação Bandeirante, modelo dos futuros DOI-CODI.",
+          "autor_da_critica": "Comissão Nacional da Verdade (relatório oficial)",
+          "fonte": {
+            "titulo": "Comissão Nacional da Verdade – Relatório, volume I (2014), cap. 4, p. 127, e cap. 16, p. 846-847",
+            "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/comissoes-da-verdade/volume_1_digital.pdf/@@display-file/file"
+          }
+        },
+        {
+          "texto": "Baixou em 13 de dezembro de 1968 o AI-5, que suspendeu o habeas corpus, permitiu cassar mandatos e decretou o recesso do Congresso por tempo indeterminado.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Artur da Costa e Silva",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/artur-da-costa-e-silva"
+          }
+        },
+        {
+          "texto": "O salário mínimo real caiu 9,9% entre março de 1967 e agosto de 1969, e a política salarial de contenção levou a greves em Contagem e Osasco em 1968.",
+          "autor_da_critica": "Ipea (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – Salário mínimo real (série GAC12_SALMINRE12, Ipea)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='GAC12_SALMINRE12')"
+          }
+        }
+      ],
+      "nota": "Partido: candidato da Arena na eleição indireta. Afastou-se em 31/08/1969 por trombose cerebral; a Junta Militar assumiu pelo AI-12 e os cargos de presidente e vice só foram declarados vagos pelo AI-16, em 14/10/1969. Na data da Embraer, o verbete do DHBB diz agosto de 1968; o ato legal no LexML é de 19/08/1969, data adotada aqui. Variação do salário mínimo real calculada a partir do Ipeadata (mar/1967 = 1.036,19; ago/1969 = 933,13); a menção às greves vem do verbete do DHBB."
+    },
+    {
+      "id": "junta-1969",
+      "presidente": "Junta Militar (Aurélio de Lira Tavares, Augusto Rademaker e Márcio de Sousa e Melo)",
+      "inicio": "1969-08-31",
+      "fim": "1969-10-30",
+      "partido": "sem partido",
+      "chegada": "junta",
+      "contexto": "Com Costa e Silva doente, os ministros do Exército, da Marinha e da Aeronáutica assumiram a Presidência em 31 de agosto de 1969 pelo AI-12, que impediu a posse do vice-presidente Pedro Aleixo.",
+      "avancos": [
+        {
+          "texto": "Promulgou em 21 de outubro de 1969 o Código Penal Militar (Decreto-Lei 1.001) e o Código de Processo Penal Militar (Decreto-Lei 1.002), que reorganizaram a legislação penal militar.",
+          "fonte": {
+            "titulo": "LexML – Decreto-Lei nº 1.001, de 21 de outubro de 1969 (Código Penal Militar)",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1969-10-21;1001"
+          }
+        },
+        {
+          "texto": "Instituiu em 21 de outubro de 1969, pelo Decreto-Lei 986, as normas básicas sobre alimentos, que exigem registro no Ministério da Saúde antes da venda e regras de rotulagem.",
+          "fonte": {
+            "titulo": "Câmara dos Deputados – Decreto-Lei nº 986, de 21 de outubro de 1969 (texto atualizado)",
+            "url": "https://www2.camara.leg.br/legin/fed/declei/1960-1969/decreto-lei-986-21-outubro-1969-377556-normaatualizada-pe.html"
+          }
+        },
+        {
+          "texto": "Criou em 21 de outubro de 1969, pelo Decreto-Lei 1.044, o regime de exercícios domiciliares para alunos cuja doença impede a frequência às aulas, mediante laudo médico.",
+          "fonte": {
+            "titulo": "Câmara dos Deputados – Decreto-Lei nº 1.044, de 21 de outubro de 1969 (publicação original)",
+            "url": "https://www2.camara.leg.br/legin/fed/declei/1960-1969/decreto-lei-1044-21-outubro-1969-373565-publicacaooriginal-1-pe.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Seus três integrantes figuram entre os responsáveis político-institucionais por graves violações de direitos humanos; o AI-12, que lhes deu o poder, declarou o país em estado de guerra revolucionária.",
+          "autor_da_critica": "Comissão Nacional da Verdade (relatório oficial)",
+          "fonte": {
+            "titulo": "Comissão Nacional da Verdade – Relatório, volume I (2014), cap. 5, p. 214, e cap. 16, p. 847",
+            "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/comissoes-da-verdade/volume_1_digital.pdf/@@display-file/file"
+          }
+        },
+        {
+          "texto": "Baixou em setembro de 1969 o AI-13, que instituiu o banimento, e o AI-14, que permitiu pena de morte e prisão perpétua, incorporados depois à nova Lei de Segurança Nacional.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Aurélio de Lira Tavares",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/aurelio-de-lira-tavares"
+          }
+        },
+        {
+          "texto": "Promulgou em 17 de outubro de 1969, com o Congresso fechado, a Emenda Constitucional nº 1, que incorporou à Constituição de 1967 dispositivos do AI-5 e a pena de morte.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Aurélio de Lira Tavares",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/aurelio-de-lira-tavares"
+          }
+        }
+      ],
+      "nota": "Governo provisório de 61 dias (31/08 a 30/10/1969), formado por Aurélio de Lira Tavares (Exército), Augusto Rademaker (Marinha) e Márcio de Sousa e Melo (Aeronáutica); sem partido. Os avanços são decretos-leis editados com o Congresso em recesso. A terceira crítica é ruptura institucional, não dado econômico, porque o período é curto demais para série anual."
+    },
+    {
+      "id": "medici-1969",
+      "presidente": "Emílio Garrastazu Médici",
+      "inicio": "1969-10-30",
+      "fim": "1974-03-15",
+      "partido": "ARENA",
+      "chegada": "eleição indireta",
+      "contexto": "Comandante do III Exército e ex-chefe do SNI, foi escolhido pelos chefes militares e eleito pelo Congresso, reaberto para isso, em 25 de outubro de 1969; governou no período chamado de 'milagre econômico'.",
+      "avancos": [
+        {
+          "texto": "Registrou crescimento real do PIB de 10,4% em 1970, 11,3% em 1971, 11,9% em 1972 e 14,0% em 1973, segundo as contas nacionais do IBGE.",
+          "fonte": {
+            "titulo": "Ipeadata – PIB, variação real anual (série SCN10_PIBG10, IBGE/Contas Nacionais)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='SCN10_PIBG10')"
+          }
+        },
+        {
+          "texto": "Instituiu em 25 de maio de 1971 o Programa de Assistência ao Trabalhador Rural (Lei Complementar 11), com aposentadoria por velhice de meio salário mínimo aos 65 anos.",
+          "fonte": {
+            "titulo": "Câmara dos Deputados – Lei Complementar nº 11, de 25 de maio de 1971 (publicação original)",
+            "url": "https://www2.camara.leg.br/legin/fed/leicom/1970-1979/leicomplementar-11-25-maio-1971-365204-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Assinou com o Paraguai, em abril de 1973, o tratado que criou a empresa binacional Itaipu, formada por Eletrobrás e Ande, para construir e operar a hidrelétrica no rio Paraná.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Emílio Garrastazu Médici",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/medici-emilio-garrastazzu"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Figura entre os responsáveis político-institucionais por graves violações de direitos humanos; em seu governo o modelo da Operação Bandeirante foi difundido para todo o país com a criação dos DOI-CODI.",
+          "autor_da_critica": "Comissão Nacional da Verdade (relatório oficial)",
+          "fonte": {
+            "titulo": "Comissão Nacional da Verdade – Relatório, volume I (2014), cap. 16, p. 847",
+            "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/comissoes-da-verdade/volume_1_digital.pdf/@@display-file/file"
+          }
+        },
+        {
+          "texto": "Instituiu por decreto-lei, em janeiro de 1970, a censura prévia a livros e periódicos, e em 1973 a Polícia Federal passou a exigir registro de revistas na Divisão de Censura.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Emílio Garrastazu Médici",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/medici-emilio-garrastazzu"
+          }
+        },
+        {
+          "texto": "O salário mínimo real caiu 5,0% entre outubro de 1969 e março de 1974, enquanto o PIB crescia acima de 10% ao ano no mesmo período.",
+          "autor_da_critica": "Ipea (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – Salário mínimo real (série GAC12_SALMINRE12, Ipea)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='GAC12_SALMINRE12')"
+          }
+        }
+      ],
+      "nota": "Partido: Arena. Eleição indireta pelo Congresso, reaberto por ato complementar para homologar o nome escolhido pelos militares; o MDB se absteve. O número de votos diverge entre verbetes do DHBB (239 no verbete de Médici, 293 no de Lira Tavares) e por isso não foi usado. A censura prévia é o Decreto-Lei 1.077, de 26/01/1970 (LexML). Variação do salário mínimo real calculada a partir do Ipeadata (out/1969 = 903,35; mar/1974 = 857,95)."
+    },
+    {
+      "id": "geisel-1974",
+      "presidente": "Ernesto Geisel",
+      "inicio": "1974-03-15",
+      "fim": "1979-03-15",
+      "partido": "ARENA",
+      "chegada": "eleição indireta",
+      "contexto": "Ex-presidente da Petrobras, foi eleito pelo Colégio Eleitoral em 15 de janeiro de 1974 e anunciou uma 'distensão lenta, gradual e segura' do regime, num quadro de crise do petróleo.",
+      "avancos": [
+        {
+          "texto": "Aprovou o II Plano Nacional de Desenvolvimento (Lei 6.151/1974), que priorizou energia, indústrias de base, ferrovias e portos para reduzir a dependência externa após a crise do petróleo.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Ernesto Geisel",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/geisel-ernesto"
+          }
+        },
+        {
+          "texto": "Instituiu em 14 de novembro de 1975 o Programa Nacional do Álcool (Decreto 76.593), com incentivos à produção de álcool de cana e mandioca para o mercado de combustíveis.",
+          "fonte": {
+            "titulo": "Câmara dos Deputados – Decreto nº 76.593, de 14 de novembro de 1975 (publicação original)",
+            "url": "https://www2.camara.leg.br/legin/fed/decret/1970-1979/decreto-76593-14-novembro-1975-425253-publicacaooriginal-1-pe.html"
+          }
+        },
+        {
+          "texto": "Obteve em 1978 a aprovação da Emenda Constitucional nº 11, que revogou o AI-5, restabeleceu o habeas corpus para crimes políticos e aboliu pena de morte, prisão perpétua e banimento.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Ernesto Geisel",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/geisel-ernesto"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Figura entre os responsáveis político-institucionais por graves violações; em seu governo o jornalista Vladimir Herzog e o operário Manoel Fiel Filho foram mortos sob tortura no DOI-CODI de São Paulo.",
+          "autor_da_critica": "Comissão Nacional da Verdade (relatório oficial)",
+          "fonte": {
+            "titulo": "Comissão Nacional da Verdade – Relatório, volume I (2014), cap. 13, p. 646, e cap. 16, p. 847",
+            "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/comissoes-da-verdade/volume_1_digital.pdf/@@display-file/file"
+          }
+        },
+        {
+          "texto": "Decretou em abril de 1977 o recesso do Congresso por 14 dias e baixou o 'pacote de abril', que tornou indireta a eleição de um terço dos senadores.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC-FGV – verbete Ernesto Geisel",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/geisel-ernesto"
+          }
+        },
+        {
+          "texto": "A dívida externa bruta passou de US$ 14,9 bilhões no fim de 1973 para US$ 52,2 bilhões no fim de 1978, e a inflação chegou a cerca de 42% em 1978.",
+          "autor_da_critica": "Banco Central do Brasil (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – Dívida externa bruta (série PAN_DEXT, Bacen/Boletim/BP)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PAN_DEXT')"
+          }
+        }
+      ],
+      "nota": "Partido: Arena. Eleição indireta pelo Colégio Eleitoral. A taxa de inflação de 42% em 1978 vem do verbete do DHBB; a dívida externa, da série do Banco Central no Ipeadata (o DHBB cita US$ 42 bilhões em fins de 1978, número diferente do da série, que inclui empréstimos intercompanhias). O II PND (Lei 6.151, de 04/12/1974) consta no LexML. A revogação do AI-5 vigorou a partir de 1979."
+    },
+    {
+      "id": "figueiredo-1979",
+      "presidente": "João Figueiredo",
+      "inicio": "1979-03-15",
+      "fim": "1985-03-15",
+      "partido": "ARENA/PDS",
+      "chegada": "eleição indireta",
+      "contexto": "Último presidente do regime militar, o general João Figueiredo, ex-chefe do SNI, foi eleito pelo Colégio Eleitoral em 15 de outubro de 1978, com 355 votos contra 226 do general Euler Bentes Monteiro, e conduziu a fase final da abertura.",
+      "avancos": [
+        {
+          "texto": "Sancionou em agosto de 1979 a Lei 6.683, que concedeu anistia aos punidos por crimes políticos ou conexos e por atos de exceção de setembro de 1961 a agosto de 1979.",
+          "fonte": {
+            "titulo": "Lei nº 6.683, de 28/08/1979 (Lei da Anistia) – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1970-1979/lei-6683-28-agosto-1979-366522-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Extinguiu Arena e MDB com a Lei 6.767, de 20 de dezembro de 1979, que reformou a Lei Orgânica dos Partidos e permitiu a criação de novas legendas, encerrando o bipartidarismo instituído em 1965.",
+          "fonte": {
+            "titulo": "Lei nº 6.767, de 20/12/1979 – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1970-1979/lei-6767-20-dezembro-1979-357280-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Propôs e aprovou no Congresso, em novembro de 1980, a emenda que restabeleceu a eleição direta para governador e extinguiu a figura do senador eleito por via indireta.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC – verbete João Batista de Oliveira Figueiredo",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-batista-de-oliveira-figueiredo"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Militares do DOI-CODI do I Exército levaram bombas a um show no Riocentro em 30 de abril de 1981; o inquérito militar os tratou como vítimas, e o caso foi arquivado.",
+          "autor_da_critica": "Comissão Nacional da Verdade (relatório oficial)",
+          "fonte": {
+            "titulo": "Comissão Nacional da Verdade – Relatório, volume I (2014), cap. 13 (casos emblemáticos), item 'O atentado do Riocentro (1981)'",
+            "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/comissoes-da-verdade/volume_1_digital.pdf/@@display-file/file"
+          }
+        },
+        {
+          "texto": "Por orientação do Planalto, o PDS retirou 113 parlamentares do plenário em 25 de abril de 1984, e a emenda Dante de Oliveira, das diretas, ficou 22 votos abaixo dos dois terços exigidos.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC – verbete João Batista de Oliveira Figueiredo",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/joao-batista-de-oliveira-figueiredo"
+          }
+        },
+        {
+          "texto": "O PIB caiu 4,25% em 1981, subiu apenas 0,83% em 1982 e voltou a cair 2,93% em 1983, depois de crescer 9,2% em 1980.",
+          "autor_da_critica": "IBGE (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – PIB a preços de mercado, variação real anual (IBGE)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='SCN10_PIBG10')"
+          }
+        }
+      ],
+      "nota": "Eleito pela Arena; com a reforma partidária de 1979, a Arena deu lugar ao PDS, daí o partido 'ARENA/PDS'. A partir de 23/09/1981, afastado por problema cardíaco, Figueiredo transferiu temporariamente o governo ao vice Aureliano Chaves (DHBB)."
+    },
+    {
+      "id": "sarney-1985",
+      "presidente": "José Sarney",
+      "inicio": "1985-03-15",
+      "fim": "1990-03-15",
+      "partido": "PMDB",
+      "chegada": "sucessão (vice ou linha sucessória)",
+      "contexto": "Eleito vice de Tancredo Neves pelo Colégio Eleitoral em 15 de janeiro de 1985, José Sarney tomou posse em 15 de março, com Tancredo internado, e governou a transição democrática até a eleição presidencial direta de 1989.",
+      "avancos": [
+        {
+          "texto": "Sancionou em maio de 1985 medidas aprovadas pelo Congresso que restabeleceram a eleição direta para presidente e prefeitos de capitais e deram direito de voto aos analfabetos.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC – verbete José Sarney (José Ribamar Ferreira de Araújo Costa)",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/jose-ribamar-ferreira-de-araujo-costa"
+          }
+        },
+        {
+          "texto": "Enviou ao Congresso em junho de 1985 a proposta de emenda que convocou a Assembleia Nacional Constituinte, instalada em 1987; a nova Constituição foi promulgada em 5 de outubro de 1988.",
+          "fonte": {
+            "titulo": "DHBB/CPDOC – verbete José Sarney (José Ribamar Ferreira de Araújo Costa)",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/jose-ribamar-ferreira-de-araujo-costa"
+          }
+        },
+        {
+          "texto": "Criou pelo Decreto 92.452, de 10 de março de 1986, a Secretaria do Tesouro Nacional, órgão central de planejamento, coordenação e controle financeiro da União no Ministério da Fazenda.",
+          "fonte": {
+            "titulo": "Decreto nº 92.452, de 10/03/1986 – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/decret/1980-1987/decreto-92452-10-marco-1986-442816-publicacaooriginal-1-pe.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "O congelamento do Cruzado foi mantido até a eleição de novembro de 1986; o Cruzado II, de 21 de novembro, liberou preços e a inflação mensal chegou a 23,26% em maio de 1987.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC – verbete José Sarney (José Ribamar Ferreira de Araújo Costa)",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/jose-ribamar-ferreira-de-araujo-costa"
+          }
+        },
+        {
+          "texto": "A inflação anual medida pelo IPCA chegou a 1.972,91% em 1989, último ano do governo, depois de 363,41% em 1987 e 980,21% em 1988.",
+          "autor_da_critica": "IBGE (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – IPCA, taxa de variação anual (IBGE)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PRECOS_IPCAG')"
+          }
+        },
+        {
+          "texto": "O governo outorgou 1.028 concessões de rádio e TV de março de 1985 a outubro de 1988, beneficiando cerca de cem constituintes, na barganha pelo mandato de cinco anos.",
+          "autor_da_critica": "Paulino Motter, Fiocruz (obra acadêmica)",
+          "fonte": {
+            "titulo": "Motter, P. A batalha invisível da Constituinte: interesses privados versus caráter público da radiodifusão no Brasil (Arca/Fiocruz)",
+            "url": "https://www.arca.fiocruz.br/handle/icict/36611"
+          }
+        }
+      ],
+      "nota": "Filiou-se ao PMDB para compor a chapa da Aliança Democrática; assumiu interinamente em 15/03/1985 e em definitivo após a morte de Tancredo Neves, em 21/04/1985. Não foi encontrado online relatório do TCU sobre o período; a crítica institucional usa o verbete do DHBB."
+    },
+    {
+      "id": "collor-1990",
+      "presidente": "Fernando Collor de Mello",
+      "inicio": "1990-03-15",
+      "fim": "1992-10-02",
+      "partido": "PRN",
+      "chegada": "eleição direta",
+      "contexto": "Primeiro presidente eleito por voto direto desde 1960, Fernando Collor de Mello, do PRN, venceu Luiz Inácio Lula da Silva no segundo turno de 1989 e anunciou, no dia seguinte à posse, um plano de estabilização com bloqueio de ativos financeiros.",
+      "avancos": [
+        {
+          "texto": "Criou pela Lei 8.031, de 12 de abril de 1990, o Programa Nacional de Desestatização, com Comissão Diretora subordinada à Presidência para transferir à iniciativa privada atividades exploradas pelo setor público.",
+          "fonte": {
+            "titulo": "Lei nº 8.031, de 12/04/1990 – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1990/lei-8031-12-abril-1990-375980-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em 13 de julho de 1990 a Lei 8.069, o Estatuto da Criança e do Adolescente, que instituiu os conselhos tutelares e revogou o Código de Menores de 1979.",
+          "fonte": {
+            "titulo": "Lei nº 8.069, de 13/07/1990 (ECA) – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1990/lei-8069-13-julho-1990-372211-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em 11 de setembro de 1990 a Lei 8.078, o Código de Defesa do Consumidor, que fixou direitos básicos do consumidor, inclusive a inversão do ônus da prova em seu favor.",
+          "fonte": {
+            "titulo": "Lei nº 8.078, de 11/09/1990 (Código de Defesa do Consumidor) – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-publicacaooriginal-1-pl.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "O Senado julgou procedente, em 30 de dezembro de 1992, a denúncia por crime de responsabilidade e impôs inabilitação de oito anos para função pública, mesmo após a renúncia ao mandato.",
+          "autor_da_critica": "Senado Federal, Resolução 101/1992 (julgamento do Senado)",
+          "fonte": {
+            "titulo": "Resolução do Senado Federal nº 101, de 30/12/1992 (sanções no processo de impeachment)",
+            "url": "https://legis.senado.leg.br/norma/564156/publicacao/15648144"
+          }
+        },
+        {
+          "texto": "O PIB caiu 4,35% em 1990, primeiro ano do governo, cresceu 1,03% em 1991 e recuou 0,54% em 1992, segundo as contas nacionais do IBGE.",
+          "autor_da_critica": "IBGE (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – PIB a preços de mercado, variação real anual (IBGE)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='SCN10_PIBG10')"
+          }
+        },
+        {
+          "texto": "O bloqueio da maior parte dos ativos financeiros, em março de 1990, baixou a inflação de 70% para 10% ao mês, mas ela voltou a quase 20% ao mês em dezembro.",
+          "autor_da_critica": "Carlos Eduardo Carvalho, PUC-SP (obra acadêmica)",
+          "fonte": {
+            "titulo": "Carvalho, C. E. O fracasso do Plano Collor: erros de execução ou de concepção? Economia (ANPEC), v. 4, n. 2, 2003",
+            "url": "https://ideas.repec.org/a/anp/econom/v4y2003i2p283-331.html"
+          }
+        }
+      ],
+      "nota": "Afastado em 02/10/1992, após a Câmara autorizar o processo de impeachment em 29/09; renunciou em 29/12/1992, e o Senado aprovou as sanções (Resolução 101) em 30/12/1992. Na esfera penal, o STF julgou a Ação Penal 307 em dezembro de 1994; segundo notícia do próprio STF sobre a AP 465, nela Collor foi absolvido por falta de provas."
+    },
+    {
+      "id": "itamar-1992",
+      "presidente": "Itamar Franco",
+      "inicio": "1992-10-02",
+      "fim": "1995-01-01",
+      "partido": "sem partido",
+      "chegada": "sucessão (vice ou linha sucessória)",
+      "contexto": "Vice eleito na chapa de Collor, Itamar Franco assumiu interinamente em 2 de outubro de 1992, com o afastamento do titular, e em definitivo em 29 de dezembro de 1992; seu governo implantou a URV e o real em 1994.",
+      "avancos": [
+        {
+          "texto": "Sancionou em 27 de maio de 1994 a Lei 8.880, que criou a Unidade Real de Valor (URV) e previu sua conversão na nova moeda, o Real, ao ser emitida pelo Banco Central.",
+          "fonte": {
+            "titulo": "Lei nº 8.880, de 27/05/1994 (URV) – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1994/lei-8880-27-maio-1994-372593-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em dezembro de 1993 a Lei Orgânica da Assistência Social (Lei 8.742), que garantiu um salário mínimo mensal a idosos e pessoas com deficiência sem meios de sustento.",
+          "fonte": {
+            "titulo": "Lei nº 8.742, de 07/12/1993 (LOAS) – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1993/lei-8742-7-dezembro-1993-363163-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Reduziu a inflação mensal medida pelo IPCA de 47,43% em junho de 1994 para 6,84% em julho, 1,53% em setembro e 1,71% em dezembro de 1994.",
+          "fonte": {
+            "titulo": "Ipeadata – IPCA, taxa de variação mensal (IBGE)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PRECOS12_IPCAG12')"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Teve quatro ministros da Fazenda entre outubro de 1992 e maio de 1993 (Krause, Haddad, Eliseu Resende e Fernando Henrique), e a inflação mensal chegou a 30% em junho de 1993.",
+          "autor_da_critica": "DHBB, CPDOC/FGV (verbete do DHBB/CPDOC)",
+          "fonte": {
+            "titulo": "DHBB/CPDOC – verbete Itamar Augusto Cautiero Franco",
+            "url": "https://www18.fgv.br/cpdoc/acervo/dicionarios/verbete-biografico/itamar-augusto-cautiero-franco"
+          }
+        },
+        {
+          "texto": "A inflação anual medida pelo IPCA chegou a 2.477,15% em 1993, acima dos 1.119,10% de 1992 e dos 1.620,97% de 1990.",
+          "autor_da_critica": "IBGE (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – IPCA, taxa de variação anual (IBGE)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PRECOS_IPCAG')"
+          }
+        },
+        {
+          "texto": "Com o real, juros altos, banda cambial assimétrica e abertura das importações a partir de setembro de 1994 apreciaram a moeda e inverteram bruscamente o superávit comercial.",
+          "autor_da_critica": "Luiz Fernando de Paula e Antonio José Alves Jr. (obra acadêmica)",
+          "fonte": {
+            "titulo": "Paula, L. F. de; Alves Jr., A. J. Fragilidade financeira externa e os limites da política cambial no Real. Revista de Economia Política, v. 19, 1999",
+            "url": "https://www.scielo.br/j/rep/a/tbpvK9BS9hhsSVTtL98sgpg/?lang=pt"
+          }
+        }
+      ],
+      "nota": "Eleito vice pelo PRN em 1989, deixou o partido em maio de 1992 e só voltou a se filiar (PMDB) em 1997, segundo o DHBB; por isso 'sem partido'. Não foi encontrado online relatório do TCU sobre 1992-1994; a crítica institucional usa o verbete do DHBB."
+    },
+    {
+      "id": "fhc-1995",
+      "presidente": "Fernando Henrique Cardoso",
+      "inicio": "1995-01-01",
+      "fim": "1999-01-01",
+      "partido": "PSDB",
+      "chegada": "eleição direta",
+      "contexto": "Ministro da Fazenda que conduziu a preparação do Plano Real, Fernando Henrique Cardoso, do PSDB, venceu a eleição direta de 1994 e governou com a estabilidade de preços no centro da política econômica.",
+      "avancos": [
+        {
+          "texto": "Sancionou em 24 de dezembro de 1996 a Lei 9.424, que regulamentou o Fundef, com valor mínimo por aluno garantido pela União e pelo menos 60% dos recursos para pagar professores.",
+          "fonte": {
+            "titulo": "Lei nº 9.424, de 24/12/1996 (Fundef) – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1996/lei-9424-24-dezembro-1996-365371-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em 4 de dezembro de 1995 a Lei 9.140, que reconheceu como mortos desaparecidos políticos de 1961 a 1979 e criou comissão especial para localizar corpos e analisar indenizações.",
+          "fonte": {
+            "titulo": "Lei nº 9.140, de 04/12/1995 – publicação original, Câmara dos Deputados",
+            "url": "http://www2.camara.leg.br/legin/fed/lei/1995/lei-9140-4-dezembro-1995-348760-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Reduziu a inflação anual medida pelo IPCA de 22,41% em 1995 para 9,56% em 1996, 5,22% em 1997 e 1,65% em 1998.",
+          "fonte": {
+            "titulo": "Ipeadata – IPCA, taxa de variação anual (IBGE)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PRECOS_IPCAG')"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "O desemprego aberto médio da PME/IBGE subiu de 5,66% em 1997 para 7,60% em 1998, e o emprego formal encolheu 2,80%, com 581.753 demissões líquidas.",
+          "autor_da_critica": "TCU, Contas do Governo de 1998 (auditoria do TCU)",
+          "fonte": {
+            "titulo": "TCU – Relatório e parecer prévio sobre as Contas do Governo da República, exercício de 1998",
+            "url": "https://sites.tcu.gov.br/recursos/acervo-de-contas-do-presidente/pdfs/Governo%20da%20Republica%20-%20Exercicio%201998.pdf"
+          }
+        },
+        {
+          "texto": "O déficit em transações correntes passou de 2,43% do PIB em 1995 para 2,80% em 1996, 3,64% em 1997 e 4,05% em 1998.",
+          "autor_da_critica": "Banco Central do Brasil (dado oficial)",
+          "fonte": {
+            "titulo": "Ipeadata – Balanço de pagamentos: transações correntes (% do PIB) (Bacen)",
+            "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='BPAG_TCPIB')"
+          }
+        },
+        {
+          "texto": "O resultado primário do setor público passou de superávit médio de 2,9% do PIB em 1991-1994 para déficit médio de 0,2% do PIB em 1995-1998.",
+          "autor_da_critica": "Fabio Giambiagi, Ipea (obra acadêmica)",
+          "fonte": {
+            "titulo": "Giambiagi, F. Do déficit de metas às metas de déficit: a política fiscal do período 1995-2002. Pesquisa e Planejamento Econômico, v. 32, n. 1, 2002",
+            "url": "https://ppe.ipea.gov.br/index.php/ppe/article/download/277/214"
+          }
+        }
+      ],
+      "nota": "Primeiro mandato (1995-1998); o segundo tem entrada própria."
+    },
+    {
+      "id": "fhc-1999",
+      "presidente": "Fernando Henrique Cardoso",
+      "inicio": "1999-01-01",
+      "fim": "2003-01-01",
+      "partido": "PSDB",
+      "chegada": "eleição direta",
+      "contexto": "Segundo mandato de Fernando Henrique Cardoso, reeleito em 1998. Começou com o abandono da âncora cambial em janeiro de 1999 e teve racionamento de energia elétrica em 2001.",
+      "avancos": [
+        {
+          "texto": "Sancionou em maio de 2000 a Lei de Responsabilidade Fiscal, que limitou a despesa com pessoal a 50% da receita corrente líquida na União e a 60% nos estados e municípios.",
+          "fonte": {
+            "titulo": "Lei Complementar nº 101, de 4 de maio de 2000 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/leicom/2000/leicomplementar-101-4-maio-2000-351480-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Criou em fevereiro de 1999 o medicamento genérico, intercambiável com o de referência e identificado pela denominação do princípio ativo, por lei que alterou a norma de vigilância sanitária.",
+          "fonte": {
+            "titulo": "Lei nº 9.787, de 10 de fevereiro de 1999 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/1999/lei-9787-10-fevereiro-1999-351613-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Criou em abril de 2001 o Bolsa Escola federal, que pagava R$ 15 mensais por criança de 6 a 15 anos com frequência escolar mínima de 85%, até três por família.",
+          "fonte": {
+            "titulo": "Lei nº 10.219, de 11 de abril de 2001 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2001/lei-10219-11-abril-2001-358177-publicacaooriginal-1-pl.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "O racionamento de energia de 2001 decorreu sobretudo de atrasos de obras e investimentos não realizados, não só da seca; o risco de déficit era estimável desde novembro de 1999.",
+          "autor_da_critica": "Comissão de Análise do Sistema Hidrotérmico, coordenada por Jerson Kelman (relatório oficial)",
+          "fonte": {
+            "titulo": "Relatório da Comissão de Análise do Sistema Hidrotérmico de Energia Elétrica (2001), comissão criada por decreto presidencial de 22/05/2001",
+            "url": "https://kelman.com.br/relatorio_kelman.pdf"
+          }
+        },
+        {
+          "texto": "A inflação medida pelo IPCA ficou acima do teto da meta em 2001, com 7,67% ante limite de 6%, e em 2002, com 12,53% ante limite de 5,5%.",
+          "autor_da_critica": "Banco Central do Brasil (dado oficial)",
+          "fonte": {
+            "titulo": "Banco Central do Brasil – Histórico de metas para a inflação no Brasil",
+            "url": "https://www.bcb.gov.br/pec/metas/tabelametaseresultados.pdf"
+          }
+        },
+        {
+          "texto": "A defesa do câmbio fixo baixou as reservas de US$ 74 bilhões, em abril de 1998, a cerca de US$ 30 bilhões; liberado em 1999, o real perdeu cerca de 70%.",
+          "autor_da_critica": "Maria Luiza Falcão Silva (obra acadêmica)",
+          "fonte": {
+            "titulo": "Silva, M. L. F. (2002). Plano Real e âncora cambial. Revista de Economia Política, v. 22, n. 3",
+            "url": "https://www.scielo.br/j/rep/a/PbxtzNVZvNwcVcRVfdJqkgj/?lang=pt"
+          }
+        }
+      ],
+      "nota": "A terceira crítica trata da crise cambial que abriu o mandato; a política de câmbio que a antecedeu vem do primeiro mandato. O relatório da Comissão Kelman foi aberto na cópia publicada no site do coordenador; não foi localizada cópia em domínio oficial."
+    },
+    {
+      "id": "lula-2003",
+      "presidente": "Luiz Inácio Lula da Silva",
+      "inicio": "2003-01-01",
+      "fim": "2007-01-01",
+      "partido": "PT",
+      "chegada": "eleição direta",
+      "contexto": "Primeiro mandato de Luiz Inácio Lula da Silva, eleito pelo PT em 2002. O PIB cresceu 1,1% em 2003 e 5,8% em 2004, e o esquema conhecido como mensalão veio a público em 2005.",
+      "avancos": [
+        {
+          "texto": "Criou em janeiro de 2004 o Bolsa Família, que unificou Bolsa Escola, Bolsa Alimentação, Auxílio-Gás e o Programa Nacional de Acesso à Alimentação numa transferência de renda com condicionalidades.",
+          "fonte": {
+            "titulo": "Lei nº 10.836, de 9 de janeiro de 2004 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2004/lei-10836-9-janeiro-2004-490604-publicacaooriginal-1-pl.html"
+          }
+        },
+        {
+          "texto": "Instituiu em janeiro de 2005 o ProUni, que isenta de tributos faculdades privadas em troca de bolsas integrais a estudantes com renda familiar de até 1,5 salário mínimo per capita.",
+          "fonte": {
+            "titulo": "Lei nº 11.096, de 13 de janeiro de 2005 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2005/lei-11096-13-janeiro-2005-535381-publicacaooriginal-23558-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em agosto de 2006 a Lei Maria da Penha, que criou mecanismos contra a violência doméstica e familiar contra a mulher, com medidas protetivas de urgência e juizados especializados.",
+          "fonte": {
+            "titulo": "Lei nº 11.340, de 7 de agosto de 2006 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2006/lei-11340-7-agosto-2006-545133-publicacaooriginal-57150-pl.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "O ex-ministro-chefe da Casa Civil José Dirceu foi condenado por corrupção ativa de nove deputados federais entre 2003 e 2005, no esquema conhecido como mensalão (Ação Penal 470).",
+          "autor_da_critica": "STF, Ação Penal 470 (decisão judicial)",
+          "fonte": {
+            "titulo": "STF – AP 470: Plenário fixa penas de José Dirceu (12/11/2012)",
+            "url": "https://noticias.stf.jus.br/postsnoticias/ap-470-plenario-fixa-penas-de-jose-dirceu/"
+          }
+        },
+        {
+          "texto": "O desmatamento anual na Amazônia Legal subiu de 21.650 km² em 2002 para 27.772 km² em 2004, a segunda maior taxa da série do Prodes, iniciada em 1988.",
+          "autor_da_critica": "Inpe (dado oficial)",
+          "fonte": {
+            "titulo": "Inpe/MMA – Prodes 2026, série histórica das taxas de desmatamento na Amazônia (apresentação de 16/10/2026)",
+            "url": "https://www.gov.br/mma/pt-br/noticias-defeso-eleitoral/apresentacao-coletiva-prodes-2026_inpe.pdf"
+          }
+        },
+        {
+          "texto": "A crise do controle de tráfego aéreo, de novembro de 2006 a meados de 2007, com operação-padrão de controladores e falta de pessoal, desorganizou os principais aeroportos do país.",
+          "autor_da_critica": "Amâncio Jorge de Oliveira, Janina Onuki e Sônia Amorim, Enap (obra acadêmica)",
+          "fonte": {
+            "titulo": "Oliveira, Onuki e Amorim (2009). A crise do transporte aéreo no Brasil – 2006 e 2007. Casoteca Enap",
+            "url": "https://bibliotecadigital.enap.gov.br/bitstream/1/304/13/A%20crise%20do%20transporte%20a%c3%a9reo%20no%20Brasil%202006-2007.pdf"
+          }
+        }
+      ],
+      "nota": "Na AP 470, a condenação de José Dirceu por formação de quadrilha foi revista depois; o texto cita só a de corrupção ativa. A crise aérea começou em 2006 e se estendeu a 2007, já no segundo mandato."
+    },
+    {
+      "id": "lula-2007",
+      "presidente": "Luiz Inácio Lula da Silva",
+      "inicio": "2007-01-01",
+      "fim": "2011-01-01",
+      "partido": "PT",
+      "chegada": "eleição direta",
+      "contexto": "Segundo mandato de Lula, reeleito em 2006. Lançou o PAC em 2007 e enfrentou a crise financeira global de 2008; o PIB caiu 0,1% em 2009 e cresceu 7,5% em 2010.",
+      "avancos": [
+        {
+          "texto": "Regulamentou em junho de 2007 o Fundeb, fundo que financia a educação básica da creche ao ensino médio, com complementação da União e ao menos 60% para pagar o magistério.",
+          "fonte": {
+            "titulo": "Lei nº 11.494, de 20 de junho de 2007 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2007/lei-11494-20-junho-2007-555612-publicacaooriginal-74923-pl.html"
+          }
+        },
+        {
+          "texto": "Criou em julho de 2009 o Minha Casa, Minha Vida, com incentivos da União à produção e à compra de moradias novas por famílias com renda mensal de até dez salários mínimos.",
+          "fonte": {
+            "titulo": "Lei nº 11.977, de 7 de julho de 2009 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2009/lei-11977-7-julho-2009-589206-publicacaooriginal-114190-pl.html"
+          }
+        },
+        {
+          "texto": "Reduziu a taxa anual de desmatamento na Amazônia Legal de 14.286 km² em 2006 para 7.000 km² em 2010, segundo o monitoramento por satélite do Prodes.",
+          "fonte": {
+            "titulo": "Inpe/MMA – Prodes 2026, série histórica das taxas de desmatamento na Amazônia (apresentação de 16/10/2026)",
+            "url": "https://www.gov.br/mma/pt-br/noticias-defeso-eleitoral/apresentacao-coletiva-prodes-2026_inpe.pdf"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Ex-dirigentes da Petrobras assinaram em 2007, sem aval do conselho, a carta de intenções para comprar a outra metade da refinaria de Pasadena e foram condenados a devolver US$ 79 milhões.",
+          "autor_da_critica": "TCU, Acórdão 1881/2017-Plenário (auditoria do TCU)",
+          "fonte": {
+            "titulo": "TCU – Acórdão 1881/2017-Plenário: TCU condena ex-gestores da Petrobras ao pagamento de débito e multa pela compra de Pasadena",
+            "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-condena-ex-gestores-da-petrobras-ao-pagamento-de-debito-e-multa-pela-compra-de-pasadena"
+          }
+        },
+        {
+          "texto": "O PIB recuou 0,1% em 2009, depois de crescer 5,1% em 2008; foi o único ano de queda entre 2004 e 2014 na série do IBGE.",
+          "autor_da_critica": "IBGE (dado oficial)",
+          "fonte": {
+            "titulo": "IBGE – Sidra, Tabela 6784: taxa de variação real do PIB",
+            "url": "https://apisidra.ibge.gov.br/values/t/6784/n1/all/v/9810/p/all"
+          }
+        },
+        {
+          "texto": "Na faixa de menor renda do Minha Casa, Minha Vida, a prioridade à quantidade gerou conjuntos periféricos; em São Paulo, ficavam a 26 e 28 km dos principais centros de emprego.",
+          "autor_da_critica": "Ipea, Linke e outros (obra acadêmica)",
+          "fonte": {
+            "titulo": "Ipea, Texto para Discussão 2176 (2016): Inserção urbana de habitação de interesse social – sumário executivo",
+            "url": "https://repositorio.ipea.gov.br/bitstream/11058/6592/2/td_2176_sumex.pdf"
+          }
+        }
+      ],
+      "nota": "A queda do desmatamento começou em 2005, ainda no primeiro mandato. A condenação do TCU sobre Pasadena, de 2017, tratou da carta de intenções de 2007; os demais processos do caso não foram verificados."
+    },
+    {
+      "id": "dilma-2011",
+      "presidente": "Dilma Rousseff",
+      "inicio": "2011-01-01",
+      "fim": "2015-01-01",
+      "partido": "PT",
+      "chegada": "eleição direta",
+      "contexto": "Primeiro mandato de Dilma Rousseff, eleita pelo PT em 2010 e primeira mulher na Presidência. O crescimento do PIB passou de 4,0% em 2011 para 0,5% em 2014.",
+      "avancos": [
+        {
+          "texto": "Sancionou em novembro de 2011 a Lei de Acesso à Informação, que obriga os órgãos públicos a responder pedidos em até 20 dias e limita o sigilo máximo a 25 anos.",
+          "fonte": {
+            "titulo": "Lei nº 12.527, de 18 de novembro de 2011 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2011/lei-12527-18-novembro-2011-611802-publicacaooriginal-134287-pl.html"
+          }
+        },
+        {
+          "texto": "Criou em novembro de 2011 a Comissão Nacional da Verdade, com sete membros, para examinar e esclarecer as graves violações de direitos humanos ocorridas de 1946 a 1988.",
+          "fonte": {
+            "titulo": "Lei nº 12.528, de 18 de novembro de 2011 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2011/lei-12528-18-novembro-2011-611803-publicacaooriginal-134289-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em agosto de 2012 a Lei de Cotas, que reserva ao menos 50% das vagas das universidades e institutos federais a estudantes de escolas públicas, metade delas para baixa renda.",
+          "fonte": {
+            "titulo": "Lei nº 12.711, de 29 de agosto de 2012 (texto original, Câmara dos Deputados)",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2012/lei-12711-29-agosto-2012-774113-publicacaooriginal-137498-pl.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "As contas de 2014 tiveram parecer pela rejeição, o primeiro desde 1937, por omitir passivos com bancos públicos e FGTS, usar adiantamentos da Caixa e não contingenciar R$ 28,54 bilhões.",
+          "autor_da_critica": "TCU, Acórdão 2461/2015-Plenário (auditoria do TCU)",
+          "fonte": {
+            "titulo": "TCU – Acórdão 2461/2015-Plenário: TCU conclui parecer sobre contas prestadas pela Presidente da República referentes a 2014",
+            "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-conclui-parecer-sobre-contas-prestadas-pela-presidente-da-republica-referentes-a-2014"
+          }
+        },
+        {
+          "texto": "O setor público consolidado passou de superávit primário de 2,94% do PIB em 2011 para déficit de 0,56% em 2014, o primeiro resultado anual negativo da série iniciada em 2002.",
+          "autor_da_critica": "Banco Central do Brasil (dado oficial)",
+          "fonte": {
+            "titulo": "Banco Central, SGS 5793: resultado primário do setor público consolidado, % do PIB, acumulado em 12 meses",
+            "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5793/dados?formato=json&dataInicial=01/12/2008&dataFinal=31/12/2016"
+          }
+        },
+        {
+          "texto": "A desoneração da folha, que trocou a contribuição patronal de 20% sobre salários por 1% a 2% do faturamento a partir de 2012, não teve efeito sobre o volume de emprego.",
+          "autor_da_critica": "Ipea, Garcia, Sachsida e Carvalho (obra acadêmica)",
+          "fonte": {
+            "titulo": "Ipea, Texto para Discussão 2357 (2018): Impacto da desoneração da folha de pagamento sobre o emprego – novas evidências",
+            "url": "https://ideas.repec.org/p/ipe/ipetds/2357.html"
+          }
+        }
+      ],
+      "nota": "Há estudo com resultado oposto sobre a desoneração (Lobel, 2022, citado em data/entregas/dilma.json). O parecer do TCU de 2015 é recomendação; o julgamento das contas cabe ao Congresso."
+    },
+    {
+      "id": "dilma-2015",
+      "presidente": "Dilma Rousseff",
+      "inicio": "2015-01-01",
+      "fim": "2016-05-12",
+      "partido": "PT",
+      "chegada": "eleição direta",
+      "contexto": "Segundo mandato de Dilma Rousseff, reeleita em 2014, exercido durante recessão econômica; terminou com o afastamento do cargo em 12 de maio de 2016, quando o Senado abriu o processo de impeachment.",
+      "avancos": [
+        {
+          "texto": "Sancionou em 9 de março de 2015 a Lei 13.104, que tornou o feminicídio circunstância qualificadora do homicídio e o incluiu no rol dos crimes hediondos.",
+          "fonte": {
+            "titulo": "Lei nº 13.104, de 9 de março de 2015 (Lei do Feminicídio) – LexML",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2015-03-09;13104"
+          }
+        },
+        {
+          "texto": "Sancionou em 6 de julho de 2015 a Lei 13.146, a Lei Brasileira de Inclusão, que instituiu o Estatuto da Pessoa com Deficiência.",
+          "fonte": {
+            "titulo": "Lei nº 13.146, de 6 de julho de 2015 (Lei Brasileira de Inclusão) – LexML",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2015-07-06;13146"
+          }
+        },
+        {
+          "texto": "Sancionou em 8 de março de 2016 a Lei 13.257, o Marco Legal da Primeira Infância, que trata das políticas públicas para crianças nos seis primeiros anos de vida.",
+          "fonte": {
+            "titulo": "Lei nº 13.257, de 8 de março de 2016 (Marco Legal da Primeira Infância) – texto original, Câmara dos Deputados",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2016/lei-13257-8-marco-2016-782483-publicacaooriginal-149635-pl.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Perdeu o cargo em 31 de agosto de 2016, condenada por crimes de responsabilidade contra a lei orçamentária e a guarda do dinheiro público, por créditos abertos sem autorização legislativa.",
+          "autor_da_critica": "Senado Federal, Resolução 35/2016 (julgamento do Senado)",
+          "fonte": {
+            "titulo": "Resolução do Senado Federal nº 35, de 31 de agosto de 2016 (sanções no processo de impeachment)",
+            "url": "https://legis.senado.leg.br/norma/562339/publicacao/15634840"
+          }
+        },
+        {
+          "texto": "A taxa de desocupação medida pela PNAD Contínua subiu de 6,6% no quarto trimestre de 2014 para 11,0% no primeiro trimestre de 2016.",
+          "autor_da_critica": "IBGE (dado oficial)",
+          "fonte": {
+            "titulo": "IBGE – PNAD Contínua trimestral, Tabela 4099: taxa de desocupação (API Sidra)",
+            "url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/201404,201501,201504,201601,201602"
+          }
+        },
+        {
+          "texto": "A recessão iniciada em 2014, com queda de cerca de 9% do PIB per capita até 2016, decorreu sobretudo de erros de política econômica, agravados pela crise da dívida pública de 2015.",
+          "autor_da_critica": "Fernando de Holanda Barbosa Filho, FGV/Ibre (obra acadêmica)",
+          "fonte": {
+            "titulo": "Barbosa Filho, F. H. A crise econômica de 2014/2017. Estudos Avançados, v. 31, n. 89, 2017",
+            "url": "https://revistas.usp.br/eav/article/view/132416"
+          }
+        }
+      ],
+      "nota": "Fim registrado em 12/05/2016, data em que o Senado abriu o processo de impeachment (55 votos a 22) e a presidente foi afastada; em 31/08/2016 o Senado decidiu a perda do mandato (61 a 20) e, em votação separada, manteve seus direitos políticos."
+    },
+    {
+      "id": "temer-2016",
+      "presidente": "Michel Temer",
+      "inicio": "2016-05-12",
+      "fim": "2019-01-01",
+      "partido": "PMDB/MDB",
+      "chegada": "sucessão (vice ou linha sucessória)",
+      "contexto": "Vice-presidente eleito na chapa de Dilma Rousseff em 2014, assumiu interinamente em 12 de maio de 2016 e em definitivo em 31 de agosto de 2016, após o julgamento do impeachment pelo Senado.",
+      "avancos": [
+        {
+          "texto": "Sancionou em 30 de junho de 2016, ainda como interino, a Lei 13.303, Lei de Responsabilidade das Estatais, com o estatuto jurídico das empresas públicas e sociedades de economia mista.",
+          "fonte": {
+            "titulo": "Lei nº 13.303, de 30 de junho de 2016 (Lei de Responsabilidade das Estatais) – LexML",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2016-06-30;13303"
+          }
+        },
+        {
+          "texto": "Enviou ao Congresso a PEC 241/2016, promulgada como Emenda Constitucional 95 em 15 de dezembro de 2016, que instituiu o Novo Regime Fiscal, conhecido como teto de gastos.",
+          "fonte": {
+            "titulo": "PEC 241/2016 – ficha de tramitação, Câmara dos Deputados (autor: Poder Executivo; transformada na EC 95/2016)",
+            "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2088351"
+          }
+        },
+        {
+          "texto": "Sancionou em 16 de fevereiro de 2017 a Lei 13.415, reforma do ensino médio, que alterou a LDB e criou política de fomento a escolas de ensino médio em tempo integral.",
+          "fonte": {
+            "titulo": "Lei nº 13.415, de 16 de fevereiro de 2017 (Reforma do Ensino Médio) – LexML",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2017-02-16;13415"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "A intervenção federal na segurança do Rio de Janeiro em 2018, que custou R$ 1,2 bilhão à União, reduziu a criminalidade só no período e teve baixa capacidade de gerar resultados duradouros.",
+          "autor_da_critica": "TCU, TC 039.911/2018-7 (auditoria do TCU)",
+          "fonte": {
+            "titulo": "TCU – Intervenção federal no Estado do Rio teve baixos resultados de longo prazo (TC 039.911/2018-7, sessão de 24/05/2023)",
+            "url": "https://portal.tcu.gov.br/imprensa/noticias/intervencao-federal-no-estado-do-rio-teve-baixos-resultados-de-longo-prazo"
+          }
+        },
+        {
+          "texto": "A dívida bruta do governo geral passou de 67,6% do PIB em maio de 2016 para 75,3% do PIB em dezembro de 2018, ao fim do mandato.",
+          "autor_da_critica": "Banco Central do Brasil (dado oficial)",
+          "fonte": {
+            "titulo": "Banco Central do Brasil – SGS, série 13762: Dívida bruta do governo geral (% do PIB)",
+            "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json&dataInicial=01/12/2014&dataFinal=31/12/2026"
+          }
+        },
+        {
+          "texto": "Trechos da reforma trabalhista (Lei 13.467/2017) que admitiam o trabalho de gestantes e lactantes em atividades insalubres foram declarados inconstitucionais em 2019, por violarem a proteção à maternidade.",
+          "autor_da_critica": "STF, ADI 5938 (decisão judicial)",
+          "fonte": {
+            "titulo": "STF invalida norma da Reforma Trabalhista que permitia trabalho de grávidas e lactantes em atividades insalubres (29/05/2019)",
+            "url": "https://noticias.stf.jus.br/postsnoticias/stf-invalida-norma-da-reforma-trabalhista-que-permitia-trabalho-de-gravidas-e-lactantes-em-atividades-insalubres/"
+          }
+        }
+      ],
+      "nota": "Interino de 12/05/2016 a 31/08/2016 e efetivo a partir de 31/08/2016, até 01/01/2019. O PMDB passou a se chamar MDB em dezembro de 2017."
+    },
+    {
+      "id": "bolsonaro-2019",
+      "presidente": "Jair Bolsonaro",
+      "inicio": "2019-01-01",
+      "fim": "2023-01-01",
+      "partido": "PSL/sem partido/PL",
+      "chegada": "eleição direta",
+      "contexto": "Eleito em 2018 pelo PSL no segundo turno, governou de 2019 a 2022, período que incluiu a pandemia de Covid-19 a partir de 2020; foi derrotado ao disputar a reeleição em 2022.",
+      "avancos": [
+        {
+          "texto": "Enviou ao Congresso a PEC 6/2019, promulgada como Emenda Constitucional 103 em 12 de novembro de 2019, que alterou o sistema de previdência social e criou regras de transição.",
+          "fonte": {
+            "titulo": "PEC 6/2019 – ficha de tramitação, Câmara dos Deputados (autor: Poder Executivo; transformada na EC 103/2019)",
+            "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2192459"
+          }
+        },
+        {
+          "texto": "Sancionou em 15 de julho de 2020 a Lei 14.026, novo marco do saneamento, que deu à ANA a edição de normas de referência e vedou a prestação por contrato de programa.",
+          "fonte": {
+            "titulo": "Lei nº 14.026, de 15 de julho de 2020 (marco legal do saneamento básico) – LexML",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2020-07-15;14026"
+          }
+        },
+        {
+          "texto": "Sancionou em 24 de fevereiro de 2021 a Lei Complementar 179, que deu autonomia ao Banco Central e fixou mandatos de quatro anos, desencontrados do presidencial, para presidente e diretores.",
+          "fonte": {
+            "titulo": "Lei Complementar nº 179, de 24 de fevereiro de 2021 (autonomia do Banco Central) – texto original, Câmara dos Deputados",
+            "url": "https://www2.camara.leg.br/legin/fed/leicom/2021/leicomplementar-179-24-fevereiro-2021-791083-publicacaooriginal-162335-pl.html"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Foi condenado em 11 de setembro de 2025 a 27 anos e 3 meses de prisão por liderar organização criminosa armada que tentou golpe de Estado e abolição violenta do Estado Democrático de Direito.",
+          "autor_da_critica": "STF, Ação Penal 2668 (decisão judicial)",
+          "fonte": {
+            "titulo": "STF fixa penas de 16 a 27 anos para condenados por tentativa de golpe de Estado (11/09/2025)",
+            "url": "https://noticias.stf.jus.br/postsnoticias/stf-fixa-penas-de-16-a-27-anos-para-condenados-por-tentativa-de-golpe-de-estado/"
+          }
+        },
+        {
+          "texto": "A taxa consolidada de desmatamento na Amazônia Legal chegou a 13.038 km² entre agosto de 2020 e julho de 2021, alta de 20,15% sobre a de 2020, de 10.851 km².",
+          "autor_da_critica": "Inpe (dado oficial)",
+          "fonte": {
+            "titulo": "Inpe – Nota técnica: taxa consolidada de desmatamento por corte raso na Amazônia Legal em 2021 (Prodes)",
+            "url": "http://mtc-m21d.sid.inpe.br/col/sid.inpe.br/mtc-m21d/2023/12.29.14.19/doc/NotaTecnica_consolidado_PRODES_2021_rev.pdf"
+          }
+        },
+        {
+          "texto": "Cerca de 47 mil mortes por Covid-19 de pessoas acima de 60 anos, entre janeiro e agosto de 2021, poderiam ter sido evitadas se a vacinação começasse oito semanas antes.",
+          "autor_da_critica": "Ferreira et al., Lancet Regional Health – Americas (obra acadêmica)",
+          "fonte": {
+            "titulo": "Ferreira et al. (2022). Estimating the impact of implementation and timing of the COVID-19 vaccination programme in Brazil: a counterfactual analysis",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9676113/"
+          }
+        }
+      ],
+      "nota": "Eleito pelo PSL, deixou o partido em novembro de 2019, ficou sem partido e filiou-se ao PL em novembro de 2021. A condenação na AP 2668 transitou em julgado: o cumprimento da pena foi determinado em 25/11/2025 e confirmado pela Primeira Turma em 26/11/2025 (https://noticias.stf.jus.br/postsnoticias/ap-2668-1a-turma-confirma-inicio-de-cumprimento-da-pena-de-reus-do-nucleo-1-da-tentativa-de-golpe/); em 12/05/2026 a defesa protocolou revisão criminal (RVC 6021) no STF."
+    },
+    {
+      "id": "lula-2023",
+      "presidente": "Luiz Inácio Lula da Silva",
+      "inicio": "2023-01-01",
+      "fim": null,
+      "partido": "PT",
+      "chegada": "eleição direta",
+      "contexto": "Terceiro mandato de Luiz Inácio Lula da Silva, eleito em 2022 no segundo turno; tomou posse em 1º de janeiro de 2023 e governa até a posse do sucessor, em 5 de janeiro de 2027.",
+      "avancos": [
+        {
+          "texto": "Sancionou em 19 de junho de 2023 a Lei 14.601, que instituiu o novo Bolsa Família, com mínimo de R$ 600 por família e R$ 150 adicionais por criança até seis anos.",
+          "fonte": {
+            "titulo": "Lei nº 14.601, de 19 de junho de 2023 (Programa Bolsa Família) – texto original, Câmara dos Deputados",
+            "url": "https://www2.camara.leg.br/legin/fed/lei/2023/lei-14601-19-junho-2023-794341-publicacaooriginal-168138-pl.html"
+          }
+        },
+        {
+          "texto": "Sancionou em 30 de agosto de 2023 a Lei Complementar 200, o novo arcabouço fiscal, que instituiu regime fiscal sustentável previsto na EC 126/2022 e alterou a Lei de Responsabilidade Fiscal.",
+          "fonte": {
+            "titulo": "Lei Complementar nº 200, de 30 de agosto de 2023 (Novo Arcabouço Fiscal) – LexML",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei.complementar:2023-08-30;200"
+          }
+        },
+        {
+          "texto": "Sancionou em 16 de janeiro de 2025 a Lei Complementar 214, que instituiu o IBS, a CBS e o Imposto Seletivo da reforma tributária e criou o Comitê Gestor do IBS.",
+          "fonte": {
+            "titulo": "Lei Complementar nº 214, de 16 de janeiro de 2025 – LexML",
+            "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei.complementar:2025-01-16;214"
+          }
+        }
+      ],
+      "criticas": [
+        {
+          "texto": "Os descontos associativos em benefícios do INSS passaram de R$ 536,3 milhões em 2021 para R$ 1,3 bilhão em 2023, com previsão de R$ 2,6 bilhões em 2024; 97,6% dos entrevistados não os autorizaram.",
+          "autor_da_critica": "CGU, auditoria dos descontos associativos do INSS (relatório oficial)",
+          "fonte": {
+            "titulo": "CGU – Relatório de auditoria: avaliação dos mecanismos de controle dos descontos associativos na folha do INSS (publicado em 23/04/2025)",
+            "url": "https://eaud.cgu.gov.br/relatorio/1675762"
+          }
+        },
+        {
+          "texto": "A dívida bruta do governo geral passou de 71,7% do PIB em dezembro de 2022 para 82,9% do PIB em agosto de 2026, dado mais recente.",
+          "autor_da_critica": "Banco Central do Brasil (dado oficial)",
+          "fonte": {
+            "titulo": "Banco Central do Brasil – SGS, série 13762: Dívida bruta do governo geral (% do PIB)",
+            "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json&dataInicial=01/12/2014&dataFinal=31/12/2026"
+          }
+        },
+        {
+          "texto": "Em dezembro de 2023 persistiam violência contra indígenas e reativação do garimpo ilegal na Terra Yanomami, com ao menos sete mortes de indígenas entre dezembro de 2022 e dezembro de 2023.",
+          "autor_da_critica": "Corte Interamericana de Direitos Humanos (organismo internacional)",
+          "fonte": {
+            "titulo": "Corte IDH – Resolução de 12 de dezembro de 2023, medidas provisórias, assunto Yanomami, Ye'kwana e Munduruku",
+            "url": "https://corteidh.or.cr/docs/medidas/yanomami_se_02_por.pdf"
+          }
+        }
+      ],
+      "nota": "Mandato em curso (hoje é 22/10/2026): avanços e críticas são parciais e podem mudar até o fim do governo. Pela EC 111/2021 (art. 4º), o mandato iniciado em 2023 dura até a posse do sucessor, em 5 de janeiro de 2027. A série da CGU começa em 2021, no governo anterior, e o valor de 2024 é projeção do próprio relatório. A mesma resolução da Corte IDH registra que o Estado fez grandes esforços e dedicou recursos significativos aos Yanomami desde o início de 2023."
+    }
+  ]
+}

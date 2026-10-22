@@ -614,6 +614,8 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <li><b>Verificação em fonte oficial.</b> Cada promessa dos levantamentos foi conferida de novo só em registros oficiais e primários: legislação no Planalto e no Diário Oficial, tramitação nos dados abertos da Câmara e do Senado, dados do IBGE, Banco Central, Tesouro e Portal da Transparência, auditorias do TCU e da CGU e decisões do STF. Reportagens não contam como prova, e notícias de sites do governo só provam que um ato aconteceu, nunca o resultado. O critério é o mesmo para todos os governos: "cumprida" exige ato oficial ou dado oficial que atenda o núcleo da promessa; "parcial" atende só parte; "não cumprida" exige que o mandato tenha terminado (no mandato atual, só quando o fato já está consumado); "em andamento" vale só para o mandato atual; promessa genérica, sem meta que dê para medir, fica "não verificável". A verificação olhou até 21/10/2026, então atos posteriores à data de cada levantamento entram só nela. A tabela compara as duas classificações nas mesmas promessas e mostra a diferença em número e em pontos percentuais. Cada promessa traz a justificativa e o link de cada evidência oficial.</li>
           <li><b>Entregas que não estavam no plano.</b> Para cada governo, 8 entregas que o próprio governo destacou nas Mensagens anuais ao Congresso e que não aparecem no plano de governo registrado nem nos levantamentos de promessas. Entre as candidatas, ficaram as de maior alcance medido por dado oficial (orçamento executado ou público atendido). Respostas a emergências aparecem marcadas. Para cada entrega, o site reúne avaliações oficiais (TCU, CGU, Ipea, IFI, Banco Central) e estudos acadêmicos, com achados nos dois sentidos, e resume o que eles dizem sobre o objetivo declarado da própria entrega: avaliações favoráveis, mistas, desfavoráveis ou ainda sem avaliação. Não há veredito de "boa" ou "ruim".</li>
           <li><b>Promessas anteriores.</b> Os números de promessas cumpridas são os publicados por cada levantamento jornalístico, sem recálculo. Como cada veículo usa sua própria lista e critério, os números não são comparáveis entre fontes nem entre governos. Os indicadores (PIB, IPCA, desocupação) são do IBGE e iguais para todos os governos, mas não medem cumprimento de promessas.</li>
+          <li><b>Posição ideológica dos candidatos.</b> Pela posição do partido no ano da eleição, segundo escalas de cientistas políticos: Coppedge (1945–1994), Zucco e Power (1998–2006), Tarouco e Madeira (2010–2014) e Bolognesi, Ribeiro e Codato (2018–2026). "Extrema" só aparece quando a própria escala usa o termo. Antes de 1945, ou sem partido, vale a posição pessoal documentada no CPDOC/FGV; sem fonte, o candidato fica "sem classificação". A linha ideológica vem da autodeclaração do partido ou do verbete do CPDOC. Como as escalas mudam ao longo do tempo, o mesmo partido pode mudar de posição entre eleições.</li>
+          <li><b>Governos desde 1889.</b> Cada governo tem 3 avanços e 3 críticas registrados por fontes de referência: verbetes do CPDOC/FGV, Arquivo Nacional, atos oficiais, Comissão Nacional da Verdade, TCU, CGU, STF e dados oficiais. Cada crítica diz quem a faz. Os números vêm de séries oficiais ou de referência (IBGE, Ipeadata, Banco Central, Inep, Banco Mundial). Cada ano entra na conta do governo que estava no poder em 1º de julho; PIB e inflação são médias geométricas; ano sem dado aparece como "—", sem estimativa.</li>
           <li><b>Eleições desde 1891.</b> Votos de 1945 a 2026 vêm dos dados abertos do TSE. Antes de 1945 e nas eleições indiretas, as fontes são históricas (Anuário do IBGE, CPDOC, Nohlen) e alguns números divergem entre elas, o que está anotado em cada eleição.</li>
           <li><b>Limites.</b> Plano de governo é intenção registrada, não lei nem garantia. Falas em debates e entrevistas podem ir além do plano.</li>
         </ul>
@@ -1753,6 +1755,9 @@ function renderEl() {
 
 /* Governos desde 1889: avanços, críticas e números do período */
 const ANO = d => +String(d || "").slice(0, 4);
+// Mandato que termina em 1º de janeiro foi do ano anterior: FHC 1 é 1995–1998.
+const anoFim = g => !g.fim ? "hoje" : String(/-01-0[1-5]$/.test(g.fim) ? ANO(g.fim) - 1 : ANO(g.fim));
+const fimNum = g => g.fim ? +anoFim(g) : new Date().getFullYear();
 // Um ano entra na conta do governo que estava no poder em 1º de julho daquele ano. Mesma regra para todos.
 function anosDo(g) {
   const out = [];
@@ -1766,14 +1771,22 @@ function govDoEleito(x, win) {
 function govEixo(g) {
   const k = nomeChave(g.presidente);
   for (const x of DATA._el?.eleicoes || []) for (const c of x.candidatos) if (c.eleito && c._ideo && nomeChave(c.nome) === k && x.ano <= ANO(g.inicio) && ANO(g.inicio) - x.ano <= 1) return c._ideo;
-  const sig = String(g.partido || "").split(/[ ;(,]/)[0];
+  // Sem eleição própria (vice que assumiu): posição do partido no período; se o partido não foi medido
+  // naquele ano, vale a medição mais próxima do mesmo partido, até 10 anos (mesma regra das escalas).
+  const sig = String(g.partido || "").split(/[ ;(,/]/)[0];
+  const nomes = new Set([sig, ...(PARTIDO_NOMES[sig] || [])]);
   const y = ANO(g.inicio);
+  let melhor = null;
   for (const [chave, p] of Object.entries(DATA._elIdeo?.partidos || {})) {
     const [s, per] = chave.split("@"); const [a, b] = String(per || "").split("-").map(Number);
-    if (s === sig && (!a || y >= a) && (!b || y <= b)) return { ...p, base: "partido" };
+    if (!nomes.has(s) || !a) continue;
+    const dist = y < a ? a - y : y > (b || a) ? y - (b || a) : 0;
+    if (dist <= 10 && (!melhor || dist < melhor.dist)) melhor = { dist, p };
   }
-  return null;
+  return melhor ? { ...melhor.p, base: "partido", nota: (melhor.dist ? `Medição do partido mais próxima do início do governo (${melhor.dist} ano(s) de distância). ` : "") + (melhor.p.nota || "") } : null;
 }
+// Mesmo partido com outro nome ao longo do tempo.
+const PARTIDO_NOMES = { PMDB: ["MDB"], MDB: ["PMDB"], PFL: ["DEM"], DEM: ["PFL"], PPB: ["PP", "PPR"], PP: ["PPB"], PR: ["PL"], PL: ["PR"] };
 const serie = id => DATA._ser?.[id]?.valores || {};
 function mediaGeo(id, anos) {
   const v = anos.map(y => serie(id)[y]).filter(x => typeof x === "number");
@@ -1792,7 +1805,7 @@ function ultimoAte(id, ano) {
 const fmtNum = (v, d = 1) => v == null || isNaN(v) ? "—" : v.toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
 const fmtMedia = (m, suf = "%") => m ? `${fmtNum(m.v)}${suf}${m.n < m.de ? `<span class="muted" data-tip="Média de ${m.n} dos ${m.de} anos do governo: falta dado nos outros">*</span>` : ""}` : "—";
 const fmtAntesDepois = (id, g, suf = "%") => {
-  const a = ultimoAte(id, ANO(g.inicio)), b = ultimoAte(id, ANO(g.fim || "2026-12-31"));
+  const a = ultimoAte(id, ANO(g.inicio)), b = ultimoAte(id, fimNum(g));
   if (!b) return "—";
   if (!a || a.y === b.y) return `${fmtNum(b.v)}${suf} <span class="muted">(${b.y})</span>`;
   return `${fmtNum(a.v)}${suf} <span class="muted">(${a.y})</span> → ${fmtNum(b.v)}${suf} <span class="muted">(${b.y})</span>`;
@@ -1802,7 +1815,7 @@ function govNumeros(g) {
   return {
     anos, pib: mediaGeo("pib_real_pct", anos), inf: mediaGeo("inflacao_pct", anos),
     prim: media("resultado_primario_pct_pib", anos), nom: media("resultado_nominal_pct_pib", anos),
-    div: ultimoAte("divida_pct_pib", ANO(g.fim || "2026-12-31"))
+    div: ultimoAte("divida_pct_pib", fimNum(g))
   };
 }
 function renderGov() {
@@ -1813,7 +1826,7 @@ function renderGov() {
     .filter(x => (!ex || x.i?.eixo === ex) && (!fm || x.i?.familia === fm) && (!q || fold([x.g.presidente, x.g.partido, x.g.inicio].join(" ")).includes(q)))
     .sort((a, b) => a.g.inicio.localeCompare(b.g.inicio));
   $("#govTab").innerHTML = `<table><thead><tr><th>Governo</th><th>Período</th><th>Posição</th><th class="num" data-tip="Média anual geométrica do crescimento real do PIB nos anos do governo">PIB, média anual</th><th class="num" data-tip="Inflação média anual (geométrica) nos anos do governo">Inflação, média anual</th><th class="num" data-tip="Resultado primário do setor público, média dos anos, em % do PIB. Positivo é superávit; negativo, déficit">Resultado primário</th><th class="num" data-tip="Dívida pública no último ano do governo, em % do PIB">Dívida no fim</th></tr></thead><tbody>${list.map(({ g, i, nums }) =>
-    `<tr><td><button type="button" class="linkbtn" data-gov="${esc(g.id)}" style="font-size:15px">${esc(g.presidente)}</button></td><td class="mono">${esc(String(g.inicio).slice(0, 4))}–${esc(g.fim ? String(g.fim).slice(0, 4) : "hoje")}</td><td>${i ? `<span class="pill ${eixoCls(i.eixo)}">${esc(EIXO_NOME[i.eixo] || i.eixo)}</span>` : `<span class="muted">—</span>`}</td><td class="num">${fmtMedia(nums.pib)}</td><td class="num">${fmtMedia(nums.inf)}</td><td class="num">${fmtMedia(nums.prim, "% do PIB")}</td><td class="num">${nums.div ? `${fmtNum(nums.div.v)}% <span class="muted">(${nums.div.y})</span>` : "—"}</td></tr>`).join("")}</tbody></table>`;
+    `<tr><td><button type="button" class="linkbtn" data-gov="${esc(g.id)}" style="font-size:15px">${esc(g.presidente)}</button></td><td class="mono">${esc(String(g.inicio).slice(0, 4))}–${esc(anoFim(g))}</td><td>${i ? `<span class="pill ${eixoCls(i.eixo)}">${esc(EIXO_NOME[i.eixo] || i.eixo)}</span>` : `<span class="muted">—</span>`}</td><td class="num">${fmtMedia(nums.pib)}</td><td class="num">${fmtMedia(nums.inf)}</td><td class="num">${fmtMedia(nums.prim, "% do PIB")}</td><td class="num">${nums.div ? `${fmtNum(nums.div.v)}% <span class="muted">(${nums.div.y})</span>` : "—"}</td></tr>`).join("")}</tbody></table>`;
   $("#govList").innerHTML = list.map(({ g, i, nums }) => `<article class="panel" id="gov-${esc(g.id)}">
     <div class="row" style="justify-content:space-between;align-items:baseline"><h3>${esc(g.presidente)} <span class="muted mono" style="font-size:14px">${esc(fmtDate(g.inicio))} a ${g.fim ? esc(fmtDate(g.fim)) : "hoje"}</span></h3><span class="pill out">${esc(g.chegada || "")}</span></div>
     <p style="margin:0">${g.partido ? `Partido: ${esc(g.partido)} · ` : ""}Posição: ${ideoPill(i)}</p>
