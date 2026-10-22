@@ -553,6 +553,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
         <div class="field grow"><label for="fcTipo">Tipo</label>
           <select id="fcTipo"><option value="">Todos</option><option value="fala">Falas do candidato</option><option value="sobre">Alegações sobre o candidato</option></select></div>
         <div class="field grow"><label for="fcTema">Tema</label><select id="fcTema"><option value="">Todos</option></select></div>
+        <div class="field grow"><label for="fcVer">Veredito</label><select id="fcVer"><option value="">Todos</option></select></div>
       </div>
       <div class="counts" id="fcCounts"></div>
       <div class="cols" id="fcList"></div>
@@ -1062,8 +1063,8 @@ const TEMA_NOME = {};
 function fmtDate(d) { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d || ""); return m ? `${m[3]}/${m[2]}/${m[1]}` : (d || ""); }
 function renderChecks() {
   if (!CHK) { $("#fcList").innerHTML = `<p class="empty">As checagens não carregaram.</p>`; return; }
-  const c = $("#fcCand").value, t = $("#fcTipo").value, tm = $("#fcTema").value;
-  const list = CHK.checagens.filter(x => (!t || x.tipo === t) && (!tm || x.tema === tm));
+  const c = $("#fcCand").value, t = $("#fcTipo").value, tm = $("#fcTema").value, vd = $("#fcVer").value;
+  const list = CHK.checagens.filter(x => (!t || x.tipo === t) && (!tm || x.tema === tm) && (!vd || (vd.startsWith("=") ? x.veredito === vd.slice(1) : vGrupo(x.veredito) === vd)));
   const counts = ORDER.map(k => `${esc(CAND[k].nome)}: <b class="mono">${list.filter(x => x.candidato === k).length}</b>`).join(" · ");
   $("#fcCounts").innerHTML = `<span>Itens com estes filtros: ${counts}</span>`;
   $("#fcList").innerHTML = ORDER.filter(k => !c || c === k).map(k => `<div class="col"><div class="col-h"><span class="num">${CAND[k].numero}</span><h3>${esc(CAND[k].nome)}</h3></div>` +
@@ -1073,11 +1074,27 @@ function renderChecks() {
       || `<p class="empty">Nenhum item com estes filtros.</p>`) + `</div>`).join("");
   $("#fcList").style.gridTemplateColumns = c ? "1fr" : "";
 }
+// Cada agência escreve o veredito de um jeito ("FALSO", "Não é verdade", "é falso"). O filtro agrupa
+// pela mesma regra para todas; o card continua mostrando o rótulo exato que a agência publicou.
+const VGRUPO = { verdadeiro: "Verdadeiro", falso: "Falso", enganoso: "Enganoso, impreciso, exagerado ou sem contexto", outro: "Outra classificação" };
+function vGrupo(v) {
+  const f = fold(v || "").trim();
+  if (/^(verdadeiro|verdade|correto|e verdade)$/.test(f)) return "verdadeiro";
+  if (/falso|nao e verdade|mentira|inveridico/.test(f)) return "falso";
+  if (/engan|contexto|imprec|exager|distorc|insustent|parcial|meia/.test(f)) return "enganoso";
+  return "outro";
+}
 function initChecks() {
   if (COMP) COMP.temas.forEach(t => TEMA_NOME[t.id] = t.nome);
   const ids = CHK ? [...new Set(CHK.checagens.map(x => x.tema))] : [];
   $("#fcTema").innerHTML = `<option value="">Todos</option>` + ids.map(id => `<option value="${esc(id)}">${esc(TEMA_NOME[id] || "Outro")}</option>`).join("");
-  ["#fcCand", "#fcTipo", "#fcTema"].forEach(s => $(s).addEventListener("change", renderChecks));
+  if (CHK) {
+    const grupos = Object.keys(VGRUPO).filter(g => CHK.checagens.some(x => vGrupo(x.veredito) === g));
+    const rotulos = [...new Set(CHK.checagens.map(x => x.veredito))].sort((a, b) => a.localeCompare(b, "pt"));
+    $("#fcVer").innerHTML = `<option value="">Todos</option><optgroup label="Agrupados">${grupos.map(g => `<option value="${g}">${esc(VGRUPO[g])} (${CHK.checagens.filter(x => vGrupo(x.veredito) === g).length})</option>`).join("")}</optgroup>`
+      + `<optgroup label="Rótulo exato da agência">${rotulos.map(r => `<option value="=${esc(r)}">${esc(r)}</option>`).join("")}</optgroup>`;
+  }
+  ["#fcCand", "#fcTipo", "#fcTema", "#fcVer"].forEach(s => $(s).addEventListener("change", renderChecks));
   renderChecks();
   if (CHK?.cobertura?.length) $("#coverage").innerHTML = `<h3>Reportagens que comparam os planos</h3><ul>` +
     CHK.cobertura.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>, ${esc(x.veiculo)}, ${esc(fmtDate(x.data))}. ${esc(x.resumo)}</li>`).join("") + `</ul>`;
