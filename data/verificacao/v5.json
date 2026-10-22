@@ -1,0 +1,636 @@
+{
+  "grupo": "v5",
+  "levantamentos": [
+    "metropoles-bolsonaro"
+  ],
+  "itens": [
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 18,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "No mandato o Brasil firmou novos acordos bilaterais e os internalizou por decreto: o Acordo de Complementação Econômica nº 74 com o Paraguai, sobre comércio automotivo, assinado em fevereiro de 2020 (Decreto 10.448/2020), e o Protocolo com os EUA sobre Regras Comerciais e de Transparência, assinado em outubro de 2020 (Decreto 11.092/2022).",
+      "evidencias": [
+        {
+          "descricao": "Decreto 10.448/2020 (execução do ACE 74 Brasil-Paraguai, firmado em 11/02/2020)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/D10448.htm"
+        },
+        {
+          "descricao": "Decreto 11.092/2022 (promulga o Protocolo Brasil-EUA sobre Regras Comerciais e de Transparência, firmado em 19/10/2020)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/D11092.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 19,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Integração com países latino-americanos democráticos' não tem meta nem critério mensurável. O ato oficial localizado na área é a saída da Unasul: o Decreto 10.086/2019 revogou o Decreto 7.667/2012, que promulgara o tratado constitutivo. Um ato isolado de saída ou de adesão a um bloco não basta para medir 'integração'.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 10.086/2019, que revoga, entre outros, o Decreto 7.667/2012 (promulgação do Tratado Constitutivo da Unasul)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D10086.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 20,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A promessa trata de postura e discurso na política externa ('louvar' ditaduras, 'desprezar' democracias), sem critério mensurável. Não há registro oficial que permita aferir de forma objetiva se ela foi cumprida.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 21,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A promessa de acabar com o 'toma lá dá cá' e com 'acordos espúrios' não traz critério mensurável. Nomeações e liberação de emendas são atos legais em si, e chamá-los de 'espúrios' exige um juízo que as fontes oficiais não fazem. A decisão do STF de 2022 sobre o 'orçamento secreto' julgou a falta de transparência das emendas de relator, não a existência de acordos em troca de votos.",
+      "evidencias": [
+        {
+          "descricao": "STF: resumo do julgamento das ADPFs 850, 851, 854 e 1.014 (orçamento secreto), 19/12/2022",
+          "tipo": "decisao",
+          "url": "https://www.stf.jus.br/arquivo/cms/publicacaoBOInternet/anexo/link_download/casos_relevantes/pt/ADPF_850_ADPF_851_ADPF_854_ADPF_1014.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 22,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: o orçamento não teria mais recursos reservados por indicação de pessoa ou grupo político. Em 19/12/2022 o STF declarou inconstitucional a prática das emendas do relator-geral (RP 9), usada de 2020 a 2022 para incluir despesas sem identificar o parlamentar solicitante, o valor nem o destino. A Corte mandou publicar os solicitantes e beneficiários dessas despesas em 2020, 2021 e 2022.",
+      "evidencias": [
+        {
+          "descricao": "STF: resumo do julgamento das ADPFs 850, 851, 854 e 1.014 (orçamento secreto, RP 9 de 2020 a 2022), 19/12/2022",
+          "tipo": "decisao",
+          "url": "https://www.stf.jus.br/arquivo/cms/publicacaoBOInternet/anexo/link_download/casos_relevantes/pt/ADPF_850_ADPF_851_ADPF_854_ADPF_1014.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 23,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Há ato voltado às vítimas: o Decreto 10.112/2019 reformulou o programa federal para mulheres em situação de violência, rebatizado de Programa Mulher Segura e Protegida. Mas o marco da política nacional de direitos humanos, o PNDH-3 (Decreto 7.037/2009), continuou em vigor e não foi substituído; no mandato, só se revogou o seu comitê de monitoramento (Decreto 10.087/2019). Não houve, portanto, redirecionamento formal da política como um todo.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 10.112/2019 (Programa Mulher Segura e Protegida)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D10112.htm"
+        },
+        {
+          "descricao": "Decreto 7.037/2009 (PNDH-3), texto compilado: em vigor, com o art. 4º revogado pelo Decreto 10.087/2019",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d7037.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 24,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: 'investir fortemente' significa aumentar o gasto federal em segurança pública. Pelo RREO da União, a despesa empenhada na função Segurança Pública passou de R$ 11,36 bi em 2018 para R$ 13,06 bi em 2022, alta nominal de 15%. Corrigida pelo IPCA acumulado de 2019 a 2022 (26,9%), houve queda real de cerca de 9,5%; na subfunção Policiamento, a queda real foi de cerca de 15%.",
+      "evidencias": [
+        {
+          "descricao": "Tesouro/Siconfi: RREO da União, Anexo 2 (despesa por função e subfunção), 6º bimestre de 2018",
+          "tipo": "dado_oficial",
+          "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2018&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1"
+        },
+        {
+          "descricao": "Tesouro/Siconfi: RREO da União, Anexo 2 (despesa por função e subfunção), 6º bimestre de 2022",
+          "tipo": "dado_oficial",
+          "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1"
+        },
+        {
+          "descricao": "Banco Central, SGS série 433 (IPCA mensal), 2019 a 2022",
+          "tipo": "dado_oficial",
+          "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/01/2019&dataFinal=31/12/2022"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 25,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "A Lei 13.964/2019 manteve a progressão de regime: o novo art. 112 da LEP apenas elevou os percentuais exigidos, que vão de 16% a 70% da pena. A saída temporária foi vedada só a condenados por crime hediondo com resultado morte. Os dois institutos continuaram existindo até o fim do mandato.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.964/2019 (Pacote Anticrime), alterações aos arts. 112 e 122 da Lei de Execução Penal",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 26,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O art. 228 da Constituição continua dizendo que são penalmente inimputáveis os menores de dezoito anos. Nenhuma emenda constitucional alterou o dispositivo no mandato.",
+      "evidencias": [
+        {
+          "descricao": "Constituição Federal, art. 228 (texto compilado)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 27,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "No mandato, o Estatuto do Desarmamento (Lei 10.826/2003) recebeu só duas alterações legais: a Lei 13.870/2019 estendeu a posse de arma a toda a área do imóvel rural, e a Lei 13.964/2019 endureceu penas. A reformulação ampla do Estatuto não ocorreu; houve mudanças pontuais na lei e decretos regulamentares.",
+      "evidencias": [
+        {
+          "descricao": "Lei 10.826/2003, texto compilado (alterações pelas Leis 13.870/2019 e 13.964/2019)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 28,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "A Lei 13.964/2019 criou duas proteções para agentes de segurança: legítima defesa de quem repele agressão a vítima mantida refém (art. 25, parágrafo único, do Código Penal) e direito a defensor quando investigados por uso de força letal (art. 14-A do CPP). A ampliação do excludente de ilicitude do art. 23 do Código Penal não foi aprovada, e o PL 6.125/2019 do Executivo, sobre excludente em operações de GLO, foi retirado em 2023.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.964/2019, arts. 2º (CP art. 25, par. único) e 3º (CPP art. 14-A)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+        },
+        {
+          "descricao": "Câmara: PL 6.125/2019 (Poder Executivo), situação 'Retirado pelo autor'",
+          "tipo": "tramitacao",
+          "url": "https://www.camara.leg.br/propostas-legislativas/2230394"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 29,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O art. 243 da Constituição mantém a redação dada pela EC 81/2014, que prevê a expropriação sem indenização de propriedades rurais e urbanas com cultivo ilegal de plantas psicotrópicas ou exploração de trabalho escravo. Nenhuma emenda alterou o dispositivo no mandato.",
+      "evidencias": [
+        {
+          "descricao": "Constituição Federal, art. 243 (redação da EC 81/2014), texto compilado",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 30,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Não existe indicador oficial público de 'condição operacional' das Forças Armadas. Os dados disponíveis são indiretos. A Lei 13.954/2019 reestruturou a carreira militar, mas trata de remuneração e proteção social, não de equipamento. Pelo RREO, a despesa empenhada na função Defesa Nacional passou de R$ 76,4 bi em 2018 para R$ 89,7 bi em 2022, queda real de cerca de 7% pelo IPCA. Nenhum dos dois dados mede a capacidade operacional.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.954/2019 (reestruturação da carreira militar e Sistema de Proteção Social dos Militares)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13954.htm"
+        },
+        {
+          "descricao": "Tesouro/Siconfi: RREO da União, Anexo 2 (função Defesa Nacional), 6º bimestre de 2018",
+          "tipo": "dado_oficial",
+          "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2018&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1"
+        },
+        {
+          "descricao": "Tesouro/Siconfi: RREO da União, Anexo 2 (função Defesa Nacional), 6º bimestre de 2022",
+          "tipo": "dado_oficial",
+          "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2002&co_esfera=U&id_ente=1"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 31,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O Sistema Colégio Militar do Brasil, do Exército, tem 15 colégios, dos quais 12 em capitais, e não está presente nas 27. A meta de ao menos um colégio militar por capital não foi atingida. As escolas cívico-militares do Decreto 10.004/2019 são outro modelo: pertencem às redes estaduais e municipais e não são colégios militares.",
+      "evidencias": [
+        {
+          "descricao": "Exército, Diretoria de Educação Preparatória e Assistencial (DEPA): colégios do Sistema Colégio Militar do Brasil",
+          "tipo": "dado_oficial",
+          "url": "http://www.depa.eb.mil.br/"
+        },
+        {
+          "descricao": "Decreto 10.004/2019 (Programa Nacional das Escolas Cívico-Militares, modelo distinto)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D10004.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 32,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "As '10 Medidas contra a Corrupção' seguem no PL 3.855/2019 (antigo PL 4.850/2016), de iniciativa popular, sem aprovação na Câmara. O Executivo não as encaminhou: mandou pacote próprio (PL 882/2019), absorvido pela Lei 13.964/2019. Essa lei trouxe pontos semelhantes a algumas das medidas, como a perda alargada de bens (art. 91-A do Código Penal), mas não o conjunto proposto pelo MPF.",
+      "evidencias": [
+        {
+          "descricao": "Câmara: PL 3.855/2019 (10 Medidas), autoria 'Iniciativa Popular', aguardando comissão",
+          "tipo": "tramitacao",
+          "url": "https://www.camara.leg.br/propostas-legislativas/2080604"
+        },
+        {
+          "descricao": "Câmara: PL 882/2019 (Poder Executivo), arquivado por prejudicialidade em 04/12/2019",
+          "tipo": "tramitacao",
+          "url": "https://www.camara.leg.br/propostas-legislativas/2192353"
+        },
+        {
+          "descricao": "Lei 13.964/2019, art. 2º (inclui o art. 91-A no Código Penal, perda alargada)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 33,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Enfrentar o crime e cortar a corrupção' é uma diretriz geral, sem meta nem indicador definido. Os indicadores oficiais de criminalidade, como homicídios no SIM/DATASUS, variam por muitos fatores e não medem o cumprimento de um compromisso que não fixou alvo. Não há indicador oficial de 'corrupção cortada'.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 34,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "A Lei Antiterrorismo (Lei 13.260/2016) não recebeu nenhuma alteração desde 2016 e não tipifica invasão de propriedade como terrorismo. Nenhuma lei nesse sentido foi sancionada no mandato.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.260/2016, texto compilado (sem alterações)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13260.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 35,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A suspeita de interferência na Polícia Federal é objeto do Inquérito 4831 no STF. A PGR pediu o arquivamento em setembro de 2022, mas o inquérito foi reaberto em outubro de 2025 e ainda não foi concluído. Sem decisão definitiva, as fontes oficiais não permitem afirmar se investigações foram ou não atrapalhadas.",
+      "evidencias": [
+        {
+          "descricao": "STF: reabertura do Inq 4831 (suposta interferência na PF), 16/10/2025",
+          "tipo": "decisao",
+          "url": "https://noticias.stf.jus.br/postsnoticias/a-pedido-da-pgr-stf-reabre-investigacoes-sobre-suposta-interferencia-de-jair-bolsonaro-na-pf/"
+        },
+        {
+          "descricao": "STF: página processual do Inq 4831",
+          "tipo": "decisao",
+          "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5899439"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 36,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A promessa, de que a Justiça seguiria seu rumo sem interferência política, não traz critério mensurável. Não foi localizada decisão judicial definitiva que reconheça interferência do Executivo no andamento de processos durante o mandato; a apuração mais próxima, sobre a Polícia Federal (Inq 4831), segue em aberto no STF. Declarações públicas contra decisões judiciais não são ato oficial aferível.",
+      "evidencias": [
+        {
+          "descricao": "STF: página processual do Inq 4831",
+          "tipo": "decisao",
+          "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=5899439"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 37,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "O governo criou o Programa Informatiza APS (Portaria 2.983/2019), que financia o prontuário eletrônico nas equipes de atenção primária, e a Rede Nacional de Dados em Saúde (Portaria 1.434/2020), plataforma nacional de interoperabilidade. A própria portaria prevê integração gradual e sem prazo. Não há dado oficial que mostre a interligação nacional concluída até 2022.",
+      "evidencias": [
+        {
+          "descricao": "Portaria GM/MS 2.983/2019 (Programa Informatiza APS)",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2019/prt2983_13_11_2019.html"
+        },
+        {
+          "descricao": "Portaria GM/MS 1.434/2020 (Programa Conecte SUS e RNDS)",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt1434_29_05_2020.html"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 38,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Pelo programa de governo, a proposta era permitir que toda a força de trabalho da saúde fosse usada pelo SUS e que todo médico pudesse atender a qualquer plano de saúde. Nenhuma norma com esse conteúdo foi editada. A Portaria 639/2020 ('O Brasil Conta Comigo') criou só um cadastro consultivo e uma capacitação de profissionais para a Covid-19, sem credenciamento para atender no SUS ou em planos de saúde.",
+      "evidencias": [
+        {
+          "descricao": "Portaria GM/MS 639/2020 (Ação Estratégica 'O Brasil Conta Comigo - Profissionais da Saúde')",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0639_02_04_2020.html"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 39,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei 13.958/2019 (conversão da MP 890/2019) criou o Programa Médicos pelo Brasil para locais de difícil provimento e alterou a Lei 12.871/2013 (Mais Médicos). Entre as mudanças, revogou os arts. 6º e 7º e permitiu reincorporar por dois anos os médicos intercambistas que permaneceram no país após a saída de Cuba do programa, o ponto central da proposta no programa de governo. O Mais Médicos continuou existindo em paralelo (art. 37).",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.958/2019 (Programa Médicos pelo Brasil; arts. 34, 36 e 37 sobre a Lei 12.871/2013)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13958.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 40,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Não foi criada uma carreira pública de 'Médico de Estado'. A Lei 13.958/2019 instituiu o Programa Médicos pelo Brasil para locais de difícil provimento, mas com contratação pela agência Adaps sob a CLT e com plano próprio de cargos, não como carreira de Estado.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.958/2019 (Programa Médicos pelo Brasil; contratação pela CLT, art. 21)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13958.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 41,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "A Portaria GM/MS 1.105/2022 criou incentivo federal para ações de atividade física na atenção primária, com valor adicional quando a unidade tem profissional de educação física cadastrado. A adesão e a contratação são opcionais (a modalidade 1 dispensa o profissional), e a norma não muda a composição das equipes de Saúde da Família.",
+      "evidencias": [
+        {
+          "descricao": "Portaria GM/MS 1.105/2022 (incentivo de atividade física na APS)",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2022/prt1105_17_05_2022.html"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 42,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Ênfase' nas etapas da educação básica não tem meta nem critério mensurável. Há registros relacionados, mas eles não definem cumprimento. A EC 108/2020, de origem parlamentar, tornou o Fundeb permanente e elevou a complementação da União de 10% para no mínimo 23% até 2026. O Ideb de 2021 ficou abaixo das metas nas três etapas avaliadas.",
+      "evidencias": [
+        {
+          "descricao": "Emenda Constitucional 108/2020 (Fundeb permanente; complementação da União de no mínimo 23%)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc108.htm"
+        },
+        {
+          "descricao": "Inep: apresentação dos resultados do Ideb 2021",
+          "tipo": "dado_oficial",
+          "url": "https://download.inep.gov.br/ideb/resultados/apresentacao_ideb_2021.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 43,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Portaria MEC 2.117/2019 permitiu que cursos de graduação presenciais tenham até 40% da carga horária a distância (exceto Medicina) e revogou a norma anterior, mais restritiva (Portaria 1.428/2018). O ato atende o núcleo da promessa, que é tratar o ensino a distância como instrumento e não vetá-lo. Em sentido contrário, o Executivo vetou integralmente o projeto de acesso à internet para alunos da rede pública, mas o veto foi derrubado e o texto virou a Lei 14.172/2021.",
+      "evidencias": [
+        {
+          "descricao": "Portaria MEC 2.117/2019 (até 40% de EaD em cursos presenciais), DOU de 11/12/2019",
+          "tipo": "norma",
+          "url": "https://www.in.gov.br/en/web/dou/-/portaria-n-2.117-de-6-de-dezembro-de-2019-232670913"
+        },
+        {
+          "descricao": "Lei 14.172/2021, promulgada após derrubada do Veto Total nº 81/2021",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14172.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 44,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: integrar os sistemas de ensino das três esferas, o que a Constituição prevê como Sistema Nacional de Educação (art. 214). O PLP 235/2019, de autoria parlamentar, foi aprovado pelo Senado em 09/03/2022 e remetido à Câmara, mas só virou norma (Lei Complementar 220) em 31/10/2025, depois do mandato. Até o fim de 2022, a integração não estava instituída em lei.",
+      "evidencias": [
+        {
+          "descricao": "Senado, dados abertos: PLP 235/2019 (Sistema Nacional de Educação), aprovado em 09/03/2022, norma gerada LC 220 de 31/10/2025",
+          "tipo": "tramitacao",
+          "url": "https://legis.senado.leg.br/dadosabertos/processo?sigla=PLP&numero=235&ano=2019"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 45,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "No mandato foram sancionadas leis voltadas ao ambiente de negócios. A Lei 13.874/2019 (Liberdade Econômica) dispensou atos de liberação para atividades de baixo risco. A Lei Complementar 182/2021 instituiu o marco legal das startups e do empreendedorismo inovador. A Lei 14.195/2021 simplificou a abertura de empresas. Os atos atendem o núcleo da promessa; o efeito sobre o empreendedorismo não foi medido aqui.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.874/2019 (Declaração de Direitos de Liberdade Econômica)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13874.htm"
+        },
+        {
+          "descricao": "Lei Complementar 182/2021 (marco legal das startups e do empreendedorismo inovador)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp182.htm"
+        },
+        {
+          "descricao": "Lei 14.195/2021 (facilitação para abertura de empresas)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14195.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 46,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "A BNCC continua instituída pela Resolução CNE/CP 2/2017 e, no ensino médio, pelo documento homologado em dezembro de 2018. No mandato, a única norma nova foi o complemento de Computação (Parecer CNE/CEB 2/2022 e Resolução CNE/CEB 1/2022), que acrescenta conteúdos sem alterar a base existente.",
+      "evidencias": [
+        {
+          "descricao": "MEC: Histórico da BNCC (marcos de 2017, 2018 e 2022)",
+          "tipo": "ato_publicado",
+          "url": "http://basenacionalcomum.mec.gov.br/historico"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 47,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nenhuma norma fixou, no mandato, prazo máximo de três meses para o licenciamento ambiental de Pequenas Centrais Hidrelétricas. O projeto da lei geral do licenciamento (PL 2.159/2021, antigo PL 3.729/2004) foi aprovado pela Câmara em 2021, mas só virou norma depois de 2022.",
+      "evidencias": [
+        {
+          "descricao": "Câmara: PL 2.159/2021 (licenciamento ambiental), tramitação e transformação em norma após o mandato",
+          "tipo": "tramitacao",
+          "url": "https://www.camara.leg.br/propostas-legislativas/257161"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 48,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: o núcleo é seguir o mercado internacional, mas com as flutuações de curto prazo suavizadas. Nenhum mecanismo de suavização foi criado no mandato: a Conta de Estabilização de Preços de Combustíveis (PL 1.472/2021, de origem no Senado) aguarda despacho na Câmara desde março de 2022. O alinhamento aos preços internacionais vem de política comercial da Petrobras anterior ao mandato e não foi aferido aqui com série oficial.",
+      "evidencias": [
+        {
+          "descricao": "Câmara: PL 1.472/2021 (Conta de Estabilização de Preços de Combustíveis), aguardando despacho",
+          "tipo": "tramitacao",
+          "url": "https://www.camara.leg.br/propostas-legislativas/2317617"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 49,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O TCU fiscalizou e registrou a venda da Refinaria Landulpho Alves (Rlam) ao fundo Mubadala, concluída com pagamento de US$ 1,8 bilhão, dentro do programa de desinvestimento em refino. No transporte, pelo Termo de Compromisso de Cessação firmado com o Cade em 2019, a Petrobras se comprometeu a vender suas participações na NTS, na TAG, na TBG e na Gaspetro. A venda de ativos de varejo (BR Distribuidora) não foi conferida aqui em fonte oficial.",
+      "evidencias": [
+        {
+          "descricao": "TCU: fiscalização do desinvestimento em refino pela Petrobras, alienação da Rlam (TC 024.763/2020-9)",
+          "tipo": "auditoria",
+          "url": "https://portal.tcu.gov.br/data/files/30/26/80/89/6C6F0810B4FE0FF7E18818A8/Alienacao%20RLAM%20SE.pdf"
+        },
+        {
+          "descricao": "Cade: TCC com a Petrobras para venda de ativos no mercado de gás natural (2019)",
+          "tipo": "ato_publicado",
+          "url": "https://www.gov.br/cade/pt-br/assuntos/noticias/cade-e-petrobras-celebram-acordo-para-venda-de-ativos-no-mercado-de-gas-natural"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 50,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei Complementar 192/2022 definiu os combustíveis sobre os quais o ICMS passa a incidir uma única vez, com alíquotas uniformes em todo o país e fixadas por unidade de medida (ad rem). A Lei Complementar 194/2022 classificou combustíveis como bens essenciais, o que limita a alíquota do ICMS. As duas leis foram sancionadas no mandato; a cobrança monofásica só começou a ser aplicada pelos estados em 2023.",
+      "evidencias": [
+        {
+          "descricao": "Lei Complementar 192/2022 (ICMS monofásico sobre combustíveis, alíquotas ad rem uniformes)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp192.htm"
+        },
+        {
+          "descricao": "Lei Complementar 194/2022 (combustíveis como bens essenciais para fins de ICMS)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp194.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 51,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Em 2019 a Petrobras firmou com o Cade um TCC para vender suas participações nas transportadoras NTS, TAG e TBG e nas distribuidoras, via Gaspetro. A Lei 14.134/2021 (Nova Lei do Gás), regulamentada pelo Decreto 10.712/2021, exige independência do transportador (art. 5º) e regula o acesso de terceiros aos gasodutos (art. 18). Os atos atendem o núcleo da promessa de mudar o setor.",
+      "evidencias": [
+        {
+          "descricao": "Cade: TCC com a Petrobras no mercado de gás natural (2019)",
+          "tipo": "ato_publicado",
+          "url": "https://www.gov.br/cade/pt-br/assuntos/noticias/cade-e-petrobras-celebram-acordo-para-venda-de-ativos-no-mercado-de-gas-natural"
+        },
+        {
+          "descricao": "Lei 14.134/2021 (Nova Lei do Gás), arts. 5º e 18",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14134.htm"
+        },
+        {
+          "descricao": "Decreto 10.712/2021 (regulamenta a Lei 14.134/2021)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/decreto/D10712.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "metropoles-bolsonaro",
+      "indice": 52,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A ANAC realizou no mandato três rodadas de concessão de aeroportos em blocos. A 5ª rodada tinha 12 aeroportos, nos blocos Nordeste, Centro-Oeste e Sudeste. A 6ª foi o Leilão 01/2020 e reuniu 22 aeroportos, entre eles Manaus, Goiânia e Curitiba. A 7ª teve leilão em 18/08/2022. Os contratos preveem investimentos privados de modernização e expansão, o que atende o núcleo da promessa.",
+      "evidencias": [
+        {
+          "descricao": "ANAC: processo licitatório da 5ª rodada de concessões",
+          "tipo": "ato_publicado",
+          "url": "https://www.gov.br/anac/pt-br/assuntos/concessoes/processo-licitatorio-5-rodada/processo-licitario-5a-rodada"
+        },
+        {
+          "descricao": "ANAC: informações sobre o processo licitatório da 6ª rodada (Leilão 01/2020)",
+          "tipo": "ato_publicado",
+          "url": "https://www.gov.br/anac/pt-br/assuntos/concessoes/processo-licitatorio-6a-rodada/informacoes-sobre-o-processo-licitatorio-6a-rodada"
+        },
+        {
+          "descricao": "ANAC: 7ª rodada de concessões, sessão pública do leilão em 18/08/2022",
+          "tipo": "ato_publicado",
+          "url": "https://www.gov.br/anac/pt-br/assuntos/concessoes/andamento/setima-rodada"
+        },
+        {
+          "descricao": "ANAC: lista de aeroportos concedidos por rodada",
+          "tipo": "dado_oficial",
+          "url": "https://www.gov.br/anac/pt-br/assuntos/concessoes/aeroportos-concedidos/aeroportos-concedidos"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    }
+  ]
+}

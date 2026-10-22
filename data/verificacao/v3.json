@@ -332,10 +332,16 @@
   {
    "levantamento": "lupa-bolsonaro",
    "indice": 19,
-   "status": "nao_verificavel",
+   "status": "nao_cumprida",
    "percentual": null,
-   "justificativa": "A BNCC e as regras de aprovação são fixadas por resoluções do CNE, que não aparecem nas bases de leis e decretos consultadas. As páginas oficiais do MEC/CNE com a lista dessas normas bloquearam o acesso automatizado, e sem elas não foi possível confirmar em fonte oficial se houve ou não revisão da BNCC ou norma contra a aprovação automática no mandato.",
-   "evidencias": [],
+   "justificativa": "A BNCC continua instituída pela Resolução CNE/CP 2/2017 e, para o ensino médio, pelo documento homologado em dezembro de 2018. No mandato, a única norma nova foi o complemento de Computação (Parecer CNE/CEB 2/2022 e Resolução CNE/CEB 1/2022), que não altera o conteúdo-base. Não foi localizada norma federal sobre 'aprovação automática'.",
+   "evidencias": [
+    {
+     "descricao": "MEC: Histórico da BNCC (marcos de 2017, 2018 e 2022)",
+     "tipo": "ato_publicado",
+     "url": "http://basenacionalcomum.mec.gov.br/historico"
+    }
+   ],
    "data_verificacao": "2026-10-21"
   },
   {
