@@ -29,7 +29,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-22d';
+const VERSAO = '2026-10-22e';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -620,10 +620,10 @@ function validar(r, trechos, fcs, web) {
 const TIPOS_SITE = {
   proposta: 'Proposta do plano', plano: 'Página do plano', checagem: 'Checagem publicada', viabilidade: 'Viabilidade e evidências',
   proposicao: 'Congresso e tribunais', espectro: 'Esquerda ou direita', ideologia: 'Ideologias', levantamento: 'Levantamento de promessas',
-  promessa: 'Promessa anterior', eleicao: 'Eleições desde 1891', governo: 'Governos desde 1889', entrega: 'Entrega não prometida', lei: 'Acervo Constitucional'
+  promessa: 'Promessa anterior', eleicao: 'Eleições desde 1891', eleitos: 'Eleições desde 1891', governo: 'Governos desde 1889', entrega: 'Entrega não prometida', lei: 'Acervo Constitucional'
 };
 // Quantos blocos de cada tipo vão para a IA (por candidato, nos tipos marcados com *).
-const COTA_SITE = { proposta: 3, plano: 2, checagem: 2, viabilidade: 2, espectro: 1, proposicao: 2, ideologia: 2, levantamento: 2, promessa: 4, eleicao: 2, governo: 3, entrega: 3, lei: 3 };
+const COTA_SITE = { proposta: 3, plano: 2, checagem: 2, viabilidade: 2, espectro: 1, proposicao: 2, ideologia: 2, levantamento: 2, promessa: 4, eleicao: 2, eleitos: 1, governo: 3, entrega: 3, lei: 3 };
 const POR_CANDIDATO = new Set(['proposta', 'plano', 'checagem', 'viabilidade', 'espectro']);
 
 let SITE = null;
@@ -704,7 +704,7 @@ function siteIndice() {
       (porEixo[eixo] = porEixo[eixo] || []).push(c.nome + ' (' + e.ano + ', ' + (c.partido || 'sem partido') + ')');
     }
   }
-  add('eleicao', 'Presidentes eleitos e posição ideológica', 'Presidentes eleitos agrupados pela posição no eixo esquerda–direita, cada grupo é uma categoria diferente: ' +
+  add('eleitos', 'Presidentes eleitos e posição ideológica', 'Presidentes eleitos agrupados pela posição no eixo esquerda–direita, cada grupo é uma categoria diferente: ' +
     Object.entries(porEixo).map(([k, v]) => k.toUpperCase() + ': ' + v.join(', ')).join('. ') + '.', { link: '#eleicoes' });
   for (const g of ((ler('governos.json') || {}).governos || [])) {
     add('governo', g.presidente + ' (' + String(g.inicio).slice(0, 4) + '–' + (g.fim ? String(g.fim).slice(0, 4) : 'hoje') + ')',
