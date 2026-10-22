@@ -1,0 +1,362 @@
+{
+ "governo": "bolsonaro",
+ "nome": "Jair Bolsonaro (2019–2022)",
+ "registros": [
+  "bolsonaro-2018"
+ ],
+ "criterio": "Candidatas tiradas das Mensagens ao Congresso Nacional de 2019 a 2022; ficaram as entregas concluídas que não aparecem no plano bolsonaro-2018 nem nos levantamentos g1, Lupa e Metrópoles, e entre elas as 8 de maior alcance por dado oficial de gasto ou de público, variando as áreas (a Mensagem de 2019 descreve planos do início do mandato e não trouxe candidatas; da de 2021 só a apresentação estava acessível).",
+ "fontes_mensagens": [
+  {
+   "ano": 2019,
+   "url": "https://www12.senado.leg.br/noticias/arquivos/2019/02/04/mensagem-presidencial"
+  },
+  {
+   "ano": 2020,
+   "url": "https://static.poder360.com.br/2020/02/Mensagem-ao-Congresso-2020.pdf"
+  },
+  {
+   "ano": 2021,
+   "url": "https://static.poder360.com.br/2021/02/Mensagem-Presidencial-2021.pdf"
+  },
+  {
+   "ano": 2022,
+   "url": "http://web.archive.org/web/20220202193904/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/2politicassociaismcn2022.pdf"
+  },
+  {
+   "ano": 2022,
+   "url": "http://web.archive.org/web/20220203003346/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/1digitalpoliticaeconomicamcn2022.pdf"
+  },
+  {
+   "ano": 2022,
+   "url": "http://web.archive.org/web/20220202193948/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/7relacionamentocomcongressomcn2022.pdf"
+  },
+  {
+   "ano": 2022,
+   "url": "http://web.archive.org/web/20220202194008/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/3politicasdedesenvolvimentomcn2022.pdf"
+  }
+ ],
+ "itens": [
+  {
+   "titulo": "Auxílio Emergencial",
+   "o_que_e": "Transferência mensal de renda a trabalhadores informais, desempregados e famílias do Bolsa Família durante a pandemia: R$ 600 em 2020, depois R$ 300, e de R$ 150 a R$ 375 em 2021.",
+   "atos": [
+    {
+     "descricao": "Lei 13.982/2020",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13982.htm"
+    },
+    {
+     "descricao": "Medida Provisória 1.039/2021 (Auxílio Emergencial 2021)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/mpv/mpv1039.htm"
+    }
+   ],
+   "data": "2020-04-02",
+   "tema": "programas-sociais",
+   "contexto": "emergencia",
+   "alcance": {
+    "texto": "R$ 293 bilhões pagos em 2020, segundo o TCU; a Mensagem de 2021 fala em mais de 68 milhões de beneficiários, e a de 2022 em R$ 59,5 bilhões pagos a 39,4 milhões de famílias em 2021.",
+    "url": "https://portal.tcu.gov.br/data/files/49/D1/5D/F0/E64138102DFE0FF7F18818A8/00_cartilha_auxilio-emergencial_TCU_2022.pdf"
+   },
+   "busca_no_plano": "auxílio, emergencial, emergência, pandemia, transferência de renda; os itens 'renda mínima' e 'Bolsa Família' dos levantamentos foram avaliados pelo Auxílio Brasil, não pelo Auxílio Emergencial",
+   "avaliacoes": [
+    {
+     "achado": "O auxílio foi tempestivo e alcançou trabalhadores sem renda formal, mas cerca de 7,3 milhões de pessoas fora dos requisitos e 6,4 milhões de cotas em excesso para mães chefes de família geraram cerca de R$ 54 bilhões em pagamentos indevidos (18% do total).",
+     "autor": "TCU",
+     "ano": 2022,
+     "tipo": "avaliacao_oficial",
+     "sentido": "misto",
+     "titulo": "Balanço da atuação do TCU no Auxílio Emergencial",
+     "url": "https://portal.tcu.gov.br/data/files/49/D1/5D/F0/E64138102DFE0FF7F18818A8/00_cartilha_auxilio-emergencial_TCU_2022.pdf"
+    },
+    {
+     "achado": "Em junho de 2020, nos domicílios de renda baixa, a renda com o auxílio chegou a 109% da que teriam com o rendimento habitual do trabalho; 6,6% dos domicílios viviam só do auxílio.",
+     "autor": "Ipea (Sandro Sacchet de Carvalho)",
+     "ano": 2020,
+     "tipo": "working_paper",
+     "sentido": "favoravel",
+     "titulo": "Os efeitos da pandemia sobre os rendimentos do trabalho e o impacto do auxílio emergencial: os resultados dos microdados da PNAD Covid-19 de junho (Carta de Conjuntura)",
+     "url": "https://www.ipea.gov.br/cartadeconjuntura/index.php/2020/07/os-efeitos-da-pandemia-sobre-os-rendimentos-do-trabalho-e-o-impacto-do-auxilio-emergencial-os-resultados-dos-microdados-da-pnad-covid-19-de-junho/"
+    },
+    {
+     "achado": "O auxílio parece ter sido bem focalizado nos domicílios mais pobres: cerca de 95% das pessoas nos 40% de menor renda viviam com algum beneficiário, embora parte das faixas mais altas também tenha recebido.",
+     "autor": "Ipea (Costa, Foguel, Reis e Russo)",
+     "ano": 2022,
+     "tipo": "working_paper",
+     "sentido": "favoravel",
+     "titulo": "Análise da incidência do Auxílio Emergencial e do Benefício Emergencial ao longo da distribuição de renda com base nos dados da PNAD Covid-19 (Mercado de Trabalho nº 74)",
+     "url": "https://repositorio.ipea.gov.br/bitstreams/e14103ff-673f-4e0f-8417-da09f685d402/download"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "Os estudos do Ipea indicam que o auxílio chegou aos domicílios mais pobres e repôs a renda perdida no trabalho. O TCU confirma o alcance, mas estima que 18% do valor pago foi para quem não cumpria os requisitos.",
+   "quem_ganha": "Trabalhadores informais, desempregados e famílias de baixa renda, que tiveram renda durante as restrições da pandemia.",
+   "quem_paga_ou_perde": "O Tesouro, com cerca de R$ 293 bilhões em 2020 financiados por dívida pública, dos quais o TCU estima R$ 54 bilhões pagos indevidamente."
+  },
+  {
+   "titulo": "Benefício Emergencial de Manutenção do Emprego (BEm)",
+   "o_que_e": "Permitiu reduzir jornada e salário ou suspender o contrato de trabalho por acordo, com o governo pagando ao empregado uma parte do valor do seguro-desemprego e o emprego garantido por igual período.",
+   "atos": [
+    {
+     "descricao": "Lei 14.020/2020 (conversão da MP 936/2020)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14020.htm"
+    },
+    {
+     "descricao": "Medida Provisória 1.045/2021 (nova rodada em 2021; o projeto de conversão foi rejeitado depois do fim da vigência)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/mpv/mpv1045.htm"
+    }
+   ],
+   "data": "2020-04-01",
+   "tema": "trabalho",
+   "contexto": "emergencia",
+   "alcance": {
+    "texto": "Segundo o TCU, de julho a outubro de 2020 foram 18,5 milhões de acordos, 9,4 milhões de trabalhadores e R$ 28,7 bilhões pagos; a Mensagem de 2021 fala em mais de 10 milhões de empregos preservados.",
+    "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-analisa-acoes-do-programa-emergencial-de-manutencao-do-emprego-e-da-renda"
+   },
+   "busca_no_plano": "redução de jornada, suspensão de contrato, manutenção do emprego, seguro-desemprego, BEm, emergencial; o plano só trata de emprego pela carteira verde e amarela e pela reforma sindical",
+   "avaliacoes": [
+    {
+     "achado": "Para o TCU, o BEm vinha exercendo papel importante na preservação dos empregos; os controles contra fraude foram considerados parcialmente adequados e a transparência avançou.",
+     "autor": "TCU",
+     "ano": 2020,
+     "tipo": "avaliacao_oficial",
+     "sentido": "favoravel",
+     "titulo": "Acórdão 4073/2020-Plenário (TC 016.769/2020-1)",
+     "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-analisa-acoes-do-programa-emergencial-de-manutencao-do-emprego-e-da-renda"
+    }
+   ],
+   "balanco": "favoravel",
+   "resumo_avaliacoes": "O TCU concluiu que o programa cumpria papel importante na preservação de empregos, com ressalvas aos controles. Não foi encontrada avaliação de impacto causal publicada sobre os empregos preservados.",
+   "quem_ganha": "Empregados com carteira, que mantiveram o vínculo e parte da renda, e empresas que preservaram equipes sem arcar com o salário cheio.",
+   "quem_paga_ou_perde": "O Tesouro, que pagou o benefício; o trabalhador com salário mais alto teve perda de renda maior, porque o benefício segue o teto do seguro-desemprego."
+  },
+  {
+   "titulo": "Pronampe: crédito com garantia do Tesouro para micro e pequenas empresas",
+   "o_que_e": "Linha de empréstimo para micro e pequenas empresas com garantia do Fundo Garantidor de Operações (FGO), abastecido pelo Tesouro, criada na pandemia e tornada permanente em 2021.",
+   "atos": [
+    {
+     "descricao": "Lei 13.999/2020",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13999.htm"
+    },
+    {
+     "descricao": "Lei 14.161/2021 (torna o Pronampe permanente)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14161.htm"
+    }
+   ],
+   "data": "2020-05-18",
+   "tema": "pequenos-negocios",
+   "contexto": "emergencia",
+   "alcance": {
+    "texto": "Mais de R$ 37,5 bilhões em empréstimos a cerca de 517 mil empresas nas três fases de 2020, com garantia do FGO e recursos do Tesouro (Ministério da Economia, dezembro de 2020).",
+    "url": "http://web.archive.org/web/20220117045822/https://www.gov.br/economia/pt-br/assuntos/noticias/2020/dezembro-1/pronampe-concede-credito-a-517-mil-empresas"
+   },
+   "busca_no_plano": "crédito, microempresa, pequena empresa, garantia, fundo garantidor, Pronampe; o plano cita 'pequenos' só para centrais hidrelétricas e produtores de gás, e o crédito só ao citar o relatório Doing Business",
+   "avaliacoes": [
+    {
+     "achado": "O cruzamento com o Caged indicou possível redução do número de empregados em empresas beneficiárias, contrária à contrapartida da lei, e deficiências na gestão de riscos, nos controles e no monitoramento dos resultados.",
+     "autor": "TCU",
+     "ano": 2021,
+     "tipo": "avaliacao_oficial",
+     "sentido": "desfavoravel",
+     "titulo": "Acórdão 2331/2021-Plenário (TC 014.547/2021-0)",
+     "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-aponta-indicios-de-irregularidades-na-concessao-de-credito-durante-a-pandemia"
+    },
+    {
+     "achado": "Com pareamento e diferenças em diferenças sobre dados do SCR e da Rais (2018-2021), as empresas que tomaram o crédito mantiveram mais empregos formais que empresas semelhantes: entre 1,6% e 26% a mais, conforme o porte e a amostra.",
+     "autor": "Ipea (Silva, Rosa e Faciroli)",
+     "ano": 2025,
+     "tipo": "working_paper",
+     "sentido": "favoravel",
+     "titulo": "Efeitos dos programas emergenciais de crédito durante a pandemia de Covid-19: o caso do Pronampe (Radar nº 79)",
+     "url": "https://repositorio.ipea.gov.br/bitstreams/50cdf194-7cf2-4f52-a0e7-47b7e7202200/download"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "O estudo econométrico do Ipea encontra efeito positivo, de modesto a relevante, sobre o emprego formal das empresas atendidas. A auditoria do TCU apontou indícios de que parte delas reduziu o quadro e falhas de controle e de monitoramento.",
+   "quem_ganha": "Micro e pequenas empresas que obtiveram crédito com juro menor durante a pandemia, e seus empregados.",
+   "quem_paga_ou_perde": "O Tesouro, que aportou os recursos do FGO e cobre a inadimplência das operações garantidas."
+  },
+  {
+   "titulo": "Vacinação contra a Covid-19",
+   "o_que_e": "Compra e distribuição de vacinas contra a Covid-19 pelo Programa Nacional de Imunizações, com regras excepcionais de aquisição aprovadas pelo Congresso e campanha iniciada em janeiro de 2021.",
+   "atos": [
+    {
+     "descricao": "Medida Provisória 1.015/2020 (crédito extraordinário de R$ 20 bilhões para vacinas)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/mpv/mpv1015.htm"
+    },
+    {
+     "descricao": "Lei 14.124/2021 (conversão da MP 1.026)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14124.htm"
+    }
+   ],
+   "data": "2021-01-17",
+   "tema": "saude",
+   "contexto": "emergencia",
+   "alcance": {
+    "texto": "400 milhões de doses distribuídas em 2021 e mais de 165 milhões de pessoas vacinadas até o fim de 2021, 144 milhões com o esquema completo (Mensagem ao Congresso de 2022).",
+    "url": "http://web.archive.org/web/20220202193904/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/2politicassociaismcn2022.pdf"
+   },
+   "busca_no_plano": "vacina, vacinação, imunização, pandemia, epidemia, Programa Nacional de Imunizações; o plano trata de saúde por prontuário eletrônico, credenciamento de médicos e carreira de Médico de Estado",
+   "avaliacoes": [
+    {
+     "achado": "O primeiro ano da campanha evitou cerca de 82% das mortes esperadas por Covid-19 entre adultos, ao menos 303.129 óbitos.",
+     "autor": "dos Santos et al. (Fiocruz)",
+     "ano": 2022,
+     "tipo": "academico_revisado",
+     "sentido": "favoravel",
+     "titulo": "Estimated COVID-19 severe cases and deaths averted in the first year of the vaccination campaign in Brazil: a retrospective observational study (The Lancet Regional Health – Americas)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9779315"
+    },
+    {
+     "achado": "A vacinação salvou mais de 58 mil vidas de maiores de 60 anos no período analisado, e cerca de 47 mil a mais poderiam ter sido salvas se o programa tivesse começado antes.",
+     "autor": "Ferreira et al.",
+     "ano": 2022,
+     "tipo": "academico_revisado",
+     "sentido": "misto",
+     "titulo": "Estimating the impact of implementation and timing of the COVID-19 vaccination programme in Brazil: a counterfactual analysis (The Lancet Regional Health – Americas)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9676113/"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "Os estudos revisados por pares estimam que a vacinação evitou centenas de milhares de mortes. Um deles estima também que o início mais tardio da campanha custou cerca de 47 mil vidas de idosos que poderiam ter sido salvas.",
+   "quem_ganha": "A população vacinada, sobretudo idosos e grupos de risco, e o SUS, com menos internações graves.",
+   "quem_paga_ou_perde": "O Tesouro, com créditos extraordinários para a compra das vacinas financiados por dívida pública."
+  },
+  {
+   "titulo": "Saque imediato e saque-aniversário do FGTS",
+   "o_que_e": "Liberou um saque de até R$ 500 por conta do FGTS (ampliado para R$ 998 pelo Congresso) e criou o saque-aniversário, retirada anual de parte do saldo para quem opta por ele.",
+   "atos": [
+    {
+     "descricao": "Medida Provisória 889/2019",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/mpv/mpv889.htm"
+    },
+    {
+     "descricao": "Lei 13.932/2019 (conversão da MP 889)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13932.htm"
+    }
+   ],
+   "data": "2019-07-24",
+   "tema": "trabalho",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "A Mensagem de 2020 estima em R$ 43 bilhões o impacto do saque imediato em 2019 e 2020; até dezembro de 2020, 9,7 milhões de trabalhadores tinham aderido ao saque-aniversário, com R$ 9,8 bilhões pagos (Caixa, relatório do 4º trimestre de 2020).",
+    "url": "https://static.poder360.com.br/2021/03/Caixa-4T2020-18mar2021.pdf"
+   },
+   "busca_no_plano": "FGTS, Fundo de Garantia, saque, PIS/Pasep, poupança do trabalhador; nenhuma ocorrência no plano nem nos levantamentos",
+   "avaliacoes": [],
+   "balanco": "insuficiente",
+   "resumo_avaliacoes": "Não foi encontrada avaliação do TCU, da CGU, do Ipea, do Banco Central ou estudo revisado por pares sobre os efeitos dos saques; há apenas projeções e balanços do próprio governo.",
+   "quem_ganha": "Trabalhadores com saldo no FGTS, que passaram a dispor de parte do dinheiro sem precisar ser demitidos.",
+   "quem_paga_ou_perde": "O próprio FGTS, que reduz o saldo disponível para financiar habitação e saneamento; quem opta pelo saque-aniversário deixa de poder sacar o saldo integral se for demitido."
+  },
+  {
+   "titulo": "Novo Fundeb permanente",
+   "o_que_e": "Tornou permanente o fundo que financia a educação básica e elevou a complementação da União de 10% para 23% até 2026, com parte distribuída pelo valor total por aluno de cada rede (VAAT).",
+   "atos": [
+    {
+     "descricao": "Emenda Constitucional 108/2020",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc108.htm"
+    },
+    {
+     "descricao": "Lei 14.113/2020 (regulamenta o Fundeb)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm"
+    }
+   ],
+   "data": "2020-08-26",
+   "tema": "educacao",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "Cerca de R$ 19,3 bilhões aportados pela União como complementação ao Fundeb até dezembro de 2021 (Mensagem ao Congresso de 2022).",
+    "url": "http://web.archive.org/web/20220202193904/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/2politicassociaismcn2022.pdf"
+   },
+   "busca_no_plano": "Fundeb, fundo, financiamento da educação, complementação da União, valor por aluno; o plano diz que o gasto em educação é incompatível com os resultados e pede mudar a gestão, sem propor mais recursos",
+   "avaliacoes": [
+    {
+     "achado": "O Fundeb permanente elevou o valor por aluno de estados do Norte e do Nordeste em 2022 e reduziu desigualdades entre e dentro dos estados, mas o índice de Gini nacional subiu de 0,57 em 2020 para 0,59 em 2022.",
+     "autor": "Passos e Passos (UFPI e UFAM)",
+     "ano": 2025,
+     "tipo": "academico_revisado",
+     "sentido": "misto",
+     "titulo": "O efeito equalizador da política de fundos de financiamento da educação básica (Fineduca, v. 15)",
+     "url": "https://seer.ufrgs.br/index.php/fineduca/article/view/141281"
+    },
+    {
+     "achado": "A comparação do valor por aluno entre municípios de um mesmo estado mostrou grandes diferenças, e a distribuição, especialmente pela complementação do novo Fundeb, pode ser mais bem equalizada.",
+     "autor": "Andreia Couto Ribeiro (UCB)",
+     "ano": 2022,
+     "tipo": "academico_revisado",
+     "sentido": "misto",
+     "titulo": "Desigualdade no financiamento da educação básica: panorama do valor anual total por aluno (VAAT) para o novo Fundeb (Fineduca, v. 12)",
+     "url": "https://seer.ufrgs.br/index.php/fineduca/article/view/108593"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "Os estudos indicam que o novo fundo elevou o valor por aluno das redes mais pobres, sobretudo no Norte e no Nordeste. Também mostram desigualdade ainda alta entre municípios e alta do Gini nacional em 2022.",
+   "quem_ganha": "Redes estaduais e municipais com menor valor por aluno, que recebem a maior parte da complementação federal.",
+   "quem_paga_ou_perde": "A União, cuja complementação cresce ano a ano até 23% do total dos fundos em 2026."
+  },
+  {
+   "titulo": "Pix, sistema de pagamentos instantâneos",
+   "o_que_e": "Sistema do Banco Central para transferências e pagamentos instantâneos, 24 horas por dia, com participação obrigatória dos grandes bancos e sem tarifa para pessoas físicas; entrou em operação em novembro de 2020.",
+   "atos": [
+    {
+     "descricao": "Resolução BCB 1/2020 (institui o arranjo de pagamentos Pix)",
+     "url": "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&numero=1"
+    }
+   ],
+   "data": "2020-08-12",
+   "tema": "tecnologia",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "Em 2021, mais de 117 milhões de usuários tinham chave Pix cadastrada e mais de 109 milhões de pessoas físicas fizeram ou receberam ao menos um Pix (Mensagem ao Congresso de 2022, com dados do Banco Central).",
+    "url": "http://web.archive.org/web/20220203003346/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/1digitalpoliticaeconomicamcn2022.pdf"
+   },
+   "busca_no_plano": "Pix, pagamento instantâneo, transferência, meios de pagamento, inclusão financeira, bancarização; o plano cita o Banco Central só para defender sua independência formal",
+   "avaliacoes": [
+    {
+     "achado": "Pouco mais de um ano após o lançamento, 67% dos adultos estavam cadastrados; a participação obrigatória dos grandes bancos e o duplo papel do Banco Central explicam a adesão, com custo menor para usuários.",
+     "autor": "BIS (Duarte, Frost, Gambacorta, Koo Wilkens e Shin)",
+     "ano": 2022,
+     "tipo": "organismo_internacional",
+     "sentido": "favoravel",
+     "titulo": "Central banks, the monetary system and public payment infrastructures: lessons from Brazil's Pix (BIS Bulletin nº 52)",
+     "url": "https://ideas.repec.org/p/bis/bisblt/52.html"
+    },
+    {
+     "achado": "Usando enchentes como variável instrumental, cada 1% a mais de usuários do Pix aumenta em 0,8% os novos clientes bancários e em 0,4% os novos tomadores de crédito, e o Pix complementa outros meios de pagamento.",
+     "autor": "Banco Central (Sampaio e Ornelas)",
+     "ano": 2024,
+     "tipo": "working_paper",
+     "sentido": "favoravel",
+     "titulo": "Payment technology complementarities and their consequences in the banking sector: evidence from Brazil's Pix (Working Paper nº 600)",
+     "url": "https://www.bcb.gov.br/content/publicacoes/WorkingPaperSeries/WP600.pdf"
+    }
+   ],
+   "balanco": "favoravel",
+   "resumo_avaliacoes": "As avaliações encontradas indicam adesão rápida, custo menor para o usuário e aumento da inclusão bancária e de crédito. Nenhuma das encontradas trata de efeitos negativos, como fraudes.",
+   "quem_ganha": "Pessoas e empresas que fazem transferências e pagamentos sem tarifa ou com tarifa menor, incluindo quem não usava conta bancária.",
+   "quem_paga_ou_perde": "Os bancos, que deixaram de cobrar pelas transferências entre pessoas físicas feitas pelo Pix; o Banco Central arca com a operação do sistema."
+  },
+  {
+   "titulo": "Auxílio Gás dos Brasileiros",
+   "o_que_e": "Pagamento a cada dois meses de ao menos metade do preço médio nacional do botijão de 13 kg a famílias do CadÚnico com renda por pessoa de até meio salário mínimo ou com beneficiário do BPC.",
+   "atos": [
+    {
+     "descricao": "Lei 14.237/2021",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14237.htm"
+    }
+   ],
+   "data": "2021-11-19",
+   "tema": "energia",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "5,5 milhões de famílias beneficiadas, com primeiro pagamento em dezembro de 2021 (Mensagem ao Congresso de 2022).",
+    "url": "http://web.archive.org/web/20220202193904/https://www.gov.br/planalto/pt-br/mensagempresidencial/2022/2politicassociaismcn2022.pdf"
+   },
+   "busca_no_plano": "gás de cozinha, botijão, GLP, auxílio, vale-gás; o plano trata de gás só como mercado de gás natural, e os levantamentos citam o vale-gás apenas como destino de receita de privatização",
+   "avaliacoes": [],
+   "balanco": "insuficiente",
+   "resumo_avaliacoes": "Não foi encontrada avaliação do TCU, da CGU, do Ipea ou estudo revisado por pares sobre a focalização ou os efeitos do benefício no período.",
+   "quem_ganha": "Famílias de baixa renda do CadÚnico e famílias com beneficiário do BPC, que recebem ajuda para comprar o botijão.",
+   "quem_paga_ou_perde": "A União, com dividendos da Petrobras, bônus de assinatura, royalties e outras receitas do petróleo, além do orçamento fiscal, conforme o art. 4º da lei."
+  }
+ ]
+}

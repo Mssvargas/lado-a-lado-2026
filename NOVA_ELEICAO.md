@@ -88,6 +88,9 @@ Depois do comparativo, gere `data/resumo.json` com o prompt E. Ele alimenta a p�
   oficiais com o prompt de `tools/PROMPT_VERIFICACAO.md`, um grupo de levantamentos por
   vez. Ajuste no prompt a data de hoje e qual é o mandato atual.
 
+- `data/entregas/`: para cada governo novo, levante as 8 entregas não prometidas com o
+  prompt de `tools/PROMPT_ENTREGAS.md`, um agente por governo.
+
 ### 6. Atualizar o Acervo Constitucional
 
 ```bash

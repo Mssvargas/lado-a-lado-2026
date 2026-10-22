@@ -1,0 +1,170 @@
+{
+  "governo": "lula3",
+  "nome": "Luiz Inácio Lula da Silva (2023–2026)",
+  "registros": ["lula-2022"],
+  "criterio": "Candidatas tiradas das Mensagens ao Congresso Nacional de 2023 a 2026. Ficaram as entregas concluídas (lei, decreto, MP convertida, acordo homologado ou programa em execução) que não aparecem no plano de governo registrado em 2022 nem nas listas de promessas do g1 e da Folha; entre elas, as 8 de maior alcance medido por orçamento ou público atendido. Como o mandato vai até 2026, várias entregas recentes ainda não têm avaliação publicada.",
+  "fontes_mensagens": [
+    {"ano": 2023, "url": "https://www.gov.br/casacivil/pt-br/assuntos/noticias/2023/janeiro/mensagem-presidencial-ao-congresso-nacional-2023"},
+    {"ano": 2024, "url": "https://www.gov.br/planalto/pt-br/acesso-a-informacao/acoes-e-programas/governanca/mensagem-ao-congresso-nacional/mensagemaocongressonacional2024_vf.pdf"},
+    {"ano": 2025, "url": "https://www.gov.br/casacivil/pt-br/assuntos/noticias/mensagem_pdf/mcn-2025-digital-v1.pdf"},
+    {"ano": 2026, "url": "https://www.gov.br/casacivil/pt-br/.arquivos/mensagem-ao-congresso-nacional-2026.pdf"}
+  ],
+  "itens": [
+    {
+      "titulo": "Conta de luz gratuita para baixa renda (Luz do Povo)",
+      "o_que_e": "Mudança na Tarifa Social de Energia Elétrica: famílias de baixa renda inscritas no CadÚnico passaram a ter desconto de 100% no consumo de até 80 kWh por mês. O custo é coberto pela Conta de Desenvolvimento Energético (CDE), encargo que entra na tarifa dos demais consumidores.",
+      "atos": [
+        {"descricao": "Medida Provisória 1.300/2025", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/mpv/mpv1300.htm"},
+        {"descricao": "Lei 15.235/2025 (conversão da MP 1.300/2025)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15235.htm"}
+      ],
+      "data": "2025-05-21",
+      "tema": "energia",
+      "contexto": "normal",
+      "alcance": {"texto": "Em outubro de 2025, 17,1 milhões de unidades consumidoras residenciais de baixa renda, cerca de 68 milhões de pessoas; custo estimado em R$ 825 milhões por mês, cerca de R$ 10 bilhões por ano, pagos pela CDE (Mensagem ao Congresso 2026, p. 658).", "url": "https://www.gov.br/casacivil/pt-br/.arquivos/mensagem-ao-congresso-nacional-2026.pdf"},
+      "busca_no_plano": "tarifa social, conta de luz, gratuidade, desconto na energia, baixa renda, CadÚnico; o plano só promete continuar o Luz para Todos e uma 'política sustentável de modicidade tarifária' (item 78) e enfrentar a carestia da eletricidade (item 55), sem gratuidade nem desconto social; nada nos levantamentos g1-lula e folha-lula",
+      "avaliacoes": [],
+      "balanco": "insuficiente",
+      "resumo_avaliacoes": "Não foi encontrada avaliação publicada do TCU, da CGU, do Ipea, da IFI ou de estudos revisados por pares sobre a gratuidade, em vigor desde julho de 2025.",
+      "quem_ganha": "Famílias de baixa renda inscritas no CadÚnico, que deixam de pagar a energia consumida até 80 kWh por mês.",
+      "quem_paga_ou_perde": "Os demais consumidores de energia elétrica, que custeiam a CDE na conta de luz, num valor estimado em cerca de R$ 10 bilhões por ano."
+    },
+    {
+      "titulo": "Botijão de gás gratuito para baixa renda (Gás do Povo)",
+      "o_que_e": "Trocou o pagamento em dinheiro do Auxílio Gás pela recarga gratuita de botijões em revendas credenciadas, para famílias do CadÚnico com renda de até meio salário mínimo por pessoa, com prioridade para o Bolsa Família. O número de recargas varia com o tamanho da família.",
+      "atos": [
+        {"descricao": "Medida Provisória 1.313/2025", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/mpv/mpv1313.htm"},
+        {"descricao": "Lei 15.348/2026 (conversão da MP 1.313/2025)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15348.htm"}
+      ],
+      "data": "2025-09-04",
+      "tema": "energia",
+      "contexto": "normal",
+      "alcance": {"texto": "Meta de 17 milhões de famílias, cerca de 50 milhões de pessoas, o triplo do Auxílio Gás, que em 2025 atendeu em média 6,1 milhões de famílias por bimestre com cerca de R$ 3,4 bilhões no ano (Mensagem ao Congresso 2026, p. 32 e 107).", "url": "https://www.gov.br/casacivil/pt-br/.arquivos/mensagem-ao-congresso-nacional-2026.pdf"},
+      "busca_no_plano": "gás de cozinha, botijão, GLP, auxílio gás, vale-gás, cozimento, lenha; o plano fala só de uma nova política de preços dos combustíveis e do gás (item 58) e de enfrentar a carestia dos combustíveis (item 55), sem transferência nem gratuidade; nada nos levantamentos g1-lula e folha-lula",
+      "avaliacoes": [],
+      "balanco": "insuficiente",
+      "resumo_avaliacoes": "O programa começou a funcionar em novembro de 2025 e não foi encontrada avaliação publicada por órgão de controle, instituto de pesquisa ou estudo revisado por pares.",
+      "quem_ganha": "Famílias de baixa renda do CadÚnico, a maioria chefiada por mulheres, que deixam de pagar a recarga do botijão.",
+      "quem_paga_ou_perde": "O orçamento federal, por dotações do Ministério do Desenvolvimento e Assistência Social, e estados e municípios que aderirem ao programa."
+    },
+    {
+      "titulo": "Regulação das apostas esportivas e jogos on-line (bets)",
+      "o_que_e": "Lei que legalizou e regulou as apostas de quota fixa: só empresas autorizadas e sediadas no Brasil podem operar, pagando outorga, impostos e uma parcela da receita a áreas sociais, sob fiscalização da Secretaria de Prêmios e Apostas. Em setembro de 2026, a Medida Provisória 1.394/2026 proibiu essas apostas e mandou extinguir as autorizações.",
+      "atos": [
+        {"descricao": "Lei 14.790/2023", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14790.htm"},
+        {"descricao": "Medida Provisória 1.394/2026 (proibição posterior das apostas, ainda não convertida)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/mpv/mpv1394.htm"}
+      ],
+      "data": "2023-12-29",
+      "tema": "outro",
+      "contexto": "normal",
+      "alcance": {"texto": "No 1º semestre de 2025, 17,7 milhões de pessoas apostaram nas 78 empresas autorizadas, que tiveram receita bruta de jogos de R$ 17,4 bilhões; a Receita arrecadou R$ 3,8 bilhões do setor e a Secretaria de Prêmios e Apostas, cerca de R$ 2,2 bilhões em outorgas (dados da SPA citados pelo TCU).", "url": "https://portal.tcu.gov.br/uploads/noticias/pdf/2026/05/19/015.852-2025-3-JGO-Auditoria_Prevencao_Apostas_Jogos_Virtuais_Online.pdf"},
+      "busca_no_plano": "apostas, bets, jogos de azar, jogo on-line, loteria, cassino; nada no plano nem nos levantamentos g1-lula e folha-lula",
+      "avaliacoes": [
+        {"achado": "O TCU registrou que a regulação criou um mercado mais formalizado e aumentou a arrecadação, mas que cerca de 40% do mercado seguia com operadores não autorizados e que a capacidade da SPA de detectar e bloquear esses operadores tinha deficiências que comprometem a efetividade da Lei 14.790.", "autor": "TCU", "ano": 2026, "tipo": "avaliacao_oficial", "sentido": "misto", "titulo": "Acórdão 1296/2026-Plenário (auditoria sobre prevenção à lavagem de dinheiro em apostas e jogos virtuais)", "url": "https://portal.tcu.gov.br/uploads/noticias/pdf/2026/05/19/015.852-2025-3-JGO-Auditoria_Prevencao_Apostas_Jogos_Virtuais_Online.pdf"},
+        {"achado": "O TCU apontou autorizações baseadas em autodeclarações, falta de manuais de fiscalização e carência de pessoal, tecnologia e orçamento na SPA, que classificou como 'inoperância material' do regulador, e determinou ao Ministério da Fazenda que reforçasse a estrutura.", "autor": "TCU", "ano": 2025, "tipo": "avaliacao_oficial", "sentido": "desfavoravel", "titulo": "Acórdão 2841/2025-Plenário (acompanhamento das ações contra lavagem de dinheiro no mercado de apostas)", "url": "https://www.ba.gov.br/ssp/sites/site-ssp/files/2026-04/Ac%C3%B3rd%C3%A3o%202841-2025%20-%20Bets_1.pdf"}
+      ],
+      "balanco": "mista",
+      "resumo_avaliacoes": "As auditorias do TCU reconhecem a formalização e a arrecadação geradas pela lei. Também apontam que o mercado ilegal continuou grande e que o órgão regulador não tinha estrutura para fiscalizar o setor.",
+      "quem_ganha": "A União e as áreas que recebem parte da receita das empresas; as empresas autorizadas, que passaram a operar legalmente.",
+      "quem_paga_ou_perde": "Os apostadores, que gastaram R$ 17,4 bilhões em termos líquidos (apostas menos prêmios) só no 1º semestre de 2025; com a proibição de 2026, as empresas perdem as autorizações sem devolução da outorga."
+    },
+    {
+      "titulo": "Ressarcimento de descontos indevidos do INSS",
+      "o_que_e": "Devolução administrativa, sem necessidade de ação judicial, das mensalidades de associações descontadas sem autorização de aposentadorias e pensões, esquema revelado pela Operação Sem Desconto, da Polícia Federal e da CGU. A devolução segue acordo homologado pelo STF na ADPF 1.236 e é corrigida pela inflação.",
+      "atos": [
+        {"descricao": "Medida Provisória 1.306/2025 (crédito extraordinário de R$ 3,31 bilhões; vigência encerrada)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/mpv/mpv1306.htm"},
+        {"descricao": "Exposição de motivos da MP 1.378/2026 (novo crédito de R$ 547 milhões após ampliação do acordo na ADPF 1.236)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/exm/exm-mp-1378-26.pdf"}
+      ],
+      "data": "2025-07-16",
+      "tema": "programas-sociais",
+      "contexto": "normal",
+      "alcance": {"texto": "R$ 2,8 bilhões devolvidos a mais de 4 milhões de aposentados e pensionistas, com pagamentos a partir de julho de 2025 (Mensagem ao Congresso 2026, p. 409).", "url": "https://www.gov.br/casacivil/pt-br/.arquivos/mensagem-ao-congresso-nacional-2026.pdf"},
+      "busca_no_plano": "INSS, aposentados, pensionistas, descontos, fraude, ressarcimento, associações; o plano só fala de reconstruir a previdência (item 17); nada nos levantamentos g1-lula e folha-lula",
+      "avaliacoes": [],
+      "balanco": "insuficiente",
+      "resumo_avaliacoes": "As auditorias da CGU e as decisões do TCU trataram das fraudes e da suspensão dos descontos; não foi encontrada avaliação publicada sobre o resultado da devolução.",
+      "quem_ganha": "Aposentados e pensionistas do INSS que tiveram descontos associativos sem autorização.",
+      "quem_paga_ou_perde": "O Tesouro, que abriu R$ 3,3 bilhões em 2025 e R$ 547 milhões em 2026 em créditos extraordinários; a AGU tenta recuperar os valores das entidades e pessoas investigadas."
+    },
+    {
+      "titulo": "Resposta às enchentes do Rio Grande do Sul",
+      "o_que_e": "Conjunto de medidas federais depois das enchentes de abril e maio de 2024 no Rio Grande do Sul: pagamento único de R$ 5.100 a famílias desalojadas ou desabrigadas, adiamento por até 36 meses das parcelas da dívida do estado com a União, com juros zerados no período, e créditos extraordinários para socorro e reconstrução.",
+      "atos": [
+        {"descricao": "Medida Provisória 1.219/2024 (Apoio Financeiro de R$ 5.100; vigência encerrada)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/mpv/mpv1219.htm"},
+        {"descricao": "Lei Complementar 206/2024", "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp206.htm"}
+      ],
+      "data": "2024-05-15",
+      "tema": "outro",
+      "contexto": "emergencia",
+      "alcance": {"texto": "R$ 42,7 bilhões em créditos extraordinários autorizados para o RS, dos quais R$ 28,7 bilhões empenhados e R$ 26,1 bilhões pagos na data de referência do acompanhamento do TCU.", "url": "https://portal.tcu.gov.br/imprensa/noticias/tribunal-avalia-execucao-de-creditos-extraordinarios-para-o-rio-grande-do-sul"},
+      "busca_no_plano": "desastre, calamidade, enchente, defesa civil, Rio Grande do Sul, reconstrução de cidades, auxílio emergencial; o plano cita a 'emergência climática' só como tema de transição ecológica, sem resposta a desastres; nada nos levantamentos g1-lula e folha-lula",
+      "avaliacoes": [
+        {"achado": "O TCU registrou R$ 1,9 bilhão pagos a 375 mil famílias, mas apontou que portarias restringiram a área atendida mais do que a MP, excluindo famílias, e que cerca de 87 mil pedidos esperavam análise havia mais de 100 dias; mandou o ministério rever os pedidos pendentes.", "autor": "TCU", "ano": 2025, "tipo": "avaliacao_oficial", "sentido": "misto", "titulo": "Acórdão 1297/2025-Plenário (benefícios a desabrigados das enchentes no RS)", "url": "https://portal.tcu.gov.br/imprensa/noticias/tribunal-analisa-beneficios-a-desabrigados-das-enchentes-no-rio-grande-do-sul"},
+        {"achado": "O TCU concluiu que não houve irregularidades na autorização e na execução dos créditos extraordinários para o RS, que seguiram a legislação fiscal.", "autor": "TCU", "ano": 2025, "tipo": "avaliacao_oficial", "sentido": "favoravel", "titulo": "Acórdão 1832/2025-Plenário (execução de créditos extraordinários para o RS)", "url": "https://portal.tcu.gov.br/imprensa/noticias/tribunal-avalia-execucao-de-creditos-extraordinarios-para-o-rio-grande-do-sul"}
+      ],
+      "balanco": "mista",
+      "resumo_avaliacoes": "As auditorias do TCU encontraram os créditos executados dentro das regras fiscais e o auxílio pago a centenas de milhares de famílias. Também encontraram exclusões indevidas e demora na análise de pedidos do auxílio às famílias.",
+      "quem_ganha": "Famílias desalojadas ou desabrigadas, trabalhadores e empresas das áreas atingidas e o governo do RS, que deixou de pagar parcelas da dívida com a União.",
+      "quem_paga_ou_perde": "O Tesouro Nacional, com dezenas de bilhões em créditos extraordinários fora do limite de gastos e com o adiamento dos recebimentos da dívida do RS; famílias excluídas pelos critérios de área ficaram sem o auxílio."
+    },
+    {
+      "titulo": "Renegociação das dívidas dos estados (Propag)",
+      "o_que_e": "Lei que permite aos estados e ao Distrito Federal refinanciar a dívida com a União em até 30 anos, com juro real de 0% a 2% ao ano. Parte dos juros que deixam de pagar precisa virar investimento, sobretudo em ensino técnico, ou aporte num fundo dividido entre os estados.",
+      "atos": [
+        {"descricao": "Lei Complementar 212/2025", "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp212.htm"}
+      ],
+      "data": "2025-01-13",
+      "tema": "contas-publicas",
+      "contexto": "normal",
+      "alcance": {"texto": "22 das 27 unidades da Federação aderiram até o fim de 2025; a IFI estima que a União deixará de receber R$ 350,3 bilhões em 30 anos (valor presente), ou R$ 190,7 bilhões descontadas as amortizações extraordinárias.", "url": "https://www12.senado.leg.br/ifi/pdf/raf114_jul2026.pdf"},
+      "busca_no_plano": "dívida dos estados, renegociação, refinanciamento, Regime de Recuperação Fiscal, pacto federativo, federalismo; o plano só promete renegociar dívidas de famílias e de pequenas e médias empresas (item 60) e 'fortalecer um novo federalismo' (item 110), sem falar da dívida estadual; nada nos levantamentos g1-lula e folha-lula",
+      "avaliacoes": [
+        {"achado": "A IFI concluiu que o programa amplia o alívio financeiro dos estados (18 dos 20 estados com dívida obtiveram juro real de 0%), mas reduz os recebimentos da União em R$ 190,7 bilhões em 30 anos e pode aumentar a dívida federal, porque o custo de captação do Tesouro é maior que os juros cobrados.", "autor": "IFI (Senado)", "ano": 2026, "tipo": "avaliacao_oficial", "sentido": "misto", "titulo": "Relatório de Acompanhamento Fiscal nº 114 – Propag: uma estimativa de recebíveis da União", "url": "https://www12.senado.leg.br/ifi/pdf/raf114_jul2026.pdf"},
+        {"achado": "A IFI apontou que a lei repete a tradição de o governo central socorrer estados cuja situação fiscal média é melhor que a da União, e que o impacto no déficit e na dívida federal ainda era difícil de medir.", "autor": "IFI (Senado)", "ano": 2025, "tipo": "avaliacao_oficial", "sentido": "desfavoravel", "titulo": "Nota Técnica nº 60 – Endividamento e tributação", "url": "https://www12.senado.leg.br/ifi/pdf/nt_60_endividamento_e_tributacao.pdf"}
+      ],
+      "balanco": "mista",
+      "resumo_avaliacoes": "As análises da IFI confirmam a adesão ampla e o alívio nas contas dos estados e estimam um custo alto para a União. Ainda não há avaliação dos investimentos que os estados devem fazer em troca.",
+      "quem_ganha": "Os estados mais endividados com a União, sobretudo São Paulo, Minas Gerais, Rio de Janeiro e Rio Grande do Sul, que pagam juros menores por prazo mais longo.",
+      "quem_paga_ou_perde": "A União, que deixa de receber parte dos juros e pode ter de se endividar mais para cobrir a diferença; o custo recai sobre o orçamento federal."
+    },
+    {
+      "titulo": "Novo acordo de reparação do desastre de Mariana (Rio Doce)",
+      "o_que_e": "Acordo judicial firmado em outubro de 2024 entre União, Minas Gerais, Espírito Santo, instituições de Justiça e as mineradoras Samarco, Vale e BHP para reparar os danos do rompimento da barragem de Fundão, em 2015. Repactua os acordos de 2016 e 2018 e põe R$ 100 bilhões de recursos novos, pagos pelas empresas em 20 anos, sob gestão do poder público.",
+      "atos": [
+        {"descricao": "Acordo homologado pelo STF em 6/11/2024 (Pet 13.157)", "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-homologa-acordo-para-reparacao-de-danos-causados-pela-tragedia-em-mariana-mg/"},
+        {"descricao": "Decreto 12.412/2025 (governança dos recursos sob gestão federal)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12412.htm"}
+      ],
+      "data": "2024-10-25",
+      "tema": "meio-ambiente",
+      "contexto": "normal",
+      "alcance": {"texto": "R$ 132 bilhões em valores novos (R$ 100 bilhões sob gestão pública, dos quais R$ 49,1 bilhões para a União, e R$ 32 bilhões executados pelas empresas); até 2025 a Samarco pagou R$ 5,7 bilhões ao fundo federal, e a União identificou mais de 36 mil agricultores e pescadores aptos ao programa de transferência de renda, com pagamentos iniciados em julho de 2025 (Mensagem ao Congresso 2026, p. 533–535).", "url": "https://www.gov.br/casacivil/pt-br/.arquivos/mensagem-ao-congresso-nacional-2026.pdf"},
+      "busca_no_plano": "Mariana, Samarco, Vale, barragem, Rio Doce, reparação, atingidos; o plano só trata de regulação minerária e mineração ilegal (item 70); nada nos levantamentos g1-lula e folha-lula",
+      "avaliacoes": [
+        {"achado": "Em etapa inicial do acompanhamento do eixo saúde (R$ 12 bilhões), o TCU encontrou instâncias de governança criadas e planos de ação aprovados, mas advertiu que não verificou a entrega efetiva de serviços e que estruturas formais não garantem a efetividade das ações.", "autor": "TCU", "ano": 2026, "tipo": "avaliacao_oficial", "sentido": "misto", "titulo": "Acórdão 2787/2026-Plenário (acompanhamento do eixo saúde do acordo do Rio Doce)", "url": "https://portal.tcu.gov.br/imprensa/noticias/tribunal-de-contas-da-uniao-analisa-o-eixo-saude-no-acordo-da-tragedia-do-rio-doce-2026-10-15"}
+      ],
+      "balanco": "mista",
+      "resumo_avaliacoes": "A única avaliação oficial encontrada é um acompanhamento inicial do TCU sobre a área de saúde, que registra o planejamento feito e não mede resultados. A reparação está nos primeiros anos de um cronograma de 20 anos.",
+      "quem_ganha": "Pessoas e comunidades atingidas na bacia do Rio Doce, como pescadores, agricultores, indígenas e quilombolas, além dos municípios e estados da região.",
+      "quem_paga_ou_perde": "As mineradoras Samarco, Vale e BHP, que pagam os valores em parcelas ao longo de 20 anos."
+    },
+    {
+      "titulo": "Emergência de saúde no território Yanomami",
+      "o_que_e": "Declaração de emergência em saúde pública em janeiro de 2023 e operação federal na Terra Indígena Yanomami, em Roraima, com envio de equipes de saúde, distribuição de alimentos, reabertura de postos de atendimento e retirada do garimpo ilegal.",
+      "atos": [
+        {"descricao": "Decreto 11.384/2023 (Comitê de Coordenação Nacional para a desassistência sanitária Yanomami)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11384.htm"},
+        {"descricao": "Decreto 11.405/2023 (medidas da emergência em saúde e de combate ao garimpo)", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/D11405.htm"}
+      ],
+      "data": "2023-01-20",
+      "tema": "saude",
+      "contexto": "emergencia",
+      "alcance": {"texto": "Cerca de 32 mil indígenas em 392 comunidades, numa terra de 9,6 milhões de hectares; os 37 polos de saúde do distrito sanitário Yanomami voltaram a funcionar e o efetivo de saúde cresceu 169% (Mensagem ao Congresso 2026, p. 336–339).", "url": "https://www.gov.br/casacivil/pt-br/.arquivos/mensagem-ao-congresso-nacional-2026.pdf"},
+      "busca_no_plano": "Yanomami, saúde indígena, emergência sanitária, desnutrição, malária; o plano promete proteger os territórios indígenas de atividades predatórias (item 40) e combater a mineração ilegal na Amazônia (item 70), e a Folha registrou a retirada de garimpeiros como parte dessa promessa; a resposta à emergência de saúde não aparece",
+      "avaliacoes": [
+        {"achado": "A Corte Interamericana constatou que o Brasil fez grandes esforços e dedicou recursos humanos e econômicos significativos desde o início de 2023, mas registrou que malária, desnutrição e falta de atendimento persistiam e que garimpeiros começavam a voltar, e pediu ao Estado que intensificasse as medidas.", "autor": "Corte Interamericana de Direitos Humanos", "ano": 2023, "tipo": "organismo_internacional", "sentido": "misto", "titulo": "Resolução de 12 de dezembro de 2023 – Medidas provisórias, assunto Yanomami, Ye'kwana e Munduruku", "url": "https://corteidh.or.cr/docs/medidas/yanomami_se_02_por.pdf"}
+      ],
+      "balanco": "mista",
+      "resumo_avaliacoes": "A avaliação internacional encontrada, de dezembro de 2023, reconhece o esforço federal e aponta que a crise de saúde ainda não estava superada. Não foram encontradas avaliações independentes dos anos seguintes.",
+      "quem_ganha": "Os cerca de 32 mil Yanomami e Ye'kwana da terra indígena.",
+      "quem_paga_ou_perde": "O orçamento federal, que custeia equipes, logística aérea e operações; garimpeiros ilegais foram retirados da área."
+    }
+  ]
+}

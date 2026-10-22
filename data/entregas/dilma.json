@@ -1,0 +1,407 @@
+{
+ "governo": "dilma",
+ "nome": "Dilma Rousseff (2011–2016)",
+ "registros": [
+  "dilma-2010",
+  "dilma-2014"
+ ],
+ "criterio": "Candidatas tiradas das seis Mensagens ao Congresso Nacional do governo (2011 a 2016); ficaram as entregas concluídas que não constam do plano registrado antes delas (o de 2010 para atos de 2011 a 2014) nem dos levantamentos da Folha, do Congresso em Foco e do g1, e entre essas as 8 de maior alcance segundo dado oficial de público ou de custo.",
+ "fontes_mensagens": [
+  {
+   "ano": 2011,
+   "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2011/view"
+  },
+  {
+   "ano": 2012,
+   "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2012/view"
+  },
+  {
+   "ano": 2013,
+   "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2013/view"
+  },
+  {
+   "ano": 2014,
+   "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2014/view"
+  },
+  {
+   "ano": 2015,
+   "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2015/view"
+  },
+  {
+   "ano": 2016,
+   "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2016/view"
+  }
+ ],
+ "itens": [
+  {
+   "titulo": "Desoneração da folha de pagamentos",
+   "o_que_e": "Empresas de setores escolhidos deixaram de pagar a contribuição patronal de 20% sobre a folha ao INSS e passaram a recolher um percentual sobre a receita bruta, de 1% a 2,5% nos primeiros anos. Começou com 3 setores em 2011 e chegou a 56 em 2014.",
+   "atos": [
+    {
+     "descricao": "Medida Provisória 540/2011",
+     "url": "https://www2.camara.leg.br/legin/fed/medpro/2011/medidaprovisoria-540-2-agosto-2011-611126-normaatualizada-pe.html"
+    },
+    {
+     "descricao": "Lei 12.546/2011",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2011/lei-12546-14-dezembro-2011-612002-publicacaooriginal-134621-pl.html"
+    }
+   ],
+   "data": "2011-08-02",
+   "tema": "impostos",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "Empresas de 56 setores industriais e de serviços recolheram R$ 24,07 bilhões a menos em tributos em 2014 (Mensagem ao Congresso de 2015).",
+    "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2015/view"
+   },
+   "busca_no_plano": "Termos: desoneração, folha de pagamento, contribuição previdenciária, encargos, INSS, faturamento, custo do trabalho. Nada no plano de 2010; ele só fala, de forma genérica, em 'mudanças tributárias' que beneficiem a produção e em 'políticas especiais tributárias' para o empreendedorismo. Nos levantamentos, nenhuma promessa trata do tema; o Congresso em Foco cita a desoneração da folha só na avaliação de outra promessa (zerar PIS/Cofins de saneamento, energia e transportes).",
+   "avaliacoes": [
+    {
+     "achado": "Com dados da Rais de 2009 a 2015 e triplas diferenças, o estudo não encontra efeito da desoneração sobre o volume de emprego nas empresas beneficiadas.",
+     "autor": "Ipea (Garcia, Sachsida e Carvalho)",
+     "ano": 2018,
+     "tipo": "working_paper",
+     "sentido": "desfavoravel",
+     "titulo": "Impacto da desoneração da folha de pagamento sobre o emprego: novas evidências (Texto para Discussão 2357)",
+     "url": "https://ideas.repec.org/p/ipe/ipetds/2357.html"
+    },
+    {
+     "achado": "Estima que o corte de 20 pontos na alíquota elevou o emprego em cerca de 9% nas empresas, sobretudo nas pequenas, por menos desligamentos, e os salários em cerca de 4% no longo prazo, concentrados em cargos de chefia.",
+     "autor": "Felipe Lobel (UC Berkeley)",
+     "ano": 2022,
+     "tipo": "working_paper",
+     "sentido": "favoravel",
+     "titulo": "The Unequal Incidence of Payroll Taxes with Imperfect Competition: Theory and Evidence",
+     "url": "https://arxiv.org/abs/2210.15776v1"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "Os estudos divergem sobre o objetivo declarado de preservar e gerar empregos: o texto do Ipea não encontra efeito sobre o emprego, e um working paper posterior estima aumento de emprego, concentrado em empresas pequenas. Nenhum dos dois foi publicado em periódico revisado por pares.",
+   "quem_ganha": "Empresas dos setores incluídos, que pagaram menos contribuição sobre a folha.",
+   "quem_paga_ou_perde": "O Tesouro, que deixou de arrecadar R$ 24,07 bilhões em 2014 e, por lei, compensa o INSS pela perda; o custo recai sobre os contribuintes em geral."
+  },
+  {
+   "titulo": "Redução das tarifas de energia (MP 579)",
+   "o_que_e": "Renovação antecipada das concessões de usinas e linhas de transmissão antigas, em troca de indenização e de receitas calculadas pelo governo, e corte de encargos da conta de luz, para reduzir as tarifas a partir de 2013.",
+   "atos": [
+    {
+     "descricao": "Medida Provisória 579/2012",
+     "url": "https://www2.camara.leg.br/legin/fed/medpro/2012/medidaprovisoria-579-11-setembro-2012-774153-norma-pe.html"
+    },
+    {
+     "descricao": "Lei 12.783/2013",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2013/lei-12783-11-janeiro-2013-775059-norma-pl.html"
+    }
+   ],
+   "data": "2012-09-11",
+   "tema": "energia",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "Redução de 18% para consumidores residenciais e de até 32% para empresas a partir de janeiro de 2013 (Mensagem de 2013); os aportes diretos do Tesouro à Conta de Desenvolvimento Energético somaram R$ 19 bilhões em 2013 e 2014, segundo o TCU.",
+    "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2013/view"
+   },
+   "busca_no_plano": "Termos: tarifa, conta de luz, energia elétrica, encargos, renovação de concessões, custo da energia, modicidade. O plano de 2010 não trata de preço da energia. Nos levantamentos, o Congresso em Foco menciona a redução de encargos da conta de luz apenas na avaliação da promessa de zerar PIS/Cofins da energia, que é outra medida.",
+   "avaliacoes": [
+    {
+     "achado": "O fim dos aportes do Tesouro, que somaram R$ 19 bilhões em 2013 e 2014, levou as cotas da CDE pagas pelos consumidores de R$ 1,7 bilhão em 2014 para R$ 18,9 bilhões em 2015, um dos motivos do aumento das contas naquele ano.",
+     "autor": "TCU",
+     "ano": 2016,
+     "tipo": "avaliacao_oficial",
+     "sentido": "desfavoravel",
+     "titulo": "Acórdão 2.001/2016-Plenário (auditoria operacional sobre as cotas da CDE e as bandeiras tarifárias de 2015)",
+     "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1799339"
+    },
+    {
+     "achado": "A MP 579 buscou a modicidade tarifária, mas resultou em aumentos relevantes de despesas repassados às tarifas, como R$ 72 bilhões em indenizações de transmissão parcelados até 2028; a maior distância entre tarifa e inflação em 20 anos ocorreu em 2014-2015, por efeitos posteriores da medida.",
+     "autor": "TCU",
+     "ano": 2022,
+     "tipo": "avaliacao_oficial",
+     "sentido": "desfavoravel",
+     "titulo": "Acórdão 1.376/2022-Plenário (auditoria da política tarifária do setor elétrico)",
+     "url": "https://portal.tcu.gov.br/data/files/85/E5/C2/B8/4A9618102DFE0FF7F18818A8/014.282-2021-6-BZ%20-%20politica_tarifaria_setor_eletrico.pdf"
+    }
+   ],
+   "balanco": "desfavoravel",
+   "resumo_avaliacoes": "As tarifas caíram em 2013, mas as duas auditorias do TCU atribuem à medida custos que voltaram para a conta de luz a partir de 2015 e seguem até 2028. Não foi encontrada avaliação publicada que conclua que a redução tenha se sustentado.",
+   "quem_ganha": "Consumidores de energia, com contas menores em 2013 e 2014.",
+   "quem_paga_ou_perde": "O Tesouro, com R$ 19 bilhões em aportes em 2013-2014; os próprios consumidores, que passaram a pagar cotas e indenizações maiores a partir de 2015; e as empresas que renovaram as concessões com receitas fixadas pelo poder concedente."
+  },
+  {
+   "titulo": "Programa Mais Médicos",
+   "o_que_e": "Contratação de médicos brasileiros e estrangeiros, com bolsa federal, para trabalhar na atenção básica de municípios e distritos indígenas com falta de profissionais, além da abertura de vagas em cursos de medicina.",
+   "atos": [
+    {
+     "descricao": "Medida Provisória 621/2013",
+     "url": "https://www2.camara.leg.br/legin/fed/medpro/2013/medidaprovisoria-621-8-julho-2013-776449-norma-pe.html"
+    },
+    {
+     "descricao": "Lei 12.871/2013",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2013/lei-12871-22-outubro-2013-777279-norma-pl.html"
+    }
+   ],
+   "data": "2013-07-08",
+   "tema": "saude",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "18.240 médicos em 4.058 municípios e 34 distritos sanitários indígenas, com atendimento a 63 milhões de pessoas, em 2015 (Mensagem de 2016).",
+    "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2016/view"
+   },
+   "busca_no_plano": "Termos: médicos, Mais Médicos, médicos estrangeiros, intercâmbio, falta de médicos, atenção básica, cursos de medicina. O plano de 2010 promete expandir as equipes do Saúde da Família, sem citar provimento de médicos, estrangeiros ou novas vagas de medicina. Na Folha, o Mais Médicos aparece só na avaliação da promessa de expandir o Saúde da Família; a promessa de 'expandir o Mais Médicos' (g1) é do plano de 2014, posterior à criação do programa.",
+   "avaliacoes": [
+    {
+     "achado": "O programa elevou em cerca de 12% a oferta líquida de médicos da atenção básica, porque parte dos médicos já existentes foi substituída, e se associou a 1,3% menos mortes evitáveis, com efeito concentrado nos municípios prioritários.",
+     "autor": "Hone et al. (BMC Health Services Research)",
+     "ano": 2020,
+     "tipo": "academico_revisado",
+     "sentido": "favoravel",
+     "titulo": "Impact of the Programa Mais Médicos on primary care doctor supply and amenable mortality: quasi-experimental study of 5565 Brazilian municipalities",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7491024/"
+    },
+    {
+     "achado": "Com controle sintético para todas as microrregiões de 2008 a 2017, não encontra impacto significativo do programa sobre internações nem sobre mortalidade.",
+     "autor": "Thomas, Millett, Soares e Hone (Social Science & Medicine)",
+     "ano": 2024,
+     "tipo": "academico_revisado",
+     "sentido": "desfavoravel",
+     "titulo": "More doctors, better health? A generalised synthetic control approach to estimating impacts of increasing doctors under Brazil's Mais Medicos programme",
+     "url": "https://openaccess.city.ac.uk/id/eprint/38226/"
+    },
+    {
+     "achado": "Dos 13.790 médicos do programa, pelo menos 4.375 (31,7%) não tinham supervisor indicado no sistema do Ministério da Saúde, e 35% dos 114 entrevistados relataram dificuldade de comunicação por barreira de idioma.",
+     "autor": "TCU",
+     "ano": 2015,
+     "tipo": "avaliacao_oficial",
+     "sentido": "desfavoravel",
+     "titulo": "Acórdão 331/2015-Plenário, registrado no Relatório Anual de Atividades do TCU de 2015",
+     "url": "https://portal.tcu.gov.br/data/files/07/31/D5/77/7800371055EB6E27E18818A8/Relatorio_anual_atividades_TCU_2015.pdf"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "O programa ampliou a presença de médicos onde faltavam, mas menos do que o número de contratados, porque houve substituição de médicos já existentes. Os estudos divergem sobre o efeito na mortalidade, e o TCU apontou falhas de supervisão.",
+   "quem_ganha": "Moradores de periferias, municípios do interior e áreas indígenas com falta de médicos.",
+   "quem_paga_ou_perde": "A União, que paga as bolsas dos médicos; parte dos médicos já contratados pelos municípios foi substituída pelos do programa."
+  },
+  {
+   "titulo": "Concessão de grandes aeroportos à iniciativa privada",
+   "o_que_e": "Leilão da operação de aeroportos federais para consórcios privados, com a Infraero como sócia minoritária: Guarulhos, Viracopos e Brasília em 2012, Galeão e Confins em 2013, depois de São Gonçalo do Amarante em 2011.",
+   "atos": [
+    {
+     "descricao": "Decreto 7.624/2011 (regras de concessão de aeroportos)",
+     "url": "https://www2.camara.leg.br/legin/fed/decret/2011/decreto-7624-22-novembro-2011-611823-norma-pe.html"
+    }
+   ],
+   "data": "2011-11-22",
+   "tema": "infraestrutura",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "Seis aeroportos internacionais concedidos, com mais de R$ 9 bilhões investidos pelas concessionárias de 2012 a 2015 (Mensagem de 2016).",
+    "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2016/view"
+   },
+   "busca_no_plano": "Termos: concessão, concessões, aeroporto, privatização, iniciativa privada, parceria. O plano de 2010 promete eliminar gargalos em portos e aeroportos pelo PAC, sem prever concessão ao setor privado. Nenhum item dos levantamentos trata de aeroportos.",
+   "avaliacoes": [
+    {
+     "achado": "Com controle sintético, estima aumento grande, imediato e estatisticamente significativo das receitas comerciais dos cinco aeroportos concedidos, em comparação com a operação pela Infraero.",
+     "autor": "Resende e Caldeira (Economics Bulletin)",
+     "ano": 2020,
+     "tipo": "academico_revisado",
+     "sentido": "favoravel",
+     "titulo": "Privatization of Brazilian airports: a synthetic control approach",
+     "url": "http://www.accessecon.com/Pubs/EB/2020/Volume40/EB-20-V40-I1-P63.pdf"
+    },
+    {
+     "achado": "Em 28 aeroportos, a análise de eficiência (SBM-DEA) conclui que a concessão não melhorou a eficiência produtiva e sugere revisar os contratos da primeira rodada.",
+     "autor": "Toledo et al. (Transportes)",
+     "ano": 2021,
+     "tipo": "academico_revisado",
+     "sentido": "desfavoravel",
+     "titulo": "Does privatization make Brazilian airports more efficient?",
+     "url": "https://anpet.emnuvens.com.br/anpet/article/download/2304/907/12370"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "Os estudos revisados encontram ganho de receita comercial nos aeroportos concedidos, mas não ganho de eficiência produtiva em relação aos aeroportos públicos.",
+   "quem_ganha": "Passageiros dos aeroportos ampliados e a União, que recebe as outorgas pagas pelos consórcios.",
+   "quem_paga_ou_perde": "Usuários e companhias aéreas, que pagam as tarifas reguladas em contrato; a Infraero, sócia com 49%, divide os riscos financeiros das concessionárias."
+  },
+  {
+   "titulo": "Novo Código Florestal e Cadastro Ambiental Rural",
+   "o_que_e": "Lei que substituiu o Código Florestal de 1965, redefiniu as áreas de preservação e de reserva legal, regularizou desmatamentos anteriores a 2008 e criou o Cadastro Ambiental Rural, obrigatório para todos os imóveis rurais.",
+   "atos": [
+    {
+     "descricao": "Lei 12.651/2012",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2012/lei-12651-25-maio-2012-613076-norma-pl.html"
+    }
+   ],
+   "data": "2012-05-25",
+   "tema": "meio-ambiente",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "2.267.661 imóveis rurais inscritos no CAR em 2015, equivalentes a 63,2% da área cadastrável do país, estimada em 398 milhões de hectares (Mensagem de 2016).",
+    "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2016/view"
+   },
+   "busca_no_plano": "Termos: Código Florestal, Cadastro Ambiental Rural, reserva legal, preservação permanente, florestal, regularização ambiental. O plano de 2010 promete combate ao desmatamento, zoneamento agroecológico e manejo florestal, sem prever novo código ou cadastro. Na Folha, o código aparece só como crítica na avaliação da promessa de zoneamento; a promessa de acelerar o CAR (g1) é do plano de 2014, posterior à lei.",
+   "avaliacoes": [
+    {
+     "achado": "A revisão reduziu em 58% o passivo de vegetação que os imóveis teriam de recuperar, de 50 para 21 milhões de hectares, e criou instrumentos novos de conservação, como as cotas de reserva ambiental.",
+     "autor": "Soares-Filho et al. (Science)",
+     "ano": 2014,
+     "tipo": "academico_revisado",
+     "sentido": "misto",
+     "titulo": "Cracking Brazil's Forest Code",
+     "url": "https://www.ufmg.br/online/arquivos/032981.shtml"
+    },
+    {
+     "achado": "Nos cadastros estaduais do Pará e de Mato Grosso, base do CAR nacional, os imóveis registrados começaram com menos desmatamento, mas a diferença diminuiu com o tempo, e só 6% dos produtores relataram ações de recuperação.",
+     "autor": "Azevedo et al. (PNAS)",
+     "ano": 2017,
+     "tipo": "academico_revisado",
+     "sentido": "desfavoravel",
+     "titulo": "Limits of Brazil's Forest Code as a means to end illegal deforestation",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5530639"
+    },
+    {
+     "achado": "O desmatamento em Mato Grosso e no Pará teria sido cerca de 10% maior sem o registro dos imóveis no CAR, nos primeiros anos do cadastro.",
+     "autor": "Alix-Garcia et al. (Conservation Letters)",
+     "ano": 2018,
+     "tipo": "academico_revisado",
+     "sentido": "favoravel",
+     "titulo": "Avoided Deforestation Linked to Environmental Registration of Properties in the Brazilian Amazon",
+     "url": "https://news.oregonstate.edu/news/new-analysis-shows-brazil-slows-deforestation-land-registration-program"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "A lei reduziu a área que os proprietários teriam de recuperar. Sobre o cadastro, um estudo associa o registro a menos desmatamento, e outro conclui que o efeito diminuiu com o tempo. Os dois examinam os cadastros estaduais anteriores ao sistema nacional.",
+   "quem_ganha": "Proprietários rurais, que ganharam regras de regularização e segurança jurídica, sobretudo os que tinham desmatado antes de 2008.",
+   "quem_paga_ou_perde": "A proteção ambiental: a área de vegetação a recuperar caiu de 50 para 21 milhões de hectares, segundo Soares-Filho et al."
+  },
+  {
+   "titulo": "Resposta à seca no semiárido (2012–2014)",
+   "o_que_e": "Conjunto de ações para a seca mais grave em décadas no Nordeste e no norte de Minas: Bolsa Estiagem e Garantia-Safra para agricultores, carros-pipa do Exército, venda de milho subsidiado e crédito emergencial dos fundos constitucionais.",
+   "atos": [
+    {
+     "descricao": "Medida Provisória 565/2012, convertida na Lei 12.716/2012 (crédito emergencial e ampliação do auxílio emergencial financeiro)",
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2012/lei-12716-21-setembro-2012-774269-publicacaooriginal-137705-pl.html"
+    }
+   ],
+   "data": "2012-04-24",
+   "tema": "agro",
+   "contexto": "emergencia",
+   "alcance": {
+    "texto": "Em dezembro de 2013, 1,3 milhão de pequenos produtores recebiam a Bolsa Estiagem e 704 mil famílias o Garantia-Safra; 6.103 carros-pipa federais atuavam no início de 2014, e o crédito emergencial somou 511 mil operações e R$ 3,45 bilhões (Mensagem de 2014).",
+    "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2014/view"
+   },
+   "busca_no_plano": "Termos: seca, estiagem, semiárido, Bolsa Estiagem, Garantia-Safra, carro-pipa, cisterna. O plano de 2010 cita o semiárido apenas como área de pesquisa científica. Nenhum item dos levantamentos trata da seca.",
+   "avaliacoes": [
+    {
+     "achado": "A Bolsa Estiagem e o Garantia-Safra, somados ao Bolsa Família, deram assistência vital aos agricultores familiares, mas a resposta seguiu o padrão de gestão de crise, sem planejamento, e custou cerca de R$ 16,6 bilhões federais.",
+     "autor": "Banco Mundial (De Nys, Engle e Magalhães, orgs.)",
+     "ano": 2016,
+     "tipo": "organismo_internacional",
+     "sentido": "misto",
+     "titulo": "Secas no Brasil: política e gestão proativas",
+     "url": "https://documents1.worldbank.org/curated/en/326291481707684634/pdf/WP-secabrasilweb-PUBLIC-ABSTRACT-SENT.pdf"
+    },
+    {
+     "achado": "A Operação Carro-Pipa não tinha controles suficientes contra desperdício e benefício indevido: laudos de potabilidade desatualizados, falta de vistoria dos veículos e concentração de entregas em poucos apontadores.",
+     "autor": "TCU",
+     "ano": 2013,
+     "tipo": "avaliacao_oficial",
+     "sentido": "desfavoravel",
+     "titulo": "Acórdão 1.722/2013-Plenário (auditoria operacional na Operação Carro-Pipa)",
+     "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-identifica-falhas-na-operacao-carro-pipa"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "O Banco Mundial considera que as transferências deram assistência vital às famílias, mas critica o caráter emergencial e sem planejamento da resposta; o TCU apontou falhas de controle na distribuição de água por carros-pipa.",
+   "quem_ganha": "Agricultores familiares e moradores da zona rural do semiárido atingidos pela seca.",
+   "quem_paga_ou_perde": "A União, com cerca de R$ 16,6 bilhões em ações emergenciais e estruturais, segundo o Banco Mundial com dados do Ministério da Integração."
+  },
+  {
+   "titulo": "Rede Cegonha",
+   "o_que_e": "Estratégia do SUS para organizar o atendimento à gestante, ao parto e ao bebê até dois anos, com recursos para maternidades, exames de pré-natal, testes rápidos e práticas de parto humanizado.",
+   "atos": [
+    {
+     "descricao": "Portaria GM/MS 1.459/2011 (cópia na Secretaria de Saúde de Mato Grosso)",
+     "url": "https://www.saude.mt.gov.br/storage/old/files/1459-%5B4837-140911-SES-MT%5D.pdf"
+    }
+   ],
+   "data": "2011-06-24",
+   "tema": "saude",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "Adesão de todos os estados, com 5.488 municípios contemplados e 2,5 milhões de gestantes beneficiadas até 2013 (Mensagem de 2014).",
+    "url": "https://www.gov.br/secretariageral/pt-br/centrais-de-conteudo/biblioteca-da-pr/galeria-dos-ex-presidentes/dilma-vana-rousseff/copy_of_mensagens-presidenciais/mensagem-ao-congresso-nacional-2014/view"
+   },
+   "busca_no_plano": "Termos: Rede Cegonha, gestante, gravidez, parto, pré-natal, mortalidade materna, nascimento. O plano de 2010 cita a queda da mortalidade infantil como resultado passado e não promete ação para gestantes ou parto. Nenhum item dos levantamentos trata do tema.",
+   "avaliacoes": [
+    {
+     "achado": "Entre 2011-2012 e 2017, nas maternidades públicas da Rede, a presença de acompanhante no parto vaginal subiu de 31,8% para 83,9% e a episiotomia caiu de 47,3% para 27,7%, mas a taxa total de cesáreas ficou estável.",
+     "autor": "Leal et al. (Cadernos de Saúde Pública)",
+     "ano": 2019,
+     "tipo": "academico_revisado",
+     "sentido": "favoravel",
+     "titulo": "Progress in childbirth care in Brazil: preliminary results of two evaluation studies",
+     "url": "https://www.scielo.br/j/csp/a/grzf9kCgwKLFx8SV5DvPyJx/abstract/?lang=en"
+    },
+    {
+     "achado": "Em 606 maternidades, a implantação das boas práticas foi considerada parcialmente adequada em quase todas as diretrizes e inadequada na de ambiência, com grande diferença entre regiões.",
+     "autor": "Bittencourt et al. (Ciência & Saúde Coletiva)",
+     "ano": 2021,
+     "tipo": "academico_revisado",
+     "sentido": "misto",
+     "titulo": "Atenção ao parto e nascimento em maternidades da Rede Cegonha/Brasil: avaliação do grau de implantação das ações",
+     "url": "https://scielo.br/j/csc/a/4p3vFS9znjmjkKxrXBFdrMM/?lang=en"
+    }
+   ],
+   "balanco": "mista",
+   "resumo_avaliacoes": "As avaliações mostram avanço nas práticas de atendimento ao parto no SUS, mas implantação parcial na maior parte das maternidades e nenhuma queda na taxa de cesáreas do setor público; não foi encontrado estudo nacional sobre o efeito na mortalidade materna ou infantil.",
+   "quem_ganha": "Gestantes e recém-nascidos atendidos pelo SUS.",
+   "quem_paga_ou_perde": "União, estados e municípios, que financiam a rede de atenção materno-infantil."
+  },
+  {
+   "titulo": "Direitos trabalhistas das empregadas domésticas",
+   "o_que_e": "Extensão aos empregados domésticos de direitos dos demais trabalhadores, como jornada de 44 horas, hora extra, FGTS obrigatório e seguro-desemprego, com recolhimento unificado no Simples Doméstico.",
+   "atos": [
+    {
+     "descricao": "Emenda Constitucional 72/2013",
+     "url": "https://www2.camara.leg.br/legin/fed/emecon/2013/emendaconstitucional-72-2-abril-2013-775615-norma-pl.html"
+    },
+    {
+     "descricao": "Lei Complementar 150/2015",
+     "url": "https://www2.camara.leg.br/legin/fed/leicom/2015/leicomplementar-150-1-junho-2015-780907-norma-pl.html"
+    }
+   ],
+   "data": "2013-04-02",
+   "tema": "trabalho",
+   "contexto": "normal",
+   "alcance": {
+    "texto": "O trabalho doméstico ocupava 5,8 milhões de pessoas em 2022, 92% mulheres; em 2015, ano de maior formalização da série, cerca de um terço tinha carteira assinada (Ministério do Desenvolvimento Social, Nota Informativa 2/2023).",
+    "url": "https://mds.gov.br/webarquivos/MDS/7_Orgaos/SNCF_Secretaria_Nacional_da_Politica_de_Cuidados_e_Familia/Arquivos/Nota_Informativa/Nota_Informativa_N_2.pdf"
+   },
+   "busca_no_plano": "Termos: doméstico, doméstica, empregada, PEC das domésticas, FGTS, trabalho decente, precário. O plano de 2010 promete, em termos gerais, combater o trabalho 'precário e degradante' e promover o 'trabalho decente', sem citar o trabalho doméstico. O plano de 2014 e os levantamentos não tratam do tema.",
+   "avaliacoes": [
+    {
+     "achado": "Entre as mensalistas, a emenda de 2013 aumentou o emprego formal e reduziu a jornada, sem efeito sobre os salários.",
+     "autor": "Ipea (Costa, Barbosa e Hirata)",
+     "ano": 2016,
+     "tipo": "working_paper",
+     "sentido": "favoravel",
+     "titulo": "Efeitos da ampliação dos direitos trabalhistas sobre a formalização, jornada de trabalho e salários das empregadas domésticas (Texto para Discussão 2241)",
+     "url": "https://repositorio.ipea.gov.br/entities/publication/dd013186-3899-4580-976b-c49ca046a5be"
+    },
+    {
+     "achado": "A reforma elevou a taxa de formalização em 2 a 5 pontos percentuais e o salário real em 4% a 7%, mas reduziu as horas semanais e o total de empregos domésticos.",
+     "autor": "Pedro Pires (Nova School of Business and Economics)",
+     "ano": 2026,
+     "tipo": "working_paper",
+     "sentido": "misto",
+     "titulo": "When Labor Rights Become Actionable: Evidence from Domestic Work in Brazil",
+     "url": "https://static1.squarespace.com/static/635f3ac2fa2fa42351863054/t/6a59f82982744a6f8b24565e/1784281131134/Pires_DomesticWorkerFormalization.pdf"
+    }
+   ],
+   "balanco": "favoravel",
+   "resumo_avaliacoes": "Os dois estudos encontram aumento da formalização e redução da jornada, o objetivo declarado da mudança; o mais recente também encontra queda no total de empregos domésticos. Nenhum foi publicado em periódico revisado por pares.",
+   "quem_ganha": "Empregadas domésticas mensalistas, que passaram a ter FGTS, seguro-desemprego e limite de jornada.",
+   "quem_paga_ou_perde": "Famílias empregadoras, com custo maior de contratação formal; o total de empregos domésticos diminuiu, segundo Pires."
+  }
+ ]
+}

@@ -30,6 +30,8 @@ linguagem simples, com o trecho literal e a página do PDF.
   promessa também foi conferida só em fontes oficiais (normas, tramitação, dados
   oficiais, auditorias, decisões), e o site mostra a diferença em número e em pontos
   percentuais entre a classificação da fonte jornalística e a verificação oficial.
+  Cada governo tem também 8 entregas que não estavam no plano, com o que dizem as
+  avaliações oficiais e os estudos (sem veredito).
 - **Eleições desde 1891**: candidatos, partidos e votos de todas as eleições
   presidenciais.
 - **Planos na íntegra**: o texto de todos os planos cadastrados, página por página, com
@@ -51,6 +53,7 @@ linguagem simples, com o trecho literal e a página do PDF.
 | `data/historico.json` | Planos anteriores, levantamentos de promessas e indicadores oficiais. |
 | `data/promessas.json` | Promessas item a item de cada levantamento: status da fonte, justificativa, evidências. |
 | `data/verificacao/*.json` | Verificação de cada promessa em fontes oficiais, por grupo. O build junta em `data/verificacao.json`. Critérios em `tools/PROMPT_VERIFICACAO.md`. |
+| `data/entregas/*.json` | Entregas de cada governo que não estavam no plano, com avaliações. O build junta em `data/entregas.json`. Critérios em `tools/PROMPT_ENTREGAS.md`. |
 | `data/acervo.json`, `data/acervo/` | Acervo Constitucional: índice e um arquivo por documento, com os artigos. Gerado por `tools/acervo.py`. |
 | `data/eleicoes.json` | Eleições presidenciais desde 1891. |
 | `data/eleicao.json` | Eleição atual: ano, candidatos, exemplos. Único lugar com nomes de candidatos. |
