@@ -78,6 +78,33 @@ def verificar_verificacao(eleicao: dict) -> list[str]:
     return erros
 
 
+def verificar_entregas() -> list[str]:
+    """data/entregas/*.json: mesmo número de entregas por governo, balanço válido, sem reportagem como avaliação."""
+    erros: list[str] = []
+    pasta = ROOT / "data" / "entregas"
+    if not pasta.is_dir():
+        return erros
+    contagem: dict[str, int] = {}
+    for f in sorted(pasta.glob("*.json")):
+        g = json.loads(f.read_text(encoding="utf-8"))
+        itens = g.get("itens", [])
+        contagem[g.get("governo", f.stem)] = len(itens)
+        for i, it in enumerate(itens):
+            onde = f"entregas {f.name}#{i}"
+            if it.get("balanco") not in {"favoravel", "mista", "desfavoravel", "insuficiente"}:
+                erros.append(f"{onde}: balanço desconhecido {it.get('balanco')}")
+            if not it.get("atos"):
+                erros.append(f"{onde}: sem ato oficial")
+            for a in it.get("avaliacoes", []):
+                if IMPRENSA.search(str(a.get("url") or "")):
+                    erros.append(f"{onde}: reportagem usada como avaliação ({str(a.get('url'))[:60]})")
+            if it.get("balanco") != "insuficiente" and not it.get("avaliacoes"):
+                erros.append(f"{onde}: balanço '{it.get('balanco')}' sem avaliação citada")
+    if len(set(contagem.values())) > 1:
+        erros.append(f"entregas desequilibradas entre governos: {contagem}")
+    return erros
+
+
 def verificar_acervo() -> list[str]:
     """data/acervo.json aponta para arquivos que existem e têm artigos."""
     erros: list[str] = []
@@ -175,6 +202,7 @@ def main() -> None:
 
     erros.extend(verificar_verificacao(eleicao))
     erros.extend(verificar_acervo())
+    erros.extend(verificar_entregas())
 
     chk = load("data/checagens.json")["checagens"]
     contagem = {k: sum(1 for c in chk if c["candidato"] == k) for k in ids}

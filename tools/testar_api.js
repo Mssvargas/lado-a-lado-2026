@@ -49,6 +49,22 @@ const confere = (nome, ok, extra) => { console.log((ok ? "ok    " : "FALHA ") + 
   const c = await chamar({ modo: "acervo", pergunta: "A partir de que idade a pessoa responde criminalmente como adulto?" });
   confere("artigo apontado pela IA é lido", (c.j.artigos || []).some(x => x.doc === "cf" && x.n === "Art. 228"), (c.j.artigos || []).slice(0, 3).map(x => x.doc + " " + x.n).join(", "));
 
+  // Pergunte ao site: busca em todo o conteúdo, mesmo número de blocos por candidato, ids inventados somem.
+  let promptSiteTxt = "";
+  resposta = p => {
+    if (p.includes("Você prepara buscas")) return { sobre: "ambos", consultas_plano: ["escala 6x1", "jornada"], consulta_web: "x" };
+    promptSiteTxt = p;
+    const m = /\[(S\d+)\] [^\n]*\n…?([^\n]{0,80})/.exec(p);
+    return { resposta: `Resposta de teste [${m[1]}] com fonte inventada [S99999].`, citacoes: [{ id: m[1], trecho: m[2].split(" ").slice(0, 8).join(" ") }] };
+  };
+  const st = await chamar({ modo: "site", pergunta: "O que os candidatos propõem sobre a escala 6x1?" });
+  confere("site responde 200", st.status === 200, st.j.erro);
+  confere("site cita fonte válida e apaga a inventada", st.j.fontes?.length >= 1 && !st.j.resposta.includes("S99999"), st.j.resposta);
+  confere("citação literal do site aceita", st.j.citacoes?.length === 1, JSON.stringify(st.j.citacoes));
+  const blocosCand = k => (promptSiteTxt.match(new RegExp(`Proposta do plano · ${k}`, "g")) || []).length;
+  confere("mesmo número de propostas de cada candidato", blocosCand("Lula") === blocosCand("Flávio Bolsonaro"), `${blocosCand("Lula")} x ${blocosCand("Flávio Bolsonaro")}`);
+  confere("site também consulta promessas e leis", /Promessa anterior|Acervo Constitucional/.test(promptSiteTxt));
+
   // Extrair afirmações de texto lido por OCR.
   resposta = { afirmacoes: ["Fulano vai acabar com o Bolsa Família"] };
   const e = await chamar({ modo: "extrair", texto: "URGENTE compartilhe: fulano vai acabar com o bolsa familia" });

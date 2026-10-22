@@ -9,6 +9,7 @@
 // POST /api/checar  { modo: "audio", audio: "<base64>", mime }  -> transcrição da pergunta (Whisper no Groq)
 // POST /api/checar  { modo: "extrair", texto }  -> afirmações de um texto lido do print no navegador (OCR)
 // POST /api/checar  { modo: "acervo", pergunta, doc? }  -> resposta com artigos do Acervo Constitucional
+// POST /api/checar  { modo: "site", pergunta }  -> resposta com fontes de todo o conteúdo do site
 //
 // Etapas:
 //   1. termos de busca (IA rápida; sem IA, usa as palavras da frase)
@@ -28,7 +29,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-21g';
+const VERSAO = '2026-10-22a';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -614,6 +615,178 @@ function validar(r, trechos, fcs, web) {
   return out;
 }
 
+// ---------- "Pergunte ao site": tudo o que o site tem, em blocos com fonte ----------
+
+const TIPOS_SITE = {
+  proposta: 'Proposta do plano', plano: 'Página do plano', checagem: 'Checagem publicada', viabilidade: 'Viabilidade e evidências',
+  proposicao: 'Congresso e tribunais', espectro: 'Esquerda ou direita', ideologia: 'Ideologias', levantamento: 'Levantamento de promessas',
+  promessa: 'Promessa anterior', eleicao: 'Eleições desde 1891', entrega: 'Entrega não prometida', lei: 'Acervo Constitucional'
+};
+// Quantos blocos de cada tipo vão para a IA (por candidato, nos tipos marcados com *).
+const COTA_SITE = { proposta: 3, plano: 2, checagem: 2, viabilidade: 2, espectro: 1, proposicao: 2, ideologia: 2, levantamento: 2, promessa: 4, eleicao: 2, entrega: 3, lei: 3 };
+const POR_CANDIDATO = new Set(['proposta', 'plano', 'checagem', 'viabilidade', 'espectro']);
+
+let SITE = null;
+function siteIndice() {
+  if (SITE) return SITE;
+  const ler = (n) => { try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', n), 'utf8')); } catch (e) { return null; } };
+  const blocos = [];
+  const add = (tipo, titulo, texto, extra) => {
+    const t = String(texto || '').replace(/\s+/g, ' ').trim();
+    if (!t) return;
+    blocos.push(Object.assign({ id: 'S' + blocos.length, tipo, titulo, t, f: fold(titulo + ' ' + t), l: loose(t) }, extra));
+  };
+  const nome = (k) => (CAND[k] ? CAND[k].nome : k);
+  const comp = ler('comparativo.json');
+  for (const tm of (comp && comp.temas) || []) {
+    add('proposta', 'Em comum e diferença · ' + tm.nome, 'Em comum: ' + (tm.em_comum || '') + ' Principal diferença: ' + (tm.diferenca || ''), { link: '#tema-' + tm.id });
+    tm.itens.forEach((it) => {
+      if (!it.trecho) return;
+      add('proposta', nome(it.candidato) + ' · ' + tm.nome, 'Proposta: ' + it.proposta + ' Em palavras simples: ' + (it.simples || '') + ' Trecho do plano, p. ' + it.pagina + ': "' + it.trecho + '"',
+        { link: '#tema-' + tm.id, candidato: it.candidato, abrir: it.candidato + ':' + it.pagina });
+    });
+  }
+  for (const k of IDS) for (const p of dados().planos[k]) {
+    if (!p.toc) blocos.push({ id: 'S' + blocos.length, tipo: 'plano', titulo: 'Plano de ' + nome(k) + ', p. ' + p.p, t: p.t, f: p.f, l: p.l, candidato: k, abrir: k + ':' + p.p });
+  }
+  for (const c of dados().checagens) {
+    add('checagem', c.fonte + ' · ' + nome(c.candidato), (c.tipo === 'fala' ? 'Fala do candidato: ' : 'Alegação sobre o candidato: ') + c.alegacao + ' Veredito da agência: ' + c.veredito + '. ' + (c.explicacao || ''),
+      { link: '#checagens', url: c.url, candidato: c.candidato });
+  }
+  const temaNome = Object.fromEntries(((comp && comp.temas) || []).map((tm) => [tm.id, tm.nome]));
+  for (const a of ((ler('avaliacao.json') || {}).itens || [])) {
+    const v = a.viabilidade || {}, im = a.impactos || {};
+    add('viabilidade', nome(a.candidato) + ' · ' + (temaNome[a.tema] || a.tema), 'Proposta: ' + a.proposta + ' O que exige: ' + ((v.instrumento || {}).explicacao || '') + ' Custo: ' + ((v.custo || {}).plano_diz || '') + ' ' + ((v.custo || {}).estimativa_externa || '') +
+      ' Estudos: ' + ((v.evidencia || {}).resumo || '') + ' Quem ganha: ' + (im.quem_ganha || '') + ' Quem paga ou perde: ' + (im.quem_paga_ou_perde || ''), { link: '#tema-' + a.tema, candidato: a.candidato });
+    for (const p of a.proposicoes || []) add('proposicao', p.numero + ' (' + p.casa + ')', (p.ementa || '') + ' Situação: ' + (p.situacao || '') + ' Autoria: ' + (p.autor || '') + ' Ligada à proposta de ' + nome(a.candidato) + ': ' + a.proposta, { link: '#congresso', url: p.url });
+  }
+  const esp = ler('espectro.json') || {};
+  const catNome = Object.fromEntries((esp.categorias || []).map((c) => [c.codigo, c.nome]));
+  for (const x of esp.itens || []) {
+    const tm = ((comp && comp.temas) || []).find((t) => t.id === x.tema), it = tm && tm.itens[x.indice];
+    if (it) add('espectro', nome(it.candidato) + ' · ' + tm.nome, it.proposta + ' Classificação: ' + x.direcao + ', categoria ' + (catNome[x.categoria] || x.categoria) + ' (Manifesto Project). ' + (x.justificativa || ''), { link: '#espectro', candidato: it.candidato });
+  }
+  for (const i of ((ler('ideologias.json') || {}).ideologias || [])) {
+    add('ideologia', i.nome, (i.definicao || i.resumo || '') + ' Propostas típicas: ' + (i.propostas || []).join('; ') + ' No Brasil: ' + (i.no_brasil || ''), { link: '#ideologias', ideo: i.id });
+  }
+  for (const r of ((ler('historico.json') || {}).registros || [])) {
+    for (const t of r.rastreadores || []) {
+      add('levantamento', t.fonte + ' · ' + r.candidato + ' ' + (r.governo || r.eleicao), 'Promessas do plano de ' + r.candidato + ' (' + r.eleicao + '), governo ' + (r.governo || '') + ': cumpridas ' + (t.cumpridas ?? '?') + ', parciais ' + (t.parciais ?? '?') +
+        ', não cumpridas ' + (t.nao_cumpridas ?? '?') + ', total ' + (t.total ?? '?') + ' (data ' + (t.data || '') + '). ' + (t.metodo || '') + ' ' + (t.observacao || ''), { link: '#historico', url: t.url });
+    }
+  }
+  const ver = new Map((((ler('verificacao.json') || {}).itens) || []).map((v) => [v.levantamento + '|' + v.indice, v]));
+  for (const lv of ((ler('promessas.json') || {}).levantamentos || [])) {
+    (lv.itens || []).forEach((it, i) => {
+      const v = ver.get(lv.id + '|' + i);
+      add('promessa', lv.fonte + ' · governo ' + lv.governo, 'Promessa: ' + it.promessa + ' Status dado por ' + lv.fonte + ': ' + it.status_original + '. ' + (it.avaliacao || '') +
+        (v ? ' Verificação em fonte oficial: ' + v.status.replace(/_/g, ' ') + '. ' + (v.justificativa || '') : ''), { link: '#historico', url: it.url || lv.url });
+    });
+  }
+  for (const e of ((ler('eleicoes.json') || {}).eleicoes || [])) {
+    add('eleicao', 'Eleição de ' + e.ano, e.tipo + '. ' + e.candidatos.map((c) => c.nome + ' (' + (c.partido || '') + ')' + (c.pct_1t != null ? ', ' + c.pct_1t + '% no 1º turno' : '') + (c.pct_2t != null ? ', ' + c.pct_2t + '% no 2º turno' : '') + (c.eleito ? ', eleito' : '')).join('; ') + '. ' + (e.observacao || ''), { link: '#eleicoes' });
+  }
+  for (const g of ((ler('entregas.json') || {}).governos || [])) {
+    for (const it of g.itens || []) {
+      add('entrega', g.nome + ' · ' + it.titulo, it.o_que_e + ' Não estava no plano de governo. Alcance: ' + ((it.alcance || {}).texto || '') + ' Avaliações (' + it.balanco + '): ' + (it.resumo_avaliacoes || '') + ' Quem ganha: ' + (it.quem_ganha || '') + ' Quem paga ou perde: ' + (it.quem_paga_ou_perde || ''), { link: '#historico' });
+    }
+  }
+  SITE = blocos;
+  return SITE;
+}
+
+function blocosRelevantes(consultas, sobre) {
+  const tss = consultas.map(termos).filter((ts) => ts.length);
+  const porTipo = {};
+  for (const b of siteIndice()) {
+    let s = 0;
+    for (const ts of tss) s += pontuar({ f: b.f, toc: false }, ts);
+    if (s > 0) (porTipo[b.tipo] = porTipo[b.tipo] || []).push({ b, s });
+  }
+  const out = [];
+  for (const tipo of Object.keys(COTA_SITE)) {
+    const lista = (porTipo[tipo] || []).sort((x, y) => y.s - x.s);
+    if (POR_CANDIDATO.has(tipo)) {
+      // Mesmo número de blocos para cada candidato, a menos que a pergunta seja sobre um só.
+      for (const k of IDS) if (sobre === 'ambos' || sobre === k) out.push(...lista.filter((x) => x.b.candidato === k).slice(0, COTA_SITE[tipo]));
+    } else out.push(...lista.slice(0, COTA_SITE[tipo]));
+  }
+  // Leis: a mesma busca do Acervo Constitucional.
+  try {
+    for (const x of artigosRelevantes(consultas, [], COTA_SITE.lei)) {
+      const d = acervo().docs[x.doc];
+      out.push({ s: x.s, b: { id: 'L' + x.doc + '|' + x.a.n, tipo: 'lei', titulo: d.titulo + ' · ' + x.a.n, t: x.a.t, f: x.a.f, l: x.a.l, link: '#acervo', url: d.url } });
+    }
+  } catch (e) { /* sem acervo */ }
+  return out.map((x) => x.b);
+}
+
+function promptSite(pergunta, blocos, consultas) {
+  const txt = blocos.map((b) => '[' + b.id + '] ' + TIPOS_SITE[b.tipo] + ' · ' + b.titulo + '\n' + janela({ t: b.t, f: fold(b.t) }, consultas, b.tipo === 'plano' || b.tipo === 'lei' ? 1500 : 900)).join('\n\n');
+  return 'Você responde perguntas de eleitores sobre o conteúdo do site Lado a Lado ' + ELEICAO.ano + ', que compara de forma apartidária os planos de governo de ' + DESCRICAO + '. ' +
+    'O site também reúne checagens de agências, viabilidade das propostas, proposições no Congresso, classificação esquerda–direita, ideologias, promessas de governos anteriores com verificação em fontes oficiais, eleições desde 1891 e a Constituição e leis.\n' +
+    'Regras:\n' +
+    '- Use SOMENTE os blocos abaixo. Não use memória nem fatos de fora. Se os blocos não respondem, diga isso.\n' +
+    '- Depois de cada afirmação, cite o bloco entre colchetes, ex.: [S12]. Use só ids que aparecem abaixo.\n' +
+    '- Trate os candidatos exatamente da mesma forma: se a pergunta envolve mais de um, responda sobre cada um com extensão parecida.\n' +
+    '- Não opine, não recomende voto, não avalie se proposta é boa ou ruim. Quando houver estudos ou avaliações nos blocos, relate o que eles dizem, atribuindo a quem disse.\n' +
+    '- Português simples, de 3 a 7 frases curtas.\n' +
+    '- "citacoes": até 4 trechos LITERAIS (até 30 palavras) dos blocos usados, com o id.\n\n' +
+    'Pergunta: """' + pergunta + '"""\n\n=== BLOCOS ===\n' + (txt || '(nenhum bloco encontrado)') + '\n\n' +
+    'Responda só com JSON: {"resposta":"texto com [S..] após cada afirmação","citacoes":[{"id":"S0","trecho":"..."}]}';
+}
+
+async function responderSite(req, corpo, envia) {
+  const pergunta = String(corpo.pergunta || '').replace(/\s+/g, ' ').trim();
+  if (pergunta.length < 5 || pergunta.length > 500) return envia(400, { erro: 'Escreva uma pergunta entre 5 e 500 caracteres.' });
+  const chave = 'site|' + fold(pergunta);
+  const ja = lembrada(chave);
+  if (ja) return envia(200, Object.assign({}, ja, { cache: true }));
+  const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
+  if (!dentroDoLimite(ip)) return envia(429, { erro: 'Muitas consultas seguidas. Tente de novo em alguns minutos.' });
+
+  const prazo = Date.now() + 52000, trilha = [];
+  let consultas = [pergunta], sobre = quemNaFrase(' ' + fold(pergunta) + ' ') || 'ambos';
+  const t = await perguntar(promptTermos(pergunta), 500, Math.min(prazo, Date.now() + 12000), trilha);
+  if (t && t.json) {
+    consultas = consultas.concat((Array.isArray(t.json.consultas_plano) ? t.json.consultas_plano : []).map(String).slice(0, 5));
+    if (sobre === 'ambos' && IDS.includes(t.json.sobre)) sobre = t.json.sobre;
+  }
+  const blocos = blocosRelevantes(consultas, sobre);
+  const porId = new Map(blocos.map((b) => [b.id, b]));
+  const r = await perguntar(promptSite(pergunta, blocos, consultas), 1600, prazo, trilha, (j) => String(j.resposta || '').length > 20);
+  if (!r) {
+    console.log('[site] sem resposta: ' + trilha.join(' ; '));
+    return envia(503, { erro: 'A IA não respondeu agora. Tente de novo em alguns minutos.', detalhe: resumoTrilha(trilha) });
+  }
+  // Só ficam as marcações de blocos que existem; a ordem de aparição define a numeração.
+  const usados = [];
+  const resposta = String(r.json.resposta || '').slice(0, 2500).replace(/\[([SL][^\]\s]{0,80})\]/g, (m, id) => {
+    if (!porId.has(id)) return '';
+    if (usados.indexOf(id) < 0) usados.push(id);
+    return '[' + id + ']';
+  }).replace(/\s+([.,;])/g, '$1');
+  let descartadas = 0;
+  const citacoes = [];
+  for (const c of Array.isArray(r.json.citacoes) ? r.json.citacoes.slice(0, 6) : []) {
+    const b = porId.get(String(c && c.id));
+    const segs = String((c && c.trecho) || '').split(/\.\.\.|…/).map(loose).filter((s) => s.length > 10);
+    if (b && segs.length && segs.every((s) => b.l.includes(s))) {
+      citacoes.push({ id: b.id, trecho: String(c.trecho).slice(0, 300) });
+      if (usados.indexOf(b.id) < 0) usados.push(b.id);
+    } else descartadas++;
+  }
+  const fonte = (b) => ({ id: b.id, tipo: b.tipo, rotulo: TIPOS_SITE[b.tipo], titulo: b.titulo, link: b.link || '', url: b.url || '', abrir: b.abrir || '', ideo: b.ideo || '' });
+  const out = {
+    modo: 'site', resposta, citacoes, descartadas,
+    fontes: usados.map((id) => fonte(porId.get(id))),
+    consultados: blocos.filter((b) => usados.indexOf(b.id) < 0).slice(0, 12).map(fonte),
+    modelo: r.modelo
+  };
+  lembrar(chave, out);
+  return envia(200, out);
+}
+
 // Só provedor, modelo e tipo da falha: mostra no navegador por que a IA não respondeu.
 function resumoTrilha(trilha) {
   return trilha.slice(-12).map((s) => String(s).replace(/(gsk_|sk-|AIza)[\w-]{6,}/g, '***').slice(0, 100));
@@ -755,6 +928,7 @@ module.exports = async (req, res) => {
   }
 
   if (corpo && corpo.modo === 'acervo') return responderAcervo(req, corpo, envia);
+  if (corpo && corpo.modo === 'site') return responderSite(req, corpo, envia);
   const frase = String((corpo && corpo.frase) || '').replace(/\s+/g, ' ').trim();
   const cand = IDS.includes(corpo && corpo.candidato) ? corpo.candidato : 'ambos';
   if (frase.length < 8 || frase.length > 400) return envia(400, { erro: 'Escreva uma frase entre 8 e 400 caracteres.' });

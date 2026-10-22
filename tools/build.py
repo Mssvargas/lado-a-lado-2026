@@ -63,9 +63,20 @@ def merge_verificacao() -> None:
     print("data/verificacao.json", len(itens), "itens")
 
 
+def merge_entregas() -> None:
+    """Junta data/entregas/*.json (um por governo) em data/entregas.json."""
+    pasta = ROOT / "data" / "entregas"
+    if not pasta.is_dir():
+        return
+    governos = [json.loads(f.read_text(encoding="utf-8")) for f in sorted(pasta.glob("*.json"))]
+    (ROOT / "data" / "entregas.json").write_text(json.dumps({"governos": governos}, ensure_ascii=False), encoding="utf-8")
+    print("data/entregas.json", len(governos), "governos")
+
+
 def main() -> None:
     merge_avaliacao()
     merge_verificacao()
+    merge_entregas()
     eleicao = load("eleicao.json")
     assert isinstance(eleicao, dict)
     cands = eleicao["candidatos"]

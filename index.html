@@ -275,6 +275,27 @@ form.dragging { outline: 2px dashed var(--accent); outline-offset: 4px; }
 .sq.sq-none { background: transparent !important; outline: 1px dashed var(--muted); outline-offset: -1px; }
 table.vtab { min-width: 520px; }
 .lev-row .pills { display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; }
+/* Pergunte ao site */
+form.ask { gap: 10px; }
+form.ask .selrow input { flex: 1; min-width: 0; font-size: 16px; padding: 10px 12px; }
+ol.fontes { margin: 0; padding-left: 22px; display: grid; gap: 8px; font-size: 14px; }
+ol.fontes li::marker { font-weight: 700; color: var(--accent); }
+a.ref { text-decoration: none; font-weight: 700; font-size: .85em; vertical-align: super; line-height: 0; }
+.acts { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+/* Recolher o que foi aberto */
+.closer { display: block; margin: 10px 0 0 auto; }
+.closebar { display: flex; justify-content: flex-end; }
+/* Navegação fixa: topo, início, aba anterior e próxima */
+.pagenav { position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 15; display: flex; gap: 2px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px; box-shadow: 0 4px 16px rgb(0 0 0 / .14); }
+.pagenav button { border: 0; background: transparent; color: var(--ink); border-radius: 999px; min-width: 40px; height: 40px; padding: 0 12px; cursor: pointer; font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+.pagenav button:hover { background: var(--soft); color: var(--accent); }
+.pagenav button:disabled { opacity: .35; cursor: default; background: transparent; }
+@media (max-width: 760px) { .pagenav .lbl { display: none; } .pagenav button { padding: 0 10px; } }
+main { padding-bottom: 64px; }
+/* Filtro do espectro */
+.chips .chip.left[aria-pressed="true"] { background: var(--left); border-color: var(--left); color: var(--surface); }
+.chips .chip.right[aria-pressed="true"] { background: var(--right); border-color: var(--right); color: var(--surface); }
+.chips .chip.out[aria-pressed="true"] { background: var(--muted); border-color: var(--muted); color: var(--surface); }
 footer.site { border-top: 1px solid var(--line); background: var(--surface); }
 footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
 .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--surface); padding: 8px 16px; border-radius: 8px; font-weight: 700; z-index: 20; }
@@ -287,6 +308,13 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
     <div class="eyebrow">Eleição presidencial 2026 · planos de governo oficiais</div>
     <h1>Lado a Lado 2026</h1>
     <p class="lede">O que os planos de governo de Lula e Flávio Bolsonaro realmente propõem, tema por tema, em linguagem simples. Cada ponto traz o trecho original e a página do documento.</p>
+    <form class="panel ask" id="askForm" role="search" aria-label="Pergunte ao site">
+      <label for="askQ" class="eyebrow">Pergunte ao site</label>
+      <div class="selrow"><input type="search" id="askQ" placeholder="Ex.: O que cada candidato propõe para a segurança pública?" autocomplete="off" enterkeyhint="search"><button type="submit" class="btn">Perguntar</button></div>
+      <div class="media" data-media-for="askQ" hidden></div>
+      <p class="status" style="margin:0">Digite, cole um print ou fale a pergunta. A busca cobre todo o site: propostas e planos, checagens, viabilidade, Congresso, esquerda ou direita, ideologias, promessas anteriores, eleições e leis. A resposta vem com as fontes.</p>
+    </form>
+    <div class="panel" id="askOut" hidden aria-live="polite"></div>
     <div class="ballot" aria-label="Candidatos, na ordem do número de urna">
       <div class="c"><span class="num">13</span><div><div class="nm">Lula</div><div class="pl">PT · <i>Diretrizes para o Programa de Transformação do Brasil</i></div></div></div>
       <div class="c"><span class="num">22</span><div><div class="nm">Flávio Bolsonaro</div><div class="pl">PL · <i>Para o Brasil Vencer o Atraso</i></div></div></div>
@@ -581,6 +609,13 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
   </div>
 </main>
 
+<nav class="pagenav" aria-label="Navegar pelo site">
+  <button type="button" data-nav="prev"><span aria-hidden="true">←</span><span class="lbl">Anterior</span></button>
+  <button type="button" data-nav="home" title="Página inicial"><span aria-hidden="true">⌂</span><span class="lbl">Início</span></button>
+  <button type="button" data-nav="top" title="Voltar ao topo"><span aria-hidden="true">↑</span><span class="lbl">Topo</span></button>
+  <button type="button" data-nav="next"><span class="lbl">Próxima</span><span aria-hidden="true">→</span></button>
+</nav>
+
 <footer class="site">
   <div class="wrap">
     <span>Lado a Lado 2026 é uma página independente, sem vínculo com partidos, campanhas ou com o TSE.</span>
@@ -787,8 +822,14 @@ document.addEventListener("click", e => {
   if (b) {
     const box = document.querySelector(`[data-av-box="${CSS.escape(b.dataset.av)}"]`), a = AV.get(b.dataset.av);
     if (!box || !a) return;
-    if (box.hidden && !box.innerHTML) box.innerHTML = avHTML(a);
+    if (box.hidden && !box.innerHTML) box.innerHTML = avHTML(a) + `<button type="button" class="linkbtn closer" data-av-close="${esc(b.dataset.av)}">Recolher viabilidade e evidências ▲</button>`;
     box.hidden = !box.hidden; b.setAttribute("aria-expanded", String(!box.hidden));
+    b.textContent = box.hidden ? "Viabilidade e evidências" : "Ocultar viabilidade e evidências";
+  }
+  const ac = e.target.closest("[data-av-close]");
+  if (ac) {
+    const b2 = document.querySelector(`[data-av="${CSS.escape(ac.dataset.avClose)}"]`);
+    if (b2) { b2.click(); b2.scrollIntoView({ block: "nearest" }); }
   }
   const g = e.target.closest("[data-goto]"); if (g) location.hash = g.dataset.goto;
 });
@@ -879,7 +920,11 @@ function initCompare() {
 }
 document.addEventListener("click", e => {
   const tg = e.target.closest("[data-toggle]");
-  if (tg) { const el = document.getElementById(tg.dataset.toggle); el.hidden = !el.hidden; tg.setAttribute("aria-expanded", String(!el.hidden)); }
+  if (tg) {
+    const el = document.getElementById(tg.dataset.toggle); el.hidden = !el.hidden; tg.setAttribute("aria-expanded", String(!el.hidden));
+    tg.dataset.lbl ??= tg.textContent;
+    tg.textContent = el.hidden ? tg.dataset.lbl : (tg.dataset.lblOff || "Ocultar trecho original");
+  }
   const op = e.target.closest("[data-open]");
   if (op) { const [k, p] = op.dataset.open.split(":"); openPage(k, +p); }
 });
@@ -1007,7 +1052,8 @@ function renderAI(r) {
     ${web.length ? `<div class="hits"><div class="eyebrow">Na imprensa e em agências de checagem (busca feita agora)</div>${web.map(x => `<div class="hit"><div><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo || x.url)}</a></div><div class="src">${esc(x.fonte)}</div><div>${esc(x.resumo)}</div></div>`).join("")}</div>`
       : (r?.busca_web ? `<p class="status">A busca na imprensa e nas agências não encontrou material sobre esta frase.</p>` : "")}
     ${r?.limites ? `<p class="status"><b>Limite:</b> ${esc(r.limites)}</p>` : ""}
-    <p class="status">Análise automática. Confira o trecho, a página e os links antes de compartilhar.</p>`;
+    <p class="status">Análise automática. Confira o trecho, a página e os links antes de compartilhar.</p>
+    ${closeBtn("#checkOut", "Fechar resultado")}`;
 }
 
 /* ---------- Checagens ---------- */
@@ -1035,6 +1081,25 @@ function initChecks() {
   if (CHK?.cobertura?.length) $("#coverage").innerHTML = `<h3>Reportagens que comparam os planos</h3><ul>` +
     CHK.cobertura.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>, ${esc(x.veiculo)}, ${esc(fmtDate(x.data))}. ${esc(x.resumo)}</li>`).join("") + `</ul>`;
 }
+
+/* ---------- Recolher o que foi aberto ---------- */
+// Botão que esconde um painel de resultado (data-hide = seletor do painel).
+const closeBtn = (sel, txt) => `<button type="button" class="linkbtn closer" data-hide="${esc(sel)}">${esc(txt)}</button>`;
+document.addEventListener("click", e => {
+  const h = e.target.closest("[data-hide]");
+  if (h) { const el = document.querySelector(h.dataset.hide); if (el) { el.hidden = true; (el.previousElementSibling || el.parentElement).scrollIntoView({ block: "nearest" }); } }
+  const lc = e.target.closest("[data-lev-close]");
+  if (lc) { const box = lc.closest(".lev-detail"); box.hidden = true; box.closest(".lev")?.querySelector(".waffle")?.scrollIntoView({ block: "nearest" }); }
+  const dc = e.target.closest("[data-close-details]");
+  if (dc) { const d = dc.closest("details"); d.open = false; d.querySelector("summary").scrollIntoView({ block: "nearest" }); }
+});
+// Toda lista que se abre (details) ganha, no fim, um botão para recolher: no celular, o título fica longe.
+document.addEventListener("toggle", e => {
+  const d = e.target;
+  if (!(d instanceof HTMLDetailsElement) || !d.open || !d.matches("details.dd, details.dd2, details.el")) return;
+  if (d.lastElementChild?.matches("[data-close-details]")) return;
+  d.insertAdjacentHTML("beforeend", `<button type="button" class="linkbtn closer" data-close-details>Recolher ▲</button>`);
+}, true);
 
 /* ---------- Dados sob demanda ---------- */
 const DATA = {};
@@ -1076,13 +1141,15 @@ const initEspectro = once(async () => {
   const countOf = list => Object.fromEntries(DIRS.map(([d]) => [d, list.filter(x => x.cl.direcao === d).length]));
   const barHTML = (c, tot, cls = "", ctx = "") => `<div class="bar ${cls}" role="img" aria-label="${esc(ctx)}${DIRS.map(([d]) => `${DIR_LABEL[d]}: ${c[d]}`).join(", ")}">${DIRS.map(([d, v]) => c[d] ? `<span style="width:${pct(c[d], tot)}%;background:var(${v})" data-tip="${esc(`${ctx}${DIR_LABEL[d]}: ${c[d]} de ${tot} propostas (${fmtPct(pct(c[d], tot))})`)}"></span>` : "").join("")}</div>`;
   const pctLine = (c, tot) => `esquerda ${fmtPct(pct(c.esquerda, tot))} · direita ${fmtPct(pct(c.direita, tot))} · fora ${fmtPct(pct(c["fora do RILE"], tot))}`;
-  $("#espPerfil").innerHTML = keys + `<p class="status" style="margin:0">Toque no nome do candidato para ver tema a tema e, dentro de cada tema, cada proposta.</p>` + ORDER.map(k => {
+  $("#espPerfil").innerHTML = keys + `<div class="row" style="align-items:center;gap:8px"><span class="eyebrow">Mostrar propostas</span><div class="chips" id="espFiltro" role="group" aria-label="Filtrar propostas por direção">
+      <button type="button" class="chip" data-dir="" aria-pressed="true">Todas</button><button type="button" class="chip left" data-dir="esquerda" aria-pressed="false">Esquerda</button><button type="button" class="chip right" data-dir="direita" aria-pressed="false">Direita</button><button type="button" class="chip out" data-dir="fora do RILE" aria-pressed="false">Fora do eixo</button></div></div>
+    <p class="status" style="margin:0">Toque no nome do candidato para ver tema a tema e, dentro de cada tema, cada proposta. O filtro abre as listas e mostra só as propostas da direção escolhida.</p>` + ORDER.map(k => {
     const all = (COMP?.temas || []).flatMap(t => t.itens.map((it, i) => ({ t, it, i, cl: clsMap.get(t.id + "|" + i) })))
       .filter(x => x.it.candidato === k && x.cl && x.it.trecho);
     const c = countOf(all);
     const temas = (COMP?.temas || []).map(t => ({ t, list: all.filter(x => x.t.id === t.id) })).filter(g => g.list.length);
     const order = d => DIRS.findIndex(([x]) => x === d);
-    return `<details class="dd"><summary><div class="barrow"><div class="lbl"><span><span class="chev" aria-hidden="true">▸</span> ${esc(CAND[k].nome)} <span class="muted" style="font-weight:500;font-size:13px">${all.length} propostas</span></span><span class="mono muted" style="font-weight:500">${pctLine(c, all.length)}</span></div>${barHTML(c, all.length, "", `${CAND[k].nome} · `)}</div></summary>
+    return `<details class="dd"><summary><div class="barrow"><div class="lbl"><span><span class="chev" aria-hidden="true">▸</span> ${esc(CAND[k].nome)} <span class="muted" style="font-weight:500;font-size:13px">${all.length} propostas</span> <span class="muted" style="font-weight:500;font-size:13px" data-esp-n></span></span><span class="mono muted" style="font-weight:500">${pctLine(c, all.length)}</span></div>${barHTML(c, all.length, "", `${CAND[k].nome} · `)}</div></summary>
       <div class="dd-in">${temas.map(g => {
         const cc = countOf(g.list);
         return `<details class="dd2"><summary><span><span class="chev" aria-hidden="true">▸</span> ${esc(g.t.nome)}</span>${barHTML(cc, g.list.length, "sm", `${CAND[k].nome} · ${g.t.nome} · `)}<span class="mono muted">${g.list.length}</span></summary>
@@ -1092,6 +1159,7 @@ const initEspectro = once(async () => {
             ${x.cl.justificativa ? `<div class="status">${esc(x.cl.justificativa)}</div>` : ""}</div></li>`).join("")}</ul></details>`;
       }).join("")}</div></details>`;
   }).join("");
+  $("#espFiltro").addEventListener("click", e => { const c = e.target.closest("[data-dir]"); if (c) espFiltrar(c.dataset.dir); });
   $("#espNota").textContent = [esp.metodo?.resumo, ...(esp.metodo?.limites || [])].filter(Boolean).join(" ");
   const L = esp.liberdade_expressao;
   if (L) {
@@ -1114,6 +1182,23 @@ const initEspectro = once(async () => {
   $("#espSel").addEventListener("change", () => { if ($("#espSel").value) { $("#espTxt").value = ""; verifyEspectro(); } });
   $("#espForm").addEventListener("submit", e => { e.preventDefault(); verifyEspectro(); });
 });
+// Filtro por direção: esconde as propostas e os temas sem nenhuma proposta da direção escolhida.
+function espFiltrar(dir) {
+  document.querySelectorAll("#espFiltro .chip").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.dir === dir)));
+  const cls = { esquerda: "left", direita: "right", "fora do RILE": "out" }[dir];
+  document.querySelectorAll("#espPerfil details.dd").forEach(dd => {
+    let total = 0;
+    dd.querySelectorAll("details.dd2").forEach(d2 => {
+      let n = 0;
+      d2.querySelectorAll("li.prop").forEach(li => { const ok = !cls || li.classList.contains(cls); li.hidden = !ok; if (ok) n++; });
+      d2.hidden = n === 0; d2.open = !!cls && n > 0; total += n;
+      const cnt = d2.querySelector("summary > .mono"); if (cnt) cnt.textContent = String(n);
+    });
+    const info = dd.querySelector("[data-esp-n]");
+    if (info) info.textContent = cls ? `· ${total} ${{ esquerda: "de esquerda", direita: "de direita", "fora do RILE": "fora do eixo" }[dir]}` : "";
+    dd.open = !!cls;
+  });
+}
 function ideologyFit(cat, sinal) {
   const ide = DATA._ide;
   if (!ide || !cat?.dimensao) return null;
@@ -1220,7 +1305,8 @@ function renderEsp({ head, cat, cand, dir, sinal, extra }) {
     ${fit ? `<div><div class="eyebrow">Ideologias, na dimensão “${esc(fit.dim?.nome || "")}”</div>
       <p style="margin:4px 0"><b>Converge com:</b> ${fit.conv.map(i => `<button type="button" class="linkbtn" data-ideo="${esc(i.id)}">${esc(i.nome)}</button>`).join(", ") || "—"}</p>
       <p style="margin:4px 0"><b>Diverge de:</b> ${fit.div.map(i => `<button type="button" class="linkbtn" data-ideo="${esc(i.id)}">${esc(i.nome)}</button>`).join(", ") || "—"}</p></div>` : ""}
-    ${extra}`;
+    ${extra}
+    ${closeBtn("#espOut", "Fechar")}`;
 }
 
 /* ---------- Ideologias ---------- */
@@ -1255,7 +1341,9 @@ function showIdeology(id) {
   if (!i) return;
   document.querySelectorAll("#idList .card").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.ideo === id)));
   const L = (title, html) => html ? `<div><div class="eyebrow">${title}</div>${html}</div>` : "";
+  $("#idDetail").hidden = false;
   $("#idDetail").innerHTML = `<article class="panel">
+    <div class="closebar">${closeBtn("#idDetail", "Fechar ✕")}</div>
     <div class="eyebrow">${esc(i.familia)}</div><h3 style="font-size:24px">${esc(i.nome)}</h3>
     <p style="margin:0">${esc(i.definicao)}</p>
     ${L("Origem", `<p style="margin:0"><b>${esc(i.origem?.periodo)}.</b> ${esc(i.origem?.contexto)}</p>`)}
@@ -1316,6 +1404,7 @@ const initHistorico = once(async () => {
   DATA._hist = h;
   try { DATA._prom = await loadData("promessas"); } catch { DATA._prom = null; }
   try { for (const v of (await loadData("verificacao")).itens || []) VER.set(v.levantamento + "|" + v.indice, v); } catch { /* sem verificação oficial ainda */ }
+  try { DATA._ent = (await loadData("entregas")).governos || []; } catch { DATA._ent = []; }
   $("#histSeg").addEventListener("click", e => { const b = e.target.closest("[data-hist]"); if (!b) return; histCand = b.dataset.hist; renderHist(); });
   $("#histNota").textContent = h.nota_metodo || "";
   renderHist();
@@ -1458,6 +1547,7 @@ function levDetail(levId, i) {
   const ev = (it.evidencias || []).filter(e => e && e.descricao);
   box.hidden = false;
   box.innerHTML = `<article class="panel" style="border-left:6px solid ${cor}">
+    <div class="closebar"><button type="button" class="linkbtn" data-lev-close>Fechar ✕</button></div>
     <div class="eyebrow">Promessa · ${esc(TEMA_NOME[it.tema] || "Outro")}</div>
     <p style="margin:0;font-weight:700;font-size:17px">${esc(it.promessa)}</p>
     <p style="margin:0"><span class="pill" style="color:${it.status === "outro" ? "var(--muted)" : cor};border-color:${cor}">${esc(it.status_original)}</span></p>
@@ -1475,6 +1565,37 @@ function levDetail(levId, i) {
 document.addEventListener("click", e => { const b = e.target.closest("[data-lev-item]"); if (!b) return; const [id, i] = b.dataset.levItem.split("|"); levDetail(id, +i); });
 document.addEventListener("input", e => { const f = e.target.closest("[data-lev-f]"); if (f) levFilter(f.closest(".lev")); });
 
+/* Entregas que não estavam no plano (data/entregas.json): evidências, sem veredito */
+const BAL = { favoravel: "Avaliações favoráveis", mista: "Avaliações mistas", desfavoravel: "Avaliações desfavoráveis", insuficiente: "Ainda sem avaliação publicada" };
+const SENT = { favoravel: "favorável", desfavoravel: "desfavorável", misto: "misto" };
+function entregasHTML(r) {
+  // Um governo pode ter mais de um plano (ex.: dois mandatos): as entregas aparecem no último.
+  const g = (DATA._ent || []).find(x => (x.registros || []).slice(-1)[0] === r.id);
+  if (!g || !(g.itens || []).length) return "";
+  const cont = Object.keys(BAL).map(k => [k, g.itens.filter(x => x.balanco === k).length]).filter(([, n]) => n);
+  return `<details class="dd ent"><summary><span class="chev" aria-hidden="true">▸</span> <b>${g.itens.length} entregas do governo que não estavam no plano</b> <span class="muted" style="font-size:14px">o que foi feito sem ter sido prometido e o que dizem as avaliações</span></summary>
+    <div class="lev-in">
+      <p class="status" style="margin:0">${esc(g.criterio || "")} O mesmo critério e o mesmo número de entregas valem para todos os governos.</p>
+      <div class="keys">${cont.map(([k, n]) => `<span>${esc(BAL[k])}: <b class="mono">${n}</b></span>`).join("")}</div>
+      <div class="stack">${g.itens.map((it, i) => {
+        const id = "ent" + esc(g.governo) + i;
+        return `<article class="fc">
+          <div class="tags"><span class="tag vd">${esc(BAL[it.balanco] || it.balanco)}</span>${it.contexto === "emergencia" ? `<span class="tag">Resposta a emergência</span>` : ""}<span class="tag">${esc(fmtDate(it.data))}</span></div>
+          <div class="claim">${esc(it.titulo)}</div>
+          <div>${esc(it.o_que_e)}</div>
+          <div class="muted" style="font-size:14px">${(it.atos || []).map(a => a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.descricao)}</a>` : esc(a.descricao)).join(" · ")}${it.alcance?.texto ? ` · Alcance: ${esc(it.alcance.texto)}${it.alcance.url ? ` <a href="${esc(it.alcance.url)}" target="_blank" rel="noopener">fonte</a>` : ""}` : ""}</div>
+          <button type="button" class="linkbtn" data-toggle="${id}" data-lbl-off="Ocultar avaliações" aria-expanded="false">Ver avaliações e quem ganha ou paga</button>
+          <div id="${id}" hidden><dl class="prova">
+            <dt>O que dizem as avaliações</dt><dd>${esc(it.resumo_avaliacoes || "")}${(it.avaliacoes || []).length ? `<ul>${it.avaliacoes.map(a => `<li>${esc(a.achado)} <span class="muted">${esc(a.autor || "")}${a.ano ? `, ${esc(a.ano)}` : ""} · ${esc(AV_TIPO[a.tipo] || a.tipo || "")}${a.sentido ? ` · achado ${esc(SENT[a.sentido] || a.sentido)}` : ""}</span>${a.url ? ` · <a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.titulo || "estudo")}</a>` : ""}</li>`).join("")}</ul>` : ""}</dd>
+            <dt>Quem ganha</dt><dd>${esc(it.quem_ganha || "")}</dd>
+            <dt>Quem paga ou perde</dt><dd>${esc(it.quem_paga_ou_perde || "")}</dd>
+            <dt>Por que conta como não prometida</dt><dd>${esc(it.busca_no_plano || "")}</dd>
+          </dl></div>
+        </article>`;
+      }).join("")}</div>
+      <p class="status" style="margin:0">Sem veredito de "boa" ou "ruim": o balanço resume o que as avaliações oficiais e os estudos dizem sobre o objetivo declarado da própria entrega. A conclusão é de quem lê.</p>
+    </div></details>`;
+}
 function trackerHTML(t) {
   const parts = Object.keys(ST).map(k => [k, t[k]]).filter(([, v]) => typeof v === "number");
   const outros = Object.entries(t.outros || {}).filter(([, v]) => typeof v === "number");
@@ -1502,7 +1623,7 @@ function renderHist() {
     <div class="row" style="justify-content:space-between;align-items:baseline"><h3>${esc(r.candidato)} · ${esc(r.eleicao)} · ${esc(r.partido)}</h3><span class="pill out">${esc(r.vinculo?.tipo || "")}</span></div>
     <p class="status" style="margin:0">${esc(r.vinculo?.explicacao || "")}</p>
     <p style="margin:0">${r.resultado === "eleito" ? `Eleito · governo ${esc(r.governo || "")}` : "Não eleito"}${r.plano_titulo ? ` · Plano: ${r.plano_url ? `<a href="${esc(r.plano_url)}" target="_blank" rel="noopener">${esc(r.plano_titulo)}</a>` : esc(r.plano_titulo)}` : ""}</p>
-    ${r.resultado === "eleito" ? ((r.rastreadores || []).length ? `<div class="hits"><div class="eyebrow">Levantamentos de promessas</div>${r.rastreadores.map(trackerHTML).join("")}</div>${levsFor(r)}` : `<p class="empty">Nenhum levantamento independente de promessas encontrado para este governo.</p>`) : ""}
+    ${r.resultado === "eleito" ? ((r.rastreadores || []).length ? `<div class="hits"><div class="eyebrow">Levantamentos de promessas</div>${r.rastreadores.map(trackerHTML).join("")}</div>${levsFor(r)}${entregasHTML(r)}` : `<p class="empty">Nenhum levantamento independente de promessas encontrado para este governo.</p>`) : ""}
     ${(r.exemplos || []).length ? `<div class="hits"><div class="eyebrow">Exemplos</div>${r.exemplos.map(x => `<div class="hit"><div><span class="pill out">${esc(SL[x.status] || x.status)}</span> ${esc(x.promessa)}</div><div class="src">${esc(x.explicacao || "")} <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.fonte)}</a></div></div>`).join("")}</div>` : ""}
   </article>`).join("") || `<p class="empty">Nenhum registro.</p>`;
   const hv = histVerHTML(regs);
@@ -1582,7 +1703,13 @@ function initAcervoUI() {
   $("#acAiBtn").onclick = acervoAI;
   document.addEventListener("click", e => {
     const m = e.target.closest("[data-ac-more]");
-    if (m) { document.getElementById(m.dataset.acMore).hidden = false; document.getElementById(m.dataset.acMore + "s").hidden = true; m.remove(); }
+    if (m) {
+      const full = document.getElementById(m.dataset.acMore), short = document.getElementById(m.dataset.acMore + "s");
+      const abrir = full.hidden;
+      full.hidden = !abrir; short.hidden = abrir;
+      m.textContent = abrir ? "Mostrar menos ▲" : "Ler o artigo inteiro";
+      if (!abrir) m.closest(".fc").scrollIntoView({ block: "nearest" });
+    }
     if (e.target.closest("#acMore")) { acShown += 20; renderAcervo(); }
   });
 }
@@ -1693,7 +1820,8 @@ async function acervoAI() {
       ${j.descartadas ? `<p class="status">${j.descartadas} citação(ões) descartada(s) por não aparecer(em) literalmente no artigo.</p>` : ""}
       ${j.limites ? `<p class="status"><b>Limite:</b> ${esc(j.limites)}</p>` : ""}
       <details><summary class="linkbtn" style="font-size:14px">Artigos que a IA leu (${(j.artigos || []).length})</summary>${artigosApiHTML(j.artigos)}</details>
-      <p class="status" style="margin:0">Resposta automática, não é orientação jurídica. Confira o texto do artigo.</p>`;
+      <p class="status" style="margin:0">Resposta automática, não é orientação jurídica. Confira o texto do artigo.</p>
+      ${closeBtn("#acAi", "Fechar resposta")}`;
   } catch { box.innerHTML = `<p class="status">Sem conexão com o servidor. Tente de novo.</p>`; }
   finally { btn.disabled = false; }
 }
@@ -1722,10 +1850,11 @@ const ICON_MIC = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" str
 const MEDIA_AFTER = {
   fala: t => runCheck(t, $("#falaCand").value),
   espTxt: () => { $("#espSel").value = ""; verifyEspectro(); },
-  acQ: () => runAcervo(true)
+  acQ: () => runAcervo(true),
+  askQ: () => runAsk()
 };
 // Campos que usam o texto do print como está (no Acervo não se procuram afirmações sobre candidatos).
-const MEDIA_RAW = { acQ: true };
+const MEDIA_RAW = { acQ: true, askQ: true };
 const MEDIA_SEND = {};
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
 // Leitura do print no navegador, usada quando a IA com visão não responde.
@@ -1963,7 +2092,7 @@ function initMedia(cap) {
   document.addEventListener("paste", e => {
     const f = [...(e.clipboardData?.files || [])].find(x => x.type.startsWith("image/"));
     if (!f) return;
-    const id = !$("#v-checar").hidden ? "fala" : !$("#v-espectro").hidden ? "espTxt" : !$("#v-acervo").hidden ? "acQ" : null;
+    const id = document.activeElement?.id === "askQ" || !$("#v-comparar").hidden ? "askQ" : !$("#v-checar").hidden ? "fala" : !$("#v-espectro").hidden ? "espTxt" : !$("#v-acervo").hidden ? "acQ" : null;
     if (id && MEDIA_SEND[id]) { e.preventDefault(); MEDIA_SEND[id](f); }
   });
 }
@@ -1992,6 +2121,97 @@ document.addEventListener("pointerdown", e => {
   if (el) { showTip(el, e.clientX, e.clientY); tipTimer = setTimeout(() => { tipEl.hidden = true; }, 3000); } else tipEl.hidden = true;
 });
 addEventListener("scroll", () => { tipEl.hidden = true; }, { passive: true });
+/* ---------- Navegação fixa: aba anterior, início, topo, próxima aba ---------- */
+const TAB_NOME = v => document.querySelector(`nav.tabs a[data-view="${v}"]`)?.textContent || v;
+function viewAtual() { const h = location.hash.replace("#", ""); return h.startsWith("tema-") ? "comparar" : VIEWS.includes(h) ? h : "comparar"; }
+function paintNav() {
+  const i = VIEWS.indexOf(viewAtual());
+  const prev = $('[data-nav="prev"]'), next = $('[data-nav="next"]');
+  prev.disabled = i <= 0; next.disabled = i >= VIEWS.length - 1;
+  prev.title = i > 0 ? "Aba anterior: " + TAB_NOME(VIEWS[i - 1]) : "";
+  next.title = i < VIEWS.length - 1 ? "Próxima aba: " + TAB_NOME(VIEWS[i + 1]) : "";
+  prev.setAttribute("aria-label", prev.title || "Aba anterior"); next.setAttribute("aria-label", next.title || "Próxima aba");
+}
+function initNav() {
+  const irPara = v => { location.hash = v; requestAnimationFrame(() => document.querySelector("nav.tabs").scrollIntoView({ block: "start" })); };
+  $(".pagenav").addEventListener("click", e => {
+    const b = e.target.closest("[data-nav]"); if (!b || b.disabled) return;
+    const i = VIEWS.indexOf(viewAtual());
+    if (b.dataset.nav === "top") scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    else if (b.dataset.nav === "home") { if (location.hash && location.hash !== "#comparar") location.hash = "comparar"; scrollTo({ top: 0 }); }
+    else if (b.dataset.nav === "prev") irPara(VIEWS[i - 1]);
+    else irPara(VIEWS[i + 1]);
+  });
+  addEventListener("hashchange", paintNav);
+  paintNav();
+}
+
+/* ---------- Pergunte ao site ---------- */
+let askCtl = null;
+function askLocalHTML(q) {
+  const ts = terms(q);
+  if (!ts.length || !COMP) return "";
+  const hits = [];
+  for (const t of COMP.temas) t.itens.forEach(it => {
+    if (!it.trecho) return;
+    const f = fold(it.proposta + " " + (it.simples || "") + " " + t.nome);
+    const n = ts.filter(x => find(f, x) !== -1).length;
+    if (n) hits.push({ t, it, n });
+  });
+  const cand = whoIn(" " + fold(q) + " ");
+  const porCand = ORDER.filter(k => !cand || k === cand).map(k => hits.filter(h => h.it.candidato === k).sort((a, b) => b.n - a.n).slice(0, 2));
+  const fcs = searchChecks(q, cand || "ambos", 2);
+  const linhas = porCand.flat().map(h => `<li><a href="#tema-${esc(h.t.id)}">${esc(CAND[h.it.candidato].nome)} · ${esc(h.t.nome)}</a>: ${esc(h.it.proposta)}</li>`)
+    .concat(fcs.map(x => `<li><a href="${esc(x.c.url)}" target="_blank" rel="noopener">${esc(x.c.fonte)}</a> (${esc(CAND[x.c.candidato]?.nome || "")}): ${esc(x.c.alegacao)} <b>${esc(x.c.veredito)}</b></li>`));
+  return linhas.length ? `<div><div class="eyebrow">Encontrado nas propostas e checagens</div><ul class="legend" style="margin-top:6px">${linhas.join("")}</ul></div>` : "";
+}
+function askFonteHTML(f, i, cits) {
+  const acts = [];
+  if (f.abrir) acts.push(`<button type="button" class="linkbtn" data-open="${esc(f.abrir)}">Ler a página do plano</button>`);
+  else if (f.ideo) acts.push(`<button type="button" class="linkbtn" data-ideo="${esc(f.ideo)}">Ver no site</button>`);
+  else if (f.link) acts.push(`<a href="${esc(f.link)}">Ver no site</a>`);
+  if (f.url) acts.push(`<a href="${esc(f.url)}" target="_blank" rel="noopener">Fonte original</a>`);
+  return `<li id="ask-f${i + 1}"><b>${esc(f.rotulo)}</b> · ${esc(f.titulo)}
+    ${cits.filter(c => c.id === f.id).map(c => `<blockquote class="lit">“${esc(c.trecho)}”</blockquote>`).join("")}
+    <div class="acts">${acts.join("")}</div></li>`;
+}
+async function runAsk() {
+  const q = $("#askQ").value.trim(), out = $("#askOut");
+  if (!q) return;
+  askCtl?.abort();
+  out.hidden = false;
+  const local = askLocalHTML(q);
+  const head = `<div class="eyebrow">Sua pergunta</div><p style="margin:0;font-weight:700">${esc(q)}</p>`;
+  if (!aiOn) {
+    out.innerHTML = head + (local || `<p class="empty">Nada encontrado nas propostas e checagens. Tente outras palavras ou use as abas abaixo.</p>`)
+      + `<p class="status">A resposta com IA só funciona no endereço principal do site.</p>` + closeBtn("#askOut", "Fechar");
+    return;
+  }
+  out.innerHTML = head + `<p class="status" id="askSt">Procurando em todo o site e preparando a resposta… (até 1 minuto)</p>` + local + closeBtn("#askOut", "Fechar");
+  askCtl = new AbortController();
+  try {
+    const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ modo: "site", pergunta: q.slice(0, 500) }), signal: askCtl.signal });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) { $("#askSt").textContent = j.erro || "Não foi possível responder agora."; $("#askSt").insertAdjacentHTML("afterend", detalheHTML(j)); return; }
+    const num = new Map((j.fontes || []).map((f, i) => [f.id, i + 1]));
+    const txt = esc(j.resposta).replace(/\[([SL][^\]\s]{0,80})\]/g, (m, id) => num.has(id) ? `<a class="ref" href="#ask-f${num.get(id)}" data-ref>[${num.get(id)}]</a>` : "");
+    out.innerHTML = head + `<p style="margin:0">${txt}</p>
+      ${(j.fontes || []).length ? `<div><div class="eyebrow">Fontes</div><ol class="fontes" style="margin-top:6px">${j.fontes.map((f, i) => askFonteHTML(f, i, j.citacoes || [])).join("")}</ol></div>` : `<p class="status">A resposta não citou fontes do site; confira nas abas.</p>`}
+      ${j.descartadas ? `<p class="status">${j.descartadas} citação(ões) descartada(s) por não aparecer(em) literalmente na fonte.</p>` : ""}
+      ${(j.consultados || []).length ? `<details><summary class="linkbtn" style="font-size:14px">Outros conteúdos do site que a IA leu (${j.consultados.length})</summary><ol class="fontes" style="margin-top:6px">${j.consultados.map((f, i) => askFonteHTML(f, 100 + i, [])).join("")}</ol></details>` : ""}
+      ${local ? `<details><summary class="linkbtn" style="font-size:14px">Busca simples nas propostas e checagens</summary>${local}</details>` : ""}
+      <p class="status" style="margin:0">Resposta automática feita só com o conteúdo do site, e cada citação é conferida com a fonte. Confira as fontes antes de compartilhar.</p>
+      ${closeBtn("#askOut", "Fechar resposta")}`;
+  } catch (e) {
+    if (e?.name !== "AbortError") $("#askSt").textContent = "Sem conexão com o servidor. Tente de novo.";
+  }
+}
+function initAsk() {
+  $("#askForm").addEventListener("submit", e => { e.preventDefault(); runAsk(); });
+  // Número da fonte no texto: rola até a fonte sem trocar de aba.
+  document.addEventListener("click", e => { const a = e.target.closest("a[data-ref]"); if (!a) return; e.preventDefault(); document.querySelector(a.getAttribute("href"))?.scrollIntoView({ block: "center" }); });
+}
+
 function initTheme() {
   const paint = () => {
     const cur = document.documentElement.dataset.theme || "auto";
@@ -2022,7 +2242,7 @@ function initCandidateUI() {
   $("#metodoPlanos").textContent = ORDER.map(k => `${CAND[k].nome}: ${CAND[k].registro || ""}`).join("; ");
   if (ORDER.length > 3) document.documentElement.classList.add("many");
 }
-initCandidateUI(); initMeta(); initCompare(); loadAvaliacao(); initCheck(); initChecks(); initReader(); initAcervoUI(); initShare(); initTheme(); route();
+initCandidateUI(); initMeta(); initCompare(); loadAvaliacao(); initCheck(); initChecks(); initReader(); initAcervoUI(); initAsk(); initNav(); initShare(); initTheme(); route();
 </script>
 </body>
 </html>
