@@ -534,12 +534,28 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
         <h2 id="t-eleicoes">Todas as eleições presidenciais desde 1891</h2>
         <p>Candidatos, partidos e votos de cada eleição para presidente. O registro de plano de governo no TSE é obrigatório desde 2010. Antes disso não havia plano oficial registrado.</p>
       </div>
+      <div class="seg" role="group" aria-label="O que ver" id="elSeg" hidden><button type="button" data-elv="eleicoes" aria-pressed="true">Eleições e candidatos</button><button type="button" data-elv="governos" aria-pressed="false">Governos: avanços, críticas e números</button></div>
       <div class="row">
         <div class="field grow"><label for="elQ">Buscar candidato, partido ou ano</label><input type="search" id="elQ" placeholder="Ex.: Brizola, PSDB, 1989"></div>
         <div class="field grow"><label for="elPer">Período</label><select id="elPer"><option value="">Todos</option></select></div>
       </div>
-      <p class="status" id="elNota"></p>
-      <div id="elList" class="stack"><p class="status">Carregando…</p></div>
+      <div class="row" id="elIdeoBox" hidden>
+        <div class="field grow"><label for="elEixo">Posição no eixo esquerda–direita</label><select id="elEixo"><option value="">Todas</option></select></div>
+        <div class="field grow"><label for="elFam">Linha ideológica</label><select id="elFam"><option value="">Todas</option></select></div>
+        <div class="field grow"><label for="elQuem">Mostrar</label><select id="elQuem"><option value="">Todos os candidatos</option><option value="eleitos">Só os eleitos</option></select></div>
+      </div>
+      <p class="status" id="elCont" style="margin:0"></p>
+      <div id="elEleicoes" class="stack">
+        <p class="status" id="elNota"></p>
+        <div id="elList" class="stack"><p class="status">Carregando…</p></div>
+      </div>
+      <div id="govBox" class="stack" hidden>
+        <p class="status" style="margin:0">Cada governo desde 1889, com 3 avanços e 3 críticas registrados por fontes de referência (historiografia, órgãos oficiais) e os números da economia e da sociedade no período. A mesma regra e o mesmo número de itens valem para todos. Toque no nome para ver o governo.</p>
+        <div class="tablewrap" id="govTab"></div>
+        <div id="govList" class="stack"></div>
+        <p class="status" id="govFontes" style="margin:0"></p>
+      </div>
+      <p class="status" style="margin:0" id="elIdeoNota"></p>
     </section>
 
     <section class="view" id="v-checagens" hidden aria-labelledby="t-checagens">
@@ -1664,35 +1680,172 @@ function renderInd(regs) {
 }
 
 /* ---------- Eleições ---------- */
+const EIXOS = ["esquerda", "centro-esquerda", "centro", "centro-direita", "direita"];
+const EIXO_NOME = { esquerda: "Esquerda", "centro-esquerda": "Centro-esquerda", centro: "Centro", "centro-direita": "Centro-direita", direita: "Direita", "extrema-esquerda": "Extrema-esquerda", "extrema-direita": "Extrema-direita", sem_classificacao: "Sem classificação" };
+// Cor pelo lado do eixo, nas mesmas cores do resto do site; centro e sem classificação ficam neutros.
+const eixoCls = e => /esquerda/.test(e || "") ? "left" : /direita/.test(e || "") ? "right" : "out";
+const nomeChave = s => fold(String(s || "")).replace(/[^a-z ]/g, " ").replace(/\s+/g, " ").trim();
 const initEleicoes = once(async () => {
   let e;
   try { e = await loadData("eleicoes"); } catch { failBox("#elList", "as eleições"); return; }
   DATA._el = e;
-  for (const x of e.eleicoes) x._f = fold([x.ano, x.periodo, x.tipo, ...x.candidatos.map(c => c.nome + " " + c.partido)].join(" "));
+  const [ideo, gov, ser] = await Promise.all(["eleicoes_ideologia", "governos", "series_historicas"].map(n => loadData(n).catch(() => null)));
+  DATA._elIdeo = ideo; DATA._gov = gov?.governos || []; DATA._ser = ser?.series || {};
+  const porCand = new Map((ideo?.candidatos || []).map(c => [c.ano + "|" + nomeChave(c.nome), c]));
+  for (const x of e.eleicoes) for (const c of x.candidatos) c._ideo = porCand.get(x.ano + "|" + nomeChave(c.nome)) || null;
+  for (const x of e.eleicoes) x._f = fold([x.ano, x.periodo, x.tipo, ...x.candidatos.map(c => c.nome + " " + c.partido + " " + (c._ideo?.familia || ""))].join(" "));
   const pers = [...new Set(e.eleicoes.map(x => x.periodo).filter(Boolean))];
   $("#elPer").innerHTML = `<option value="">Todos</option>` + pers.map(p => `<option>${esc(p)}</option>`).join("");
+  if (ideo) {
+    const eixos = [...EIXOS, ...new Set((ideo.candidatos || []).map(c => c.eixo).filter(x => !EIXOS.includes(x)))];
+    $("#elEixo").innerHTML = `<option value="">Todas</option>` + eixos.map(x => `<option value="${esc(x)}">${esc(EIXO_NOME[x] || x)}</option>`).join("");
+    const fams = [...new Set((ideo.candidatos || []).map(c => c.familia).filter(Boolean))].sort((a, b) => famNome(a).localeCompare(famNome(b), "pt"));
+    $("#elFam").innerHTML = `<option value="">Todas</option>` + fams.map(x => `<option value="${esc(x)}">${esc(famNome(x))}</option>`).join("");
+    $("#elIdeoBox").hidden = false;
+    $("#elIdeoNota").textContent = ideo.metodo ? "Como a posição foi definida: " + ideo.metodo : "";
+  }
   $("#elNota").textContent = e.nota || "";
-  let t; $("#elQ").addEventListener("input", () => { clearTimeout(t); t = setTimeout(renderEl, 200); });
-  $("#elPer").addEventListener("change", renderEl);
-  renderEl();
+  let t; $("#elQ").addEventListener("input", () => { clearTimeout(t); t = setTimeout(renderElAll, 200); });
+  ["#elPer", "#elEixo", "#elFam", "#elQuem"].forEach(s => $(s).addEventListener("change", renderElAll));
+  $("#elSeg").addEventListener("click", ev => { const b = ev.target.closest("[data-elv]"); if (!b) return; elView = b.dataset.elv; renderElAll(); });
+  if (DATA._gov.length) $("#elSeg").hidden = false;
+  try { DATA._ide ??= await loadData("ideologias"); } catch { /* nomes das famílias ficam como estão */ }
+  renderElAll();
 });
+let elView = "eleicoes";
+function famNome(f) { return DATA._ide?.ideologias.find(i => i.id === f)?.nome || String(f || "").replace(/-/g, " ").replace(/^./, c => c.toUpperCase()); }
+function ideoPill(i) {
+  if (!i) return `<span class="muted">—</span>`;
+  const fontes = (i.fontes || []).map(f => f.titulo).filter(Boolean).join("; ");
+  const tip = `${EIXO_NOME[i.eixo] || i.eixo}${i.familia ? " · " + famNome(i.familia) : ""}${i.base === "pessoal" ? " · posição pessoal documentada" : " · posição do partido"}${fontes ? " · Fonte: " + fontes : ""}${i.nota ? " · " + i.nota : ""}`;
+  return `<span class="pill ${eixoCls(i.eixo)}" data-tip="${esc(tip)}">${esc(EIXO_NOME[i.eixo] || i.eixo)}</span>${i.familia ? ` <span class="muted" style="font-size:13px">${esc(famNome(i.familia))}</span>` : ""}`;
+}
+function candOk(c) {
+  const ex = $("#elEixo").value, fm = $("#elFam").value, quem = $("#elQuem").value;
+  return (!ex || c._ideo?.eixo === ex) && (!fm || c._ideo?.familia === fm) && (!quem || c.eleito);
+}
+function renderElAll() {
+  document.querySelectorAll("#elSeg [data-elv]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.elv === elView)));
+  $("#elEleicoes").hidden = elView !== "eleicoes";
+  $("#govBox").hidden = elView !== "governos";
+  if (elView === "governos") renderGov(); else renderEl();
+}
 function renderEl() {
   const e = DATA._el; if (!e) return;
   const q = fold($("#elQ").value.trim()), per = $("#elPer").value;
+  const filtro = !!($("#elEixo").value || $("#elFam").value || $("#elQuem").value);
   const ws = q.split(/\s+/).filter(Boolean);
-  const list = e.eleicoes.filter(x => (!per || x.periodo === per) && ws.every(w => x._f.includes(w))).sort((a, b) => b.ano - a.ano);
+  const list = e.eleicoes.filter(x => (!per || x.periodo === per) && ws.every(w => x._f.includes(w)) && (!filtro || x.candidatos.some(candOk))).sort((a, b) => b.ano - a.ano);
   const n = v => typeof v === "number" ? v.toLocaleString("pt-BR") : "—";
+  const comIdeo = !!DATA._elIdeo;
+  const nCand = list.reduce((s, x) => s + x.candidatos.filter(c => !filtro || candOk(c)).length, 0);
+  $("#elCont").textContent = filtro ? `${nCand} candidato(s) em ${list.length} eleição(ões) com estes filtros.` : "";
   $("#elList").innerHTML = list.map(x => {
     const win = x.candidatos.find(c => c.eleito);
+    const cands = x.candidatos.filter(c => !filtro || candOk(c));
     const hasT2 = x.candidatos.some(c => c.pct_2t != null || c.votos_2t != null);
-    const open = ws.length && list.length <= 6 ? " open" : "";
-    return `<details class="el"${open}><summary><span class="yr">${x.ano}</span><span class="pill out">${esc(x.tipo)}</span><span>${win ? `Eleito: <b>${esc(win.nome)}</b>${win.partido ? ` (${esc(win.partido)})` : ""}` : "Sem resultado final"}</span><span class="muted">${x.candidatos.length} candidato(s)</span></summary>
+    const open = (ws.length || filtro) && list.length <= 8 ? " open" : "";
+    return `<details class="el"${open}><summary><span class="yr">${x.ano}</span><span class="pill out">${esc(x.tipo)}</span><span>${win ? `Eleito: <b>${esc(win.nome)}</b>${win.partido ? ` (${esc(win.partido)})` : ""}${comIdeo && win._ideo ? ` · <span class="pill ${eixoCls(win._ideo.eixo)}">${esc(EIXO_NOME[win._ideo.eixo] || win._ideo.eixo)}</span>` : ""}` : "Sem resultado final"}</span><span class="muted">${filtro ? `${cands.length} de ` : ""}${x.candidatos.length} candidato(s)</span></summary>
       <div class="inner">${x.observacao ? `<p class="status" style="margin:0">${esc(x.observacao)}</p>` : ""}
-      <div class="tablewrap"><table><thead><tr><th>Candidato</th><th>Partido</th><th class="num">Votos 1º turno</th><th class="num">% 1º turno</th>${hasT2 ? `<th class="num">% 2º turno</th>` : ""}<th>Plano</th></tr></thead><tbody>${x.candidatos.map(c =>
-        `<tr${c.eleito ? ` class="hl"` : ""}><td>${c.eleito ? "<b>" : ""}${esc(c.nome)}${c.eleito ? "</b> · eleito" : ""}</td><td>${esc(c.partido || "—")}</td><td class="num">${n(c.votos_1t)}</td><td class="num">${fmtPct(c.pct_1t)}</td>${hasT2 ? `<td class="num">${fmtPct(c.pct_2t)}</td>` : ""}<td>${c.plano_url ? `<a href="${esc(c.plano_url)}" target="_blank" rel="noopener">ver plano</a>` : c.plano_disponivel ? "registrado no TSE" : "—"}</td></tr>`).join("")}</tbody></table></div>
+      <div class="tablewrap"><table><thead><tr><th>Candidato</th><th>Partido</th>${comIdeo ? "<th>Posição</th>" : ""}<th class="num">Votos 1º turno</th><th class="num">% 1º turno</th>${hasT2 ? `<th class="num">% 2º turno</th>` : ""}<th>Plano</th></tr></thead><tbody>${cands.map(c =>
+        `<tr${c.eleito ? ` class="hl"` : ""}><td>${c.eleito ? "<b>" : ""}${esc(c.nome)}${c.eleito ? "</b> · eleito" : ""}</td><td>${esc(c.partido || "—")}</td>${comIdeo ? `<td>${ideoPill(c._ideo)}</td>` : ""}<td class="num">${n(c.votos_1t)}</td><td class="num">${fmtPct(c.pct_1t)}</td>${hasT2 ? `<td class="num">${fmtPct(c.pct_2t)}</td>` : ""}<td>${c.plano_url ? `<a href="${esc(c.plano_url)}" target="_blank" rel="noopener">ver plano</a>` : c.plano_disponivel ? "registrado no TSE" : "—"}</td></tr>`).join("")}</tbody></table></div>
+      ${win && govDoEleito(x, win) ? `<button type="button" class="linkbtn" data-gov="${esc(govDoEleito(x, win).id)}">Ver o governo de ${esc(win.nome)}: avanços, críticas e números</button>` : ""}
       ${(x.fontes || []).length ? `<p class="status" style="margin:0">Fontes: ${x.fontes.map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">${i + 1}</a>`).join(" · ")}</p>` : ""}</div></details>`;
   }).join("") || `<p class="empty">Nenhuma eleição encontrada.</p>`;
 }
+
+/* Governos desde 1889: avanços, críticas e números do período */
+const ANO = d => +String(d || "").slice(0, 4);
+// Um ano entra na conta do governo que estava no poder em 1º de julho daquele ano. Mesma regra para todos.
+function anosDo(g) {
+  const out = [];
+  for (let y = ANO(g.inicio); y <= ANO(g.fim || "2026-12-31"); y++) { const m = `${y}-07-01`; if (g.inicio <= m && (!g.fim || g.fim >= m)) out.push(y); }
+  return out;
+}
+function govDoEleito(x, win) {
+  const k = nomeChave(win.nome).split(" ");
+  return (DATA._gov || []).find(g => ANO(g.inicio) >= x.ano && ANO(g.inicio) <= x.ano + 1 && k.filter(w => w.length > 3).some(w => nomeChave(g.presidente).includes(w)));
+}
+function govEixo(g) {
+  const k = nomeChave(g.presidente);
+  for (const x of DATA._el?.eleicoes || []) for (const c of x.candidatos) if (c.eleito && c._ideo && nomeChave(c.nome) === k && x.ano <= ANO(g.inicio) && ANO(g.inicio) - x.ano <= 1) return c._ideo;
+  const sig = String(g.partido || "").split(/[ ;(,]/)[0];
+  const y = ANO(g.inicio);
+  for (const [chave, p] of Object.entries(DATA._elIdeo?.partidos || {})) {
+    const [s, per] = chave.split("@"); const [a, b] = String(per || "").split("-").map(Number);
+    if (s === sig && (!a || y >= a) && (!b || y <= b)) return { ...p, base: "partido" };
+  }
+  return null;
+}
+const serie = id => DATA._ser?.[id]?.valores || {};
+function mediaGeo(id, anos) {
+  const v = anos.map(y => serie(id)[y]).filter(x => typeof x === "number");
+  if (!v.length) return null;
+  return { v: (Math.pow(v.reduce((p, r) => p * (1 + r / 100), 1), 1 / v.length) - 1) * 100, n: v.length, de: anos.length };
+}
+function media(id, anos) {
+  const v = anos.map(y => serie(id)[y]).filter(x => typeof x === "number");
+  return v.length ? { v: v.reduce((s, x) => s + x, 0) / v.length, n: v.length, de: anos.length } : null;
+}
+function ultimoAte(id, ano) {
+  const s = serie(id); let best = null;
+  for (const [y, v] of Object.entries(s)) if (typeof v === "number" && +y <= ano && (!best || +y > best.y)) best = { y: +y, v };
+  return best;
+}
+const fmtNum = (v, d = 1) => v == null || isNaN(v) ? "—" : v.toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
+const fmtMedia = (m, suf = "%") => m ? `${fmtNum(m.v)}${suf}${m.n < m.de ? `<span class="muted" data-tip="Média de ${m.n} dos ${m.de} anos do governo: falta dado nos outros">*</span>` : ""}` : "—";
+const fmtAntesDepois = (id, g, suf = "%") => {
+  const a = ultimoAte(id, ANO(g.inicio)), b = ultimoAte(id, ANO(g.fim || "2026-12-31"));
+  if (!b) return "—";
+  if (!a || a.y === b.y) return `${fmtNum(b.v)}${suf} <span class="muted">(${b.y})</span>`;
+  return `${fmtNum(a.v)}${suf} <span class="muted">(${a.y})</span> → ${fmtNum(b.v)}${suf} <span class="muted">(${b.y})</span>`;
+};
+function govNumeros(g) {
+  const anos = anosDo(g);
+  return {
+    anos, pib: mediaGeo("pib_real_pct", anos), inf: mediaGeo("inflacao_pct", anos),
+    prim: media("resultado_primario_pct_pib", anos), nom: media("resultado_nominal_pct_pib", anos),
+    div: ultimoAte("divida_pct_pib", ANO(g.fim || "2026-12-31"))
+  };
+}
+function renderGov() {
+  const gs = DATA._gov || [];
+  if (!gs.length) { $("#govList").innerHTML = `<p class="empty">Os dados dos governos ainda não estão disponíveis.</p>`; return; }
+  const ex = $("#elEixo").value, fm = $("#elFam").value, q = fold($("#elQ").value.trim());
+  const list = gs.map(g => ({ g, i: govEixo(g), nums: govNumeros(g) }))
+    .filter(x => (!ex || x.i?.eixo === ex) && (!fm || x.i?.familia === fm) && (!q || fold([x.g.presidente, x.g.partido, x.g.inicio].join(" ")).includes(q)))
+    .sort((a, b) => a.g.inicio.localeCompare(b.g.inicio));
+  $("#govTab").innerHTML = `<table><thead><tr><th>Governo</th><th>Período</th><th>Posição</th><th class="num" data-tip="Média anual geométrica do crescimento real do PIB nos anos do governo">PIB, média anual</th><th class="num" data-tip="Inflação média anual (geométrica) nos anos do governo">Inflação, média anual</th><th class="num" data-tip="Resultado primário do setor público, média dos anos, em % do PIB. Positivo é superávit; negativo, déficit">Resultado primário</th><th class="num" data-tip="Dívida pública no último ano do governo, em % do PIB">Dívida no fim</th></tr></thead><tbody>${list.map(({ g, i, nums }) =>
+    `<tr><td><button type="button" class="linkbtn" data-gov="${esc(g.id)}" style="font-size:15px">${esc(g.presidente)}</button></td><td class="mono">${esc(String(g.inicio).slice(0, 4))}–${esc(g.fim ? String(g.fim).slice(0, 4) : "hoje")}</td><td>${i ? `<span class="pill ${eixoCls(i.eixo)}">${esc(EIXO_NOME[i.eixo] || i.eixo)}</span>` : `<span class="muted">—</span>`}</td><td class="num">${fmtMedia(nums.pib)}</td><td class="num">${fmtMedia(nums.inf)}</td><td class="num">${fmtMedia(nums.prim, "% do PIB")}</td><td class="num">${nums.div ? `${fmtNum(nums.div.v)}% <span class="muted">(${nums.div.y})</span>` : "—"}</td></tr>`).join("")}</tbody></table>`;
+  $("#govList").innerHTML = list.map(({ g, i, nums }) => `<article class="panel" id="gov-${esc(g.id)}">
+    <div class="row" style="justify-content:space-between;align-items:baseline"><h3>${esc(g.presidente)} <span class="muted mono" style="font-size:14px">${esc(fmtDate(g.inicio))} a ${g.fim ? esc(fmtDate(g.fim)) : "hoje"}</span></h3><span class="pill out">${esc(g.chegada || "")}</span></div>
+    <p style="margin:0">${g.partido ? `Partido: ${esc(g.partido)} · ` : ""}Posição: ${ideoPill(i)}</p>
+    ${g.contexto ? `<p class="status" style="margin:0">${esc(g.contexto)}</p>` : ""}
+    <div class="grid2">
+      <div><div class="eyebrow">Avanços registrados</div><ul class="legend" style="margin-top:6px">${(g.avancos || []).map(a => `<li>${esc(a.texto)} ${a.fonte?.url ? `<a href="${esc(a.fonte.url)}" target="_blank" rel="noopener" class="status">${esc(a.fonte.titulo || "fonte")}</a>` : ""}</li>`).join("")}</ul></div>
+      <div><div class="eyebrow">Críticas registradas</div><ul class="legend" style="margin-top:6px">${(g.criticas || []).map(a => `<li>${esc(a.texto)}${a.autor_da_critica ? ` <span class="muted">(${esc(a.autor_da_critica)})</span>` : ""} ${a.fonte?.url ? `<a href="${esc(a.fonte.url)}" target="_blank" rel="noopener" class="status">${esc(a.fonte.titulo || "fonte")}</a>` : ""}</li>`).join("")}</ul></div>
+    </div>
+    <dl class="prova">
+      <dt>Crescimento do PIB</dt><dd>${fmtMedia(nums.pib)} ao ano</dd>
+      <dt>Inflação</dt><dd>${fmtMedia(nums.inf)} ao ano</dd>
+      <dt>Resultado primário</dt><dd>${fmtMedia(nums.prim, "% do PIB")} ${nums.prim ? (nums.prim.v >= 0 ? "(superávit)" : "(déficit)") : ""}</dd>
+      <dt>Resultado nominal</dt><dd>${fmtMedia(nums.nom, "% do PIB")}</dd>
+      <dt>Dívida pública</dt><dd>${fmtAntesDepois("divida_pct_pib", g, "% do PIB")}</dd>
+      <dt>Analfabetismo</dt><dd>${fmtAntesDepois("analfabetismo_pct", g)}</dd>
+      <dt>Ideb, anos iniciais</dt><dd>${fmtAntesDepois("ideb_anos_iniciais", g, "")}</dd>
+      <dt>Pobreza</dt><dd>${fmtAntesDepois("pobreza_pct", g)}</dd>
+      <dt>Extrema pobreza</dt><dd>${fmtAntesDepois("extrema_pobreza_pct", g)}</dd>
+    </dl>
+    ${g.nota ? `<p class="status" style="margin:0">${esc(g.nota)}</p>` : ""}
+    ${nums.anos.length ? "" : `<p class="status" style="margin:0">Governo com menos de um ano completo: as médias anuais não se aplicam.</p>`}
+  </article>`).join("") || `<p class="empty">Nenhum governo com estes filtros.</p>`;
+  $("#govFontes").innerHTML = `Os anos entram na conta do governo que estava no poder em 1º de julho de cada ano. Médias de PIB e inflação são geométricas (equivalem à taxa anual constante do período). Sem dado, aparece "—"; * indica média de parte dos anos. Fontes das séries: ${Object.values(DATA._ser || {}).map(s => `${esc(s.nome)} (${(s.fontes || []).map(f => f.url ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.periodo || f.titulo || "fonte")}</a>` : esc(f.titulo || "")).join(", ")})`).join("; ")}.`;
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-gov]"); if (!b) return;
+  if (location.hash !== "#eleicoes") location.hash = "eleicoes";
+  initEleicoes().then(() => { elView = "governos"; $("#elEixo").value = ""; $("#elFam").value = ""; $("#elQ").value = ""; renderElAll(); document.getElementById("gov-" + b.dataset.gov)?.scrollIntoView({ block: "start" }); });
+});
 /* ---------- Acervo Constitucional ---------- */
 const ACV = {};
 function loadAcervoDoc(id) {

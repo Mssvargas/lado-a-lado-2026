@@ -73,10 +73,24 @@ def merge_entregas() -> None:
     print("data/entregas.json", len(governos), "governos")
 
 
+def merge_governos() -> None:
+    """Junta data/governos/*.json (um por período) em data/governos.json, em ordem de início."""
+    pasta = ROOT / "data" / "governos"
+    if not pasta.is_dir():
+        return
+    governos: list[dict[str, object]] = []
+    for f in sorted(pasta.glob("*.json")):
+        governos.extend(json.loads(f.read_text(encoding="utf-8")).get("governos", []))
+    governos.sort(key=lambda g: str(g.get("inicio", "")))
+    (ROOT / "data" / "governos.json").write_text(json.dumps({"governos": governos}, ensure_ascii=False), encoding="utf-8")
+    print("data/governos.json", len(governos), "governos")
+
+
 def main() -> None:
     merge_avaliacao()
     merge_verificacao()
     merge_entregas()
+    merge_governos()
     eleicao = load("eleicao.json")
     assert isinstance(eleicao, dict)
     cands = eleicao["candidatos"]

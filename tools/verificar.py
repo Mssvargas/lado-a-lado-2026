@@ -105,6 +105,49 @@ def verificar_entregas() -> list[str]:
     return erros
 
 
+def verificar_historia() -> list[str]:
+    """Governos (3 avanços e 3 críticas com fonte), ideologia dos candidatos e séries anuais."""
+    erros: list[str] = []
+    pasta = ROOT / "data" / "governos"
+    if pasta.is_dir():
+        for f in sorted(pasta.glob("*.json")):
+            for g in json.loads(f.read_text(encoding="utf-8")).get("governos", []):
+                onde = f"governo {g.get('id')}"
+                for campo in ("avancos", "criticas"):
+                    itens = g.get(campo, [])
+                    if len(itens) != 3:
+                        erros.append(f"{onde}: {len(itens)} {campo} (devem ser 3)")
+                    for it in itens:
+                        url = str((it.get("fonte") or {}).get("url") or "")
+                        if not url.startswith("http"):
+                            erros.append(f"{onde}: item de {campo} sem fonte com link")
+                if not str(g.get("inicio", "")).count("-") == 2:
+                    erros.append(f"{onde}: data de início fora do formato AAAA-MM-DD")
+    ideo = ROOT / "data" / "eleicoes_ideologia.json"
+    if ideo.exists():
+        d = json.loads(ideo.read_text(encoding="utf-8"))
+        validos = set(d.get("escala", [])) | {"sem_classificacao", "extrema-esquerda", "extrema-direita"}
+        eleicoes = load("data/eleicoes.json")["eleicoes"]
+        nomes = {(e["ano"], c["nome"]) for e in eleicoes for c in e["candidatos"]}
+        tem = {(c["ano"], c["nome"]) for c in d.get("candidatos", [])}
+        if nomes - tem:
+            erros.append(f"ideologia: {len(nomes - tem)} candidato(s) sem registro, ex.: {sorted(nomes - tem)[:3]}")
+        for c in d.get("candidatos", []):
+            if c.get("eixo") not in validos:
+                erros.append(f"ideologia {c.get('ano')} {c.get('nome')}: eixo desconhecido {c.get('eixo')}")
+            if c.get("eixo") != "sem_classificacao" and not c.get("fontes") and not d.get("partidos", {}):
+                erros.append(f"ideologia {c.get('ano')} {c.get('nome')}: classificado sem fonte")
+    series = ROOT / "data" / "series_historicas.json"
+    if series.exists():
+        for k, s in json.loads(series.read_text(encoding="utf-8")).get("series", {}).items():
+            if not s.get("fontes"):
+                erros.append(f"série {k}: sem fonte")
+            ruins = [a for a, v in s.get("valores", {}).items() if v is not None and not isinstance(v, (int, float))]
+            if ruins:
+                erros.append(f"série {k}: valores não numéricos em {ruins[:5]}")
+    return erros
+
+
 def verificar_acervo() -> list[str]:
     """data/acervo.json aponta para arquivos que existem e têm artigos."""
     erros: list[str] = []
@@ -203,6 +246,7 @@ def main() -> None:
     erros.extend(verificar_verificacao(eleicao))
     erros.extend(verificar_acervo())
     erros.extend(verificar_entregas())
+    erros.extend(verificar_historia())
 
     chk = load("data/checagens.json")["checagens"]
     contagem = {k: sum(1 for c in chk if c["candidato"] == k) for k in ids}

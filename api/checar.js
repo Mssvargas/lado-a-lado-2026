@@ -620,10 +620,10 @@ function validar(r, trechos, fcs, web) {
 const TIPOS_SITE = {
   proposta: 'Proposta do plano', plano: 'Página do plano', checagem: 'Checagem publicada', viabilidade: 'Viabilidade e evidências',
   proposicao: 'Congresso e tribunais', espectro: 'Esquerda ou direita', ideologia: 'Ideologias', levantamento: 'Levantamento de promessas',
-  promessa: 'Promessa anterior', eleicao: 'Eleições desde 1891', entrega: 'Entrega não prometida', lei: 'Acervo Constitucional'
+  promessa: 'Promessa anterior', eleicao: 'Eleições desde 1891', governo: 'Governos desde 1889', entrega: 'Entrega não prometida', lei: 'Acervo Constitucional'
 };
 // Quantos blocos de cada tipo vão para a IA (por candidato, nos tipos marcados com *).
-const COTA_SITE = { proposta: 3, plano: 2, checagem: 2, viabilidade: 2, espectro: 1, proposicao: 2, ideologia: 2, levantamento: 2, promessa: 4, eleicao: 2, entrega: 3, lei: 3 };
+const COTA_SITE = { proposta: 3, plano: 2, checagem: 2, viabilidade: 2, espectro: 1, proposicao: 2, ideologia: 2, levantamento: 2, promessa: 4, eleicao: 2, governo: 3, entrega: 3, lei: 3 };
 const POR_CANDIDATO = new Set(['proposta', 'plano', 'checagem', 'viabilidade', 'espectro']);
 
 let SITE = null;
@@ -683,13 +683,20 @@ function siteIndice() {
         (v ? ' Verificação em fonte oficial: ' + v.status.replace(/_/g, ' ') + '. ' + (v.justificativa || '') : ''), { link: '#historico', url: it.url || lv.url });
     });
   }
+  const ideo = new Map((((ler('eleicoes_ideologia.json') || {}).candidatos) || []).map((c) => [c.ano + '|' + fold(c.nome), c]));
+  const posicao = (ano, nomeC) => { const i = ideo.get(ano + '|' + fold(nomeC)); return i && i.eixo !== 'sem_classificacao' ? ', posição ' + i.eixo + (i.familia ? ' (' + i.familia + ')' : '') : ''; };
   for (const e of ((ler('eleicoes.json') || {}).eleicoes || [])) {
-    add('eleicao', 'Eleição de ' + e.ano, e.tipo + '. ' + e.candidatos.map((c) => c.nome + ' (' + (c.partido || '') + ')' + (c.pct_1t != null ? ', ' + c.pct_1t + '% no 1º turno' : '') + (c.pct_2t != null ? ', ' + c.pct_2t + '% no 2º turno' : '') + (c.eleito ? ', eleito' : '')).join('; ') + '. ' + (e.observacao || ''), { link: '#eleicoes' });
+    add('eleicao', 'Eleição de ' + e.ano, e.tipo + '. ' + e.candidatos.map((c) => c.nome + ' (' + (c.partido || '') + ')' + posicao(e.ano, c.nome) + (c.pct_1t != null ? ', ' + c.pct_1t + '% no 1º turno' : '') + (c.pct_2t != null ? ', ' + c.pct_2t + '% no 2º turno' : '') + (c.eleito ? ', eleito' : '')).join('; ') + '. ' + (e.observacao || ''), { link: '#eleicoes' });
   }
   for (const g of ((ler('entregas.json') || {}).governos || [])) {
     for (const it of g.itens || []) {
       add('entrega', g.nome + ' · ' + it.titulo, it.o_que_e + ' Não estava no plano de governo. Alcance: ' + ((it.alcance || {}).texto || '') + ' Avaliações (' + it.balanco + '): ' + (it.resumo_avaliacoes || '') + ' Quem ganha: ' + (it.quem_ganha || '') + ' Quem paga ou perde: ' + (it.quem_paga_ou_perde || ''), { link: '#historico' });
     }
+  }
+  for (const g of ((ler('governos.json') || {}).governos || [])) {
+    add('governo', g.presidente + ' (' + String(g.inicio).slice(0, 4) + '–' + (g.fim ? String(g.fim).slice(0, 4) : 'hoje') + ')',
+      (g.contexto || '') + ' Chegada ao poder: ' + (g.chegada || '') + '. Avanços registrados: ' + (g.avancos || []).map((a) => a.texto).join(' ') +
+      ' Críticas registradas: ' + (g.criticas || []).map((a) => a.texto + (a.autor_da_critica ? ' (' + a.autor_da_critica + ')' : '')).join(' '), { link: '#eleicoes' });
   }
   SITE = blocos;
   return SITE;
