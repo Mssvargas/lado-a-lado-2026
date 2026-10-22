@@ -1,0 +1,2131 @@
+{
+  "grupo": "v1",
+  "levantamentos": [
+    "folha-dilma",
+    "congressoemfoco-dilma",
+    "g1-dilma"
+  ],
+  "itens": [
+    {
+      "levantamento": "folha-dilma",
+      "indice": 0,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura adotada: manter o colchão de reservas internacionais, principal indicador oficial de proteção contra choques externos. A série do Banco Central mostra reservas de US$ 288,6 bilhões em dez/2010 e de US$ 363,6 bilhões em dez/2014, acima de US$ 350 bilhões em todos os fins de ano de 2011 a 2014.",
+      "evidencias": [
+        {
+          "descricao": "Banco Central, SGS série 3546 – reservas internacionais (US$ milhões), dez/2010 a dez/2014",
+          "tipo": "dado_oficial",
+          "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.3546/dados?formato=json&dataInicial=01/12/2010&dataFinal=31/12/2014"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 1,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto 7.540/2011 instituiu o Plano Brasil Maior, política industrial, tecnológica e de comércio exterior que tem como objetivo central acelerar o esforço tecnológico e de inovação das empresas. A intensidade (\"fortemente\") não tem critério mensurável; o núcleo, uma política industrial apoiada em inovação, foi adotado por ato oficial.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 7.540, de 2/8/2011 – institui o Plano Brasil Maior",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7540.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 2,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura adotada: \"crédito\" no sentido de recursos orçamentários da Embrapa. O Relatório de Atividades 2013 da empresa mostra que os recursos aplicados subiram de cerca de R$ 1,91 bilhão em 2010 (pessoal, custeio, capital e dívida) para R$ 2,48 bilhões em 2013, em valores correntes; o investimento (capital), porém, caiu de R$ 267,7 milhões para R$ 189,6 milhões. O relatório não traz 2014.",
+      "evidencias": [
+        {
+          "descricao": "Embrapa, Relatório de Atividades 2013 – Gestão dos recursos, recursos aplicados de 2009 a 2013",
+          "tipo": "dado_oficial",
+          "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1039392/1/RelatorioAtividades2013.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 3,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pela PNAD Contínua do IBGE, a população ocupada passou de 87,7 milhões no 1º tri/2012 para 92,3 milhões no 4º tri/2014. A série começa em 2012, portanto não cobre 2011.",
+      "evidencias": [
+        {
+          "descricao": "IBGE, SIDRA tabela 4092 – pessoas ocupadas, 1º tri/2012, 4º tri/2012 e 4º tri/2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/4092/n1/all/v/1641/p/201201,201204,201404/c629/32387"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 4,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pela PNAD Contínua do IBGE, o rendimento médio real habitual dos ocupados subiu de R$ 3.070 no 1º tri/2012 para R$ 3.251 no 4º tri/2014, a preços constantes (alta de cerca de 5,9%). A série começa em 2012.",
+      "evidencias": [
+        {
+          "descricao": "IBGE, SIDRA tabela 5436 – rendimento médio mensal real habitual, 1º tri/2012 a 4º tri/2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/5436/n1/all/v/5932/p/201201,201204,201404/c2/6794"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 5,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pela PNAD Contínua do IBGE, a fatia dos ocupados que são empregados do setor privado com carteira assinada subiu de 39,0% no 1º tri/2012 para 40,3% no 4º tri/2014, e a dos sem carteira caiu de 12,6% para 11,4%. Logo, a tendência de formalização se manteve no período medido.",
+      "evidencias": [
+        {
+          "descricao": "IBGE, SIDRA tabela 4097 – distribuição dos ocupados por posição na ocupação, 1º tri/2012 a 4º tri/2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/4097/n1/all/v/4108/p/201201,201204,201404/c11913/31722,31723"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 6,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei 12.513/2011 instituiu o Pronatec (Programa Nacional de Acesso ao Ensino Técnico e Emprego), voltado à formação técnica e à inserção no trabalho. A promessa não tinha meta numérica, e o ato atende ao núcleo de ampliar o apoio à inserção de jovens.",
+      "evidencias": [
+        {
+          "descricao": "Lei 12.513, de 26/10/2011 – institui o Pronatec",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12513.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 7,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pelo Censo da Educação Superior do INEP, as matrículas de graduação passaram de 6.379.299 em 2010 para 7.828.013 em 2014 (5.867.011 na rede privada e 1.961.002 na pública), alta de cerca de 23%.",
+      "evidencias": [
+        {
+          "descricao": "INEP, Censo da Educação Superior 2010 – divulgação dos resultados",
+          "tipo": "dado_oficial",
+          "url": "https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2010/divulgacao_censo_2010.pdf"
+        },
+        {
+          "descricao": "INEP, Notas Estatísticas do Censo da Educação Superior 2014",
+          "tipo": "dado_oficial",
+          "url": "https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2015/notas_sobre_o_censo_da_educacao_superior_2014.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 8,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pelo SisProUni (quadro do portal do ProUni/MEC), as bolsas ofertadas passaram de 241.273 em 2010 para 306.726 em 2014, e as integrais de 125.922 para 205.237. Houve recuo em 2013 (252.374), mas o saldo do mandato foi de alta.",
+      "evidencias": [
+        {
+          "descricao": "MEC/ProUni, Sisprouni 2015 – bolsas ofertadas por ano, 2005-2014 (cópia arquivada do portal oficial)",
+          "tipo": "dado_oficial",
+          "url": "https://web.archive.org/web/20180127072449/http://prouniportal.mec.gov.br/images/pdf/Representacoes_graficas/bolsas_ofertadas_ano.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 9,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O plano de expansão da SETEC/MEC, apresentado na Câmara em 2013, previa 208 novas unidades da Rede Federal de 2011 a 2014, somando 562 unidades. A página oficial da Rede Federal registrava, no início de 2015, que as 208 unidades previstas entraram em funcionamento, com investimento de mais de R$ 3,3 bilhões.",
+      "evidencias": [
+        {
+          "descricao": "SETEC/MEC, apresentação à Comissão de Educação da Câmara – Plano de Expansão da Rede Federal (562 unidades até 2014)",
+          "tipo": "dado_oficial",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ce/arquivos/apresentacao-alessio-trindade-setec-mec/view"
+        },
+        {
+          "descricao": "MEC, página \"Expansão da Rede Federal\" (cópia arquivada em 25/2/2015)",
+          "tipo": "dado_oficial",
+          "url": "https://web.archive.org/web/20150225024231/http://redefederal.mec.gov.br:80/expansao-da-rede-federal"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 10,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto 7.642/2011 criou o Ciência sem Fronteiras, com bolsas da CAPES e do CNPq. Pela série do MCTI, as bolsas-ano do CNPq passaram de 78.128 em 2010 para 102.022 em 2014, e as no exterior de 437 para 10.622. Na tabela da CAPES, as bolsas de pós-graduação no país também cresceram em todas as grandes áreas entre 2010 e 2014.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 7.642, de 13/12/2011 – institui o Programa Ciência sem Fronteiras",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7642.htm"
+        },
+        {
+          "descricao": "MCTI, Tabela 4.1 – CNPq, bolsas-ano concedidas no país e no exterior, 1990-2017",
+          "tipo": "dado_oficial",
+          "url": "https://antigo.mctic.gov.br/mctic/export/sites/institucional/indicadores/arquivos/BolsasFormacao/4.1/tab_4_1_E.pdf"
+        },
+        {
+          "descricao": "MCTI, Tabela 4.12 – CAPES, bolsas de pós-graduação concedidas no país por grande área, 1995-2020",
+          "tipo": "dado_oficial",
+          "url": "https://antigo.mctic.gov.br/mctic/export/sites/institucional/indicadores/arquivos/BolsasFormacao/4.12/tab_4_12_E.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 11,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Leitura literal: acesso à banda larga em todo o país. Pela PNAD do IBGE, os domicílios com computador ligado à internet subiram de 36,6% em 2011 para 42,1% em 2014. Em 2014, 95,1 milhões das 174,9 milhões de pessoas de 10 anos ou mais (54%) usaram a internet. O acesso cresceu, mas ficou longe de universal.",
+      "evidencias": [
+        {
+          "descricao": "IBGE, SIDRA tabela 2387 (PNAD) – domicílios com microcomputador com acesso à internet, 2011 e 2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/2387/n1/all/v/1000096/p/2011,2014/c12058/99581/c12228/104295,104296"
+        },
+        {
+          "descricao": "IBGE, SIDRA tabela 4821 (PNAD/TIC) – pessoas de 10 anos ou mais que usaram a internet, 2013 e 2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/4821/n1/all/v/140/p/2013,2014/c422/10979,10980/c12381/107485"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 12,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "No CNES/DATASUS, os estabelecimentos públicos do tipo \"unidade móvel de nível pré-hospitalar na área de urgência\" (as ambulâncias do Samu) passaram de 370 em dez/2010 para 3.589 em dez/2014, e em 2014 havia 215 centrais públicas de regulação médica das urgências registradas. Parte do salto pode refletir mudança de cadastro no CNES.",
+      "evidencias": [
+        {
+          "descricao": "DATASUS/TabNet – CNES, estabelecimentos por tipo, esfera administrativa pública, dez/2010 e dez/2014",
+          "tipo": "dado_oficial",
+          "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/estabbr.def"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 13,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "No CNES/DATASUS, as equipes de Saúde da Família com saúde bucal (modalidades I e II, núcleo do Brasil Sorridente na atenção básica) passaram de 21.816 em dez/2010 para 25.222 em dez/2014. As clínicas e centros de especialidade públicos, categoria que inclui os CEOs, passaram de 3.270 para 4.409.",
+      "evidencias": [
+        {
+          "descricao": "DATASUS/TabNet – CNES, equipes por tipo, dez/2010 e dez/2014",
+          "tipo": "dado_oficial",
+          "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/equipebr.def"
+        },
+        {
+          "descricao": "DATASUS/TabNet – CNES, estabelecimentos públicos por tipo, dez/2010 e dez/2014",
+          "tipo": "dado_oficial",
+          "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/estabbr.def"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 14,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Apresentação da coordenação-geral do Programa Farmácia Popular (Ministério da Saúde) na Câmara mostra 20.101 farmácias credenciadas em 2011 e o pico de 34.595 antes da queda iniciada em 2017. O TCU registra que os recursos do programa saíram de cerca de R$ 50 milhões para mais de R$ 2,5 bilhões por ano entre 2010 e 2015. A série oficial localizada não traz o número exato de dez/2014.",
+      "evidencias": [
+        {
+          "descricao": "Ministério da Saúde (CGPFPB/DAF/SECTICS), apresentação na Câmara dos Deputados em 3/9/2025 – farmácias credenciadas por ano",
+          "tipo": "dado_oficial",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/comissao-de-defesa-dos-direitos-da-pessoa-idosa-cidoso/apresentacoes-em-eventos/apresentacoes-de-convidados-em-audiencias-em-2025/audiencia-publica-03-09-2025-a-importancia-do-programa-farmacia-popular-do-brasil-para-a-pessoa-idosa/bruno-fernandes-baltazar-de-oliveira/view"
+        },
+        {
+          "descricao": "TCU, Acórdão 307/2023-Plenário (auditoria no Programa Farmácia Popular)",
+          "tipo": "auditoria",
+          "url": "https://portal.tcu.gov.br/imprensa/noticias/ministerio-da-saude-deve-aprimorar-sistemas-e-gestao-do-programa-farmacia-popular"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 15,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "No CNES/DATASUS, as equipes de Saúde da Família (ESF, ESF com saúde bucal M I e M II) passaram de 32.523 em dez/2010 para 39.347 em dez/2014, alta de cerca de 21%. Em 2014 havia ainda outras modalidades de ESF (ribeirinha, fluvial, transitória) que não existiam em 2010.",
+      "evidencias": [
+        {
+          "descricao": "DATASUS/TabNet – CNES, equipes por tipo, dez/2010 e dez/2014",
+          "tipo": "dado_oficial",
+          "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/equipebr.def"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 16,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Em 2011 o Ministério da Saúde lançou o Saúde Não Tem Preço, que tornou gratuitos no Farmácia Popular os medicamentos para hipertensão e diabetes; a gratuidade foi estendida à asma em 2012. A cronologia consta de apresentação oficial da coordenação do programa.",
+      "evidencias": [
+        {
+          "descricao": "Ministério da Saúde/Programa Farmácia Popular – histórico do programa (2011: Saúde Não Tem Preço, gratuidade hipertensão e diabetes), apresentação na Câmara",
+          "tipo": "ato_publicado",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/comissao-de-defesa-dos-direitos-da-pessoa-idosa-cidoso/apresentacoes-em-eventos/apresentacoes-de-convidados-em-audiencias-em-2025/audiencia-publica-03-09-2025-a-importancia-do-programa-farmacia-popular-do-brasil-para-a-pessoa-idosa/bruno-fernandes-baltazar-de-oliveira/view"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 17,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto 7.612/2011 instituiu o Plano Viver sem Limite, que tem entre seus eixos a ampliação e a qualificação da rede de atenção à saúde da pessoa com deficiência, em especial os serviços de habilitação e reabilitação.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 7.612, de 17/11/2011 – Plano Nacional dos Direitos da Pessoa com Deficiência (Viver sem Limite)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7612.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 18,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Leitura literal: construir/entregar as moradias, e não só contratá-las. O balanço oficial do PAC 2 mostra 2,75 milhões de moradias contratadas no MCMV 2 (acima da meta de 2 milhões), mas 1,87 milhão entregues até 15/11/2014, somando as duas fases desde 2009. As entregas ficaram abaixo dos 2 milhões no mandato.",
+      "evidencias": [
+        {
+          "descricao": "Balanço PAC 2 (2011-2014), eixo Minha Casa Minha Vida – contratadas e entregues (cópia arquivada do pac.gov.br)",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20150319103217/http://www.pac.gov.br/pub/up/relatorio/6cd4587c2d6e42ebaa030f5a823ba75e.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 19,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Houve apoio federal a obras de metrô e trens urbanos durante o mandato. O TCU fiscalizou, com recursos da União, a expansão do trem metropolitano de Porto Alegre (Trensurb, trecho São Leopoldo–Novo Hamburgo, Acórdão 2739/2014), o metrô de Salvador e a Linha Leste do metrô de Fortaleza. A promessa não fixava quantidade de obras.",
+      "evidencias": [
+        {
+          "descricao": "TCU, Acórdão 2739/2014-Plenário – obras de expansão do metrô de Porto Alegre (Trensurb)",
+          "tipo": "auditoria",
+          "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-fiscaliza-obras-de-expansao-do-metro-de-porto-alegre"
+        },
+        {
+          "descricao": "TCU – auditoria da Fase 1 da Linha Leste do Metrô de Fortaleza",
+          "tipo": "auditoria",
+          "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-fiscaliza-implantacao-do-metro-de-fortaleza"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 20,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei 12.761, de 27/12/2012, instituiu o Programa de Cultura do Trabalhador e criou o vale-cultura.",
+      "evidencias": [
+        {
+          "descricao": "Lei 12.761, de 27/12/2012 – cria o vale-cultura",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12761.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 21,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Relatório de Gestão 2014 do Ministério da Defesa registra, em 2014: o contrato com a Saab para 36 caças Gripen NG (F-X2), o contrato de aquisição de 28 KC-390, a entrega de 128 blindados Guarani ao Exército, a inclusão do Astros 2020 no PAC e o andamento do Prosub. A promessa não tinha meta numérica.",
+      "evidencias": [
+        {
+          "descricao": "Ministério da Defesa, Relatório de Gestão do exercício de 2014",
+          "tipo": "dado_oficial",
+          "url": "https://www.gov.br/defesa/pt-br/arquivos/lai/auditoria/contas_anuais/relatorio_de_gestao_2014.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 22,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Atenção especial\" ao transporte urbano é diretriz de intensidade, sem meta nem critério mensurável (mesmo critério aplicado a \"ênfase\" e \"prioridade\" nos demais itens). Como registro: a Lei 12.587/2012 instituiu a Política Nacional de Mobilidade Urbana, e o TCU (Acórdão 2430/2015) apontou investimentos da União em transporte coletivo urbano acima de R$ 100 bilhões em 2014.",
+      "evidencias": [
+        {
+          "descricao": "Lei 12.587, de 3/1/2012 – Política Nacional de Mobilidade Urbana",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12587.htm"
+        },
+        {
+          "descricao": "TCU, Acórdão 2430/2015-Plenário – governança da política de mobilidade urbana",
+          "tipo": "auditoria",
+          "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-avalia-governanca-em-politicas-publicas-de-mobilidade-urbana"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 23,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pela PNAD (série do IPEA), o índice de Gini da renda domiciliar per capita caiu de 54,3 em 2011 para 52,6 em 2014. Pela Síntese de Indicadores Sociais do IBGE, a fatia da renda apropriada pelos 40% mais pobres subiu de 10,5% em 2012 para 11,1% em 2014. Os dois dados indicam que a renda dos mais pobres cresceu mais rápido que a dos mais ricos no período.",
+      "evidencias": [
+        {
+          "descricao": "Ipeadata, série PNADS_GINI – Gini da renda domiciliar per capita (PNAD)",
+          "tipo": "dado_oficial",
+          "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PNADS_GINI')"
+        },
+        {
+          "descricao": "Ipeadata/IBGE-SIS, série SIS_RDPC40 – fatia do rendimento domiciliar per capita dos 40% mais pobres",
+          "tipo": "dado_oficial",
+          "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='SIS_RDPC40')"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 24,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pelos dados do MDS, o Bolsa Família atendia 12,78 milhões de famílias em dez/2010 e 14,00 milhões em dez/2014, diante de uma estimativa oficial de 13,74 milhões de famílias pobres (base Censo 2010): a cobertura nacional passou de 93% para 102%. Em dez/2014, porém, 1.999 dos 5.571 municípios ainda tinham cobertura abaixo de 100% da estimativa local.",
+      "evidencias": [
+        {
+          "descricao": "MDS/SAGI, MI Social – famílias beneficiárias e estimativa de famílias pobres, soma dos municípios, dez/2010",
+          "tipo": "dado_oficial",
+          "url": "https://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*:*&fq=anomes_s:201012&fq=tipo_s:mes_mu&wt=json&rows=0&stats=true&stats.field=qtd_familias_beneficiarias_bolsa_familia&stats.field=qtd_estimada_familia_pobres_bolsa_familia_censo2010_i"
+        },
+        {
+          "descricao": "MDS/SAGI, MI Social – famílias beneficiárias e estimativa de famílias pobres, soma dos municípios, dez/2014",
+          "tipo": "dado_oficial",
+          "url": "https://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*:*&fq=anomes_s:201412&fq=tipo_s:mes_mu&wt=json&rows=0&stats=true&stats.field=qtd_familias_beneficiarias_bolsa_familia&stats.field=qtd_estimada_familia_pobres_bolsa_familia_censo2010_i"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 25,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto 7.492/2011 criou o Brasil Sem Miséria para superar a extrema pobreza, e a pobreza extrema caiu no mandato, mas não foi erradicada. Pela série do Ipea (PNAD), 7,0% da população estava abaixo da linha de PPC$ 3,00 por dia em 2014, ante 10,3% em 2011. Leitura literal: erradicar = zerar.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 7.492/2011 – Plano Brasil Sem Miséria",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7492.htm"
+        },
+        {
+          "descricao": "Ipeadata – proporção de pessoas abaixo da linha de PPC$ 3,00 (PNAD)",
+          "tipo": "dado_oficial",
+          "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PNADS_PERCPOBRE300')"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 26,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei 12.382/2011 fixou a política de valorização de longo prazo do salário mínimo para 2012 a 2015: reposição pelo INPC mais o crescimento real do PIB de dois anos antes. A política vigorou durante todo o mandato. O ganho real de cada ano dependeu do PIB, mas a promessa não tinha meta numérica.",
+      "evidencias": [
+        {
+          "descricao": "Lei 12.382, de 25/2/2011 – valor do salário mínimo em 2011 e política de valorização de longo prazo",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12382.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 27,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A meta é mensurável, mas o dado oficial disponível não permite cruzá-la. A SETEC/MEC informa 562 unidades da Rede Federal em 512 municípios até 2014, sem listar a cobertura das cidades-polo com mais de 50 mil habitantes. Não foi localizada base oficial pública que relacione unidades e cidades-polo no fim de 2014; a Plataforma Nilo Peçanha só começa em 2017.",
+      "evidencias": [
+        {
+          "descricao": "SETEC/MEC, apresentação à Comissão de Educação da Câmara – 562 unidades em 512 municípios",
+          "tipo": "dado_oficial",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ce/arquivos/apresentacao-alessio-trindade-setec-mec/view"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 28,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "O balanço do PAC 2 com dados até dez/2014 registra 6.016 creches e pré-escolas contratadas, mas não construídas. A auditoria da CGU nas contas de 2014 do FNDE informa que, pelo Simec (jun/2015), apenas 2.686 obras do Proinfância haviam sido concluídas desde 2007, de 8.787 registradas. Mesmo contando obras anteriores a 2011, ficaram concluídas menos da metade das 6.000 prometidas.",
+      "evidencias": [
+        {
+          "descricao": "Balanço PAC 2 (2011-2014), dados até dez/2014 – 6.016 creches e pré-escolas contratadas (cópia arquivada do pac.gov.br)",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20150319103217/http://www.pac.gov.br/pub/up/relatorio/6cd4587c2d6e42ebaa030f5a823ba75e.pdf"
+        },
+        {
+          "descricao": "CGU – Relatório de Auditoria Anual de Contas do FNDE, exercício 2014 (2.686 obras do Proinfância concluídas de 8.787)",
+          "tipo": "auditoria",
+          "url": "https://www.gov.br/fnde/pt-br/media-1/auditoria/certificados-de-contas-auditoria/relatorio-de-auditoria-anual-de-contas-2014.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 29,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "A Lei 13.005/2014 (PNE) fixou a meta de erradicar o analfabetismo absoluto e de chegar a 93,5% de alfabetização até 2015. Pela PNAD do IBGE, o analfabetismo de 15 anos ou mais caiu de 8,6% em 2011 para 8,3% em 2014, mas o número de analfabetos ficou estável (13,0 milhões para 13,2 milhões). Houve mobilização normativa, sem redução expressiva entre adultos.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.005, de 25/6/2014 – Plano Nacional de Educação, Meta 9",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13005.htm"
+        },
+        {
+          "descricao": "IBGE, SIDRA tabela 271 (PNAD) – pessoas de 15 anos ou mais por alfabetização, 2009, 2011 e 2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/271/n1/all/v/121/p/2009,2011,2014/c1/0/c2/0/c59/1023,1024/c58/1143,1144,1145,3299,3300,3301,3302"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 30,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pela série do MCTI, o dispêndio nacional em P&D passou de R$ 80,2 bilhões em 2010 para R$ 96,3 bilhões em 2014 (valores de 2019), e de 1,16% para 1,27% do PIB. O dispêndio público subiu de 0,59% para 0,67% do PIB. A promessa não fixava percentual.",
+      "evidencias": [
+        {
+          "descricao": "MCTI, Tabela 2.1.7 – dispêndios em P&D comparados ao PIB, 2000-2019",
+          "tipo": "dado_oficial",
+          "url": "https://antigo.mctic.gov.br/mctic/export/sites/institucional/indicadores/arquivos/recursosAplicados/indicadoresConsolidados/tab_2_1_7_E.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 31,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "\"Registro de patentes\" é ambíguo. Pelos dados do INPI compilados pelo MCTI, os pedidos depositados subiram de 28.099 em 2010 para 33.179 em 2014, mas as patentes concedidas caíram de 3.623 para 3.123; entre residentes, as concessões subiram de 666 para 732. Como um indicador avançou e o outro recuou, o resultado é parcial.",
+      "evidencias": [
+        {
+          "descricao": "MCTI/INPI, Tabela 6.1.1 – pedidos de patentes depositados, 2000-2020",
+          "tipo": "dado_oficial",
+          "url": "https://antigo.mctic.gov.br/mctic/export/sites/institucional/indicadores/arquivos/Patentes/tab_6_1_1_E.pdf"
+        },
+        {
+          "descricao": "MCTI/INPI, Tabela 6.1.3 – patentes concedidas, 2000-2020",
+          "tipo": "dado_oficial",
+          "url": "https://antigo.mctic.gov.br/mctic/export/sites/institucional/indicadores/arquivos/Patentes/tab_6_1_3_E.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 32,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "No CNES/DATASUS, os estabelecimentos públicos de pronto atendimento (categoria que inclui as UPAs) passaram de 230 em dez/2010 para 762 em dez/2014, e as policlínicas públicas de 1.161 para 1.352. As duas redes cresceram no mandato.",
+      "evidencias": [
+        {
+          "descricao": "DATASUS/TabNet – CNES, estabelecimentos públicos por tipo, dez/2010 e dez/2014",
+          "tipo": "dado_oficial",
+          "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/estabbr.def"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 33,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Não foi localizada série oficial pública de produção ou venda de genéricos de 2010 a 2014. O Anuário Estatístico do Mercado Farmacêutico da Anvisa/CMED começa em 2015, e os números disponíveis para o período vêm de associações do setor, que não são fonte aceita.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 34,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A promessa não traz meta numérica; o núcleo é estimular a produção nacional de medicamentos. A Portaria MS nº 837, de 18/04/2012, definiu diretrizes e critérios para as Parcerias para o Desenvolvimento Produtivo (PDP), instrumento de transferência de tecnologia para produção nacional de medicamentos.",
+      "evidencias": [
+        {
+          "descricao": "Portaria MS nº 837, de 18/04/2012 (diretrizes das Parcerias para o Desenvolvimento Produtivo)",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/prt0837_18_04_2012.html"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 35,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei nº 12.608, de 10/04/2012 (conversão da MP 547/2011), instituiu a Política Nacional de Proteção e Defesa Civil, o Sistema Nacional de Proteção e Defesa Civil e autorizou a criação de sistema de informações e monitoramento de desastres.",
+      "evidencias": [
+        {
+          "descricao": "Lei nº 12.608/2012 (Política Nacional de Proteção e Defesa Civil)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12608.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 36,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A Lei nº 13.018, de 22/07/2014, transformou o Cultura Viva em política nacional, mas a promessa é ampliar o número de Pontos de Cultura e não foi encontrada série oficial pública com a contagem de pontos em 2010 e 2014 que permita conferir a ampliação.",
+      "evidencias": [
+        {
+          "descricao": "Lei nº 13.018/2014 (Política Nacional de Cultura Viva)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13018.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 37,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto nº 7.496, de 08/06/2011, instituiu o Plano Estratégico de Fronteiras para fortalecer a prevenção, controle, fiscalização e repressão de delitos na faixa de fronteira, com atuação integrada de órgãos de segurança, Receita Federal e Forças Armadas. A promessa não tem meta numérica; o ato atende ao núcleo de intensificar o controle.",
+      "evidencias": [
+        {
+          "descricao": "Decreto nº 7.496/2011 (Plano Estratégico de Fronteiras)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7496.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 38,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Dar ênfase\" à integração regional e aos Brics é uma diretriz de política externa sem critério mensurável; não há dado oficial que permita aferir o grau de ênfase.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 39,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "A única alteração da legislação eleitoral sancionada no mandato, a Lei nº 12.891/2013, tratou de reduzir custos de campanha e não mudou o sistema de representação. Não houve, até o fim de 2014, lei ou emenda que reformasse o sistema político-eleitoral.",
+      "evidencias": [
+        {
+          "descricao": "Lei nº 12.891/2013 (minirreforma eleitoral sobre custos de campanha)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12891.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 40,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto nº 8.243, de 23/05/2014, instituiu a Política Nacional de Participação Social e o Sistema Nacional de Participação Social. O decreto ficou em vigor até o fim do mandato (foi revogado só em 2019, pelo Decreto nº 9.759).",
+      "evidencias": [
+        {
+          "descricao": "Decreto nº 8.243/2014 (Política Nacional de Participação Social)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8243.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 41,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: manter o crescimento = a economia continuar crescendo. Pela série do Banco Central, o PIB cresceu em todos os anos do mandato (3,97% em 2011, 1,92% em 2012, 3,00% em 2013 e 0,50% em 2014), embora em ritmo bem menor que os 7,53% de 2010.",
+      "evidencias": [
+        {
+          "descricao": "BCB/SGS série 7326 – PIB, taxa de variação real anual",
+          "tipo": "dado_oficial",
+          "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.7326/dados?formato=json"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 42,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura: controle = IPCA dentro do intervalo de tolerância fixado pelo CMN (meta de 4,5% com banda de 2 p.p., ou seja, até 6,5%, em 2011–2014). O IPCA fechou 2011 em 6,50%, 2012 em 5,84%, 2013 em 5,91% e 2014 em 6,41%: dentro do intervalo, mas acima do centro da meta nos quatro anos.",
+      "evidencias": [
+        {
+          "descricao": "BCB – Histórico de metas para a inflação (Resoluções CMN 3.748, 3.880, 3.991 e 4.095)",
+          "tipo": "dado_oficial",
+          "url": "https://www.bcb.gov.br/Pec/metas/TabelaMetaseResultados.pdf"
+        },
+        {
+          "descricao": "BCB/SGS série 13522 – IPCA acumulado em 12 meses",
+          "tipo": "dado_oficial",
+          "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados?formato=json"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 43,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Fortalecer\" a agricultura familiar e o agronegócio é diretriz genérica, sem meta nem indicador definido na promessa que permita dizer se foi cumprida.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 44,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Dar ênfase\" à produção de energia renovável é diretriz sem critério mensurável definido na promessa; não há como aferir o grau de ênfase a partir de dado oficial.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 45,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O programa federal de combate ao desmatamento teve continuidade: o MMA publicou em junho de 2013 a 3ª fase (2012-2015) do Plano de Ação para Prevenção e Controle do Desmatamento na Amazônia Legal (PPCDAm), coordenada pelo Grupo Permanente de Trabalho Interministerial.",
+      "evidencias": [
+        {
+          "descricao": "PPCDAm – 3ª Fase (2012-2015), MMA, junho de 2013 (cópia no repositório da Embrapa)",
+          "tipo": "ato_publicado",
+          "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1086784/1/PPCDAM3aFase.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 46,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: ampliar = aumentar a cobertura, sem meta numérica. Pela PNAD/IBGE, os domicílios ligados à rede coletora de esgoto passaram de 31,2 milhões (52,6%) em 2009 para 38,6 milhões (57,6%) em 2014; o avanço foi pequeno diante do déficit.",
+      "evidencias": [
+        {
+          "descricao": "IBGE/SIDRA Tabela 1956 – PNAD, domicílios por esgotamento sanitário, 2009-2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/1956/n1/all/v/96,1000096/p/2009,2011,2012,2013,2014/c12058/0/c1/0/c7173/0,99663,99664"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 47,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Critério: o Ideb da rede pública e as metas oficiais fixadas pelo Inep. Em 2013, os anos iniciais do fundamental atingiram 4,9 (meta 4,7); os anos finais ficaram em 4,0 (meta 4,1) e o ensino médio, estagnado em 3,4 desde 2009, ficou abaixo da meta de 3,6. Só uma das três etapas cumpriu a meta.",
+      "evidencias": [
+        {
+          "descricao": "Inep – Ideb Brasil por rede, resultados 2005-2019 e metas projetadas",
+          "tipo": "dado_oficial",
+          "url": "https://download.inep.gov.br/educacao_basica/portal_ideb/planilhas_para_download/2019/divulgacao_brasil_ideb_2019.xlsx"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 48,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Portaria MS nº 3.088, de 23/12/2011, instituiu a Rede de Atenção Psicossocial para pessoas com transtorno mental e necessidades decorrentes do uso de crack, álcool e outras drogas, e o Decreto nº 7.637/2011 reformulou o Plano Integrado de Enfrentamento ao Crack. A promessa não tem meta numérica; os atos atendem ao núcleo.",
+      "evidencias": [
+        {
+          "descricao": "Portaria MS nº 3.088/2011 (Rede de Atenção Psicossocial)",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html"
+        },
+        {
+          "descricao": "Decreto nº 7.637/2011 (altera o Plano Integrado de Enfrentamento ao Crack e outras Drogas)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7637.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 49,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Portaria MS nº 3.390, de 30/12/2013, instituiu a Política Nacional de Atenção Hospitalar (PNHOSP) no SUS, com diretrizes para reorganizar o componente hospitalar da rede de atenção. A promessa não tem meta numérica; o ato atende ao núcleo de reestruturar.",
+      "evidencias": [
+        {
+          "descricao": "Portaria MS nº 3.390/2013 (Política Nacional de Atenção Hospitalar)",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt3390_30_12_2013.html"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 50,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Portaria MS nº 874, de 16/05/2013, instituiu a Política Nacional para a Prevenção e Controle do Câncer no SUS. A promessa (ações de prevenção) não tem meta numérica; o ato atende ao núcleo.",
+      "evidencias": [
+        {
+          "descricao": "Portaria MS nº 874/2013 (Política Nacional para a Prevenção e Controle do Câncer)",
+          "tipo": "norma",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2013/prt0874_16_05_2013.html"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 51,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei nº 12.681, de 04/07/2012, instituiu o Sistema Nacional de Informações de Segurança Pública, Prisionais e sobre Drogas (Sinesp), que integra as informações das polícias e órgãos de segurança dos entes federados. A promessa não tem meta numérica; o ato atende ao núcleo de articular e integrar as polícias.",
+      "evidencias": [
+        {
+          "descricao": "Lei nº 12.681/2012 (Sinesp)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12681.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 52,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Fortalecer\" não tem meta definida, e a série oficial de efetivo por órgão (Painel Estatístico de Pessoal) não pôde ser extraída para comparar 2010 e 2014 na Polícia Federal e na Força Nacional; não foi localizada outra fonte oficial primária com essa comparação.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 53,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Pela série do Banco Central, as exportações passaram de US$ 201,8 bi (2010) para US$ 225,0 bi (2014) e as importações de US$ 181,8 bi para US$ 229,1 bi, logo a corrente de comércio aumentou no mandato, embora as exportações tenham caído em 2012, 2013 e 2014 após o pico de 2011. A diversificação geográfica não tem critério definido na promessa e não foi aferida, por isso o núcleo só se confirma em parte.",
+      "evidencias": [
+        {
+          "descricao": "BCB/SGS série 2946 – exportações de bens (FOB, US$), 2010-2014",
+          "tipo": "dado_oficial",
+          "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.2946/dados?formato=json&dataInicial=01/01/2010&dataFinal=31/12/2014"
+        },
+        {
+          "descricao": "BCB/SGS série 3034 – importações de bens (FOB, US$), 2010-2014",
+          "tipo": "dado_oficial",
+          "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.3034/dados?formato=json&dataInicial=01/01/2010&dataFinal=31/12/2014"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 54,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Leitura: investimento medido pela taxa de investimento (formação bruta de capital fixo em % do PIB), indicador usual dessa meta. Pelo IBGE, a taxa caiu de 20,6% (2010) para 19,7% (2014). Em volume, a FBCF cresceu em 2011-2013 e recuou 4,2% em 2014, ficando cerca de 9% acima de 2010.",
+      "evidencias": [
+        {
+          "descricao": "IBGE/SIDRA Tabela 1195 – taxa de investimento, 2010-2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/1195/n1/all/v/2517/p/2010,2011,2012,2013,2014"
+        },
+        {
+          "descricao": "IBGE/SIDRA Tabela 5932 – variação anual em volume da formação bruta de capital fixo, 2011-2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/5932/n1/all/v/6563/p/201104,201204,201304,201404/c11255/93406"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 55,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Pelas Contas Nacionais Trimestrais do IBGE, a taxa de poupança (% do PIB) teve média de cerca de 17,8% nos trimestres de 2010 e de cerca de 16,2% nos de 2014, com 13,0% no 4º trimestre de 2014. A poupança caiu no mandato.",
+      "evidencias": [
+        {
+          "descricao": "IBGE/SIDRA Tabela 6726 – taxa de poupança trimestral",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/6726/n1/all/v/9774/p/201001,201002,201003,201004,201101,201102,201103,201104,201201,201202,201203,201204,201301,201302,201303,201304,201401,201402,201403,201404"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 56,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Dar ênfase\" à pesquisa de novas fontes limpas é diretriz sem meta; não há série oficial pública específica de gasto em pesquisa de fontes limpas que permita aferir a ênfase.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 57,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: ampliar a oferta = aumentar a cobertura, sem meta numérica. Pela PNAD/IBGE, os domicílios abastecidos pela rede geral passaram de 49,9 milhões (84,3%) em 2009 para 57,2 milhões (85,4%) em 2014; o ganho percentual foi pequeno.",
+      "evidencias": [
+        {
+          "descricao": "IBGE/SIDRA Tabela 1955 – PNAD, domicílios por forma de abastecimento de água, 2009-2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/1955/n1/all/v/96,1000096/p/2009,2011,2012,2013,2014/c12058/0/c1/0/c61/0,1033,1035"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 58,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: ampliar = aumentar a cobertura, sem meta numérica. Pela PNAD/IBGE, os domicílios com lixo coletado (direta ou indiretamente) passaram de 52,4 milhões (88,5%) em 2009 para 60,2 milhões (89,8%) em 2014; o ganho percentual foi pequeno.",
+      "evidencias": [
+        {
+          "descricao": "IBGE/SIDRA Tabela 1958 – PNAD, domicílios por destino do lixo, 2009-2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/1958/n1/all/v/96,1000096/p/2009,2011,2012,2013,2014/c12058/0/c1/0/c67/0,1085,1086"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 59,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Aprofundar\" o zoneamento agroecológico não tem meta, e não foi localizado ato federal novo de zoneamento agroecológico editado entre 2011 e 2014 nem indicador oficial que permita aferir o aprofundamento.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 60,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pelo histórico do Serviço Florestal Brasileiro, foram assinados no mandato seis contratos de concessão para manejo florestal (Jacundá I e II em 2013; Saracá-Taquera Lote Sul IA e IB e Crepori II e III em 2014), somando cerca de 368 mil hectares. Antes de 2011, os contratos ainda vigentes somam cerca de 47 mil hectares (Jamari, 2008, e Saracá-Taquera, 2010). Sem meta numérica, a área concedida foi ampliada.",
+      "evidencias": [
+        {
+          "descricao": "Serviço Florestal Brasileiro – Histórico de assinaturas de contratos de concessão florestal federal",
+          "tipo": "dado_oficial",
+          "url": "https://www.gov.br/florestal/pt-br/assuntos/concessoes-e-monitoramento/concessoes-florestais-em-andamento"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 61,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Não foi localizada série oficial pública da área de terras degradadas recuperadas por ano (2010 versus 2014) que permita aferir a ampliação prometida.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 62,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Leitura literal: expandir = mais alunos na rede pública. Pela PNAD/IBGE, o total de estudantes na rede pública caiu de 44,8 milhões (2009) para 41,7 milhões (2014), com queda no fundamental (29,1 para 25,8 milhões) e estabilidade no médio (8,2 milhões). O ensino superior público cresceu de 1,5 para 1,9 milhão. Só parte do ensino público se expandiu.",
+      "evidencias": [
+        {
+          "descricao": "IBGE/SIDRA Tabela 984 – PNAD, pessoas que frequentavam escola por nível e rede de ensino, 2009 e 2014",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/984/n1/all/v/690/p/2009,2014/c11798/0,95304,95305,116819/c12087/100468/c2/0/c58/0"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 63,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pelos indicadores do MCTI (Siafi), o dispêndio federal em pós-graduação, contabilizado como pesquisa e desenvolvimento, subiu de R$ 6,07 bi (2010) para R$ 11,07 bi (2014) em valores correntes. É uma alta de 82%, bem acima da inflação do período (IPCA de cerca de 27% acumulado em 2011-2014).",
+      "evidencias": [
+        {
+          "descricao": "MCTI – Tabela 2.2.1: dispêndio do governo federal em C&T por atividade, 2000-2019 (coluna pós-graduação)",
+          "tipo": "dado_oficial",
+          "url": "https://antigo.mctic.gov.br/mctic/export/sites/institucional/indicadores/arquivos/recursosAplicados/governoFederal/tab_2_2_1_E.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 64,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Critério: óbitos por acidentes de transporte (CID-10 V01-V99), única série nacional oficial disponível. Pelo SIM/DATASUS, foram 43.908 óbitos em 2010, 44.553 em 2011, 46.051 em 2012, 43.452 em 2013 e 44.823 em 2014: não houve redução no fim do mandato em relação a 2010.",
+      "evidencias": [
+        {
+          "descricao": "DATASUS/SIM – óbitos por causas externas, grande grupo V01-V99, por ano (2010-2014)",
+          "tipo": "dado_oficial",
+          "url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/ext10uf.def"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 65,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "As UPPs são programa estadual, e não foi localizada fonte oficial federal com o número de Territórios da Paz ou de bases implantadas em parceria com os Estados em 2010 e 2014 que permita aferir a ampliação.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 66,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Reforma \"radical\" não tem critério objetivo definido na promessa; não há parâmetro oficial para dizer se as medidas do período configuram ou não uma reforma radical do sistema penitenciário.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "folha-dilma",
+      "indice": 67,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "O relatório de auditoria da CGU sobre o exercício de 2014 registra 10.286 policiais rodoviários federais, ou 78,5% dos 13.098 cargos autorizados em lei. Não foi localizada fonte oficial com o efetivo de 2010 para comparar e aferir o reforço prometido.",
+      "evidencias": [
+        {
+          "descricao": "CGU – Relatório de auditoria anual de contas do DPRF, exercício 2014 (nº 201504220)",
+          "tipo": "auditoria",
+          "url": "https://www.gov.br/prf/pt-br/acesso-a-informacao/auditoria/RA_Sede_2014.pdf/@@display-file/file"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 0,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Em 2011 o Ministério da Saúde lançou o Saúde Não Tem Preço, que tornou gratuitos no Farmácia Popular os medicamentos para hipertensão e diabetes; a gratuidade foi estendida à asma em 2012. A cronologia consta de apresentação oficial da coordenação do programa.",
+      "evidencias": [
+        {
+          "descricao": "Ministério da Saúde/Programa Farmácia Popular – histórico do programa (2011: Saúde Não Tem Preço, gratuidade hipertensão e diabetes), apresentação na Câmara",
+          "tipo": "ato_publicado",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/comissao-de-defesa-dos-direitos-da-pessoa-idosa-cidoso/apresentacoes-em-eventos/apresentacoes-de-convidados-em-audiencias-em-2025/audiencia-publica-03-09-2025-a-importancia-do-programa-farmacia-popular-do-brasil-para-a-pessoa-idosa/bruno-fernandes-baltazar-de-oliveira/view"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 1,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "O Decreto 7.492/2011 criou o Brasil Sem Miséria e a Lei 12.817/2013 ampliou o benefício que completa a renda das famílias do Bolsa Família até superar a linha de extrema pobreza; em dez/2014 o MDS registrava cerca de 5,29 milhões desses benefícios, acima das 4,5 milhões de famílias prometidas. A erradicação, porém, não ocorreu: pela série do Ipea (PNAD), 7,0% da população estava abaixo da linha de pobreza extrema de PPC$ 3,00 em 2014, ante 10,3% em 2011.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 7.492/2011 – Plano Brasil Sem Miséria",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7492.htm"
+        },
+        {
+          "descricao": "Lei 12.817/2013 – benefício para superação da extrema pobreza",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12817.htm"
+        },
+        {
+          "descricao": "MDS/SAGI – MI Social: benefícios BSP pagos em dez/2014 (soma nacional)",
+          "tipo": "dado_oficial",
+          "url": "https://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*:*&fq=anomes_s:201412&fq=tipo_s:mes_mu&wt=json&rows=0&stats=true&stats.field=tot_ben_bsp_i"
+        },
+        {
+          "descricao": "Ipeadata – proporção de pessoas abaixo da linha de PPC$ 3,00 (PNAD)",
+          "tipo": "dado_oficial",
+          "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PNADS_PERCPOBRE300')"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 2,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "O balanço do PAC 2 com dados até dez/2014 registra 6.016 creches e pré-escolas contratadas, mas não construídas. A auditoria da CGU nas contas de 2014 do FNDE informa que, pelo Simec (jun/2015), apenas 2.686 obras do Proinfância haviam sido concluídas desde 2007, de 8.787 registradas. Mesmo contando obras anteriores a 2011, ficaram concluídas menos da metade das 6.000 prometidas.",
+      "evidencias": [
+        {
+          "descricao": "Balanço PAC 2 (2011-2014), dados até dez/2014 – 6.016 creches e pré-escolas contratadas (cópia arquivada do pac.gov.br)",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20150319103217/http://www.pac.gov.br/pub/up/relatorio/6cd4587c2d6e42ebaa030f5a823ba75e.pdf"
+        },
+        {
+          "descricao": "CGU – Relatório de Auditoria Anual de Contas do FNDE, exercício 2014 (2.686 obras do Proinfância concluídas de 8.787)",
+          "tipo": "auditoria",
+          "url": "https://www.gov.br/fnde/pt-br/media-1/auditoria/certificados-de-contas-auditoria/relatorio-de-auditoria-anual-de-contas-2014.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 3,
+      "status": "parcial",
+      "percentual": 33.0,
+      "justificativa": "Das três áreas, só o transporte teve PIS/Cofins zerado no mandato: a Lei 12.860/2013 reduziu a zero as alíquotas sobre o transporte público coletivo municipal. Na energia, a Lei 12.783/2013 reduziu encargos setoriais, não PIS/Cofins; no saneamento, o incentivo veio só com a Lei 13.329/2016 (créditos de PIS/Cofins, não alíquota zero), sancionada pelo governo interino. Percentual = 1 de 3 áreas.",
+      "evidencias": [
+        {
+          "descricao": "Lei 12.860/2013 – alíquota zero de PIS/Cofins no transporte coletivo municipal",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12860.htm"
+        },
+        {
+          "descricao": "Lei 12.783/2013 – redução de encargos setoriais de energia elétrica",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12783.htm"
+        },
+        {
+          "descricao": "Lei 13.329/2016 – REISB (créditos de PIS/Cofins para saneamento)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13329.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 4,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Leitura literal: construir/entregar as moradias, e não só contratá-las. O balanço oficial do PAC 2 mostra 2,75 milhões de moradias contratadas no MCMV 2 (acima da meta de 2 milhões), mas 1,87 milhão entregues até 15/11/2014, somando as duas fases desde 2009. As entregas ficaram abaixo dos 2 milhões no mandato.",
+      "evidencias": [
+        {
+          "descricao": "Balanço PAC 2 (2011-2014), eixo Minha Casa Minha Vida – contratadas e entregues (cópia arquivada do pac.gov.br)",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20150319103217/http://www.pac.gov.br/pub/up/relatorio/6cd4587c2d6e42ebaa030f5a823ba75e.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 5,
+      "status": "parcial",
+      "percentual": 10.7,
+      "justificativa": "Segundo o Ministério do Esporte, com base no balanço do PAC de dez/2014, foram aprovadas 9.817 obras de construção ou cobertura de quadras em escolas entre 2011 e 2014, mas só 1.067 estavam concluídas; 3.768 estavam em obras. As entregas chegaram a cerca de 10,7% das 10 mil prometidas.",
+      "evidencias": [
+        {
+          "descricao": "Ministério do Esporte – apresentação na Câmara (set/2015): estágio das quadras escolares, fonte balanço PAC dez/2014",
+          "tipo": "dado_oficial",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/cespo/apresentacoes-em-eventos/audiencias-publicas-2015/23-09-2015-dia-nacional-do-desporto-escolar/apresentacao-do-ministerio-do-esporte/view"
+        },
+        {
+          "descricao": "Balanço PAC 2 (2011-2014): 9.817 quadras contratadas (cópia arquivada do pac.gov.br)",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20150319103217/http://www.pac.gov.br/pub/up/relatorio/6cd4587c2d6e42ebaa030f5a823ba75e.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 6,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: não restar população pobre fora da classe média. Pela série do Ipea (PNAD), a proporção de pessoas abaixo da linha de pobreza de PPC$ 8,30 por dia caiu de 39,9% em 2011 para 33,2% em 2014, e a abaixo da linha de PPC$ 3,00, de 10,3% para 7,0%. Parte relevante da população seguia pobre ao fim do mandato.",
+      "evidencias": [
+        {
+          "descricao": "Ipeadata – proporção de pessoas abaixo da linha de PPC$ 8,30 (PNAD)",
+          "tipo": "dado_oficial",
+          "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PNADS_PERCPOBRE830')"
+        },
+        {
+          "descricao": "Ipeadata – proporção de pessoas abaixo da linha de PPC$ 3,00 (PNAD)",
+          "tipo": "dado_oficial",
+          "url": "http://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='PNADS_PERCPOBRE300')"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 7,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O ProUni não foi estendido ao ensino médio: o texto compilado da Lei 11.096/2005 mantém as bolsas restritas a cursos de graduação e sequenciais em instituições de ensino superior. O governo criou o Pronatec (Lei 12.513/2011), que atende estudantes do ensino médio com cursos técnicos, mas não é bolsa em escola de ensino médio.",
+      "evidencias": [
+        {
+          "descricao": "Lei 11.096/2005 (ProUni), texto compilado",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11096.htm"
+        },
+        {
+          "descricao": "Lei 12.513/2011 – Pronatec",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12513.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 8,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Em 27/04/2011 o STF julgou improcedente a ADI 4167 contra a lei do piso do magistério (Lei 11.738/2008), que passou a valer integralmente. O pagamento cabe a estados e municípios, e não foi localizada fonte oficial pública que mostre quantas redes pagavam o piso em 2014 para medir se ele passou a ser cumprido.",
+      "evidencias": [
+        {
+          "descricao": "STF – ADI 4167, decisões (mérito julgado improcedente em 27/04/2011)",
+          "tipo": "decisao",
+          "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=2645108"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "congressoemfoco-dilma",
+      "indice": 9,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Não foi localizada fonte oficial primária (contrato publicado, relatório de gestão da Polícia Federal ou auditoria do TCU/CGU) com o número de VANTs adquiridos e recebidos entre 2011 e 2014.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 0,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O Executivo enviou à Câmara em 19/03/2015 o PL 855/2015, que cria sanções penais para ilícitos na prestação de contas de partidos e campanhas. O projeto não foi votado: em 2019 ainda aguardava relator na CCJC, e nenhuma lei tipificando o caixa dois foi aprovada durante o mandato.",
+      "evidencias": [
+        {
+          "descricao": "PL 855/2015 (Poder Executivo) - dados e situação na Câmara",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/1050540"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 1,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O PL 5.586/2005, do Executivo, que tipifica o enriquecimento ilícito, recebeu pedido de urgência em 19/03/2015 (MSC 58/2015), cancelado em 18/06/2015 (MSC 217/2015). Voltou a ter urgência em 13/05/2016 e perdeu-a em 06/07/2016; o projeto seguiu 'pronto para pauta', sem votação.",
+      "evidencias": [
+        {
+          "descricao": "PL 5.586/2005 - dados da proposição",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/292771"
+        },
+        {
+          "descricao": "PL 5.586/2005 - tramitação 2015-2016",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/292771/tramitacoes?dataInicio=2015-01-01&dataFim=2016-12-31"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 2,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Em 19/03/2015 o Executivo enviou a PEC 10/2015 e o PL 856/2015, que criam a ação civil pública de extinção do direito de posse ou propriedade de bens de origem ilícita. O PL foi apensado a outro bloco em abril de 2015, e a PEC só teve parecer da CCJC em 2023. Nenhum dos dois foi aprovado no mandato.",
+      "evidencias": [
+        {
+          "descricao": "PEC 10/2015 (Poder Executivo) - situação",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/1050543"
+        },
+        {
+          "descricao": "PL 856/2015 (Poder Executivo) - situação",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/1050542"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 3,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A promessa não define meta nem instrumento: julgamento é atribuição do Judiciário, e o enunciado não diz que medida o Executivo adotaria. Sem critério mensurável, não há como conferir o resultado em fonte oficial.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 4,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Criar vara especial nos tribunais superiores exigiria emenda constitucional. Entre as PECs que o Executivo enviou em 2015 (PEC 10, 87, 139 e 140) nenhuma trata do tema, e nenhuma das emendas promulgadas em 2015-2016 (EC 85 a 95) criou essa vara.",
+      "evidencias": [
+        {
+          "descricao": "Câmara: PECs de autoria do Poder Executivo apresentadas em 2015 (PEC 10, 87, 139 e 140/2015)",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2015&autor=Executivo&itens=100"
+        },
+        {
+          "descricao": "Quadro das emendas constitucionais (EC 85 a 95, 2015-2016)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/quadro_emc.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 5,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: criar a Casa da Mulher Brasileira. O programa vinha do Decreto 8.086/2013; no mandato foram inauguradas as duas primeiras unidades, em Campo Grande (03/02/2015) e Brasília (02/06/2015). O próprio programa prevê uma Casa em cada capital, e só essas duas abriram até o afastamento, em 12/05/2016.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 8.086/2013 (Programa Mulher: Viver sem Violência, com a Casa da Mulher Brasileira)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d8086.htm"
+        },
+        {
+          "descricao": "Inauguração da 1ª Casa, em Campo Grande (03/02/2015)",
+          "tipo": "ato_publicado",
+          "url": "https://www.gov.br/mdh/pt-br/sdh/noticias/2015/janeiro/inaugurada-primeira-casa-da-mulher-brasileira-em-campo-grande-ms"
+        },
+        {
+          "descricao": "Inauguração da 2ª Casa, em Brasília (02/06/2015)",
+          "tipo": "ato_publicado",
+          "url": "https://www.gov.br/mdh/pt-br/sdh/noticias/2015/junho/presidenta-dilma-inaugura-segunda-casa-da-mulher-brasileira"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 6,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nenhuma lei criminalizando a homofobia foi aprovada no mandato. O PLC 122/2006 foi arquivado no Senado ao fim da legislatura, em 26/12/2014, e a Lei 7.716/1989 não sofreu alteração em 2015-2016.",
+      "evidencias": [
+        {
+          "descricao": "PLC 122/2006 (criminaliza a homofobia), arquivado em 26/12/2014",
+          "tipo": "tramitacao",
+          "url": "https://legis.senado.leg.br/dadosabertos/materia/PLC/122/2006"
+        },
+        {
+          "descricao": "Lei 7.716/1989, texto compilado",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l7716.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 7,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "O Sistema Nacional de Participação Social foi criado pelo Decreto 8.243, de 23/05/2014, antes do mandato, e ficou em vigor durante todo o mandato. Só foi revogado pelo Decreto 9.759/2019. A Câmara aprovou em 28/10/2014 o PDC 1.491/2014, que sustava o decreto, mas o Senado não o votou. Não houve ato novo no mandato para dar base legal ao sistema.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 8.243/2014 (institui a PNPS e o SNPS)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8243.htm"
+        },
+        {
+          "descricao": "PDC 1.491/2014, tramitação",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/617737/tramitacoes"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 8,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "A promessa não diz o que seria 'garantir efetividade' nem traz meta. As leis de cotas (12.711/2012 no ensino superior federal e 12.990/2014 nos concursos federais) estavam em vigor, mas não há indicador oficial público de cumprimento no período para conferir.",
+      "evidencias": [
+        {
+          "descricao": "Lei 12.990/2014 (cotas para negros em concursos federais)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12990.htm"
+        },
+        {
+          "descricao": "Lei 12.711/2012 (cotas no ensino superior federal)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12711.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 9,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Ampliar' o Plano Juventude Viva não tem meta definida. Não foi localizada série oficial pública de adesões ou de cobertura do plano em 2015-2016 que permita medir a ampliação.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 10,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "A meta de inflação de 2015 era 4,5%, com tolerância de 2 pontos (Resolução CMN 4.237/2013). O IPCA acumulado em 12 meses fechou dezembro de 2015 em 10,67%, acima do teto de 6,5%.",
+      "evidencias": [
+        {
+          "descricao": "BCB/SGS série 13522: IPCA acumulado em 12 meses (dez/2015 = 10,67%)",
+          "tipo": "dado_oficial",
+          "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados?formato=json&dataInicial=01/12/2010&dataFinal=31/12/2016"
+        },
+        {
+          "descricao": "Resolução CMN 4.237/2013: meta de 4,5% ± 2 p.p. para 2015",
+          "tipo": "norma",
+          "url": "https://www.bcb.gov.br/api/conteudo/app/normativos/exibenormativo?p1=Resolu%C3%A7%C3%A3o&p2=4237"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 11,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A Lei 13.152, de 29/07/2015, prorrogou a política de valorização do salário mínimo (INPC mais crescimento real do PIB) para 2016 a 2019. O Decreto 8.618/2015 fixou o mínimo em R$ 880 a partir de 01/01/2016.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.152/2015 (valorização do salário mínimo 2016-2019)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13152.htm"
+        },
+        {
+          "descricao": "Decreto 8.618/2015 (salário mínimo de R$ 880 em 2016)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8618.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 12,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto 8.414, de 26/02/2015, instituiu o Programa Bem Mais Simples Brasil, para simplificar e agilizar o acesso de cidadãos e empresas aos serviços públicos. O nome difere do prometido ('Brasil sem Burocracia'), mas o objetivo é o mesmo. Não foi localizado dado oficial sobre o tempo de abertura e de fechamento de empresas.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 8.414/2015 (Programa Bem Mais Simples Brasil)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8414.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 13,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nenhuma reforma tributária ampla foi aprovada no mandato. Das emendas de 2015-2016, só a EC 87/2015 tratou de tributo, e de forma pontual (ICMS em vendas interestaduais ao consumidor final). Entre as PECs que o Executivo enviou em 2015 não havia proposta de reforma do sistema tributário.",
+      "evidencias": [
+        {
+          "descricao": "Quadro das emendas constitucionais (EC 85 a 95, 2015-2016)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/quadro_emc.htm"
+        },
+        {
+          "descricao": "Câmara: PECs de autoria do Poder Executivo apresentadas em 2015 (PEC 10, 87, 139 e 140/2015)",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2015&autor=Executivo&itens=100"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 14,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Modelo sustentável de desenvolvimento' é um enunciado genérico, sem critério mensurável definido na promessa.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 15,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Pela ANP, a produção nacional de petróleo foi em média de 2,4 milhões de barris/dia em 2015 e de 2,5 milhões em 2016 (918,7 milhões de barris no ano). Ficou abaixo dos 3,8 milhões prometidos: cerca de 64% da meta em 2015.",
+      "evidencias": [
+        {
+          "descricao": "ANP, Anuário Estatístico 2017, seção 2 (produção de 2015 e 2016)",
+          "tipo": "dado_oficial",
+          "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/publicacoes/anuario-estatistico/arquivos-anuario-estatistico-2017/textos/secao2.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 16,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A troca do indexador da dívida de estados e municípios (IPCA + 4% ao ano ou Selic, o que for menor) foi sancionada na LC 148, de 25/11/2014, após a eleição e antes do novo mandato. Já no mandato, a LC 151, de 05/08/2015, deu à União até 31/01/2016 para assinar os aditivos.",
+      "evidencias": [
+        {
+          "descricao": "Lei Complementar 148/2014",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp148.htm"
+        },
+        {
+          "descricao": "Lei Complementar 151/2015",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp151.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 17,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "A lista do CNPq de chamadas de graduação-sanduíche do Ciência sem Fronteiras termina nas chamadas de 2014; não há chamada nova de 2015 ou 2016. Avaliação publicada pelo Tesouro Nacional registra que, em 2015, o programa não abriu novos editais. A Capes informou que 14.050 bolsistas embarcariam a partir de junho de 2015, todos de seleções anteriores.",
+      "evidencias": [
+        {
+          "descricao": "CNPq: dados das chamadas de graduação-sanduíche do CsF (2011-2014)",
+          "tipo": "dado_oficial",
+          "url": "https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/programas/ciencia-sem-fronteiras/bolsistas-e-investimentos-1/dados-chamadas-graduacao-sanduiche"
+        },
+        {
+          "descricao": "Tesouro Nacional, Cadernos de Finanças Públicas: avaliação do CsF",
+          "tipo": "dado_oficial",
+          "url": "https://publicacoes.tesouro.gov.br/index.php/cadernos/article/download/17/5/56"
+        },
+        {
+          "descricao": "Capes: apresentação à Comissão de Educação da Câmara (20/08/2015), status de implementação das bolsas",
+          "tipo": "dado_oficial",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ce/arquivos/geraldo-nunes-audiencia-publica-20-08-15/at_download/file"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 18,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Para conferir a ampliação seria preciso a série de matrículas do Pronatec por ano, e ela não foi localizada em fonte oficial primária acessível (o portal do MEC e os dados abertos do Pronatec não responderam). O TCU (Acórdão 3.330/2015) informa apenas valores orçamentários de 2011 a 2014.",
+      "evidencias": [
+        {
+          "descricao": "TCU: fiscalização do Pronatec (Acórdão 3.330/2015-Plenário)",
+          "tipo": "auditoria",
+          "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-fiscaliza-gratuidade-de-cursos-no-ambito-do-pronatec"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 19,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Pronatec Aprendiz (aprendizagem em micro e pequenas empresas) foi implantado em 2015 como modalidade do Pronatec, em parceria entre MDS, MEC, MTPS e a Secretaria da Micro e Pequena Empresa, como mostra a cartilha oficial de implementação, edição de 2015.",
+      "evidencias": [
+        {
+          "descricao": "MDS: Pronatec Aprendiz, orientações para implementação (edição 2015)",
+          "tipo": "ato_publicado",
+          "url": "https://www.mds.gov.br/webarquivos/publicacao/brasil_sem_miseria/cartilha_pronatec_aprendiz2.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 20,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto 8.776, de 11/05/2016, instituiu o Programa Brasil Inteligente, 'com a finalidade de buscar a universalização do acesso à internet no País'. Foi a forma que a promessa tomou, com outro nome, assinada na véspera do afastamento. O decreto não fixou metas e foi revogado em 2018.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 8.776/2016 (Programa Brasil Inteligente)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8776.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 21,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Pelo INEP, o percentual de alunos da educação básica pública em tempo integral subiu de 17,6% (2014) para 18,7% (2015), mas caiu para 13,1% em 2016, abaixo do ponto de partida. A queda de 2016 veio de uma redução de cerca de 2,5 milhões de matrículas em atividade complementar.",
+      "evidencias": [
+        {
+          "descricao": "INEP: Relatório do 2º ciclo de monitoramento das metas do PNE, 2018 (Meta 6, indicador 6A)",
+          "tipo": "dado_oficial",
+          "url": "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/relatorio_do_segundo_ciclo_de_monitoramento_das_metas_do_pne_2018_2_edicao.pdf"
+        },
+        {
+          "descricao": "INEP: Relatório do 1º ciclo de monitoramento das metas do PNE, 2014-2016 (6.743.612 matrículas em tempo integral em 2015)",
+          "tipo": "dado_oficial",
+          "url": "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/relatorio_do_primeiro_ciclo_de_monitoramento_das_metas_do_pne_bienio_2014_2016.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 22,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nenhuma norma reformulando o currículo da educação básica ou do ensino médio foi aprovada até 12/05/2016. A mudança na LDB (ensino médio e Base Nacional Comum Curricular) só veio com a MP 746/2016, editada no governo seguinte e convertida na Lei 13.415, de 16/02/2017.",
+      "evidencias": [
+        {
+          "descricao": "Lei 13.415/2017 (conversão da MP 746/2016)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13415.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 23,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Pelo INEP (PNAD/IBGE), a cobertura escolar das crianças de 4 e 5 anos foi de 90,5% em 2015 e 91,5% em 2016. A universalização, prevista no PNE para 2016, não foi atingida: cerca de 450 mil crianças seguiam fora da escola.",
+      "evidencias": [
+        {
+          "descricao": "INEP: Relatório do 2º ciclo de monitoramento das metas do PNE, 2018 (Meta 1, indicador 1A)",
+          "tipo": "dado_oficial",
+          "url": "https://download.inep.gov.br/publicacoes/institucionais/plano_nacional_de_educacao/relatorio_do_segundo_ciclo_de_monitoramento_das_metas_do_pne_2018_2_edicao.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 24,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Acelerar' a implantação do Vale-Cultura (Lei 12.761/2012) não tem meta definida. As páginas oficiais de indicadores do programa, do antigo Ministério da Cultura, estão fora do ar, e não há série oficial acessível para comparar o ritmo de adesão antes e depois de 2015.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 25,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nenhum sistema nacional do esporte foi criado no mandato, e entre os projetos do Executivo de 2015-2016 não há proposta sobre o tema. O Sistema Nacional do Esporte (Sinesp) só foi instituído pela Lei 14.597, de 14/06/2023.",
+      "evidencias": [
+        {
+          "descricao": "Lei 14.597/2023 (Lei Geral do Esporte, institui o Sinesp)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm"
+        },
+        {
+          "descricao": "Câmara: projetos de lei do Poder Executivo, 2015",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PL,PLP&ano=2015&autor=Executivo&itens=100"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 26,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nos Jogos Paralímpicos Rio 2016, o Brasil ficou em 8º lugar no quadro oficial de medalhas (14 ouros, 29 pratas, 29 bronzes), fora dos 5 primeiros prometidos; com isso a meta conjunta não foi atingida. A posição olímpica não foi conferida em fonte oficial aberta. Os Jogos aconteceram com Dilma já afastada (Olímpicos) e depois do fim do mandato (Paralímpicos).",
+      "evidencias": [
+        {
+          "descricao": "IPC: quadro de medalhas dos Jogos Paralímpicos Rio 2016",
+          "tipo": "dado_oficial",
+          "url": "https://www.paralympic.org/rio-2016/results"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 27,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Para medir 'plena execução' seria preciso o balanço oficial da execução física e financeira do Plano Brasil Medalhas 2016, e ele não foi localizado em fonte oficial acessível (TCU, CGU ou dados do Ministério do Esporte).",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 28,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "O Centro de Treinamento Paralímpico Brasileiro, em São Paulo, foi inaugurado em 23/05/2016, onze dias depois do afastamento de Dilma, já no governo interino. Não foi encontrada fonte oficial com a situação dos Centros de Formação Olímpica até 12/05/2016, o que impede fechar o núcleo da promessa.",
+      "evidencias": [
+        {
+          "descricao": "Governo de SP: inauguração do Centro de Treinamento Paraolímpico Brasileiro em 23/05/2016",
+          "tipo": "ato_publicado",
+          "url": "https://semil.sp.gov.br/2016/05/centro-de-treinamento-paraolimpico-brasileiro-inicia-atividades/"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 29,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Até dezembro de 2015 havia 254 CIEs contratados e nenhum concluído no balanço oficial do PAC. A auditoria do TCU (Acórdão 3140/2016) registra que, até setembro de 2016, só 39 CIEs tinham obra autorizada e apenas 1 havia sido entregue, muito abaixo da meta de 285.",
+      "evidencias": [
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): CIE com 254 unidades contratadas",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        },
+        {
+          "descricao": "TCU, FiscEsporte 2016 (Acórdão 3140/2016-Plenário): 39 CIEs com obra autorizada e 1 entregue até set/2016",
+          "tipo": "auditoria",
+          "url": "https://portal.tcu.gov.br/data/files/56/82/2B/70/16A1F6107AD96FE6F18818A8/Fisc_Desporto_Lazer_2016_ingles.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 30,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "A terceira fase do Minha Casa, Minha Vida foi lançada em 2016, antes do afastamento. Ela teve meta de 2 milhões de unidades até o fim de 2018 e criou a Faixa 1,5. A Portaria Interministerial nº 98, de 30/03/2016, e a Lei 13.274, de 26/04/2016, deram os novos parâmetros do programa.",
+      "evidencias": [
+        {
+          "descricao": "Relatório de Avaliação do PMCMV (Ministério da Economia/CMAP, publicado pela CGU): 'em 2016, a terceira fase fixou a meta de 2 milhões de unidades adicionais até o final de 2018'; cita a Portaria Interministerial nº 98, de 30/03/2016",
+          "tipo": "auditoria",
+          "url": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2021/04/cgu-divulga-prestacao-de-contas-do-presidente-da-republica-de-2020/relatorio-de-avaliacao-pmcmv.pdf"
+        },
+        {
+          "descricao": "Lei 13.274, de 26/04/2016 (altera o PMCMV)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13274.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 31,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Decreto 8.387, de 30/12/2014, estendeu o Luz para Todos até 2018. Em 2015 o programa fez 57.676 novas ligações, 28% da meta de 2015-2018, chegando a 3.258.086 famílias atendidas. Leitura literal de 'ampliar': houve expansão do atendimento no mandato.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 8.387/2014 (prorroga o Luz para Todos até 2018)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8387.htm"
+        },
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): Luz para Todos, 57.676 ligações em 2015",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 32,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Pela PNAD/IBGE, a parcela de domicílios ligados à rede coletora de esgoto passou de 57,6% (2014) para 59,1% (2015), e a de domicílios com água da rede geral, de 84,5% para 84,6%. O balanço oficial do PAC registra 632 obras de saneamento concluídas em 2015. Houve ampliação, mas a universalização ficou longe de ser atingida no mandato.",
+      "evidencias": [
+        {
+          "descricao": "IBGE/SIDRA Tabela 1956 – PNAD, domicílios por esgotamento sanitário, 2014-2015",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/1956/n1/all/v/96,1000096/p/2014,2015/c12058/0/c1/0/c7173/0,99663,99664"
+        },
+        {
+          "descricao": "IBGE/SIDRA Tabela 1955 – PNAD, domicílios por forma de abastecimento de água, 2014-2015",
+          "tipo": "dado_oficial",
+          "url": "https://apisidra.ibge.gov.br/values/t/1955/n1/all/v/96,1000096/p/2014,2015/c12058/0/c1/0/c61/0,1033"
+        },
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): Saneamento, 632 obras concluídas em 2015",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 33,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "Nenhum programa chamado 'PAC 3' foi lançado. O governo seguiu com a carteira 'PAC 2015-2018' (R$ 1,04 trilhão previstos; R$ 251,7 bilhões executados em 2015). Ferrovias (2.398 km em obras) e hidrovias seguiram na carteira, mas os dados oficiais não mostram que esses modais passaram a ser prioridade. Leitura: cumprimento parcial, porque houve nova etapa do PAC, mas não o lançamento anunciado nem a priorização comprovada.",
+      "evidencias": [
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): execução 2015-2018, ferrovias e hidrovias",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 34,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pelo balanço oficial do PAC, foram acrescentados 5.217 MW de capacidade instalada de geração em 2015, sendo 2.360 MW hidrelétricos, 2.717 MW eólicos e 140 MW térmicos. A expansão do parque gerador ocorreu no mandato.",
+      "evidencias": [
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): geração de energia, 5.217 MW acrescidos em 2015",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 35,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Tratar como prioridade' não traz critério mensurável no enunciado. Como registro, o balanço oficial do PAC aponta 13 obras de recursos hídricos entregues em 2015, entre elas adutoras e o Trecho III do Canal do Sertão Alagoano.",
+      "evidencias": [
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): recursos hídricos, 13 empreendimentos entregues em 2015",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 36,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Fortalecer a economia de baixo carbono' é um enunciado genérico, sem meta ou critério mensurável definido na promessa.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 37,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "\"Acelerar\" a implantação do CAR não tem meta nem linha de base definida (mesmo critério do item do Vale-Cultura). Como registro, a MP 724, de 04/05/2016, prorrogou o prazo de inscrição no CAR para pequenos imóveis até 05/05/2017, sinal de que a implantação não estava concluída ao fim do governo.",
+      "evidencias": [
+        {
+          "descricao": "Medida Provisória 724, de 04/05/2016 (prazo do CAR)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/mpv/mpv724.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 38,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "O Programa Nacional de Plataformas do Conhecimento foi instituído pelo Decreto 8.269, de 25/06/2014, antes do mandato. Não foi localizada fonte oficial que mostre se alguma plataforma foi ou não implantada entre 2015 e 12/05/2016.",
+      "evidencias": [
+        {
+          "descricao": "Decreto 8.269/2014 (institui o PNPC)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8269.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 39,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Leitura literal: a promessa é demarcar terras indígenas, sem meta de quantidade. Em abril de 2016, antes do afastamento, foram homologadas por decreto as demarcações das TIs Cachoeira Seca (PA, 04/04/2016), Piaçaguera (SP, 29/04/2016) e Pequizal do Naruvôtu (MT, 29/04/2016). Não houve mudança nas normas de demarcação.",
+      "evidencias": [
+        {
+          "descricao": "Decreto de 04/04/2016 – homologa a TI Cachoeira Seca",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/dsn/dsn14369.htm"
+        },
+        {
+          "descricao": "Decreto de 29/04/2016 – homologa a TI Piaçaguera",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/dsn/dsn14376.htm"
+        },
+        {
+          "descricao": "Decreto de 29/04/2016 – homologa a TI Pequizal do Naruvôtu",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/dsn/dsn14378.htm"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 40,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Pelos dados do Sicor/Banco Central, o crédito rural contratado caiu de R$ 164,4 bilhões em 2014 (2,58 milhões de contratos) para R$ 154,1 bilhões em 2015 (2,33 milhões), em valores nominais. Em 2016 foram R$ 117,9 bilhões. O volume efetivamente concedido não foi ampliado no mandato.",
+      "evidencias": [
+        {
+          "descricao": "BCB/Sicor – Matriz de Dados do Crédito Rural, contratações por faixa de valor, 2014",
+          "tipo": "dado_oficial",
+          "url": "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/odata/Faixa?%24filter=AnoEmissao%20eq%20%272014%27&%24format=json&%24top=10000"
+        },
+        {
+          "descricao": "BCB/Sicor – Matriz de Dados do Crédito Rural, contratações por faixa de valor, 2015",
+          "tipo": "dado_oficial",
+          "url": "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/odata/Faixa?%24filter=AnoEmissao%20eq%20%272015%27&%24format=json&%24top=10000"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 41,
+      "status": "parcial",
+      "percentual": null,
+      "justificativa": "No fim de 2015, a carteira oficial de mobilidade urbana tinha 329 empreendimentos (R$ 143 bilhões), dos quais só 17 estavam em operação e 90 em execução. Houve entregas pontuais, como a conclusão da Linha 1 do metrô de Salvador e corredores de ônibus em São Paulo; o VLT do Rio ainda estava em testes. A meta de 9 metrôs, 14 VLTs e 180 BRTs/corredores não foi atingida no mandato.",
+      "evidencias": [
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): Mobilidade Urbana",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 42,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Fortalecer o Mercosul, a Unasul e a CELAC' é uma diretriz de política externa sem critério mensurável definido na promessa.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 43,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Defender a democracia e o princípio de não intervenção' é uma diretriz de política externa sem critério mensurável definido na promessa.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 44,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nenhum plebiscito sobre reforma política foi realizado no mandato. O PDC 1508/2014, que propunha plebiscito sobre uma constituinte do sistema político, nunca foi votado: foi arquivado e desarquivado em 2015 e segue tramitando em conjunto. Leitura: o núcleo verificável da promessa é a realização do plebiscito; o 'apoio' em si não é mensurável.",
+      "evidencias": [
+        {
+          "descricao": "Câmara: tramitação do PDC 1508/2014 (plebiscito sobre constituinte do sistema político)",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/646095/tramitacoes"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 45,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "Nenhuma reforma do pacto federativo foi aprovada no mandato. As emendas constitucionais de 2015 até 12/05/2016 (EC 85 a 91) não tratam disso, e entre as PECs que o Executivo enviou em 2015 (10, 87, 139 e 140/2015) não há proposta de reforma federativa.",
+      "evidencias": [
+        {
+          "descricao": "Quadro das emendas constitucionais (EC 85 a 91, 2015 a 12/05/2016)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/quadro_emc.htm"
+        },
+        {
+          "descricao": "Câmara: PECs de autoria do Poder Executivo apresentadas em 2015",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2015&autor=Executivo&itens=100"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 46,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Não foi localizado ato oficial (portaria ou decreto) que institua ou implante o programa Mais Especialidades entre 2015 e 12/05/2016, nem fonte oficial que comprove a ausência. Sem esse registro, a verificação fica inconclusiva.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 47,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "O Ministério da Saúde abriu novos ciclos de adesão no mandato (editais SGTES de jan/2015 a mai/2016). O programa chegou a 18.240 vagas preenchidas em 4.058 municípios e 34 distritos indígenas, e o contingente de médicos cooperados atingiu o máximo, 11.429, em 2015. Leitura literal de 'expandir': houve expansão no mandato.",
+      "evidencias": [
+        {
+          "descricao": "Ministério da Saúde/SGTES, 'Programa Mais Médicos' (2017), com editais 2015-2016 e totais do programa (cópia no catálogo do Ipea)",
+          "tipo": "dado_oficial",
+          "url": "https://catalogo.ipea.gov.br/uploads/398_1.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 48,
+      "status": "cumprida",
+      "percentual": null,
+      "justificativa": "Pelo balanço oficial do PAC, 38 UPAs foram concluídas em 2015, chegando a 448 concluídas de 929 contratadas até dezembro de 2015. Leitura literal de 'ampliar': a rede de UPAs cresceu no mandato, embora boa parte das unidades contratadas não estivesse pronta.",
+      "evidencias": [
+        {
+          "descricao": "2º Balanço do PAC 2015-2018 (Ministério do Planejamento, dados até 31/12/2015; cópia arquivada do pac.gov.br): Equipamentos sociais, UPAs",
+          "tipo": "dado_oficial",
+          "url": "http://web.archive.org/web/20160629004744/http://pac.gov.br/pub/up/relatorio/23216159149151fbfbcedb1d57dff510.pdf"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 49,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "O SAMU não foi universalizado. Segundo o Ministério da Saúde, a cobertura do SAMU 192 chegou a 86,6% da população (3.917 municípios) só em 2023; portanto, ainda não era universal ao fim do mandato, em 2016.",
+      "evidencias": [
+        {
+          "descricao": "Ministério da Saúde (CGURG/SAES) – apresentação 'SAMU e o envelhecimento da população' na Câmara, set/2023: cobertura de 86,6% da população",
+          "tipo": "dado_oficial",
+          "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/cssf/arquivos/12-09-2023-samu-felipe-reque"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 50,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Reforçar a proteção à juventude para prevenir a gravidez precoce' é um enunciado genérico, sem meta ou critério mensurável definido na promessa.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 51,
+      "status": "nao_cumprida",
+      "percentual": null,
+      "justificativa": "A Constituição não foi alterada para dar à União atribuições em segurança pública. Nenhuma das emendas de 2015 até 12/05/2016 (EC 85 a 91) trata do tema, e entre as PECs do Executivo enviadas em 2015 (10, 87, 139 e 140/2015) não há proposta sobre segurança pública.",
+      "evidencias": [
+        {
+          "descricao": "Quadro das emendas constitucionais (EC 85 a 91, 2015 a 12/05/2016)",
+          "tipo": "norma",
+          "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/quadro_emc.htm"
+        },
+        {
+          "descricao": "Câmara: PECs de autoria do Poder Executivo apresentadas em 2015",
+          "tipo": "tramitacao",
+          "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?siglaTipo=PEC&ano=2015&autor=Executivo&itens=100"
+        }
+      ],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 52,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Não foi localizado ato oficial que institua um 'Programa de Segurança Integrada' entre 2015 e 12/05/2016, nem fonte oficial que comprove a ausência ou dados de implantação dos centros integrados nos estados.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 53,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "Não foi localizado ato oficial de criação de uma Academia Nacional de Segurança Pública entre 2015 e 12/05/2016, nem fonte oficial que comprove a ausência. A verificação fica inconclusiva.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    },
+    {
+      "levantamento": "g1-dilma",
+      "indice": 54,
+      "status": "nao_verificavel",
+      "percentual": null,
+      "justificativa": "'Implantar uma política para recuperação de presos' não define instrumento nem meta. Não foi localizado ato oficial do período com esse objeto. A Política Nacional de Alternativas Penais (Portaria MJ 495, de 28/04/2016) trata de alternativas à prisão, não de recuperação de presos, e o texto oficial dela não foi aberto.",
+      "evidencias": [],
+      "data_verificacao": "2026-10-21"
+    }
+  ]
+}
