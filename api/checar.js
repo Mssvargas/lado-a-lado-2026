@@ -29,7 +29,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-22b';
+const VERSAO = '2026-10-22c';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -741,7 +741,9 @@ function promptSite(pergunta, blocos, consultas) {
     '- Depois de cada afirmação, cite o bloco entre colchetes, ex.: [S12]. Use só ids que aparecem abaixo.\n' +
     '- Trate os candidatos exatamente da mesma forma: se a pergunta envolve mais de um, responda sobre cada um com extensão parecida.\n' +
     '- Não opine, não recomende voto, não avalie se proposta é boa ou ruim. Quando houver estudos ou avaliações nos blocos, relate o que eles dizem, atribuindo a quem disse.\n' +
-    '- Português simples, de 3 a 7 frases curtas.\n' +
+    '- Responda direto ao eleitor, sem mencionar "blocos" nem "material".\n' +
+    '- Se a pergunta pede uma lista (ex.: quais presidentes, quais propostas), liste TODOS os itens que aparecem nos blocos, sem omitir nenhum.\n' +
+    '- Português simples, de 3 a 8 frases curtas.\n' +
     '- "citacoes": até 4 trechos LITERAIS (até 30 palavras) dos blocos usados, com o id.\n\n' +
     'Pergunta: """' + pergunta + '"""\n\n=== BLOCOS ===\n' + (txt || '(nenhum bloco encontrado)') + '\n\n' +
     'Responda só com JSON: {"resposta":"texto com [S..] após cada afirmação","citacoes":[{"id":"S0","trecho":"..."}]}';
@@ -772,11 +774,13 @@ async function responderSite(req, corpo, envia) {
   }
   // Só ficam as marcações de blocos que existem; a ordem de aparição define a numeração.
   const usados = [];
-  const resposta = String(r.json.resposta || '').slice(0, 2500).replace(/\[([SL][^\]\s]{0,80})\]/g, (m, id) => {
+  // Aceita também várias fontes no mesmo colchete: [S1, S2] vira [S1][S2].
+  const resposta = String(r.json.resposta || '').slice(0, 2500).replace(/\[([SL][^\]]{0,300})\]/g, (m, dentro) => dentro.split(/\s*[,;]\s*/).map((id) => {
+    id = id.trim();
     if (!porId.has(id)) return '';
     if (usados.indexOf(id) < 0) usados.push(id);
     return '[' + id + ']';
-  }).replace(/\s+([.,;])/g, '$1');
+  }).join('')).replace(/\s+([.,;])/g, '$1');
   let descartadas = 0;
   const citacoes = [];
   for (const c of Array.isArray(r.json.citacoes) ? r.json.citacoes.slice(0, 6) : []) {
