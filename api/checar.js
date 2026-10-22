@@ -29,7 +29,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-22c';
+const VERSAO = '2026-10-22d';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -694,9 +694,18 @@ function siteIndice() {
     }
   }
   // Resumo para perguntas de conjunto ("quais presidentes eram de direita?").
-  const eleitos = [];
-  for (const e of ((ler('eleicoes.json') || {}).eleicoes || [])) for (const c of e.candidatos) if (c.eleito) eleitos.push(e.ano + ': ' + c.nome + ' (' + (c.partido || 'sem partido') + ')' + (posicao(e.ano, c.nome) || ', sem classificação'));
-  add('eleicao', 'Presidentes eleitos e posição ideológica', 'Todos os presidentes eleitos, com a posição no eixo esquerda–direita: ' + eleitos.join('; ') + '.', { link: '#eleicoes' });
+  // Agrupado por posição, com o nome exato de cada uma, para a IA não juntar categorias vizinhas.
+  const porEixo = {};
+  for (const e of ((ler('eleicoes.json') || {}).eleicoes || [])) {
+    for (const c of e.candidatos) {
+      if (!c.eleito) continue;
+      const i = ideo.get(e.ano + '|' + fold(c.nome));
+      const eixo = i ? i.eixo.replace('_', ' ') : 'sem classificacao';
+      (porEixo[eixo] = porEixo[eixo] || []).push(c.nome + ' (' + e.ano + ', ' + (c.partido || 'sem partido') + ')');
+    }
+  }
+  add('eleicao', 'Presidentes eleitos e posição ideológica', 'Presidentes eleitos agrupados pela posição no eixo esquerda–direita, cada grupo é uma categoria diferente: ' +
+    Object.entries(porEixo).map(([k, v]) => k.toUpperCase() + ': ' + v.join(', ')).join('. ') + '.', { link: '#eleicoes' });
   for (const g of ((ler('governos.json') || {}).governos || [])) {
     add('governo', g.presidente + ' (' + String(g.inicio).slice(0, 4) + '–' + (g.fim ? String(g.fim).slice(0, 4) : 'hoje') + ')',
       (g.contexto || '') + ' Chegada ao poder: ' + (g.chegada || '') + '. Partido: ' + (g.partido || 'sem partido') + '. Avanços registrados: ' + (g.avancos || []).map((a) => a.texto).join(' ') +
