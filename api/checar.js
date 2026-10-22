@@ -29,7 +29,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-22a';
+const VERSAO = '2026-10-22b';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -693,9 +693,13 @@ function siteIndice() {
       add('entrega', g.nome + ' · ' + it.titulo, it.o_que_e + ' Não estava no plano de governo. Alcance: ' + ((it.alcance || {}).texto || '') + ' Avaliações (' + it.balanco + '): ' + (it.resumo_avaliacoes || '') + ' Quem ganha: ' + (it.quem_ganha || '') + ' Quem paga ou perde: ' + (it.quem_paga_ou_perde || ''), { link: '#historico' });
     }
   }
+  // Resumo para perguntas de conjunto ("quais presidentes eram de direita?").
+  const eleitos = [];
+  for (const e of ((ler('eleicoes.json') || {}).eleicoes || [])) for (const c of e.candidatos) if (c.eleito) eleitos.push(e.ano + ': ' + c.nome + ' (' + (c.partido || 'sem partido') + ')' + (posicao(e.ano, c.nome) || ', sem classificação'));
+  add('eleicao', 'Presidentes eleitos e posição ideológica', 'Todos os presidentes eleitos, com a posição no eixo esquerda–direita: ' + eleitos.join('; ') + '.', { link: '#eleicoes' });
   for (const g of ((ler('governos.json') || {}).governos || [])) {
     add('governo', g.presidente + ' (' + String(g.inicio).slice(0, 4) + '–' + (g.fim ? String(g.fim).slice(0, 4) : 'hoje') + ')',
-      (g.contexto || '') + ' Chegada ao poder: ' + (g.chegada || '') + '. Avanços registrados: ' + (g.avancos || []).map((a) => a.texto).join(' ') +
+      (g.contexto || '') + ' Chegada ao poder: ' + (g.chegada || '') + '. Partido: ' + (g.partido || 'sem partido') + '. Avanços registrados: ' + (g.avancos || []).map((a) => a.texto).join(' ') +
       ' Críticas registradas: ' + (g.criticas || []).map((a) => a.texto + (a.autor_da_critica ? ' (' + a.autor_da_critica + ')' : '')).join(' '), { link: '#eleicoes' });
   }
   SITE = blocos;
