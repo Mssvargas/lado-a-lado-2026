@@ -701,6 +701,755 @@
     }
    ],
    "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 8,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Não foi criado por lei, no mandato, um Fundo Nacional da Pessoa com Deficiência. O PL 552/2019, do Senado, que institui o Fundo Nacional dos Direitos das Pessoas com Deficiência, só foi aprovado em comissão em decisão terminativa em 18/12/2025 e seguiu para a Câmara.",
+   "evidencias": [
+    {
+     "descricao": "Senado, dados abertos: PL 552/2019 (Fundo Nacional dos Direitos das Pessoas com Deficiência), aprovado em comissão em 18/12/2025 e remetido à Câmara",
+     "tipo": "tramitacao",
+     "url": "https://legis.senado.leg.br/dadosabertos/materia/PL/552/2019"
+    },
+    {
+     "descricao": "Senado: página da matéria PL 552/2019",
+     "tipo": "tramitacao",
+     "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/135116"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 41,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Segundo o resumo oficial do STF sobre a Ext 1.085, em 2018, antes do mandato, o Presidente da República revogou o ato de 2010 que negava a entrega; Battisti fugiu do Brasil, foi capturado na Bolívia em 2019 e extraditado diretamente para a Itália. A entrega à Itália, núcleo da promessa, ocorreu em janeiro de 2019, mas o ato brasileiro que a autorizou é anterior ao mandato e a entrega física foi feita a partir da Bolívia.",
+   "evidencias": [
+    {
+     "descricao": "STF: Ext 1.085 (Cesare Battisti), resumo de caso relevante",
+     "tipo": "decisao",
+     "url": "https://www.stf.jus.br/arquivo/cms/publicacaoBOInternet/anexo/link_download/casos_relevantes/pt/EXT_1085.pdf"
+    },
+    {
+     "descricao": "STF: página processual da Ext 1.085",
+     "tipo": "decisao",
+     "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2514526"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 42,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O governo instituiu o Programa Informatiza APS (Portaria 2.983/2019), que financia prontuário eletrônico nas equipes de atenção primária, e a Rede Nacional de Dados em Saúde (Portaria 1.434/2020), plataforma nacional de interoperabilidade. A integração prevista é gradual, sem prazo, e não há dado oficial de prontuário nacional interligado concluído até 2022.",
+   "evidencias": [
+    {
+     "descricao": "Portaria GM/MS 2.983/2019 (Programa Informatiza APS)",
+     "tipo": "norma",
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2019/prt2983_13_11_2019.html"
+    },
+    {
+     "descricao": "Portaria GM/MS 1.434/2020 (Programa Conecte SUS e RNDS)",
+     "tipo": "norma",
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt1434_29_05_2020.html"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 43,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "No programa de governo, o credenciamento universal significa que toda a força de trabalho da saúde possa ser usada pelo SUS e que todo médico possa atender qualquer plano de saúde. Não foi editada norma com esse conteúdo; a Portaria 639/2020 ('O Brasil Conta Comigo') criou só um cadastro e uma capacitação de profissionais para a Covid-19.",
+   "evidencias": [
+    {
+     "descricao": "Portaria GM/MS 639/2020 (Ação Estratégica 'O Brasil Conta Comigo - Profissionais da Saúde')",
+     "tipo": "norma",
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2020/prt0639_02_04_2020.html"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 44,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Não foi criada carreira pública de 'Médico de Estado'. A Lei 13.958/2019 instituiu o Programa Médicos pelo Brasil para locais de difícil provimento, com contratação pela agência Adaps sob o regime da CLT (art. 21), e não como carreira de Estado.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.958/2019 (Programa Médicos pelo Brasil; contratação pela CLT, art. 21)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13958.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 45,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Em maio de 2022 o Ministério da Saúde lançou o Plano Nacional de Garantia do Pré-Natal Odontológico no SUS, que torna rotina o encaminhamento da gestante do pré-natal ao atendimento odontológico, e a Portaria GM/MS 4.058/2022 criou incentivo financeiro com meta de 60% de gestantes atendidas. O ato atende o núcleo; a cobertura efetiva não foi aferida aqui.",
+   "evidencias": [
+    {
+     "descricao": "Ministério da Saúde: lançamento do Plano Nacional de Garantia do Pré-Natal Odontológico (maio/2022)",
+     "tipo": "ato_publicado",
+     "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2022/maio/ministerio-da-saude-lanca-plano-nacional-de-garantia-do-pre-natal-odontologico-no-sus"
+    },
+    {
+     "descricao": "Portaria GM/MS 4.058/2022 (incentivo para ações de pré-natal odontológico)",
+     "tipo": "norma",
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2022/prt4058_19_12_2022.html"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 46,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Portaria GM/MS 1.105/2022 criou incentivo federal para ações de atividade física na atenção primária, com valor adicional quando a unidade tem profissional de educação física cadastrado. A adesão é opcional e a norma não altera a composição obrigatória das equipes de Saúde da Família.",
+   "evidencias": [
+    {
+     "descricao": "Portaria GM/MS 1.105/2022 (incentivo de atividade física na APS)",
+     "tipo": "norma",
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2022/prt1105_17_05_2022.html"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 47,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 13.964/2019 manteve a progressão de regime: o novo art. 112 da Lei de Execução Penal só elevou os percentuais de pena exigidos (de 16% a 70%). Nenhuma lei do mandato extinguiu a progressão.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.964/2019 (Pacote Anticrime), nova redação do art. 112 da Lei de Execução Penal",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 48,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Lei 13.964/2019 incluiu o § 2º no art. 122 da Lei de Execução Penal, que tira o direito à saída temporária do condenado por crime hediondo com resultado morte. O instituto continuou existindo para os demais presos até o fim do mandato; o fim só foi atingido para um grupo restrito.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.964/2019, art. 122, § 2º, da Lei de Execução Penal (vedação para crime hediondo com resultado morte)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 49,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "O art. 228 da Constituição continua estabelecendo que são penalmente inimputáveis os menores de dezoito anos; nenhuma emenda constitucional de 2019 a 2022 alterou o dispositivo.",
+   "evidencias": [
+    {
+     "descricao": "Constituição Federal, art. 228 (texto compilado)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    },
+    {
+     "descricao": "Quadro das emendas constitucionais (Planalto)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/quadro_emc.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 50,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "No mandato, o Estatuto do Desarmamento (Lei 10.826/2003) teve só duas alterações legais: a Lei 13.870/2019, que estendeu a posse de arma a toda a área do imóvel rural, e a Lei 13.964/2019, que endureceu penas. A flexibilização veio sobretudo por decretos regulamentares, como o 9.847/2019; a reformulação da lei em si não ocorreu.",
+   "evidencias": [
+    {
+     "descricao": "Lei 10.826/2003, texto compilado (alterações pelas Leis 13.870/2019 e 13.964/2019)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.826.htm"
+    },
+    {
+     "descricao": "Decreto 9.847/2019 (regulamenta a Lei 10.826/2003)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9847.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 51,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A Lei 13.964/2019 criou proteções só para agentes de segurança pública: legítima defesa de quem repele agressão a vítima refém (art. 25, parágrafo único, do Código Penal) e defensor quando investigados por uso de força letal (art. 14-A do CPP). A ampliação do excludente de ilicitude do art. 23 não foi aprovada, nada foi criado para civis, e o PL 6.125/2019, do Executivo, sobre excludente em operações de GLO, foi retirado em 2023.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.964/2019, arts. 2º (CP art. 25, par. único) e 3º (CPP art. 14-A)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+    },
+    {
+     "descricao": "Câmara: PL 6.125/2019 (Poder Executivo), situação 'Retirado pelo autor'",
+     "tipo": "tramitacao",
+     "url": "https://www.camara.leg.br/propostas-legislativas/2230394"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 52,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A Lei Antiterrorismo (Lei 13.260/2016) não recebeu alteração no mandato e não tipifica invasão de propriedade como terrorismo. Nenhuma lei com esse conteúdo foi sancionada entre 2019 e 2022.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.260/2016, texto compilado (sem alterações)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13260.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 53,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "O art. 243 da Constituição mantém a redação da EC 81/2014, que prevê a expropriação sem indenização de propriedades com cultivo ilegal de psicotrópicos ou exploração de trabalho escravo, e a função social da propriedade segue no art. 5º, XXIII. Nenhuma emenda do mandato alterou esses dispositivos.",
+   "evidencias": [
+    {
+     "descricao": "Constituição Federal, arts. 5º, XXIII, e 243 (texto compilado)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    },
+    {
+     "descricao": "Quadro das emendas constitucionais (Planalto)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/quadro_emc.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 54,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Em vez de acabar, a audiência de custódia foi incluída no Código de Processo Penal pela Lei 13.964/2019, sancionada no mandato: o novo art. 310 obriga o juiz a promovê-la em até 24 horas após a prisão em flagrante, e o art. 287 a prevê também na prisão por mandado.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.964/2019, nova redação dos arts. 287 e 310 do CPP (audiência de custódia)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 55,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Foram sancionadas no mandato várias leis que endurecem a resposta a crimes contra mulheres, entre elas a Lei 14.132/2021 (crime de perseguição, com pena aumentada quando a vítima é mulher), a Lei 14.188/2021 (crime de violência psicológica contra a mulher e lesão corporal qualificada por razões da condição do sexo feminino), a Lei 13.880/2019 (apreensão de arma do agressor) e a Lei 13.827/2019 (medida protetiva aplicada pela autoridade policial).",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.132/2021 (crime de perseguição, art. 147-A do CP)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14132.htm"
+    },
+    {
+     "descricao": "Lei 14.188/2021 (art. 147-B do CP e § 13 do art. 129)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14188.htm"
+    },
+    {
+     "descricao": "Lei 13.880/2019 (apreensão de arma de fogo do agressor)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13880.htm"
+    },
+    {
+     "descricao": "Lei 13.827/2019 (medidas protetivas de urgência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13827.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 56,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "O art. 190 do antigo Regulamento de Produtos Controlados (Decreto 3.665/2000) mandava negar ou restringir a importação de produto controlado fabricado no país por indústria considerada estratégica. O dispositivo foi revogado pelo Decreto 9.847/2019, e o Decreto 10.030/2019 revogou o regulamento inteiro e aprovou um novo, o que abriu a importação à concorrência. O efeito sobre a participação de mercado da fabricante nacional não foi medido aqui.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 3.665/2000, art. 190 (restrição à importação com similar nacional), revogado",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/decreto/d3665.htm"
+    },
+    {
+     "descricao": "Decreto 9.847/2019, art. 60 (revoga o art. 190 do Decreto 3.665/2000)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9847.htm"
+    },
+    {
+     "descricao": "Decreto 10.030/2019 (novo Regulamento de Produtos Controlados), art. 6º",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D10030.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "g1-bolsonaro",
+   "indice": 57,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Em 19/02/2019 o Poder Executivo enviou à Câmara o PL 882/2019, cuja ementa é 'estabelecer medidas contra a corrupção, o crime organizado e os crimes praticados com grave violência a pessoa', e o PL 881/2019, que criminaliza o caixa dois eleitoral. O PL 882 foi absorvido pelo projeto que virou a Lei 13.964/2019; o PL 881 continuou em tramitação sem aprovação. As '10 Medidas contra a Corrupção' do MPF em si não foram reenviadas pelo Executivo.",
+   "evidencias": [
+    {
+     "descricao": "Câmara, dados abertos: PL 882/2019 (Poder Executivo), 'medidas contra a corrupção'",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2192353"
+    },
+    {
+     "descricao": "Câmara, dados abertos: PL 881/2019 (Poder Executivo), criminalização do caixa dois",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2192352"
+    },
+    {
+     "descricao": "Lei 13.964/2019 (resultado do pacote enviado)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 0,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "Leitura literal com três partes. Emprego: a desocupação caiu de 11,7% (4º tri/2018) para 7,9% (4º tri/2022), pela PNAD Contínua. Crescimento: o PIB variou 1,2% (2019), -3,3% (2020), 4,8% (2021) e 3,0% (2022). Inflação baixa: o IPCA ficou na meta em 2019 e 2020, mas estourou o teto em 2021 (10,06% ante meta de 3,75%) e em 2022 (5,79% ante 3,50%), o que obrigou o Banco Central a enviar cartas abertas.",
+   "evidencias": [
+    {
+     "descricao": "IBGE, SIDRA tabela 4099: taxa de desocupação trimestral (PNAD Contínua)",
+     "tipo": "dado_oficial",
+     "url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/201804,201904,202004,202104,202204?formato=json"
+    },
+    {
+     "descricao": "Banco Central, SGS 7326: PIB, variação real anual",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.7326/dados?formato=json&dataInicial=01/01/2018&dataFinal=31/12/2022"
+    },
+    {
+     "descricao": "Banco Central, SGS 13522: IPCA acumulado em 12 meses",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    },
+    {
+     "descricao": "Banco Central: Carta Aberta de 2021 (IPCA de 10,06% ante meta de 3,75%)",
+     "tipo": "dado_oficial",
+     "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/OF_CIO_823_2022_BCB_SECRE_01.pdf"
+    },
+    {
+     "descricao": "Banco Central: Carta Aberta de 2022 (IPCA de 5,79% ante meta de 3,50%)",
+     "tipo": "dado_oficial",
+     "url": "https://www.bcb.gov.br/content/controleinflacao/controleinflacao_docs/carta_aberta/carta2022.pdf"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 1,
+   "status": "nao_verificavel",
+   "percentual": null,
+   "justificativa": "No programa, a frase é 'as obras e serviços públicos serão mais baratos e com maior controle social', sem meta nem indicador. Não há série oficial que compare o custo de obras e serviços públicos federais de forma padronizada entre 2018 e 2022 para aferir barateamento.",
+   "evidencias": [],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 2,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "Pelo Banco Central, o setor público consolidado teve déficit primário de 0,84% do PIB em 2019 (primeiro ano) e de 9,24% em 2020 (segundo ano). Pelo TCU, o Governo Central teve déficit de R$ 88,9 bilhões em 2019 e de R$ 745,3 bilhões em 2020. As duas metas com prazo não foram atingidas; o superávit só veio em 2021 (setor consolidado) e 2022.",
+   "evidencias": [
+    {
+     "descricao": "Banco Central, SGS 5793: resultado primário do setor público consolidado, % do PIB, 12 meses",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.5793/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    },
+    {
+     "descricao": "TCU, Contas do Governo 2019, Política Fiscal (déficit de R$ 88,9 bi em 2019)",
+     "tipo": "auditoria",
+     "url": "https://sites.tcu.gov.br/contas-do-governo-2019/politica-fiscal.htm"
+    },
+    {
+     "descricao": "TCU, Contas do Presidente 2022, Política Fiscal (resultado primário 2020-2022)",
+     "tipo": "auditoria",
+     "url": "https://sites.tcu.gov.br/contas-do-governo-2022/03-politica-fiscal.html"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 3,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O resultado depende do indicador. Pelo Banco Central, a dívida bruta do governo geral caiu de 75,3% para 71,7% do PIB entre dez/2018 e dez/2022 (depois de chegar a 87,7% em 2020), mas subiu de R$ 5,27 trilhões para R$ 7,22 trilhões em valor nominal, e a dívida líquida do setor público subiu de 52,8% para 56,1% do PIB. O programa falava em reduzir em 20% o 'volume' da dívida, o que não ocorreu.",
+   "evidencias": [
+    {
+     "descricao": "Banco Central, SGS 13762: dívida bruta do governo geral (% do PIB)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    },
+    {
+     "descricao": "Banco Central, SGS 13761: dívida bruta do governo geral (R$ milhões)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13761/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    },
+    {
+     "descricao": "Banco Central, SGS 4513: dívida líquida do setor público (% do PIB)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4513/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 4,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A meta da Selic, definida pelo Copom, estava em 6,50% ao ano no início do mandato, caiu até 2,00% em agosto de 2020 e subiu a partir de março de 2021 até 13,75% em agosto de 2022, nível em que terminou o mandato. Ao fim do período, os juros básicos estavam mais altos que no início.",
+   "evidencias": [
+    {
+     "descricao": "Banco Central, SGS 432: meta da taxa Selic definida pelo Copom",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/12/2018&dataFinal=31/12/2022"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 5,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Houve extinções e desestatizações no mandato: pelos Boletins das Empresas Estatais Federais, o número de estatais ativas caiu de 200 (4º tri/2019) para 127 (4º tri/2022), e a Lei 14.182/2021 autorizou a desestatização da Eletrobras, concluída em 2022. A promessa, neste enunciado, não fixa número nem prazo.",
+   "evidencias": [
+    {
+     "descricao": "Boletim das Empresas Estatais Federais nº 13 (4º tri/2019)",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/gestao/pt-br/central-de-conteudo/publicacoes/boletins/boletim-das-empresas-estatais-federais/arquivos/13a-edicao-boletim-das-empresas-estatais-federais.pdf"
+    },
+    {
+     "descricao": "Boletim das Estatais – 4º tri/2022",
+     "tipo": "dado_oficial",
+     "url": "https://www.gov.br/gestao/pt-br/central-de-conteudo/publicacoes/boletins/boletim-das-empresas-estatais-federais/arquivos/boletim-das-estatais-4t-2022.pdf"
+    },
+    {
+     "descricao": "Lei 14.182/2021 (desestatização da Eletrobras)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14182.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 6,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "A PEC 6/2019, do Executivo, foi promulgada como Emenda Constitucional 103/2019 e reformou a Previdência, mas sem o regime de capitalização com contas individuais que fazia parte da proposta; o texto promulgado não contém o termo.",
+   "evidencias": [
+    {
+     "descricao": "Emenda Constitucional 103/2019 (Reforma da Previdência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm"
+    },
+    {
+     "descricao": "Câmara: PEC 6/2019 (Poder Executivo), 'Transformado em Norma Jurídica' (EC 103)",
+     "tipo": "tramitacao",
+     "url": "https://www.camara.leg.br/propostas-legislativas/2192459"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 7,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "O Executivo enviou o PL 3.887/2020 (CBS, unificação de PIS e Cofins) e o PL 2.337/2021 (imposto de renda), mas nenhum foi aprovado no mandato: o primeiro ficou parado na Câmara e o segundo, aprovado pela Câmara, parou no Senado. Nenhuma emenda constitucional de 2019 a 2022 reformou o sistema tributário; a reforma só veio com a EC 132/2023.",
+   "evidencias": [
+    {
+     "descricao": "Câmara, dados abertos: PL 3.887/2020 (CBS), situação",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2258196"
+    },
+    {
+     "descricao": "Câmara, dados abertos: PL 2.337/2021, aguardando apreciação pelo Senado",
+     "tipo": "tramitacao",
+     "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2288389"
+    },
+    {
+     "descricao": "Quadro das emendas constitucionais (Planalto)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/quadro_emc.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 8,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 14.284/2021 instituiu o Auxílio Brasil em substituição ao Bolsa Família, e a Lei 14.342/2022 criou benefício extraordinário de caráter continuado que complementa a renda da família até R$ 400. O valor supera os benefícios do Bolsa Família fixados em 2018 pelo Decreto 9.396 (por exemplo, básico de R$ 89 e variável de R$ 41). O programa atende famílias inscritas no Auxílio Brasil, não toda a população.",
+   "evidencias": [
+    {
+     "descricao": "Lei 14.284/2021 (Programa Auxílio Brasil)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14284.htm"
+    },
+    {
+     "descricao": "Lei 14.342/2022 (benefício extraordinário até R$ 400)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14342.htm"
+    },
+    {
+     "descricao": "Decreto 5.209/2004, art. 19, valores do Bolsa Família (redação do Decreto 9.396/2018)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5209.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 9,
+   "status": "nao_cumprida",
+   "percentual": null,
+   "justificativa": "A MP 905/2019 instituiu o Contrato de Trabalho Verde e Amarelo, mas foi revogada pela MP 955/2020 antes de ser convertida em lei. Nenhuma norma posterior recriou o modelo no mandato.",
+   "evidencias": [
+    {
+     "descricao": "MP 905/2019 (revogada)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/mpv/mpv905.htm"
+    },
+    {
+     "descricao": "MP 955/2020 (revoga a MP 905)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/mpv/mpv955.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 10,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "O governo federal lançou em 2021 o Balcão Único, formulário digital que centraliza a abertura de empresas, começando por São Paulo e com expansão gradual. A Lei 14.195/2021 integrou os órgãos de registro e simplificou a abertura, e a Lei 13.874/2019 criou a aprovação tácita. O balcão não chegou a todo o país no mandato nem centraliza o fechamento de empresas, como prometido.",
+   "evidencias": [
+    {
+     "descricao": "gov.br/DREI: governo federal lança 'Balcão Único' para simplificar a abertura de empresas (2021)",
+     "tipo": "ato_publicado",
+     "url": "https://www.gov.br/empresas-e-negocios/pt-br/drei/noticias/governo-federal-lanca-201cbalcao-unico201d-para-simplificar-a-abertura-de-empresas"
+    },
+    {
+     "descricao": "Lei 14.195/2021 (facilitação para abertura de empresas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14195.htm"
+    },
+    {
+     "descricao": "Lei 13.874/2019, art. 3º, IX (aprovação tácita)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13874.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 11,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei 13.844/2019 fixou 16 ministérios (art. 19), além dos órgãos da Presidência com status ministerial (art. 20), abaixo das 29 estruturas do governo anterior. Os Ministérios das Comunicações (Lei 14.074/2020) e do Trabalho e Previdência (Lei 14.261/2021) foram recriados, mas o total seguiu menor que 29. O enunciado não fixa número; a meta de 15 ministérios, avaliada à parte, não foi atingida.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.844/2019, arts. 19 e 20",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13844.htm"
+    },
+    {
+     "descricao": "Lei 14.074/2020 (cria o Ministério das Comunicações)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/L14074.htm"
+    },
+    {
+     "descricao": "Lei 14.261/2021 (cria o Ministério do Trabalho e Previdência)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14261.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 12,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "No programa, a frase está no tópico 'Orçamento Base Zero': os recursos serão disponibilizados 'e haverá o acompanhamento do desempenho de sua gestão'. O Decreto 9.834/2019 criou o Conselho de Monitoramento e Avaliação de Políticas Públicas, que avalia políticas financiadas por gastos diretos e subsídios da União, e a EC 109/2021 tornou obrigatória a avaliação de políticas públicas (art. 37, § 16) e seu uso nas leis orçamentárias (art. 165, § 16). O Orçamento Base Zero em si não foi instituído.",
+   "evidencias": [
+    {
+     "descricao": "Decreto 9.834/2019 (Conselho de Monitoramento e Avaliação de Políticas Públicas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D9834.htm"
+    },
+    {
+     "descricao": "Emenda Constitucional 109/2021 (art. 37, § 16, e art. 165, § 16)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc109.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 13,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Houve atos oficiais de redução de exigências burocráticas: a Lei 13.874/2019 dispensou atos públicos de liberação para atividades de baixo risco (art. 3º, I), o Decreto 10.139/2019 determinou a revisão e a consolidação de portarias, resoluções e instruções normativas de todo o Executivo federal (o 'revogaço') e a Lei 14.195/2021 simplificou a abertura de empresas. Não há indicador oficial agregado de burocracia que permita medir o tamanho da redução.",
+   "evidencias": [
+    {
+     "descricao": "Lei 13.874/2019 (Declaração de Direitos de Liberdade Econômica), art. 3º",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/L13874.htm"
+    },
+    {
+     "descricao": "Decreto 10.139/2019 (revisão e consolidação dos atos normativos inferiores a decreto)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/D10139.htm"
+    },
+    {
+     "descricao": "Lei 14.195/2021 (facilitação para abertura de empresas)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14195.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 14,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Lei Complementar 179/2021 definiu os objetivos do Banco Central e dispôs sobre sua autonomia técnica, operacional, administrativa e financeira, com mandatos fixos para presidente e diretores.",
+   "evidencias": [
+    {
+     "descricao": "Lei Complementar 179/2021",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp179.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 15,
+   "status": "parcial",
+   "percentual": null,
+   "justificativa": "Pelo TCU, os benefícios tributários (renúncias) subiram de R$ 308,4 bilhões em 2019 para R$ 461,1 bilhões em 2022, cerca de 4,2% e 4,6% do PIB, respectivamente (PIB do IBGE na série 1207 do Banco Central): as renúncias não foram reduzidas. Do lado da despesa, o TCU registra queda das despesas com pessoal e encargos em proporção do PIB em 2021 e 2022 e relativa estabilidade dos demais componentes, fora o pico da pandemia. Só a parte de corte de despesas teve algum avanço.",
+   "evidencias": [
+    {
+     "descricao": "TCU, Contas do Governo 2019: benefícios tributários de R$ 308,4 bi em 2019",
+     "tipo": "auditoria",
+     "url": "https://sites.tcu.gov.br/contas-do-governo-2019/beneficios-tributarios-financeiros-e-crediticios.htm"
+    },
+    {
+     "descricao": "TCU, Contas do Presidente 2022: benefícios tributários de R$ 461,1 bi em 2022",
+     "tipo": "auditoria",
+     "url": "https://sites.tcu.gov.br/contas-do-governo-2022/04-beneficios-tributarios-financeiros-e-crediticios.html"
+    },
+    {
+     "descricao": "TCU, Contas do Presidente 2022, Política Fiscal (despesas primárias e componentes, % do PIB)",
+     "tipo": "auditoria",
+     "url": "https://sites.tcu.gov.br/contas-do-governo-2022/03-politica-fiscal.html"
+    },
+    {
+     "descricao": "Banco Central, SGS 1207: PIB em valores correntes (IBGE)",
+     "tipo": "dado_oficial",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1207/dados?formato=json&dataInicial=01/01/2018&dataFinal=31/12/2022"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 16,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "Não foi editada no mandato lei ou decreto de regulação de conteúdo ou de 'controle social' de veículos de imprensa. O ato mais próximo foi a MP 1.068/2021, que alterava o Marco Civil da Internet para limitar a moderação de conteúdo por provedores de redes sociais; ela não tratava de veículos jornalísticos e consta no Planalto como rejeitada, sem conversão em lei.",
+   "evidencias": [
+    {
+     "descricao": "MP 1.068/2021 (uso de redes sociais; rejeitada)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/mpv/mpv1068.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
+  },
+  {
+   "levantamento": "metropoles-bolsonaro",
+   "indice": 17,
+   "status": "cumprida",
+   "percentual": null,
+   "justificativa": "A Resolução Gecex 269/2021 reduziu em 10% as alíquotas do Imposto de Importação de cerca de 87% do universo tarifário, e a Resolução Gecex 353/2022 fez nova redução de 10%. Sobre barreiras não tarifárias, o Brasil firmou com os EUA em 2020 o Protocolo sobre Regras Comerciais e de Transparência, com capítulo de facilitação de comércio, promulgado pelo Decreto 11.092/2022. O acordo Mercosul-União Europeia não foi assinado no período.",
+   "evidencias": [
+    {
+     "descricao": "MDIC/Camex – Perguntas sobre a Resolução Gecex 269/2021",
+     "tipo": "norma",
+     "url": "https://www.gov.br/mdic/pt-br/assuntos/camex/estrategia-comercial/tarifas/perguntas-sobre-resolucao-gecex-269"
+    },
+    {
+     "descricao": "MDIC/Camex – Resoluções Gecex sobre alterações tarifárias (Gecex 269/2021 e 353/2022)",
+     "tipo": "norma",
+     "url": "https://www.gov.br/mdic/pt-br/assuntos/camex/estrategia-comercial/resolucoes-gecex-sobre-alteracoes-tarifarias"
+    },
+    {
+     "descricao": "Decreto 11.092/2022 (promulga o Protocolo Brasil-EUA sobre Regras Comerciais e de Transparência; Anexo I, facilitação do comércio)",
+     "tipo": "norma",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/D11092.htm"
+    }
+   ],
+   "data_verificacao": "2026-10-21"
   }
  ]
 }
