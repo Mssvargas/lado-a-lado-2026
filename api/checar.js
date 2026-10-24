@@ -31,7 +31,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-24a';
+const VERSAO = '2026-10-24b';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -55,23 +55,27 @@ const CHAVE = { groq: 'GROQ_API_KEY', cerebras: 'CEREBRAS_API_KEY', openrouter: 
 const ORDEM = ['groq', 'cerebras', 'openrouter', 'gemini'];
 const configurados = () => ORDEM.filter((p) => !!process.env[CHAVE[p]]);
 
-// Agências de checagem, veículos de grande circulação e órgãos oficiais de Estado, sem
-// veículos de linha editorial declaradamente partidária de nenhum dos lados. Sites de
+// Agências de checagem, imprensa de grande circulação e órgãos oficiais de Estado. Sites de
 // comunicação do governo ficam de fora: o governo é candidato.
+// Decisão do dono do site (24/10/2026): Veja, Gazeta do Povo, Jovem Pan, Revista Oeste,
+// Brasil Paralelo e Ranking dos Políticos entram sempre, para equilibrar a lista de imprensa.
 const CHECAGEM = ['agencialupa.org', 'lupa.uol.com.br', 'aosfatos.org', 'projetocomprova.com.br', 'checamos.afp.com', 'boatos.org', 'e-farsas.com'];
 const IMPRENSA = [
   'estadao.com.br', 'terra.com.br', 'g1.globo.com', 'oglobo.globo.com', 'valor.globo.com', 'noticias.uol.com.br', 'folha.uol.com.br',
   'agenciabrasil.ebc.com.br', 'poder360.com.br', 'bbc.com', 'cnnbrasil.com.br', 'nexojornal.com.br', 'congressoemfoco.com.br',
-  'correiobraziliense.com.br', 'exame.com', 'reuters.com', 'apnews.com', 'dw.com', 'elpais.com'
+  'correiobraziliense.com.br', 'exame.com', 'reuters.com', 'apnews.com', 'dw.com', 'elpais.com',
+  'veja.abril.com.br', 'gazetadopovo.com.br', 'jovempan.com.br', 'revistaoeste.com', 'brasilparalelo.com.br'
 ];
+// Avaliação de parlamentares (não é imprensa nem órgão oficial; aparece com rótulo próprio).
+const AVALIACAO = ['rankingdospoliticos.com.br'];
 const OFICIAIS = [
   'tse.jus.br', 'justicaeleitoral.jus.br', 'stf.jus.br', 'stj.jus.br', 'tst.jus.br', 'cnj.jus.br', 'camara.leg.br', 'senado.leg.br',
   'ibge.gov.br', 'ipea.gov.br', 'bcb.gov.br', 'tcu.gov.br'
 ];
-const DOMINIOS = () => fila('WEB_DOMINIOS', CHECAGEM.concat(IMPRENSA, OFICIAIS));
+const DOMINIOS = () => fila('WEB_DOMINIOS', CHECAGEM.concat(IMPRENSA, OFICIAIS, AVALIACAO));
 // Acervo: legislação compilada e imprensa jurídica antes da imprensa geral.
-const DOMINIOS_LEI = () => fila('WEB_DOMINIOS', ['planalto.gov.br', 'conjur.com.br', 'migalhas.com.br'].concat(OFICIAIS, CHECAGEM, IMPRENSA));
-const ROTULO_FONTE = { checagem: 'agência de checagem', imprensa: 'imprensa', oficial: 'órgão oficial', outra: 'outra fonte' };
+const DOMINIOS_LEI = () => fila('WEB_DOMINIOS', ['planalto.gov.br', 'conjur.com.br', 'migalhas.com.br'].concat(OFICIAIS, CHECAGEM, IMPRENSA, AVALIACAO));
+const ROTULO_FONTE = { checagem: 'agência de checagem', imprensa: 'imprensa', oficial: 'órgão oficial', avaliacao: 'avaliação de parlamentares', outra: 'outra fonte' };
 function tipoFonte(url) {
   let host = '';
   try { host = new URL(url).hostname.replace(/^www\./, ''); } catch (e) { return 'outra'; }
@@ -80,6 +84,7 @@ function tipoFonte(url) {
   if (de(CHECAGEM) || /\/(estadao-verifica|fato-ou-fake|confere)\//.test(url)) return 'checagem';
   if (de(OFICIAIS) || de(['planalto.gov.br'])) return 'oficial';
   if (de(IMPRENSA) || de(['conjur.com.br', 'migalhas.com.br'])) return 'imprensa';
+  if (de(AVALIACAO)) return 'avaliacao';
   return 'outra';
 }
 
@@ -538,7 +543,7 @@ async function pesquisaProfunda(consultas, dominios, prazo, trilha) {
     out.ampla = true;
     juntar(await Promise.all(out.consultas.slice(0, 2).map((q) => pesquisarWeb(q, tempo(), null))));
   }
-  const ordem = { checagem: 0, oficial: 1, imprensa: 1, outra: 2 };
+  const ordem = { checagem: 0, oficial: 1, imprensa: 1, avaliacao: 1, outra: 2 };
   out.resultados = out.resultados.map((x, i) => ({ x, i })).sort((a, b) => ordem[a.x.tipo] - ordem[b.x.tipo] || a.i - b.i).map((y) => y.x).slice(0, 12);
   return out;
 }
