@@ -11,12 +11,14 @@
 // POST /api/checar  { modo: "acervo", pergunta, doc? }  -> resposta com artigos do Acervo Constitucional
 // POST /api/checar  { modo: "site", pergunta }  -> resposta com fontes de todo o conteúdo do site
 //
-// Etapas:
+// Etapas (checagem, "Pergunte ao site" e Acervo):
 //   1. termos de busca (IA rápida; sem IA, usa as palavras da frase)
-//   2. trechos dos planos (busca local nos JSON de data/)
-//   3. busca ao vivo no Tavily, restrita a domínios de checagem e imprensa
-//   4. resposta da IA, só com esse material
-//   5. validação: citação que não existe na página e link que não veio da
+//   2. busca no conteúdo do site (planos, checagens, todos os JSON de data/)
+//   3. primeira resposta da IA só com o site; ela diz se o material bastou
+//   4. se não bastou: busca profunda no Tavily (várias consultas em paralelo em
+//      agências de checagem, imprensa e órgãos oficiais; web aberta se acharem
+//      pouco) e nova resposta com o site e a web
+//   5. validação: citação que não existe na fonte e link que não veio da
 //      busca são descartados antes de responder
 //
 // Chaves (variáveis de ambiente, todas opcionais; sem nenhuma IA, o POST
@@ -24,12 +26,12 @@
 //   GROQ_API_KEY, CEREBRAS_API_KEY, OPENROUTER_API_KEY, GEMINI_API_KEY
 //   TAVILY_API_KEY     busca na web
 //   WEB_DOMINIOS       lista de domínios separada por vírgula (entra na frente da padrão)
-//   TAVILY_DEPTH       "basic" (padrão, 1 crédito) ou "advanced" (2 créditos, trechos melhores)
+//   TAVILY_DEPTH       "basic" economiza créditos na busca profunda (padrão: "advanced", 2 créditos por consulta)
 
 const fs = require('fs');
 const path = require('path');
 
-const VERSAO = '2026-10-22e';
+const VERSAO = '2026-10-24a';
 
 function fila(env, padrao) {
   const extra = (process.env[env] || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -53,14 +55,33 @@ const CHAVE = { groq: 'GROQ_API_KEY', cerebras: 'CEREBRAS_API_KEY', openrouter: 
 const ORDEM = ['groq', 'cerebras', 'openrouter', 'gemini'];
 const configurados = () => ORDEM.filter((p) => !!process.env[CHAVE[p]]);
 
-// Agências de checagem e veículos de grande circulação, sem veículos de
-// linha editorial declaradamente partidária de nenhum dos lados.
-const DOMINIOS = () => fila('WEB_DOMINIOS', [
-  'agencialupa.org', 'lupa.uol.com.br', 'aosfatos.org', 'projetocomprova.com.br', 'checamos.afp.com',
-  'estadao.com.br', 'terra.com.br', 'g1.globo.com', 'noticias.uol.com.br', 'folha.uol.com.br',
-  'agenciabrasil.ebc.com.br', 'tse.jus.br', 'justicaeleitoral.jus.br', 'poder360.com.br',
-  'bbc.com', 'cnnbrasil.com.br', 'nexojornal.com.br', 'congressoemfoco.com.br'
-]);
+// Agências de checagem, veículos de grande circulação e órgãos oficiais de Estado, sem
+// veículos de linha editorial declaradamente partidária de nenhum dos lados. Sites de
+// comunicação do governo ficam de fora: o governo é candidato.
+const CHECAGEM = ['agencialupa.org', 'lupa.uol.com.br', 'aosfatos.org', 'projetocomprova.com.br', 'checamos.afp.com', 'boatos.org', 'e-farsas.com'];
+const IMPRENSA = [
+  'estadao.com.br', 'terra.com.br', 'g1.globo.com', 'oglobo.globo.com', 'valor.globo.com', 'noticias.uol.com.br', 'folha.uol.com.br',
+  'agenciabrasil.ebc.com.br', 'poder360.com.br', 'bbc.com', 'cnnbrasil.com.br', 'nexojornal.com.br', 'congressoemfoco.com.br',
+  'correiobraziliense.com.br', 'exame.com', 'reuters.com', 'apnews.com', 'dw.com', 'elpais.com'
+];
+const OFICIAIS = [
+  'tse.jus.br', 'justicaeleitoral.jus.br', 'stf.jus.br', 'stj.jus.br', 'tst.jus.br', 'cnj.jus.br', 'camara.leg.br', 'senado.leg.br',
+  'ibge.gov.br', 'ipea.gov.br', 'bcb.gov.br', 'tcu.gov.br'
+];
+const DOMINIOS = () => fila('WEB_DOMINIOS', CHECAGEM.concat(IMPRENSA, OFICIAIS));
+// Acervo: legislação compilada e imprensa jurídica antes da imprensa geral.
+const DOMINIOS_LEI = () => fila('WEB_DOMINIOS', ['planalto.gov.br', 'conjur.com.br', 'migalhas.com.br'].concat(OFICIAIS, CHECAGEM, IMPRENSA));
+const ROTULO_FONTE = { checagem: 'agência de checagem', imprensa: 'imprensa', oficial: 'órgão oficial', outra: 'outra fonte' };
+function tipoFonte(url) {
+  let host = '';
+  try { host = new URL(url).hostname.replace(/^www\./, ''); } catch (e) { return 'outra'; }
+  const de = (lista) => lista.some((d) => host === d || host.endsWith('.' + d));
+  // Estadão Verifica, Fato ou Fake (g1) e UOL Confere ficam dentro do site do veículo.
+  if (de(CHECAGEM) || /\/(estadao-verifica|fato-ou-fake|confere)\//.test(url)) return 'checagem';
+  if (de(OFICIAIS) || de(['planalto.gov.br'])) return 'oficial';
+  if (de(IMPRENSA) || de(['conjur.com.br', 'migalhas.com.br'])) return 'imprensa';
+  return 'outra';
+}
 
 // Candidatos da eleição atual: data/eleicao.json (o mesmo arquivo que o site usa).
 const ELEICAO = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'eleicao.json'), 'utf8'));
@@ -458,29 +479,96 @@ function extrairJSON(t) {
   try { return JSON.parse(s.slice(a, b + 1)); } catch (e) { return null; }
 }
 
-async function pesquisarWeb(consulta, timeoutMs) {
+// dominios: lista fechada de sites; sem ela, web aberta com preferência para páginas do Brasil.
+async function pesquisarWeb(consulta, timeoutMs, dominios) {
   if (!process.env.TAVILY_API_KEY) return { ok: false, resultados: [] };
+  const pedido = {
+    query: String(consulta).slice(0, 380),
+    search_depth: process.env.TAVILY_DEPTH === 'basic' ? 'basic' : 'advanced',
+    max_results: dominios ? 6 : 8,
+    include_answer: false
+  };
+  // Na busca avançada, até 3 trechos por página: a parte que importa costuma estar no meio.
+  if (pedido.search_depth === 'advanced') pedido.chunks_per_source = 3;
+  if (dominios) pedido.include_domains = dominios; else pedido.country = 'brazil';
   const r = await comTempo('https://api.tavily.com/search', {
     method: 'POST',
     headers: { 'content-type': 'application/json', authorization: 'Bearer ' + process.env.TAVILY_API_KEY },
-    body: JSON.stringify({
-      query: String(consulta).slice(0, 380),
-      search_depth: process.env.TAVILY_DEPTH === 'advanced' ? 'advanced' : 'basic',
-      max_results: 6,
-      time_range: 'year',
-      include_domains: DOMINIOS(),
-      include_answer: false
-    })
+    body: JSON.stringify(pedido)
   }, timeoutMs);
   if (!r.http) return { ok: false, resultados: [], msg: mensagemErro(r) };
   const resultados = ((r.data && r.data.results) || []).map((x) => ({
     titulo: String(x.title || '').slice(0, 200),
     url: String(x.url || ''),
     fonte: (() => { try { return new URL(x.url).hostname.replace(/^www\./, ''); } catch (e) { return ''; } })(),
-    trecho: String(x.content || '').replace(/\s+/g, ' ').slice(0, 900)
+    tipo: tipoFonte(String(x.url || '')),
+    trecho: String(x.content || '').replace(/\s+/g, ' ').slice(0, 1500)
   })).filter((x) => /^https:\/\//.test(x.url));
   return { ok: true, resultados };
 }
+
+// Busca profunda, para quando o conteúdo do site não responde: até 4 consultas em paralelo
+// na lista de agências, imprensa e órgãos oficiais; se acharem menos de 4 páginas, a web
+// aberta entra também. Agências de checagem vêm primeiro, "outra fonte" por último.
+// Reserva 25 s do prazo para a resposta final.
+async function pesquisaProfunda(consultas, dominios, prazo, trilha) {
+  const qs = [];
+  for (const q of consultas) {
+    const s = String(q || '').replace(/\s+/g, ' ').trim();
+    if (s.length > 3 && !qs.some((x) => fold(x) === fold(s))) qs.push(s);
+  }
+  const out = { feita: false, ampla: false, consultas: qs.slice(0, 4), resultados: [] };
+  if (!process.env.TAVILY_API_KEY || !qs.length) return out;
+  const tempo = () => Math.min(20000, prazo - Date.now() - 25000);
+  const vistos = new Set();
+  const juntar = (rodada) => {
+    rodada.forEach((r) => { if (!r.ok) trilha.push('web: ' + String(r.msg || 'falhou').slice(0, 100)); });
+    // Intercala: o melhor resultado de cada consulta antes do segundo de qualquer uma.
+    for (let i = 0; i < 8; i++) {
+      for (const r of rodada) {
+        const x = r.resultados[i];
+        if (x && !vistos.has(x.url)) { vistos.add(x.url); out.resultados.push(x); }
+      }
+    }
+  };
+  if (tempo() < 3000) return out;
+  out.feita = true;
+  juntar(await Promise.all(out.consultas.map((q) => pesquisarWeb(q, tempo(), dominios))));
+  if (out.resultados.length < 4 && tempo() >= 3000) {
+    out.ampla = true;
+    juntar(await Promise.all(out.consultas.slice(0, 2).map((q) => pesquisarWeb(q, tempo(), null))));
+  }
+  const ordem = { checagem: 0, oficial: 1, imprensa: 1, outra: 2 };
+  out.resultados = out.resultados.map((x, i) => ({ x, i })).sort((a, b) => ordem[a.x.tipo] - ordem[b.x.tipo] || a.i - b.i).map((y) => y.x).slice(0, 12);
+  return out;
+}
+
+// Tempo de cada consulta com IA: duas respostas e a busca profunda no meio (vercel.json: maxDuration 120).
+const PRAZO = 105000;
+
+// O que o navegador mostra sobre a busca na web: se precisou, se achou, se entrou na resposta.
+function resumoBusca(busca, usada) {
+  if (!process.env.TAVILY_API_KEY) return { estado: 'indisponivel' };
+  if (!busca) return { estado: 'nao_precisou' };
+  if (!busca.feita) return { estado: 'sem_tempo' };
+  return { estado: busca.resultados.length ? 'feita' : 'vazia', ampla: busca.ampla, usada: !!usada, consultas: busca.consultas, paginas: busca.resultados.length };
+}
+
+// O que a IA respondeu na primeira passada: o material do site bastou? E o que falta buscar.
+const bastou = (j) => j && (j.suficiente === true || j.suficiente === 'true');
+const faltaBuscar = (j) => (j && Array.isArray(j.buscar) ? j.buscar : []).map(String).slice(0, 3);
+const consultasWebDe = (j) => (j && Array.isArray(j.consultas_web) ? j.consultas_web : j && j.consulta_web ? [j.consulta_web] : []).map(String).slice(0, 3);
+
+function blocosWeb(web) {
+  return web.map((x, i) => '[W' + i + '] ' + x.fonte + ' (' + ROTULO_FONTE[x.tipo] + ') | ' + x.titulo + '\n' + x.trecho).join('\n\n');
+}
+const REGRA_SUFICIENTE =
+  '- "suficiente": true só se o material acima responde por completo e com segurança. Use false se falta um fato, declaração, dado, número, data ou notícia que o material não confirma nem desmente, ou se o assunto não está no material. ' +
+  'Nesse caso, em "buscar", escreva até 3 consultas curtas para achar na web o que falta (checagens, reportagens, dados oficiais).\n';
+const REGRAS_WEB =
+  '- Os blocos [W] vêm de uma busca feita agora na web, porque o conteúdo do site não bastou. Use-os para o que o site não responde e diga sempre quem publicou (ex.: "segundo a Agência Lupa").\n' +
+  '- Dê preferência a agências de checagem e órgãos oficiais. Bloco marcado "outra fonte" está fora da lista de agências e imprensa: use só se nada melhor tratar do assunto, sempre atribuindo.\n' +
+  '- Se as fontes divergem, diga que divergem e quem diz o quê. Bloco [W] que não trata do assunto deve ser ignorado. Não complete com memória.\n';
 
 // ---------- limite por IP (melhor esforço: vale por instância) ----------
 
@@ -501,32 +589,37 @@ function dentroDoLimite(ip) {
 function promptTermos(frase) {
   return 'Você prepara buscas para verificar uma frase sobre a eleição presidencial brasileira de ' + ELEICAO.ano + ' (' + LEGENDA_IDS + ').\n' +
     'Frase: """' + frase + '"""\n' +
-    'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|ambos|indefinido","consultas_plano":["3 a 5 consultas curtas de 1 a 3 palavras, com sinônimos que um plano de governo usaria"],"consulta_web":"uma consulta curta para achar checagens e reportagens sobre a frase"}';
+    'Responda só com JSON: {"sobre":"' + LISTA_IDS + '|ambos|indefinido","consultas_plano":["3 a 5 consultas curtas de 1 a 3 palavras, com sinônimos que um plano de governo usaria"],' +
+    '"consultas_web":["3 consultas para buscar na web, com nomes completos e termos de notícia: uma para checagens (ex.: \\"checagem <assunto> <nome>\\"), uma para reportagens e uma para dados ou documentos oficiais"]}';
 }
 
+// web: null na primeira passada (só o site; a IA diz se bastou); lista de resultados na segunda.
 function promptResposta(frase, cand, trechos, fcs, web, consultas) {
   const blocos = [];
   for (const k of Object.keys(trechos)) {
     for (const p of trechos[k]) blocos.push('[PLANO ' + k + ' p.' + p.p + ']\n' + janela(p, consultas, 2400));
   }
   const fcTxt = fcs.map((x) => '[CHECAGEM ' + x.i + '] ' + CAND[x.c.candidato].nome + ' | ' + x.c.alegacao + ' | veredito: ' + x.c.veredito + ' | ' + x.c.fonte + ', ' + x.c.data + ' | ' + x.c.explicacao).join('\n');
-  const webTxt = web.map((x, i) => '[WEB ' + i + '] ' + x.fonte + ' | ' + x.titulo + '\n' + x.trecho).join('\n\n');
   const who = cand === 'ambos' ? 'Descubra pelo texto de quem a frase fala; se não der, considere todos.' : 'A frase é sobre ' + CAND[cand].nome + '.';
-  return 'Você é um verificador apartidário. Diga se a frase abaixo confere com os planos de governo oficiais dos candidatos à Presidência do Brasil em ' + ELEICAO.ano + ': ' + DESCRICAO + '.\n\n' +
+  return 'Você é um verificador apartidário. Diga se a frase abaixo confere com os planos de governo oficiais dos candidatos à Presidência do Brasil em ' + ELEICAO.ano + ': ' + DESCRICAO + '. ' +
+    'Se a frase fala de uma declaração, um fato ou um número, diga também o que as checagens e reportagens mostram sobre isso.\n\n' +
     'Regras:\n' +
     '- Use SOMENTE o material abaixo. Não use memória, opinião ou fatos de fora.\n' +
     '- Trate os dois candidatos exatamente da mesma forma. Não avalie mérito, viabilidade, constitucionalidade nem intenção.\n' +
-    '- "classificacao" compara a frase com o PLANO: consta | consta_em_parte (o plano trata do tema, mas com diferença de número, alcance ou condição) | nao_consta (o plano não trata; isso NÃO prova que a frase é falsa) | contraria (o plano diz o oposto) | nao_e_proposta (a frase não é sobre proposta, ex.: fato passado ou ataque pessoal).\n' +
+    '- "classificacao" compara a frase com o PLANO: consta | consta_em_parte (o plano trata do tema, mas com diferença de número, alcance ou condição) | nao_consta (o plano não trata; isso NÃO prova que a frase é falsa) | contraria (o plano diz o oposto) | nao_e_proposta (a frase não é sobre proposta, ex.: fato passado, declaração ou ataque pessoal).\n' +
     '- "evidencias": cópia LITERAL do texto de um bloco [PLANO], até 40 palavras, com a página certa. Nada de paráfrase.\n' +
-    '- "imprensa": índices dos blocos [WEB] que tratam DESTA frase ou do mesmo assunto, com 1 frase neutra do que dizem. Ignore os que não tratam.\n' +
     '- "checagens": ids dos blocos [CHECAGEM] que tratam da frase.\n' +
+    (web ? '- "imprensa": índices dos blocos [W] que tratam DESTA frase ou do mesmo assunto, com 1 frase neutra do que dizem, atribuída a quem publicou. Ignore os que não tratam.\n' + REGRAS_WEB
+      : REGRA_SUFICIENTE.replace('responde por completo', 'responde a frase por completo (o que o plano diz e, se a frase é sobre declaração, fato ou número, o que as checagens mostram)')) +
     '- Português simples, frases curtas, sem adjetivos valorativos.\n\n' +
     'Frase: """' + frase + '"""\n' + who + '\n\n' +
     '=== TRECHOS DOS PLANOS ===\n' + (blocos.join('\n\n') || '(nenhum trecho encontrado)') + '\n\n' +
-    '=== CHECAGENS PUBLICADAS ===\n' + (fcTxt || '(nenhuma)') + '\n\n' +
-    '=== BUSCA NA WEB (agências de checagem e imprensa) ===\n' + (webTxt || '(sem resultados)') + '\n\n' +
+    '=== CHECAGENS PUBLICADAS NO SITE ===\n' + (fcTxt || '(nenhuma)') + '\n\n' +
+    (web ? '=== BUSCA NA WEB FEITA AGORA ===\n' + (blocosWeb(web) || '(sem resultados)') + '\n\n' : '') +
     'Responda só com JSON:\n' +
-    '{"sobre":"' + LISTA_IDS + '|ambos|indefinido","classificacao":"...","explicacao":"2 a 4 frases","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}],"imprensa":[{"indice":0,"resumo":"..."}],"checagens":[0],"limites":"1 frase sobre o que não dá para saber só por este material"}';
+    '{"sobre":"' + LISTA_IDS + '|ambos|indefinido","classificacao":"...","explicacao":"2 a 5 frases","evidencias":[{"candidato":"' + LISTA_IDS + '","pagina":0,"trecho":"..."}],' +
+    (web ? '"imprensa":[{"indice":0,"resumo":"..."}],' : '') + '"checagens":[0],"limites":"1 frase sobre o que não dá para saber só por este material"' +
+    (web ? '}' : ',"suficiente":true,"buscar":["..."]}');
 }
 
 // Casos em que a IA confundia categorias vizinhas. Vale para qualquer candidato.
@@ -568,22 +661,28 @@ function promptTermosAcervo(pergunta) {
   return 'Você prepara a busca de artigos de lei para responder a pergunta de um cidadão.\n' +
     'Documentos disponíveis: ' + docs + '.\n' +
     'Pergunta: """' + pergunta + '"""\n' +
-    'Responda só com JSON: {"consultas":["3 a 6 consultas de 1 a 4 palavras, com os termos que a própria lei usaria (ex.: para jornada, \\"duração do trabalho\\" e \\"horas semanais\\"; para maioridade penal, \\"penalmente inimputáveis\\" e \\"menores de dezoito anos\\")"],"documentos":["ids dos documentos mais prováveis, até 3"],"artigos":[{"doc":"id do documento","artigo":"número do artigo que provavelmente trata do assunto, ex.: 228"}]}\n' +
+    'Responda só com JSON: {"consultas":["3 a 6 consultas de 1 a 4 palavras, com os termos que a própria lei usaria (ex.: para jornada, \\"duração do trabalho\\" e \\"horas semanais\\"; para maioridade penal, \\"penalmente inimputáveis\\" e \\"menores de dezoito anos\\")"],"documentos":["ids dos documentos mais prováveis, até 3"],"artigos":[{"doc":"id do documento","artigo":"número do artigo que provavelmente trata do assunto, ex.: 228"}],' +
+    '"consultas_web":["2 consultas para buscar na web, caso os artigos não bastem: uma com o nome da lei ou do artigo, outra sobre decisões do STF, emendas ou projetos que mudam o tema"]}\n' +
     'Em "artigos", indique até 4 artigos que você acredita tratar do assunto. Eles só servem para localizar o texto; a resposta virá do texto oficial.';
 }
 
-function promptAcervo(pergunta, achados, consultas) {
+// web: null na primeira passada (só os artigos; a IA diz se bastaram); lista de resultados na segunda.
+function promptAcervo(pergunta, achados, consultas, web) {
   // Os dois artigos mais relevantes vão quase inteiros: artigos como o 7º da CF têm dezenas de incisos.
   const blocos = achados.map((x, i) => '[' + x.doc + ' | ' + x.a.n + '] (' + x.a.hier + ')\n' + janela(x.a, consultas, i < 2 ? 4500 : 1200)).join('\n\n');
-  return 'Você explica a legislação brasileira a um cidadão, de forma apartidária, usando SOMENTE os artigos abaixo. ' +
-    'Eles vêm do texto compilado oficial do Planalto, com a redação em vigor.\n' +
+  return 'Você explica a legislação brasileira a um cidadão, de forma apartidária, usando SOMENTE o material abaixo. ' +
+    'Os artigos vêm do texto compilado oficial do Planalto, com a redação em vigor.\n' +
     'Regras:\n' +
-    '- Responda em português simples, de 2 a 5 frases curtas. Diga o que a lei estabelece e cite o artigo.\n' +
+    '- Responda em português simples, de 2 a 6 frases curtas. Diga o que a lei estabelece e cite o artigo.\n' +
     '- Não opine, não avalie candidatos nem propostas, não dê orientação jurídica para um caso particular.\n' +
-    '- Se os artigos abaixo não respondem a pergunta, diga isso claramente e não complete com memória.\n' +
+    '- O texto do artigo prevalece. ' + (web ? 'A web serve para o que os artigos não trazem: decisões de tribunais, mudanças em tramitação, explicações de órgãos oficiais.\n' + REGRAS_WEB +
+      '- "web": índices dos blocos [W] usados, com 1 frase neutra do que dizem, atribuída a quem publicou.\n'
+      : 'Se os artigos não respondem a pergunta, diga isso claramente e não complete com memória.\n' + REGRA_SUFICIENTE) +
     '- "citacoes": trechos LITERAIS de até 40 palavras, com "doc" e "artigo" exatamente como no rótulo [doc | artigo].\n\n' +
     'Pergunta: """' + pergunta + '"""\n\n=== ARTIGOS ===\n' + (blocos || '(nenhum artigo encontrado)') + '\n\n' +
-    'Responda só com JSON: {"resposta":"...","citacoes":[{"doc":"cf","artigo":"Art. 7º","trecho":"..."}],"limites":"1 frase sobre o que estes artigos não respondem"}';
+    (web ? '=== BUSCA NA WEB FEITA AGORA ===\n' + (blocosWeb(web) || '(sem resultados)') + '\n\n' : '') +
+    'Responda só com JSON: {"resposta":"...","citacoes":[{"doc":"cf","artigo":"Art. 7º","trecho":"..."}],' + (web ? '"web":[{"indice":0,"resumo":"..."}],' : '') +
+    '"limites":"1 frase sobre o que este material não responde"' + (web ? '}' : ',"suficiente":true,"buscar":["..."]}');
 }
 
 // ---------- validação ----------
@@ -608,7 +707,7 @@ function validar(r, trechos, fcs, web) {
     const w = web[Number(x && x.indice)];
     if (!w || vistos.has(w.url)) continue;
     vistos.add(w.url);
-    out.imprensa.push({ titulo: w.titulo, url: w.url, fonte: w.fonte, resumo: String(x.resumo || '').slice(0, 400) });
+    out.imprensa.push({ titulo: w.titulo, url: w.url, fonte: w.fonte, tipo: w.tipo, resumo: String(x.resumo || '').slice(0, 400) });
   }
   const validos = new Set(fcs.map((x) => x.i));
   out.checagens = (Array.isArray(r.checagens) ? r.checagens : []).map(Number).filter((i) => validos.has(i));
@@ -620,7 +719,8 @@ function validar(r, trechos, fcs, web) {
 const TIPOS_SITE = {
   proposta: 'Proposta do plano', plano: 'Página do plano', checagem: 'Checagem publicada', viabilidade: 'Viabilidade e evidências',
   proposicao: 'Congresso e tribunais', espectro: 'Esquerda ou direita', ideologia: 'Ideologias', levantamento: 'Levantamento de promessas',
-  promessa: 'Promessa anterior', eleicao: 'Eleições desde 1891', eleitos: 'Eleições desde 1891', governo: 'Governos desde 1889', entrega: 'Entrega não prometida', lei: 'Acervo Constitucional'
+  promessa: 'Promessa anterior', eleicao: 'Eleições desde 1891', eleitos: 'Eleições desde 1891', governo: 'Governos desde 1889', entrega: 'Entrega não prometida', lei: 'Acervo Constitucional',
+  web: 'Busca na web'
 };
 // Quantos blocos de cada tipo vão para a IA (por candidato, nos tipos marcados com *).
 const COTA_SITE = { proposta: 3, plano: 2, checagem: 2, viabilidade: 2, espectro: 1, proposicao: 2, ideologia: 2, levantamento: 2, promessa: 4, eleicao: 2, eleitos: 1, governo: 3, entrega: 3, lei: 3 };
@@ -741,21 +841,24 @@ function blocosRelevantes(consultas, sobre) {
   return out.map((x) => x.b);
 }
 
-function promptSite(pergunta, blocos, consultas) {
+// web: null na primeira passada (só o site; a IA diz se bastou); lista de resultados na segunda.
+function promptSite(pergunta, blocos, consultas, web) {
   const txt = blocos.map((b) => '[' + b.id + '] ' + TIPOS_SITE[b.tipo] + ' · ' + b.titulo + '\n' + janela({ t: b.t, f: fold(b.t) }, consultas, b.tipo === 'plano' || b.tipo === 'lei' ? 1500 : 900)).join('\n\n');
-  return 'Você responde perguntas de eleitores sobre o conteúdo do site Lado a Lado ' + ELEICAO.ano + ', que compara de forma apartidária os planos de governo de ' + DESCRICAO + '. ' +
+  return 'Você responde perguntas de eleitores sobre a eleição presidencial de ' + ELEICAO.ano + ' com base no site Lado a Lado ' + ELEICAO.ano + ', que compara de forma apartidária os planos de governo de ' + DESCRICAO + '. ' +
     'O site também reúne checagens de agências, viabilidade das propostas, proposições no Congresso, classificação esquerda–direita, ideologias, promessas de governos anteriores com verificação em fontes oficiais, eleições desde 1891 e a Constituição e leis.\n' +
     'Regras:\n' +
-    '- Use SOMENTE os blocos abaixo. Não use memória nem fatos de fora. Se os blocos não respondem, diga isso.\n' +
-    '- Depois de cada afirmação, cite o bloco entre colchetes, ex.: [S12]. Use só ids que aparecem abaixo.\n' +
+    (web ? '- Use SOMENTE os blocos abaixo: primeiro os do site [S] e [L], depois os da web [W]. Não use memória nem fatos de fora. Se nada responde, diga isso.\n' + REGRAS_WEB
+      : '- Use SOMENTE os blocos abaixo. Não use memória nem fatos de fora. Se os blocos não respondem, diga isso.\n' + REGRA_SUFICIENTE) +
+    '- Depois de cada afirmação, cite o bloco entre colchetes, ex.: [S12]' + (web ? ' ou [W3]' : '') + '. Use só ids que aparecem abaixo.\n' +
     '- Trate os candidatos exatamente da mesma forma: se a pergunta envolve mais de um, responda sobre cada um com extensão parecida.\n' +
     '- Não opine, não recomende voto, não avalie se proposta é boa ou ruim. Quando houver estudos ou avaliações nos blocos, relate o que eles dizem, atribuindo a quem disse.\n' +
     '- Responda direto ao eleitor, sem mencionar "blocos" nem "material".\n' +
     '- Se a pergunta pede uma lista (ex.: quais presidentes, quais propostas), liste TODOS os itens que aparecem nos blocos, sem omitir nenhum.\n' +
     '- Português simples, de 3 a 8 frases curtas.\n' +
     '- "citacoes": até 4 trechos LITERAIS (até 30 palavras) dos blocos usados, com o id.\n\n' +
-    'Pergunta: """' + pergunta + '"""\n\n=== BLOCOS ===\n' + (txt || '(nenhum bloco encontrado)') + '\n\n' +
-    'Responda só com JSON: {"resposta":"texto com [S..] após cada afirmação","citacoes":[{"id":"S0","trecho":"..."}]}';
+    'Pergunta: """' + pergunta + '"""\n\n=== BLOCOS DO SITE ===\n' + (txt || '(nenhum bloco encontrado)') + '\n\n' +
+    (web ? '=== BUSCA NA WEB FEITA AGORA ===\n' + (blocosWeb(web) || '(sem resultados)') + '\n\n' : '') +
+    'Responda só com JSON: {"resposta":"texto com [S..] após cada afirmação","citacoes":[{"id":"S0","trecho":"..."}]' + (web ? '}' : ',"suficiente":true,"buscar":["..."]}');
 }
 
 async function responderSite(req, corpo, envia) {
@@ -767,16 +870,28 @@ async function responderSite(req, corpo, envia) {
   const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
   if (!dentroDoLimite(ip)) return envia(429, { erro: 'Muitas consultas seguidas. Tente de novo em alguns minutos.' });
 
-  const prazo = Date.now() + 52000, trilha = [];
-  let consultas = [pergunta], sobre = quemNaFrase(' ' + fold(pergunta) + ' ') || 'ambos';
+  const prazo = Date.now() + PRAZO, trilha = [];
+  let consultas = [pergunta], consultasWeb = [pergunta], sobre = quemNaFrase(' ' + fold(pergunta) + ' ') || 'ambos';
   const t = await perguntar(promptTermos(pergunta), 500, Math.min(prazo, Date.now() + 12000), trilha);
   if (t && t.json) {
     consultas = consultas.concat((Array.isArray(t.json.consultas_plano) ? t.json.consultas_plano : []).map(String).slice(0, 5));
+    consultasWeb = consultasWebDe(t.json).concat(consultasWeb);
     if (sobre === 'ambos' && IDS.includes(t.json.sobre)) sobre = t.json.sobre;
   }
   const blocos = blocosRelevantes(consultas, sobre);
   const porId = new Map(blocos.map((b) => [b.id, b]));
-  const r = await perguntar(promptSite(pergunta, blocos, consultas), 1600, prazo, trilha, (j) => String(j.resposta || '').length > 20);
+  const aceita = (j) => String(j.resposta || '').length > 20;
+  // 1. Só o site. 2. Se não bastou (ou o site não tem nada), busca profunda na web e responde de novo.
+  let r = blocos.length ? await perguntar(promptSite(pergunta, blocos, consultas, null), 1600, prazo, trilha, aceita) : null;
+  let busca = null;
+  if (!blocos.length || (r && !bastou(r.json))) {
+    busca = await pesquisaProfunda(faltaBuscar(r && r.json).concat(consultasWeb), DOMINIOS(), prazo, trilha);
+    if (busca.resultados.length || !r) {
+      busca.resultados.forEach((x, i) => porId.set('W' + i, { id: 'W' + i, tipo: 'web', titulo: x.fonte + ' · ' + x.titulo, t: x.trecho, l: loose(x.trecho), url: x.url, fonteTipo: x.tipo }));
+      const r2 = await perguntar(promptSite(pergunta, blocos, consultas, busca.resultados), 1800, prazo, trilha, aceita);
+      if (r2) r = r2; else busca.resultados.forEach((x, i) => porId.delete('W' + i));
+    }
+  }
   if (!r) {
     console.log('[site] sem resposta: ' + trilha.join(' ; '));
     return envia(503, { erro: 'A IA não respondeu agora. Tente de novo em alguns minutos.', detalhe: resumoTrilha(trilha) });
@@ -784,7 +899,7 @@ async function responderSite(req, corpo, envia) {
   // Só ficam as marcações de blocos que existem; a ordem de aparição define a numeração.
   const usados = [];
   // Aceita também várias fontes no mesmo colchete: [S1, S2] vira [S1][S2].
-  const resposta = String(r.json.resposta || '').slice(0, 2500).replace(/\[([SL][^\]]{0,300})\]/g, (m, dentro) => dentro.split(/\s*[,;]\s*/).map((id) => {
+  const resposta = String(r.json.resposta || '').slice(0, 2500).replace(/\[([SLW][^\]]{0,300})\]/g, (m, dentro) => dentro.split(/\s*[,;]\s*/).map((id) => {
     id = id.trim();
     if (!porId.has(id)) return '';
     if (usados.indexOf(id) < 0) usados.push(id);
@@ -800,11 +915,15 @@ async function responderSite(req, corpo, envia) {
       if (usados.indexOf(b.id) < 0) usados.push(b.id);
     } else descartadas++;
   }
-  const fonte = (b) => ({ id: b.id, tipo: b.tipo, rotulo: TIPOS_SITE[b.tipo], titulo: b.titulo, link: b.link || '', url: b.url || '', abrir: b.abrir || '', ideo: b.ideo || '' });
+  const fonte = (b) => ({
+    id: b.id, tipo: b.tipo, rotulo: b.tipo === 'web' ? 'Busca na web · ' + ROTULO_FONTE[b.fonteTipo] : TIPOS_SITE[b.tipo],
+    titulo: b.titulo, link: b.link || '', url: b.url || '', abrir: b.abrir || '', ideo: b.ideo || ''
+  });
   const out = {
     modo: 'site', resposta, citacoes, descartadas,
     fontes: usados.map((id) => fonte(porId.get(id))),
     consultados: blocos.filter((b) => usados.indexOf(b.id) < 0).slice(0, 12).map(fonte),
+    web: resumoBusca(busca, usados.some((id) => id[0] === 'W')),
     modelo: r.modelo
   };
   lembrar(chave, out);
@@ -831,14 +950,16 @@ async function responderAcervo(req, corpo, envia) {
   const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
   if (!dentroDoLimite(ip)) return envia(429, { erro: 'Muitas consultas seguidas. Tente de novo em alguns minutos.' });
 
-  const prazo = Date.now() + 52000, trilha = [];
+  const prazo = Date.now() + PRAZO, trilha = [];
   const fp = ' ' + fold(pergunta).replace(/[^a-z0-9]+/g, ' ') + ' ';
   let consultas = [pergunta].concat(Object.keys(AC_SINONIMOS).filter((k) => fp.includes(' ' + k + ' ')).map((k) => AC_SINONIMOS[k]));
+  let consultasWeb = [pergunta];
   let docIds = doc ? [doc] : [];
   let alvos = [];
   const t = await perguntar(promptTermosAcervo(pergunta), 500, Math.min(prazo, Date.now() + 12000), trilha);
   if (t && t.json) {
     consultas = consultas.concat((Array.isArray(t.json.consultas) ? t.json.consultas : []).map(String).slice(0, 6));
+    consultasWeb = consultasWebDe(t.json).concat(consultasWeb);
     if (!doc && Array.isArray(t.json.documentos)) docIds = t.json.documentos.map(String).filter((d) => A.docs[d]).slice(0, 3);
     alvos = (Array.isArray(t.json.artigos) ? t.json.artigos : []).slice(0, 4)
       .filter((x) => x && A.docs[x.doc] && (!doc || x.doc === doc))
@@ -855,7 +976,26 @@ async function responderAcervo(req, corpo, envia) {
     }
   }
   const artigos = achados.map((x) => ({ doc: x.doc, titulo: A.docs[x.doc].titulo, url: A.docs[x.doc].url, n: x.a.n, hier: x.a.hier, t: x.a.t.slice(0, 1500) }));
-  const r = await perguntar(promptAcervo(pergunta, achados, consultas), 1500, prazo, trilha, (j) => String(j.resposta || '').length > 20);
+  const aceita = (j) => String(j.resposta || '').length > 20;
+  // 1. Só os artigos. 2. Se não bastaram, busca profunda (legislação, tribunais, imprensa) e responde de novo.
+  let r = achados.length ? await perguntar(promptAcervo(pergunta, achados, consultas, null), 1500, prazo, trilha, aceita) : null;
+  let busca = null, webUsada = [];
+  if (!achados.length || (r && !bastou(r.json))) {
+    busca = await pesquisaProfunda(faltaBuscar(r && r.json).concat(consultasWeb), DOMINIOS_LEI(), prazo, trilha);
+    if (busca.resultados.length || !r) {
+      const r2 = await perguntar(promptAcervo(pergunta, achados, consultas, busca.resultados), 1800, prazo, trilha, aceita);
+      if (r2) {
+        r = r2;
+        const vistos = new Set();
+        for (const x of Array.isArray(r.json.web) ? r.json.web : []) {
+          const w = busca.resultados[Number(x && x.indice)];
+          if (!w || vistos.has(w.url)) continue;
+          vistos.add(w.url);
+          webUsada.push({ titulo: w.titulo, url: w.url, fonte: w.fonte, tipo: w.tipo, resumo: String(x.resumo || '').slice(0, 400) });
+        }
+      }
+    }
+  }
   if (!r) {
     console.log('[acervo] sem resposta: ' + trilha.join(' ; '));
     return envia(503, { erro: 'A IA não respondeu agora. Os artigos encontrados pela busca estão abaixo.', detalhe: resumoTrilha(trilha), artigos });
@@ -870,8 +1010,9 @@ async function responderAcervo(req, corpo, envia) {
     } else descartadas++;
   }
   const out = {
-    modo: 'acervo', busca: { consultas: consultas.slice(1), alvos, etapa: t ? t.modelo : 'sem IA: ' + resumoTrilha(trilha).join(' ; ') }, resposta: String(r.json.resposta || '').slice(0, 1500), citacoes, descartadas,
-    limites: String(r.json.limites || '').slice(0, 400), artigos, modelo: r.modelo
+    modo: 'acervo', busca: { consultas: consultas.slice(1), alvos, etapa: t ? t.modelo : 'sem IA: ' + resumoTrilha(trilha).join(' ; ') },
+    resposta: String(r.json.resposta || '').replace(/\s*\[W\d+(?:\s*,\s*W\d+)*\]/g, '').slice(0, 1800), citacoes, descartadas,
+    limites: String(r.json.limites || '').slice(0, 400), artigos, imprensa: webUsada, web: resumoBusca(busca, webUsada.length > 0), modelo: r.modelo
   };
   lembrar(chave, out);
   return envia(200, out);
@@ -965,7 +1106,7 @@ module.exports = async (req, res) => {
   const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'anon';
   if (!dentroDoLimite(ip)) return envia(429, { erro: 'Muitas análises seguidas. Tente de novo em alguns minutos.' });
 
-  const prazo = Date.now() + 55000;
+  const prazo = Date.now() + PRAZO;
   const trilha = [];
 
   if (modo === 'espectro') {
@@ -996,26 +1137,32 @@ module.exports = async (req, res) => {
   }
 
   // 1. termos de busca
-  let consultas = [frase], consultaWeb = frase, sobre = cand;
-  const t = await perguntar(promptTermos(frase), 400, Math.min(prazo, Date.now() + 15000), trilha);
+  let consultas = [frase], consultasWeb = [frase + ' ' + ELEICAO.ano], sobre = cand;
+  const t = await perguntar(promptTermos(frase), 500, Math.min(prazo, Date.now() + 15000), trilha);
   if (t && t.json) {
     const cp = Array.isArray(t.json.consultas_plano) ? t.json.consultas_plano.map(String).slice(0, 5) : [];
     consultas = [frase].concat(cp);
-    if (t.json.consulta_web) consultaWeb = String(t.json.consulta_web);
+    consultasWeb = consultasWebDe(t.json).concat(consultasWeb);
     if (cand === 'ambos' && IDS.includes(t.json.sobre)) sobre = t.json.sobre;
   }
 
-  // 2 e 3. planos, checagens e web (a web corre em paralelo)
-  const webP = pesquisarWeb(consultaWeb + ' eleição ' + ELEICAO.ano, 12000);
+  // 2. planos e checagens do site
   const ks = sobre === 'ambos' ? IDS : [sobre];
   const trechos = {};
   for (const k of ks) trechos[k] = paginasRelevantes(k, consultas, ks.length === 1 ? 5 : ks.length === 2 ? 3 : 2);
   const fcs = checagensRelevantes(consultas, cand);
-  const web = (await webP).resultados || [];
 
-  // 4. resposta
-  const r = await perguntar(promptResposta(frase, cand, trechos, fcs, web, consultas), 1800, prazo, trilha,
-    (j) => CLASSES.includes(j.classificacao) && String(j.explicacao || '').length > 20);
+  // 3. resposta só com o site; 4. se não bastou, busca profunda na web e nova resposta com tudo
+  const aceita = (j) => CLASSES.includes(j.classificacao) && String(j.explicacao || '').length > 20;
+  let r = await perguntar(promptResposta(frase, cand, trechos, fcs, null, consultas), 1800, prazo, trilha, aceita);
+  let web = [], busca = null;
+  if (r && !bastou(r.json)) {
+    busca = await pesquisaProfunda(faltaBuscar(r.json).concat(consultasWeb), DOMINIOS(), prazo, trilha);
+    if (busca.resultados.length) {
+      const r2 = await perguntar(promptResposta(frase, cand, trechos, fcs, busca.resultados, consultas), 2000, prazo, trilha, aceita);
+      if (r2) { r = r2; web = busca.resultados; }
+    }
+  }
   if (!r) {
     console.log('[checar] sem resposta: ' + trilha.join(' ; '));
     return envia(503, { erro: 'Os serviços de IA não responderam agora. Tente de novo em alguns minutos.', detalhe: resumoTrilha(trilha) });
@@ -1025,7 +1172,7 @@ module.exports = async (req, res) => {
   // 5. validação
   const out = validar(r.json, trechos, fcs, web);
   out.checagens = out.checagens.map((i) => Object.assign({ id: i }, dados().checagens[i]));
-  out.busca_web = !!process.env.TAVILY_API_KEY;
+  out.web = resumoBusca(busca, out.imprensa.length > 0);
   out.modelo = r.modelo;
   lembrar(chave, out);
   return envia(200, out);

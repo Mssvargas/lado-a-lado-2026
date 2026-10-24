@@ -4,8 +4,15 @@ process.env.GROQ_API_KEY = "teste";
 const handler = require("../api/checar.js");
 
 let resposta = {};
+// Busca na web simulada: só responde quando o teste liga TAVILY_API_KEY.
+let tavily = [];
+const PAGINAS_WEB = [
+  { title: "Checagem: candidato não disse isso", url: "https://www.aosfatos.org/noticias/checagem-teste/", content: "A declaração atribuída ao candidato não aparece em nenhum discurso registrado." },
+  { title: "Reportagem sobre o tema", url: "https://g1.globo.com/politica/eleicoes/2026/noticia/teste.ghtml", content: "Reportagem com dados do IBGE sobre o tema da pergunta." }
+];
 global.fetch = async (url, op) => {
   const body = typeof op.body === "string" ? JSON.parse(op.body) : {};
+  if (String(url).includes("tavily")) { tavily.push(body); return { ok: true, status: 200, json: async () => ({ results: PAGINAS_WEB }) }; }
   const prompt = body.messages?.[0]?.content || "";
   const out = typeof resposta === "function" ? resposta(prompt) : resposta;
   return { ok: true, status: 200, json: async () => ({ choices: [{ message: { content: JSON.stringify(out) } }] }) };
@@ -76,6 +83,57 @@ const confere = (nome, ok, extra) => { console.log((ok ? "ok    " : "FALHA ") + 
   const s = await chamar({ modo: "espectro", frase: "taxar grandes fortunas e reduzir imposto de quem ganha pouco" });
   confere("espectro responde per503", s.j.categoria === "per503");
   confere("prompt do espectro tem guia e exemplos", promptEsp.includes("grandes fortunas") && promptEsp.includes("já classificadas"));
+
+  // Site primeiro, web depois. Com o site bastando, a web não é chamada.
+  process.env.TAVILY_API_KEY = "teste";
+  tavily = [];
+  resposta = p => p.includes("Você prepara buscas")
+    ? { sobre: "ambos", consultas_plano: ["escala 6x1"], consultas_web: ["checagem escala 6x1"] }
+    : { resposta: "Resposta só com o site, longa o bastante.", citacoes: [], suficiente: true };
+  const so = await chamar({ modo: "site", pergunta: "O que o site diz sobre a escala 6x1 dos dois?" });
+  confere("site bastou: sem busca na web", so.status === 200 && tavily.length === 0 && so.j.web?.estado === "nao_precisou", JSON.stringify(so.j.web));
+
+  // Site não bastou: busca profunda (várias consultas, avançada) e segunda resposta com blocos [W].
+  tavily = [];
+  let segunda = "";
+  resposta = p => {
+    if (p.includes("Você prepara buscas")) return { sobre: "ambos", consultas_plano: ["declaração"], consultas_web: ["checagem declaração candidato", "reportagem declaração"] };
+    if (!p.includes("BUSCA NA WEB FEITA AGORA")) return { resposta: "O site não tem essa declaração registrada.", citacoes: [], suficiente: false, buscar: ["discurso candidato declaração"] };
+    segunda = p;
+    return { resposta: "Segundo a agência, a declaração não aparece em discursos [W0] e há dados oficiais [W1, W9].", citacoes: [{ id: "W0", trecho: "não aparece em nenhum discurso registrado" }] };
+  };
+  const sw = await chamar({ modo: "site", pergunta: "É verdade que o candidato disse isso ontem no comício?" });
+  const lista = tavily.filter(b => Array.isArray(b.include_domains)), aberta = tavily.filter(b => !b.include_domains);
+  confere("site não bastou: busca em várias consultas, avançada", lista.length >= 3 && tavily.every(b => b.search_depth === "advanced"), tavily.length + " buscas");
+  confere("poucas páginas na lista (2): entra a web aberta, do Brasil", aberta.length > 0 && aberta.every(b => b.country === "brazil") && sw.j.web?.ampla === true);
+  confere("a consulta pedida pela IA entra na busca", tavily.some(b => b.query === "discurso candidato declaração"));
+  confere("segunda resposta recebe blocos [W] com o tipo da fonte", segunda.includes("[W0] aosfatos.org (agência de checagem)"));
+  confere("fonte da web vira fonte numerada; id inexistente some", sw.j.fontes?.some(f => f.id === "W0" && f.url.includes("aosfatos")) && !sw.j.resposta.includes("W9"), sw.j.resposta);
+  confere("citação literal da web aceita", sw.j.citacoes?.length === 1 && sw.j.descartadas === 0);
+  confere("resposta diz que usou a web", sw.j.web?.estado === "feita" && sw.j.web.usada === true, JSON.stringify(sw.j.web));
+
+  // Checagem de fala: site não bastou -> imprensa com o tipo da fonte.
+  tavily = [];
+  resposta = p => {
+    if (p.includes("Você prepara buscas")) return { sobre: "ambos", consultas_plano: ["salário mínimo"], consultas_web: ["checagem salário mínimo"] };
+    if (!p.includes("BUSCA NA WEB FEITA AGORA")) return { sobre: "ambos", classificacao: "nao_e_proposta", explicacao: "A frase fala de uma declaração que o site não registra.", evidencias: [], checagens: [], limites: "", suficiente: false, buscar: [] };
+    return { sobre: "ambos", classificacao: "nao_e_proposta", explicacao: "Segundo o Aos Fatos, a declaração não foi encontrada.", evidencias: [], imprensa: [{ indice: 0, resumo: "Aos Fatos não achou a declaração." }, { indice: 7, resumo: "inventado" }], checagens: [], limites: "" };
+  };
+  const ck = await chamar({ frase: "o candidato disse ontem que vai congelar o salário mínimo", candidato: "ambos" });
+  confere("checagem usa a web quando o site não basta", ck.status === 200 && ck.j.imprensa?.length === 1 && ck.j.imprensa[0].tipo === "checagem", JSON.stringify(ck.j.imprensa));
+  confere("checagem informa a busca", ck.j.web?.estado === "feita");
+
+  // Acervo: artigos não bastaram -> web em legislação e tribunais.
+  tavily = [];
+  resposta = p => {
+    if (p.includes("prepara a busca de artigos")) return { consultas: ["duração do trabalho"], documentos: ["cf"], consultas_web: ["STF jornada de trabalho"] };
+    if (!p.includes("BUSCA NA WEB FEITA AGORA")) return { resposta: "Os artigos fixam a jornada, mas não dizem se há mudança em tramitação.", citacoes: [], suficiente: false, buscar: ["PEC fim da escala 6x1 tramitação"] };
+    return { resposta: "A Constituição fixa 44 horas [W1]; há proposta em tramitação, segundo a imprensa.", citacoes: [], web: [{ indice: 1, resumo: "Reportagem sobre a proposta." }] };
+  };
+  const ac = await chamar({ modo: "acervo", pergunta: "Existe alguma mudança em andamento na jornada de trabalho da Constituição?" });
+  confere("acervo busca na web com a lista jurídica", tavily.length >= 2 && tavily[0].include_domains.includes("planalto.gov.br"));
+  confere("acervo devolve a página usada e tira [W] do texto", ac.j.imprensa?.length === 1 && ac.j.imprensa[0].tipo === "imprensa" && !ac.j.resposta.includes("[W"), ac.j.resposta);
+  delete process.env.TAVILY_API_KEY;
 
   // Sem resposta da IA: 503 com detalhe.
   global.fetch = async () => ({ ok: false, status: 429, json: async () => ({ error: { message: "rate limit" } }) });

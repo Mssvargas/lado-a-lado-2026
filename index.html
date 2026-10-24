@@ -312,7 +312,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
       <label for="askQ" class="eyebrow">Pergunte ao site</label>
       <div class="selrow"><input type="search" id="askQ" placeholder="Ex.: O que cada candidato propõe para a segurança pública?" autocomplete="off" enterkeyhint="search"><button type="submit" class="btn">Perguntar</button></div>
       <div class="media" data-media-for="askQ" hidden></div>
-      <p class="status" style="margin:0">Digite, cole um print ou fale a pergunta. A busca cobre todo o site: propostas e planos, checagens, viabilidade, Congresso, esquerda ou direita, ideologias, promessas anteriores, eleições e leis. A resposta vem com as fontes.</p>
+      <p class="status" style="margin:0">Digite, cole um print ou fale a pergunta. A busca cobre todo o site: propostas e planos, checagens, viabilidade, Congresso, esquerda ou direita, ideologias, promessas anteriores, eleições e leis. Se o site não tiver a informação, a busca continua em agências de checagem, na imprensa e na web. A resposta vem com as fontes.</p>
     </form>
     <div class="panel" id="askOut" hidden aria-live="polite"></div>
     <div class="ballot" aria-label="Candidatos, na ordem do número de urna">
@@ -407,7 +407,7 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
         <div style="display:grid;gap:16px">
           <div class="panel" id="aiPanel" hidden>
             <h3>Análise automática</h3>
-            <p class="status" id="aiIntro">Uma inteligência artificial lê os trechos dos planos, as checagens desta página e uma busca feita agora em agências de checagem e na imprensa. Depois diz se a frase confere com o que está escrito. Toda citação é conferida com o plano antes de aparecer. Leva até um minuto.</p>
+            <p class="status" id="aiIntro">Uma inteligência artificial lê primeiro os trechos dos planos e as checagens deste site. Se isso não basta, ela busca agora em agências de checagem, na imprensa, em órgãos oficiais e, se preciso, no resto da web. Depois diz se a frase confere com o que está escrito e o que as checagens mostram. Toda citação é conferida com a fonte antes de aparecer. Leva até dois minutos.</p>
             <div class="row"><button type="button" class="btn" id="aiBtn">Analisar a frase</button><button type="button" class="btn ghost" id="aiStop" hidden>Parar</button></div>
             <div class="ai-out" id="aiOut" aria-live="polite"></div>
           </div>
@@ -606,9 +606,9 @@ footer.site .wrap { padding-block: 20px 28px; display: grid; gap: 6px; font-size
           <li><b>"Em palavras simples"</b> explica termos e o efeito que o plano pretende. Não avalia se a proposta é boa, viável ou constitucional.</li>
           <li><b>O selo de detalhamento</b> indica se o plano diz como, quanto ou quando ("Diz como"), se diz só em parte ("Em parte") ou se registra só a intenção ("Só intenção").</li>
           <li><b>Checagens.</b> Vêm só de agências de verificação reconhecidas (Agência Lupa, Aos Fatos, Estadão Verifica, Projeto Comprova). O número de itens é o mesmo para cada candidato: 7 falas e 5 alegações para cada um. A seleção prioriza propostas e dados, não ataques pessoais, e inclui vereditos de todo tipo. É uma amostra: o link de cada item leva à apuração completa, que traz outras frases checadas.</li>
-          <li><b>Análise automática.</b> Uma IA de uso gratuito recebe três coisas: os trechos dos planos encontrados pela busca, as checagens desta página e o resultado de uma busca feita na hora. Essa busca é restrita a agências de checagem (Lupa, Aos Fatos, Comprova, AFP, Estadão Verifica), à imprensa de grande circulação e ao TSE. Antes de responder, o servidor descarta citação que não exista literalmente no plano e link que não tenha vindo da busca. Mesmo assim a IA pode errar, então confira sempre o trecho e a página.</li>
+          <li><b>Análise automática.</b> Uma IA de uso gratuito responde primeiro só com o conteúdo do site: trechos dos planos, checagens desta página e, no “Pergunte ao site”, todas as abas. Ela também diz se esse material basta. Quando não basta (uma fala, um fato ou um número que o site não cobre), o servidor faz na hora uma busca mais funda na web, com várias consultas ao mesmo tempo, em agências de checagem (Lupa, Aos Fatos, Comprova, AFP, Estadão Verifica, Fato ou Fake, UOL Confere, Boatos.org, E-farsas), imprensa de grande circulação e órgãos de Estado (TSE, STF, Congresso, IBGE, Ipea, Banco Central, TCU). Sites de comunicação do governo ficam de fora, porque o governo é candidato. Só se essas fontes acharem pouco a busca vai à web aberta, e a página marca essas fontes como “outra fonte”. A IA então responde de novo com o site e a web, dizendo quem publicou cada informação. Antes de responder, o servidor descarta citação que não exista literalmente na fonte e link que não tenha vindo da busca. Mesmo assim a IA pode errar, então confira sempre o trecho e a página.</li>
           <li><b>Print e voz.</b> Nas consultas, dá para enviar um print ou falar a pergunta. A voz vira texto no próprio navegador, enquanto a pessoa fala (Chrome e Edge usam o serviço de voz da empresa do navegador). Onde isso não existe, o áudio gravado é transcrito pelo Whisper. O print é lido por uma IA com visão, que só transcreve as afirmações sem julgar. Se ela falhar, o texto é lido no próprio navegador (Tesseract) e uma IA de texto separa as afirmações. Nos dois casos, o texto vai para o campo de busca para a pessoa conferir antes. Imagem e áudio não ficam guardados neste site.</li>
-          <li><b>Acervo Constitucional.</b> A Constituição Federal (com o ADCT) e 15 leis, como CLT, Código Penal, Código Eleitoral, LRF, arcabouço fiscal e reforma tributária, no texto compilado oficial do Planalto, com a redação em vigor. Os trechos revogados, que o Planalto mostra riscados, ficam de fora. A busca é feita no navegador. A resposta da IA usa só os artigos encontrados, e toda citação é conferida com o texto do artigo antes de aparecer. Não é orientação jurídica.</li>
+          <li><b>Acervo Constitucional.</b> A Constituição Federal (com o ADCT) e 15 leis, como CLT, Código Penal, Código Eleitoral, LRF, arcabouço fiscal e reforma tributária, no texto compilado oficial do Planalto, com a redação em vigor. Os trechos revogados, que o Planalto mostra riscados, ficam de fora. A busca é feita no navegador. A resposta da IA usa primeiro os artigos encontrados, e toda citação é conferida com o texto do artigo antes de aparecer. Se os artigos não bastam (decisão do STF, mudança em tramitação), a busca continua no Planalto, nos tribunais, no Congresso e na imprensa. Não é orientação jurídica.</li>
           <li><b>Viabilidade e evidências.</b> As propostas principais de cada candidato (2 a 3 por tema) foram avaliadas pelos mesmos critérios. Os critérios são: o instrumento exigido (decreto, lei, lei complementar ou emenda à Constituição), o custo e a fonte de recursos, a competência (União, estados ou municípios) e o prazo, e o que dizem estudos e experiências. Os estudos incluem achados favoráveis e desfavoráveis. O site não dá veredito de "boa" ou "ruim": mostra os critérios, os estudos e quem ganha ou paga, e a conclusão é de quem lê.</li>
           <li><b>Congresso e tribunais.</b> Proposições ligadas às propostas principais, com situação conferida nos dados abertos da Câmara e do Senado e nos portais do STF e do TSE. A direção esquerda–direita segue as categorias do Manifesto Project.</li>
           <li><b>Esquerda ou direita.</b> As 261 propostas foram classificadas pelas categorias do Manifesto Project (MARPOR) e pelo índice RILE, o método acadêmico usado para programas de partidos em mais de 50 países. A referência de cada partido vem do próprio estatuto ou programa e de escalas de especialistas (Bolognesi, Ribeiro e Codato; V-Dem). A verificação de frases livres usa palavras-chave e é uma aproximação.</li>
@@ -1045,9 +1045,9 @@ async function runAI() {
   const { q, cand } = lastQuery;
   const out = $("#aiOut"), st = document.createElement("p");
   st.className = "status"; out.replaceChildren(st);
-  const passos = ["Procurando nos planos…", "Buscando checagens e reportagens…", "Comparando a frase com o que está escrito…"];
+  const passos = ["Procurando nos planos e nas checagens do site…", "Comparando a frase com o que está escrito…", "Se o site não bastar, buscando em agências de checagem, na imprensa e na web…", "Lendo o que a busca encontrou… (pode levar até 2 minutos)"];
   let i = 0; st.textContent = passos[0];
-  const tick = setInterval(() => { i = Math.min(i + 1, passos.length - 1); st.textContent = passos[i]; }, 6000);
+  const tick = setInterval(() => { i = Math.min(i + 1, passos.length - 1); st.textContent = passos[i]; }, 8000);
   $("#aiBtn").disabled = true; $("#aiStop").hidden = false;
   aiCtl = new AbortController();
   try {
@@ -1059,18 +1059,31 @@ async function runAI() {
     st.textContent = e?.name === "AbortError" ? "Análise interrompida." : "Sem conexão com o servidor. Tente de novo.";
   } finally { clearInterval(tick); $("#aiBtn").disabled = false; $("#aiStop").hidden = true; }
 }
+// Resultado da busca na web (feita só quando o conteúdo do site não basta), igual nas três consultas com IA.
+const WEB_TIPO = { checagem: "agência de checagem", imprensa: "imprensa", oficial: "órgão oficial", outra: "outra fonte, fora da lista de agências e imprensa" };
+function webHTML(list, titulo) {
+  const web = Array.isArray(list) ? list.filter(x => /^https:\/\//.test(x?.url || "")) : [];
+  return web.length ? `<div class="hits"><div class="eyebrow">${esc(titulo)}</div>${web.map(x => `<div class="hit"><div><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo || x.url)}</a></div><div class="src">${esc(x.fonte)}${WEB_TIPO[x.tipo] ? " · " + esc(WEB_TIPO[x.tipo]) : ""}</div><div>${esc(x.resumo || "")}</div></div>`).join("")}</div>` : "";
+}
+function webNota(w) {
+  const e = w?.estado;
+  if (e === "nao_precisou") return `<p class="status">O conteúdo do site bastou para esta resposta; não foi preciso buscar na web.</p>`;
+  if (e === "vazia") return `<p class="status">O site não tinha tudo, e a busca na web (agências de checagem, imprensa, órgãos oficiais${w.ampla ? " e web aberta" : ""}) não encontrou material sobre isso.</p>`;
+  if (e === "sem_tempo") return `<p class="status">O site não tinha tudo, e não deu tempo de buscar na web. Tente de novo.</p>`;
+  if (e === "feita") return `<p class="status">O site não tinha tudo, então foi feita agora uma busca na web em ${w.paginas} página(s) de agências de checagem, imprensa e órgãos oficiais${w.ampla ? ", e também na web aberta, porque essas fontes acharam pouco" : ""}.${w.usada ? "" : " Nenhuma tratava do assunto."}</p>`;
+  return "";
+}
 function renderAI(r) {
   const cls = VERD[r?.classificacao] ? r.classificacao : "nao_consta";
   const ev = Array.isArray(r?.evidencias) ? r.evidencias.filter(e => CAND[e.candidato]) : [];
   const fcs = Array.isArray(r?.checagens) ? r.checagens.filter(c => c && c.url) : [];
-  const web = Array.isArray(r?.imprensa) ? r.imprensa.filter(x => /^https:\/\//.test(x?.url || "")) : [];
   $("#aiOut").innerHTML = `<span class="verdict v-${cls}">${esc(VERD[cls])}</span>
     <p style="margin:0">${esc(r?.explicacao || "")}</p>
     ${ev.length ? `<div class="hits"><div class="eyebrow">O que está escrito no plano</div>${ev.map(e => `<div class="hit"><div class="src mono">${esc(CAND[e.candidato].nome)} · p. ${esc(e.pagina)}</div><blockquote class="lit">“${esc(e.trecho)}”</blockquote><button type="button" class="linkbtn" data-open="${e.candidato}:${esc(e.pagina)}">Conferir na página</button></div>`).join("")}</div>` : ""}
     ${r?.descartadas ? `<p class="status">${r.descartadas} citação(ões) descartada(s) porque não aparece(m) literalmente na página indicada.</p>` : ""}
     ${fcs.length ? `<div class="hits"><div class="eyebrow">Checagens publicadas sobre o assunto</div>${fcs.map(fcItemHTML).join("")}</div>` : ""}
-    ${web.length ? `<div class="hits"><div class="eyebrow">Na imprensa e em agências de checagem (busca feita agora)</div>${web.map(x => `<div class="hit"><div><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titulo || x.url)}</a></div><div class="src">${esc(x.fonte)}</div><div>${esc(x.resumo)}</div></div>`).join("")}</div>`
-      : (r?.busca_web ? `<p class="status">A busca na imprensa e nas agências não encontrou material sobre esta frase.</p>` : "")}
+    ${webHTML(r?.imprensa, "Em agências de checagem, na imprensa e na web (busca feita agora)")}
+    ${webNota(r?.web)}
     ${r?.limites ? `<p class="status"><b>Limite:</b> ${esc(r.limites)}</p>` : ""}
     <p class="status">Análise automática. Confira o trecho, a página e os links antes de compartilhar.</p>
     ${closeBtn("#checkOut", "Fechar resultado")}`;
@@ -1990,7 +2003,7 @@ async function acervoAI() {
   const q = $("#acQ").value.trim(), box = $("#acAi"), btn = $("#acAiBtn");
   if (!q || !aiOn) return;
   box.hidden = false;
-  box.innerHTML = `<h3>Resposta com base nos artigos</h3><p class="status">Procurando os artigos e preparando a resposta… (até 1 minuto)</p>`;
+  box.innerHTML = `<h3>Resposta com base nos artigos</h3><p class="status">Procurando os artigos e preparando a resposta. Se eles não bastarem, a busca continua na web… (até 2 minutos)</p>`;
   btn.disabled = true;
   try {
     const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ modo: "acervo", pergunta: q.slice(0, 500), doc: $("#acDoc").value }) });
@@ -2002,6 +2015,8 @@ async function acervoAI() {
     box.innerHTML = `<h3>Resposta com base nos artigos</h3><p style="margin:0">${esc(j.resposta)}</p>
       ${j.citacoes?.length ? `<div class="hits"><div class="eyebrow">O que está escrito na lei</div>${j.citacoes.map(c => `<div class="hit"><div class="src mono">${esc(c.titulo)} · ${esc(c.artigo)}</div><blockquote class="lit">“${esc(c.trecho)}”</blockquote><a href="${esc(c.url)}" target="_blank" rel="noopener" class="status">Ver no Planalto</a></div>`).join("")}</div>` : ""}
       ${j.descartadas ? `<p class="status">${j.descartadas} citação(ões) descartada(s) por não aparecer(em) literalmente no artigo.</p>` : ""}
+      ${webHTML(j.imprensa, "Na web: tribunais, Congresso, imprensa (busca feita agora)")}
+      ${webNota(j.web)}
       ${j.limites ? `<p class="status"><b>Limite:</b> ${esc(j.limites)}</p>` : ""}
       <details><summary class="linkbtn" style="font-size:14px">Artigos que a IA leu (${(j.artigos || []).length})</summary>${artigosApiHTML(j.artigos)}</details>
       <p class="status" style="margin:0">Resposta automática, não é orientação jurídica. Confira o texto do artigo.</p>
@@ -2041,6 +2056,29 @@ const MEDIA_AFTER = {
 const MEDIA_RAW = { acQ: true, askQ: true };
 const MEDIA_SEND = {};
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+// Junta os pedaços do reconhecimento de voz. No Chrome do Android cada resultado repete o
+// anterior com uma palavra a mais ("Quais", "Quais são", "Quais são as"…), às vezes mais de
+// uma vez; somar tudo virava "Quais Quais são Quais são as…". Fica a versão mais longa de
+// cada trecho, e a parte repetida no começo de um pedaço que continua o anterior sai.
+function juntarFala(partes) {
+  const pal = s => fold(s).replace(/[^a-z0-9 ]+/g, " ").split(/\s+/).filter(Boolean);
+  const out = [];
+  for (const parte of partes) {
+    const p = String(parte || "").replace(/\s+/g, " ").trim();
+    if (!p) continue;
+    if (!out.length) { out.push(p); continue; }
+    const a = pal(out[out.length - 1]), b = pal(p);
+    const prefixo = (x, y) => x.length <= y.length && x.every((w, i) => w === y[i]);
+    if (prefixo(a, b)) { out[out.length - 1] = p; continue; }
+    if (prefixo(b, a)) continue;
+    // Sobreposição de 2 palavras ou mais entre o fim do anterior e o começo deste.
+    let n = 0;
+    for (let k = Math.min(a.length, b.length - 1); k >= 2; k--) if (a.slice(-k).every((w, i) => w === b[i])) { n = k; break; }
+    const ws = p.split(" ");
+    out.push(n && ws.length === b.length ? ws.slice(n).join(" ") : p);
+  }
+  return out.join(" ").replace(/\s+/g, " ").trim();
+}
 // Leitura do print no navegador, usada quando a IA com visão não responde.
 const OCR_URL = "https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js";
 let ocrLib = null;
@@ -2193,21 +2231,20 @@ function initMedia(cap) {
     };
 
     // Voz no navegador: o texto aparece enquanto a pessoa fala, sem limite de uma frase.
+    // O texto é refeito a cada evento com a lista inteira de resultados (somar só os novos
+    // repetia frases no Android), e cada reinício depois de uma pausa entra em "base".
     function startSpeech() {
       const sr = new SpeechRec();
       sr.lang = "pt-BR"; sr.continuous = true; sr.interimResults = true; sr.maxAlternatives = 1;
-      let finalTxt = "", parou = false, erro = "", ouviu = false;
+      let base = [], sessao = [], parou = false, erro = "", ouviu = false;
       sr.onresult = e => {
-        let interim = "";
-        for (let i = e.resultIndex; i < e.results.length; i++) {
-          const r = e.results[i];
-          if (r.isFinal) finalTxt += r[0].transcript.trim() + " "; else interim += r[0].transcript;
-        }
+        sessao = Array.from(e.results, r => r[0]?.transcript || "");
         ouviu = true;
-        field.value = (finalTxt + interim).replace(/\s+/g, " ").trim();
+        field.value = juntarFala(base.concat(sessao));
       };
       sr.onerror = e => { if (e.error !== "no-speech" && e.error !== "aborted") erro = e.error; };
       sr.onend = () => {
+        base = [juntarFala(base.concat(sessao))]; sessao = [];
         // O navegador encerra sozinho depois de uma pausa; continua até a pessoa tocar em Parar.
         if (!parou && !erro && Date.now() - t0 < 60000) { try { sr.start(); return; } catch { /* encerra abaixo */ } }
         endUI();
@@ -2371,20 +2408,22 @@ async function runAsk() {
       + `<p class="status">A resposta com IA só funciona no endereço principal do site.</p>` + closeBtn("#askOut", "Fechar");
     return;
   }
-  out.innerHTML = head + `<p class="status" id="askSt">Procurando em todo o site e preparando a resposta… (até 1 minuto)</p>` + local + closeBtn("#askOut", "Fechar");
+  out.innerHTML = head + `<p class="status" id="askSt">Procurando em todo o site e preparando a resposta. Se o site não tiver a informação, a busca continua em agências de checagem, na imprensa e na web… (até 2 minutos)</p>` + local + closeBtn("#askOut", "Fechar");
   askCtl = new AbortController();
   try {
     const r = await fetch("api/checar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ modo: "site", pergunta: q.slice(0, 500) }), signal: askCtl.signal });
     const j = await r.json().catch(() => ({}));
     if (!r.ok) { $("#askSt").textContent = j.erro || "Não foi possível responder agora."; $("#askSt").insertAdjacentHTML("afterend", detalheHTML(j)); return; }
     const num = new Map((j.fontes || []).map((f, i) => [f.id, i + 1]));
-    const txt = esc(j.resposta).replace(/\[([SL][^\]\s]{0,80})\]/g, (m, id) => num.has(id) ? `<a class="ref" href="#ask-f${num.get(id)}" data-ref>[${num.get(id)}]</a>` : "");
+    // Ids de lei têm espaço ("Lcf|Art. 7º"); id que não está nas fontes some do texto.
+    const txt = esc(j.resposta).replace(/\[([SLW][^\]]{0,80})\]/g, (m, id) => num.has(id) ? `<a class="ref" href="#ask-f${num.get(id)}" data-ref>[${num.get(id)}]</a>` : "");
     out.innerHTML = head + `<p style="margin:0">${txt}</p>
       ${(j.fontes || []).length ? `<div><div class="eyebrow">Fontes</div><ol class="fontes" style="margin-top:6px">${j.fontes.map((f, i) => askFonteHTML(f, i, j.citacoes || [])).join("")}</ol></div>` : `<p class="status">A resposta não citou fontes do site; confira nas abas.</p>`}
       ${j.descartadas ? `<p class="status">${j.descartadas} citação(ões) descartada(s) por não aparecer(em) literalmente na fonte.</p>` : ""}
       ${(j.consultados || []).length ? `<details><summary class="linkbtn" style="font-size:14px">Outros conteúdos do site que a IA leu (${j.consultados.length})</summary><ol class="fontes" style="margin-top:6px">${j.consultados.map((f, i) => askFonteHTML(f, 100 + i, [])).join("")}</ol></details>` : ""}
       ${local ? `<details><summary class="linkbtn" style="font-size:14px">Busca simples nas propostas e checagens</summary>${local}</details>` : ""}
-      <p class="status" style="margin:0">Resposta automática feita só com o conteúdo do site, e cada citação é conferida com a fonte. Confira as fontes antes de compartilhar.</p>
+      ${webNota(j.web)}
+      <p class="status" style="margin:0">Resposta automática${j.web?.usada ? ": primeiro com o conteúdo do site e, no que faltava, com a busca na web (fontes marcadas “Busca na web”)" : " feita com o conteúdo do site"}. Cada citação é conferida com a fonte. Confira as fontes antes de compartilhar.</p>
       ${closeBtn("#askOut", "Fechar resposta")}`;
   } catch (e) {
     if (e?.name !== "AbortError") $("#askSt").textContent = "Sem conexão com o servidor. Tente de novo.";
